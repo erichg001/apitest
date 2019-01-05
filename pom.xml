@@ -409,7 +409,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                     <encoding>UTF-8</encoding>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${project.basedir}/target/classes/testNg/${xmlFileName}</suiteXmlFile>
+                        <suiteXmlFile>src/testng.xml</suiteXmlFile>
                         <!--<suiteXmlFile>${project.basedir}/target/classes/testNg/api/push/RegisterToken-TestSuite.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>

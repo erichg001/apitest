@@ -20,7 +20,7 @@
 						http://www.springframework.org/schema/task/spring-task-3.2.xsd">
 						
 	<!-- 自动扫描 -->
-	<context:component-scan base-package="com.aiyi.*" />
+	<context:component-scan base-package="com.bitnei.*" />
 	<!-- 启用Spring对@AspectJ的支持 -->
    	<aop:aspectj-autoproxy proxy-target-class="true" />
    	
@@ -56,7 +56,7 @@
 	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<!-- 自动扫描mapping.xml文件 -->
-		<property name="mapperLocations" value="classpath:com/aiyi/*/mapper/*.xml"></property>
+		<property name="mapperLocations" value="classpath:com/bitnei/*/mapper/*.xml"></property>
 		
 	</bean>
 
