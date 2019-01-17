@@ -24,9 +24,9 @@ public class GetCookie {
 	@Test
 	public String login() throws ClientProtocolException, IOException {
 		//获取浏览器首次返回cookie的url
-        String loginUrl = "http://bdp-app.bitnei.cn/rest/ras/dashboard";  
+        String loginUrl = "http://bdp-app.bitnei.cn:7788/rest/ras/dashboard";  
         //登录成功后，在域名下携带cookie,验证通过的url
-		String urladmin = "http://bdp-app.bitnei.cn/rest/ras/dashboard?token=admin";		
+		String urladmin = "http://bdp-app.bitnei.cn:7788/rest/ras/dashboard?token=admin";		
 		//代理登录url,需要用户名密码
 		String urls =   "http://10.10.26.2:19010/monitor2/inner_api/user/login?redirectUrl=http://bdp-app.bitnei.cn/dashboard/info";
         //登录后302跳转返回url为http://bdp-app.bitnei.cn/dashboard/info?token=admin,但这个url返回404,不可用于验证。坑啊！

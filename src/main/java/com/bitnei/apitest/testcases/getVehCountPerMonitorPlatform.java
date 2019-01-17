@@ -9,6 +9,7 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.alibaba.fastjson.JSON;
@@ -21,16 +22,16 @@ import net.sf.json.JSONObject;
 
 public class getVehCountPerMonitorPlatform {
 	
-	String host;
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
 	GetCookie getCookie = new GetCookie();
 	String cookie = "";
 	
+	@Parameters({"host"})
 	@BeforeClass
-	public void setUp() {
-		url = "http://bdp-app.bitnei.cn/rest/monitor/monitor/vehCountPerMonitorPlatform";
+	public void setUp(String host) {
+		url = host + "/rest/monitor/monitor/vehCountPerMonitorPlatform";
 		//设置cookie		
 		try {
 			 cookie = getCookie.login();

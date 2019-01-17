@@ -6,7 +6,8 @@
       <class name="com.bitnei.apitest.testcases.PostVehicles">
         <methods>
           <include name="setUp"/>
-          <include name="PostVehiclesByVin" invocation-numbers="0"/>
+          <include name="postVehiclesForStatus"/>
+          <include name="PostVehiclesByVin"/>
         </methods>
       </class> <!-- com.bitnei.apitest.testcases.PostVehicles -->
     </classes>

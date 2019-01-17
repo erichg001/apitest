@@ -209,8 +209,8 @@ public class DiffMethod {
 	                String key = (String) iterator.next();
 	                Object expectedValue = expectedJSON.get(key);
 
-	                System.out.println("----------key ---------------"+key);
-	                System.out.println("----------expectedValue ---------------"+expectedValue);
+	                //System.out.println("----------key ---------------"+key);
+	                //System.out.println("----------expectedValue ---------------"+expectedValue);
 	                if (!currentJSON.containsKey(key)) {
 	                    tempJSON.put("actualKey", "不存在此" + key);
 	                    tempJSON.put("expectedKey", key);
@@ -221,7 +221,7 @@ public class DiffMethod {
 	                if (currentJSON.containsKey(key)) {
 
 	                    Object currentValue = currentJSON.get(key);
-	                    System.out.println("----------currentValue ---------------"+currentValue);
+	                    //System.out.println("----------currentValue ---------------"+currentValue);
 
 	                    if (expectedValue != null && currentValue == null || expectedValue.toString() != "null" && currentValue.toString() == "null") {
 	                        tempJSON.put("actualValue", "null");
@@ -279,7 +279,7 @@ public class DiffMethod {
 
 
 	        if(isJsonArray(expected)){
-	        	System.out.println("----------isJsonArray ---------------");
+	        	//System.out.println("----------isJsonArray ---------------");
 	            JSONArray expectArray = JSONArray.fromObject(expected);
 	            JSONArray currentArray = JSONArray.fromObject(current);
 

@@ -9,6 +9,7 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.alibaba.fastjson.JSON;
@@ -20,7 +21,6 @@ import com.bitnei.apitest.utils.RestClient;
 import net.sf.json.JSONObject;
 
 public class PostVehicles {
-	//TestBase testBase;
 	RestClient restClient = new RestClient();
 	DiffMethod diffMethod = new DiffMethod();
 	String url;
@@ -30,9 +30,11 @@ public class PostVehicles {
 	String cookie = "";
 	
 	
+	@Parameters({"host"})
 	@BeforeClass
-	public void setUp() {
-		url = "http://bdp-app.bitnei.cn/rest/monitor/sysVehicle/vehicles/";
+	public void setUp(String host) {
+		url = host +"/rest/monitor/sysVehicle/vehicles/";
+		System.out.println(host);
 		//设置cookie		
 		try {
 			 cookie = getCookie.login();
@@ -46,16 +48,19 @@ public class PostVehicles {
 		
 	}
 	
+	
 	@Test(description="获取车辆列表,判断返回200",priority =0,dataProvider="dataprovider1",dataProviderClass=DataProviderMethod.class)
 	public void postVehiclesForStatus(String st) throws ClientProtocolException, IOException {
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Cookie", cookie);		
+		headermap.put("Cookie", cookie);
+		System.out.println("Cookie-------"+cookie);
 		//入参设置
 		Vehicles vehiches = new Vehicles(10,"","",1,"","LS4AAB3C0GG700008");
 		String vehichesJsonString = JSON.toJSONString(vehiches);
-		System.out.println("vehichesJsonString------------"+vehichesJsonString);		
+		System.out.println("vehichesJsonString------------"+vehichesJsonString);	
+		System.out.println("url------------"+url);	
 	    closeableHttpResponse = restClient.post(url, vehichesJsonString, headermap);
 		//System.out.println("closeableHttpResponse------------"+closeableHttpResponse);
 		//验证状态码是不是200
