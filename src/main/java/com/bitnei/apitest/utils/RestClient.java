@@ -6,6 +6,7 @@ import java.util.Map;
 
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -86,6 +87,20 @@ public class RestClient {
 			CloseableHttpResponse httpResponse = httpclient.execute(httppost);			
 			return httpResponse;
 		}
-		
+		//6. DELETE 请求方法
+		public CloseableHttpResponse delete(String url, HashMap<String,String> headermap) 
+				throws ClientProtocolException, IOException {
+		///创建一个可关闭的HttpClient对象
+			CloseableHttpClient httpclient = HttpClients.createDefault();
+			//创建一个HttpGet的请求对象
+			HttpDelete httpdelete = new HttpDelete(url);
+			//加载请求头到httpdelete对象
+			for(Map.Entry<String, String> entry : headermap.entrySet()) {
+				httpdelete.addHeader(entry.getKey(), entry.getValue());
+			}
+			//执行请求,相当于postman上点击发送按钮，然后赋值给HttpResponse对象接收
+			CloseableHttpResponse httpResponse = httpclient.execute(httpdelete);
+			return httpResponse;
+		}
 		
 	}

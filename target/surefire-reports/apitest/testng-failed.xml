@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [apitest]">
+  <parameter name="suite" value="suiteParameter"/>
+  <parameter name="host" value="http://bdp-app.bitnei.cn:7788"/>
+  <test thread-count="5" verbose="0" name="APITEST(failed)" parallel="classes">
+    <classes>
+      <class name="com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform">
+        <methods>
+          <include name="getVehCountPerMonitorPlatformStatus" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform -->
+    </classes>
+  </test> <!-- APITEST(failed) -->
+</suite> <!-- Failed suite [apitest] -->

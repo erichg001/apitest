@@ -1,7 +1,13 @@
 package com.bitnei.apitest.pro.datasendpro;
 
 
+import java.util.Date;
+
+import org.springframework.stereotype.Repository;
+
+
 import com.bitnei.apitest.annotation.pro.TableName;
+import com.bitnei.apitest.annotation.pro.TempField;
 import com.bitnei.apitest.pro.Po;
 
 @TableName(name="forward_platform")
@@ -17,11 +23,22 @@ public class PlatFormPro extends Po {
 	private String notes;
 	private String cdKey;
 	private String username;
-	
+	private String id;
+	private int isUse;
+	private String createTime;
+	@TempField
+	private int limit;
+	@TempField
+	private int start;
 
 
+	public PlatFormPro() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public PlatFormPro(String forwardMode, String staticForwardPlatform, String priority, String nsPort,
-			String unitName, String address, String password, String notes, String cdKey, String username) {
+			String unitName, String address, String password, String notes, String cdKey, String username, String id,
+			int isUse, String createTime, int limit, int start) {
 		super();
 		this.forwardMode = forwardMode;
 		this.staticForwardPlatform = staticForwardPlatform;
@@ -33,11 +50,47 @@ public class PlatFormPro extends Po {
 		this.notes = notes;
 		this.cdKey = cdKey;
 		this.username = username;
+		this.id = id;
+		this.isUse = isUse;
+		this.createTime = createTime;
+		this.limit = limit;
+		this.start = start;
 	}
-	public PlatFormPro() {
-		super();
-		// TODO Auto-generated constructor stub
+	
+	
+
+	public String getCreateTime() {
+		return createTime;
 	}
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
+	}
+	public int getLimit() {
+		return limit;
+	}
+	public void setLimit(int limit) {
+		this.limit = limit;
+	}
+	public int getStart() {
+		return start;
+	}
+	public void setStart(int start) {
+		this.start = start;
+	}
+
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public int getIsUse() {
+		return isUse;
+	}
+	public void setIsUse(int isUse) {
+		this.isUse = isUse;
+	}
+
 	public String getForwardMode() {
 		return forwardMode;
 	}
@@ -98,7 +151,5 @@ public class PlatFormPro extends Po {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	
-	
-	
+
 }

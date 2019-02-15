@@ -16,7 +16,7 @@ public class DataProviderMethod {
 	    @DataProvider(name="dataprovider1")  
 	    public static Object[][] dataProvider1(){  
 	        return new Object[][]{  
-	                {"{\"status\":20,\"errorMsg\":null,\"data\":{\"total\":2,\"list\":[{\"id\":\"21\",\"vin\":\"LS4AAB3C0GG700008\"}]},\"error\":true}"}  
+	                {"{\"status\":200,\"errorMsg\":null,\"data\":{\"total\":2,\"list\":[{\"id\":\"21\",\"vin\":\"LS4AAB3C0GG700008\"}]},\"error\":true}"}  
 	        };  
 	    }  
 	    //获取时实车辆信息通过vinLS4AAB3C0GG700008查询
@@ -27,7 +27,7 @@ public class DataProviderMethod {
 	                		+ "\"errorMsg\":null,"
 	                		+ "\"data\":[{\"id\":1,"
 	                		+ "\"monitorPlatform\":\"智云平台\","
-	                		+ "\"num\":19},{\"id\":2,"
+	                		+ "\"num\":274419},{\"id\":2,"
 	                		+ "\"monitorPlatform\":\"英泰斯特\","
 	                		+ "\"num\":14}],"
 	                		+ "\"error\":false}"} 

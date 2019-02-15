@@ -20,10 +20,17 @@
 						http://www.springframework.org/schema/task/spring-task-3.2.xsd">
 						
 	<!-- 自动扫描 -->
-	<context:component-scan base-package="com.bitnei.*" />
+	<context:component-scan base-package="com.bitnei" />
+	
+	<context:annotation-config></context:annotation-config>
+	
 	<!-- 启用Spring对@AspectJ的支持 -->
+	<!--进行对象的创建
+    <bean id="hanDao" class="com.bitnei.apitest.pro.datasendpro.HanDao"></bean>
+	<bean id="platformdao" class="com.bitnei.apitest.dao.impl.PlatFormDao"></bean>
+	-->
    	<aop:aspectj-autoproxy proxy-target-class="true" />
-   	
+
    	<!-- 声明事务切面类对象 -->
    	<!-- <bean id="transactionManager" class="com.aiyi.core.aop.TransactionManager" /> -->
    	
@@ -52,7 +59,7 @@
 		<property name="maxWait" value="${maxWait}"></property>
 	</bean>
 
-	<!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
+	<!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件  -->
 	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<!-- 自动扫描mapping.xml文件 -->
@@ -62,10 +69,10 @@
 
 	<!-- DAO接口所在包名，Spring会自动查找其下的类
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.aiyi.*" />
+		<property name="basePackage" value="com.bitnei" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
-	</bean> -->
-	
+	</bean> 
+	-->
 	
 	<!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
 	<bean id="transactionManager"
@@ -78,8 +85,9 @@
 	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
 	
 	<!-- 开启AOP监听 只对当前配置文件有效 -->
+ 
 	<aop:aspectj-autoproxy expose-proxy="true" />
-	
+
 	<!-- 任务执行定时器，启动注解任务 -->
 	<task:annotation-driven /> 
 	

@@ -5,12 +5,6 @@
   <parameter name="host" value="http://bdp-app.bitnei.cn:7788"/>
   <test thread-count="5" name="APITEST(failed)" parallel="classes">
     <classes>
-      <class name="com.bitnei.apitest.testcases.PostVehicles">
-        <methods>
-          <include name="setUp"/>
-          <include name="PostVehiclesByVin" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.bitnei.apitest.testcases.PostVehicles -->
       <class name="com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform">
         <methods>
           <include name="getVehCountPerMonitorPlatformStatus" invocation-numbers="0"/>

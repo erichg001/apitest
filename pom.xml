@@ -13,8 +13,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <xmlFileName>testng.xml</xmlFileName>
 
     	<file.encoding>UTF-8</file.encoding>
-    	<spring.version>4.2.6.RELEASE</spring.version>
-    	<jackson.version>2.6.7</jackson.version>
+    	<spring.version>3.2.11.RELEASE</spring.version>
     </properties>
 
     <dependencies>
@@ -35,12 +34,30 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		    <version>1.2.2</version>
 		</dependency>
     
-    <dependency>
+    	<dependency>
            <groupId>org.springframework</groupId>
            <artifactId>spring-core</artifactId>
            <version>${spring.version}</version>
        </dependency>
- 
+       
+       <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
        <dependency>
            <groupId>org.springframework</groupId>
            <artifactId>spring-web</artifactId>
@@ -52,48 +69,56 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
            <artifactId>spring-webmvc</artifactId>
            <version>${spring.version}</version>
        </dependency>
- 
+ <!--  
        <dependency>
            <groupId>org.springframework</groupId>
            <artifactId>spring-test</artifactId>
            <version>${spring.version}</version>
            <scope>test</scope>
        </dependency>
+ -->      
  
+ 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+       <dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-jdbc</artifactId>
+    		<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-aop</artifactId>
+    		<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-aspects</artifactId>
+    		<version>${spring.version}</version>
+		</dependency>
+  
        <dependency>
            <groupId>javax.servlet</groupId>
            <artifactId>servlet-api</artifactId>
            <version>2.5</version>
        </dependency>
- 
+
        <dependency>
            <groupId>javax.servlet.jsp</groupId>
            <artifactId>jsp-api</artifactId>
            <version>2.1</version>
            <scope>provided</scope>
        </dependency>
-    
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-test</artifactId>
-    <version>${spring.version}</version>
-</dependency>
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-jdbc</artifactId>
-    <version>${spring.version}</version>
-</dependency>
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-aop</artifactId>
-    <version>${spring.version}</version>
-</dependency>
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-aspects</artifactId>
-    <version>${spring.version}</version>
-</dependency>
-
+       
+       <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+ 
         <dependency>
             <groupId>dom4j</groupId>
             <artifactId>dom4j</artifactId>
@@ -205,13 +230,21 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+      <!--   
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.25</version>
-            <scope>test</scope>
+            <version>1.7.22</version>           
         </dependency>
+      --> 
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+ 		   <groupId>org.slf4j</groupId>
+  		   <artifactId>slf4j-api</artifactId>
+   		   <version>1.7.24</version>
+		</dependency>
 
+       
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
@@ -241,13 +274,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <version>3.1.5</version> 
             <scope>provided</scope>
         </dependency>
-        
+        <!--  
         <dependency>
             <groupId>com.relevantcodes</groupId>
             <artifactId>extentreports</artifactId>
             <version>2.41.1</version>
         </dependency>
-
+        -->
 
         <!-- https://mvnrepository.com/artifact/com.vimalselvam/testng-extentsreport -->
         <dependency>
@@ -283,14 +316,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <version>1.2.17</version>
         </dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
-		<dependency>
-		    <groupId>org.slf4j</groupId>
-		    <artifactId>slf4j-log4j12</artifactId>
-		    <version>1.7.21</version>
-		</dependency>
-
-        <!--json schema start-->
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -306,19 +331,19 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <version>2.6.7</version>
         </dependency>
 
-<!-- https://mvnrepository.com/artifact/org.skyscreamer/jsonassert 对比两个Json对象是否一致-->
-<dependency>
-    <groupId>org.skyscreamer</groupId>
-    <artifactId>jsonassert</artifactId>
-    <version>1.5.0</version>
-    <scope>test</scope>
-</dependency>
-
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
             <version>2.6.7</version>
         </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.skyscreamer/jsonassert 对比两个Json对象是否一致-->
+		<dependency>
+    		<groupId>org.skyscreamer</groupId>
+    		<artifactId>jsonassert</artifactId>
+    		<version>1.5.0</version>
+    		<scope>test</scope>
+		</dependency>
 
         <dependency>
             <groupId>com.github.fge</groupId>
@@ -356,6 +381,25 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <version>3.0</version>
             <scope>compile</scope>
         </dependency>
+        
+        		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.38</version>
+		</dependency>
+        
+        <dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+			<version>1.6</version>
+		</dependency>
+
         
     </dependencies>
 <!--  
@@ -420,6 +464,9 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                         <!--<suiteXmlFile>${project.basedir}/target/classes/testNg/api/push/RegisterToken-TestSuite.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
+                    <compilerArguments>
+      					<extdirs>WebContent\WEB-INF\lib</extdirs>
+    				</compilerArguments>
                 </configuration>
             </plugin>
             <plugin>
