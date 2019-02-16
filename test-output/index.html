@@ -126,7 +126,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.datasend.PlatFormDel" hash-for-method="PlatFormModify({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">PlatFormModify({"status":200,"errorMsg":null,"data":null,"error":false})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.datasend.PlatFormDel" hash-for-method="PlatFormDel({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">PlatFormDel({"status":200,"errorMsg":null,"data":null,"error":false})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -200,24 +200,6 @@
           <div class="suite-apitest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.bitnei.apitest.testcases.PostVehicles</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="postVehiclesForStatus({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:{&quot;total&quot;:2,&quot;list&quot;:[{&quot;id&quot;:&quot;21&quot;,&quot;vin&quot;:&quot;LS4AAB3C0GG700008&quot;}]},&quot;err...)">
-                  </a> <!-- postVehiclesForStatus({"status":200,"errorMsg":null,"data":{"total":2,"list":[{"id":"21","vin":"LS4AAB3C0GG700008"}]},"err...) -->
-                  <span class="method-name">postVehiclesForStatus</span>
-                  <span class="parameters">({"status":200,"errorMsg":null,"data":{"total":2,"list":[{"id":"21","vin":"LS4AAB3C0GG700008"}]},"error":true})</span>
-                  <em>
-(获取车辆列表,判断返回200)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-apitest-class-passed -->
-          <div class="suite-apitest-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.bitnei.apitest.testcases.EvDetail</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -236,17 +218,35 @@
           <div class="suite-apitest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.bitnei.apitest.testcases.PostVehicles</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postVehiclesForStatus({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:{&quot;total&quot;:2,&quot;list&quot;:[{&quot;id&quot;:&quot;21&quot;,&quot;vin&quot;:&quot;LS4AAB3C0GG700008&quot;}]},&quot;err...)">
+                  </a> <!-- postVehiclesForStatus({"status":200,"errorMsg":null,"data":{"total":2,"list":[{"id":"21","vin":"LS4AAB3C0GG700008"}]},"err...) -->
+                  <span class="method-name">postVehiclesForStatus</span>
+                  <span class="parameters">({"status":200,"errorMsg":null,"data":{"total":2,"list":[{"id":"21","vin":"LS4AAB3C0GG700008"}]},"error":true})</span>
+                  <em>
+(获取车辆列表,判断返回200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-apitest-class-passed -->
+          <div class="suite-apitest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.bitnei.apitest.testcases.datasend.PlatFormDel</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="PlatFormModify({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">
-                  </a> <!-- PlatFormModify({"status":200,"errorMsg":null,"data":null,"error":false}) -->
-                  <span class="method-name">PlatFormModify</span>
+                  <a name="PlatFormDel({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">
+                  </a> <!-- PlatFormDel({"status":200,"errorMsg":null,"data":null,"error":false}) -->
+                  <span class="method-name">PlatFormDel</span>
                   <span class="parameters">({"status":200,"errorMsg":null,"data":null,"error":false})</span>
                   <em>
-(数据转发平台配置修改数据)                  </em>
+(数据转发平台配置删除数据)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -369,31 +369,31 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'PlatFormModify')
 data.setCell(0, 2, 'com.bitnei.apitest.testcases.datasend.PlatFormUpdate')
-data.setCell(0, 3, 1904);
+data.setCell(0, 3, 1579);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getVehCountPerMonitorPlatformStatus')
-data.setCell(1, 2, 'com.bitnei.apitest.testcases.EvDetail')
-data.setCell(1, 3, 767);
+data.setCell(1, 1, 'postVehiclesForStatus')
+data.setCell(1, 2, 'com.bitnei.apitest.testcases.PostVehicles')
+data.setCell(1, 3, 1150);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'PlatFormModify')
-data.setCell(2, 2, 'com.bitnei.apitest.testcases.datasend.PlatFormDel')
-data.setCell(2, 3, 690);
+data.setCell(2, 1, 'getVehCountPerMonitorPlatformStatus')
+data.setCell(2, 2, 'com.bitnei.apitest.testcases.EvDetail')
+data.setCell(2, 3, 755);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'postVehiclesForStatus')
-data.setCell(3, 2, 'com.bitnei.apitest.testcases.PostVehicles')
-data.setCell(3, 3, 658);
+data.setCell(3, 1, 'getVehCountPerMonitorPlatformStatus')
+data.setCell(3, 2, 'com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform')
+data.setCell(3, 3, 585);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getVehCountPerMonitorPlatformStatus')
-data.setCell(4, 2, 'com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform')
-data.setCell(4, 3, 509);
+data.setCell(4, 1, 'PlatFormDel')
+data.setCell(4, 2, 'com.bitnei.apitest.testcases.datasend.PlatFormDel')
+data.setCell(4, 3, 458);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'PlatFormAdd')
 data.setCell(5, 2, 'com.bitnei.apitest.testcases.datasend.PlatFormSelect')
-data.setCell(5, 3, 215);
+data.setCell(5, 3, 220);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'PlatFormAdd')
 data.setCell(6, 2, 'com.bitnei.apitest.testcases.datasend.PlatForm')
-data.setCell(6, 3, 82);
+data.setCell(6, 3, 100);
 window.suiteTableData['apitest']= { tableData: data, tableDiv: 'times-div-apitest'}
 return data;
 }
@@ -431,75 +431,75 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">postVehiclesForStatus({"status":200,"errorMsg":null,"data":{"total":2,"list":[{"id":"21","vin":"LS4AAB3C0GG700008"}]},"err...)</span>
-                <span class="method-start">760 ms</span>
+                <span class="method-start">876 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.PlatFormSelect</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://bdp-app.bitnei.cn:7788)</span>
-                <span class="method-start">1424 ms</span>
+                <span class="method-start">2032 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">PlatFormAdd({"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":"05486f02-188d-11e9-9869-90e2bae77ed8"...)</span>
-                <span class="method-start">1591 ms</span>
+                <span class="method-start">2230 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.PlatForm</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://bdp-app.bitnei.cn:7788)</span>
-                <span class="method-start">1808 ms</span>
+                <span class="method-start">2451 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">PlatFormAdd({"status":200,"errorMsg":null,"data":null,"error":false})</span>
-                <span class="method-start">2005 ms</span>
+                <span class="method-start">2766 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://bdp-app.bitnei.cn:7788)</span>
-                <span class="method-start">2091 ms</span>
+                <span class="method-start">2867 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getVehCountPerMonitorPlatformStatus({"status":200,"errorMsg":null,"data":[{"id":1,"monitorPlatform":"智云平台","num":274419},{"id":2,"monito...)</span>
-                <span class="method-start">2260 ms</span>
+                <span class="method-start">3063 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.EvDetail</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://bdp-app.bitnei.cn:7788)</span>
-                <span class="method-start">2777 ms</span>
+                <span class="method-start">3658 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">getVehCountPerMonitorPlatformStatus({"status":200,"errorMsg":null,"data":{"data":[{"terminalTime":"2018-09-22 14:16:10","carStatus":"2",...)</span>
-                <span class="method-start">3012 ms</span>
+                <span class="method-start">3890 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.PlatFormUpdate</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://bdp-app.bitnei.cn:7788)</span>
-                <span class="method-start">3781 ms</span>
+                <span class="method-start">4650 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">PlatFormModify({"status":200,"errorMsg":null,"data":null,"error":false})</span>
-                <span class="method-start">3968 ms</span>
+                <span class="method-start">4795 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.PlatFormDel</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://bdp-app.bitnei.cn:7788)</span>
-                <span class="method-start">5874 ms</span>
+                <span class="method-start">6377 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">PlatFormModify({"status":200,"errorMsg":null,"data":null,"error":false})</span>
-                <span class="method-start">6207 ms</span>
+                <span class="method-name">PlatFormDel({"status":200,"errorMsg":null,"data":null,"error":false})</span>
+                <span class="method-start">6561 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

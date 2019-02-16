@@ -59,9 +59,9 @@ public class PlatFormDel {
 		}		
 	}
 	
-	@Test(description="数据转发平台配置修改数据",priority =1,dataProvider="dataprovider1",
+	@Test(description="数据转发平台配置删除数据",priority =1,dataProvider="dataprovider1",
 			dataProviderClass=PlatFormProvider.class)
-	public void PlatFormModify(String st) throws ClientProtocolException, IOException {
+	public void PlatFormDel(String st) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring-mybatis.xml");
