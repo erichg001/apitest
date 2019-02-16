@@ -13,6 +13,9 @@
     <class name = "com.bitnei.apitest.testcases.datasend.PlatForm" />
     <class name = "com.bitnei.apitest.testcases.datasend.PlatFormUpdate" />
     <class name = "com.bitnei.apitest.testcases.datasend.PlatFormDel" />
+    <class name = "com.bitnei.apitest.testcases.datasend.ProtocolAdd" />
+    <class name = "com.bitnei.apitest.testcases.datasend.ProtocolUpdate" />
+    <class name = "com.bitnei.apitest.testcases.datasend.ProtocolDelete" />
   </classes>
    
   </test> <!-- Test -->

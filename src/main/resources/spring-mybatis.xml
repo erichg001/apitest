@@ -25,10 +25,10 @@
 	<context:annotation-config></context:annotation-config>
 	
 	<!-- 启用Spring对@AspectJ的支持 -->
-	<!--进行对象的创建-->
+	<!--进行对象的创建
     <bean id="hanDao" class="com.bitnei.apitest.pro.datasendpro.HanDao"></bean>
 	<bean id="platformdao" class="com.bitnei.apitest.dao.impl.PlatFormDao"></bean>
-	
+	-->
    	<aop:aspectj-autoproxy proxy-target-class="true" />
 
    	<!-- 声明事务切面类对象 -->
