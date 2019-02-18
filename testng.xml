@@ -16,6 +16,13 @@
     <class name = "com.bitnei.apitest.testcases.datasend.ProtocolAdd" />
     <class name = "com.bitnei.apitest.testcases.datasend.ProtocolUpdate" />
     <class name = "com.bitnei.apitest.testcases.datasend.ProtocolDelete" />
+    <class name = "com.bitnei.apitest.testcases.datasend.TaskAdd" />
+	<class name = "com.bitnei.apitest.testcases.datasend.TaskDelete" />
+    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery" />
+    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles" />
+    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle" />
+    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle" />
+
   </classes>
    
   </test> <!-- Test -->

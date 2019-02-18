@@ -1,85 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
+<testng-results skipped="0" failed="1" ignored="0" total="19" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="8421" started-at="2019-02-16T08:00:50Z" finished-at="2019-02-16T08:00:59Z">
+  <suite name="apitest" duration-ms="22490" started-at="2019-02-18T07:15:44Z" finished-at="2019-02-18T07:16:07Z">
     <groups>
     </groups>
-    <test name="APITEST" duration-ms="8421" started-at="2019-02-16T08:00:50Z" finished-at="2019-02-16T08:00:59Z">
-      <class name="com.bitnei.apitest.testcases.datasend.PlatFormSelect">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatFormSelect@1c3a4799]" name="setUp" is-config="true" duration-ms="155" started-at="2019-02-16T08:00:52Z" finished-at="2019-02-16T08:00:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="PlatFormAdd(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatFormSelect@1c3a4799]" name="PlatFormAdd" duration-ms="220" started-at="2019-02-16T08:00:52Z" description="数据转发平台配置查询数据" data-provider="dataprovider2" finished-at="2019-02-16T08:00:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":"05486f02-188d-11e9-9869-90e2bae77ed8","unitName":"yltest001","forwardMode":"SOCKET","address":"10.100.10.11","username":"ul213456","password":"ul213456","nsPort":"205","cdKey":null,"notes":null,"priority":"1","staticForwardPlatform":"无","isUse":0,"createTime":1547532957000}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PlatFormAdd -->
-      </class> <!-- com.bitnei.apitest.testcases.datasend.PlatFormSelect -->
-      <class name="com.bitnei.apitest.testcases.datasend.ProtocolUpdate">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@71bbf57e]" name="setUp" is-config="true" duration-ms="166" started-at="2019-02-16T08:00:53Z" finished-at="2019-02-16T08:00:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ProtocolUpdateData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@71bbf57e]" name="ProtocolUpdateData" duration-ms="2110" started-at="2019-02-16T08:00:53Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-02-16T08:00:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProtocolUpdateData -->
-      </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolUpdate -->
-      <class name="com.bitnei.apitest.testcases.datasend.ProtocolDelete">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolDelete@7f13d6e]" name="setUp" is-config="true" duration-ms="178" started-at="2019-02-16T08:00:58Z" finished-at="2019-02-16T08:00:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ProtocolDeleteData(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.datasend.ProtocolDelete@7f13d6e]" name="ProtocolDeleteData" duration-ms="463" started-at="2019-02-16T08:00:58Z" description="数据转发平台配置删除协议" data-provider="dataprovider1" finished-at="2019-02-16T08:00:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProtocolDeleteData -->
-      </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolDelete -->
+    <test name="APITEST" duration-ms="22490" started-at="2019-02-18T07:15:44Z" finished-at="2019-02-18T07:16:07Z">
       <class name="com.bitnei.apitest.testcases.EvDetail">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.EvDetail@694e1548]" name="setUp" is-config="true" duration-ms="148" started-at="2019-02-16T08:00:56Z" finished-at="2019-02-16T08:00:56Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.EvDetail@7f13d6e]" name="setUp" is-config="true" duration-ms="179" started-at="2019-02-18T07:15:59Z" finished-at="2019-02-18T07:15:59Z">
           <params>
             <param index="0">
               <value>
@@ -90,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getVehCountPerMonitorPlatformStatus(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.EvDetail@694e1548]" name="getVehCountPerMonitorPlatformStatus" duration-ms="909" started-at="2019-02-16T08:00:56Z" description="明细数据查询" data-provider="dataprovider1" finished-at="2019-02-16T08:00:57Z">
+        <test-method status="PASS" signature="getVehCountPerMonitorPlatformStatus(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.EvDetail@7f13d6e]" name="getVehCountPerMonitorPlatformStatus" duration-ms="2978" started-at="2019-02-18T07:15:59Z" description="明细数据查询" data-provider="dataprovider1" finished-at="2019-02-18T07:16:02Z">
           <params>
             <param index="0">
               <value>
@@ -102,8 +30,8 @@
           </reporter-output>
         </test-method> <!-- getVehCountPerMonitorPlatformStatus -->
       </class> <!-- com.bitnei.apitest.testcases.EvDetail -->
-      <class name="com.bitnei.apitest.testcases.datasend.PlatForm">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@131276c2]" name="setUp" is-config="true" duration-ms="185" started-at="2019-02-16T08:00:52Z" finished-at="2019-02-16T08:00:52Z">
+      <class name="com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle@56aac163]" name="setUp" is-config="true" duration-ms="192" started-at="2019-02-18T07:15:58Z" finished-at="2019-02-18T07:15:58Z">
           <params>
             <param index="0">
               <value>
@@ -114,7 +42,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="PlatFormAdd(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@131276c2]" name="PlatFormAdd" duration-ms="83" started-at="2019-02-16T08:00:52Z" description="数据转发平台配置新增数据" data-provider="dataprovider1" finished-at="2019-02-16T08:00:53Z">
+        <test-method status="PASS" signature="ForwardVehicleAddVehicles(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle@56aac163]" name="ForwardVehicleAddVehicles" duration-ms="107" started-at="2019-02-18T07:15:58Z" description="数据转发平台任务添加车辆" data-provider="dataprovider4" finished-at="2019-02-18T07:15:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForwardVehicleAddVehicles -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle -->
+      <class name="com.bitnei.apitest.testcases.datasend.PlatForm">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@d44fc21]" name="setUp" is-config="true" duration-ms="385" started-at="2019-02-18T07:15:51Z" finished-at="2019-02-18T07:15:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="PlatFormAdd(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@d44fc21]" name="PlatFormAdd" duration-ms="460" started-at="2019-02-18T07:15:51Z" description="数据转发平台配置新增数据" data-provider="dataprovider1" finished-at="2019-02-18T07:15:52Z">
           <params>
             <param index="0">
               <value>
@@ -126,8 +78,8 @@
           </reporter-output>
         </test-method> <!-- PlatFormAdd -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.PlatForm -->
-      <class name="com.bitnei.apitest.testcases.datasend.ProtocolAdd">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@711f39f9]" name="setUp" is-config="true" duration-ms="160" started-at="2019-02-16T08:00:53Z" finished-at="2019-02-16T08:00:53Z">
+      <class name="com.bitnei.apitest.testcases.datasend.TaskDelete">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskDelete@5a1c0542]" name="setUp" is-config="true" duration-ms="164" started-at="2019-02-18T07:16:06Z" finished-at="2019-02-18T07:16:06Z">
           <params>
             <param index="0">
               <value>
@@ -138,7 +90,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ProtocolAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@711f39f9]" name="ProtocolAddData" duration-ms="73" started-at="2019-02-16T08:00:53Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-02-16T08:00:53Z">
+        <test-method status="PASS" signature="TaskDeleteData(java.lang.String)[pri:3, instance:com.bitnei.apitest.testcases.datasend.TaskDelete@5a1c0542]" name="TaskDeleteData" duration-ms="577" started-at="2019-02-18T07:16:06Z" description="数据转发平台配置删除任务" data-provider="dataprovider1" finished-at="2019-02-18T07:16:07Z">
           <params>
             <param index="0">
               <value>
@@ -148,10 +100,10 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProtocolAddData -->
-      </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolAdd -->
+        </test-method> <!-- TaskDeleteData -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.TaskDelete -->
       <class name="com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform@614ddd49]" name="setUp" is-config="true" duration-ms="149" started-at="2019-02-16T08:00:55Z" finished-at="2019-02-16T08:00:55Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform@711f39f9]" name="setUp" is-config="true" duration-ms="177" started-at="2019-02-18T07:15:58Z" finished-at="2019-02-18T07:15:58Z">
           <params>
             <param index="0">
               <value>
@@ -162,7 +114,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="getVehCountPerMonitorPlatformStatus(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform@614ddd49]" name="getVehCountPerMonitorPlatformStatus" duration-ms="538" started-at="2019-02-16T08:00:55Z" description="获取实时车辆信息" data-provider="dataprovider2" finished-at="2019-02-16T08:00:56Z">
+        <test-method status="FAIL" signature="getVehCountPerMonitorPlatformStatus(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform@711f39f9]" name="getVehCountPerMonitorPlatformStatus" duration-ms="851" started-at="2019-02-18T07:15:58Z" description="获取实时车辆信息" data-provider="dataprovider2" finished-at="2019-02-18T07:15:59Z">
           <params>
             <param index="0">
               <value>
@@ -203,8 +155,8 @@ at java.lang.Thread.run(Thread.java:748)
           </reporter-output>
         </test-method> <!-- getVehCountPerMonitorPlatformStatus -->
       </class> <!-- com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform -->
-      <class name="com.bitnei.apitest.testcases.PostVehicles">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.PostVehicles@1f554b06]" name="setUp" is-config="true" duration-ms="913" started-at="2019-02-16T08:00:50Z" finished-at="2019-02-16T08:00:51Z">
+      <class name="com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle@1f7030a6]" name="setUp" is-config="true" duration-ms="169" started-at="2019-02-18T07:15:58Z" finished-at="2019-02-18T07:15:58Z">
           <params>
             <param index="0">
               <value>
@@ -215,7 +167,232 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="postVehiclesForStatus(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.PostVehicles@1f554b06]" name="postVehiclesForStatus" duration-ms="697" started-at="2019-02-16T08:00:51Z" description="获取车辆列表,判断返回200" data-provider="dataprovider1" finished-at="2019-02-16T08:00:52Z">
+        <test-method status="PASS" signature="ForwardVehicleRemoveVehicles(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle@1f7030a6]" name="ForwardVehicleRemoveVehicles" duration-ms="111" started-at="2019-02-18T07:15:58Z" description="数据转发平台任务移除车辆" data-provider="dataprovider4" finished-at="2019-02-18T07:15:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForwardVehicleRemoveVehicles -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle -->
+      <class name="com.bitnei.apitest.testcases.datasend.TaskAdd">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@48503868]" name="setUp" is-config="true" duration-ms="163" started-at="2019-02-18T07:15:55Z" finished-at="2019-02-18T07:15:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TaskAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@48503868]" name="TaskAddData" duration-ms="83" started-at="2019-02-18T07:15:55Z" description="数据转发平台新增任务" data-provider="dataprovider1" finished-at="2019-02-18T07:15:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TaskAddData -->
+        <test-method status="PASS" signature="TaskAddDataRep(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@48503868]" name="TaskAddDataRep" duration-ms="47" started-at="2019-02-18T07:16:05Z" description="数据转发平台新增任务时目标平台重复" data-provider="dataprovider3" finished-at="2019-02-18T07:16:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":500,"errorMsg":"该平台已分配，不能重复添加","data":null,"error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TaskAddDataRep -->
+        <test-method status="PASS" signature="TaskAddDataRepTask(java.lang.String)[pri:2, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@48503868]" name="TaskAddDataRepTask" duration-ms="51" started-at="2019-02-18T07:16:06Z" description="数据转发平台新增任务时目标任务名称重复" data-provider="dataprovider4" finished-at="2019-02-18T07:16:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":500,"errorMsg":"任务名称已存在","data":null,"error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TaskAddDataRepTask -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.TaskAdd -->
+      <class name="com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles@184f6be2]" name="setUp" is-config="true" duration-ms="165" started-at="2019-02-18T07:15:56Z" finished-at="2019-02-18T07:15:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ForwardVehicleSelect(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles@184f6be2]" name="ForwardVehicleSelect" duration-ms="1289" started-at="2019-02-18T07:15:56Z" description="数据转发平台查询车辆byvin并添加" data-provider="dataprovider3" finished-at="2019-02-18T07:15:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":"786457","vin":"LS5A2AJX5GA002716","licensePlate":"黑P7700E","vehType":null,"vehModelNo":"SC7155ABBH5","vendor":null,"operatingCompany":null,"communicationProtocol":"HU_CHANGAN_V2","city":null,"monitorPlatform":"1","vehProperty":null,"vehSeriesNo":"S201"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForwardVehicleSelect -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles -->
+      <class name="com.bitnei.apitest.testcases.datasend.PlatFormSelect">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatFormSelect@51cdd8a]" name="setUp" is-config="true" duration-ms="269" started-at="2019-02-18T07:15:49Z" finished-at="2019-02-18T07:15:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="PlatFormAdd(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatFormSelect@51cdd8a]" name="PlatFormAdd" duration-ms="1808" started-at="2019-02-18T07:15:49Z" description="数据转发平台配置查询数据" data-provider="dataprovider2" finished-at="2019-02-18T07:15:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":"05486f02-188d-11e9-9869-90e2bae77ed8","unitName":"yltest001","forwardMode":"SOCKET","address":"10.100.10.11","username":"ul213456","password":"ul213456","nsPort":"205","cdKey":null,"notes":null,"priority":"1","staticForwardPlatform":"无","isUse":0,"createTime":1547532957000}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlatFormAdd -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.PlatFormSelect -->
+      <class name="com.bitnei.apitest.testcases.datasend.ProtocolDelete">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolDelete@10bbd20a]" name="setUp" is-config="true" duration-ms="152" started-at="2019-02-18T07:16:04Z" finished-at="2019-02-18T07:16:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ProtocolDeleteData(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.datasend.ProtocolDelete@10bbd20a]" name="ProtocolDeleteData" duration-ms="493" started-at="2019-02-18T07:16:05Z" description="数据转发平台配置删除协议" data-provider="dataprovider1" finished-at="2019-02-18T07:16:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProtocolDeleteData -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolDelete -->
+      <class name="com.bitnei.apitest.testcases.datasend.ProtocolUpdate">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@64729b1e]" name="setUp" is-config="true" duration-ms="155" started-at="2019-02-18T07:15:52Z" finished-at="2019-02-18T07:15:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ProtocolUpdateData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@64729b1e]" name="ProtocolUpdateData" duration-ms="2424" started-at="2019-02-18T07:15:53Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-02-18T07:15:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProtocolUpdateData -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolUpdate -->
+      <class name="com.bitnei.apitest.testcases.datasend.ProtocolAdd">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@4e7dc304]" name="setUp" is-config="true" duration-ms="181" started-at="2019-02-18T07:15:52Z" finished-at="2019-02-18T07:15:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ProtocolAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@4e7dc304]" name="ProtocolAddData" duration-ms="513" started-at="2019-02-18T07:15:52Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-02-18T07:15:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProtocolAddData -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolAdd -->
+      <class name="com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@6895a785]" name="setUp" is-config="true" duration-ms="181" started-at="2019-02-18T07:15:55Z" finished-at="2019-02-18T07:15:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ForwardVehicleByVin(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@6895a785]" name="ForwardVehicleByVin" duration-ms="722" started-at="2019-02-18T07:15:55Z" description="数据转发平台查询车辆byvin" data-provider="dataprovider1" finished-at="2019-02-18T07:15:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":381966,"taskId":22,"vehicleId":"732527","vin":"LSCAB23E8JG117597","licensePlate":null,"vehType":null,"vehModelNo":"SC1027SJA5","vendor":null,"operatingCompany":null,"communicationProtocol":"1","city":null,"taskName":"任务1","platformName":"合肥长安国家平台","platformId":"3328f1f3-d8e6-11e8-a918-6c92bf645824","protocolId":"6d8b1c1e-d7f7-11e8-a918-6c92bf645824","protocolName":"国标32960","monitorPlatform":"1"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForwardVehicleByVin -->
+        <test-method status="PASS" signature="ForwardVehicleBylicense(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@6895a785]" name="ForwardVehicleBylicense" duration-ms="802" started-at="2019-02-18T07:16:05Z" description="数据转发平台查询车辆by车牌号" data-provider="dataprovider2" finished-at="2019-02-18T07:16:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":353859,"taskId":22,"vehicleId":"458750","vin":"LS5A3DBE6HA014855","licensePlate":"新QLR007","vehType":"私家车","vehModelNo":"SC7169G5","vendor":"重庆长安汽车有限公司","operatingCompany":"长安","communicationProtocol":"1","city":"北京市","taskName":"任务1","platformName":"合肥长安国家平台","platformId":"3328f1f3-d8e6-11e8-a918-6c92bf645824","protocolId":"6d8b1c1e-d7f7-11e8-a918-6c92bf645824","protocolName":"国标32960","monitorPlatform":"2"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForwardVehicleBylicense -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery -->
+      <class name="com.bitnei.apitest.testcases.PostVehicles">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.PostVehicles@71bbf57e]" name="setUp" is-config="true" duration-ms="917" started-at="2019-02-18T07:15:44Z" finished-at="2019-02-18T07:15:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://bdp-app.bitnei.cn:7788]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postVehiclesForStatus(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.PostVehicles@71bbf57e]" name="postVehiclesForStatus" duration-ms="3675" started-at="2019-02-18T07:15:45Z" description="获取车辆列表,判断返回200" data-provider="dataprovider1" finished-at="2019-02-18T07:15:49Z">
           <params>
             <param index="0">
               <value>
@@ -228,7 +405,7 @@ at java.lang.Thread.run(Thread.java:748)
         </test-method> <!-- postVehiclesForStatus -->
       </class> <!-- com.bitnei.apitest.testcases.PostVehicles -->
       <class name="com.bitnei.apitest.testcases.datasend.PlatFormDel">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatFormDel@3fd7a715]" name="setUp" is-config="true" duration-ms="149" started-at="2019-02-16T08:00:57Z" finished-at="2019-02-16T08:00:58Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatFormDel@2d6eabae]" name="setUp" is-config="true" duration-ms="467" started-at="2019-02-18T07:16:03Z" finished-at="2019-02-18T07:16:04Z">
           <params>
             <param index="0">
               <value>
@@ -239,7 +416,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="PlatFormDel(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.datasend.PlatFormDel@3fd7a715]" name="PlatFormDel" duration-ms="434" started-at="2019-02-16T08:00:58Z" description="数据转发平台配置删除数据" data-provider="dataprovider1" finished-at="2019-02-16T08:00:58Z">
+        <test-method status="PASS" signature="PlatFormDel(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.datasend.PlatFormDel@2d6eabae]" name="PlatFormDel" duration-ms="580" started-at="2019-02-18T07:16:04Z" description="数据转发平台配置删除数据" data-provider="dataprovider1" finished-at="2019-02-18T07:16:04Z">
           <params>
             <param index="0">
               <value>
@@ -252,7 +429,7 @@ at java.lang.Thread.run(Thread.java:748)
         </test-method> <!-- PlatFormDel -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.PlatFormDel -->
       <class name="com.bitnei.apitest.testcases.datasend.PlatFormUpdate">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatFormUpdate@26aa12dd]" name="setUp" is-config="true" duration-ms="152" started-at="2019-02-16T08:00:57Z" finished-at="2019-02-16T08:00:57Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatFormUpdate@23faf8f2]" name="setUp" is-config="true" duration-ms="173" started-at="2019-02-18T07:16:02Z" finished-at="2019-02-18T07:16:03Z">
           <params>
             <param index="0">
               <value>
@@ -263,7 +440,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="PlatFormModify(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.datasend.PlatFormUpdate@26aa12dd]" name="PlatFormModify" duration-ms="471" started-at="2019-02-16T08:00:57Z" description="数据转发平台配置修改数据" data-provider="dataprovider1" finished-at="2019-02-16T08:00:57Z">
+        <test-method status="PASS" signature="PlatFormModify(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.datasend.PlatFormUpdate@23faf8f2]" name="PlatFormModify" duration-ms="745" started-at="2019-02-18T07:16:03Z" description="数据转发平台配置修改数据" data-provider="dataprovider1" finished-at="2019-02-18T07:16:03Z">
           <params>
             <param index="0">
               <value>

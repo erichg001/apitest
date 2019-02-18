@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>APITEST</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Feb 16 16:00:50 CST 2019</td>
+<td>Started on:</td><td>Mon Feb 18 15:15:44 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8421 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22490 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -97,8 +97,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1244055007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1244055007'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;num&quot;:{&quot;currentValue is &quot;:274421,&quot;expectedValue is&quot;:274419}}]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1661668452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1661668452'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;num&quot;:{&quot;currentValue is &quot;:274421,&quot;expectedValue is&quot;:274419}}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -121,7 +121,7 @@ function toggleAllBoxes() {
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform@614ddd49</td></tr>
+<td>com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform@711f39f9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -131,50 +131,95 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.datasend.PlatFormSelect.PlatFormAdd()'><b>PlatFormAdd</b><br>Test class: com.bitnei.apitest.testcases.datasend.PlatFormSelect<br>Test method: 数据转发平台配置查询数据<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":"05486f02-188d-11e9-9869-90e2bae77ed8","unitName":"yltest001","forwardMode":"SOCKET","address":"10.100.10.11","username":"ul213456","password":"ul213456","nsPort":"205","cdKey":null,"notes":null,"priority":"1","staticForwardPlatform":"无","isUse":0,"createTime":1547532957000}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle.ForwardVehicleAddVehicles()'><b>ForwardVehicleAddVehicles</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle<br>Test method: 数据转发平台任务添加车辆<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.PlatFormSelect@1c3a4799</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle@56aac163</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery.ForwardVehicleByVin()'><b>ForwardVehicleByVin</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery<br>Test method: 数据转发平台查询车辆byvin<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":381966,"taskId":22,"vehicleId":"732527","vin":"LSCAB23E8JG117597","licensePlate":null,"vehType":null,"vehModelNo":"SC1027SJA5","vendor":null,"operatingCompany":null,"communicationProtocol":"1","city":null,"taskName":"任务1","platformName":"合肥长安国家平台","platformId":"3328f1f3-d8e6-11e8-a918-6c92bf645824","protocolId":"6d8b1c1e-d7f7-11e8-a918-6c92bf645824","protocolName":"国标32960","monitorPlatform":"1"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@6895a785</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery.ForwardVehicleBylicense()'><b>ForwardVehicleBylicense</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery<br>Test method: 数据转发平台查询车辆by车牌号<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":353859,"taskId":22,"vehicleId":"458750","vin":"LS5A3DBE6HA014855","licensePlate":"新QLR007","vehType":"私家车","vehModelNo":"SC7169G5","vendor":"重庆长安汽车有限公司","operatingCompany":"长安","communicationProtocol":"1","city":"北京市","taskName":"任务1","platformName":"合肥长安国家平台","platformId":"3328f1f3-d8e6-11e8-a918-6c92bf645824","protocolId":"6d8b1c1e-d7f7-11e8-a918-6c92bf645824","protocolName":"国标32960","monitorPlatform":"2"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@6895a785</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle.ForwardVehicleRemoveVehicles()'><b>ForwardVehicleRemoveVehicles</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle<br>Test method: 数据转发平台任务移除车辆<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle@1f7030a6</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles.ForwardVehicleSelect()'><b>ForwardVehicleSelect</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles<br>Test method: 数据转发平台查询车辆byvin并添加<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":"786457","vin":"LS5A2AJX5GA002716","licensePlate":"黑P7700E","vehType":null,"vehModelNo":"SC7155ABBH5","vendor":null,"operatingCompany":null,"communicationProtocol":"HU_CHANGAN_V2","city":null,"monitorPlatform":"1","vehProperty":null,"vehSeriesNo":"S201"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td></td>
+<td>1</td>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles@184f6be2</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.PlatFormSelect.PlatFormAdd()'><b>PlatFormAdd</b><br>Test class: com.bitnei.apitest.testcases.datasend.PlatFormSelect<br>Test method: 数据转发平台配置查询数据<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":"05486f02-188d-11e9-9869-90e2bae77ed8","unitName":"yltest001","forwardMode":"SOCKET","address":"10.100.10.11","username":"ul213456","password":"ul213456","nsPort":"205","cdKey":null,"notes":null,"priority":"1","staticForwardPlatform":"无","isUse":0,"createTime":1547532957000}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td></td>
+<td>1</td>
+<td>com.bitnei.apitest.testcases.datasend.PlatFormSelect@51cdd8a</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.PlatForm.PlatFormAdd()'><b>PlatFormAdd</b><br>Test class: com.bitnei.apitest.testcases.datasend.PlatForm<br>Test method: 数据转发平台配置新增数据<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.PlatForm@131276c2</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.PlatForm@d44fc21</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.PlatFormDel.PlatFormDel()'><b>PlatFormDel</b><br>Test class: com.bitnei.apitest.testcases.datasend.PlatFormDel<br>Test method: 数据转发平台配置删除数据<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.PlatFormDel@3fd7a715</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.PlatFormDel@2d6eabae</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.PlatFormUpdate.PlatFormModify()'><b>PlatFormModify</b><br>Test class: com.bitnei.apitest.testcases.datasend.PlatFormUpdate<br>Test method: 数据转发平台配置修改数据<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.PlatFormUpdate@26aa12dd</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.PlatFormUpdate@23faf8f2</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.ProtocolAdd.ProtocolAddData()'><b>ProtocolAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.ProtocolAdd<br>Test method: 数据转发平台新增协议<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.ProtocolAdd@711f39f9</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ProtocolAdd@4e7dc304</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.ProtocolDelete.ProtocolDeleteData()'><b>ProtocolDeleteData</b><br>Test class: com.bitnei.apitest.testcases.datasend.ProtocolDelete<br>Test method: 数据转发平台配置删除协议<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.ProtocolDelete@7f13d6e</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ProtocolDelete@10bbd20a</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.ProtocolUpdate.ProtocolUpdateData()'><b>ProtocolUpdateData</b><br>Test class: com.bitnei.apitest.testcases.datasend.ProtocolUpdate<br>Test method: 数据转发平台新增协议<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>2</td>
-<td>com.bitnei.apitest.testcases.datasend.ProtocolUpdate@71bbf57e</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ProtocolUpdate@64729b1e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData()'><b>TaskAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.TaskAdd@48503868</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddDataRep()'><b>TaskAddDataRep</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务时目标平台重复<br>Parameters: {"status":500,"errorMsg":"该平台已分配，不能重复添加","data":null,"error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.TaskAdd@48503868</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddDataRepTask()'><b>TaskAddDataRepTask</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务时目标任务名称重复<br>Parameters: {"status":500,"errorMsg":"任务名称已存在","data":null,"error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.TaskAdd@48503868</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.TaskDelete.TaskDeleteData()'><b>TaskDeleteData</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskDelete<br>Test method: 数据转发平台配置删除任务<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.TaskDelete@5a1c0542</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.EvDetail.getVehCountPerMonitorPlatformStatus()'><b>getVehCountPerMonitorPlatformStatus</b><br>Test class: com.bitnei.apitest.testcases.EvDetail<br>Test method: 明细数据查询<br>Parameters: {"status":200,"errorMsg":null,"data":{"data":[{"terminalTime":"2018-09-22 14:16:10","carStatus":"2","chargeStatus":"0","carMode":"1","speed":"0.0","totalOdometer":"32218.199219","totalVoltage":"0.0","totalCurrent":"0.0","soc":"0","dcStatus":"2","insulateResistance":"0"},{"terminaltime":"2018-09-22 14:16:00","carStatus":"2","chargeStatus":"0","carMode":"1","speed":"0.0","totalOdometer":"32218.199219","totalVoltage":"0.0","totalCurrent":"0.0","soc":"0","dcStatus":"2","insulateResistance":"0"}],"titles":["数据采集时间","车辆状态","充电状态","运行模式","车速(km/h)","里程(km)","总电压(V)","总电流(A)","SOC","DC-DC状态","绝缘电阻(kΩ)"],"page":{"pageSize":10,"pageNumber":1,"endIndex":2,"startIndex":0,"totalSize":2,"totalPage":1}},"error":false}</td>
 <td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.EvDetail@694e1548</td></tr>
+<td>2</td>
+<td>com.bitnei.apitest.testcases.EvDetail@7f13d6e</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.PostVehicles.postVehiclesForStatus()'><b>postVehiclesForStatus</b><br>Test class: com.bitnei.apitest.testcases.PostVehicles<br>Test method: 获取车辆列表,判断返回200<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":2,"list":[{"id":"21","vin":"LS4AAB3C0GG700008"}]},"error":true}</td>
 <td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.PostVehicles@1f554b06</td></tr>
+<td>3</td>
+<td>com.bitnei.apitest.testcases.PostVehicles@71bbf57e</td></tr>
 </table><p>
 </body>
 </html>
