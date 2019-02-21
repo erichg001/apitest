@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>TestNG:  APITEST1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>APITEST1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 20 18:04:58 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3612 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle.ForwardVehicleAddVehicles()'><b>ForwardVehicleAddVehicles</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle<br>Test method: 数据转发平台任务添加车辆<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle@7a1ebcd8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery.ForwardVehicleByVin()'><b>ForwardVehicleByVin</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery<br>Test method: 数据转发平台查询车辆byvin<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":381966,"taskId":22,"vehicleId":"732527","vin":"LSCAB23E8JG117597","licensePlate":null,"vehType":null,"vehModelNo":"SC1027SJA5","vendor":null,"operatingCompany":null,"communicationProtocol":"1","city":null,"taskName":"任务1","platformName":"合肥长安国家平台","platformId":"3328f1f3-d8e6-11e8-a918-6c92bf645824","protocolId":"6d8b1c1e-d7f7-11e8-a918-6c92bf645824","protocolName":"国标32960","monitorPlatform":"1"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@11438d26</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery.ForwardVehicleBylicense()'><b>ForwardVehicleBylicense</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery<br>Test method: 数据转发平台查询车辆by车牌号<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":353859,"taskId":22,"vehicleId":"458750","vin":"LS5A3DBE6HA014855","licensePlate":"新QLR007","vehType":"私家车","vehModelNo":"SC7169G5","vendor":"重庆长安汽车有限公司","operatingCompany":"长安","communicationProtocol":"1","city":"北京市","taskName":"任务1","platformName":"合肥长安国家平台","platformId":"3328f1f3-d8e6-11e8-a918-6c92bf645824","protocolId":"6d8b1c1e-d7f7-11e8-a918-6c92bf645824","protocolName":"国标32960","monitorPlatform":"2"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@11438d26</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle.ForwardVehicleRemoveVehicles()'><b>ForwardVehicleRemoveVehicles</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle<br>Test method: 数据转发平台任务移除车辆<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle@5faeada1</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles.ForwardVehicleSelect()'><b>ForwardVehicleSelect</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles<br>Test method: 数据转发平台查询车辆byvin并添加<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":"786457","vin":"LS5A2AJX5GA002716","licensePlate":"黑P7700E","vehType":null,"vehModelNo":"SC7155ABBH5","vendor":null,"operatingCompany":null,"communicationProtocol":"HU_CHANGAN_V2","city":null,"monitorPlatform":"1","vehProperty":null,"vehSeriesNo":"S201"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td></td>
+<td>1</td>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles@34cd072c</td></tr>
+</table><p>
+</body>
+</html>

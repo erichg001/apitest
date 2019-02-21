@@ -47,7 +47,7 @@ public class ForwardVehicleRemoveVehicle {
 		}		
 	}
 	
-	@Test(description="数据转发平台任务移除车辆",priority =0,dataProvider="dataprovider4",
+	@Test(description="数据转发平台任务移除车辆,并非删除",priority =0,dataProvider="dataprovider4",
 			dataProviderClass=ForwardVehicleProvider.class)
 	public void ForwardVehicleRemoveVehicles(String st) throws ClientProtocolException, IOException {
 		restClient = new RestClient();

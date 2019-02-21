@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="apitest">
   <parameter name="host" value="http://bdp-app.bitnei.cn:7788" />
+  <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789" />
   <parameter name="suite" value="suiteParameter" />
 	<!--thread-count 并发线程数  preserve-order classes按顺序执行   verbose 输出日志等级 -->
   <test parallel="classes" thread-count="1" name="APITEST" verbose="2" preserve-order="true">  
@@ -18,12 +19,14 @@
     <class name = "com.bitnei.apitest.testcases.datasend.ProtocolDelete" />
     <class name = "com.bitnei.apitest.testcases.datasend.TaskAdd" />
 	<class name = "com.bitnei.apitest.testcases.datasend.TaskDelete" />
+  </classes> 
+  </test> <!-- Test -->
+    <test parallel="classes" thread-count="1" name="APITEST1" verbose="2" preserve-order="true">  
+  <classes>
     <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery" />
     <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles" />
     <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle" />
     <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle" />
-
-  </classes>
-   
+  </classes> 
   </test> <!-- Test -->
 </suite> <!-- Suite -->

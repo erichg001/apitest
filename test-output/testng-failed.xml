@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [apitest]">
   <parameter name="suite" value="suiteParameter"/>
   <parameter name="host" value="http://bdp-app.bitnei.cn:7788"/>
-  <test thread-count="5" name="APITEST(failed)" parallel="classes">
+  <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform">
+      <class name="com.bitnei.apitest.testcases.datasend.PlatFormUpdate">
         <methods>
-          <include name="getVehCountPerMonitorPlatformStatus" invocation-numbers="0"/>
+          <include name="PlatFormModify" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.PlatFormUpdate -->
     </classes>
-  </test> <!-- APITEST(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

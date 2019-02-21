@@ -67,7 +67,7 @@ public class ForwardVehicleQuery {
 		forwardvehiclepro.setVin("LSCAB23E8JG117597");
 		
 		String proJsonString = JSON.toJSONString(forwardvehiclepro);
-		System.out.println("proJsonString------------"+proJsonString);
+		System.out.println("proJsonString------------"+proJsonString);		
 		//调用接口
 		closeableHttpResponse = restClient.post(url, proJsonString, headermap);
 		//System.out.println("closeableHttpResponse------------"+closeableHttpResponse);		
@@ -89,7 +89,7 @@ public class ForwardVehicleQuery {
 		DiffMethod diffMethod = new DiffMethod();
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
-		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
+		headermap.put("Content-Type", "application/json; charset=UTF-8"); //这个在postman中可以查询到
 		headermap.put("Cookie",cookie );	
 		//入参设置
 		ForwardVehiclePro forwardvehiclepro = new ForwardVehiclePro();
@@ -99,7 +99,7 @@ public class ForwardVehicleQuery {
 		System.out.println("proJsonString------------"+proJsonString);
 		//调用接口
 		closeableHttpResponse = restClient.post(url, proJsonString, headermap);
-		//System.out.println("closeableHttpResponse------------"+closeableHttpResponse);		
+		System.out.println("closeableHttpResponse------------"+closeableHttpResponse);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
 		System.out.println("source==========="+str);
