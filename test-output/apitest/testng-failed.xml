@@ -6,12 +6,14 @@
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.bidash.SchemeAdd">
+      <class name="com.bitnei.apitest.testcases.datasend.TaskAdd">
         <methods>
-          <include name="SchemeDeleteData" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="TaskAddDataRepTask" invocation-numbers="0"/>
+          <include name="TaskAddDataRep" invocation-numbers="0"/>
+          <include name="TaskAddData" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.bidash.SchemeAdd -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.TaskAdd -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

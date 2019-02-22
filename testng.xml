@@ -19,14 +19,15 @@
     <class name = "com.bitnei.apitest.testcases.datasend.ProtocolDelete" />
     <class name = "com.bitnei.apitest.testcases.datasend.TaskAdd" />
 	<class name = "com.bitnei.apitest.testcases.datasend.TaskDelete" />
+	<class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery" />
+    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles" />
+    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle" />
+    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle" />
   </classes> 
   </test> <!-- Test -->
     <test parallel="classes" thread-count="1" name="APITEST1" verbose="2" preserve-order="true">  
   <classes>
-    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery" />
-    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles" />
-    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle" />
-    <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle" />
+    <class name = "com.bitnei.apitest.testcases.bidash.SchemeAdd" />
   </classes> 
   </test> <!-- Test -->
 </suite> <!-- Suite -->
