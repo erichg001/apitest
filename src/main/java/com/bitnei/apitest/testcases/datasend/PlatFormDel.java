@@ -61,7 +61,7 @@ public class PlatFormDel {
 	
 	@Test(description="数据转发平台配置删除数据",priority =1,dataProvider="dataprovider1",
 			dataProviderClass=PlatFormProvider.class)
-	public void PlatFormDel(String st) throws ClientProtocolException, IOException {
+	public void PlatFormDelData(String st) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring-mybatis.xml");
@@ -72,21 +72,6 @@ public class PlatFormDel {
 		//Date d = new Date(dateLong);
 		String d = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(dateLong));
 		System.out.println("d------------"+d);	
-
-				
-//		platformpro.setAddress("10.10.1.1");
-//		platformpro.setCdKey("autotest");
-//		platformpro.setForwardMode("SOCKET");
-//		platformpro.setNotes("autotesthg");
-//		platformpro.setNsPort("8000");
-//		platformpro.setPassword("autotesthg");
-//		platformpro.setPriority("1");
-//		platformpro.setStaticForwardPlatform("");
-//		platformpro.setUnitName("autotestplant00");
-//		platformpro.setUsername("autotesthg");
-//		platformpro.setId("123");
-//		platformpro.setIsUse(0);
-//		platformpro.setCreateTime(d);
 		
 //		platformdao.addLocal(platformpro);
 		List<PlatFormPro> list = platformdao.list(Method.where("unit_name", C.EQ, "autotestmodif"));

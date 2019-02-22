@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="1737" started-at="2019-02-21T11:03:32Z" finished-at="2019-02-21T11:03:34Z">
+  <suite name="apitest" duration-ms="3559" started-at="2019-02-22T03:18:49Z" finished-at="2019-02-22T03:18:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1737" started-at="2019-02-21T11:03:32Z" finished-at="2019-02-21T11:03:34Z">
+    <test name="Default test" duration-ms="3559" started-at="2019-02-22T03:18:49Z" finished-at="2019-02-22T03:18:53Z">
       <class name="com.bitnei.apitest.testcases.bidash.SchemeAdd">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.bidash.SchemeAdd@61f8bee4]" name="setUp" is-config="true" duration-ms="1007" started-at="2019-02-21T11:03:32Z" finished-at="2019-02-21T11:03:33Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.bidash.SchemeAdd@32709393]" name="setUp" is-config="true" duration-ms="1069" started-at="2019-02-22T03:18:49Z" finished-at="2019-02-22T03:18:50Z">
           <params>
             <param index="0">
               <value>
@@ -18,17 +18,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="SchemeAddDataRep(java.lang.String)[pri:1, instance:com.bitnei.apitest.testcases.bidash.SchemeAdd@61f8bee4]" name="SchemeAddDataRep" duration-ms="706" started-at="2019-02-21T11:03:33Z" description="配置后台新增方案名称重复" data-provider="dataprovider2" finished-at="2019-02-21T11:03:34Z">
+        <test-method status="PASS" signature="SchemeDeleteData(java.lang.String)[pri:2, instance:com.bitnei.apitest.testcases.bidash.SchemeAdd@32709393]" name="SchemeDeleteData" duration-ms="2469" started-at="2019-02-22T03:18:50Z" description="配置后台删除方案" data-provider="dataprovider1" finished-at="2019-02-22T03:18:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"status":500,"errorMsg":"该方案名称已经存在！！！","data":null,"error":true}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SchemeAddDataRep -->
+        </test-method> <!-- SchemeDeleteData -->
       </class> <!-- com.bitnei.apitest.testcases.bidash.SchemeAdd -->
     </test> <!-- Default test -->
   </suite> <!-- apitest -->

@@ -42,7 +42,7 @@
 	</bean>
 	
 
-	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+	<bean id="platDataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="${driver}" />
 		<property name="url" value="${url}" />
@@ -77,6 +77,18 @@
 		<!-- 获取连接最大等待时间 -->
 		<property name="maxWait" value="${maxWait}"></property>
 	</bean>
+	
+	<!-- 动态配置数据源 -->
+	<bean id="dataSource" class="com.bitnei.apitest.tool.DynamicDataSource">
+		<property name ="targetDataSources">  
+             <map key-type ="java.lang.String">  
+             	<entry value-ref ="platDataSource" key= "platDataSource"></entry>  
+                <entry value-ref ="biDataSource" key="biDataSource"></entry>
+             </map>  
+		</property>
+		<!-- 默认使用的数据源 -->
+		<property name ="defaultTargetDataSource" ref= "platDataSource"></property>
+	</bean>
 
 
 	<!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件  -->
@@ -84,13 +96,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<!-- 自动扫描mapping.xml文件 -->
 		<property name="mapperLocations" value="classpath:com/bitnei/*/mapper/*.xml"></property>		
-	</bean>
-	
-	<bean id="sqlSessionFactoryBean1" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="biDataSource" />
-		<!-- 自动扫描mapping.xml文件 -->
-		<property name="mapperLocations" value="classpath:com/bitnei/*/mapper/*.xml"></property>		
-	</bean>
+	</bean>	
 
 	<!-- DAO接口所在包名，Spring会自动查找其下的类
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
@@ -105,11 +111,6 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	
-	<bean id="transactionManager2"
-		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="biDataSource" />
-	</bean>
-	
 	
 	<!-- 注解驱动 -->
 	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
@@ -117,6 +118,15 @@
 	<!-- 开启AOP监听 只对当前配置文件有效 -->
  
 	<aop:aspectj-autoproxy expose-proxy="true" />
+	
+	<aop:config>
+        <aop:aspect ref="dataSourceAspect">
+        	<!-- 配置拦截规则，拦截所有请求方法 -->
+	        <aop:pointcut id="dataSourcePointcut" expression ="execution(* com.bitnei.apitest.dao.impl..*.*(..))"/>
+            <aop:before pointcut-ref="dataSourcePointcut" method="intercept" />
+        </aop:aspect>
+    </aop:config>
+	<bean id="dataSourceAspect" class="com.bitnei.apitest.tool.DataSourceAspect" />
 
 	<!-- 任务执行定时器，启动注解任务 -->
 	<task:annotation-driven /> 

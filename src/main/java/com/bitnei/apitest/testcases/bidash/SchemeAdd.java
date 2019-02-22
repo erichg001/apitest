@@ -90,57 +90,27 @@ public class SchemeAdd {
 //		JSONObject jsonDiff = new JSONObject();
 //		Assert.assertEquals(lastobject.toString(), "{}");
 //	}
-	
-	@Test(description="配置后台新增方案名称重复",priority =1,dataProvider="dataprovider2",
-			dataProviderClass=SchemeProvider.class)
-	public void SchemeAddDataRep(String st) throws ClientProtocolException, IOException {
-		restClient = new RestClient();
-		DiffMethod diffMethod = new DiffMethod();
-		//准备请求头信息
-		HashMap<String,String> headermap = new HashMap<String,String>();
-		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Cookie",cookie );	
-		//入参设置
-		SchemePro schemepro = new SchemePro();
-		schemepro.setSchemeName("autotestschemename");
-		schemepro.setTemplateType("0");
-		schemepro.setStatus(0);
-		
-		String proJsonString = JSON.toJSONString(schemepro);
-		System.out.println("proJsonString------------"+proJsonString);
-		//调用接口
-		closeableHttpResponse = restClient.post(url, proJsonString, headermap);
-		//System.out.println("closeableHttpResponse------------"+closeableHttpResponse);		
-		HttpEntity entity = closeableHttpResponse.getEntity();
-		String str = EntityUtils.toString(entity, "utf-8");
-		System.out.println("source==========="+str);
-		JSONObject lastobject = new JSONObject();
-		System.out.println("except =============="+st);
-		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(st));
-		System.out.println(lastobject.toString());
-		JSONObject jsonDiff = new JSONObject();
-		Assert.assertEquals(lastobject.toString(), "{}");
-	}
-	
-	//需要配置多数据源，暂缓实施
-//	@Test(description="配置后台删除方案",priority =2,dataProvider="dataprovider1",
-//			dataProviderClass=PlatFormProvider.class)
-//	public void SchemeDeleteData(String st) throws ClientProtocolException, IOException {
+//	
+//	@Test(description="配置后台新增方案名称重复",priority =1,dataProvider="dataprovider2",
+//			dataProviderClass=SchemeProvider.class)
+//	public void SchemeAddDataRep(String st) throws ClientProtocolException, IOException {
 //		restClient = new RestClient();
 //		DiffMethod diffMethod = new DiffMethod();
-//		ApplicationContext context = new ClassPathXmlApplicationContext("spring-mybatis.xml");
-//		SchemeDao schemedao = (SchemeDao) context.getBean("schemedao");
-//		List<SchemePro> list = schemedao.list(Method.where("scheme_name", C.EQ, "autotestschemename"));
 //		//准备请求头信息
 //		HashMap<String,String> headermap = new HashMap<String,String>();
 //		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
 //		headermap.put("Cookie",cookie );	
-//		//入参设置	 
-//
+//		//入参设置
+//		SchemePro schemepro = new SchemePro();
+//		schemepro.setSchemeName("autotestschemename");
+//		schemepro.setTemplateType("0");
+//		schemepro.setStatus(0);
+//		
+//		String proJsonString = JSON.toJSONString(schemepro);
+//		System.out.println("proJsonString------------"+proJsonString);
 //		//调用接口
-//		url=url1+list.get(0).getId();
-//		closeableHttpResponse = restClient.delete(url, headermap);
-//		System.out.println("closeableHttpResponse------------"+closeableHttpResponse);		
+//		closeableHttpResponse = restClient.post(url, proJsonString, headermap);
+//		//System.out.println("closeableHttpResponse------------"+closeableHttpResponse);		
 //		HttpEntity entity = closeableHttpResponse.getEntity();
 //		String str = EntityUtils.toString(entity, "utf-8");
 //		System.out.println("source==========="+str);
@@ -151,5 +121,36 @@ public class SchemeAdd {
 //		JSONObject jsonDiff = new JSONObject();
 //		Assert.assertEquals(lastobject.toString(), "{}");
 //	}
+	
+
+	@Test(description="配置后台删除方案",priority =2,dataProvider="dataprovider1",
+			dataProviderClass=PlatFormProvider.class)
+	public void SchemeDeleteData(String st) throws ClientProtocolException, IOException {
+		restClient = new RestClient();
+		DiffMethod diffMethod = new DiffMethod();
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring-mybatis.xml");
+		SchemeDao schemedao = (SchemeDao) context.getBean("schemedao");
+		List<SchemePro> list = schemedao.list(Method.where("scheme_name", C.EQ, "autotestschemename"));
+		//准备请求头信息
+		HashMap<String,String> headermap = new HashMap<String,String>();
+		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
+		headermap.put("Cookie",cookie );	
+		//入参设置	 
+
+		//调用接口
+		url1=url+"/"+list.get(0).getId();
+		System.out.println("url1------------"+url1);	
+		closeableHttpResponse = restClient.delete(url1, headermap);
+		System.out.println("closeableHttpResponse------------"+closeableHttpResponse);		
+		HttpEntity entity = closeableHttpResponse.getEntity();
+		String str = EntityUtils.toString(entity, "utf-8");
+		System.out.println("source==========="+str);
+		JSONObject lastobject = new JSONObject();
+		System.out.println("except =============="+st);
+		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(st));
+		System.out.println(lastobject.toString());
+		JSONObject jsonDiff = new JSONObject();
+		Assert.assertEquals(lastobject.toString(), "{}");
+	}
 
 }

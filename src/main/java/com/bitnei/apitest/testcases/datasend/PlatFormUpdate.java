@@ -26,7 +26,6 @@ import com.bitnei.apitest.pro.Method;
 import com.bitnei.apitest.pro.datasendpro.PlatFormPro;
 import com.bitnei.apitest.sql.C;
 import com.bitnei.apitest.testcases.GetCookie;
-import com.bitnei.apitest.tool.CustomerContextHolder;
 import com.bitnei.apitest.tool.DiffMethod;
 import com.bitnei.apitest.utils.RestClient;
 
@@ -64,7 +63,6 @@ public class PlatFormUpdate {
 	public void PlatFormModify(String st) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
-		CustomerContextHolder.setCustomerType(CustomerContextHolder.DATA_SOURCE_MSSQL);
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring-mybatis.xml");
 		PlatFormDao platformdao = (PlatFormDao) context.getBean("platformdao");
 		System.out.println("platformdao------------"+platformdao);	

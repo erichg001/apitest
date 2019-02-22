@@ -3,7 +3,7 @@ package com.bitnei.apitest.pro.bidash;
 import com.bitnei.apitest.annotation.pro.TableName;
 import com.bitnei.apitest.pro.Po;
 
-@TableName(name="large_screen.bi_scheme")
+@TableName(name="bi_scheme")
 public class SchemePro extends Po{
 	private String id;
 	private String schemeName;
