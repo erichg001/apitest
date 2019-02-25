@@ -52,7 +52,7 @@ public class GetCookie {
             for (Cookie c : cookies) {
                 tmpcookies.append(c.toString() + ";");
                 cookie =c.toString();
-                //System.out.println("cookies = "+cookie);
+                System.out.println("cookies = "+cookie);
             }           
         }
         catch (Exception e) {
