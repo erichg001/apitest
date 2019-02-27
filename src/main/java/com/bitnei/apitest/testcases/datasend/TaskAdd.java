@@ -65,8 +65,9 @@ public class TaskAdd {
 		TaskPro taskpro = new TaskPro();
 		taskpro.setName("autotesttask");
 		taskpro.setIsEncrypt(1);
-		taskpro.setPlatformId("ab694ddb-30d0-11e9-9869-90e2bae77ed8");
-		taskpro.setProtocolId("4b8b5b60-31a2-11e9-9869-90e2bae77ed8");
+		taskpro.setPlatformId("9564a846-3a72-11e9-9869-90e2bae77ed8");
+		taskpro.setProtocolId("a5050c8d-3a72-11e9-9869-90e2bae77ed8");
+		taskpro.setTenantName("chan_tenant_name");
 		
 		String proJsonString = JSON.toJSONString(taskpro);
 		System.out.println("proJsonString------------"+proJsonString);
@@ -97,8 +98,8 @@ public class TaskAdd {
 		TaskPro taskpro = new TaskPro();
 		taskpro.setName("autotesttaskhg");
 		taskpro.setIsEncrypt(1);
-		taskpro.setPlatformId("ab694ddb-30d0-11e9-9869-90e2bae77ed8");
-		taskpro.setProtocolId("4b8b5b60-31a2-11e9-9869-90e2bae77ed8");
+		taskpro.setPlatformId("9564a846-3a72-11e9-9869-90e2bae77ed8");
+		taskpro.setProtocolId("a5050c8d-3a72-11e9-9869-90e2bae77ed8");
 		
 		String proJsonString = JSON.toJSONString(taskpro);
 		System.out.println("proJsonString------------"+proJsonString);
@@ -129,8 +130,8 @@ public class TaskAdd {
 		TaskPro taskpro = new TaskPro();
 		taskpro.setName("autotesttask");
 		taskpro.setIsEncrypt(1);
-		taskpro.setPlatformId("ab694ddb-30d0-11e9-9869-90e2bae77ed8");
-		taskpro.setProtocolId("4b8b5b60-31a2-11e9-9869-90e2bae77ed8");
+		taskpro.setPlatformId("9564a846-3a72-11e9-9869-90e2bae77ed8");
+		taskpro.setProtocolId("a5050c8d-3a72-11e9-9869-90e2bae77ed8");
 		
 		String proJsonString = JSON.toJSONString(taskpro);
 		System.out.println("proJsonString------------"+proJsonString);
