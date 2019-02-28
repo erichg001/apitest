@@ -61,7 +61,8 @@ public class ForwardVehicleSelectVehicles {
 		headermap.put("Cookie",cookie );	
 		//入参设置
 		ForwardVehiclePro forwardvehiclepro = new ForwardVehiclePro();
-		forwardvehiclepro.setVin("LS5A2AJX5GA002716");
+		forwardvehiclepro.setVin("LS4ASE2A1HJ121001");
+		forwardvehiclepro.setTenantName("chan_tenant_name");
 		
 		String proJsonString = JSON.toJSONString(forwardvehiclepro);
 		System.out.println("proJsonString------------"+proJsonString);

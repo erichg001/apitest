@@ -64,7 +64,7 @@ public class TaskDelete {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring-mybatis.xml");
-		TaskDao taskdao = (TaskDao) context.getBean("taskdao");
+		TaskDao taskdao = (TaskDao)context.getBean("taskdao");
 		List<TaskPro> list = taskdao.list(Method.where("name", C.EQ, "autotesttask"));
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();

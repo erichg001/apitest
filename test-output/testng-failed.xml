@@ -5,16 +5,20 @@
   <parameter name="host" value="http://bdp-app.bitnei.cn:7788"/>
   <parameter name="hostsaas" value="http://10.10.26.109:85"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
-  <test thread-count="5" name="Default test(failed)">
+  <test thread-count="5" name="APITEST(failed)" parallel="classes">
     <classes>
-      <class name="com.bitnei.apitest.testcases.datasend.TaskAdd">
+      <class name="com.bitnei.apitest.testcases.PostVehicles">
         <methods>
           <include name="setUp"/>
-          <include name="TaskAddDataRepTask" invocation-numbers="0"/>
-          <include name="TaskAddDataRep" invocation-numbers="0"/>
-          <include name="TaskAddData" invocation-numbers="0"/>
+          <include name="postVehiclesForStatus" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.datasend.TaskAdd -->
+      </class> <!-- com.bitnei.apitest.testcases.PostVehicles -->
+      <class name="com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform">
+        <methods>
+          <include name="getVehCountPerMonitorPlatformStatus" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- APITEST(failed) -->
 </suite> <!-- Failed suite [apitest] -->

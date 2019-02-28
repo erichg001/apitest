@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>APITEST</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 22 17:55:40 CST 2019</td>
+<td>Started on:</td><td>Thu Feb 28 09:42:11 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17836 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12615 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,240 +75,8 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles.ForwardVehicleSelect()'><b>ForwardVehicleSelect</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles<br>Test method: 数据转发平台查询车辆byvin并添加<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":"786457","vin":"LS5A2AJX5GA002716","licensePlate":"黑P7700E","vehType":null,"vehModelNo":"SC7155ABBH5","vendor":null,"operatingCompany":null,"communicationProtocol":"HU_CHANGAN_V2","city":null,"monitorPlatform":"1","vehProperty":null,"vehSeriesNo":"S201"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;id&quot;:{&quot;currentValue is &quot;:786457,&quot;expectedValue&quot;:&quot;786457&quot;},&quot;communicationProtocol&quot;:{&quot;currentValue is &quot;:786457,&quot;expectedValue&quot;:&quot;786457&quot;,&quot;actualKey&quot;:&quot;不存在此communicationProtocol&quot;,&quot;expectedKey&quot;:&quot;communicationProtocol&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles.ForwardVehicleSelect(ForwardVehicleSelectVehicles.java:79)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1984250467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1984250467'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;id&quot;:{&quot;currentValue is &quot;:786457,&quot;expectedValue&quot;:&quot;786457&quot;},&quot;communicationProtocol&quot;:{&quot;currentValue is &quot;:786457,&quot;expectedValue&quot;:&quot;786457&quot;,&quot;actualKey&quot;:&quot;不存在此communicationProtocol&quot;,&quot;expectedKey&quot;:&quot;communicationProtocol&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles.ForwardVehicleSelect(ForwardVehicleSelectVehicles.java:79)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>1</td>
-<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles@56aac163</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData()'><b>TaskAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:500,&quot;expectedValue is&quot;:200},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData(TaskAdd.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace762545644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace762545644'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:500,&quot;expectedValue is&quot;:200},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData(TaskAdd.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.TaskAdd@48503868</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddDataRep()'><b>TaskAddDataRep</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务时目标平台重复<br>Parameters: {"status":500,"errorMsg":"该平台已分配，不能重复添加","data":null,"error":true}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;请分配租户&quot;,&quot;expectedValue&quot;:&quot;该平台已分配，不能重复添加&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddDataRep(TaskAdd.java:116)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace587910334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace587910334'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;请分配租户&quot;,&quot;expectedValue&quot;:&quot;该平台已分配，不能重复添加&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddDataRep(TaskAdd.java:116)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.TaskAdd@48503868</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddDataRepTask()'><b>TaskAddDataRepTask</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务时目标任务名称重复<br>Parameters: {"status":500,"errorMsg":"任务名称已存在","data":null,"error":true}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;请分配租户&quot;,&quot;expectedValue&quot;:&quot;任务名称已存在&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddDataRepTask(TaskAdd.java:148)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace401184437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace401184437'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;请分配租户&quot;,&quot;expectedValue&quot;:&quot;任务名称已存在&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddDataRepTask(TaskAdd.java:148)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.TaskAdd@48503868</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.datasend.TaskDelete.TaskDeleteData()'><b>TaskDeleteData</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskDelete<br>Test method: 数据转发平台配置删除任务<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.bitnei.apitest.testcases.datasend.TaskDelete.TaskDeleteData(TaskDelete.java:76)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace949210227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace949210227'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.bitnei.apitest.testcases.datasend.TaskDelete.TaskDeleteData(TaskDelete.java:76)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.TaskDelete@6895a785</td></tr>
-<tr>
 <td title='com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform.getVehCountPerMonitorPlatformStatus()'><b>getVehCountPerMonitorPlatformStatus</b><br>Test class: com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform<br>Test method: 获取实时车辆信息<br>Parameters: {"status":200,"errorMsg":null,"data":[{"id":1,"monitorPlatform":"智云平台","num":274419},{"id":2,"monitorPlatform":"英泰斯特","num":14}],"error":false}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;num&quot;:{&quot;currentValue is &quot;:274421,&quot;expectedValue is&quot;:274419}}]
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:401,&quot;expectedValue is&quot;:200},&quot;data&quot;:{&quot;currentValue is &quot;:401,&quot;expectedValue is&quot;:200,&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;id&quot;:1,&quot;monitorPlatform&quot;:&quot;智云平台&quot;,&quot;num&quot;:274419},{&quot;id&quot;:2,&quot;monitorPlatform&quot;:&quot;英泰斯特&quot;,&quot;num&quot;:14}]},&quot;Length&quot;:{&quot;actualLenth&quot;:1,&quot;expectLenth&quot;:2},&quot;id&quot;:{&quot;actualKey&quot;:&quot;不存在此id&quot;,&quot;expectedKey&quot;:&quot;id&quot;},&quot;monitorPlatform&quot;:{&quot;actualKey&quot;:&quot;不存在此monitorPlatform&quot;,&quot;expectedKey&quot;:&quot;monitorPlatform&quot;},&quot;num&quot;:{&quot;actualKey&quot;:&quot;不存在此num&quot;,&quot;expectedKey&quot;:&quot;num&quot;},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false,&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;id&quot;:1,&quot;monitorPlatform&quot;:&quot;智云平台&quot;,&quot;num&quot;:274419},{&quot;id&quot;:2,&quot;monitorPlatform&quot;:&quot;英泰斯特&quot;,&quot;num&quot;:14}]}}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -329,8 +97,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace533177469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace533177469'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;num&quot;:{&quot;currentValue is &quot;:274421,&quot;expectedValue is&quot;:274419}}]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1603997980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1603997980'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:401,&quot;expectedValue is&quot;:200},&quot;data&quot;:{&quot;currentValue is &quot;:401,&quot;expectedValue is&quot;:200,&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;id&quot;:1,&quot;monitorPlatform&quot;:&quot;智云平台&quot;,&quot;num&quot;:274419},{&quot;id&quot;:2,&quot;monitorPlatform&quot;:&quot;英泰斯特&quot;,&quot;num&quot;:14}]},&quot;Length&quot;:{&quot;actualLenth&quot;:1,&quot;expectLenth&quot;:2},&quot;id&quot;:{&quot;actualKey&quot;:&quot;不存在此id&quot;,&quot;expectedKey&quot;:&quot;id&quot;},&quot;monitorPlatform&quot;:{&quot;actualKey&quot;:&quot;不存在此monitorPlatform&quot;,&quot;expectedKey&quot;:&quot;monitorPlatform&quot;},&quot;num&quot;:{&quot;actualKey&quot;:&quot;不存在此num&quot;,&quot;expectedKey&quot;:&quot;num&quot;},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false,&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;id&quot;:1,&quot;monitorPlatform&quot;:&quot;智云平台&quot;,&quot;num&quot;:274419},{&quot;id&quot;:2,&quot;monitorPlatform&quot;:&quot;英泰斯特&quot;,&quot;num&quot;:14}]}}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -353,7 +121,53 @@ function toggleAllBoxes() {
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform@711f39f9</td></tr>
+<td>com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform@7f13d6e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.PostVehicles.postVehiclesForStatus()'><b>postVehiclesForStatus</b><br>Test class: com.bitnei.apitest.testcases.PostVehicles<br>Test method: 获取车辆列表,判断返回200<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":2,"list":[{"id":"21","vin":"LS4AAB3C0GG700008"}]},"error":true}</td>
+<td><div><pre>java.lang.AssertionError: status code is not 200 expected [200] but found [401]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at com.bitnei.apitest.testcases.PostVehicles.postVehiclesForStatus(PostVehicles.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1280438737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1280438737'><pre>java.lang.AssertionError: status code is not 200 expected [200] but found [401]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at com.bitnei.apitest.testcases.PostVehicles.postVehiclesForStatus(PostVehicles.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.PostVehicles@51cdd8a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -366,67 +180,102 @@ function toggleAllBoxes() {
 <td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle.ForwardVehicleAddVehicles()'><b>ForwardVehicleAddVehicles</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle<br>Test method: 数据转发平台任务添加车辆<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle@1f7030a6</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle@396f6598</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery.ForwardVehicleByVin()'><b>ForwardVehicleByVin</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery<br>Test method: 数据转发平台查询车辆byvin<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":381966,"taskId":22,"vehicleId":"732527","vin":"LSCAB23E8JG117597","licensePlate":null,"vehType":null,"vehModelNo":"SC1027SJA5","vendor":null,"operatingCompany":null,"communicationProtocol":"1","city":null,"taskName":"任务1","platformName":"合肥长安国家平台","platformId":"3328f1f3-d8e6-11e8-a918-6c92bf645824","protocolId":"6d8b1c1e-d7f7-11e8-a918-6c92bf645824","protocolName":"国标32960","monitorPlatform":"1"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery.ForwardVehicleByVin()'><b>ForwardVehicleByVin</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery<br>Test method: 数据转发平台查询车辆byvin<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":662855,"taskId":50,"vehicleId":"458763","vin":"LS4ASE2A1HJ121001","licensePlate":"川JHK979","vehType":"私家车","vehModelNo":"SC6491B5","vendor":"北京长安汽车有限公司","operatingCompany":"长安","communicationProtocol":"1","city":"北京市","taskName":"testhg0227144","platformName":"testhg022716","platformId":"a2a51080-3a63-11e9-9869-90e2bae77ed8","protocolId":"6d8b1c1e-d7f7-11e8-a918-6c92bf645824","protocolName":"国标32960","monitorPlatform":"1","tenantName":"chan_tenant_name"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@184f6be2</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@1f7030a6</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery.ForwardVehicleBylicense()'><b>ForwardVehicleBylicense</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery<br>Test method: 数据转发平台查询车辆by车牌号<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":353859,"taskId":22,"vehicleId":"458750","vin":"LS5A3DBE6HA014855","licensePlate":"新QLR007","vehType":"私家车","vehModelNo":"SC7169G5","vendor":"重庆长安汽车有限公司","operatingCompany":"长安","communicationProtocol":"1","city":"北京市","taskName":"任务1","platformName":"合肥长安国家平台","platformId":"3328f1f3-d8e6-11e8-a918-6c92bf645824","protocolId":"6d8b1c1e-d7f7-11e8-a918-6c92bf645824","protocolName":"国标32960","monitorPlatform":"2"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery.ForwardVehicleBylicense()'><b>ForwardVehicleBylicense</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery<br>Test method: 数据转发平台查询车辆by车牌号<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":662855,"taskId":50,"vehicleId":"458763","vin":"LS4ASE2A1HJ121001","licensePlate":"川JHK979","vehType":"私家车","vehModelNo":"SC6491B5","vendor":"北京长安汽车有限公司","operatingCompany":"长安","communicationProtocol":"1","city":"北京市","taskName":"testhg0227144","platformName":"testhg022716","platformId":"a2a51080-3a63-11e9-9869-90e2bae77ed8","protocolId":"6d8b1c1e-d7f7-11e8-a918-6c92bf645824","protocolName":"国标32960","monitorPlatform":"1","tenantName":"chan_tenant_name"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@184f6be2</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery@1f7030a6</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle.ForwardVehicleRemoveVehicles()'><b>ForwardVehicleRemoveVehicles</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle<br>Test method: 数据转发平台任务移除车辆,并非删除<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle@5a1c0542</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle@394e1a0f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles.ForwardVehicleSelect()'><b>ForwardVehicleSelect</b><br>Test class: com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles<br>Test method: 数据转发平台查询车辆byvin并添加<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":458763,"vin":"LS4ASE2A1HJ121001","licensePlate":"川JHK979","vehType":"私家车","vehModelNo":"SC6491B5","vendor":"北京长安汽车有限公司","operatingCompany":"长安","city":"北京市","province":"北京市","monitorPlatform":"1","operationCity":"北京市","vehName":"我的爱车","vehSeriesNo":"S401","vehSeriesName":"CS95","vehModelName":"JL486ZQ3 2.0T 国Ⅴ 6AT 7座","vehConfNo":"SC6491B5.S92A","vehConfName":"9 商品车 L12 北京产 四驱7座","motorModelNo":"H9BJ020997","vehColor":"闪光月光白","purchaseDate":"2017-10-23 00:00:00","manufactureDate":"2017-08-28 00:00:00","registDate":"2017-10-23 15:32:34","activeDate":"2018-12-12 17:08:20","dealer":"遂宁骏骐汽车有限公司","baseServiceStatus":1,"serviceStartDate":"2017-10-24 09:52:05","serviceExpireDate":"2027-10-24 09:52:05","maskCode":"111","telephone":"15828897551","credentials":"身份证","credentialsNo":"1","realNameStatus":1,"owner":"辜良","realNameDate":"2017-10-24 09:52:05","infoSource":"monitor","createDate":"2017-10-23 15:32:34","createrId":"2010093000861440","firstOnlineTime":"2018-12-12 17:08:44","flushTime":"2018-12-16 13:05:30","terminalNo":"FOURG_TBOX","terminalBrand":"法雷奥集团","tenantId":"CA_PV_TENANT","tenantName":"chan_tenant_name","vehProperty":"非运营","tuid":"3.20010011707171E31","ecph":"111","dept":"私家车","carId":"ff1f77ce-1b26-4b32-a916-5d7d6a94b826"}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
+<td></td>
+<td>1</td>
+<td>com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles@5a1c0542</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.PlatFormSelect.PlatFormAdd()'><b>PlatFormAdd</b><br>Test class: com.bitnei.apitest.testcases.datasend.PlatFormSelect<br>Test method: 数据转发平台配置查询数据<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"id":"05486f02-188d-11e9-9869-90e2bae77ed8","unitName":"yltest001","forwardMode":"SOCKET","address":"10.100.10.11","username":"ul213456","password":"ul213456","nsPort":"205","cdKey":null,"notes":null,"priority":"1","staticForwardPlatform":"无","isUse":0,"createTime":1547532957000}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"firstPage":1,"lastPage":1},"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.PlatFormSelect@51cdd8a</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.PlatFormSelect@23faf8f2</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.PlatForm.PlatFormAdd()'><b>PlatFormAdd</b><br>Test class: com.bitnei.apitest.testcases.datasend.PlatForm<br>Test method: 数据转发平台配置新增数据<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.PlatForm@d44fc21</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.PlatForm@2d6eabae</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.PlatFormDel.PlatFormDelData()'><b>PlatFormDelData</b><br>Test class: com.bitnei.apitest.testcases.datasend.PlatFormDel<br>Test method: 数据转发平台配置删除数据<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.PlatFormDel@2d6eabae</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.PlatFormDel@64729b1e</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.PlatFormUpdate.PlatFormModify()'><b>PlatFormModify</b><br>Test class: com.bitnei.apitest.testcases.datasend.PlatFormUpdate<br>Test method: 数据转发平台配置修改数据<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.PlatFormUpdate@23faf8f2</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.PlatFormUpdate@4e7dc304</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.ProtocolAdd.ProtocolAddData()'><b>ProtocolAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.ProtocolAdd<br>Test method: 数据转发平台新增协议<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.ProtocolAdd@4e7dc304</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ProtocolAdd@10bbd20a</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.ProtocolDelete.ProtocolDeleteData()'><b>ProtocolDeleteData</b><br>Test class: com.bitnei.apitest.testcases.datasend.ProtocolDelete<br>Test method: 数据转发平台配置删除协议<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.ProtocolDelete@10bbd20a</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ProtocolDelete@6895a785</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.ProtocolUpdate.ProtocolUpdateData()'><b>ProtocolUpdateData</b><br>Test class: com.bitnei.apitest.testcases.datasend.ProtocolUpdate<br>Test method: 数据转发平台新增协议<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
-<td>3</td>
-<td>com.bitnei.apitest.testcases.datasend.ProtocolUpdate@64729b1e</td></tr>
+<td>2</td>
+<td>com.bitnei.apitest.testcases.datasend.ProtocolUpdate@48503868</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeAddData()'><b>SchemeAddData</b><br>Test class: com.bitnei.apitest.testcases.bidash.SchemeAdd<br>Test method: 配置后台新增方案<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.bidash.SchemeAdd@27a5f880</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeAddDataRep()'><b>SchemeAddDataRep</b><br>Test class: com.bitnei.apitest.testcases.bidash.SchemeAdd<br>Test method: 配置后台新增方案名称重复<br>Parameters: {"status":500,"errorMsg":"该方案名称已经存在！！！","data":null,"error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.bidash.SchemeAdd@27a5f880</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeDeleteData()'><b>SchemeDeleteData</b><br>Test class: com.bitnei.apitest.testcases.bidash.SchemeAdd<br>Test method: 配置后台删除方案<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.bidash.SchemeAdd@27a5f880</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData()'><b>TaskAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.TaskAdd@184f6be2</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddDataRep()'><b>TaskAddDataRep</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务时目标平台重复<br>Parameters: {"status":500,"errorMsg":"该平台已分配，不能重复添加","data":null,"error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.TaskAdd@184f6be2</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddDataRepTask()'><b>TaskAddDataRepTask</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务时目标任务名称重复<br>Parameters: {"status":500,"errorMsg":"任务名称已存在","data":null,"error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.TaskAdd@184f6be2</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.TaskDelete.TaskDeleteData()'><b>TaskDeleteData</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskDelete<br>Test method: 数据转发平台配置删除任务<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.TaskDelete@56aac163</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.EvDetail.getVehCountPerMonitorPlatformStatus()'><b>getVehCountPerMonitorPlatformStatus</b><br>Test class: com.bitnei.apitest.testcases.EvDetail<br>Test method: 明细数据查询<br>Parameters: {"status":200,"errorMsg":null,"data":{"data":[{"terminalTime":"2018-09-22 14:16:10","carStatus":"2","chargeStatus":"0","carMode":"1","speed":"0.0","totalOdometer":"32218.199219","totalVoltage":"0.0","totalCurrent":"0.0","soc":"0","dcStatus":"2","insulateResistance":"0"},{"terminaltime":"2018-09-22 14:16:00","carStatus":"2","chargeStatus":"0","carMode":"1","speed":"0.0","totalOdometer":"32218.199219","totalVoltage":"0.0","totalCurrent":"0.0","soc":"0","dcStatus":"2","insulateResistance":"0"}],"titles":["数据采集时间","车辆状态","充电状态","运行模式","车速(km/h)","里程(km)","总电压(V)","总电流(A)","SOC","DC-DC状态","绝缘电阻(kΩ)"],"page":{"pageSize":10,"pageNumber":1,"endIndex":2,"startIndex":0,"totalSize":2,"totalPage":1}},"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.EvDetail@7f13d6e</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.PostVehicles.postVehiclesForStatus()'><b>postVehiclesForStatus</b><br>Test class: com.bitnei.apitest.testcases.PostVehicles<br>Test method: 获取车辆列表,判断返回200<br>Parameters: {"status":200,"errorMsg":null,"data":{"total":2,"list":[{"id":"21","vin":"LS4AAB3C0GG700008"}]},"error":true}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.PostVehicles@71bbf57e</td></tr>
+<td>com.bitnei.apitest.testcases.EvDetail@d44fc21</td></tr>
 </table><p>
 </body>
 </html>

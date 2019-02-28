@@ -60,7 +60,7 @@ public class ForwardVehicleRemoveVehicle {
 		TaskVehiclePro taskvehiclepro = new TaskVehiclePro();
 		taskvehiclepro.setPlatformId("92f9c3e5-30d0-11e9-9869-90e2bae77ed8");
 		taskvehiclepro.setTaskId(23);
-		taskvehiclepro.setVehicleIds("LS5A2AJX5GA002716");//程序中移除的时候把vin当车牌号用？		
+		taskvehiclepro.setVehicleIds("LS4ASE2A1HJ121001");//程序中移除的时候把vin当车牌号用？		
 		String proJsonString = JSON.toJSONString(taskvehiclepro);
 		System.out.println("proJsonString------------"+proJsonString);
 		//调用接口

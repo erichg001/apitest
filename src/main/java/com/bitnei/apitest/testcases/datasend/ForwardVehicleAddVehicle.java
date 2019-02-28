@@ -64,7 +64,7 @@ public class ForwardVehicleAddVehicle {
 		TaskVehiclePro taskvehiclepro = new TaskVehiclePro();
 		taskvehiclepro.setPlatformId("92f9c3e5-30d0-11e9-9869-90e2bae77ed8");
 		taskvehiclepro.setTaskId(23);
-		taskvehiclepro.setVehicleIds("786457");
+		taskvehiclepro.setVehicleIds("458763");
 		
 		String proJsonString = JSON.toJSONString(taskvehiclepro);
 		System.out.println("proJsonString------------"+proJsonString);

@@ -40,7 +40,7 @@ public class ForwardVehicleQuery {
 	@Parameters({"host"})
 	@BeforeClass
 	public void setUp(String host) {
-		url = host + "/rest/dataForwardConfig/forwardVehicle/selectForwardVehicle?start=1&limit=10";
+		url = host + "/rest/dataForwardConfig/forwardVehicle/selectForwardVehicle?start=1&limit=10";		             
 		//设置cookie		
 		try {
 			 cookie = getCookie.login();
@@ -64,7 +64,8 @@ public class ForwardVehicleQuery {
 		headermap.put("Cookie",cookie );	
 		//入参设置
 		ForwardVehiclePro forwardvehiclepro = new ForwardVehiclePro();
-		forwardvehiclepro.setVin("LSCAB23E8JG117597");
+		forwardvehiclepro.setVin("LS4ASE2A1HJ121001");
+		forwardvehiclepro.setTenantName("chan_tenant_name");
 		
 		String proJsonString = JSON.toJSONString(forwardvehiclepro);
 		System.out.println("proJsonString------------"+proJsonString);		
@@ -82,7 +83,7 @@ public class ForwardVehicleQuery {
 		Assert.assertEquals(lastobject.toString(), "{}");
 	}
 	
-	@Test(description="数据转发平台查询车辆by车牌号",priority =1,dataProvider="dataprovider2",
+	@Test(description="数据转发平台查询车辆by车牌号",priority =1,dataProvider="dataprovider1",
 			dataProviderClass=ForwardVehicleProvider.class)
 	public void ForwardVehicleBylicense(String st) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
@@ -93,8 +94,8 @@ public class ForwardVehicleQuery {
 		headermap.put("Cookie",cookie );	
 		//入参设置
 		ForwardVehiclePro forwardvehiclepro = new ForwardVehiclePro();
-		forwardvehiclepro.setLicensePlate("QLR007");//入参为汉字时，会乱码，暂没有解决
-		
+		forwardvehiclepro.setLicensePlate("JHK979");//入参为汉字时，会乱码，暂没有解决
+		forwardvehiclepro.setTenantName("chan_tenant_name");
 		String proJsonString = JSON.toJSONString(forwardvehiclepro);
 		System.out.println("proJsonString------------"+proJsonString);
 		//调用接口

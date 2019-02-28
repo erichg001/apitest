@@ -11,7 +11,15 @@ public class ForwardVehiclePro extends Po{
 	private String platformId;
 	private String protocolId;
 	private String vendor;
+	private String tenantName;
+
 	
+	public String getTenantName() {
+		return tenantName;
+	}
+	public void setTenantName(String tenantName) {
+		this.tenantName = tenantName;
+	}
 	public String getVin() {
 		return vin;
 	}
