@@ -25,6 +25,7 @@
     <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle" />
     <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle" />
     <class name = "com.bitnei.apitest.testcases.bidash.SchemeAdd" />
+    
   </classes> 
   </test> <!-- Test -->
 </suite> <!-- Suite -->
