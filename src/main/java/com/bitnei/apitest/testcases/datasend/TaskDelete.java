@@ -66,7 +66,6 @@ public class TaskDelete {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring-mybatis.xml");
 		TaskDao taskdao = (TaskDao)context.getBean("taskdao");
 		List<TaskPro> list = taskdao.list(Method.where("name", C.EQ, "autotesttask"));
-		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
 		headermap.put("Cookie",cookie );	

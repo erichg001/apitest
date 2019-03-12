@@ -306,9 +306,21 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<artifactId>gson</artifactId> 
 			<version>2.2.2</version> 
 		</dependency> 
-
-       
-
+		
+		<dependency> 
+			<groupId>org.seleniumhq.selenium</groupId> 
+			<artifactId>selenium-java</artifactId> 
+			<version>3.4.0</version> 
+		</dependency> 
+		
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<!-- Google开发的基于java的类库集合的扩展项目  web自动化用到-->
+		<dependency>
+    		<groupId>com.google.guava</groupId>
+    		<artifactId>guava</artifactId>
+       		<version>21.0</version>
+		</dependency>
+			
         <!-- https://mvnrepository.com/artifact/log4j/log4j -->
         <dependency>
             <groupId>log4j</groupId>

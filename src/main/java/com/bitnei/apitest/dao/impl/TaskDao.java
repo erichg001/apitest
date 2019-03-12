@@ -18,4 +18,9 @@ public class TaskDao extends DaoImpl<TaskPro, Integer>{
  public boolean isExist(WherePrams where){
         return super.isExist(where);
     }	
+ 
+ public int addLocal(TaskPro pro){
+     return super.addLocal(pro);
+ }	
+ 
 }

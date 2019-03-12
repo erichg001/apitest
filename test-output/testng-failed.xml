@@ -7,18 +7,75 @@
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <test thread-count="5" name="APITEST(failed)" parallel="classes">
     <classes>
-      <class name="com.bitnei.apitest.testcases.PostVehicles">
+      <class name="com.bitnei.apitest.testcases.datasend.TaskAdd">
         <methods>
           <include name="setUp"/>
-          <include name="postVehiclesForStatus" invocation-numbers="0"/>
+          <include name="TaskAddDataRepTask" invocation-numbers="0"/>
+          <include name="TaskAddDataRep" invocation-numbers="0"/>
+          <include name="TaskAddData" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.PostVehicles -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.TaskAdd -->
+      <class name="com.bitnei.apitest.testcases.datasend.PlatFormDel">
+        <methods>
+          <include name="setUp"/>
+          <include name="PlatFormDelData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.PlatFormDel -->
+      <class name="com.bitnei.apitest.testcases.datasend.ProtocolDelete">
+        <methods>
+          <include name="setUp"/>
+          <include name="ProtocolDeleteData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolDelete -->
       <class name="com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform">
         <methods>
           <include name="getVehCountPerMonitorPlatformStatus" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform -->
+      <class name="com.bitnei.apitest.testcases.datasend.PlatFormSelect">
+        <methods>
+          <include name="setUp"/>
+          <include name="PlatFormAdd" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.PlatFormSelect -->
+      <class name="com.bitnei.apitest.testcases.datasend.TaskDelete">
+        <methods>
+          <include name="TaskDeleteData" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.TaskDelete -->
+      <class name="com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery">
+        <methods>
+          <include name="ForwardVehicleByVin" invocation-numbers="0"/>
+          <include name="ForwardVehicleBylicense" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ForwardVehicleQuery -->
+      <class name="com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles">
+        <methods>
+          <include name="ForwardVehicleSelect" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ForwardVehicleSelectVehicles -->
+      <class name="com.bitnei.apitest.testcases.bidash.SchemeAdd">
+        <methods>
+          <include name="SchemeDeleteData" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.bidash.SchemeAdd -->
+      <class name="com.bitnei.apitest.testcases.datasend.PlatFormUpdate">
+        <methods>
+          <include name="PlatFormModify" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.PlatFormUpdate -->
+      <class name="com.bitnei.apitest.testcases.datasend.ProtocolUpdate">
+        <methods>
+          <include name="setUp"/>
+          <include name="ProtocolUpdateData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolUpdate -->
     </classes>
   </test> <!-- APITEST(failed) -->
 </suite> <!-- Failed suite [apitest] -->
