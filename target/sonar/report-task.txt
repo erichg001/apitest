@@ -1,0 +1,6 @@
+projectKey=com.bitnei.data:apitest
+serverUrl=http://localhost:9000
+serverVersion=7.6.0.21501
+dashboardUrl=http://localhost:9000/dashboard?id=com.bitnei.data%3Aapitest
+ceTaskId=AWl2mNMwZQxxqhcnNa7v
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWl2mNMwZQxxqhcnNa7v

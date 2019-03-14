@@ -8,6 +8,7 @@
 	<!--thread-count 并发线程数  preserve-order classes按顺序执行   verbose 输出日志等级 -->
   <test parallel="classes" thread-count="1" name="APITEST" verbose="2" preserve-order="true">  
   <classes>
+  <!-- 
     <class name = "com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform" />
     <class name = "com.bitnei.apitest.testcases.PostVehicles" />
     <class name = "com.bitnei.apitest.testcases.EvDetail" />
@@ -25,6 +26,7 @@
     <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleAddVehicle" />
     <class name = "com.bitnei.apitest.testcases.datasend.ForwardVehicleRemoveVehicle" />
     <class name = "com.bitnei.apitest.testcases.bidash.SchemeAdd" />
+     -->
     <class name = "com.bitnei.apitest.webtestcases.saas.SaasLogin" />
     <class name = "com.bitnei.apitest.webtestcases.saas.UserManage" />
   </classes> 
