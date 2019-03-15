@@ -23,6 +23,7 @@ public class RestClient {
 			HttpGet httpget = new HttpGet(url);
 			//执行请求,相当于postman上点击发送按钮，然后赋值给HttpResponse对象接收
 			CloseableHttpResponse httpResponse = httpclient.execute(httpget);
+			httpclient.close();
 			return httpResponse;
 		}
 		//2. Get 请求方法（带请求头信息）

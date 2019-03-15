@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="18877" started-at="2019-03-13T03:08:48Z" finished-at="2019-03-13T03:09:07Z">
+  <suite name="apitest" duration-ms="18949" started-at="2019-03-15T08:00:43Z" finished-at="2019-03-15T08:01:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18877" started-at="2019-03-13T03:08:48Z" finished-at="2019-03-13T03:09:07Z">
+    <test name="Default test" duration-ms="18949" started-at="2019-03-15T08:00:43Z" finished-at="2019-03-15T08:01:02Z">
       <class name="com.bitnei.apitest.webtestcases.saas.UserManage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="setUp" is-config="true" duration-ms="4460" started-at="2019-03-13T03:08:48Z" finished-at="2019-03-13T03:08:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="setUp" is-config="true" duration-ms="4410" started-at="2019-03-15T08:00:43Z" finished-at="2019-03-15T08:00:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginToUser()[pri:0, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="LoginToUser" duration-ms="11703" started-at="2019-03-13T03:08:53Z" description="登录成功,跳转页面用户管理页面成功" finished-at="2019-03-13T03:09:04Z">
+        <test-method status="PASS" signature="LoginToUser()[pri:0, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="LoginToUser" duration-ms="11658" started-at="2019-03-15T08:00:48Z" description="登录成功,跳转页面用户管理页面成功" finished-at="2019-03-15T08:00:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToUser -->
-        <test-method status="PASS" signature="UserOpen()[pri:1, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="UserOpen" duration-ms="133" started-at="2019-03-13T03:09:04Z" description="登录成功,用户管理页面展示高级查询成功" finished-at="2019-03-13T03:09:05Z">
+        <test-method status="PASS" signature="UserOpen()[pri:1, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="UserOpen" duration-ms="133" started-at="2019-03-15T08:00:59Z" description="登录成功,用户管理页面展示高级查询成功" finished-at="2019-03-15T08:00:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserOpen -->
-        <test-method status="PASS" signature="UserQueryByEmail()[pri:2, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="UserQueryByEmail" duration-ms="390" started-at="2019-03-13T03:09:05Z" description="登录成功,用户管理页面按邮箱查询成功" finished-at="2019-03-13T03:09:05Z">
+        <test-method status="PASS" signature="UserQueryByEmail()[pri:2, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="UserQueryByEmail" duration-ms="429" started-at="2019-03-15T08:00:59Z" description="登录成功,用户管理页面按邮箱查询成功" finished-at="2019-03-15T08:01:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserQueryByEmail -->
-        <test-method status="PASS" signature="UserDetail()[pri:3, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="UserDetail" duration-ms="226" started-at="2019-03-13T03:09:05Z" description="登录成功,用户管理页面用户详情查看成功" finished-at="2019-03-13T03:09:05Z">
+        <test-method status="PASS" signature="UserDetail()[pri:3, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="UserDetail" duration-ms="200" started-at="2019-03-15T08:01:00Z" description="登录成功,用户管理页面用户详情查看成功" finished-at="2019-03-15T08:01:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserDetail -->
-        <test-method status="PASS" signature="GourpQuery()[pri:4, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="GourpQuery" duration-ms="188" started-at="2019-03-13T03:09:05Z" description="登录成功,分组管理查看" finished-at="2019-03-13T03:09:05Z">
+        <test-method status="PASS" signature="GourpQuery()[pri:4, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="GourpQuery" duration-ms="206" started-at="2019-03-15T08:01:00Z" description="登录成功,分组管理查看" finished-at="2019-03-15T08:01:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GourpQuery -->
-        <test-method status="PASS" signature="PermissionQuery()[pri:5, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="PermissionQuery" duration-ms="137" started-at="2019-03-13T03:09:05Z" description="登录成功,权限管理查看" finished-at="2019-03-13T03:09:06Z">
+        <test-method status="PASS" signature="PermissionQuery()[pri:5, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="PermissionQuery" duration-ms="164" started-at="2019-03-15T08:01:00Z" description="登录成功,权限管理查看" finished-at="2019-03-15T08:01:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PermissionQuery -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="afterTest" is-config="true" duration-ms="1595" started-at="2019-03-13T03:09:06Z" finished-at="2019-03-13T03:09:07Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.apitest.webtestcases.saas.UserManage@17baae6e]" name="afterTest" is-config="true" duration-ms="1718" started-at="2019-03-15T08:01:00Z" finished-at="2019-03-15T08:01:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

@@ -2,18 +2,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [apitest]">
   <parameter name="suite" value="suiteParameter"/>
+  <parameter name="hostopenapi" value="http://10.10.26.5:8082"/>
   <parameter name="host" value="http://bdp-app.bitnei.cn:7788"/>
   <parameter name="hostsaas" value="http://10.10.26.109:85"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
-  <test thread-count="5" name="Default test(failed)">
+  <test thread-count="5" name="APITEST(failed)" parallel="classes">
     <classes>
       <class name="com.bitnei.apitest.webtestcases.saas.UserManage">
         <methods>
+          <include name="GourpQuery"/>
           <include name="setUp"/>
           <include name="afterTest"/>
+          <include name="PermissionQuery"/>
+          <include name="UserDetail"/>
+          <include name="UserOpen"/>
           <include name="UserQueryByEmail"/>
+          <include name="LoginToUser"/>
         </methods>
       </class> <!-- com.bitnei.apitest.webtestcases.saas.UserManage -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- APITEST(failed) -->
 </suite> <!-- Failed suite [apitest] -->

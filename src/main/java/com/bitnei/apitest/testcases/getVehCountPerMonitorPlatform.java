@@ -54,9 +54,9 @@ public class getVehCountPerMonitorPlatform {
 		headermap.put("Content-Type", "application/x-www-form-urlencoded"); //这个在postman中可以查询到
 		headermap.put("Cookie",cookie );	
 		//入参设置
-		Vehicles vehiches = new Vehicles(10,"","",1,"","LS4AAB3C0GG700008");
-		String vehichesJsonString = JSON.toJSONString(vehiches);
-		System.out.println("vehichesJsonString------------"+vehichesJsonString);
+//		Vehicles vehiches = new Vehicles(10,"","",1,"","LS4AAB3C0GG700008");
+//		String vehichesJsonString = JSON.toJSONString(vehiches);
+//		System.out.println("vehichesJsonString------------"+vehichesJsonString);
 		//调用接口
 		//closeableHttpResponse = restClient.post(url, vehichesJsonString, headermap);
 		closeableHttpResponse = restClient.get(url, headermap);
