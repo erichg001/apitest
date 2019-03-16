@@ -40,7 +40,7 @@ public class ChargingData {
 		headermap.put("Content-Type", "application/json"); 
 		headermap.put("Authorization","Bearer "+authorization);
 		//入参设置             
-		urlpara= url+"?vin=L66CBC4E0J1GT0716&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21";
+		urlpara= url+"?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21";
 		//调用接口
 		System.out.println("url------------"+url);	
 		System.out.println("headermap------------"+headermap);
@@ -67,7 +67,7 @@ public class ChargingData {
 		headermap.put("Content-Type", "application/json"); 
 		headermap.put("Authorization","Bearer "+authorization);
 		//入参设置             
-		urlpara= url+"?vin=L66CBC4E0J1GT0716&from=&to=2019-03-01+10:49:21";
+		urlpara= url+"?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:21";
 		//调用接口
 		closeableHttpResponse = restClient.get(urlpara, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
@@ -91,7 +91,7 @@ public class ChargingData {
 		headermap.put("Content-Type", "application/json"); 
 		headermap.put("Authorization","Bearer "+authorization);
 		//入参设置             
-		urlpara= url+"?vin=L66CBC4E0J1GT0716&from=2019-03-01+10:49:21&to=";
+		urlpara= url+"?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=";
 		//调用接口
 		closeableHttpResponse = restClient.get(urlpara, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
@@ -114,7 +114,7 @@ public class ChargingData {
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Authorization","Bearer "+authorization);
 		//入参设置             
-		urlpara= url+"?vin=L66CBC4E0J1GT0716&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21";
+		urlpara= url+"?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21";
 		//调用接口
 		closeableHttpResponse = restClient.get(urlpara, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
@@ -136,7 +136,29 @@ public class ChargingData {
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Authorization","Bearer "+authorization);
 		//入参设置             
-		urlpara= url+"?vin=L66CBC4E0J1GT0716&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21";
+		urlpara= url+"?licensePlate=粤C00859D&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21";
+		//调用接口
+		closeableHttpResponse = restClient.get(urlpara, headermap);		
+		HttpEntity entity = closeableHttpResponse.getEntity();
+		String str = EntityUtils.toString(entity, "utf-8");
+		System.out.println("source==========="+str);
+		JSONObject lastobject = new JSONObject();
+		System.out.println("except =============="+st);
+		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(st));
+		JSONObject jsonDiff = new JSONObject();
+		Assert.assertEquals(lastobject.toString(), "{}");
+	}
+	
+	@Test(description="查询珠海车辆充电数据缺少车牌号参数",priority =0,dataProvider="dataprovider14",
+			dataProviderClass=ZhuHaiProvider.class)
+	public void ChargingDataNo(String st) throws ClientProtocolException, IOException {
+		restClient = new RestClient();
+		DiffMethod diffMethod = new DiffMethod();
+		//准备请求头信息
+		HashMap<String,String> headermap = new HashMap<String,String>();
+		headermap.put("Authorization","Bearer "+authorization);
+		//入参设置             
+		urlpara= url+"?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21";
 		//调用接口
 		closeableHttpResponse = restClient.get(urlpara, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();

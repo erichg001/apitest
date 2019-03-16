@@ -29,7 +29,6 @@ public class UserInfoQuery {
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
 	GetCookieSaaS getCookisaas = new GetCookieSaaS();
-	//String cookie = "";
 	String authorization = "";
 	
 	@Resource(name="platformdao") 
@@ -42,7 +41,6 @@ public class UserInfoQuery {
 		//设置cookie		
 		try {
 			 authorization = getCookisaas.login(hostsaas);
-			// cookie = getCookisaas.statistics(hostsaas);
 		} catch (ClientProtocolException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -60,23 +58,15 @@ public class UserInfoQuery {
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		//headermap.put("Cookie","OAUTH2SESSION="+cookie );
 		headermap.put("Authorization","Bearer "+authorization);
 		//入参设置
 		UserPro userpro = new UserPro();
-		userpro.setNickName("xiejunjun");
-		userpro.setEmail("");
-		userpro.setMobile("");
-		userpro.setOrigin("");
-		userpro.setStatus("");
-		userpro.setUserRole("");
-		
+		userpro.setNickName("xiejunjun");	
 		String proJsonString = JSON.toJSONString(userpro);
 		System.out.println("proJsonString------------"+proJsonString);
 		//调用接口
 		System.out.println("url------------"+url);	
-		closeableHttpResponse = restClient.post(url, proJsonString, headermap);
-		//System.out.println("closeableHttpResponse------------"+closeableHttpResponse);		
+		closeableHttpResponse = restClient.post(url, proJsonString, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
 		System.out.println("source==========="+str);

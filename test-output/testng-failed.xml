@@ -6,20 +6,25 @@
   <parameter name="host" value="http://bdp-app.bitnei.cn:7788"/>
   <parameter name="hostsaas" value="http://10.10.26.109:85"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
-  <test thread-count="5" name="APITEST(failed)" parallel="classes">
+  <test thread-count="5" name="SAASTEST(failed)" parallel="classes">
     <classes>
-      <class name="com.bitnei.apitest.webtestcases.saas.UserManage">
+      <class name="com.bitnei.apitest.testcases.bidash.SchemeAdd">
         <methods>
-          <include name="GourpQuery"/>
+          <include name="SchemeDeleteData" invocation-numbers="0"/>
+          <include name="SchemeAddData" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="afterTest"/>
-          <include name="PermissionQuery"/>
-          <include name="UserDetail"/>
-          <include name="UserOpen"/>
-          <include name="UserQueryByEmail"/>
-          <include name="LoginToUser"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.webtestcases.saas.UserManage -->
+      </class> <!-- com.bitnei.apitest.testcases.bidash.SchemeAdd -->
     </classes>
-  </test> <!-- APITEST(failed) -->
+  </test> <!-- SAASTEST(failed) -->
+  <test thread-count="5" name="MONITER(failed)" parallel="classes">
+    <classes>
+      <class name="com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform">
+        <methods>
+          <include name="getVehCountPerMonitorPlatformStatus" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform -->
+    </classes>
+  </test> <!-- MONITER(failed) -->
 </suite> <!-- Failed suite [apitest] -->

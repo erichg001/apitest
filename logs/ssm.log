@@ -3888,3 +3888,5 @@ Caused by: org.springframework.beans.NotWritablePropertyException: Invalid prope
 [INFO] [2019-03-13 18:23:52][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
 [INFO] [2019-03-13 18:23:52][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@117795fa: startup date [Wed Mar 13 18:23:52 CST 2019]; root of context hierarchy
 [INFO] [2019-03-13 18:23:52][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[INFO] [2019-03-16 11:22:27][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@652241a0: startup date [Sat Mar 16 11:22:27 CST 2019]; root of context hierarchy
+[INFO] [2019-03-16 11:22:27][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]

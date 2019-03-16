@@ -39,7 +39,7 @@ public class RunningData {
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Authorization","Bearer "+authorization);
 		//入参设置             
-		urlpara= url+"?vin=L66CBC4E0J1GT0716&from=2019-03-01+12:00:00&to=2019-03-01+13:30:00";
+		urlpara= url+"?licensePlate=粤C00859D&from=2019-03-01+12:00:00&to=2019-03-01+13:30:00";
 		//调用接口
 		System.out.println("url------------"+url);	
 		System.out.println("headermap------------"+headermap);
@@ -65,7 +65,7 @@ public class RunningData {
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Authorization","Bearer "+authorization);
 		//入参设置             
-		urlpara= url+"?vin=L66CBC4E0J1GT0716&from=2019-03-01+12:00:00&to=2019-03-03+13:30:00";
+		urlpara= url+"?licensePlate=粤C00859D&from=2019-03-01+12:00:00&to=2019-03-03+13:30:00";
 		//调用接口
 		closeableHttpResponse = restClient.get(urlpara, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
@@ -78,6 +78,53 @@ public class RunningData {
 		JSONObject jsonDiff = new JSONObject();
 		Assert.assertEquals(lastobject.toString(), "{}");
 	}
+	
+	@Test(description="车辆行驶数数据查询车牌号为空",priority =0,dataProvider="dataprovider12",
+			dataProviderClass=ZhuHaiProvider.class)
+	public void EnergyConservationNolicensePlate(String st) throws ClientProtocolException, IOException {
+		restClient = new RestClient();
+		DiffMethod diffMethod = new DiffMethod();
+		//准备请求头信息
+		HashMap<String,String> headermap = new HashMap<String,String>();
+		headermap.put("Authorization","Bearer "+authorization);
+		//入参设置             
+		urlpara= url+"?licensePlate=&from=2019-03-01+12:00:00&to=2019-03-03+13:30:00";
+		//调用接口
+		closeableHttpResponse = restClient.get(urlpara, headermap);		
+		HttpEntity entity = closeableHttpResponse.getEntity();
+		String str = EntityUtils.toString(entity, "utf-8");
+		System.out.println("source==========="+str);
+		JSONObject lastobject = new JSONObject();
+		System.out.println("except =============="+st);
+		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(st));
+		System.out.println(lastobject.toString());
+		JSONObject jsonDiff = new JSONObject();
+		Assert.assertEquals(lastobject.toString(), "{}");
+	}
+	
+	@Test(description="车辆行驶数数据查询token无效",priority =0,dataProvider="dataprovider13",
+			dataProviderClass=ZhuHaiProvider.class)
+	public void EnergyConservationInvalidtoken(String st) throws ClientProtocolException, IOException {
+		restClient = new RestClient();
+		DiffMethod diffMethod = new DiffMethod();
+		//准备请求头信息
+		HashMap<String,String> headermap = new HashMap<String,String>();
+		headermap.put("Authorization","Bearer "+"f829155c-9374-4673-a005-10ce548af1");
+		//入参设置             
+		urlpara= url+"?licensePlate=&from=2019-03-01+12:00:00&to=2019-03-03+13:30:00";
+		//调用接口
+		closeableHttpResponse = restClient.get(urlpara, headermap);		
+		HttpEntity entity = closeableHttpResponse.getEntity();
+		String str = EntityUtils.toString(entity, "utf-8");
+		System.out.println("source==========="+str);
+		JSONObject lastobject = new JSONObject();
+		System.out.println("except =============="+st);
+		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(st));
+		System.out.println(lastobject.toString());
+		JSONObject jsonDiff = new JSONObject();
+		Assert.assertEquals(lastobject.toString(), "{}");
+	}
+
 
 }
 

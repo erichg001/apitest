@@ -103,7 +103,7 @@ public class EnergyConservation {
 		Assert.assertEquals(lastobject.toString(), "{}");
 	}
 	
-	@Test(description="碳排放接口开始间大于结束时间",priority =0,dataProvider="dataprovider9",
+	@Test(description="碳排放接口开始时间不符合规则",priority =0,dataProvider="dataprovider9",
 			dataProviderClass=ZhuHaiProvider.class)
 	public void EnergyConservationWrongDateFormat(String st) throws ClientProtocolException, IOException {
 		restClient = new RestClient();

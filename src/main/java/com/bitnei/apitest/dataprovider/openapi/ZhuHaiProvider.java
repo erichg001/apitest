@@ -79,5 +79,25 @@ public class ZhuHaiProvider {
         	{"{\"status\":400,\"errorMsg\":\"VALID\",\"data\":\"参数 from 2019.05.10 不符合规则：yyyy-MM-dd\",\"error\":true}"}
         };
     }
+	
+	@DataProvider(name="dataprovider12")  
+    public static Object[][] dataProvider12(){  
+        return new Object[][]{  
+        	{"{\"status\":400,\"errorMsg\":\"VALID\",\"data\":\"参数 licensePlate  不能为空\",\"error\":true}"}
+        };
+    }
 
+	@DataProvider(name="dataprovider13")  
+    public static Object[][] dataProvider13(){  
+        return new Object[][]{  
+        	{"{\"status\":401,\"errorMsg\":\"invalid_token: f829155c-9374-4673-a005-10ce548af1=>/external/1/zhuhai/api/runningData\",\"data\":null,\"error\":true}"}
+        };
+    }
+	
+	@DataProvider(name="dataprovider14")  
+    public static Object[][] dataProvider14(){  
+        return new Object[][]{  
+        	{"{\"status\":400,\"errorMsg\":\"VALID\",\"data\":\"Required String parameter 'licensePlate' is not present\",\"error\":true}"}
+        };
+    }
 }
