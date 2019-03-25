@@ -2,29 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [apitest]">
   <parameter name="suite" value="suiteParameter"/>
-  <parameter name="hostopenapi" value="http://10.10.26.5:8082"/>
+  <parameter name="hostopenapi" value="http://61.149.8.78:83"/>
   <parameter name="host" value="http://bdp-app.bitnei.cn:7788"/>
-  <parameter name="hostsaas" value="http://10.10.26.109:85"/>
+  <parameter name="hostsaas" value="http://61.149.8.78:85"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
-  <test thread-count="5" name="SAASTEST(failed)" parallel="classes">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.bitnei.apitest.testcases.bidash.SchemeAdd">
         <methods>
           <include name="SchemeDeleteData" invocation-numbers="0"/>
-          <include name="SchemeAddData" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.bitnei.apitest.testcases.bidash.SchemeAdd -->
     </classes>
-  </test> <!-- SAASTEST(failed) -->
-  <test thread-count="5" name="MONITER(failed)" parallel="classes">
-    <classes>
-      <class name="com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform">
-        <methods>
-          <include name="getVehCountPerMonitorPlatformStatus" invocation-numbers="0"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform -->
-    </classes>
-  </test> <!-- MONITER(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

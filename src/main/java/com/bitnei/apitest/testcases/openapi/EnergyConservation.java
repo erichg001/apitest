@@ -23,12 +23,22 @@ public class EnergyConservation {
 	String urlpara = "";
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	String authorization = "f829155c-9374-4673-a005-10ce548af19e";
+	String authorization = "";
+	OauthToken oauthtoken = new OauthToken();
 	
 	@Parameters({"hostopenapi"})
 	@BeforeClass
 	public void setUp(String hostopenapi) {
 		url = hostopenapi + "/external/1/zhuhai/api/energyConservation";	
+		try {
+			authorization = oauthtoken.GetOauthToken(hostopenapi);
+		} catch (ClientProtocolException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	@Test(description="碳排放接口查询正常",priority =0,dataProvider="dataprovider6",
 			dataProviderClass=ZhuHaiProvider.class)
@@ -41,18 +51,11 @@ public class EnergyConservation {
 		//入参设置             
 		urlpara= url+"?from=2019-02-10&to=2019-03-13";
 		//调用接口
-		System.out.println("url------------"+url);	
-		System.out.println("headermap------------"+headermap);
-		closeableHttpResponse = restClient.get(urlpara, headermap);
-		//System.out.println("closeableHttpResponse------------"+closeableHttpResponse);		
+		closeableHttpResponse = restClient.get(urlpara, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
-		System.out.println("source==========="+str);
 		JSONObject lastobject = new JSONObject();
-		System.out.println("except =============="+st);
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(st));
-		System.out.println(lastobject.toString());
-		JSONObject jsonDiff = new JSONObject();
 		Assert.assertEquals(lastobject.toString(), "{}");
 	}
 
@@ -63,7 +66,6 @@ public class EnergyConservation {
 		DiffMethod diffMethod = new DiffMethod();
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
-		headermap.put("Content-Type", "application/json"); 
 		headermap.put("Authorization","Bearer "+authorization);
 		//入参设置             
 		urlpara= url+"?from=2019-01-10&to=2019-04-13";
@@ -71,12 +73,8 @@ public class EnergyConservation {
 		closeableHttpResponse = restClient.get(urlpara, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
-		System.out.println("source==========="+str);
 		JSONObject lastobject = new JSONObject();
-		System.out.println("except =============="+st);
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(st));
-		System.out.println(lastobject.toString());
-		JSONObject jsonDiff = new JSONObject();
 		Assert.assertEquals(lastobject.toString(), "{}");
 	}
 
@@ -94,12 +92,8 @@ public class EnergyConservation {
 		closeableHttpResponse = restClient.get(urlpara, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
-		System.out.println("source==========="+str);
 		JSONObject lastobject = new JSONObject();
-		System.out.println("except =============="+st);
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(st));
-		System.out.println(lastobject.toString());
-		JSONObject jsonDiff = new JSONObject();
 		Assert.assertEquals(lastobject.toString(), "{}");
 	}
 	
@@ -117,12 +111,8 @@ public class EnergyConservation {
 		closeableHttpResponse = restClient.get(urlpara, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
-		System.out.println("source==========="+str);
 		JSONObject lastobject = new JSONObject();
-		System.out.println("except =============="+st);
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(st));
-		System.out.println(lastobject.toString());
-		JSONObject jsonDiff = new JSONObject();
 		Assert.assertEquals(lastobject.toString(), "{}");
 	}
 	

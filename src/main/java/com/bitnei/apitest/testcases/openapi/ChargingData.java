@@ -23,12 +23,22 @@ public class ChargingData {
 	String urlpara = "";
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	String authorization = "f829155c-9374-4673-a005-10ce548af19e";
+	String authorization = "";
+	OauthToken oauthtoken = new OauthToken();
 	
 	@Parameters({"hostopenapi"})
 	@BeforeClass
-	public void setUp(String hostopenapi) {
+	public void setUp(String hostopenapi)  {
 		url = hostopenapi + "/external/1/zhuhai/api/chargingData";	
+		try {
+			authorization = oauthtoken.GetOauthToken(hostopenapi);
+		} catch (ClientProtocolException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	@Test(description="查询珠海车辆充电数据正常",priority =0,dataProvider="dataprovider1",
 			dataProviderClass=ZhuHaiProvider.class)
