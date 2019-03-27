@@ -8,7 +8,7 @@
   <parameter name="pathroad" value="D:\\TEST.xlsx" />
   <parameter name="suite" value="suiteParameter" />
 	<!--thread-count 并发线程数  preserve-order classes按顺序执行   verbose 输出日志等级 -->
- 
+<!-- 
   <test parallel="classes" thread-count="1" name="SAASTEST" verbose="2" preserve-order="true"> 
   <classes>
     <class name = "com.bitnei.apitest.testcases.bidash.SchemeAdd" />
@@ -16,12 +16,13 @@
     <class name = "com.bitnei.apitest.webtestcases.saas.UserManage" />
   </classes> 
   </test> 
-
+ --> 
   <test parallel="classes" thread-count="1" name="OPENAPI" verbose="2" >
     <classes>
     	<class name = "com.bitnei.apitest.testcases.openapi.ChargingData" />
     	<class name = "com.bitnei.apitest.testcases.openapi.EnergyConservation" />
     	<class name = "com.bitnei.apitest.testcases.openapi.RunningData" />
+    	<class name = "com.bitnei.apitest.testcases.openapi.ChargingDataTest" />
     </classes> 
   </test> 
    

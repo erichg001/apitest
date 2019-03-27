@@ -173,7 +173,7 @@ public class ExcelReader {
 
             if (row != null) {
                 for (int j = 0; j < row.getLastCellNum(); j++) {
-                    //   System.out.println("第 "+i+" 行--- row.getLastCellNum()===="+row.getLastCellNum());
+                       //System.out.println("第 "+i+" 行--- row.getLastCellNum()===="+row.getLastCellNum());
                     Cell cell = row.getCell(j);
                     if (i == 0) {
                         o1[j] = this.getCellValue(cell);
@@ -211,21 +211,21 @@ public class ExcelReader {
         //System.out.println("results.length==" + results.length);
         return results;
     }
-    @Test(description="test")
-    public void main(){
-    	
-        Object[][] obj1;
-        ExcelReader eh = new ExcelReader("C:\\TEST.xlsx", "Sheet1");
-        Object[][] sheetData2 = eh.getSheetDataByPD();
-        //System.out.println(sheetData2.length + "------------");
-        for (int i = 1; i < sheetData2.length; i++) {
-            for (int j = 0; j < sheetData2[i].length; j++) {
-                System.out.print(sheetData2[i][j] + " | ");
-            }
-            System.out.println();
-        
-    	}
-
-    }
+//    @Test(description="test")
+//    public void main(){
+//    	
+//        Object[][] obj1;
+//        ExcelReader eh = new ExcelReader("C:\\TEST.xlsx", "Sheet1");
+//        Object[][] sheetData2 = eh.getSheetDataByPD();
+//        //System.out.println(sheetData2.length + "------------");
+//        for (int i = 1; i < sheetData2.length; i++) {
+//            for (int j = 0; j < sheetData2[i].length; j++) {
+//                System.out.print(sheetData2[i][j] + " | ");
+//            }
+//            System.out.println();
+//        
+//    	}
+//
+//    }
 
 }

@@ -9,12 +9,12 @@
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel">
+      <class name="com.bitnei.apitest.testcases.openapi.ChargingDataTest">
         <methods>
           <include name="setUp"/>
-          <include name="UserInfoQueryData"/>
+          <include name="ChargingDataNormal"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingDataTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

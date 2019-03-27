@@ -55,8 +55,8 @@ public class ChargingDataTest {
         }
 	}
 	
-	@Test(description="查询珠海车辆充电数据正常",priority =0,dataProvider="dp")
-	public void ChargingDataNormal(String url,String paras,String result) throws ClientProtocolException, IOException {
+	@Test(description="查询珠海车辆充电数据",priority =0,dataProvider="dp")
+	public void ChargingDataNormal(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
 		//准备请求头信息
