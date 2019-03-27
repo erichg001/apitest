@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SAASTEST</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 25 17:21:07 CST 2019</td>
+<td>Started on:</td><td>Tue Mar 26 13:44:43 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>77 seconds (77116 ms)</td>
+<tr><td>Total time:</td><td>84 seconds (84990 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,190 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeAddData()'><b>SchemeAddData</b><br>Test class: com.bitnei.apitest.testcases.bidash.SchemeAdd<br>Test method: 配置后台新增方案<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:500,&quot;expectedValue is&quot;:200},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeAddData(SchemeAdd.java:91)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1074951831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1074951831'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:500,&quot;expectedValue is&quot;:200},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeAddData(SchemeAdd.java:91)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.bidash.SchemeAdd@77a57272</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeDeleteData()'><b>SchemeDeleteData</b><br>Test class: com.bitnei.apitest.testcases.bidash.SchemeAdd<br>Test method: 配置后台删除方案<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
-<td><div><pre>org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [spring-mybatis.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:412)
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
-	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
-	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
-	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
-	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:539)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
-	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
-	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
-	at com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeDeleteData(SchemeAdd.java:131)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
-	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
-	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
-	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
-	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
-	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
-	... 27 more
-Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	... 51 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace2114638709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2114638709'><pre>org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [spring-mybatis.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:412)
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
-	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
-	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
-	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
-	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:539)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
-	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
-	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
-	at com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeDeleteData(SchemeAdd.java:131)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
-	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
-	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
-	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
-	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
-	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
-	... 27 more
-Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.bidash.SchemeAdd@77a57272</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -266,12 +82,12 @@ Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
 <tr>
 <td title='com.bitnei.apitest.webtestcases.saas.SaasLogin.Login()'><b>Login</b><br>Test class: com.bitnei.apitest.webtestcases.saas.SaasLogin<br>Test method: 点击登录按钮跳转正确</td>
 <td></td>
-<td>10</td>
+<td>5</td>
 <td>com.bitnei.apitest.webtestcases.saas.SaasLogin@7181ae3f</td></tr>
 <tr>
 <td title='com.bitnei.apitest.webtestcases.saas.SaasLogin.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.apitest.webtestcases.saas.SaasLogin<br>Test method: 登录失败,用户名密码错误</td>
 <td></td>
-<td>7</td>
+<td>4</td>
 <td>com.bitnei.apitest.webtestcases.saas.SaasLogin@7181ae3f</td></tr>
 <tr>
 <td title='com.bitnei.apitest.webtestcases.saas.SaasLogin.LoginNoName()'><b>LoginNoName</b><br>Test class: com.bitnei.apitest.webtestcases.saas.SaasLogin<br>Test method: 登录失败,请输入用户名</td>
@@ -281,17 +97,17 @@ Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
 <tr>
 <td title='com.bitnei.apitest.webtestcases.saas.SaasLogin.LoginNoPassWord()'><b>LoginNoPassWord</b><br>Test class: com.bitnei.apitest.webtestcases.saas.SaasLogin<br>Test method: 登录失败,请输入密码</td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>com.bitnei.apitest.webtestcases.saas.SaasLogin@7181ae3f</td></tr>
 <tr>
 <td title='com.bitnei.apitest.webtestcases.saas.SaasLogin.LoginSucsess()'><b>LoginSucsess</b><br>Test class: com.bitnei.apitest.webtestcases.saas.SaasLogin<br>Test method: 登录成功</td>
 <td></td>
-<td>9</td>
+<td>11</td>
 <td>com.bitnei.apitest.webtestcases.saas.SaasLogin@7181ae3f</td></tr>
 <tr>
 <td title='com.bitnei.apitest.webtestcases.saas.UserManage.LoginToUser()'><b>LoginToUser</b><br>Test class: com.bitnei.apitest.webtestcases.saas.UserManage<br>Test method: 登录成功,跳转页面用户管理页面成功</td>
 <td></td>
-<td>10</td>
+<td>12</td>
 <td>com.bitnei.apitest.webtestcases.saas.UserManage@46238e3f</td></tr>
 <tr>
 <td title='com.bitnei.apitest.webtestcases.saas.UserManage.PermissionQuery()'><b>PermissionQuery</b><br>Test class: com.bitnei.apitest.webtestcases.saas.UserManage<br>Test method: 登录成功,权限管理查看</td>
@@ -299,9 +115,19 @@ Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
 <td>0</td>
 <td>com.bitnei.apitest.webtestcases.saas.UserManage@46238e3f</td></tr>
 <tr>
+<td title='com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeAddData()'><b>SchemeAddData</b><br>Test class: com.bitnei.apitest.testcases.bidash.SchemeAdd<br>Test method: 配置后台新增方案<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.bidash.SchemeAdd@77a57272</td></tr>
+<tr>
 <td title='com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeAddDataRep()'><b>SchemeAddDataRep</b><br>Test class: com.bitnei.apitest.testcases.bidash.SchemeAdd<br>Test method: 配置后台新增方案名称重复<br>Parameters: {"status":500,"errorMsg":"该方案名称已经存在！！！","data":null,"error":true}</td>
 <td></td>
 <td>0</td>
+<td>com.bitnei.apitest.testcases.bidash.SchemeAdd@77a57272</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.bidash.SchemeAdd.SchemeDeleteData()'><b>SchemeDeleteData</b><br>Test class: com.bitnei.apitest.testcases.bidash.SchemeAdd<br>Test method: 配置后台删除方案<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>5</td>
 <td>com.bitnei.apitest.testcases.bidash.SchemeAdd@77a57272</td></tr>
 <tr>
 <td title='com.bitnei.apitest.webtestcases.saas.UserManage.UserDetail()'><b>UserDetail</b><br>Test class: com.bitnei.apitest.webtestcases.saas.UserManage<br>Test method: 登录成功,用户管理页面用户详情查看成功</td>
