@@ -39,6 +39,7 @@ public class ChargingData {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println(authorization);
 	}
 	@Test(description="查询珠海车辆充电数据正常",priority =0,dataProvider="dataprovider1",
 			dataProviderClass=ZhuHaiProvider.class)

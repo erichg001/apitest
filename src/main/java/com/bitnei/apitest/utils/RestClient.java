@@ -61,7 +61,7 @@ public class RestClient {
 			//创建一个HttpPost的请求对象
 			HttpPost httppost = new HttpPost(url);
 			//设置payload
-			httppost.setEntity(new StringEntity(entityString));
+			httppost.setEntity(new StringEntity(entityString,"utf-8"));
 
 			//加载请求头到httppost对象
 			for(Map.Entry<String, String> entry : headermap.entrySet()) {

@@ -1,11 +1,18 @@
 package com.bitnei.apitest.utils;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.apache.poi.ss.usermodel.*;
 import org.testng.annotations.Test;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -33,8 +40,16 @@ public class ExcelReader {
         FileInputStream inStream = null;
         try {
             inStream = new FileInputStream(new File(filePath));
+//            BufferedInputStream in = new BufferedInputStream(new FileInputStream(new File(filePath)));
+//            BufferedReader br= new BufferedReader(new InputStreamReader(inStream,"GBK"));
+//            POIFSFileSystem fs = new POIFSFileSystem(in);   
             workBook = WorkbookFactory.create(inStream);
+        	//WorkbookSettings workbookSettings = new WorkbookSettings();
+           // workbookSettings.setEncoding("ISO-8859-1");
+            //workBook = Workbook.getWorkbook(new File(filePath));
             sheet = workBook.getSheet(sheetName);
+            //HSSFWorkbook wb = new HSSFWorkbook(new FileInputStream(filePath));
+            //HSSFSheet sheet = wb.getSheetAt(0);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

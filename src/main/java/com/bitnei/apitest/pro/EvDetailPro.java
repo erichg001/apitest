@@ -49,8 +49,10 @@ public class EvDetailPro {
 
 
 	public void setPeriods(String periods) {
-		if(periods != "") {
-		JSONObject jsonperiods = JSONObject.fromObject(periods);  
+		if(periods == "") {
+		
+		}else{
+			JSONObject jsonperiods = JSONObject.fromObject(periods);  		
 		this.periods = jsonperiods;
 		}
 	}

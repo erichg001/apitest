@@ -40,19 +40,12 @@ public class ChargingDataTest {
 		try {
 			authorization = oauthtoken.GetOauthToken(hostopenapi);
 		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
         ex = new ExcelReader(ExcelFilePath, sheetName);
-        try {
-            excleUtil.setExcleFile( ExcelFilePath,sheetName);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
 	}
 	
 	@Test(description="查询珠海车辆充电数据",priority =0,dataProvider="dp")
@@ -69,6 +62,7 @@ public class ChargingDataTest {
 		closeableHttpResponse = restClient.get(urlpara, headermap);	
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
+		System.out.println("source==========="+str);
 		JSONObject lastobject = new JSONObject();
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(result));
 		Assert.assertEquals(lastobject.toString(), "{}");		

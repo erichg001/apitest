@@ -35,6 +35,7 @@ public class SaasLogin {
 	    waitVar = new WebDriverWait(driver, delay);  
 	    driver.manage().window().maximize();
 	}
+	
 	@AfterMethod
 	public void afterTest() {
 	     //关闭并退出浏览器  
@@ -95,7 +96,6 @@ public class SaasLogin {
 	    Thread.sleep(1000);
 	    driver.findElement(By.xpath("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[4]/button")).click();
 	    waitVar.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app/changan-layout/div/header/nav/div[1]/a[2]")));
-	    System.out.println(driver.getTitle());
 	    assertTrue(driver.getTitle().equals("智能网联汽车大数据云平台"));
 	}
 

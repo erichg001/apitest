@@ -274,14 +274,14 @@ public class DaoImpl<T extends Po, PK extends Serializable> implements Dao<T, PK
 		Field f = sqlUtil.getField(this.entityClass, fileName);
 		if (null == f) {
 			logger.error("查询字段失败(无法找到" + this.entityClass + "中的" + fileName + "字段)");
-		}
+		}else {
 		FieldName annotation = f.getAnnotation(FieldName.class);
 		if (null == annotation) {
 			tabField = sqlUtil.toTableString(fileName) + " as " + fileName;
 		}else{
 			tabField = annotation.name() + " as " + fileName;
 		}
-		
+		}
 		String sql = "select ";
 		sql += tabField + " from " + tableName + " where id='" + id + "';";
 		Map<String, Object> resultMap = sqlSessionTemplateASS.selectOne(
@@ -317,14 +317,14 @@ public class DaoImpl<T extends Po, PK extends Serializable> implements Dao<T, PK
 		Field f = sqlUtil.getField(this.entityClass, fileName);
 		if (null == f) {
 			logger.error("查询字段失败(无法找到" + this.entityClass + "中的" + fileName + "字段)");
-		}
+		}else {
 		FieldName annotation = f.getAnnotation(FieldName.class);
 		if (null == annotation) {
 			tabField = sqlUtil.toTableString(fileName) + " as " + fileName;
 		}else{
 			tabField = annotation.name() + " as " + fileName;
 		}
-		
+		}
 		String sql = "select ";
 		sql += tabField + " from " + tableName + where.getWherePrams() + ";";
 		Map<String, Object> resultMap = sqlSessionTemplateASS.selectOne(
@@ -368,14 +368,14 @@ public class DaoImpl<T extends Po, PK extends Serializable> implements Dao<T, PK
 		Field f = sqlUtil.getField(this.entityClass, fileName);
 		if (null == f) {
 			logger.error("查询指定字段集失败(无法序列化" + this.entityClass + "中的" + fileName + "字段)");
-		}
+		}else {
 		FieldName annotation = f.getAnnotation(FieldName.class);
 		if (null == annotation) {
 			tabField = sqlUtil.toTableString(fileName) + " as " + fileName;
 		}else{
 			tabField = annotation.name() + " as " + fileName;
 		}
-		
+		}
 		String sql = "select ";
 		sql += tabField + " from " + tableName + where.getWherePrams() + ";";
 		List<Map<String, Object>> resultMap = sqlSessionTemplateASS.selectList("selectListField", sql);
@@ -400,7 +400,7 @@ public class DaoImpl<T extends Po, PK extends Serializable> implements Dao<T, PK
 			Field f = sqlUtil.getField(this.entityClass, field);
 			if (null == f) {
 				logger.error("查询指定字段集失败(无法序列化" + this.entityClass + "中的" + field + "字段)");
-			}
+			}else {
 			FieldName annotation = f.getAnnotation(FieldName.class);
 			if (null == annotation) {
 				tabField += sqlUtil.toTableString(field) + " as " + field;
@@ -413,7 +413,7 @@ public class DaoImpl<T extends Po, PK extends Serializable> implements Dao<T, PK
 			
 			index ++;
 		}
-		
+		}
 		String sql = "select ";
 		sql += tabField + " from " + tableName + where.getWherePrams() + ";";
 		List<Map<String, Serializable>> resultMap = sqlSessionTemplateASS.selectList("selectListField", sql);

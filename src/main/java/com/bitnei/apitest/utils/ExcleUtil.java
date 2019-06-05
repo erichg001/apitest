@@ -15,6 +15,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+//写入Excel方法
 public class ExcleUtil {
     private static XSSFSheet ExcelWSheet;
     private static XSSFWorkbook ExcelWBook;

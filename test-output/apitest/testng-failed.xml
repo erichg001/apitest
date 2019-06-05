@@ -5,6 +5,7 @@
   <parameter name="hostopenapi" value="http://61.149.8.78:83"/>
   <parameter name="pathroad" value="D:\\TEST.xlsx"/>
   <parameter name="host" value="http://bdp-app.bitnei.cn:7788"/>
+  <parameter name="pathsaasuser" value="D:\\DATA.xlsx"/>
   <parameter name="hostsaas" value="http://61.149.8.78:85"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <test thread-count="5" name="Default test(failed)">

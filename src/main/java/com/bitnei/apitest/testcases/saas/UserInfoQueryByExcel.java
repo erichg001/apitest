@@ -36,6 +36,7 @@ public class UserInfoQueryByExcel {
 		host = hostsaas;	
 		String ExcelFilePath= pathroad ;
         String sheetName="Sheet1";
+        ex = new ExcelReader(ExcelFilePath, sheetName);
 		//设置cookie		
 		try {
 			 authorization = getCookisaas.login(hostsaas);
@@ -46,19 +47,14 @@ public class UserInfoQueryByExcel {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	
-		
-        ex = new ExcelReader(ExcelFilePath, sheetName);
-        try {
-            excleUtil.setExcleFile( ExcelFilePath,sheetName);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+		       
 	}
 	
 	@Test(description="saas平台用户查询",priority =0,dataProvider="dp")
-	public void UserInfoQueryData(String url,String paras,String result) throws ClientProtocolException, IOException {
+	public void UserInfoQueryData(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
+		//DiffMethodByExcept diffMethod = new DiffMethodByExcept();
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
@@ -66,9 +62,12 @@ public class UserInfoQueryByExcel {
 		//入参设置
 		url= host +url;
 		//调用接口	
+		System.out.println("url----"+url);
+		System.out.println("paras----"+paras);
 		closeableHttpResponse = restClient.post(url, paras, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
+		System.out.println("str-----"+str);
 		JSONObject lastobject = new JSONObject();
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(result));
 		Assert.assertEquals(lastobject.toString(), "{}");
