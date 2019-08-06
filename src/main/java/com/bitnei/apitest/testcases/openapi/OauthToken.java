@@ -21,8 +21,9 @@ public class OauthToken {
 	CloseableHttpResponse closeableHttpResponse;
 	String authorization = "";
 	
+	@Test
 	@Parameters({"hostopenapi"})	
-	public String GetOauthToken(String hostopenapi) throws ClientProtocolException, IOException {
+	public String  GetOauthToken(String hostopenapi) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		url = hostopenapi + "/auth/oauth/token";
 		//准备请求头信息
@@ -31,9 +32,9 @@ public class OauthToken {
 		//入参设置            		
 		urlpara= url+"?client_id=zhuhai5338803e1aed4e276be2b3ffbd703417"
 				+ "&client_secret=zhuhai5338803e1aed4e276be2b3ffbd703417&grant_type=password"
-				+ "&password=ABC123...&scope=read&tenant=zhuhai&username=admin";
+				+ "&password=ABC123...&scope=read&tenant=zhuhai&username=zhuhaiAdmin";
 		//调用接口
-		closeableHttpResponse = restClient.post(urlpara, headermap);	
+		closeableHttpResponse = restClient.post(urlpara, headermap);
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
 		JSONObject object=JSONObject.fromObject(str);

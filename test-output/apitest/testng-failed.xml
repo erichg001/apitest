@@ -10,12 +10,13 @@
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.openapi.ChargingDataTest">
+      <class name="com.bitnei.apitest.webtestcases.saas.SaasLogin">
         <methods>
           <include name="setUp"/>
-          <include name="ChargingDataNormal"/>
+          <include name="afterTest"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingDataTest -->
+      </class> <!-- com.bitnei.apitest.webtestcases.saas.SaasLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

@@ -1,13 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="21" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="1361" started-at="2019-05-28T03:54:28Z" finished-at="2019-05-28T03:54:30Z">
+  <suite name="apitest" duration-ms="70524" started-at="2019-08-05T08:53:34Z" finished-at="2019-08-05T08:54:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1361" started-at="2019-05-28T03:54:28Z" finished-at="2019-05-28T03:54:30Z">
+    <test name="OPENAPI" duration-ms="70524" started-at="2019-08-05T08:53:34Z" finished-at="2019-08-05T08:54:44Z">
+      <class name="com.bitnei.apitest.testcases.openapi.ChargingData">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="setUp" is-config="true" duration-ms="1080" started-at="2019-08-05T08:53:34Z" finished-at="2019-08-05T08:53:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ChargingDataNo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataNo" duration-ms="635" started-at="2019-08-05T08:53:35Z" description="查询珠海车辆充电数据缺少车牌号参数" data-provider="dataprovider14" finished-at="2019-08-05T08:53:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNo -->
+        <test-method status="PASS" signature="ChargingDataNoFrom(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataNoFrom" duration-ms="250" started-at="2019-08-05T08:53:35Z" description="查询珠海车辆充电数据缺少from参数" data-provider="dataprovider2" finished-at="2019-08-05T08:53:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNoFrom -->
+        <test-method status="PASS" signature="ChargingDataNoTo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataNoTo" duration-ms="61" started-at="2019-08-05T08:53:36Z" description="查询珠海车辆充电数据缺少to参数" data-provider="dataprovider3" finished-at="2019-08-05T08:53:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNoTo -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataNormal" duration-ms="20757" started-at="2019-08-05T08:53:36Z" description="查询珠海车辆充电数据正常" data-provider="dataprovider1" finished-at="2019-08-05T08:53:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataUpOneDay(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataUpOneDay" duration-ms="318" started-at="2019-08-05T08:53:56Z" description="查询珠海车辆充电数据选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-08-05T08:53:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataUpOneDay -->
+        <test-method status="PASS" signature="ChargingDataWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataWrongTime" duration-ms="193" started-at="2019-08-05T08:53:57Z" description="查询珠海车辆充电数据选择时间范围开始时间不能大于结束时间" data-provider="dataprovider5" finished-at="2019-08-05T08:53:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataWrongTime -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingData -->
+      <class name="com.bitnei.apitest.testcases.openapi.RunningData">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@60438a68]" name="setUp" is-config="true" duration-ms="85" started-at="2019-08-05T08:53:58Z" finished-at="2019-08-05T08:53:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="EnergyConservationInvalidtoken(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@60438a68]" name="EnergyConservationInvalidtoken" duration-ms="32" started-at="2019-08-05T08:53:58Z" description="车辆行驶数数据查询token无效" data-provider="dataprovider13" finished-at="2019-08-05T08:53:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":401,"errorMsg":"invalid_token: f829155c-9374-4673-a005-10ce548af1=>/external/1/zhuhai/api/runningData","data":null,"error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationInvalidtoken -->
+        <test-method status="PASS" signature="EnergyConservationNolicensePlate(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@60438a68]" name="EnergyConservationNolicensePlate" duration-ms="60" started-at="2019-08-05T08:53:58Z" description="车辆行驶数数据查询车牌号为空" data-provider="dataprovider12" finished-at="2019-08-05T08:53:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 licensePlate  不能为空","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNolicensePlate -->
+        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@60438a68]" name="EnergyConservationNormal" duration-ms="2661" started-at="2019-08-05T08:53:58Z" description="车辆行驶数据查询正常" data-provider="dataprovider10" finished-at="2019-08-05T08:54:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"startSoc":87.0,"endSoc":81.0,"startLocation":"广东省珠海市金湾区红旗镇S3211珠海机场高速","endLocation":"广东省珠海市金湾区红旗镇永泰路","runTime":2730,"rumMileage":23.0,"startTime":"2019-03-01 13:08:19","endTime":"2019-03-01 13:53:49"},{"startSoc":93.0,"endSoc":87.0,"startLocation":"广东省珠海市金湾区红旗镇永泰路","endLocation":"广东省珠海市金湾区红旗镇589县道","runTime":2638,"rumMileage":20.0,"startTime":"2019-03-01 12:05:28","endTime":"2019-03-01 12:49:26"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNormal -->
+        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@60438a68]" name="EnergyConservationUpScope" duration-ms="71" started-at="2019-08-05T08:54:00Z" description="车辆行驶数选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-08-05T08:54:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationUpScope -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.RunningData -->
       <class name="com.bitnei.apitest.testcases.openapi.ChargingDataTest">
-        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9]" name="setUp" is-config="true" duration-ms="1334" started-at="2019-05-28T03:54:28Z" finished-at="2019-05-28T03:54:30Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="setUp" is-config="true" duration-ms="628" started-at="2019-08-05T08:54:01Z" finished-at="2019-08-05T08:54:01Z">
           <params>
             <param index="0">
               <value>
@@ -20,94 +156,249 @@
               </value>
             </param>
           </params>
-          <exception class="net.sf.json.JSONException">
-            <message>
-              <![CDATA[JSONObject["access_token"] not found.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[net.sf.json.JSONException: JSONObject["access_token"] not found.
-at net.sf.json.JSONObject.getString(JSONObject.java:2092)
-at com.bitnei.apitest.testcases.openapi.OauthToken.GetOauthToken(OauthToken.java:40)
-at com.bitnei.apitest.testcases.openapi.ChargingDataTest.setUp(ChargingDataTest.java:41)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- net.sf.json.JSONException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9]" name="ChargingDataNormal" duration-ms="0" started-at="2019-05-28T03:54:30Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-05-28T03:54:30Z">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.NullPointerException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-at com.bitnei.apitest.testcases.openapi.ChargingDataTest.dp(ChargingDataTest.java:73)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-... 22 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="20366" started-at="2019-08-05T08:54:01Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-08-05T08:54:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[查询结果正常]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34","startCurrent":"-230.3","endCurrent":"-0.8","startVolt":"594.7","endVolt":"586.4"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="603" started-at="2019-08-05T08:54:22Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-08-05T08:54:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[参数from不符合规则]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="383" started-at="2019-08-05T08:54:22Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-08-05T08:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[参数to不符合规则]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="44" started-at="2019-08-05T08:54:23Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-08-05T08:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[选择时间范围不得超过一个自然日]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="58" started-at="2019-08-05T08:54:23Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-08-05T08:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[选择时间范围开始时间不能大于结束时间]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="52" started-at="2019-08-05T08:54:23Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-08-05T08:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[数据缺少车牌号参数]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="21370" started-at="2019-08-05T08:54:23Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-08-05T08:54:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[参数车牌号无效]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"车牌粤C00859号无效或没有车辆充电数据","error":true}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
       </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingDataTest -->
-    </test> <!-- Default test -->
+      <class name="com.bitnei.apitest.testcases.openapi.EnergyConservation">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@2473b9ce]" name="setUp" is-config="true" duration-ms="67" started-at="2019-08-05T08:53:57Z" finished-at="2019-08-05T08:53:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@2473b9ce]" name="EnergyConservationNormal" duration-ms="426" started-at="2019-08-05T08:53:57Z" description="碳排放接口查询正常" data-provider="dataprovider6" finished-at="2019-08-05T08:53:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":0.5072,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNormal -->
+        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@2473b9ce]" name="EnergyConservationUpScope" duration-ms="80" started-at="2019-08-05T08:53:57Z" description="碳排放接口时间超3个月" data-provider="dataprovider7" finished-at="2019-08-05T08:53:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过3个月","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationUpScope -->
+        <test-method status="PASS" signature="EnergyConservationWrongDateFormat(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@2473b9ce]" name="EnergyConservationWrongDateFormat" duration-ms="82" started-at="2019-08-05T08:53:57Z" description="碳排放接口开始时间不符合规则" data-provider="dataprovider9" finished-at="2019-08-05T08:53:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019.05.10 不符合规则：yyyy-MM-dd","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationWrongDateFormat -->
+        <test-method status="PASS" signature="EnergyConservationWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@2473b9ce]" name="EnergyConservationWrongTime" duration-ms="69" started-at="2019-08-05T08:53:58Z" description="碳排放接口开始间大于结束时间" data-provider="dataprovider8" finished-at="2019-08-05T08:53:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019-05-10 不能大于 to 2019-04-13","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationWrongTime -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.EnergyConservation -->
+    </test> <!-- OPENAPI -->
   </suite> <!-- apitest -->
 </testng-results>
