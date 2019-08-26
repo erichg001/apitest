@@ -385,6 +385,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                 </exclusion>
             </exclusions>
         </dependency>
+        
+        
 
         <!-- 依赖Guice -->
         <dependency>
@@ -506,6 +508,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     				</compilerArguments>
                 </configuration>
             </plugin>
+            <!--  
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -514,7 +517,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                     <source>8</source>
                     <target>8</target>
                 </configuration>
-            </plugin>      	          
+            </plugin> 
+            -->     	          
         </plugins>
     </build>
     

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 05 16:51:42 CST 2019</td>
+<td>Started on:</td><td>Mon Aug 26 09:46:54 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5135 ms)</td>
+<tr><td>Total time:</td><td>44 seconds (44010 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,25 +75,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.openapi.RunningData.EnergyConservationInvalidtoken()'><b>EnergyConservationInvalidtoken</b><br>Test class: com.bitnei.apitest.testcases.openapi.RunningData<br>Test method: 车辆行驶数数据查询token无效<br>Parameters: {"status":401,"errorMsg":"invalid_token: f829155c-9374-4673-a005-10ce548af1=>/external/1/zhuhai/api/runningData","data":null,"error":true}</td>
+<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21, {"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34","startCurrent":"-230.3","endCurrent":"-0.8","startVolt":"594.7","endVolt":"586.4"}],"error":false}</td>
+<td></td>
+<td>22</td>
+<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:21, {"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.openapi.RunningData@133e16fd</td></tr>
+<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.openapi.RunningData.EnergyConservationNolicensePlate()'><b>EnergyConservationNolicensePlate</b><br>Test class: com.bitnei.apitest.testcases.openapi.RunningData<br>Test method: 车辆行驶数数据查询车牌号为空<br>Parameters: {"status":400,"errorMsg":"VALID","data":"参数 licensePlate  不能为空","error":true}</td>
+<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=, {"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.openapi.RunningData@133e16fd</td></tr>
+<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.openapi.RunningData.EnergyConservationNormal()'><b>EnergyConservationNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.RunningData<br>Test method: 车辆行驶数据查询正常<br>Parameters: {"status":200,"errorMsg":null,"data":[{"startSoc":87.0,"endSoc":81.0,"startLocation":"广东省珠海市金湾区红旗镇S3211珠海机场高速","endLocation":"广东省珠海市金湾区红旗镇永泰路","runTime":2730,"rumMileage":23.0,"startTime":"2019-03-01 13:08:19","endTime":"2019-03-01 13:53:49"},{"startSoc":93.0,"endSoc":87.0,"startLocation":"广东省珠海市金湾区红旗镇永泰路","endLocation":"广东省珠海市金湾区红旗镇589县道","runTime":2638,"rumMileage":20.0,"startTime":"2019-03-01 12:05:28","endTime":"2019-03-01 12:49:26"}],"error":false}</td>
-<td></td>
-<td>3</td>
-<td>com.bitnei.apitest.testcases.openapi.RunningData@133e16fd</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.openapi.RunningData.EnergyConservationUpScope()'><b>EnergyConservationUpScope</b><br>Test class: com.bitnei.apitest.testcases.openapi.RunningData<br>Test method: 车辆行驶数选择时间范围不得超过一个自然日<br>Parameters: {"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}</td>
+<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21, {"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.openapi.RunningData@133e16fd</td></tr>
+<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21, {"status":400,"errorMsg":"VALID","data":"车牌粤C00859号无效或没有车辆充电数据","error":true}</td>
+<td></td>
+<td>19</td>
+<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
 </table><p>
 </body>
 </html>

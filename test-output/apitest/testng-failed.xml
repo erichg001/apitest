@@ -8,15 +8,43 @@
   <parameter name="pathsaasuser" value="D:\\DATA.xlsx"/>
   <parameter name="hostsaas" value="http://61.149.8.78:85"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
-  <test thread-count="5" name="Default test(failed)">
+  <test thread-count="5" name="OPENAPI(failed)" parallel="classes">
     <classes>
-      <class name="com.bitnei.apitest.webtestcases.saas.SaasLogin">
+      <class name="com.bitnei.apitest.testcases.openapi.ChargingData">
+        <methods>
+          <include name="ChargingDataUpOneDay" invocation-numbers="0"/>
+          <include name="ChargingDataNoFrom" invocation-numbers="0"/>
+          <include name="ChargingDataNormal" invocation-numbers="0"/>
+          <include name="ChargingDataNo" invocation-numbers="0"/>
+          <include name="ChargingDataNoTo" invocation-numbers="0"/>
+          <include name="ChargingDataWrongTime" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingData -->
+      <class name="com.bitnei.apitest.testcases.openapi.EnergyConservation">
         <methods>
           <include name="setUp"/>
-          <include name="afterTest"/>
-          <include name="Login"/>
+          <include name="EnergyConservationWrongDateFormat" invocation-numbers="0"/>
+          <include name="EnergyConservationUpScope" invocation-numbers="0"/>
+          <include name="EnergyConservationWrongTime" invocation-numbers="0"/>
+          <include name="EnergyConservationNormal" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.webtestcases.saas.SaasLogin -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.EnergyConservation -->
+      <class name="com.bitnei.apitest.testcases.openapi.RunningData">
+        <methods>
+          <include name="EnergyConservationNolicensePlate" invocation-numbers="0"/>
+          <include name="EnergyConservationNormal" invocation-numbers="0"/>
+          <include name="EnergyConservationInvalidtoken" invocation-numbers="0"/>
+          <include name="EnergyConservationUpScope" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.openapi.RunningData -->
+      <class name="com.bitnei.apitest.testcases.openapi.ChargingDataTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="ChargingDataNormal" invocation-numbers="1 2 3 4 5 6 7"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingDataTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- OPENAPI(failed) -->
 </suite> <!-- Failed suite [apitest] -->
