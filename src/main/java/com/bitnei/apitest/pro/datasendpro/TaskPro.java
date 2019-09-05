@@ -13,6 +13,7 @@ public class TaskPro extends Po{
 	private String protocolId;
 	private int isEncrypt;
 	private String tenantName;
+	private String tenantId;
 	
 	
 
@@ -32,6 +33,13 @@ public class TaskPro extends Po{
 	}
 	public void setTenantName(String tenantName) {
 		this.tenantName = tenantName;
+	}
+
+	public String getTenantId() {
+		return tenantId;
+	}
+	public void setTenantId(String tenantId) {
+		this.tenantId = tenantId;
 	}
 	public int getId() {
 		return id;

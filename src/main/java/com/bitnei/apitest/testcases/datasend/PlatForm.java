@@ -39,7 +39,7 @@ public class PlatForm {
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookie getCookie = new GetCookie();
+	GetCookieNew getCookie = new GetCookieNew();
 	String cookie = "";
 	//PlatFormPro platformpro = new PlatFormPro();
 	
@@ -49,7 +49,7 @@ public class PlatForm {
 	@Parameters({"host"})
 	@BeforeClass
 	public void setUp(String host) {
-		url = host + "/rest/dataForwardConfig/platform/add";
+		url = host + "/forward/dataForwardConfig/platform/add";
 		//设置cookie		
 		try {
 			 cookie = getCookie.login();
@@ -80,7 +80,7 @@ public class PlatForm {
 		platformpro.setNsPort("8000");
 		platformpro.setPassword("autotesthg");
 		platformpro.setPriority("1");
-		platformpro.setStaticForwardPlatform("");
+		platformpro.setStaticForwardPlatform("无");
 		platformpro.setUnitName("autotestplant");
 		platformpro.setUsername("autotesthg");
 		

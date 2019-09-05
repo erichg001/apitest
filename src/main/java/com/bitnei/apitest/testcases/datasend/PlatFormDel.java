@@ -36,7 +36,7 @@ public class PlatFormDel {
 	String url1;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookie getCookie = new GetCookie();
+	GetCookieNew getCookie = new GetCookieNew();
 	String cookie = "";
 	PlatFormPro platformpro = new PlatFormPro();
 	
@@ -46,7 +46,7 @@ public class PlatFormDel {
 	@Parameters({"host"})
 	@BeforeClass
 	public void setUp(String host) {
-		url1 = host + "/rest/dataForwardConfig/platform/";
+		url1 = host + "/forward/dataForwardConfig/platform/";
 		//设置cookie		
 		try {
 			 cookie = getCookie.login();

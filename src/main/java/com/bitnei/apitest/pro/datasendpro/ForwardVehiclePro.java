@@ -12,8 +12,22 @@ public class ForwardVehiclePro extends Po{
 	private String protocolId;
 	private String vendor;
 	private String tenantName;
+	private int taskId;
+	private String vehicleIds;
 
 	
+	public int getTaskId() {
+		return taskId;
+	}
+	public void setTaskId(int taskId) {
+		this.taskId = taskId;
+	}
+	public String getVehicleIds() {
+		return vehicleIds;
+	}
+	public void setVehicleIds(String vehicleIds) {
+		this.vehicleIds = vehicleIds;
+	}
 	public String getTenantName() {
 		return tenantName;
 	}

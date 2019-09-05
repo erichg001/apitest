@@ -23,4 +23,8 @@ public class TaskDao extends DaoImpl<TaskPro, Integer>{
      return super.addLocal(pro);
  }	
  
+ public int del(WherePrams where) {
+	 return super.del(where);
+ }
+ 
 }

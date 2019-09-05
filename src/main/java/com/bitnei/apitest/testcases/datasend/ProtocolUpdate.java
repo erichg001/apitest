@@ -35,7 +35,7 @@ public class ProtocolUpdate {
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookie getCookie = new GetCookie();
+	GetCookieNew getCookie = new GetCookieNew();
 	String cookie = "";
 	
 	@Resource(name="protocoldao") 
@@ -44,7 +44,7 @@ public class ProtocolUpdate {
 	@Parameters({"host"})
 	@BeforeClass
 	public void setUp(String host) {
-		url = host + "/rest/dataForwardConfig/protocol/update";
+		url = host + "/forward/dataForwardConfig/protocol/update/";
 		//设置cookie		
 		try {
 			 cookie = getCookie.login();
@@ -70,12 +70,12 @@ public class ProtocolUpdate {
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
 		headermap.put("Cookie",cookie );	
 		//入参设置
-		list.get(0).setPort("8090");
 		list.get(0).setNotes("update");
 		String proJsonString = JSON.toJSONString(list.get(0));
+		String url1 = url + list.get(0).getId();
 		System.out.println("proJsonString------------"+proJsonString);
 		//调用接口
-		closeableHttpResponse = restClient.post(url, proJsonString, headermap);		
+		closeableHttpResponse = restClient.post(url1, proJsonString, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
 		System.out.println("source==========="+str);

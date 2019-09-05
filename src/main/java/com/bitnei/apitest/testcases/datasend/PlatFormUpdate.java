@@ -35,7 +35,7 @@ public class PlatFormUpdate {
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookie getCookie = new GetCookie();
+	GetCookieNew getCookie = new GetCookieNew();
 	String cookie = "";
 	
 	@Resource(name="platformdao") 
@@ -44,7 +44,7 @@ public class PlatFormUpdate {
 	@Parameters({"host"})
 	@BeforeClass
 	public void setUp(String host) {
-		url = host + "/rest/dataForwardConfig/platform/update";
+		url = host + "/forward/dataForwardConfig/platform/update/";
 		//设置cookie		
 		try {
 			 cookie = getCookie.login();
@@ -72,6 +72,7 @@ public class PlatFormUpdate {
 		
 		System.out.println("list------------"+list);
 		System.out.println("list0------------"+list.get(0).getUnitName());
+		System.out.println("list1------------"+list.get(0).getId());
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
@@ -80,9 +81,10 @@ public class PlatFormUpdate {
 		 list.get(0).setUnitName("autotestmodif");
 		 //list.get(0).setCreateTime(d);		 	
 		String proJsonString = JSON.toJSONString(list.get(0));
+		String url1 = url + list.get(0).getId();
 		System.out.println("proJsonString------------"+proJsonString);
 		//调用接口
-		closeableHttpResponse = restClient.post(url, proJsonString, headermap);
+		closeableHttpResponse = restClient.post(url1, proJsonString, headermap);
 		System.out.println("closeableHttpResponse------------"+closeableHttpResponse);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");

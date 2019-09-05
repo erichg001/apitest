@@ -37,7 +37,7 @@ public class ProtocolDelete {
 	String url1;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookie getCookie = new GetCookie();
+	GetCookieNew getCookie = new GetCookieNew();
 	String cookie = "";
 	
 	@Resource(name="protocoldao") 
@@ -46,7 +46,7 @@ public class ProtocolDelete {
 	@Parameters({"host"})
 	@BeforeClass
 	public void setUp(String host) {
-		url1 = host + "/rest/dataForwardConfig/protocol/";
+		url1 = host + "/forward/dataForwardConfig/protocol/";
 		//设置cookie		
 		try {
 			 cookie = getCookie.login();

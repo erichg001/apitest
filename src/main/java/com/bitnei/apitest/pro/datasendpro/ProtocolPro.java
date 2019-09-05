@@ -11,18 +11,18 @@ public class ProtocolPro extends Po{
 	private String name;
 	private String notes;
 	private String port;
-	private int ruleNo;
 	private int type;
+	private int ruleConfId;
 	//private String create_time;
 	
 	
-	
-	public int getRuleNo() {
-		return ruleNo;
+	public int getRuleConfId() {
+		return ruleConfId;
 	}
-	public void setRuleNo(int ruleNo) {
-		this.ruleNo = ruleNo;
+	public void setRuleConfId(int ruleConfId) {
+		this.ruleConfId = ruleConfId;
 	}
+
 	public String getId() {
 		return id;
 	}

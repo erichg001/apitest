@@ -32,4 +32,11 @@ public class PlatFormProvider {
         };
     }
     
+    @DataProvider(name="dataprovider5")  
+    public static Object[][] dataProvider5(){  
+        return new Object[][]{  
+        	{"{\"status\":200,\"errorMsg\":null,\"data\":{\"existVehicle\":[],\"insertCount\":\"1\"},\"error\":false}"}
+        };
+    }
+    
 }
