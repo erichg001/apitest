@@ -3,6 +3,7 @@ package com.bitnei.selenium.utils;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Properties;
 
@@ -35,7 +36,9 @@ public class ReadProperties {
 		    pro.load(new InputStreamReader(in, "utf-8"));
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		} finally {
+           pro.clear();
+        }
  
 		//返回pro对象
 		return pro;

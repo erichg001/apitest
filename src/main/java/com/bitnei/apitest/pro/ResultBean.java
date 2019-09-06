@@ -41,13 +41,13 @@ public class ResultBean  {
 	public void setResult(boolean result) {
 		this.result = result;
 	}
-	
-	public String toString(){
-		String str = "ResultBean:";
-		str += "code = " + code + ",";
-		str += "message = " + message == null ? "null" : message + ",";
-		str += "result = " + result;
-		return str;
-	}
+// update0906	
+//	public String toString(){
+//		String str = "ResultBean:";
+//		str += "code = " + code + ",";
+//		str += "message = " + message == null ? "null" : message + ",";
+//		str += "result = " + result;
+//		return str;
+//	}
 }
 
