@@ -154,11 +154,12 @@ public class ExcleUtil {
             workbook = new HSSFWorkbook(inputStream);
 
         }
-        if (workbook.equals(null)) {
+        try{
+        	workbook.equals(null);
+        }catch(Exception e) {
         	System.out.println("Unable to apply workbook " + workbook.toString());
-        }else {
-        	sheet = workbook.getSheet(sheetName);
-        }
+        }      
+        sheet = workbook.getSheet(sheetName);        
         // 获取Excel 数据文件Sheet1 中数据的行数，getLastRowNum 方法获取数据的最后一行的行号，
         // getFistRowNum 获取第一行 最后一行减去第一行就是总行数了
         // 注意excle 的行和列都是从0开始的；
