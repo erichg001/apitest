@@ -10,12 +10,12 @@
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.EvDetail">
+      <class name="com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform">
         <methods>
-          <include name="setUp"/>
           <include name="getVehCountPerMonitorPlatformStatus" invocation-numbers="0"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.EvDetail -->
+      </class> <!-- com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

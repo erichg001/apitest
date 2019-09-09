@@ -223,10 +223,13 @@ public class DiffMethod {
 	                    Object currentValue = currentJSON.get(key);
 	                    //System.out.println("----------currentValue ---------------"+currentValue);
 
-	                    if (expectedValue != null && currentValue == null || expectedValue.toString() != "null" && currentValue.toString() == "null") {
+	                    if (expectedValue != null && currentValue == null || !expectedValue.toString().equals("null") && currentValue.toString().equals("null")) {
 	                        tempJSON.put("actualValue", "null");
 	                        tempJSON.put("expectedValue", expectedValue);
 	                        jsonDiff.put(key, tempJSON);
+	                    }
+	                    if (expectedValue == null ) {
+	                    	
 	                    }
 
 	                    if (expectedValue != null && currentValue != null) {

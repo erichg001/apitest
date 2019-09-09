@@ -144,6 +144,7 @@ public class ExcleUtil {
         FileInputStream inputStream = new FileInputStream(file);
         // 声明Workbook 对象；
         Workbook workbook = null;
+        Sheet sheet = null;
         // 获取文件名参数的扩展名，判断是“.xlsx” 还是 “.xls” ；
         String fileExtensionName = excelFilePath.substring(excelFilePath.indexOf('.'));
         if (fileExtensionName.equals(".xlsx")) {
@@ -153,7 +154,11 @@ public class ExcleUtil {
             workbook = new HSSFWorkbook(inputStream);
 
         }
-        Sheet sheet = workbook.getSheet(sheetName);
+        if (workbook.equals(null)) {
+        	System.out.println("Unable to apply workbook " + workbook.toString());
+        }else {
+        	sheet = workbook.getSheet(sheetName);
+        }
         // 获取Excel 数据文件Sheet1 中数据的行数，getLastRowNum 方法获取数据的最后一行的行号，
         // getFistRowNum 获取第一行 最后一行减去第一行就是总行数了
         // 注意excle 的行和列都是从0开始的；

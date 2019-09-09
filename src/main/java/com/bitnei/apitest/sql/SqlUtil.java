@@ -592,8 +592,10 @@ public class SqlUtil<T extends Po> {
 						method = thisClass.getMethod("set" + fileName.substring(0, 1).toUpperCase() + fileName.substring(1), Short.TYPE);
 					}
 					
+					if(null != method ) {
+						method.invoke(po, fileValue);
+					}
 					
-					method.invoke(po, fileValue);
 				} catch (NoSuchMethodException e) {
 					
 					// TODO: handle exception

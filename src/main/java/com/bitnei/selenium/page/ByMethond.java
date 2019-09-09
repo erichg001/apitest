@@ -1,11 +1,13 @@
 package com.bitnei.selenium.page;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 
 import com.bitnei.selenium.utils.ReadProperties;
 
 public class ByMethond {
-public static By bystr(String PropertiesKey){
+public static By bystr(String PropertiesKey) throws IOException{
 		
 		String PropertiesPath = "LoginElement.properties";
 		//创建ReadProperties对象

@@ -1,5 +1,7 @@
 package com.bitnei.selenium.busession;
 
+import java.io.IOException;
+
 import com.bitnei.selenium.base.DriverBase;
 import com.bitnei.selenium.handle.LoginPageHandle;
 
@@ -15,8 +17,9 @@ private LoginPageHandle loginPgeHandle;
 	
 	/**
 	 * 执行操作业务
+	 * @throws IOException 
 	 * */
-	public void bussLogin(String username,String password){
+	public void bussLogin(String username,String password) throws IOException{
 		loginPgeHandle.findLoginButtion();
 		loginPgeHandle.countLogin();
 		loginPgeHandle.userLogin(username);

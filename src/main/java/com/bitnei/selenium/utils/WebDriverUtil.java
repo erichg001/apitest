@@ -1181,6 +1181,7 @@ public class WebDriverUtil {
 	        try {
 	            Thread.sleep(1000);
 	        } catch (InterruptedException e) {
+	            Thread.currentThread().interrupt();
 	            e.printStackTrace();
 	        }
 	        actions.release(driver.findElement(by)).perform();
