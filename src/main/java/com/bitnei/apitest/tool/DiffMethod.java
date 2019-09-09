@@ -228,9 +228,6 @@ public class DiffMethod {
 	                        tempJSON.put("expectedValue", expectedValue);
 	                        jsonDiff.put(key, tempJSON);
 	                    }
-	                    if (expectedValue == null ) {
-	                    	
-	                    }
 
 	                    if (expectedValue != null && currentValue != null) {
 	                        if (isJsonObject(expectedValue) && !JSONObject.fromObject(expectedValue).isNullObject() || 

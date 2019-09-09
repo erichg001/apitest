@@ -31,13 +31,11 @@ public class ReadProperties {
 	public Properties readProperties() throws IOException{
 		//创建对象
 		Properties pro = new Properties();
-		FileInputStream input = null;
 		BufferedInputStream in = null;
 		//读取properties文件到缓存
 		try {
 			File file = new File(filePath);
-			input = new FileInputStream(file);
-			in = new BufferedInputStream(input);
+			in = new BufferedInputStream(new FileInputStream(file));
 			//加载缓存到pro对象 prop.load(in)这么写 不能读取properties配置文件中的中文
 			InputStreamReader reader = new InputStreamReader(in, "utf-8");
 			pro.load(reader);
@@ -45,7 +43,6 @@ public class ReadProperties {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			input.close();
 			in.close();
 		}
  
