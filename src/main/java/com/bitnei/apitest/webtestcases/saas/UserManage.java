@@ -21,8 +21,8 @@ public class UserManage {
 	private WebDriver driver; 
 	private int delay = 10;
 	private String userName = "yuanpeipei@bitnei.cn";
-	private String passWord = "123abc";
-	private String email = "yaomeng@bitnei.cn";
+	String passWord = "123abc";
+    String email = "yaomeng@bitnei.cn";
 	WebDriverWait waitVar = null;
 	
 	@BeforeClass

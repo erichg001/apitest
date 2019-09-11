@@ -21,8 +21,8 @@ public class SaasLogin {
 	private WebDriver driver; 
 	private int delay = 10;
 	private String userName = "yaomeng@bitnei.cn";
-	private String passWord = "123456a";
-	private String wrongPassWord = "123ab";
+	String passWord = "123456a";
+	String wrongPassWord = "123ab";
 	WebDriverWait waitVar = null;
 	
 	@BeforeMethod

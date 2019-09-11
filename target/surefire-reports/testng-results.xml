@@ -2,69 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="27" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="78905" started-at="2019-09-09T05:43:18Z" finished-at="2019-09-09T05:44:37Z">
+  <suite name="apitest" duration-ms="78326" started-at="2019-09-09T08:11:53Z" finished-at="2019-09-09T08:13:12Z">
     <groups>
     </groups>
-    <test name="OPENAPI" duration-ms="67418" started-at="2019-09-09T05:43:18Z" finished-at="2019-09-09T05:44:25Z">
-      <class name="com.bitnei.apitest.testcases.openapi.RunningData">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="setUp" is-config="true" duration-ms="73" started-at="2019-09-09T05:43:40Z" finished-at="2019-09-09T05:43:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://61.149.8.78:83]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="EnergyConservationInvalidtoken(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationInvalidtoken" duration-ms="19" started-at="2019-09-09T05:43:40Z" description="车辆行驶数数据查询token无效" data-provider="dataprovider13" finished-at="2019-09-09T05:43:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{"status":401,"errorMsg":"invalid_token: f829155c-9374-4673-a005-10ce548af1=>/external/1/zhuhai/api/runningData","data":null,"error":true}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnergyConservationInvalidtoken -->
-        <test-method status="PASS" signature="EnergyConservationNolicensePlate(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationNolicensePlate" duration-ms="44" started-at="2019-09-09T05:43:40Z" description="车辆行驶数数据查询车牌号为空" data-provider="dataprovider12" finished-at="2019-09-09T05:43:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 licensePlate  不能为空","error":true}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnergyConservationNolicensePlate -->
-        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationNormal" duration-ms="3260" started-at="2019-09-09T05:43:41Z" description="车辆行驶数据查询正常" data-provider="dataprovider10" finished-at="2019-09-09T05:43:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":[{"startSoc":87.0,"endSoc":81.0,"startLocation":"广东省珠海市金湾区红旗镇S3211珠海机场高速","endLocation":"广东省珠海市金湾区红旗镇永泰路","runTime":2730,"rumMileage":23.0,"startTime":"2019-03-01 13:08:19","endTime":"2019-03-01 13:53:49"},{"startSoc":93.0,"endSoc":87.0,"startLocation":"广东省珠海市金湾区红旗镇永泰路","endLocation":"广东省珠海市金湾区红旗镇589县道","runTime":2638,"rumMileage":20.0,"startTime":"2019-03-01 12:05:28","endTime":"2019-03-01 12:49:26"}],"error":false}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnergyConservationNormal -->
-        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationUpScope" duration-ms="62" started-at="2019-09-09T05:43:44Z" description="车辆行驶数选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-09-09T05:43:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnergyConservationUpScope -->
-      </class> <!-- com.bitnei.apitest.testcases.openapi.RunningData -->
+    <test name="OPENAPI" duration-ms="66492" started-at="2019-09-09T08:11:53Z" finished-at="2019-09-09T08:13:00Z">
       <class name="com.bitnei.apitest.testcases.openapi.ChargingData">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="setUp" is-config="true" duration-ms="1505" started-at="2019-09-09T05:43:18Z" finished-at="2019-09-09T05:43:19Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="setUp" is-config="true" duration-ms="1572" started-at="2019-09-09T08:11:53Z" finished-at="2019-09-09T08:11:55Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ChargingDataNo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNo" duration-ms="495" started-at="2019-09-09T05:43:19Z" description="查询珠海车辆充电数据缺少车牌号参数" data-provider="dataprovider14" finished-at="2019-09-09T05:43:20Z">
+        <test-method status="PASS" signature="ChargingDataNo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNo" duration-ms="464" started-at="2019-09-09T08:11:55Z" description="查询珠海车辆充电数据缺少车牌号参数" data-provider="dataprovider14" finished-at="2019-09-09T08:11:55Z">
           <params>
             <param index="0">
               <value>
@@ -86,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNo -->
-        <test-method status="PASS" signature="ChargingDataNoFrom(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNoFrom" duration-ms="116" started-at="2019-09-09T05:43:20Z" description="查询珠海车辆充电数据缺少from参数" data-provider="dataprovider2" finished-at="2019-09-09T05:43:20Z">
+        <test-method status="PASS" signature="ChargingDataNoFrom(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNoFrom" duration-ms="197" started-at="2019-09-09T08:11:55Z" description="查询珠海车辆充电数据缺少from参数" data-provider="dataprovider2" finished-at="2019-09-09T08:11:56Z">
           <params>
             <param index="0">
               <value>
@@ -97,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNoFrom -->
-        <test-method status="PASS" signature="ChargingDataNoTo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNoTo" duration-ms="358" started-at="2019-09-09T05:43:20Z" description="查询珠海车辆充电数据缺少to参数" data-provider="dataprovider3" finished-at="2019-09-09T05:43:20Z">
+        <test-method status="PASS" signature="ChargingDataNoTo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNoTo" duration-ms="42" started-at="2019-09-09T08:11:56Z" description="查询珠海车辆充电数据缺少to参数" data-provider="dataprovider3" finished-at="2019-09-09T08:11:56Z">
           <params>
             <param index="0">
               <value>
@@ -108,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNoTo -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNormal" duration-ms="19217" started-at="2019-09-09T05:43:20Z" description="查询珠海车辆充电数据正常" data-provider="dataprovider1" finished-at="2019-09-09T05:43:39Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNormal" duration-ms="20270" started-at="2019-09-09T08:11:56Z" description="查询珠海车辆充电数据正常" data-provider="dataprovider1" finished-at="2019-09-09T08:12:16Z">
           <params>
             <param index="0">
               <value>
@@ -119,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataUpOneDay(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataUpOneDay" duration-ms="174" started-at="2019-09-09T05:43:39Z" description="查询珠海车辆充电数据选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-09-09T05:43:40Z">
+        <test-method status="PASS" signature="ChargingDataUpOneDay(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataUpOneDay" duration-ms="433" started-at="2019-09-09T08:12:16Z" description="查询珠海车辆充电数据选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-09-09T08:12:16Z">
           <params>
             <param index="0">
               <value>
@@ -130,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataUpOneDay -->
-        <test-method status="PASS" signature="ChargingDataWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataWrongTime" duration-ms="478" started-at="2019-09-09T05:43:40Z" description="查询珠海车辆充电数据选择时间范围开始时间不能大于结束时间" data-provider="dataprovider5" finished-at="2019-09-09T05:43:40Z">
+        <test-method status="PASS" signature="ChargingDataWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataWrongTime" duration-ms="188" started-at="2019-09-09T08:12:16Z" description="查询珠海车辆充电数据选择时间范围开始时间不能大于结束时间" data-provider="dataprovider5" finished-at="2019-09-09T08:12:16Z">
           <params>
             <param index="0">
               <value>
@@ -142,8 +85,65 @@
           </reporter-output>
         </test-method> <!-- ChargingDataWrongTime -->
       </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingData -->
+      <class name="com.bitnei.apitest.testcases.openapi.RunningData">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="setUp" is-config="true" duration-ms="53" started-at="2019-09-09T08:12:17Z" finished-at="2019-09-09T08:12:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="EnergyConservationInvalidtoken(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationInvalidtoken" duration-ms="26" started-at="2019-09-09T08:12:17Z" description="车辆行驶数数据查询token无效" data-provider="dataprovider13" finished-at="2019-09-09T08:12:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":401,"errorMsg":"invalid_token: f829155c-9374-4673-a005-10ce548af1=>/external/1/zhuhai/api/runningData","data":null,"error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationInvalidtoken -->
+        <test-method status="PASS" signature="EnergyConservationNolicensePlate(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationNolicensePlate" duration-ms="39" started-at="2019-09-09T08:12:17Z" description="车辆行驶数数据查询车牌号为空" data-provider="dataprovider12" finished-at="2019-09-09T08:12:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 licensePlate  不能为空","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNolicensePlate -->
+        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationNormal" duration-ms="2980" started-at="2019-09-09T08:12:17Z" description="车辆行驶数据查询正常" data-provider="dataprovider10" finished-at="2019-09-09T08:12:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"startSoc":87.0,"endSoc":81.0,"startLocation":"广东省珠海市金湾区红旗镇S3211珠海机场高速","endLocation":"广东省珠海市金湾区红旗镇永泰路","runTime":2730,"rumMileage":23.0,"startTime":"2019-03-01 13:08:19","endTime":"2019-03-01 13:53:49"},{"startSoc":93.0,"endSoc":87.0,"startLocation":"广东省珠海市金湾区红旗镇永泰路","endLocation":"广东省珠海市金湾区红旗镇589县道","runTime":2638,"rumMileage":20.0,"startTime":"2019-03-01 12:05:28","endTime":"2019-03-01 12:49:26"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNormal -->
+        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationUpScope" duration-ms="74" started-at="2019-09-09T08:12:20Z" description="车辆行驶数选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-09-09T08:12:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationUpScope -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.RunningData -->
       <class name="com.bitnei.apitest.testcases.openapi.ChargingDataTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="setUp" is-config="true" duration-ms="881" started-at="2019-09-09T05:43:44Z" finished-at="2019-09-09T05:43:45Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="setUp" is-config="true" duration-ms="741" started-at="2019-09-09T08:12:20Z" finished-at="2019-09-09T08:12:21Z">
           <params>
             <param index="0">
               <value>
@@ -159,7 +159,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="19659" started-at="2019-09-09T05:43:45Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T05:44:04Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="18266" started-at="2019-09-09T08:12:21Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:39Z">
           <params>
             <param index="0">
               <value>
@@ -185,7 +185,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="462" started-at="2019-09-09T05:44:04Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T05:44:05Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="439" started-at="2019-09-09T08:12:39Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:39Z">
           <params>
             <param index="0">
               <value>
@@ -211,7 +211,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="368" started-at="2019-09-09T05:44:05Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T05:44:05Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="190" started-at="2019-09-09T08:12:39Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:39Z">
           <params>
             <param index="0">
               <value>
@@ -237,7 +237,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="79" started-at="2019-09-09T05:44:05Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T05:44:05Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="256" started-at="2019-09-09T08:12:39Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:40Z">
           <params>
             <param index="0">
               <value>
@@ -263,7 +263,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="83" started-at="2019-09-09T05:44:05Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T05:44:05Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="48" started-at="2019-09-09T08:12:40Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:40Z">
           <params>
             <param index="0">
               <value>
@@ -289,7 +289,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="55" started-at="2019-09-09T05:44:05Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T05:44:05Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="44" started-at="2019-09-09T08:12:40Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:40Z">
           <params>
             <param index="0">
               <value>
@@ -315,7 +315,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="19564" started-at="2019-09-09T05:44:05Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T05:44:25Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="19891" started-at="2019-09-09T08:12:40Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:13:00Z">
           <params>
             <param index="0">
               <value>
@@ -343,7 +343,7 @@
         </test-method> <!-- ChargingDataNormal -->
       </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingDataTest -->
       <class name="com.bitnei.apitest.testcases.openapi.EnergyConservation">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="setUp" is-config="true" duration-ms="50" started-at="2019-09-09T05:43:40Z" finished-at="2019-09-09T05:43:40Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="setUp" is-config="true" duration-ms="63" started-at="2019-09-09T08:12:16Z" finished-at="2019-09-09T08:12:17Z">
           <params>
             <param index="0">
               <value>
@@ -354,7 +354,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationNormal" duration-ms="206" started-at="2019-09-09T05:43:40Z" description="碳排放接口查询正常" data-provider="dataprovider6" finished-at="2019-09-09T05:43:40Z">
+        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationNormal" duration-ms="38" started-at="2019-09-09T08:12:17Z" description="碳排放接口查询正常" data-provider="dataprovider6" finished-at="2019-09-09T08:12:17Z">
           <params>
             <param index="0">
               <value>
@@ -365,7 +365,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnergyConservationNormal -->
-        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationUpScope" duration-ms="54" started-at="2019-09-09T05:43:40Z" description="碳排放接口时间超3个月" data-provider="dataprovider7" finished-at="2019-09-09T05:43:40Z">
+        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationUpScope" duration-ms="42" started-at="2019-09-09T08:12:17Z" description="碳排放接口时间超3个月" data-provider="dataprovider7" finished-at="2019-09-09T08:12:17Z">
           <params>
             <param index="0">
               <value>
@@ -376,7 +376,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnergyConservationUpScope -->
-        <test-method status="PASS" signature="EnergyConservationWrongDateFormat(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationWrongDateFormat" duration-ms="45" started-at="2019-09-09T05:43:40Z" description="碳排放接口开始时间不符合规则" data-provider="dataprovider9" finished-at="2019-09-09T05:43:40Z">
+        <test-method status="PASS" signature="EnergyConservationWrongDateFormat(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationWrongDateFormat" duration-ms="34" started-at="2019-09-09T08:12:17Z" description="碳排放接口开始时间不符合规则" data-provider="dataprovider9" finished-at="2019-09-09T08:12:17Z">
           <params>
             <param index="0">
               <value>
@@ -387,7 +387,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnergyConservationWrongDateFormat -->
-        <test-method status="PASS" signature="EnergyConservationWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationWrongTime" duration-ms="46" started-at="2019-09-09T05:43:40Z" description="碳排放接口开始间大于结束时间" data-provider="dataprovider8" finished-at="2019-09-09T05:43:40Z">
+        <test-method status="PASS" signature="EnergyConservationWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationWrongTime" duration-ms="35" started-at="2019-09-09T08:12:17Z" description="碳排放接口开始间大于结束时间" data-provider="dataprovider8" finished-at="2019-09-09T08:12:17Z">
           <params>
             <param index="0">
               <value>
@@ -400,9 +400,9 @@
         </test-method> <!-- EnergyConservationWrongTime -->
       </class> <!-- com.bitnei.apitest.testcases.openapi.EnergyConservation -->
     </test> <!-- OPENAPI -->
-    <test name="DATASEND" duration-ms="11412" started-at="2019-09-09T05:44:25Z" finished-at="2019-09-09T05:44:37Z">
+    <test name="DATASEND" duration-ms="11735" started-at="2019-09-09T08:13:00Z" finished-at="2019-09-09T08:13:12Z">
       <class name="com.bitnei.apitest.testcases.datasend.ProtocolUpdate">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@c81cdd1]" name="setUp" is-config="true" duration-ms="1071" started-at="2019-09-09T05:44:28Z" finished-at="2019-09-09T05:44:29Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@c81cdd1]" name="setUp" is-config="true" duration-ms="1049" started-at="2019-09-09T08:13:03Z" finished-at="2019-09-09T08:13:04Z">
           <params>
             <param index="0">
               <value>
@@ -413,7 +413,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ProtocolUpdateData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@c81cdd1]" name="ProtocolUpdateData" duration-ms="2669" started-at="2019-09-09T05:44:29Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-09-09T05:44:32Z">
+        <test-method status="PASS" signature="ProtocolUpdateData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@c81cdd1]" name="ProtocolUpdateData" duration-ms="2810" started-at="2019-09-09T08:13:04Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-09-09T08:13:06Z">
           <params>
             <param index="0">
               <value>
@@ -426,7 +426,7 @@
         </test-method> <!-- ProtocolUpdateData -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolUpdate -->
       <class name="com.bitnei.apitest.testcases.datasend.PlatForm">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@7403c468]" name="setUp" is-config="true" duration-ms="1470" started-at="2019-09-09T05:44:25Z" finished-at="2019-09-09T05:44:27Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@7403c468]" name="setUp" is-config="true" duration-ms="1359" started-at="2019-09-09T08:13:00Z" finished-at="2019-09-09T08:13:01Z">
           <params>
             <param index="0">
               <value>
@@ -437,7 +437,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="PlatFormAdd(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@7403c468]" name="PlatFormAdd" duration-ms="195" started-at="2019-09-09T05:44:27Z" description="数据转发平台配置新增数据" data-provider="dataprovider1" finished-at="2019-09-09T05:44:27Z">
+        <test-method status="PASS" signature="PlatFormAdd(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@7403c468]" name="PlatFormAdd" duration-ms="182" started-at="2019-09-09T08:13:01Z" description="数据转发平台配置新增数据" data-provider="dataprovider1" finished-at="2019-09-09T08:13:01Z">
           <params>
             <param index="0">
               <value>
@@ -450,7 +450,7 @@
         </test-method> <!-- PlatFormAdd -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.PlatForm -->
       <class name="com.bitnei.apitest.testcases.datasend.ProtocolAdd">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@43738a82]" name="setUp" is-config="true" duration-ms="1048" started-at="2019-09-09T05:44:27Z" finished-at="2019-09-09T05:44:28Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@43738a82]" name="setUp" is-config="true" duration-ms="1053" started-at="2019-09-09T08:13:01Z" finished-at="2019-09-09T08:13:02Z">
           <params>
             <param index="0">
               <value>
@@ -461,7 +461,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ProtocolAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@43738a82]" name="ProtocolAddData" duration-ms="86" started-at="2019-09-09T05:44:28Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-09-09T05:44:28Z">
+        <test-method status="PASS" signature="ProtocolAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@43738a82]" name="ProtocolAddData" duration-ms="64" started-at="2019-09-09T08:13:02Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-09-09T08:13:03Z">
           <params>
             <param index="0">
               <value>
@@ -474,7 +474,7 @@
         </test-method> <!-- ProtocolAddData -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolAdd -->
       <class name="com.bitnei.apitest.testcases.datasend.VehicleAdd">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleAdd@75881071]" name="setUp" is-config="true" duration-ms="1043" started-at="2019-09-09T05:44:33Z" finished-at="2019-09-09T05:44:34Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleAdd@75881071]" name="setUp" is-config="true" duration-ms="1042" started-at="2019-09-09T08:13:08Z" finished-at="2019-09-09T08:13:09Z">
           <params>
             <param index="0">
               <value>
@@ -485,7 +485,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VehicleAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleAdd@75881071]" name="VehicleAddData" duration-ms="486" started-at="2019-09-09T05:44:34Z" description="任务添加车辆" data-provider="dataprovider5" finished-at="2019-09-09T05:44:35Z">
+        <test-method status="PASS" signature="VehicleAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleAdd@75881071]" name="VehicleAddData" duration-ms="663" started-at="2019-09-09T08:13:09Z" description="任务添加车辆" data-provider="dataprovider5" finished-at="2019-09-09T08:13:10Z">
           <params>
             <param index="0">
               <value>
@@ -498,7 +498,7 @@
         </test-method> <!-- VehicleAddData -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.VehicleAdd -->
       <class name="com.bitnei.apitest.testcases.datasend.VehicleRemove">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleRemove@2a70a3d8]" name="setUp" is-config="true" duration-ms="1052" started-at="2019-09-09T05:44:35Z" finished-at="2019-09-09T05:44:36Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleRemove@2a70a3d8]" name="setUp" is-config="true" duration-ms="1070" started-at="2019-09-09T08:13:10Z" finished-at="2019-09-09T08:13:11Z">
           <params>
             <param index="0">
               <value>
@@ -509,7 +509,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VehicleRemoveData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleRemove@2a70a3d8]" name="VehicleRemoveData" duration-ms="596" started-at="2019-09-09T05:44:36Z" description="任务添加车辆" data-provider="dataprovider1" finished-at="2019-09-09T05:44:37Z">
+        <test-method status="PASS" signature="VehicleRemoveData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleRemove@2a70a3d8]" name="VehicleRemoveData" duration-ms="736" started-at="2019-09-09T08:13:11Z" description="任务添加车辆" data-provider="dataprovider1" finished-at="2019-09-09T08:13:12Z">
           <params>
             <param index="0">
               <value>
@@ -522,7 +522,7 @@
         </test-method> <!-- VehicleRemoveData -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.VehicleRemove -->
       <class name="com.bitnei.apitest.testcases.datasend.TaskAdd">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@1fc2b765]" name="setUp" is-config="true" duration-ms="1047" started-at="2019-09-09T05:44:32Z" finished-at="2019-09-09T05:44:33Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@1fc2b765]" name="setUp" is-config="true" duration-ms="1061" started-at="2019-09-09T08:13:06Z" finished-at="2019-09-09T08:13:07Z">
           <params>
             <param index="0">
               <value>
@@ -533,7 +533,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TaskAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@1fc2b765]" name="TaskAddData" duration-ms="638" started-at="2019-09-09T05:44:33Z" description="数据转发平台新增任务" data-provider="dataprovider1" finished-at="2019-09-09T05:44:33Z">
+        <test-method status="PASS" signature="TaskAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@1fc2b765]" name="TaskAddData" duration-ms="638" started-at="2019-09-09T08:13:07Z" description="数据转发平台新增任务" data-provider="dataprovider1" finished-at="2019-09-09T08:13:08Z">
           <params>
             <param index="0">
               <value>
