@@ -30,8 +30,8 @@ public class SaasLoginTest extends CaseBase{
 	private WebDriver driver; 
 	private int delay = 10;
 	private String userName = "yaomeng@bitnei.cn";
-    String passWord = "123456a";
-	String wrongPassWord = "123ab";
+    String pw = "123456a";
+	String wrongpw = "123ab";
 	WebDriverWait waitVar = null;
 	ExcelReader ex ;
     private ExcleUtil excleUtil;

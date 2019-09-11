@@ -35,13 +35,13 @@ import net.sf.json.JSONObject;
 
 
 public class GetCookieSaaS {
-	String password ="123abc";
+	String pw ="123abc";
 	
 
 	@Parameters({"hostsaas"})
 	public String login(String hostsaas) throws ClientProtocolException, IOException {
 		//用户名密码登录
-        String login = hostsaas + "/user/login?username=yuanpeipei@bitnei.cn&password="+password;  
+        String login = hostsaas + "/user/login?username=yuanpeipei@bitnei.cn&password="+pw;  
         RestClient  restClient = new RestClient();
         CloseableHttpResponse closeableHttpResponse = restClient.post(login);
         //System.out.println("login =============="+login);

@@ -21,7 +21,7 @@ public class UserManage {
 	private WebDriver driver; 
 	private int delay = 10;
 	private String userName = "yuanpeipei@bitnei.cn";
-	String passWord = "123abc";
+	String pw = "123abc";
     String email = "yaomeng@bitnei.cn";
 	WebDriverWait waitVar = null;
 	
@@ -46,7 +46,7 @@ public class UserManage {
 		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 		driver.get("http://61.149.8.78:85/passport/login");
 	    driver.findElement(By.xpath("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[1]/nz-form-control/div/span/nz-input-group/input")).sendKeys(userName);
-	    driver.findElement(By.xpath("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[2]/nz-form-control/div/span/nz-input-group/input")).sendKeys(passWord);
+	    driver.findElement(By.xpath("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[2]/nz-form-control/div/span/nz-input-group/input")).sendKeys(pw);
 	    Thread.sleep(1000);
 	    driver.findElement(By.xpath("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[4]/button")).click();
 	    waitVar.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app/changan-layout/div/header/nav/div[1]/a[2]")));

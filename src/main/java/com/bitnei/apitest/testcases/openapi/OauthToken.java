@@ -20,7 +20,7 @@ public class OauthToken {
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
 	String authorization = "";
-	String password ="ABC123...";
+	String pw ="ABC123...";
 	
 	@Test
 	@Parameters({"hostopenapi"})	
@@ -33,7 +33,7 @@ public class OauthToken {
 		//入参设置            		
 		urlpara= url+"?client_id=zhuhai5338803e1aed4e276be2b3ffbd703417"
 				+ "&client_secret=zhuhai5338803e1aed4e276be2b3ffbd703417&grant_type=password"
-				+ "&password=" + password + "&scope=read&tenant=zhuhai&username=zhuhaiAdmin";
+				+ "&password=" + pw + "&scope=read&tenant=zhuhai&username=zhuhaiAdmin";
 		//调用接口
 		closeableHttpResponse = restClient.post(urlpara, headermap);
 		HttpEntity entity = closeableHttpResponse.getEntity();
