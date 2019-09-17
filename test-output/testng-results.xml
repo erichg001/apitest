@@ -1,211 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="41356" started-at="2019-09-11T01:54:13Z" finished-at="2019-09-11T01:54:55Z">
+  <suite name="apitest" duration-ms="80997" started-at="2019-09-17T06:05:26Z" finished-at="2019-09-17T06:06:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41356" started-at="2019-09-11T01:54:13Z" finished-at="2019-09-11T01:54:55Z">
-      <class name="com.bitnei.apitest.testcases.openapi.ChargingDataTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9]" name="setUp" is-config="true" duration-ms="2153" started-at="2019-09-11T01:54:13Z" finished-at="2019-09-11T01:54:16Z">
+    <test name="Default test" duration-ms="80997" started-at="2019-09-17T06:05:26Z" finished-at="2019-09-17T06:06:47Z">
+      <class name="com.bitnei.selenium.testcase.SaasLoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="setUp" is-config="true" duration-ms="595" started-at="2019-09-17T06:05:26Z" finished-at="2019-09-17T06:05:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://61.149.8.78:83]]>
+                <![CDATA[http://test-saas.bitnei.cn]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[D:\\TEST.xlsx]]>
+                <![CDATA[D:\\DATA.xlsx]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9]" name="ChargingDataNormal" duration-ms="19579" started-at="2019-09-11T01:54:16Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-11T01:54:35Z">
+        <test-method status="PASS" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="LoginFaild" duration-ms="18405" started-at="2019-09-17T06:05:26Z" description="用户登录" data-provider="dp" finished-at="2019-09-17T06:05:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[查询结果正常]]>
+                <![CDATA[登录失败,用户名密码错误]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+                <![CDATA[/passport/login]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21]]>
+                <![CDATA[yaomeng@bitnei.cn>>123]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34","startCurrent":"-230.3","endCurrent":"-0.8","startVolt":"594.7","endVolt":"586.4"}],"error":false}]]>
+                <![CDATA[/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[用户名或密码错误]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9]" name="ChargingDataNormal" duration-ms="461" started-at="2019-09-11T01:54:35Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-11T01:54:36Z">
+        </test-method> <!-- LoginFaild -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="afterTest" is-config="true" duration-ms="1419" started-at="2019-09-17T06:05:45Z" finished-at="2019-09-17T06:05:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="LoginFaild" duration-ms="13370" started-at="2019-09-17T06:05:46Z" description="用户登录" data-provider="dp" finished-at="2019-09-17T06:06:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[参数from不符合规则]]>
+                <![CDATA[请输入用户名]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+                <![CDATA[/passport/login]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:21]]>
+                <![CDATA[>>123]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+                <![CDATA[/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[请输入用户名]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9]" name="ChargingDataNormal" duration-ms="39" started-at="2019-09-11T01:54:36Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-11T01:54:36Z">
+        </test-method> <!-- LoginFaild -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="afterTest" is-config="true" duration-ms="956" started-at="2019-09-17T06:06:00Z" finished-at="2019-09-17T06:06:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="FAIL" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="LoginFaild" duration-ms="12915" started-at="2019-09-17T06:06:01Z" description="用户登录" data-provider="dp" finished-at="2019-09-17T06:06:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[参数to不符合规则]]>
+                <![CDATA[请输入密码]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+                <![CDATA[/passport/login]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=]]>
+                <![CDATA[yaomeng@bitnei.cn>>]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+                <![CDATA[/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[请输入密码]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 1
+at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:57)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFaild -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="afterTest" is-config="true" duration-ms="849" started-at="2019-09-17T06:06:13Z" finished-at="2019-09-17T06:06:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="LoginFaild" duration-ms="13382" started-at="2019-09-17T06:06:14Z" description="用户登录" data-provider="dp" finished-at="2019-09-17T06:06:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[用户名不是有效的邮箱！]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/passport/login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yaomeng>>123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[用户名不是有效的邮箱！]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9]" name="ChargingDataNormal" duration-ms="195" started-at="2019-09-11T01:54:36Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-11T01:54:36Z">
+        </test-method> <!-- LoginFaild -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="afterTest" is-config="true" duration-ms="953" started-at="2019-09-17T06:06:28Z" finished-at="2019-09-17T06:06:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="LoginFaild" duration-ms="17142" started-at="2019-09-17T06:06:29Z" description="用户登录" data-provider="dp" finished-at="2019-09-17T06:06:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[选择时间范围不得超过一个自然日]]>
+                <![CDATA[登录成功]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+                <![CDATA[/passport/login]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21]]>
+                <![CDATA[zhanghailong@bitnei.cn>>abc123]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+                <![CDATA[/html/body/app/changan-layout/div/header/nav/div[1]/a[2]]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[智能网联汽车大数据云平台]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9]" name="ChargingDataNormal" duration-ms="58" started-at="2019-09-11T01:54:36Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-11T01:54:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[选择时间范围开始时间不能大于结束时间]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/external/1/zhuhai/api/chargingData]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[?licensePlate=粤C00859D&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true}]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- LoginFaild -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="afterTest" is-config="true" duration-ms="966" started-at="2019-09-17T06:06:46Z" finished-at="2019-09-17T06:06:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9]" name="ChargingDataNormal" duration-ms="34" started-at="2019-09-11T01:54:36Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-11T01:54:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[数据缺少车牌号参数]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/external/1/zhuhai/api/chargingData]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9]" name="ChargingDataNormal" duration-ms="18778" started-at="2019-09-11T01:54:36Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-11T01:54:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[参数车牌号无效]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/external/1/zhuhai/api/chargingData]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{"status":400,"errorMsg":"VALID","data":"车牌粤C00859号无效或没有车辆充电数据","error":true}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChargingDataNormal -->
-      </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingDataTest -->
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.bitnei.selenium.testcase.SaasLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- apitest -->
 </testng-results>

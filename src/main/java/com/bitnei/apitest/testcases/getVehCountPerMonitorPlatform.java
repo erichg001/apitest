@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 import com.alibaba.fastjson.JSON;
 import com.bitnei.apitest.dataprovider.DataProviderMethod;
 import com.bitnei.apitest.pro.Vehicles;
+import com.bitnei.apitest.testcases.datasend.GetCookieNew;
 import com.bitnei.apitest.tool.DiffMethod;
 import com.bitnei.apitest.utils.RestClient;
 
@@ -25,13 +26,13 @@ public class getVehCountPerMonitorPlatform {
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookie getCookie = new GetCookie();
+	GetCookieNew getCookie = new GetCookieNew();
 	String cookie = "";
 	
 	@Parameters({"host"})
 	@BeforeClass
 	public void setUp(String host) {
-		url = host + "/rest/monitor/monitor/vehCountPerMonitorPlatform";
+		url = host + "/forward/monitor/monitor/vehCountPerMonitorPlatform";
 		//设置cookie		
 		try {
 			 cookie = getCookie.login();

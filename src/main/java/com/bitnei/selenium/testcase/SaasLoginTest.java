@@ -2,39 +2,20 @@ package com.bitnei.selenium.testcase;
 
 import static org.testng.Assert.assertTrue;
 
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.bitnei.apitest.utils.ExcelReader;
-import com.bitnei.apitest.utils.ExcleUtil;
 import com.bitnei.selenium.utils.WebDriverUtil;
+
+import junit.framework.Assert;
 
 public class SaasLoginTest extends CaseBase{
 	String host;
-	String url;
-	String urlpara = "";
-	String text;
-	private WebDriver driver; 
-	private int delay = 10;
-	private String userName = "yaomeng@bitnei.cn";
-    String pw = "123456a";
-	String wrongpw = "123ab";
-	WebDriverWait waitVar = null;
 	ExcelReader ex ;
-    private ExcleUtil excleUtil;
     WebDriverUtil webdriverutil;
     boolean res;
 	
@@ -63,28 +44,9 @@ public class SaasLoginTest extends CaseBase{
 	public void afterTest() {
 	     //关闭并退出浏览器  
 	     webdriverutil.closeAllBrowser();
-	}
+	}	
 	
-//	@Test(description="点击登录按钮跳转正确",dataProvider="dp")
-//	public void Login(String desc,String url,String paras,String result){		
-//		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);         
-//		driver.get(host+url); 
-//		driver.findElement(By.xpath("/html/body/app-root/app-sass/div/header/nav/div[2]/div/a[4]")).click();      
-//		String get_title = driver.getCurrentUrl();
-//		assertTrue(get_title.equals(result));          
-//	}
-//	
-//	@Test(description="登录失败,请输入用户名",dataProvider="dp")
-//	public void LoginNoName(String desc,String url,String paras,String result) throws InterruptedException {
-//		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
-//		driver.get(host+url);
-//	    Thread.sleep(1000);
-//	    driver.findElement(By.xpath("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[4]/button")).click();
-//	    //waitVar.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app/changan-layout/div/header/nav/div[1]/a[2]")));
-//	    assertTrue(driver.findElement(By.xpath("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span")).getText().equals(result));
-//	}
-	
-	@Test(description="登录失败,用户名密码错误",dataProvider="dp")
+	@Test(description="用户登录",dataProvider="dp")
 	public void LoginFaild(String desc,String url,String paras,String xpath,String result) throws InterruptedException {
 		webdriverutil = new WebDriverUtil();
 		webdriverutil.openBrowser(host+url, "chrome");
@@ -94,15 +56,24 @@ public class SaasLoginTest extends CaseBase{
 	    Thread.sleep(1000);
 	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[4]/button");
 	    res = webdriverutil.findElementByXpath(xpath).getText().equals(result);
-	    if (res == false ) {
-	    	try {
-				webdriverutil.takeScreenshotByNow();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+	    try {
+	    	if (res == false ) {
+	    	webdriverutil.takeScreenshotByNow();
+	    	Assert.fail("验证失败");
+	    	}else {
+	    	assertTrue(res);
+	    	}	    	
+	    }catch(Exception e){
+	    	e.printStackTrace();
 	    }
-	    assertTrue(res);
+//	    if (res == false ) {
+//	    	try {
+//				webdriverutil.takeScreenshotByNow();
+//			} catch (IOException e) {
+//				e.printStackTrace();
+//			}
+//	    }
+	    //assertTrue(res);
 	}
 	
 	@DataProvider

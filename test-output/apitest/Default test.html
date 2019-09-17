@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 11 09:54:13 CST 2019</td>
+<td>Started on:</td><td>Tue Sep 17 14:05:26 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41356 ms)</td>
+<tr><td>Total time:</td><td>80 seconds (80997 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,74 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.selenium.testcase.SaasLoginTest<br>Test method: 用户登录<br>Parameters: 请输入密码, /passport/login, yaomeng@bitnei.cn>>, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 请输入密码</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace696165690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace696165690'><pre>java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>com.bitnei.selenium.testcase.SaasLoginTest@4b9e255</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,40 +143,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21, {"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34","startCurrent":"-230.3","endCurrent":"-0.8","startVolt":"594.7","endVolt":"586.4"}],"error":false}</td>
-<td></td>
-<td>19</td>
-<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:21, {"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=, {"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21, {"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.openapi.ChargingDataTest.ChargingDataNormal()'><b>ChargingDataNormal</b><br>Test class: com.bitnei.apitest.testcases.openapi.ChargingDataTest<br>Test method: 查询珠海车辆充电数据<br>Parameters: 参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21, {"status":400,"errorMsg":"VALID","data":"车牌粤C00859号无效或没有车辆充电数据","error":true}</td>
+<td title='com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.selenium.testcase.SaasLoginTest<br>Test method: 用户登录<br>Parameters: 登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn>>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 用户名或密码错误</td>
 <td></td>
 <td>18</td>
-<td>com.bitnei.apitest.testcases.openapi.ChargingDataTest@51b279c9</td></tr>
+<td>com.bitnei.selenium.testcase.SaasLoginTest@4b9e255</td></tr>
+<tr>
+<td title='com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.selenium.testcase.SaasLoginTest<br>Test method: 用户登录<br>Parameters: 请输入用户名, /passport/login, >>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 请输入用户名</td>
+<td></td>
+<td>13</td>
+<td>com.bitnei.selenium.testcase.SaasLoginTest@4b9e255</td></tr>
+<tr>
+<td title='com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.selenium.testcase.SaasLoginTest<br>Test method: 用户登录<br>Parameters: 用户名不是有效的邮箱！, /passport/login, yaomeng>>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 用户名不是有效的邮箱！</td>
+<td></td>
+<td>13</td>
+<td>com.bitnei.selenium.testcase.SaasLoginTest@4b9e255</td></tr>
+<tr>
+<td title='com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.selenium.testcase.SaasLoginTest<br>Test method: 用户登录<br>Parameters: 登录成功, /passport/login, zhanghailong@bitnei.cn>>abc123, /html/body/app/changan-layout/div/header/nav/div[1]/a[2], 智能网联汽车大数据云平台</td>
+<td></td>
+<td>17</td>
+<td>com.bitnei.selenium.testcase.SaasLoginTest@4b9e255</td></tr>
 </table><p>
 </body>
 </html>

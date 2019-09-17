@@ -37,7 +37,7 @@ import net.sf.json.JSONObject;
 public class GetCookieSaaS {
 	String pw ="123abc";
 	
-
+	@Test
 	@Parameters({"hostsaas"})
 	public String login(String hostsaas) throws ClientProtocolException, IOException {
 		//用户名密码登录
@@ -48,7 +48,7 @@ public class GetCookieSaaS {
         HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");		
 		JSONObject jsonobject = JSONObject.fromObject(str);
-		//System.out.println("jsonobject =============="+jsonobject);
+		System.out.println("jsonobject =============="+jsonobject);
 		String access_token = jsonobject.getJSONObject("data").getJSONObject("token").getString("access_token");	
 		//System.out.println("data =============="+access_token);
 		

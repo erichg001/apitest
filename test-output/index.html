@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-apitest">
-              <span class="suite-name border-passed">apitest</span>
+              <span class="suite-name border-failed">apitest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-apitest">
-                    <span>C:\Users\eric_\AppData\Local\Temp\testng-eclipse-611153056\testng-customsuite.xml</span>
+                    <span>C:\Users\eric_\AppData\Local\Temp\testng-eclipse-1265280298\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-apitest" class="hide-methods failed suite-apitest"> (hide)</a> <!-- hide-methods failed suite-apitest -->
+                      <a href="#" panel-name="suite-apitest" class="show-methods failed suite-apitest"> (show)</a> <!-- show-methods failed suite-apitest -->
+                    </span>
+                    <div class="method-list-content failed suite-apitest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.selenium.testcase.SaasLoginTest" hash-for-method="LoginFaild(请输入密码, /passport/login, yaomeng@bitnei.cn&gt;&gt;, /html/body/app-root/layout-passport/div/div/passport-lo...)">LoginFaild(请输入密码, /passport/login, yaomeng@bitnei.cn>>, /html/body/app-root/layout-passport/div/div/passport-lo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-apitest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,37 +116,22 @@
                     <div class="method-list-content passed suite-apitest">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:2...)">ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:2...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.selenium.testcase.SaasLoginTest" hash-for-method="LoginFaild(请输入用户名, /passport/login, &gt;&gt;123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/...)">LoginFaild(请输入用户名, /passport/login, >>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&amp;to=2019-03-02+10:49:21, {&quot;...)">ChargingDataNormal(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.selenium.testcase.SaasLoginTest" hash-for-method="LoginFaild(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn&gt;&gt;123, /html/body/app-root/layout-passport/div/div/p...)">LoginFaild(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn>>123, /html/body/app-root/layout-passport/div/div/p...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+07:49:21&amp;to=2019...)">ChargingDataNormal(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.selenium.testcase.SaasLoginTest" hash-for-method="LoginFaild(登录成功, /passport/login, zhanghailong@bitnei.cn&gt;&gt;abc123, /html/body/app/changan-layout/div/header/nav/...)">LoginFaild(登录成功, /passport/login, zhanghailong@bitnei.cn>>abc123, /html/body/app/changan-layout/div/header/nav/...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:21&amp;to=,...)">ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=,...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=&amp;to=2019-03-01+10:49:2...)">ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:2...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-03+10:4...)">ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:4...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&amp;from=2019-03-01+07:49:21&amp;to=2019...)">ChargingDataNormal(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.selenium.testcase.SaasLoginTest" hash-for-method="LoginFaild(用户名不是有效的邮箱！, /passport/login, yaomeng&gt;&gt;123, /html/body/app-root/layout-passport/div/div/passport-log...)">LoginFaild(用户名不是有效的邮箱！, /passport/login, yaomeng>>123, /html/body/app-root/layout-passport/div/div/passport-log...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-apitest -->
@@ -147,80 +146,97 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-apitest" class="panel apitest">
-          <div class="suite-apitest-class-passed">
+          <div class="suite-apitest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.bitnei.apitest.testcases.openapi.ChargingDataTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.bitnei.selenium.testcase.SaasLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:2...)">
-                  </a> <!-- ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:2...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21, {"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true})</span>
+                  <a name="LoginFaild(请输入密码, /passport/login, yaomeng@bitnei.cn&gt;&gt;, /html/body/app-root/layout-passport/div/div/passport-lo...)">
+                  </a> <!-- LoginFaild(请输入密码, /passport/login, yaomeng@bitnei.cn>>, /html/body/app-root/layout-passport/div/div/passport-lo...) -->
+                  <span class="method-name">LoginFaild</span>
+                  <span class="parameters">(请输入密码, /passport/login, yaomeng@bitnei.cn>>, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 请输入密码)</span>
+                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                   <em>
-(查询珠海车辆充电数据)                  </em>
+(用户登录)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-apitest-class-failed -->
+          <div class="suite-apitest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bitnei.selenium.testcase.SaasLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginFaild(请输入用户名, /passport/login, &gt;&gt;123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/...)">
+                  </a> <!-- LoginFaild(请输入用户名, /passport/login, >>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/...) -->
+                  <span class="method-name">LoginFaild</span>
+                  <span class="parameters">(请输入用户名, /passport/login, >>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 请输入用户名)</span>
+                  <em>
+(用户登录)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ChargingDataNormal(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&amp;to=2019-03-02+10:49:21, {&quot;...)">
-                  </a> <!-- ChargingDataNormal(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true})</span>
+                  <a name="LoginFaild(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn&gt;&gt;123, /html/body/app-root/layout-passport/div/div/p...)">
+                  </a> <!-- LoginFaild(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn>>123, /html/body/app-root/layout-passport/div/div/p...) -->
+                  <span class="method-name">LoginFaild</span>
+                  <span class="parameters">(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn>>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 用户名或密码错误)</span>
                   <em>
-(查询珠海车辆充电数据)                  </em>
+(用户登录)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ChargingDataNormal(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+07:49:21&amp;to=2019...)">
-                  </a> <!-- ChargingDataNormal(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21, {"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34","startCurrent":"-230.3","endCurrent":"-0.8","startVolt":"594.7","endVolt":"586.4"}],"error":false})</span>
+                  <a name="LoginFaild(登录成功, /passport/login, zhanghailong@bitnei.cn&gt;&gt;abc123, /html/body/app/changan-layout/div/header/nav/...)">
+                  </a> <!-- LoginFaild(登录成功, /passport/login, zhanghailong@bitnei.cn>>abc123, /html/body/app/changan-layout/div/header/nav/...) -->
+                  <span class="method-name">LoginFaild</span>
+                  <span class="parameters">(登录成功, /passport/login, zhanghailong@bitnei.cn>>abc123, /html/body/app/changan-layout/div/header/nav/div[1]/a[2], 智能网联汽车大数据云平台)</span>
                   <em>
-(查询珠海车辆充电数据)                  </em>
+(用户登录)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:21&amp;to=,...)">
-                  </a> <!-- ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=,...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=, {"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true})</span>
+                  <a name="LoginFaild(用户名不是有效的邮箱！, /passport/login, yaomeng&gt;&gt;123, /html/body/app-root/layout-passport/div/div/passport-log...)">
+                  </a> <!-- LoginFaild(用户名不是有效的邮箱！, /passport/login, yaomeng>>123, /html/body/app-root/layout-passport/div/div/passport-log...) -->
+                  <span class="method-name">LoginFaild</span>
+                  <span class="parameters">(用户名不是有效的邮箱！, /passport/login, yaomeng>>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 用户名不是有效的邮箱！)</span>
                   <em>
-(查询珠海车辆充电数据)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=&amp;to=2019-03-01+10:49:2...)">
-                  </a> <!-- ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:2...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:21, {"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true})</span>
-                  <em>
-(查询珠海车辆充电数据)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-03+10:4...)">
-                  </a> <!-- ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:4...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true})</span>
-                  <em>
-(查询珠海车辆充电数据)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChargingDataNormal(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&amp;from=2019-03-01+07:49:21&amp;to=2019...)">
-                  </a> <!-- ChargingDataNormal(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21, {"status":400,"errorMsg":"VALID","data":"车牌粤C00859号无效或没有车辆充电数据","error":true})</span>
-                  <em>
-(查询珠海车辆充电数据)                  </em>
+(用户登录)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -228,23 +244,24 @@
         </div> <!-- panel apitest -->
         <div panel-name="test-xml-apitest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\eric_\AppData\Local\Temp\testng-eclipse-611153056\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\eric_\AppData\Local\Temp\testng-eclipse-1265280298\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;apitest&quot;&gt;
+  &lt;parameter name=&quot;testsaas&quot; value=&quot;http://test-saas.bitnei.cn&quot;/&gt;
   &lt;parameter name=&quot;suite&quot; value=&quot;suiteParameter&quot;/&gt;
   &lt;parameter name=&quot;hostopenapi&quot; value=&quot;http://61.149.8.78:83&quot;/&gt;
   &lt;parameter name=&quot;pathroad&quot; value=&quot;D:\\TEST.xlsx&quot;/&gt;
   &lt;parameter name=&quot;host&quot; value=&quot;http://10.10.26.3:81&quot;/&gt;
   &lt;parameter name=&quot;pathsaasuser&quot; value=&quot;D:\\DATA.xlsx&quot;/&gt;
-  &lt;parameter name=&quot;hostsaas&quot; value=&quot;http://61.149.8.78:85&quot;/&gt;
+  &lt;parameter name=&quot;hostsaas&quot; value=&quot;http://test-saas.bitnei.cn&quot;/&gt;
   &lt;parameter name=&quot;host7789&quot; value=&quot;http://bdp-app.bitnei.cn:7789&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.bitnei.apitest.testcases.openapi.ChargingDataTest&quot;/&gt;
+      &lt;class name=&quot;com.bitnei.selenium.testcase.SaasLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- apitest --&gt;
@@ -284,40 +301,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ChargingDataNormal')
-data.setCell(0, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(0, 3, 19579);
+data.setCell(0, 1, 'LoginFaild')
+data.setCell(0, 2, 'com.bitnei.selenium.testcase.SaasLoginTest')
+data.setCell(0, 3, 18405);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ChargingDataNormal')
-data.setCell(1, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(1, 3, 18778);
+data.setCell(1, 1, 'LoginFaild')
+data.setCell(1, 2, 'com.bitnei.selenium.testcase.SaasLoginTest')
+data.setCell(1, 3, 17142);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ChargingDataNormal')
-data.setCell(2, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(2, 3, 461);
+data.setCell(2, 1, 'LoginFaild')
+data.setCell(2, 2, 'com.bitnei.selenium.testcase.SaasLoginTest')
+data.setCell(2, 3, 13382);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ChargingDataNormal')
-data.setCell(3, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(3, 3, 195);
+data.setCell(3, 1, 'LoginFaild')
+data.setCell(3, 2, 'com.bitnei.selenium.testcase.SaasLoginTest')
+data.setCell(3, 3, 13370);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ChargingDataNormal')
-data.setCell(4, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(4, 3, 58);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ChargingDataNormal')
-data.setCell(5, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(5, 3, 39);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'ChargingDataNormal')
-data.setCell(6, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(6, 3, 34);
+data.setCell(4, 1, 'LoginFaild')
+data.setCell(4, 2, 'com.bitnei.selenium.testcase.SaasLoginTest')
+data.setCell(4, 3, 12915);
 window.suiteTableData['apitest']= { tableData: data, tableDiv: 'times-div-apitest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-apitest">
               </div> <!-- times-div-apitest -->
             </div> <!-- times-div -->
@@ -343,39 +352,53 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.bitnei.apitest.testcases.openapi.ChargingDataTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.bitnei.selenium.testcase.SaasLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(http://61.149.8.78:83, D:\\TEST.xlsx)</span>
+                <span class="method-name">setUp(http://test-saas.bitnei.cn, D:\\DATA.xlsx)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">ChargingDataNormal(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019...)</span>
-                <span class="method-start">2180 ms</span>
+                <span class="method-name">LoginFaild(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn>>123, /html/body/app-root/layout-passport/div/div/p...)</span>
+                <span class="method-start">620 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">19027 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:2...)</span>
-                <span class="method-start">21760 ms</span>
+                <span class="method-name">LoginFaild(请输入用户名, /passport/login, >>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/...)</span>
+                <span class="method-start">20447 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">33818 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=,...)</span>
-                <span class="method-start">22222 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginFaild(请输入密码, /passport/login, yaomeng@bitnei.cn>>, /html/body/app-root/layout-passport/div/div/passport-lo...)</span>
+                <span class="method-start">34774 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">47692 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:2...)</span>
-                <span class="method-start">22264 ms</span>
+                <span class="method-name">LoginFaild(用户名不是有效的邮箱！, /passport/login, yaomeng>>123, /html/body/app-root/layout-passport/div/div/passport-log...)</span>
+                <span class="method-start">48541 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">61924 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:4...)</span>
-                <span class="method-start">22462 ms</span>
+                <span class="method-name">LoginFaild(登录成功, /passport/login, zhanghailong@bitnei.cn>>abc123, /html/body/app/changan-layout/div/header/nav/...)</span>
+                <span class="method-start">62877 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">ChargingDataNormal(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"...)</span>
-                <span class="method-start">22521 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">ChargingDataNormal(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019...)</span>
-                <span class="method-start">22557 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">80019 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
