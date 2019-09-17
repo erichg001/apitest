@@ -11,13 +11,12 @@
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.selenium.testcase.SaasLoginTest">
+      <class name="com.bitnei.apitest.testcases.datasend.TaskAdd">
         <methods>
-          <include name="LoginFaild" invocation-numbers="3"/>
-          <include name="afterTest"/>
           <include name="setUp"/>
+          <include name="TaskAddData" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.bitnei.selenium.testcase.SaasLoginTest -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.TaskAdd -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

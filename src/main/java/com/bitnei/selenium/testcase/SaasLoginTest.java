@@ -2,6 +2,7 @@ package com.bitnei.selenium.testcase;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -10,8 +11,6 @@ import org.testng.annotations.Test;
 
 import com.bitnei.apitest.utils.ExcelReader;
 import com.bitnei.selenium.utils.WebDriverUtil;
-
-import junit.framework.Assert;
 
 public class SaasLoginTest extends CaseBase{
 	String host;
@@ -59,7 +58,7 @@ public class SaasLoginTest extends CaseBase{
 	    try {
 	    	if (res == false ) {
 	    	webdriverutil.takeScreenshotByNow();
-	    	Assert.fail("验证失败");
+	    	Assert.fail("");
 	    	}else {
 	    	assertTrue(res);
 	    	}	    	

@@ -1,133 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="80997" started-at="2019-09-17T06:05:26Z" finished-at="2019-09-17T06:06:47Z">
+  <suite name="apitest" duration-ms="5173" started-at="2019-09-17T08:43:30Z" finished-at="2019-09-17T08:43:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="80997" started-at="2019-09-17T06:05:26Z" finished-at="2019-09-17T06:06:47Z">
-      <class name="com.bitnei.selenium.testcase.SaasLoginTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="setUp" is-config="true" duration-ms="595" started-at="2019-09-17T06:05:26Z" finished-at="2019-09-17T06:05:26Z">
+    <test name="Default test" duration-ms="5173" started-at="2019-09-17T08:43:30Z" finished-at="2019-09-17T08:43:35Z">
+      <class name="com.bitnei.apitest.testcases.datasend.TaskAdd">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@40f08448]" name="setUp" is-config="true" duration-ms="1387" started-at="2019-09-17T08:43:30Z" finished-at="2019-09-17T08:43:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://test-saas.bitnei.cn]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[D:\\DATA.xlsx]]>
+                <![CDATA[http://10.10.26.3:81]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="LoginFaild" duration-ms="18405" started-at="2019-09-17T06:05:26Z" description="用户登录" data-provider="dp" finished-at="2019-09-17T06:05:45Z">
+        <test-method status="FAIL" signature="TaskAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@40f08448]" name="TaskAddData" duration-ms="3749" started-at="2019-09-17T08:43:32Z" description="数据转发平台新增任务" data-provider="dataprovider1" finished-at="2019-09-17T08:43:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[登录失败,用户名密码错误]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/passport/login]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[yaomeng@bitnei.cn>>123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[用户名或密码错误]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false}]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFaild -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="afterTest" is-config="true" duration-ms="1419" started-at="2019-09-17T06:05:45Z" finished-at="2019-09-17T06:05:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="LoginFaild" duration-ms="13370" started-at="2019-09-17T06:05:46Z" description="用户登录" data-provider="dp" finished-at="2019-09-17T06:06:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[请输入用户名]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/passport/login]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[>>123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[请输入用户名]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFaild -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="afterTest" is-config="true" duration-ms="956" started-at="2019-09-17T06:06:00Z" finished-at="2019-09-17T06:06:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="FAIL" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="LoginFaild" duration-ms="12915" started-at="2019-09-17T06:06:01Z" description="用户登录" data-provider="dp" finished-at="2019-09-17T06:06:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[请输入密码]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/passport/login]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[yaomeng@bitnei.cn>>]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[请输入密码]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[1]]>
+              <![CDATA[expected [{}] but found [{"status":{"currentValue is ":400,"expectedValue is":200},"error":{"currentValue is ":true,"expectedValue is":false}}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 1
-at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:57)
+              <![CDATA[java.lang.AssertionError: expected [{}] but found [{"status":{"currentValue is ":400,"expectedValue is":200},"error":{"currentValue is ":true,"expectedValue is":false}}]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData(TaskAdd.java:99)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -155,85 +66,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginFaild -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="afterTest" is-config="true" duration-ms="849" started-at="2019-09-17T06:06:13Z" finished-at="2019-09-17T06:06:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="LoginFaild" duration-ms="13382" started-at="2019-09-17T06:06:14Z" description="用户登录" data-provider="dp" finished-at="2019-09-17T06:06:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[用户名不是有效的邮箱！]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/passport/login]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[yaomeng>>123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[用户名不是有效的邮箱！]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFaild -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="afterTest" is-config="true" duration-ms="953" started-at="2019-09-17T06:06:28Z" finished-at="2019-09-17T06:06:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="LoginFaild" duration-ms="17142" started-at="2019-09-17T06:06:29Z" description="用户登录" data-provider="dp" finished-at="2019-09-17T06:06:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[登录成功]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/passport/login]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[zhanghailong@bitnei.cn>>abc123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[/html/body/app/changan-layout/div/header/nav/div[1]/a[2]]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[智能网联汽车大数据云平台]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFaild -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@4b9e255]" name="afterTest" is-config="true" duration-ms="966" started-at="2019-09-17T06:06:46Z" finished-at="2019-09-17T06:06:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.bitnei.selenium.testcase.SaasLoginTest -->
+        </test-method> <!-- TaskAddData -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.TaskAdd -->
     </test> <!-- Default test -->
   </suite> <!-- apitest -->
 </testng-results>

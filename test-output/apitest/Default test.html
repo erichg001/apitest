@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 17 14:05:26 CST 2019</td>
+<td>Started on:</td><td>Tue Sep 17 16:43:30 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>80 seconds (80997 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5173 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,9 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.selenium.testcase.SaasLoginTest<br>Test method: 用户登录<br>Parameters: 请输入密码, /passport/login, yaomeng@bitnei.cn>>, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 请输入密码</td>
-<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: 1
-	at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:57)
+<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData()'><b>TaskAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:400,&quot;expectedValue is&quot;:200},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData(TaskAdd.java:99)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -103,9 +109,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace696165690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace696165690'><pre>java.lang.ArrayIndexOutOfBoundsException: 1
-	at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:57)
+</pre></div><a href='#' onClick='toggleBox("stack-trace292167944", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace292167944'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:400,&quot;expectedValue is&quot;:200},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData(TaskAdd.java:99)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -132,36 +144,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>12</td>
-<td>com.bitnei.selenium.testcase.SaasLoginTest@4b9e255</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.selenium.testcase.SaasLoginTest<br>Test method: 用户登录<br>Parameters: 登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn>>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 用户名或密码错误</td>
-<td></td>
-<td>18</td>
-<td>com.bitnei.selenium.testcase.SaasLoginTest@4b9e255</td></tr>
-<tr>
-<td title='com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.selenium.testcase.SaasLoginTest<br>Test method: 用户登录<br>Parameters: 请输入用户名, /passport/login, >>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 请输入用户名</td>
-<td></td>
-<td>13</td>
-<td>com.bitnei.selenium.testcase.SaasLoginTest@4b9e255</td></tr>
-<tr>
-<td title='com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.selenium.testcase.SaasLoginTest<br>Test method: 用户登录<br>Parameters: 用户名不是有效的邮箱！, /passport/login, yaomeng>>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 用户名不是有效的邮箱！</td>
-<td></td>
-<td>13</td>
-<td>com.bitnei.selenium.testcase.SaasLoginTest@4b9e255</td></tr>
-<tr>
-<td title='com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild()'><b>LoginFaild</b><br>Test class: com.bitnei.selenium.testcase.SaasLoginTest<br>Test method: 用户登录<br>Parameters: 登录成功, /passport/login, zhanghailong@bitnei.cn>>abc123, /html/body/app/changan-layout/div/header/nav/div[1]/a[2], 智能网联汽车大数据云平台</td>
-<td></td>
-<td>17</td>
-<td>com.bitnei.selenium.testcase.SaasLoginTest@4b9e255</td></tr>
+<td>3</td>
+<td>com.bitnei.apitest.testcases.datasend.TaskAdd@40f08448</td></tr>
 </table><p>
 </body>
 </html>

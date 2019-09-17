@@ -9,12 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">apitest</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">80,997</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">5,173</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">apitest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.bitnei.selenium.testcase.SaasLoginTest</td><td><a href="#m0">LoginFaild</a></td><td rowspan="1">1568700361055</td><td rowspan="1">12915</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.bitnei.selenium.testcase.SaasLoginTest</td><td><a href="#m1">LoginFaild</a></td><td rowspan="4">1568700346728</td><td rowspan="4">13370</td></tr><tr class="passedeven"><td><a href="#m2">LoginFaild</a></td></tr><tr class="passedeven"><td><a href="#m3">LoginFaild</a></td></tr><tr class="passedeven"><td><a href="#m4">LoginFaild</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">apitest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.bitnei.apitest.testcases.datasend.TaskAdd</td><td><a href="#m0">TaskAddData</a></td><td rowspan="1">1568709812040</td><td rowspan="1">3749</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.bitnei.selenium.testcase.SaasLoginTest#LoginFaild</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>请输入密码</td><td>/passport/login</td><td>yaomeng@bitnei.cn&gt;&gt;</td><td>/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span</td><td>请输入密码</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.ArrayIndexOutOfBoundsException: 1
-	at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:57)
+<h2>Default test</h2><h3 id="m0">com.bitnei.apitest.testcases.datasend.TaskAdd#TaskAddData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:400,&quot;expectedValue is&quot;:200},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData(TaskAdd.java:99)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -41,9 +47,5 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.bitnei.selenium.testcase.SaasLoginTest#LoginFaild</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>请输入用户名</td><td>/passport/login</td><td>&gt;&gt;123</td><td>/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span</td><td>请输入用户名</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.bitnei.selenium.testcase.SaasLoginTest#LoginFaild</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>登录失败,用户名密码错误</td><td>/passport/login</td><td>yaomeng@bitnei.cn&gt;&gt;123</td><td>/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span</td><td>用户名或密码错误</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.bitnei.selenium.testcase.SaasLoginTest#LoginFaild</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>登录成功</td><td>/passport/login</td><td>zhanghailong@bitnei.cn&gt;&gt;abc123</td><td>/html/body/app/changan-layout/div/header/nav/div[1]/a[2]</td><td>智能网联汽车大数据云平台</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.bitnei.selenium.testcase.SaasLoginTest#LoginFaild</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>用户名不是有效的邮箱！</td><td>/passport/login</td><td>yaomeng&gt;&gt;123</td><td>/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span</td><td>用户名不是有效的邮箱！</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

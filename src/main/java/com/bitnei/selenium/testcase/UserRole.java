@@ -2,6 +2,7 @@ package com.bitnei.selenium.testcase;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -11,7 +12,7 @@ import org.testng.annotations.Test;
 import com.bitnei.apitest.utils.ExcelReader;
 import com.bitnei.selenium.utils.WebDriverUtil;
 
-import junit.framework.Assert;
+//import junit.framework.Assert;
 
 public class UserRole extends CaseBase{
 	
@@ -51,7 +52,7 @@ public class UserRole extends CaseBase{
 	    try {
 	    	if (res == false ) {
 	    	webdriverutil.takeScreenshotByNow();
-	    	Assert.fail("验证失败");
+	    	Assert.fail("用户跳转失败");
 	    	}else {
 	    	assertTrue(res);
 	    	}	    	
@@ -59,18 +60,18 @@ public class UserRole extends CaseBase{
 	    	e.printStackTrace();
 	    }
 	    
-	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/app-sass/div/div/app-left-sass-menu/div/div/div[2]/app-user-manager/nz-card/div/st/nz-table/div/nz-spin/div/div[2]/div/div/div/div/table/tbody/tr[1]/td[9]/span[2]/nz-switch/span");	    
-	    res = webdriverutil.findElementByXpath("/html/body/div[2]/div[2]/div/nz-message-container/div/nz-message/div/div/div/span").getText().equals("用户状态已更新！");
-	    try {
-	    	if (res == false ) {
-	    	webdriverutil.takeScreenshotByNow();
-	    	Assert.fail("验证失败");
-	    	}else {
-	    	assertTrue(res);
-	    	}	    	
-	    }catch(Exception e){
-	    	e.printStackTrace();
-	    }
+//	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/app-sass/div/div/app-left-sass-menu/div/div/div[2]/app-user-manager/nz-card/div/st/nz-table/div/nz-spin/div/div[2]/div/div/div/div/table/tbody/tr[1]/td[9]/span[2]/nz-switch/span");
+//	    res = webdriverutil.findElementByXpath("/html/body/div[2]/div[2]/div/nz-message-container/div/nz-message/div/div/div/span").getText().equals("用户状态已更新！");
+//	    try {
+//	    	if (res == false ) {
+//	    	webdriverutil.takeScreenshotByNow();
+//	    	Assert.fail("用户状态已更新失败");
+//	    	}else {
+//	    	assertTrue(res);
+//	    	}	    	
+//	    }catch(Exception e){
+//	    	e.printStackTrace();
+//	    }
 	}
 	
 	@DataProvider
