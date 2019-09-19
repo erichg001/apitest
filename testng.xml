@@ -27,15 +27,16 @@
     </classes> 
   </test> 
 
-<!--  
-  <test parallel="classes" thread-count="1" name="MONITER" verbose="2" >
+
+  <test parallel="classes" thread-count="1" name="SAAS" verbose="2" >
     <classes>
-    <class name = "com.bitnei.apitest.testcases.getVehCountPerMonitorPlatform" />
-    <class name = "com.bitnei.apitest.testcases.PostVehicles" />
-    <class name = "com.bitnei.apitest.testcases.EvDetail" />
+    <class name = "com.bitnei.apitest.testcases.saas.UserInfo" />
+    <class name = "com.bitnei.apitest.testcases.saas.UserInfoQuery" />
+    <class name = "com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" />
+    <class name = "com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel" />
     </classes> 
   </test> 
--->
+
 <!--   
   <test parallel="classes" thread-count="1" name="DATASEND" verbose="2" >
     <classes>

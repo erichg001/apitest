@@ -55,7 +55,7 @@ public class UserInforRgisterByExcel {
 	}
 	
 	@Test(description="saas平台用户注册",priority =0,dataProvider="dp")
-	public void UserInfoQueryData(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
+	public void UserInfoRgisterData(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
 		//准备请求头信息
