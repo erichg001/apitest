@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-apitest">
-              <span class="suite-name border-failed">apitest</span>
+              <span class="suite-name border-passed">apitest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-apitest">
-                    <span>C:\Users\eric_\AppData\Local\Temp\testng-eclipse-1564023436\testng-customsuite.xml</span>
+                    <span>C:\Users\eric_\AppData\Local\Temp\testng-eclipse--521568682\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-apitest" class="hide-methods failed suite-apitest"> (hide)</a> <!-- hide-methods failed suite-apitest -->
-                      <a href="#" panel-name="suite-apitest" class="show-methods failed suite-apitest"> (show)</a> <!-- show-methods failed suite-apitest -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-apitest" class="hide-methods passed suite-apitest"> (hide)</a> <!-- hide-methods passed suite-apitest -->
+                      <a href="#" panel-name="suite-apitest" class="show-methods passed suite-apitest"> (show)</a> <!-- show-methods passed suite-apitest -->
                     </span>
-                    <div class="method-list-content failed suite-apitest">
+                    <div class="method-list-content passed suite-apitest">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.datasend.TaskAdd" hash-for-method="TaskAddData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">TaskAddData({"status":200,"errorMsg":null,"data":null,"error":false})</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" hash-for-method="UserInfoQueryData(用户管理查询, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;&quot;,&quot;mobi...)">UserInfoQueryData(用户管理查询, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-apitest -->
+                    </div> <!-- method-list-content passed suite-apitest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,63 +117,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-apitest" class="panel apitest">
-          <div class="suite-apitest-class-failed">
+          <div class="suite-apitest-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.bitnei.apitest.testcases.datasend.TaskAdd</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TaskAddData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">
-                  </a> <!-- TaskAddData({"status":200,"errorMsg":null,"data":null,"error":false}) -->
-                  <span class="method-name">TaskAddData</span>
-                  <span class="parameters">({"status":200,"errorMsg":null,"data":null,"error":false})</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:400,&quot;expectedValue is&quot;:200},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData(TaskAdd.java:99)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
+                  <a name="UserInfoQueryData(用户管理查询, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;&quot;,&quot;mobi...)">
+                  </a> <!-- UserInfoQueryData(用户管理查询, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobi...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(用户管理查询, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"hangang","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false})</span>
                   <em>
-(数据转发平台新增任务)                  </em>
+(saas平台用户查询)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-apitest-class-failed -->
+          </div> <!-- suite-apitest-class-passed -->
         </div> <!-- panel apitest -->
         <div panel-name="test-xml-apitest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\eric_\AppData\Local\Temp\testng-eclipse-1564023436\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\eric_\AppData\Local\Temp\testng-eclipse--521568682\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -190,7 +155,7 @@
   &lt;parameter name=&quot;host7789&quot; value=&quot;http://bdp-app.bitnei.cn:7789&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.bitnei.apitest.testcases.datasend.TaskAdd&quot;/&gt;
+      &lt;class name=&quot;com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- apitest --&gt;
@@ -232,14 +197,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TaskAddData')
-data.setCell(0, 2, 'com.bitnei.apitest.testcases.datasend.TaskAdd')
-data.setCell(0, 3, 3749);
+data.setCell(0, 1, 'UserInfoQueryData')
+data.setCell(0, 2, 'com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel')
+data.setCell(0, 3, 1339);
 window.suiteTableData['apitest']= { tableData: data, tableDiv: 'times-div-apitest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-apitest">
               </div> <!-- times-div-apitest -->
             </div> <!-- times-div -->
@@ -265,16 +230,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.TaskAdd</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(http://10.10.26.3:81)</span>
+                <span class="method-name">setUp(http://test-saas.bitnei.cn, D:\\TEST.xlsx)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TaskAddData({"status":200,"errorMsg":null,"data":null,"error":false})</span>
-                <span class="method-start">1412 ms</span>
+                <span class="method-name">UserInfoQueryData(用户管理查询, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobi...)</span>
+                <span class="method-start">1017 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

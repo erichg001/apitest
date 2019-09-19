@@ -19,13 +19,17 @@ import com.bitnei.apitest.utils.ExcleUtil;
 import com.bitnei.apitest.utils.RestClient;
 
 import net.sf.json.JSONObject;
-
+/** 
+* @author 作者 eric_hg 
+* @version 创建时间：
+* 类说明 :适用于所有saas系统所有带参数的get接口
+*/ 
 public class UserInforRgisterByExcel {
 	String host;
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookieSaaS getCookisaas = new GetCookieSaaS();
+	GetCookie getCookisaas = new GetCookie();
 	String authorization = "";
 	ExcelReader ex ;
     ExcleUtil excleUtil;
@@ -39,7 +43,7 @@ public class UserInforRgisterByExcel {
         ex = new ExcelReader(ExcelFilePath, sheetName);
 		//设置cookie		
 		try {
-			 authorization = getCookisaas.login(hostsaas);
+			 authorization = getCookisaas.login();
 		} catch (ClientProtocolException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -57,7 +61,7 @@ public class UserInforRgisterByExcel {
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Authorization","Bearer "+authorization);
+		headermap.put("Authorization",authorization);
 		//入参设置
 		url= host +url+paras;
 		//调用接口	

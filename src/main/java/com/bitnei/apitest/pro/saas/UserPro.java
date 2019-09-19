@@ -1,5 +1,9 @@
 package com.bitnei.apitest.pro.saas;
 
+import java.util.HashMap;
+import java.util.List;
+
+
 public class UserPro {
 	private String username;
 	private String password;
@@ -9,7 +13,7 @@ public class UserPro {
 	private String nickName;
 	private String mobile;
 	private String email;
-	private String createTimeRange;
+	private HashMap<String,String> createTimeRange;
 	
 	
 	public String getUserRole() {
@@ -48,10 +52,11 @@ public class UserPro {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getCreateTimeRange() {
+
+	public HashMap<String, String> getCreateTimeRange() {
 		return createTimeRange;
 	}
-	public void setCreateTimeRange(String createTimeRange) {
+	public void setCreateTimeRange(HashMap<String, String> createTimeRange) {
 		this.createTimeRange = createTimeRange;
 	}
 	public String getUsername() {
@@ -65,6 +70,29 @@ public class UserPro {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	
+	public static class CreateTimeRange {
+		private String from;
+		private String to;
+		
+		public String getFrom() {
+			return from;
+		}
+		public void setFrom(String from) {
+			this.from = from;
+		}
+		public String getTo() {
+			return to;
+		}
+		public void setTo(String to) {
+			this.to = to;
+		}
+		public CreateTimeRange() {
+			super();
+		}
+		
 	}
 	
 

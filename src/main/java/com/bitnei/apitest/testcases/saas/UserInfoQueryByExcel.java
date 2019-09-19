@@ -19,13 +19,17 @@ import com.bitnei.apitest.utils.ExcleUtil;
 import com.bitnei.apitest.utils.RestClient;
 
 import net.sf.json.JSONObject;
-
+/** 
+* @author 作者 eric_hg 
+* @version 创建时间：
+* 类说明 :适用于所有saas系统所有带参数的post接口
+*/ 
 public class UserInfoQueryByExcel {
 	String host;
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookieSaaS getCookisaas = new GetCookieSaaS();
+	GetCookie getCookisaas = new GetCookie();
 	String authorization = "";
 	ExcelReader ex ;
     ExcleUtil excleUtil;
@@ -39,12 +43,10 @@ public class UserInfoQueryByExcel {
         ex = new ExcelReader(ExcelFilePath, sheetName);
 		//设置cookie		
 		try {
-			 authorization = getCookisaas.login(hostsaas);
+			 authorization = getCookisaas.login();
 		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	
 		       
@@ -58,18 +60,20 @@ public class UserInfoQueryByExcel {
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Authorization","Bearer "+authorization);
+		headermap.put("Cookie",authorization);
 		//入参设置
-		url= host +url;
+		url= host+url;
 		//调用接口	
 		System.out.println("url----"+url);
 		System.out.println("paras----"+paras);
 		closeableHttpResponse = restClient.post(url, paras, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
-		System.out.println("str-----"+str);
+		//System.out.println("source-----"+str);
+		//System.out.println("except-----"+result);
 		JSONObject lastobject = new JSONObject();
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(result));
+		System.out.println(lastobject.toString());
 		Assert.assertEquals(lastobject.toString(), "{}");
 	}
 	

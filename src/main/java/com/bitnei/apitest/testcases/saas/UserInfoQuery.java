@@ -16,7 +16,6 @@ import org.testng.annotations.Test;
 
 import com.alibaba.fastjson.JSON;
 import com.bitnei.apitest.dao.impl.PlatFormDao;
-import com.bitnei.apitest.dataprovider.datasend.PlatFormProvider;
 import com.bitnei.apitest.dataprovider.saas.UserProvider;
 import com.bitnei.apitest.pro.saas.UserPro;
 import com.bitnei.apitest.tool.DiffMethod;
@@ -28,19 +27,21 @@ public class UserInfoQuery {
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookieSaaS getCookisaas = new GetCookieSaaS();
+	GetCookie getCookisaas = new GetCookie();
 	String authorization = "";
+	HashMap<String,String> createTimeRange = new HashMap<String,String>();
 	
 	@Resource(name="platformdao") 
     private PlatFormDao platformdao;
 	
+	
 	@Parameters({"hostsaas"})
 	@BeforeClass
 	public void setUp(String hostsaas) {
-		url = hostsaas + "/userInfo/userWithRoles";
+		url = hostsaas + "/user-center/userInfo/userWithRoles";
 		//设置cookie		
 		try {
-			 authorization = getCookisaas.login(hostsaas);
+			 authorization = getCookisaas.login();
 		} catch (ClientProtocolException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -58,11 +59,20 @@ public class UserInfoQuery {
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Authorization","Bearer "+authorization);
+		headermap.put("Cookie",authorization);
 		//入参设置
+		createTimeRange.put("from", "");
+		createTimeRange.put("to","");
 		UserPro userpro = new UserPro();
-		userpro.setNickName("xiejunjun");	
+		userpro.setNickName("hangang");	
+		userpro.setEmail("");
+		userpro.setMobile("");
+		userpro.setOrigin("");
+		userpro.setStatus("");
+		userpro.setUserRole("");
+		userpro.setCreateTimeRange(createTimeRange);
 		String proJsonString = JSON.toJSONString(userpro);
+		System.out.println("headermap------------"+headermap);	
 		System.out.println("proJsonString------------"+proJsonString);
 		//调用接口
 		System.out.println("url------------"+url);	
@@ -74,7 +84,7 @@ public class UserInfoQuery {
 		System.out.println("except =============="+st);
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(st));
 		System.out.println(lastobject.toString());
-		JSONObject jsonDiff = new JSONObject();
+		//JSONObject jsonDiff = new JSONObject();
 		Assert.assertEquals(lastobject.toString(), "{}");
 	}
 

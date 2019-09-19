@@ -228,6 +228,7 @@ public class DiffMethod {
 	                        tempJSON.put("expectedValue", expectedValue);
 	                        jsonDiff.put(key, tempJSON);
 	                    }
+	                    
 
 	                    if (expectedValue != null && currentValue != null) {
 	                        if (isJsonObject(expectedValue) && !JSONObject.fromObject(expectedValue).isNullObject() || 
@@ -241,7 +242,7 @@ public class DiffMethod {
 	                        if (expectedValue instanceof String) {
 	                        	if(!expectedValue.equals(currentValue)) {
 	        	                    tempJSON.put("currentValue is ", currentValue);
-	        	                    tempJSON.put("expectedValue", expectedValue);
+	        	                    tempJSON.put("expectedValue is ", expectedValue);
 	        	                    jsonDiff.put(key, tempJSON);
 	                        	}
 	                        	
