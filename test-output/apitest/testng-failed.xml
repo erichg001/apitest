@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [apitest]">
-  <parameter name="testsaas" value="http://test-saas.bitnei.cn"/>
   <parameter name="suite" value="suiteParameter"/>
   <parameter name="hostopenapi" value="http://61.149.8.78:83"/>
   <parameter name="pathroad" value="D:\\TEST.xlsx"/>
@@ -9,12 +8,13 @@
   <parameter name="pathsaasuser" value="D:\\DATA.xlsx"/>
   <parameter name="hostsaas" value="http://test-saas.bitnei.cn"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
+  <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel">
         <methods>
           <include name="setUp"/>
-          <include name="UserInfoQueryData" invocation-numbers="2"/>
+          <include name="UserInfoQueryData" invocation-numbers="1 2 3 4 5 6 7"/>
         </methods>
       </class> <!-- com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel -->
     </classes>

@@ -19,12 +19,14 @@ import com.bitnei.apitest.utils.ExcleUtil;
 import com.bitnei.apitest.utils.RestClient;
 
 import net.sf.json.JSONObject;
+
 /** 
-* @author 作者 eric_hg 
-* @version 创建时间：
-* 类说明 :适用于所有saas系统所有带参数的post接口
-*/ 
-public class UserInfoQueryByExcel {
+* @author 作者 eric_hg
+* @version 创建时间：2019年9月20日 下午3:32:45 
+* 类说明 
+*/
+public class PostBackSaas {
+	
 	String host;
 	String url;
 	RestClient restClient;
@@ -34,12 +36,12 @@ public class UserInfoQueryByExcel {
 	ExcelReader ex ;
     ExcleUtil excleUtil;
 		
-	@Parameters({"hostsaas","pathroad"})
+	@Parameters({"backsaas","pathroad"})
 	@BeforeClass
-	public void setUp(String hostsaas,String pathroad) {
-		host = hostsaas;	
+	public void setUp(String backsaas,String pathroad) {
+		host = backsaas;	
 		String ExcelFilePath= pathroad ;
-        String sheetName="saas";
+        String sheetName="backsaas";
         ex = new ExcelReader(ExcelFilePath, sheetName);
 		//设置cookie		
 		try {
@@ -52,7 +54,7 @@ public class UserInfoQueryByExcel {
 		       
 	}
 	
-	@Test(description="saas平台用户查询",priority =0,dataProvider="dp")
+	@Test(description="saas后台用户查询",priority =0,dataProvider="dp")
 	public void UserInfoQueryData(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();

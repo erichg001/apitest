@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="2367" started-at="2019-09-19T09:38:05Z" finished-at="2019-09-19T09:38:07Z">
+  <suite name="apitest" duration-ms="3459" started-at="2019-09-20T08:59:19Z" finished-at="2019-09-20T08:59:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2367" started-at="2019-09-19T09:38:05Z" finished-at="2019-09-19T09:38:07Z">
-      <class name="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@50de0926]" name="setUp" is-config="true" duration-ms="968" started-at="2019-09-19T09:38:05Z" finished-at="2019-09-19T09:38:06Z">
+    <test name="Default test" duration-ms="3459" started-at="2019-09-20T08:59:19Z" finished-at="2019-09-20T08:59:23Z">
+      <class name="com.bitnei.apitest.testcases.saas.PostBackSaas">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@50de0926]" name="setUp" is-config="true" duration-ms="1286" started-at="2019-09-20T08:59:19Z" finished-at="2019-09-20T08:59:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://test-saas.bitnei.cn]]>
+                <![CDATA[http://test-back-saas.bitnei.cn]]>
               </value>
             </param>
             <param index="1">
@@ -23,33 +23,163 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@50de0926]" name="UserInfoQueryData" duration-ms="1339" started-at="2019-09-19T09:38:06Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-09-19T09:38:07Z">
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@50de0926]" name="UserInfoQueryData" duration-ms="1479" started-at="2019-09-20T08:59:21Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-20T08:59:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[用户管理查询]]>
+                <![CDATA[按企业名称查询租户]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/user-center/userInfo/userWithRoles]]>
+                <![CDATA[/user-center/tenant/list]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"hangang","origin":"","status":"","userRole":""}]]>
+                <![CDATA[{"email":"","endTime":"","mobile":"","origin":"","startTime":"","status":"","tenant":"新源科技"}]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoQueryData -->
-      </class> <!-- com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@50de0926]" name="UserInfoQueryData" duration-ms="196" started-at="2019-09-20T08:59:22Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-20T08:59:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按手机号码查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"","endTime":"","email":"","mobile":"18110024813","origin":"","status":"","tenant":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@50de0926]" name="UserInfoQueryData" duration-ms="207" started-at="2019-09-20T08:59:22Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-20T08:59:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按创建时间查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":null,"superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@50de0926]" name="UserInfoQueryData" duration-ms="81" started-at="2019-09-20T08:59:23Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-20T08:59:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按租户名称查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"","endTime":"","email":"","mobile":"","origin":"","status":"","tenant":"yuanian-com"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"e08b632b67134e5e93ae5d0c9908966d","organization":"元年科技","tenant":"yuanian-com","contactName":"xdf","contactEmail":"zhanghr@yuanian.com","connectMobile":"13234454556","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-08-05 16:10:42","status":"ACTIVE","title":null,"superId":"9a5703ed2e9e46a7b31c82b0105b7c41","createBy":"zhanghr@yuanian.com"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@50de0926]" name="UserInfoQueryData" duration-ms="84" started-at="2019-09-20T08:59:23Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-20T08:59:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按用户类型和邮箱查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@50de0926]" name="UserInfoQueryData" duration-ms="64" started-at="2019-09-20T08:59:23Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-20T08:59:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[重复添加租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.PostBackSaas -->
     </test> <!-- Default test -->
   </suite> <!-- apitest -->
 </testng-results>
