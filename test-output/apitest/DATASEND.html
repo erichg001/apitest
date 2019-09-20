@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>DATASEND</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 19 14:33:40 CST 2019</td>
+<td>Started on:</td><td>Fri Sep 20 17:30:05 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13750 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11740 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,142 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData()'><b>TaskAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:400,&quot;expectedValue is&quot;:200},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData(TaskAdd.java:99)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace616443177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace616443177'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:400,&quot;expectedValue is&quot;:200},&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData(TaskAdd.java:99)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.TaskAdd@6385cb26</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.datasend.VehicleAdd.VehicleAddData()'><b>VehicleAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.VehicleAdd<br>Test method: 任务添加车辆<br>Parameters: {"status":200,"errorMsg":null,"data":{"existVehicle":[],"insertCount":"1"},"error":false}</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at com.bitnei.apitest.testcases.datasend.VehicleAdd.VehicleAddData(VehicleAdd.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace366551903", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace366551903'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at com.bitnei.apitest.testcases.datasend.VehicleAdd.VehicleAddData(VehicleAdd.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>1</td>
-<td>com.bitnei.apitest.testcases.datasend.VehicleAdd@38364841</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.datasend.VehicleRemove.VehicleRemoveData()'><b>VehicleRemoveData</b><br>Test class: com.bitnei.apitest.testcases.datasend.VehicleRemove<br>Test method: 任务添加车辆<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at com.bitnei.apitest.testcases.datasend.VehicleRemove.VehicleRemoveData(VehicleRemove.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace92364466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace92364466'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at com.bitnei.apitest.testcases.datasend.VehicleRemove.VehicleRemoveData(VehicleRemove.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>1</td>
-<td>com.bitnei.apitest.testcases.datasend.VehicleRemove@28c4711c</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -214,17 +78,32 @@ function toggleAllBoxes() {
 <td title='com.bitnei.apitest.testcases.datasend.PlatForm.PlatFormAdd()'><b>PlatFormAdd</b><br>Test class: com.bitnei.apitest.testcases.datasend.PlatForm<br>Test method: 数据转发平台配置新增数据<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.PlatForm@64d7f7e0</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.PlatForm@77be656f</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.ProtocolAdd.ProtocolAddData()'><b>ProtocolAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.ProtocolAdd<br>Test method: 数据转发平台新增协议<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.datasend.ProtocolAdd@27c6e487</td></tr>
+<td>com.bitnei.apitest.testcases.datasend.ProtocolAdd@19dc67c2</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.datasend.ProtocolUpdate.ProtocolUpdateData()'><b>ProtocolUpdateData</b><br>Test class: com.bitnei.apitest.testcases.datasend.ProtocolUpdate<br>Test method: 数据转发平台新增协议<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
 <td></td>
-<td>3</td>
-<td>com.bitnei.apitest.testcases.datasend.ProtocolUpdate@49070868</td></tr>
+<td>2</td>
+<td>com.bitnei.apitest.testcases.datasend.ProtocolUpdate@221af3c0</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.TaskAdd.TaskAddData()'><b>TaskAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.TaskAdd<br>Test method: 数据转发平台新增任务<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.TaskAdd@62bd765</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.VehicleAdd.VehicleAddData()'><b>VehicleAddData</b><br>Test class: com.bitnei.apitest.testcases.datasend.VehicleAdd<br>Test method: 任务添加车辆<br>Parameters: {"status":200,"errorMsg":null,"data":{"existVehicle":[],"insertCount":"1"},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.VehicleAdd@23a5fd2</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.datasend.VehicleRemove.VehicleRemoveData()'><b>VehicleRemoveData</b><br>Test class: com.bitnei.apitest.testcases.datasend.VehicleRemove<br>Test method: 任务添加车辆<br>Parameters: {"status":200,"errorMsg":null,"data":null,"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.datasend.VehicleRemove@78a2da20</td></tr>
 </table><p>
 </body>
 </html>

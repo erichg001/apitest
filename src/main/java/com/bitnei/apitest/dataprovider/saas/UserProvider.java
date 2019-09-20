@@ -6,7 +6,7 @@ public class UserProvider {
 	@DataProvider(name="dataprovider1")  
     public static Object[][] dataProvider1(){  
         return new Object[][]{  
-        	{"{\"status\":200,\"errorMsg\":null,\"data\":[{\"id\":\"c2da7bb67b354e32b140fa4676310de1\",\"username\":\"hangang@bitnei.cn\",\"nickName\":\"hangang\",\"email\":\"hangang@bitnei.cn\",\"mobile\":\"133****2222\",\"password\":\"N/A\",\"title\":\"test\",\"status\":\"ACTIVE\",\"createBy\":\"hangang@bitnei.cn\",\"createTime\":\"2019-09-16 13:50:38\",\"lastUpdateTime\":\"2019-09-19 14:46:12\",\"tenant\":\"bitnei-cn\",\"origin\":\"APPLY\",\"admin\":false,\"super\":false}],\"error\":false}"}
+        	{"{\"status\":200,\"errorMsg\":null,\"data\":[{\"id\":\"c2da7bb67b354e32b140fa4676310de1\",\"username\":\"hangang@bitnei.cn\",\"nickName\":\"hangang\",\"email\":\"hangang@bitnei.cn\",\"mobile\":\"133****2222\",\"password\":\"N/A\",\"title\":\"test\",\"status\":\"ACTIVE\",\"createBy\":\"hangang@bitnei.cn\",\"createTime\":\"2019-09-16 13:50:38\",\"tenant\":\"bitnei-cn\",\"origin\":\"APPLY\",\"admin\":false,\"super\":false}],\"error\":false}"}
         };
     }
 	

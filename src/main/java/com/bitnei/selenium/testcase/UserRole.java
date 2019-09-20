@@ -47,7 +47,7 @@ public class UserRole extends CaseBase{
 	    Thread.sleep(1000);
 	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[4]/button");
 	    webdriverutil.findElementByXpathAndClick("/html/body/app/changan-layout/div/header/nav/div[2]/div[2]");
-	    webdriverutil.findElementByXpathAndClick("/html/body/app/changan-layout/div/header/nav/div[2]/div[2]/div/ul/li[5]/a/div[1]");	    
+	    webdriverutil.findElementByXpathAndClick("/html/body/app/changan-layout/div/header/nav/div[2]/div[2]/div/ul/li[2]/a/div[1]");
 	    res = webdriverutil.findElementByXpath("/html/body/app-root/app-sass/div/div/app-left-sass-menu/div/div/div[1]/ul/li[1]/a/span").getText().equals("用户管理");
 	    try {
 	    	if (res == false ) {
