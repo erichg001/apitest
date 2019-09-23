@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [apitest]">
+  <parameter name="suite" value="suiteParameter"/>
+  <parameter name="hostopenapi" value="http://61.149.8.78:83"/>
+  <parameter name="pathroad" value="src/main/resources/TEST.xlsx"/>
+  <parameter name="host" value="http://10.10.26.3:81"/>
+  <parameter name="pathsaasuser" value="src/main/resources/DATA.xlsx"/>
+  <parameter name="hostsaas" value="http://test-saas.bitnei.cn"/>
+  <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
+  <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
+  <test thread-count="5" verbose="0" name="SAASTEST(failed)" parallel="classes">
+    <classes>
+      <class name="com.bitnei.selenium.testcase.UserRole">
+        <methods>
+          <include name="afterTest"/>
+          <include name="User" invocation-numbers="1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.selenium.testcase.UserRole -->
+      <class name="com.bitnei.selenium.testcase.SaasLoginTest">
+        <methods>
+          <include name="LoginFaild" invocation-numbers="1"/>
+          <include name="afterTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.selenium.testcase.SaasLoginTest -->
+    </classes>
+  </test> <!-- SAASTEST(failed) -->
+  <test thread-count="5" verbose="0" name="SAAS(failed)" parallel="classes">
+    <classes>
+      <class name="com.bitnei.apitest.testcases.saas.UserInfoQuery">
+        <methods>
+          <include name="setUp"/>
+          <include name="UserInfoQueryData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.saas.UserInfoQuery -->
+    </classes>
+  </test> <!-- SAAS(failed) -->
+</suite> <!-- Failed suite [apitest] -->

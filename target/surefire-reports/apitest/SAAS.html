@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>TestNG:  SAAS</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SAAS</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 23 10:53:09 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2966 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQuery.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQuery<br>Test method: saas平台用户查询<br>Parameters: {"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}</td>
+<td><div><pre>net.sf.json.JSONException: A JSONArray text must start with &apos;[&apos; at character 1 of invalid_token: 1d190917-36f6-42cc-9b57-a5dc2920c28f=&gt;/user-center/userInfo/userWithRoles
+	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
+	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116)
+	at net.sf.json.JSONArray._fromString(JSONArray.java:1197)
+	at net.sf.json.JSONArray.fromObject(JSONArray.java:127)
+	at net.sf.json.JSONArray.fromObject(JSONArray.java:105)
+	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:285)
+	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:237)
+	at com.bitnei.apitest.testcases.saas.UserInfoQuery.UserInfoQueryData(UserInfoQuery.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace124630059", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace124630059'><pre>net.sf.json.JSONException: A JSONArray text must start with &apos;[&apos; at character 1 of invalid_token: 1d190917-36f6-42cc-9b57-a5dc2920c28f=&gt;/user-center/userInfo/userWithRoles
+	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
+	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116)
+	at net.sf.json.JSONArray._fromString(JSONArray.java:1197)
+	at net.sf.json.JSONArray.fromObject(JSONArray.java:127)
+	at net.sf.json.JSONArray.fromObject(JSONArray.java:105)
+	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:285)
+	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:237)
+	at com.bitnei.apitest.testcases.saas.UserInfoQuery.UserInfoQueryData(UserInfoQuery.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQuery@b7dd107</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户名称查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"hangang","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按手机号码查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"18110024813","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按创建时间查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"2019-07-11 04:46:00","to":"2019-07-19 04:46:00"},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户类型查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按邮箱查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"zhanghailong@bitnei.cn","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":"USER_SUPER_ADMIN"}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 邀请用户hangang@bitnei.cn已经存在, /user-center/user/invite, {"admin":false,"email":"hangang@bitnei.cn","mobile":"13312223333","nickName":"hangang","title":""}, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按企业名称查询租户, /user-center/tenant/list, {"email":"","endTime":"","mobile":"","origin":"","startTime":"","status":"","tenant":"新源科技"}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18110024813","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":null,"superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn"}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按租户名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":"","status":"","tenant":"yuanian-com"}, {"status":200,"errorMsg":null,"data":[{"id":"e08b632b67134e5e93ae5d0c9908966d","organization":"元年科技","tenant":"yuanian-com","contactName":"xdf","contactEmail":"zhanghr@yuanian.com","connectMobile":"13234454556","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-08-05 16:10:42","status":"ACTIVE","title":null,"superId":"9a5703ed2e9e46a7b31c82b0105b7c41","createBy":"zhanghr@yuanian.com"}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台用户注册<br>Parameters: 用户已经存在, /user-center/user/register, ?email=hangang@bitnei.cn&force=false, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@52f759d7</td></tr>
+</table><p>
+</body>
+</html>

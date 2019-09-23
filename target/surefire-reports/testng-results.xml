@@ -1,13 +1,395 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="27" passed="27">
+<testng-results skipped="3" failed="3" ignored="0" total="47" passed="41">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="78326" started-at="2019-09-09T08:11:53Z" finished-at="2019-09-09T08:13:12Z">
+  <suite name="apitest" duration-ms="298492" started-at="2019-09-23T02:48:26Z" finished-at="2019-09-23T02:53:24Z">
     <groups>
     </groups>
-    <test name="OPENAPI" duration-ms="66492" started-at="2019-09-09T08:11:53Z" finished-at="2019-09-09T08:13:00Z">
+    <test name="SAASTEST" duration-ms="199438" started-at="2019-09-23T02:48:26Z" finished-at="2019-09-23T02:51:45Z">
+      <class name="com.bitnei.selenium.testcase.SaasLoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@6b57696f]" name="setUp" is-config="true" duration-ms="757" started-at="2019-09-23T02:48:26Z" finished-at="2019-09-23T02:48:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/DATA.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@6b57696f]" name="LoginFaild" duration-ms="7776" started-at="2019-09-23T02:48:27Z" description="用户登录" data-provider="dp" finished-at="2019-09-23T02:48:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[登录失败,用户名密码错误]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/passport/login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yaomeng@bitnei.cn>>123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[用户名或密码错误]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: unknown
+  (unknown error: unable to discover open pages)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+  (Driver info: chromedriver=70.0.3538.97 (d035916fe243477005bc95fe2a5778b8f20b6ae1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.70 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-Q37MKND', ip: '192.168.21.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: unknown
+  (unknown error: unable to discover open pages)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+  (Driver info: chromedriver=70.0.3538.97 (d035916fe243477005bc95fe2a5778b8f20b6ae1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.70 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-Q37MKND', ip: '192.168.21.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: ChromeDriver
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:184)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
+at com.bitnei.selenium.utils.WebDriverUtil.initBrowser(WebDriverUtil.java:131)
+at com.bitnei.selenium.utils.WebDriverUtil.openBrowser(WebDriverUtil.java:66)
+at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFaild -->
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@6b57696f]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-09-23T02:48:34Z" finished-at="2019-09-23T02:48:34Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bitnei.selenium.utils.WebDriverUtil.closeAllBrowser(WebDriverUtil.java:996)
+at com.bitnei.selenium.testcase.SaasLoginTest.afterTest(SaasLoginTest.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@6b57696f]" name="LoginFaild" duration-ms="0" started-at="2019-09-23T02:48:34Z" description="用户登录" data-provider="dp" finished-at="2019-09-23T02:48:34Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bitnei.selenium.utils.WebDriverUtil.closeAllBrowser(WebDriverUtil.java:996)
+at com.bitnei.selenium.testcase.SaasLoginTest.afterTest(SaasLoginTest.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFaild -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@6b57696f]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-09-23T02:48:34Z" finished-at="2019-09-23T02:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@6b57696f]" name="LoginFaild" duration-ms="0" started-at="2019-09-23T02:48:34Z" description="用户登录" data-provider="dp" finished-at="2019-09-23T02:48:34Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bitnei.selenium.utils.WebDriverUtil.closeAllBrowser(WebDriverUtil.java:996)
+at com.bitnei.selenium.testcase.SaasLoginTest.afterTest(SaasLoginTest.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFaild -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@6b57696f]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-09-23T02:48:34Z" finished-at="2019-09-23T02:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="LoginFaild(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@6b57696f]" name="LoginFaild" duration-ms="0" started-at="2019-09-23T02:48:34Z" description="用户登录" data-provider="dp" finished-at="2019-09-23T02:48:34Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bitnei.selenium.utils.WebDriverUtil.closeAllBrowser(WebDriverUtil.java:996)
+at com.bitnei.selenium.testcase.SaasLoginTest.afterTest(SaasLoginTest.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFaild -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.SaasLoginTest@6b57696f]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-09-23T02:48:34Z" finished-at="2019-09-23T02:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.bitnei.selenium.testcase.SaasLoginTest -->
+      <class name="com.bitnei.selenium.testcase.UserRole">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.UserRole@5bb21b69]" name="setUp" is-config="true" duration-ms="33" started-at="2019-09-23T02:48:34Z" finished-at="2019-09-23T02:48:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/DATA.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="User(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.UserRole@5bb21b69]" name="User" duration-ms="190802" started-at="2019-09-23T02:48:34Z" description="用户登录点击用户管理" data-provider="dp" finished-at="2019-09-23T02:51:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[登录成功]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/passport/login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[zhanghailong@bitnei.cn>>abc123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/html/body/app/changan-layout/div/header/nav/div[1]/a[2]]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[智能网联汽车大数据云平台]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: unable to discover open pages
+  (Driver info: chromedriver=70.0.3538.97 (d035916fe243477005bc95fe2a5778b8f20b6ae1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 190.26 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-Q37MKND', ip: '192.168.21.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
+  (Driver info: chromedriver=70.0.3538.97 (d035916fe243477005bc95fe2a5778b8f20b6ae1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 190.26 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-Q37MKND', ip: '192.168.21.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: ChromeDriver
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:184)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
+at com.bitnei.selenium.utils.WebDriverUtil.initBrowser(WebDriverUtil.java:131)
+at com.bitnei.selenium.utils.WebDriverUtil.openBrowser(WebDriverUtil.java:66)
+at com.bitnei.selenium.testcase.UserRole.User(UserRole.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User -->
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.UserRole@5bb21b69]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-09-23T02:51:45Z" finished-at="2019-09-23T02:51:45Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bitnei.selenium.utils.WebDriverUtil.closeAllBrowser(WebDriverUtil.java:996)
+at com.bitnei.selenium.testcase.UserRole.afterTest(UserRole.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.bitnei.selenium.testcase.UserRole -->
+    </test> <!-- SAASTEST -->
+    <test name="OPENAPI" duration-ms="83995" started-at="2019-09-23T02:51:45Z" finished-at="2019-09-23T02:53:09Z">
       <class name="com.bitnei.apitest.testcases.openapi.ChargingData">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="setUp" is-config="true" duration-ms="1572" started-at="2019-09-09T08:11:53Z" finished-at="2019-09-09T08:11:55Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@4eb7f003]" name="setUp" is-config="true" duration-ms="544" started-at="2019-09-23T02:51:45Z" finished-at="2019-09-23T02:51:46Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +400,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ChargingDataNo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNo" duration-ms="464" started-at="2019-09-09T08:11:55Z" description="查询珠海车辆充电数据缺少车牌号参数" data-provider="dataprovider14" finished-at="2019-09-09T08:11:55Z">
+        <test-method status="PASS" signature="ChargingDataNo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@4eb7f003]" name="ChargingDataNo" duration-ms="400" started-at="2019-09-23T02:51:46Z" description="查询珠海车辆充电数据缺少车牌号参数" data-provider="dataprovider14" finished-at="2019-09-23T02:51:46Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +411,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNo -->
-        <test-method status="PASS" signature="ChargingDataNoFrom(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNoFrom" duration-ms="197" started-at="2019-09-09T08:11:55Z" description="查询珠海车辆充电数据缺少from参数" data-provider="dataprovider2" finished-at="2019-09-09T08:11:56Z">
+        <test-method status="PASS" signature="ChargingDataNoFrom(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@4eb7f003]" name="ChargingDataNoFrom" duration-ms="361" started-at="2019-09-23T02:51:46Z" description="查询珠海车辆充电数据缺少from参数" data-provider="dataprovider2" finished-at="2019-09-23T02:51:47Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +422,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNoFrom -->
-        <test-method status="PASS" signature="ChargingDataNoTo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNoTo" duration-ms="42" started-at="2019-09-09T08:11:56Z" description="查询珠海车辆充电数据缺少to参数" data-provider="dataprovider3" finished-at="2019-09-09T08:11:56Z">
+        <test-method status="PASS" signature="ChargingDataNoTo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@4eb7f003]" name="ChargingDataNoTo" duration-ms="77" started-at="2019-09-23T02:51:47Z" description="查询珠海车辆充电数据缺少to参数" data-provider="dataprovider3" finished-at="2019-09-23T02:51:47Z">
           <params>
             <param index="0">
               <value>
@@ -51,7 +433,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNoTo -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataNormal" duration-ms="20270" started-at="2019-09-09T08:11:56Z" description="查询珠海车辆充电数据正常" data-provider="dataprovider1" finished-at="2019-09-09T08:12:16Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@4eb7f003]" name="ChargingDataNormal" duration-ms="19147" started-at="2019-09-23T02:51:47Z" description="查询珠海车辆充电数据正常" data-provider="dataprovider1" finished-at="2019-09-23T02:52:06Z">
           <params>
             <param index="0">
               <value>
@@ -62,7 +444,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataUpOneDay(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataUpOneDay" duration-ms="433" started-at="2019-09-09T08:12:16Z" description="查询珠海车辆充电数据选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-09-09T08:12:16Z">
+        <test-method status="PASS" signature="ChargingDataUpOneDay(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@4eb7f003]" name="ChargingDataUpOneDay" duration-ms="355" started-at="2019-09-23T02:52:06Z" description="查询珠海车辆充电数据选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-09-23T02:52:06Z">
           <params>
             <param index="0">
               <value>
@@ -73,7 +455,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataUpOneDay -->
-        <test-method status="PASS" signature="ChargingDataWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@26a7b76d]" name="ChargingDataWrongTime" duration-ms="188" started-at="2019-09-09T08:12:16Z" description="查询珠海车辆充电数据选择时间范围开始时间不能大于结束时间" data-provider="dataprovider5" finished-at="2019-09-09T08:12:16Z">
+        <test-method status="PASS" signature="ChargingDataWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@4eb7f003]" name="ChargingDataWrongTime" duration-ms="353" started-at="2019-09-23T02:52:06Z" description="查询珠海车辆充电数据选择时间范围开始时间不能大于结束时间" data-provider="dataprovider5" finished-at="2019-09-23T02:52:07Z">
           <params>
             <param index="0">
               <value>
@@ -86,7 +468,7 @@
         </test-method> <!-- ChargingDataWrongTime -->
       </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingData -->
       <class name="com.bitnei.apitest.testcases.openapi.RunningData">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="setUp" is-config="true" duration-ms="53" started-at="2019-09-09T08:12:17Z" finished-at="2019-09-09T08:12:17Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@612fc6eb]" name="setUp" is-config="true" duration-ms="87" started-at="2019-09-23T02:52:23Z" finished-at="2019-09-23T02:52:23Z">
           <params>
             <param index="0">
               <value>
@@ -97,7 +479,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="EnergyConservationInvalidtoken(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationInvalidtoken" duration-ms="26" started-at="2019-09-09T08:12:17Z" description="车辆行驶数数据查询token无效" data-provider="dataprovider13" finished-at="2019-09-09T08:12:17Z">
+        <test-method status="PASS" signature="EnergyConservationInvalidtoken(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@612fc6eb]" name="EnergyConservationInvalidtoken" duration-ms="58" started-at="2019-09-23T02:52:23Z" description="车辆行驶数数据查询token无效" data-provider="dataprovider13" finished-at="2019-09-23T02:52:23Z">
           <params>
             <param index="0">
               <value>
@@ -108,7 +490,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnergyConservationInvalidtoken -->
-        <test-method status="PASS" signature="EnergyConservationNolicensePlate(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationNolicensePlate" duration-ms="39" started-at="2019-09-09T08:12:17Z" description="车辆行驶数数据查询车牌号为空" data-provider="dataprovider12" finished-at="2019-09-09T08:12:17Z">
+        <test-method status="PASS" signature="EnergyConservationNolicensePlate(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@612fc6eb]" name="EnergyConservationNolicensePlate" duration-ms="77" started-at="2019-09-23T02:52:23Z" description="车辆行驶数数据查询车牌号为空" data-provider="dataprovider12" finished-at="2019-09-23T02:52:23Z">
           <params>
             <param index="0">
               <value>
@@ -119,7 +501,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnergyConservationNolicensePlate -->
-        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationNormal" duration-ms="2980" started-at="2019-09-09T08:12:17Z" description="车辆行驶数据查询正常" data-provider="dataprovider10" finished-at="2019-09-09T08:12:20Z">
+        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@612fc6eb]" name="EnergyConservationNormal" duration-ms="3042" started-at="2019-09-23T02:52:23Z" description="车辆行驶数据查询正常" data-provider="dataprovider10" finished-at="2019-09-23T02:52:26Z">
           <params>
             <param index="0">
               <value>
@@ -130,7 +512,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnergyConservationNormal -->
-        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@7ce6a65d]" name="EnergyConservationUpScope" duration-ms="74" started-at="2019-09-09T08:12:20Z" description="车辆行驶数选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-09-09T08:12:20Z">
+        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@612fc6eb]" name="EnergyConservationUpScope" duration-ms="57" started-at="2019-09-23T02:52:26Z" description="车辆行驶数选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-09-23T02:52:26Z">
           <params>
             <param index="0">
               <value>
@@ -143,7 +525,7 @@
         </test-method> <!-- EnergyConservationUpScope -->
       </class> <!-- com.bitnei.apitest.testcases.openapi.RunningData -->
       <class name="com.bitnei.apitest.testcases.openapi.ChargingDataTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="setUp" is-config="true" duration-ms="741" started-at="2019-09-09T08:12:20Z" finished-at="2019-09-09T08:12:21Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1060b431]" name="setUp" is-config="true" duration-ms="125" started-at="2019-09-23T02:52:26Z" finished-at="2019-09-23T02:52:26Z">
           <params>
             <param index="0">
               <value>
@@ -152,14 +534,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[D:\\TEST.xlsx]]>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="18266" started-at="2019-09-09T08:12:21Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:39Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1060b431]" name="ChargingDataNormal" duration-ms="20760" started-at="2019-09-23T02:52:26Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-23T02:52:47Z">
           <params>
             <param index="0">
               <value>
@@ -185,7 +567,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="439" started-at="2019-09-09T08:12:39Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:39Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1060b431]" name="ChargingDataNormal" duration-ms="481" started-at="2019-09-23T02:52:47Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-23T02:52:47Z">
           <params>
             <param index="0">
               <value>
@@ -211,7 +593,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="190" started-at="2019-09-09T08:12:39Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:39Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1060b431]" name="ChargingDataNormal" duration-ms="174" started-at="2019-09-23T02:52:47Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-23T02:52:47Z">
           <params>
             <param index="0">
               <value>
@@ -237,7 +619,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="256" started-at="2019-09-09T08:12:39Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:40Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1060b431]" name="ChargingDataNormal" duration-ms="60" started-at="2019-09-23T02:52:47Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-23T02:52:47Z">
           <params>
             <param index="0">
               <value>
@@ -263,7 +645,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="48" started-at="2019-09-09T08:12:40Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:40Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1060b431]" name="ChargingDataNormal" duration-ms="46" started-at="2019-09-23T02:52:47Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-23T02:52:47Z">
           <params>
             <param index="0">
               <value>
@@ -289,7 +671,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="44" started-at="2019-09-09T08:12:40Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:12:40Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1060b431]" name="ChargingDataNormal" duration-ms="104" started-at="2019-09-23T02:52:47Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-23T02:52:48Z">
           <params>
             <param index="0">
               <value>
@@ -315,7 +697,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChargingDataNormal -->
-        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1500955a]" name="ChargingDataNormal" duration-ms="19891" started-at="2019-09-09T08:12:40Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-09T08:13:00Z">
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@1060b431]" name="ChargingDataNormal" duration-ms="21663" started-at="2019-09-23T02:52:48Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-09-23T02:53:09Z">
           <params>
             <param index="0">
               <value>
@@ -343,7 +725,7 @@
         </test-method> <!-- ChargingDataNormal -->
       </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingDataTest -->
       <class name="com.bitnei.apitest.testcases.openapi.EnergyConservation">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="setUp" is-config="true" duration-ms="63" started-at="2019-09-09T08:12:16Z" finished-at="2019-09-09T08:12:17Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@eafc191]" name="setUp" is-config="true" duration-ms="92" started-at="2019-09-23T02:52:07Z" finished-at="2019-09-23T02:52:07Z">
           <params>
             <param index="0">
               <value>
@@ -354,7 +736,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationNormal" duration-ms="38" started-at="2019-09-09T08:12:17Z" description="碳排放接口查询正常" data-provider="dataprovider6" finished-at="2019-09-09T08:12:17Z">
+        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@eafc191]" name="EnergyConservationNormal" duration-ms="15355" started-at="2019-09-23T02:52:07Z" description="碳排放接口查询正常" data-provider="dataprovider6" finished-at="2019-09-23T02:52:22Z">
           <params>
             <param index="0">
               <value>
@@ -365,7 +747,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnergyConservationNormal -->
-        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationUpScope" duration-ms="42" started-at="2019-09-09T08:12:17Z" description="碳排放接口时间超3个月" data-provider="dataprovider7" finished-at="2019-09-09T08:12:17Z">
+        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@eafc191]" name="EnergyConservationUpScope" duration-ms="241" started-at="2019-09-23T02:52:22Z" description="碳排放接口时间超3个月" data-provider="dataprovider7" finished-at="2019-09-23T02:52:22Z">
           <params>
             <param index="0">
               <value>
@@ -376,7 +758,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnergyConservationUpScope -->
-        <test-method status="PASS" signature="EnergyConservationWrongDateFormat(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationWrongDateFormat" duration-ms="34" started-at="2019-09-09T08:12:17Z" description="碳排放接口开始时间不符合规则" data-provider="dataprovider9" finished-at="2019-09-09T08:12:17Z">
+        <test-method status="PASS" signature="EnergyConservationWrongDateFormat(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@eafc191]" name="EnergyConservationWrongDateFormat" duration-ms="213" started-at="2019-09-23T02:52:22Z" description="碳排放接口开始时间不符合规则" data-provider="dataprovider9" finished-at="2019-09-23T02:52:22Z">
           <params>
             <param index="0">
               <value>
@@ -387,7 +769,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnergyConservationWrongDateFormat -->
-        <test-method status="PASS" signature="EnergyConservationWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@4abdb505]" name="EnergyConservationWrongTime" duration-ms="35" started-at="2019-09-09T08:12:17Z" description="碳排放接口开始间大于结束时间" data-provider="dataprovider8" finished-at="2019-09-09T08:12:17Z">
+        <test-method status="PASS" signature="EnergyConservationWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@eafc191]" name="EnergyConservationWrongTime" duration-ms="92" started-at="2019-09-23T02:52:22Z" description="碳排放接口开始间大于结束时间" data-provider="dataprovider8" finished-at="2019-09-23T02:52:23Z">
           <params>
             <param index="0">
               <value>
@@ -400,9 +782,483 @@
         </test-method> <!-- EnergyConservationWrongTime -->
       </class> <!-- com.bitnei.apitest.testcases.openapi.EnergyConservation -->
     </test> <!-- OPENAPI -->
-    <test name="DATASEND" duration-ms="11735" started-at="2019-09-09T08:13:00Z" finished-at="2019-09-09T08:13:12Z">
+    <test name="SAAS" duration-ms="2966" started-at="2019-09-23T02:53:09Z" finished-at="2019-09-23T02:53:12Z">
+      <class name="com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@52f759d7]" name="setUp" is-config="true" duration-ms="244" started-at="2019-09-23T02:53:11Z" finished-at="2019-09-23T02:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@52f759d7]" name="UserInfoRgisterData" duration-ms="139" started-at="2019-09-23T02:53:11Z" description="saas平台用户注册" data-provider="dp" finished-at="2019-09-23T02:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[用户已经存在]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/user/register]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?email=hangang@bitnei.cn&force=false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel -->
+      <class name="com.bitnei.apitest.testcases.saas.PostBackSaas">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e]" name="setUp" is-config="true" duration-ms="274" started-at="2019-09-23T02:53:11Z" finished-at="2019-09-23T02:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-back-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e]" name="UserInfoQueryData" duration-ms="76" started-at="2019-09-23T02:53:11Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按企业名称查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"email":"","endTime":"","mobile":"","origin":"","startTime":"","status":"","tenant":"新源科技"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e]" name="UserInfoQueryData" duration-ms="76" started-at="2019-09-23T02:53:12Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按手机号码查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"","endTime":"","email":"","mobile":"18110024813","origin":"","status":"","tenant":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e]" name="UserInfoQueryData" duration-ms="84" started-at="2019-09-23T02:53:12Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按创建时间查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":null,"superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e]" name="UserInfoQueryData" duration-ms="92" started-at="2019-09-23T02:53:12Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按租户名称查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"","endTime":"","email":"","mobile":"","origin":"","status":"","tenant":"yuanian-com"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"e08b632b67134e5e93ae5d0c9908966d","organization":"元年科技","tenant":"yuanian-com","contactName":"xdf","contactEmail":"zhanghr@yuanian.com","connectMobile":"13234454556","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-08-05 16:10:42","status":"ACTIVE","title":null,"superId":"9a5703ed2e9e46a7b31c82b0105b7c41","createBy":"zhanghr@yuanian.com"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e]" name="UserInfoQueryData" duration-ms="141" started-at="2019-09-23T02:53:12Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按用户类型和邮箱查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@7cbd213e]" name="UserInfoQueryData" duration-ms="296" started-at="2019-09-23T02:53:12Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[重复添加租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.PostBackSaas -->
+      <class name="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e]" name="setUp" is-config="true" duration-ms="272" started-at="2019-09-23T02:53:10Z" finished-at="2019-09-23T02:53:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e]" name="UserInfoQueryData" duration-ms="79" started-at="2019-09-23T02:53:10Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按用户名称查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"hangang","origin":"","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e]" name="UserInfoQueryData" duration-ms="69" started-at="2019-09-23T02:53:10Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按手机号码查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"18110024813","nickName":"","origin":"","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e]" name="UserInfoQueryData" duration-ms="78" started-at="2019-09-23T02:53:10Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按创建时间查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"2019-07-11 04:46:00","to":"2019-07-19 04:46:00"},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e]" name="UserInfoQueryData" duration-ms="51" started-at="2019-09-23T02:53:11Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按用户类型查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e]" name="UserInfoQueryData" duration-ms="53" started-at="2019-09-23T02:53:11Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按邮箱查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"zhanghailong@bitnei.cn","mobile":"","nickName":"","origin":"","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e]" name="UserInfoQueryData" duration-ms="54" started-at="2019-09-23T02:53:11Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按用户角色（超管）查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":"USER_SUPER_ADMIN"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@42eca56e]" name="UserInfoQueryData" duration-ms="157" started-at="2019-09-23T02:53:11Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-09-23T02:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[邀请用户hangang@bitnei.cn已经存在]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/user/invite]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"admin":false,"email":"hangang@bitnei.cn","mobile":"13312223333","nickName":"hangang","title":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel -->
+      <class name="com.bitnei.apitest.testcases.saas.UserInfoQuery">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQuery@b7dd107]" name="setUp" is-config="true" duration-ms="500" started-at="2019-09-23T02:53:09Z" finished-at="2019-09-23T02:53:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="UserInfoQueryData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQuery@b7dd107]" name="UserInfoQueryData" duration-ms="188" started-at="2019-09-23T02:53:10Z" description="saas平台用户查询" data-provider="dataprovider1" finished-at="2019-09-23T02:53:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="net.sf.json.JSONException">
+            <message>
+              <![CDATA[A JSONArray text must start with '[' at character 1 of invalid_token: 1d190917-36f6-42cc-9b57-a5dc2920c28f=>/user-center/userInfo/userWithRoles]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of invalid_token: 1d190917-36f6-42cc-9b57-a5dc2920c28f=>/user-center/userInfo/userWithRoles
+at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
+at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116)
+at net.sf.json.JSONArray._fromString(JSONArray.java:1197)
+at net.sf.json.JSONArray.fromObject(JSONArray.java:127)
+at net.sf.json.JSONArray.fromObject(JSONArray.java:105)
+at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:285)
+at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:237)
+at com.bitnei.apitest.testcases.saas.UserInfoQuery.UserInfoQueryData(UserInfoQuery.java:85)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- net.sf.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.UserInfoQuery -->
+    </test> <!-- SAAS -->
+    <test name="DATASEND" duration-ms="11930" started-at="2019-09-23T02:53:12Z" finished-at="2019-09-23T02:53:24Z">
       <class name="com.bitnei.apitest.testcases.datasend.ProtocolUpdate">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@c81cdd1]" name="setUp" is-config="true" duration-ms="1049" started-at="2019-09-09T08:13:03Z" finished-at="2019-09-09T08:13:04Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@150c158]" name="setUp" is-config="true" duration-ms="1049" started-at="2019-09-23T02:53:15Z" finished-at="2019-09-23T02:53:16Z">
           <params>
             <param index="0">
               <value>
@@ -413,7 +1269,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ProtocolUpdateData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@c81cdd1]" name="ProtocolUpdateData" duration-ms="2810" started-at="2019-09-09T08:13:04Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-09-09T08:13:06Z">
+        <test-method status="PASS" signature="ProtocolUpdateData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolUpdate@150c158]" name="ProtocolUpdateData" duration-ms="2792" started-at="2019-09-23T02:53:16Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-09-23T02:53:19Z">
           <params>
             <param index="0">
               <value>
@@ -426,7 +1282,7 @@
         </test-method> <!-- ProtocolUpdateData -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolUpdate -->
       <class name="com.bitnei.apitest.testcases.datasend.PlatForm">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@7403c468]" name="setUp" is-config="true" duration-ms="1359" started-at="2019-09-09T08:13:00Z" finished-at="2019-09-09T08:13:01Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@544a2ea6]" name="setUp" is-config="true" duration-ms="1239" started-at="2019-09-23T02:53:12Z" finished-at="2019-09-23T02:53:14Z">
           <params>
             <param index="0">
               <value>
@@ -437,7 +1293,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="PlatFormAdd(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@7403c468]" name="PlatFormAdd" duration-ms="182" started-at="2019-09-09T08:13:01Z" description="数据转发平台配置新增数据" data-provider="dataprovider1" finished-at="2019-09-09T08:13:01Z">
+        <test-method status="PASS" signature="PlatFormAdd(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.PlatForm@544a2ea6]" name="PlatFormAdd" duration-ms="92" started-at="2019-09-23T02:53:14Z" description="数据转发平台配置新增数据" data-provider="dataprovider1" finished-at="2019-09-23T02:53:14Z">
           <params>
             <param index="0">
               <value>
@@ -450,7 +1306,7 @@
         </test-method> <!-- PlatFormAdd -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.PlatForm -->
       <class name="com.bitnei.apitest.testcases.datasend.ProtocolAdd">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@43738a82]" name="setUp" is-config="true" duration-ms="1053" started-at="2019-09-09T08:13:01Z" finished-at="2019-09-09T08:13:02Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@2e3fc542]" name="setUp" is-config="true" duration-ms="1048" started-at="2019-09-23T02:53:14Z" finished-at="2019-09-23T02:53:15Z">
           <params>
             <param index="0">
               <value>
@@ -461,7 +1317,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ProtocolAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@43738a82]" name="ProtocolAddData" duration-ms="64" started-at="2019-09-09T08:13:02Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-09-09T08:13:03Z">
+        <test-method status="PASS" signature="ProtocolAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.ProtocolAdd@2e3fc542]" name="ProtocolAddData" duration-ms="90" started-at="2019-09-23T02:53:15Z" description="数据转发平台新增协议" data-provider="dataprovider1" finished-at="2019-09-23T02:53:15Z">
           <params>
             <param index="0">
               <value>
@@ -474,7 +1330,7 @@
         </test-method> <!-- ProtocolAddData -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolAdd -->
       <class name="com.bitnei.apitest.testcases.datasend.VehicleAdd">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleAdd@75881071]" name="setUp" is-config="true" duration-ms="1042" started-at="2019-09-09T08:13:08Z" finished-at="2019-09-09T08:13:09Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleAdd@401e7803]" name="setUp" is-config="true" duration-ms="1045" started-at="2019-09-23T02:53:21Z" finished-at="2019-09-23T02:53:22Z">
           <params>
             <param index="0">
               <value>
@@ -485,7 +1341,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VehicleAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleAdd@75881071]" name="VehicleAddData" duration-ms="663" started-at="2019-09-09T08:13:09Z" description="任务添加车辆" data-provider="dataprovider5" finished-at="2019-09-09T08:13:10Z">
+        <test-method status="PASS" signature="VehicleAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleAdd@401e7803]" name="VehicleAddData" duration-ms="834" started-at="2019-09-23T02:53:22Z" description="任务添加车辆" data-provider="dataprovider5" finished-at="2019-09-23T02:53:22Z">
           <params>
             <param index="0">
               <value>
@@ -498,7 +1354,7 @@
         </test-method> <!-- VehicleAddData -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.VehicleAdd -->
       <class name="com.bitnei.apitest.testcases.datasend.VehicleRemove">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleRemove@2a70a3d8]" name="setUp" is-config="true" duration-ms="1070" started-at="2019-09-09T08:13:10Z" finished-at="2019-09-09T08:13:11Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleRemove@10dba097]" name="setUp" is-config="true" duration-ms="1065" started-at="2019-09-23T02:53:22Z" finished-at="2019-09-23T02:53:24Z">
           <params>
             <param index="0">
               <value>
@@ -509,7 +1365,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VehicleRemoveData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleRemove@2a70a3d8]" name="VehicleRemoveData" duration-ms="736" started-at="2019-09-09T08:13:11Z" description="任务添加车辆" data-provider="dataprovider1" finished-at="2019-09-09T08:13:12Z">
+        <test-method status="PASS" signature="VehicleRemoveData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.VehicleRemove@10dba097]" name="VehicleRemoveData" duration-ms="718" started-at="2019-09-23T02:53:24Z" description="任务添加车辆" data-provider="dataprovider1" finished-at="2019-09-23T02:53:24Z">
           <params>
             <param index="0">
               <value>
@@ -522,7 +1378,7 @@
         </test-method> <!-- VehicleRemoveData -->
       </class> <!-- com.bitnei.apitest.testcases.datasend.VehicleRemove -->
       <class name="com.bitnei.apitest.testcases.datasend.TaskAdd">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@1fc2b765]" name="setUp" is-config="true" duration-ms="1061" started-at="2019-09-09T08:13:06Z" finished-at="2019-09-09T08:13:07Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@4524411f]" name="setUp" is-config="true" duration-ms="1116" started-at="2019-09-23T02:53:19Z" finished-at="2019-09-23T02:53:20Z">
           <params>
             <param index="0">
               <value>
@@ -533,7 +1389,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TaskAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@1fc2b765]" name="TaskAddData" duration-ms="638" started-at="2019-09-09T08:13:07Z" description="数据转发平台新增任务" data-provider="dataprovider1" finished-at="2019-09-09T08:13:08Z">
+        <test-method status="PASS" signature="TaskAddData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.datasend.TaskAdd@4524411f]" name="TaskAddData" duration-ms="829" started-at="2019-09-23T02:53:20Z" description="数据转发平台新增任务" data-provider="dataprovider1" finished-at="2019-09-23T02:53:21Z">
           <params>
             <param index="0">
               <value>

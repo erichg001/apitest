@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SAAS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 20 17:30:03 CST 2019</td>
+<td>Started on:</td><td>Mon Sep 23 10:56:14 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2397 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2033 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,162 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按租户名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":"","status":"","tenant":"yuanian-com"}, {"status":200,"errorMsg":null,"data":[{"id":"e08b632b67134e5e93ae5d0c9908966d","organization":"元年科技","tenant":"yuanian-com","contactName":"xdf","contactEmail":"zhanghr@yuanian.com","connectMobile":"13234454556","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-08-05 16:10:42","status":"ACTIVE","title":null,"superId":"9a5703ed2e9e46a7b31c82b0105b7c41","createBy":"zhanghr@yuanian.com"}],"error":false}</td>
-<td><div><pre>net.sf.json.JSONException: A JSONArray text must start with &apos;[&apos; at character 1 of invalid_token: aa4ee45e-e981-4eae-a501-1d9671638577=&gt;/user-center/tenant/list
-	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
-	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116)
-	at net.sf.json.JSONArray._fromString(JSONArray.java:1197)
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:127)
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:105)
-	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:285)
-	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:237)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1127573910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1127573910'><pre>net.sf.json.JSONException: A JSONArray text must start with &apos;[&apos; at character 1 of invalid_token: aa4ee45e-e981-4eae-a501-1d9671638577=&gt;/user-center/tenant/list
-	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
-	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116)
-	at net.sf.json.JSONArray._fromString(JSONArray.java:1197)
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:127)
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:105)
-	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:285)
-	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:237)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
-<td><div><pre>net.sf.json.JSONException: A JSONArray text must start with &apos;[&apos; at character 1 of invalid_token: aa4ee45e-e981-4eae-a501-1d9671638577=&gt;/user-center/tenant/list
-	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
-	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116)
-	at net.sf.json.JSONArray._fromString(JSONArray.java:1197)
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:127)
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:105)
-	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:285)
-	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:237)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace395827087", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace395827087'><pre>net.sf.json.JSONException: A JSONArray text must start with &apos;[&apos; at character 1 of invalid_token: aa4ee45e-e981-4eae-a501-1d9671638577=&gt;/user-center/tenant/list
-	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
-	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116)
-	at net.sf.json.JSONArray._fromString(JSONArray.java:1197)
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:127)
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:105)
-	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:285)
-	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:237)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:401,&quot;expectedValue is&quot;:400},&quot;data&quot;:{&quot;currentValue is &quot;:&quot;invalid_token: aa4ee45e-e981-4eae-a501-1d9671638577=&gt;/user-center/tenant&quot;,&quot;expectedValue is&quot;:400,&quot;expectedValue is &quot;:&quot;用户hangang@bitnei.cn已经存在&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace438301831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace438301831'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:401,&quot;expectedValue is&quot;:400},&quot;data&quot;:{&quot;currentValue is &quot;:&quot;invalid_token: aa4ee45e-e981-4eae-a501-1d9671638577=&gt;/user-center/tenant&quot;,&quot;expectedValue is&quot;:400,&quot;expectedValue is &quot;:&quot;用户hangang@bitnei.cn已经存在&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -282,6 +126,21 @@ function toggleAllBoxes() {
 <td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":null,"superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn"}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按租户名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":"","status":"","tenant":"yuanian-com"}, {"status":200,"errorMsg":null,"data":[{"id":"e08b632b67134e5e93ae5d0c9908966d","organization":"元年科技","tenant":"yuanian-com","contactName":"xdf","contactEmail":"zhanghr@yuanian.com","connectMobile":"13234454556","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-08-05 16:10:42","status":"ACTIVE","title":null,"superId":"9a5703ed2e9e46a7b31c82b0105b7c41","createBy":"zhanghr@yuanian.com"}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>

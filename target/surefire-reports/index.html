@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-apitest">
-              <span class="suite-name border-passed">apitest</span>
+              <span class="suite-name border-failed">apitest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-apitest">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,55 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">27 methods,   27 passed</span>
+                    <span class="method-stats">47 methods, 3 failed,  3 skipped,  41 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-apitest" class="hide-methods failed suite-apitest"> (hide)</a> <!-- hide-methods failed suite-apitest -->
+                      <a href="#" panel-name="suite-apitest" class="show-methods failed suite-apitest"> (show)</a> <!-- show-methods failed suite-apitest -->
+                    </span>
+                    <div class="method-list-content failed suite-apitest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.selenium.testcase.SaasLoginTest" hash-for-method="LoginFaild(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn&gt;&gt;123, /html/body/app-root/layout-passport/div/div/p...)">LoginFaild(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn>>123, /html/body/app-root/layout-passport/div/div/p...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.selenium.testcase.UserRole" hash-for-method="User(登录成功, /passport/login, zhanghailong@bitnei.cn&gt;&gt;abc123, /html/body/app/changan-layout/div/header/nav/...)">User(登录成功, /passport/login, zhanghailong@bitnei.cn>>abc123, /html/body/app/changan-layout/div/header/nav/...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.UserInfoQuery" hash-for-method="UserInfoQueryData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:[{&quot;id&quot;:&quot;c2da7bb67b354e32b140fa4676310de1&quot;,&quot;username&quot;:&quot;hangang@b...)">UserInfoQueryData({"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@b...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-apitest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-apitest" class="hide-methods skipped suite-apitest"> (hide)</a> <!-- hide-methods skipped suite-apitest -->
+                      <a href="#" panel-name="suite-apitest" class="show-methods skipped suite-apitest"> (show)</a> <!-- show-methods skipped suite-apitest -->
+                    </span>
+                    <div class="method-list-content skipped suite-apitest">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.selenium.testcase.SaasLoginTest" hash-for-method="LoginFaild">LoginFaild</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.selenium.testcase.SaasLoginTest" hash-for-method="LoginFaild">LoginFaild</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.selenium.testcase.SaasLoginTest" hash-for-method="LoginFaild">LoginFaild</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-apitest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,11 +170,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:21&amp;to=,...)">ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=,...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingData" hash-for-method="ChargingDataNormal({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:[{&quot;startElectricity&quot;:124.25,&quot;endElectricity&quot;:150.5,&quot;startTime&quot;:...)">ChargingDataNormal({"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -137,12 +180,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=&amp;to=2019-03-01+10:49:2...)">ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:2...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-03+10:4...)">ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:4...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:2...)">ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:2...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -152,7 +190,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:2...)">ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:2...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-03+10:4...)">ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:4...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:21&amp;to=,...)">ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.ChargingDataTest" hash-for-method="ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=&amp;to=2019-03-01+10:49:2...)">ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:2...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -177,22 +225,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.EnergyConservation" hash-for-method="EnergyConservationNormal({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:0.5072,&quot;error&quot;:false})">EnergyConservationNormal({"status":200,"errorMsg":null,"data":0.5072,"error":false})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.RunningData" hash-for-method="EnergyConservationNormal({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:[{&quot;startSoc&quot;:87.0,&quot;endSoc&quot;:81.0,&quot;startLocation&quot;:&quot;广东省珠海市金湾区红旗镇S3...)">EnergyConservationNormal({"status":200,"errorMsg":null,"data":[{"startSoc":87.0,"endSoc":81.0,"startLocation":"广东省珠海市金湾区红旗镇S3...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.EnergyConservation" hash-for-method="EnergyConservationUpScope({&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;VALID&quot;,&quot;data&quot;:&quot;选择时间范围不得超过3个月&quot;,&quot;error&quot;:true})">EnergyConservationUpScope({"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过3个月","error":true})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.EnergyConservation" hash-for-method="EnergyConservationNormal({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:0.5072,&quot;error&quot;:false})">EnergyConservationNormal({"status":200,"errorMsg":null,"data":0.5072,"error":false})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.RunningData" hash-for-method="EnergyConservationUpScope({&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;VALID&quot;,&quot;data&quot;:&quot;选择时间范围不得超过一个自然日&quot;,&quot;error&quot;:true})">EnergyConservationUpScope({"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.openapi.EnergyConservation" hash-for-method="EnergyConservationUpScope({&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;VALID&quot;,&quot;data&quot;:&quot;选择时间范围不得超过3个月&quot;,&quot;error&quot;:true})">EnergyConservationUpScope({"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过3个月","error":true})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -227,6 +275,76 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" hash-for-method="UserInfoQueryData(按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;...)">UserInfoQueryData(按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.PostBackSaas" hash-for-method="UserInfoQueryData(按企业名称查询租户, /user-center/tenant/list, {&quot;email&quot;:&quot;&quot;,&quot;endTime&quot;:&quot;&quot;,&quot;mobile&quot;:&quot;&quot;,&quot;origin&quot;:&quot;&quot;,&quot;startTime&quot;:&quot;&quot;...)">UserInfoQueryData(按企业名称查询租户, /user-center/tenant/list, {"email":"","endTime":"","mobile":"","origin":"","startTime":""...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.PostBackSaas" hash-for-method="UserInfoQueryData(重复添加租户, /user-center/tenant, {&quot;email&quot;:&quot;hangang@bitnei.cn&quot;,&quot;mobile&quot;:&quot;13311123333&quot;,&quot;name&quot;:&quot;hangang&quot;,&quot;t...)">UserInfoQueryData(重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","t...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" hash-for-method="UserInfoQueryData(按手机号码查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;&quot;,&quot;m...)">UserInfoQueryData(按手机号码查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","m...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" hash-for-method="UserInfoQueryData(按用户类型查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;&quot;,&quot;m...)">UserInfoQueryData(按用户类型查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","m...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.PostBackSaas" hash-for-method="UserInfoQueryData(按手机号码查询租户, /user-center/tenant/list, {&quot;startTime&quot;:&quot;&quot;,&quot;endTime&quot;:&quot;&quot;,&quot;email&quot;:&quot;&quot;,&quot;mobile&quot;:&quot;18110024813&quot;,...)">UserInfoQueryData(按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18110024813",...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.PostBackSaas" hash-for-method="UserInfoQueryData(按租户名称查询租户, /user-center/tenant/list, {&quot;startTime&quot;:&quot;&quot;,&quot;endTime&quot;:&quot;&quot;,&quot;email&quot;:&quot;&quot;,&quot;mobile&quot;:&quot;&quot;,&quot;origin&quot;:&quot;&quot;...)">UserInfoQueryData(按租户名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":""...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" hash-for-method="UserInfoQueryData(按创建时间查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;2019-07-11 04:46:00&quot;,&quot;to...)">UserInfoQueryData(按创建时间查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"2019-07-11 04:46:00","to...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.PostBackSaas" hash-for-method="UserInfoQueryData(按创建时间查询租户, /user-center/tenant/list, {&quot;startTime&quot;:&quot;2019-07-13 04:55:07&quot;,&quot;endTime&quot;:&quot;2019-07-14 04:55:...)">UserInfoQueryData(按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.PostBackSaas" hash-for-method="UserInfoQueryData(按用户类型和邮箱查询租户, /user-center/tenant/list, {&quot;startTime&quot;:&quot;&quot;,&quot;endTime&quot;:&quot;&quot;,&quot;email&quot;:&quot;zhanghailong&quot;,&quot;mobile&quot;...)">UserInfoQueryData(按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" hash-for-method="UserInfoQueryData(按邮箱查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;zhangh...)">UserInfoQueryData(按邮箱查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"zhangh...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" hash-for-method="UserInfoQueryData(按用户名称查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;&quot;,&quot;m...)">UserInfoQueryData(按用户名称查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","m...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" hash-for-method="UserInfoQueryData(邀请用户hangang@bitnei.cn已经存在, /user-center/user/invite, {&quot;admin&quot;:false,&quot;email&quot;:&quot;hangang@bitnei.cn&quot;,&quot;mob...)">UserInfoQueryData(邀请用户hangang@bitnei.cn已经存在, /user-center/user/invite, {"admin":false,"email":"hangang@bitnei.cn","mob...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel" hash-for-method="UserInfoRgisterData(用户已经存在, /user-center/user/register, ?email=hangang@bitnei.cn&amp;force=false, {&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;...)">UserInfoRgisterData(用户已经存在, /user-center/user/register, ?email=hangang@bitnei.cn&force=false, {"status":400,"errorMsg":"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-apitest" title="com.bitnei.apitest.testcases.datasend.VehicleAdd" hash-for-method="VehicleAddData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:{&quot;existVehicle&quot;:[],&quot;insertCount&quot;:&quot;1&quot;},&quot;error&quot;:false})">VehicleAddData({"status":200,"errorMsg":null,"data":{"existVehicle":[],"insertCount":"1"},"error":false})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -247,42 +365,290 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-apitest" class="panel apitest">
-          <div class="suite-apitest-class-passed">
+          <div class="suite-apitest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.bitnei.apitest.testcases.datasend.ProtocolUpdate</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.bitnei.apitest.testcases.saas.UserInfoQuery</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ProtocolUpdateData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">
-                  </a> <!-- ProtocolUpdateData({"status":200,"errorMsg":null,"data":null,"error":false}) -->
-                  <span class="method-name">ProtocolUpdateData</span>
-                  <span class="parameters">({"status":200,"errorMsg":null,"data":null,"error":false})</span>
+                  <a name="UserInfoQueryData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:[{&quot;id&quot;:&quot;c2da7bb67b354e32b140fa4676310de1&quot;,&quot;username&quot;:&quot;hangang@b...)">
+                  </a> <!-- UserInfoQueryData({"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@b...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">({"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false})</span>
+                  <div class="stack-trace">net.sf.json.JSONException: A JSONArray text must start with &apos;[&apos; at character 1 of invalid_token: 1d190917-36f6-42cc-9b57-a5dc2920c28f=&gt;/user-center/userInfo/userWithRoles
+	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
+	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116)
+	at net.sf.json.JSONArray._fromString(JSONArray.java:1197)
+	at net.sf.json.JSONArray.fromObject(JSONArray.java:127)
+	at net.sf.json.JSONArray.fromObject(JSONArray.java:105)
+	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:285)
+	at com.bitnei.apitest.tool.DiffMethod.diffFormatJson(DiffMethod.java:237)
+	at com.bitnei.apitest.testcases.saas.UserInfoQuery.UserInfoQueryData(UserInfoQuery.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
                   <em>
-(数据转发平台新增协议)                  </em>
+(saas平台用户查询)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-apitest-class-passed -->
-          <div class="suite-apitest-class-passed">
+          </div> <!-- suite-apitest-class-failed -->
+          <div class="suite-apitest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.bitnei.apitest.testcases.datasend.TaskAdd</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.bitnei.selenium.testcase.UserRole</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TaskAddData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">
-                  </a> <!-- TaskAddData({"status":200,"errorMsg":null,"data":null,"error":false}) -->
-                  <span class="method-name">TaskAddData</span>
-                  <span class="parameters">({"status":200,"errorMsg":null,"data":null,"error":false})</span>
+                  <a name="User(登录成功, /passport/login, zhanghailong@bitnei.cn&gt;&gt;abc123, /html/body/app/changan-layout/div/header/nav/...)">
+                  </a> <!-- User(登录成功, /passport/login, zhanghailong@bitnei.cn>>abc123, /html/body/app/changan-layout/div/header/nav/...) -->
+                  <span class="method-name">User</span>
+                  <span class="parameters">(登录成功, /passport/login, zhanghailong@bitnei.cn>>abc123, /html/body/app/changan-layout/div/header/nav/div[1]/a[2], 智能网联汽车大数据云平台)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
+  (Driver info: chromedriver=70.0.3538.97 (d035916fe243477005bc95fe2a5778b8f20b6ae1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 190.26 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-Q37MKND&apos;, ip: &apos;192.168.21.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:184)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:171)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:124)
+	at com.bitnei.selenium.utils.WebDriverUtil.initBrowser(WebDriverUtil.java:131)
+	at com.bitnei.selenium.utils.WebDriverUtil.openBrowser(WebDriverUtil.java:66)
+	at com.bitnei.selenium.testcase.UserRole.User(UserRole.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
                   <em>
-(数据转发平台新增任务)                  </em>
+(用户登录点击用户管理)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-apitest-class-passed -->
+          </div> <!-- suite-apitest-class-failed -->
+          <div class="suite-apitest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.bitnei.selenium.testcase.SaasLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginFaild(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn&gt;&gt;123, /html/body/app-root/layout-passport/div/div/p...)">
+                  </a> <!-- LoginFaild(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn>>123, /html/body/app-root/layout-passport/div/div/p...) -->
+                  <span class="method-name">LoginFaild</span>
+                  <span class="parameters">(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn>>123, /html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-alert/div/span, 用户名或密码错误)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: unknown
+  (unknown error: unable to discover open pages)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+  (Driver info: chromedriver=70.0.3538.97 (d035916fe243477005bc95fe2a5778b8f20b6ae1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.70 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-Q37MKND&apos;, ip: &apos;192.168.21.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:184)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:171)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:124)
+	at com.bitnei.selenium.utils.WebDriverUtil.initBrowser(WebDriverUtil.java:131)
+	at com.bitnei.selenium.utils.WebDriverUtil.openBrowser(WebDriverUtil.java:66)
+	at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                  <em>
+(用户登录)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-apitest-class-failed -->
+          <div class="suite-apitest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.bitnei.selenium.testcase.SaasLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginFaild">
+                  </a> <!-- LoginFaild -->
+                  <span class="method-name">LoginFaild</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.bitnei.selenium.utils.WebDriverUtil.closeAllBrowser(WebDriverUtil.java:996)
+	at com.bitnei.selenium.testcase.SaasLoginTest.afterTest(SaasLoginTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                  <em>
+(用户登录)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginFaild">
+                  </a> <!-- LoginFaild -->
+                  <span class="method-name">LoginFaild</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.bitnei.selenium.utils.WebDriverUtil.closeAllBrowser(WebDriverUtil.java:996)
+	at com.bitnei.selenium.testcase.SaasLoginTest.afterTest(SaasLoginTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                  <em>
+(用户登录)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginFaild">
+                  </a> <!-- LoginFaild -->
+                  <span class="method-name">LoginFaild</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.bitnei.selenium.utils.WebDriverUtil.closeAllBrowser(WebDriverUtil.java:996)
+	at com.bitnei.selenium.testcase.SaasLoginTest.afterTest(SaasLoginTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                  <em>
+(用户登录)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-apitest-class-skipped -->
           <div class="suite-apitest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -304,47 +670,77 @@
           <div class="suite-apitest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.bitnei.apitest.testcases.openapi.EnergyConservation</span>
+              <span class="class-name">com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="EnergyConservationNormal({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:0.5072,&quot;error&quot;:false})">
-                  </a> <!-- EnergyConservationNormal({"status":200,"errorMsg":null,"data":0.5072,"error":false}) -->
-                  <span class="method-name">EnergyConservationNormal</span>
-                  <span class="parameters">({"status":200,"errorMsg":null,"data":0.5072,"error":false})</span>
+                  <a name="UserInfoQueryData(按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;...)">
+                  </a> <!-- UserInfoQueryData(按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":"USER_SUPER_ADMIN"}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false})</span>
                   <em>
-(碳排放接口查询正常)                  </em>
+(saas平台用户查询)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="EnergyConservationUpScope({&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;VALID&quot;,&quot;data&quot;:&quot;选择时间范围不得超过3个月&quot;,&quot;error&quot;:true})">
-                  </a> <!-- EnergyConservationUpScope({"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过3个月","error":true}) -->
-                  <span class="method-name">EnergyConservationUpScope</span>
-                  <span class="parameters">({"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过3个月","error":true})</span>
+                  <a name="UserInfoQueryData(按手机号码查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;&quot;,&quot;m...)">
+                  </a> <!-- UserInfoQueryData(按手机号码查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","m...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按手机号码查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"18110024813","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false})</span>
                   <em>
-(碳排放接口时间超3个月)                  </em>
+(saas平台用户查询)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="EnergyConservationWrongDateFormat({&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;VALID&quot;,&quot;data&quot;:&quot;参数 from 2019.05.10 不符合规则：yyyy-MM-dd&quot;,&quot;error&quot;:true})">
-                  </a> <!-- EnergyConservationWrongDateFormat({"status":400,"errorMsg":"VALID","data":"参数 from 2019.05.10 不符合规则：yyyy-MM-dd","error":true}) -->
-                  <span class="method-name">EnergyConservationWrongDateFormat</span>
-                  <span class="parameters">({"status":400,"errorMsg":"VALID","data":"参数 from 2019.05.10 不符合规则：yyyy-MM-dd","error":true})</span>
+                  <a name="UserInfoQueryData(按用户类型查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;&quot;,&quot;m...)">
+                  </a> <!-- UserInfoQueryData(按用户类型查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","m...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按用户类型查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false})</span>
                   <em>
-(碳排放接口开始时间不符合规则)                  </em>
+(saas平台用户查询)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="EnergyConservationWrongTime({&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;VALID&quot;,&quot;data&quot;:&quot;参数 from 2019-05-10 不能大于 to 2019-04-13&quot;,&quot;error&quot;:true})">
-                  </a> <!-- EnergyConservationWrongTime({"status":400,"errorMsg":"VALID","data":"参数 from 2019-05-10 不能大于 to 2019-04-13","error":true}) -->
-                  <span class="method-name">EnergyConservationWrongTime</span>
-                  <span class="parameters">({"status":400,"errorMsg":"VALID","data":"参数 from 2019-05-10 不能大于 to 2019-04-13","error":true})</span>
+                  <a name="UserInfoQueryData(按创建时间查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;2019-07-11 04:46:00&quot;,&quot;to...)">
+                  </a> <!-- UserInfoQueryData(按创建时间查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"2019-07-11 04:46:00","to...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按创建时间查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"2019-07-11 04:46:00","to":"2019-07-19 04:46:00"},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false})</span>
                   <em>
-(碳排放接口开始间大于结束时间)                  </em>
+(saas平台用户查询)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserInfoQueryData(按邮箱查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;zhangh...)">
+                  </a> <!-- UserInfoQueryData(按邮箱查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"zhangh...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按邮箱查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"zhanghailong@bitnei.cn","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false})</span>
+                  <em>
+(saas平台用户查询)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserInfoQueryData(按用户名称查询用户, /user-center/userInfo/userWithRoles, {&quot;createTimeRange&quot;:{&quot;from&quot;:&quot;&quot;,&quot;to&quot;:&quot;&quot;},&quot;email&quot;:&quot;&quot;,&quot;m...)">
+                  </a> <!-- UserInfoQueryData(按用户名称查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","m...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按用户名称查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"hangang","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false})</span>
+                  <em>
+(saas平台用户查询)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserInfoQueryData(邀请用户hangang@bitnei.cn已经存在, /user-center/user/invite, {&quot;admin&quot;:false,&quot;email&quot;:&quot;hangang@bitnei.cn&quot;,&quot;mob...)">
+                  </a> <!-- UserInfoQueryData(邀请用户hangang@bitnei.cn已经存在, /user-center/user/invite, {"admin":false,"email":"hangang@bitnei.cn","mob...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(邀请用户hangang@bitnei.cn已经存在, /user-center/user/invite, {"admin":false,"email":"hangang@bitnei.cn","mobile":"13312223333","nickName":"hangang","title":""}, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true})</span>
+                  <em>
+(saas平台用户查询)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -352,95 +748,17 @@
           <div class="suite-apitest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.bitnei.apitest.testcases.datasend.ProtocolAdd</span>
+              <span class="class-name">com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ProtocolAddData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">
-                  </a> <!-- ProtocolAddData({"status":200,"errorMsg":null,"data":null,"error":false}) -->
-                  <span class="method-name">ProtocolAddData</span>
-                  <span class="parameters">({"status":200,"errorMsg":null,"data":null,"error":false})</span>
+                  <a name="UserInfoRgisterData(用户已经存在, /user-center/user/register, ?email=hangang@bitnei.cn&amp;force=false, {&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;...)">
+                  </a> <!-- UserInfoRgisterData(用户已经存在, /user-center/user/register, ?email=hangang@bitnei.cn&force=false, {"status":400,"errorMsg":"...) -->
+                  <span class="method-name">UserInfoRgisterData</span>
+                  <span class="parameters">(用户已经存在, /user-center/user/register, ?email=hangang@bitnei.cn&force=false, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true})</span>
                   <em>
-(数据转发平台新增协议)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-apitest-class-passed -->
-          <div class="suite-apitest-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.bitnei.apitest.testcases.openapi.ChargingDataTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChargingDataNormal(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&amp;from=2019-03-01+07:49:21&amp;to=2019...)">
-                  </a> <!-- ChargingDataNormal(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21, {"status":400,"errorMsg":"VALID","data":"车牌粤C00859号无效或没有车辆充电数据","error":true})</span>
-                  <em>
-(查询珠海车辆充电数据)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:21&amp;to=,...)">
-                  </a> <!-- ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=,...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=, {"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true})</span>
-                  <em>
-(查询珠海车辆充电数据)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChargingDataNormal(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&amp;to=2019-03-02+10:49:21, {&quot;...)">
-                  </a> <!-- ChargingDataNormal(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true})</span>
-                  <em>
-(查询珠海车辆充电数据)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=&amp;to=2019-03-01+10:49:2...)">
-                  </a> <!-- ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:2...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:21, {"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true})</span>
-                  <em>
-(查询珠海车辆充电数据)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-03+10:4...)">
-                  </a> <!-- ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:4...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true})</span>
-                  <em>
-(查询珠海车辆充电数据)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChargingDataNormal(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+07:49:21&amp;to=2019...)">
-                  </a> <!-- ChargingDataNormal(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21, {"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34","startCurrent":"-230.3","endCurrent":"-0.8","startVolt":"594.7","endVolt":"586.4"}],"error":false})</span>
-                  <em>
-(查询珠海车辆充电数据)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:2...)">
-                  </a> <!-- ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:2...) -->
-                  <span class="method-name">ChargingDataNormal</span>
-                  <span class="parameters">(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21, {"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true})</span>
-                  <em>
-(查询珠海车辆充电数据)                  </em>
+(saas平台用户注册)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -564,6 +882,108 @@
           <div class="suite-apitest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.bitnei.apitest.testcases.datasend.VehicleAdd</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VehicleAddData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:{&quot;existVehicle&quot;:[],&quot;insertCount&quot;:&quot;1&quot;},&quot;error&quot;:false})">
+                  </a> <!-- VehicleAddData({"status":200,"errorMsg":null,"data":{"existVehicle":[],"insertCount":"1"},"error":false}) -->
+                  <span class="method-name">VehicleAddData</span>
+                  <span class="parameters">({"status":200,"errorMsg":null,"data":{"existVehicle":[],"insertCount":"1"},"error":false})</span>
+                  <em>
+(任务添加车辆)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-apitest-class-passed -->
+          <div class="suite-apitest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bitnei.apitest.testcases.datasend.ProtocolAdd</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProtocolAddData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">
+                  </a> <!-- ProtocolAddData({"status":200,"errorMsg":null,"data":null,"error":false}) -->
+                  <span class="method-name">ProtocolAddData</span>
+                  <span class="parameters">({"status":200,"errorMsg":null,"data":null,"error":false})</span>
+                  <em>
+(数据转发平台新增协议)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-apitest-class-passed -->
+          <div class="suite-apitest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bitnei.apitest.testcases.openapi.EnergyConservation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnergyConservationNormal({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:0.5072,&quot;error&quot;:false})">
+                  </a> <!-- EnergyConservationNormal({"status":200,"errorMsg":null,"data":0.5072,"error":false}) -->
+                  <span class="method-name">EnergyConservationNormal</span>
+                  <span class="parameters">({"status":200,"errorMsg":null,"data":0.5072,"error":false})</span>
+                  <em>
+(碳排放接口查询正常)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnergyConservationUpScope({&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;VALID&quot;,&quot;data&quot;:&quot;选择时间范围不得超过3个月&quot;,&quot;error&quot;:true})">
+                  </a> <!-- EnergyConservationUpScope({"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过3个月","error":true}) -->
+                  <span class="method-name">EnergyConservationUpScope</span>
+                  <span class="parameters">({"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过3个月","error":true})</span>
+                  <em>
+(碳排放接口时间超3个月)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnergyConservationWrongDateFormat({&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;VALID&quot;,&quot;data&quot;:&quot;参数 from 2019.05.10 不符合规则：yyyy-MM-dd&quot;,&quot;error&quot;:true})">
+                  </a> <!-- EnergyConservationWrongDateFormat({"status":400,"errorMsg":"VALID","data":"参数 from 2019.05.10 不符合规则：yyyy-MM-dd","error":true}) -->
+                  <span class="method-name">EnergyConservationWrongDateFormat</span>
+                  <span class="parameters">({"status":400,"errorMsg":"VALID","data":"参数 from 2019.05.10 不符合规则：yyyy-MM-dd","error":true})</span>
+                  <em>
+(碳排放接口开始时间不符合规则)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnergyConservationWrongTime({&quot;status&quot;:400,&quot;errorMsg&quot;:&quot;VALID&quot;,&quot;data&quot;:&quot;参数 from 2019-05-10 不能大于 to 2019-04-13&quot;,&quot;error&quot;:true})">
+                  </a> <!-- EnergyConservationWrongTime({"status":400,"errorMsg":"VALID","data":"参数 from 2019-05-10 不能大于 to 2019-04-13","error":true}) -->
+                  <span class="method-name">EnergyConservationWrongTime</span>
+                  <span class="parameters">({"status":400,"errorMsg":"VALID","data":"参数 from 2019-05-10 不能大于 to 2019-04-13","error":true})</span>
+                  <em>
+(碳排放接口开始间大于结束时间)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-apitest-class-passed -->
+          <div class="suite-apitest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bitnei.apitest.testcases.datasend.ProtocolUpdate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProtocolUpdateData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">
+                  </a> <!-- ProtocolUpdateData({"status":200,"errorMsg":null,"data":null,"error":false}) -->
+                  <span class="method-name">ProtocolUpdateData</span>
+                  <span class="parameters">({"status":200,"errorMsg":null,"data":null,"error":false})</span>
+                  <em>
+(数据转发平台新增协议)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-apitest-class-passed -->
+          <div class="suite-apitest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.bitnei.apitest.testcases.datasend.PlatForm</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -582,17 +1002,163 @@
           <div class="suite-apitest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.bitnei.apitest.testcases.datasend.VehicleAdd</span>
+              <span class="class-name">com.bitnei.apitest.testcases.openapi.ChargingDataTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VehicleAddData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:{&quot;existVehicle&quot;:[],&quot;insertCount&quot;:&quot;1&quot;},&quot;error&quot;:false})">
-                  </a> <!-- VehicleAddData({"status":200,"errorMsg":null,"data":{"existVehicle":[],"insertCount":"1"},"error":false}) -->
-                  <span class="method-name">VehicleAddData</span>
-                  <span class="parameters">({"status":200,"errorMsg":null,"data":{"existVehicle":[],"insertCount":"1"},"error":false})</span>
+                  <a name="ChargingDataNormal(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&amp;from=2019-03-01+07:49:21&amp;to=2019...)">
+                  </a> <!-- ChargingDataNormal(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019...) -->
+                  <span class="method-name">ChargingDataNormal</span>
+                  <span class="parameters">(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21, {"status":400,"errorMsg":"VALID","data":"车牌粤C00859号无效或没有车辆充电数据","error":true})</span>
                   <em>
-(任务添加车辆)                  </em>
+(查询珠海车辆充电数据)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChargingDataNormal(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&amp;to=2019-03-02+10:49:21, {&quot;...)">
+                  </a> <!-- ChargingDataNormal(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"...) -->
+                  <span class="method-name">ChargingDataNormal</span>
+                  <span class="parameters">(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true})</span>
+                  <em>
+(查询珠海车辆充电数据)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:2...)">
+                  </a> <!-- ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:2...) -->
+                  <span class="method-name">ChargingDataNormal</span>
+                  <span class="parameters">(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21, {"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true})</span>
+                  <em>
+(查询珠海车辆充电数据)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChargingDataNormal(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+07:49:21&amp;to=2019...)">
+                  </a> <!-- ChargingDataNormal(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019...) -->
+                  <span class="method-name">ChargingDataNormal</span>
+                  <span class="parameters">(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21, {"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34","startCurrent":"-230.3","endCurrent":"-0.8","startVolt":"594.7","endVolt":"586.4"}],"error":false})</span>
+                  <em>
+(查询珠海车辆充电数据)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-03+10:4...)">
+                  </a> <!-- ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:4...) -->
+                  <span class="method-name">ChargingDataNormal</span>
+                  <span class="parameters">(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true})</span>
+                  <em>
+(查询珠海车辆充电数据)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=2019-03-01+10:49:21&amp;to=,...)">
+                  </a> <!-- ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=,...) -->
+                  <span class="method-name">ChargingDataNormal</span>
+                  <span class="parameters">(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=, {"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true})</span>
+                  <em>
+(查询珠海车辆充电数据)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&amp;from=&amp;to=2019-03-01+10:49:2...)">
+                  </a> <!-- ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:2...) -->
+                  <span class="method-name">ChargingDataNormal</span>
+                  <span class="parameters">(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:21, {"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true})</span>
+                  <em>
+(查询珠海车辆充电数据)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-apitest-class-passed -->
+          <div class="suite-apitest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bitnei.apitest.testcases.saas.PostBackSaas</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserInfoQueryData(按企业名称查询租户, /user-center/tenant/list, {&quot;email&quot;:&quot;&quot;,&quot;endTime&quot;:&quot;&quot;,&quot;mobile&quot;:&quot;&quot;,&quot;origin&quot;:&quot;&quot;,&quot;startTime&quot;:&quot;&quot;...)">
+                  </a> <!-- UserInfoQueryData(按企业名称查询租户, /user-center/tenant/list, {"email":"","endTime":"","mobile":"","origin":"","startTime":""...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按企业名称查询租户, /user-center/tenant/list, {"email":"","endTime":"","mobile":"","origin":"","startTime":"","status":"","tenant":"新源科技"}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false})</span>
+                  <em>
+(saas后台用户查询)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserInfoQueryData(重复添加租户, /user-center/tenant, {&quot;email&quot;:&quot;hangang@bitnei.cn&quot;,&quot;mobile&quot;:&quot;13311123333&quot;,&quot;name&quot;:&quot;hangang&quot;,&quot;t...)">
+                  </a> <!-- UserInfoQueryData(重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","t...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true})</span>
+                  <em>
+(saas后台用户查询)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserInfoQueryData(按手机号码查询租户, /user-center/tenant/list, {&quot;startTime&quot;:&quot;&quot;,&quot;endTime&quot;:&quot;&quot;,&quot;email&quot;:&quot;&quot;,&quot;mobile&quot;:&quot;18110024813&quot;,...)">
+                  </a> <!-- UserInfoQueryData(按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18110024813",...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18110024813","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false})</span>
+                  <em>
+(saas后台用户查询)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserInfoQueryData(按租户名称查询租户, /user-center/tenant/list, {&quot;startTime&quot;:&quot;&quot;,&quot;endTime&quot;:&quot;&quot;,&quot;email&quot;:&quot;&quot;,&quot;mobile&quot;:&quot;&quot;,&quot;origin&quot;:&quot;&quot;...)">
+                  </a> <!-- UserInfoQueryData(按租户名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":""...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按租户名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":"","status":"","tenant":"yuanian-com"}, {"status":200,"errorMsg":null,"data":[{"id":"e08b632b67134e5e93ae5d0c9908966d","organization":"元年科技","tenant":"yuanian-com","contactName":"xdf","contactEmail":"zhanghr@yuanian.com","connectMobile":"13234454556","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-08-05 16:10:42","status":"ACTIVE","title":null,"superId":"9a5703ed2e9e46a7b31c82b0105b7c41","createBy":"zhanghr@yuanian.com"}],"error":false})</span>
+                  <em>
+(saas后台用户查询)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserInfoQueryData(按创建时间查询租户, /user-center/tenant/list, {&quot;startTime&quot;:&quot;2019-07-13 04:55:07&quot;,&quot;endTime&quot;:&quot;2019-07-14 04:55:...)">
+                  </a> <!-- UserInfoQueryData(按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":null,"superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn"}],"error":false})</span>
+                  <em>
+(saas后台用户查询)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserInfoQueryData(按用户类型和邮箱查询租户, /user-center/tenant/list, {&quot;startTime&quot;:&quot;&quot;,&quot;endTime&quot;:&quot;&quot;,&quot;email&quot;:&quot;zhanghailong&quot;,&quot;mobile&quot;...)">
+                  </a> <!-- UserInfoQueryData(按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile"...) -->
+                  <span class="method-name">UserInfoQueryData</span>
+                  <span class="parameters">(按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false})</span>
+                  <em>
+(saas后台用户查询)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-apitest-class-passed -->
+          <div class="suite-apitest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bitnei.apitest.testcases.datasend.TaskAdd</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TaskAddData({&quot;status&quot;:200,&quot;errorMsg&quot;:null,&quot;data&quot;:null,&quot;error&quot;:false})">
+                  </a> <!-- TaskAddData({"status":200,"errorMsg":null,"data":null,"error":false}) -->
+                  <span class="method-name">TaskAddData</span>
+                  <span class="parameters">({"status":200,"errorMsg":null,"data":null,"error":false})</span>
+                  <em>
+(数据转发平台新增任务)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -609,11 +1175,18 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;apitest&quot;&gt;
   &lt;parameter name=&quot;suite&quot; value=&quot;suiteParameter&quot;/&gt;
   &lt;parameter name=&quot;hostopenapi&quot; value=&quot;http://61.149.8.78:83&quot;/&gt;
-  &lt;parameter name=&quot;pathroad&quot; value=&quot;D:\\TEST.xlsx&quot;/&gt;
+  &lt;parameter name=&quot;pathroad&quot; value=&quot;src/main/resources/TEST.xlsx&quot;/&gt;
   &lt;parameter name=&quot;host&quot; value=&quot;http://10.10.26.3:81&quot;/&gt;
-  &lt;parameter name=&quot;pathsaasuser&quot; value=&quot;D:\\DATA.xlsx&quot;/&gt;
-  &lt;parameter name=&quot;hostsaas&quot; value=&quot;http://61.149.8.78:85&quot;/&gt;
+  &lt;parameter name=&quot;pathsaasuser&quot; value=&quot;src/main/resources/DATA.xlsx&quot;/&gt;
+  &lt;parameter name=&quot;hostsaas&quot; value=&quot;http://test-saas.bitnei.cn&quot;/&gt;
   &lt;parameter name=&quot;host7789&quot; value=&quot;http://bdp-app.bitnei.cn:7789&quot;/&gt;
+  &lt;parameter name=&quot;backsaas&quot; value=&quot;http://test-back-saas.bitnei.cn&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;2&quot; name=&quot;SAASTEST&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bitnei.selenium.testcase.SaasLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.bitnei.selenium.testcase.UserRole&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SAASTEST --&gt;
   &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;OPENAPI&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.bitnei.apitest.testcases.openapi.ChargingData&quot;/&gt;
@@ -622,6 +1195,14 @@
       &lt;class name=&quot;com.bitnei.apitest.testcases.openapi.ChargingDataTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- OPENAPI --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;2&quot; name=&quot;SAAS&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bitnei.apitest.testcases.saas.UserInfoQuery&quot;/&gt;
+      &lt;class name=&quot;com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel&quot;/&gt;
+      &lt;class name=&quot;com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel&quot;/&gt;
+      &lt;class name=&quot;com.bitnei.apitest.testcases.saas.PostBackSaas&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SAAS --&gt;
   &lt;test thread-count=&quot;1&quot; verbose=&quot;2&quot; name=&quot;DATASEND&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.bitnei.apitest.testcases.datasend.PlatForm&quot;/&gt;
@@ -643,7 +1224,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">SAASTEST (2 classes)</span>
+              </li>
+              <li>
                 <span class="test-name">OPENAPI (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">SAAS (4 classes)</span>
               </li>
               <li>
                 <span class="test-name">DATASEND (6 classes)</span>
@@ -672,120 +1259,200 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(27);
+data.addRows(47);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ChargingDataNormal')
-data.setCell(0, 2, 'com.bitnei.apitest.testcases.openapi.ChargingData')
-data.setCell(0, 3, 20270);
+data.setCell(0, 1, 'User')
+data.setCell(0, 2, 'com.bitnei.selenium.testcase.UserRole')
+data.setCell(0, 3, 190802);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'ChargingDataNormal')
 data.setCell(1, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(1, 3, 19891);
+data.setCell(1, 3, 21663);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'ChargingDataNormal')
 data.setCell(2, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(2, 3, 18266);
+data.setCell(2, 3, 20760);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'EnergyConservationNormal')
-data.setCell(3, 2, 'com.bitnei.apitest.testcases.openapi.RunningData')
-data.setCell(3, 3, 2980);
+data.setCell(3, 1, 'ChargingDataNormal')
+data.setCell(3, 2, 'com.bitnei.apitest.testcases.openapi.ChargingData')
+data.setCell(3, 3, 19147);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ProtocolUpdateData')
-data.setCell(4, 2, 'com.bitnei.apitest.testcases.datasend.ProtocolUpdate')
-data.setCell(4, 3, 2810);
+data.setCell(4, 1, 'EnergyConservationNormal')
+data.setCell(4, 2, 'com.bitnei.apitest.testcases.openapi.EnergyConservation')
+data.setCell(4, 3, 15355);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'VehicleRemoveData')
-data.setCell(5, 2, 'com.bitnei.apitest.testcases.datasend.VehicleRemove')
-data.setCell(5, 3, 736);
+data.setCell(5, 1, 'LoginFaild')
+data.setCell(5, 2, 'com.bitnei.selenium.testcase.SaasLoginTest')
+data.setCell(5, 3, 7776);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'VehicleAddData')
-data.setCell(6, 2, 'com.bitnei.apitest.testcases.datasend.VehicleAdd')
-data.setCell(6, 3, 663);
+data.setCell(6, 1, 'EnergyConservationNormal')
+data.setCell(6, 2, 'com.bitnei.apitest.testcases.openapi.RunningData')
+data.setCell(6, 3, 3042);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TaskAddData')
-data.setCell(7, 2, 'com.bitnei.apitest.testcases.datasend.TaskAdd')
-data.setCell(7, 3, 638);
+data.setCell(7, 1, 'ProtocolUpdateData')
+data.setCell(7, 2, 'com.bitnei.apitest.testcases.datasend.ProtocolUpdate')
+data.setCell(7, 3, 2792);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'ChargingDataNo')
-data.setCell(8, 2, 'com.bitnei.apitest.testcases.openapi.ChargingData')
-data.setCell(8, 3, 464);
+data.setCell(8, 1, 'VehicleAddData')
+data.setCell(8, 2, 'com.bitnei.apitest.testcases.datasend.VehicleAdd')
+data.setCell(8, 3, 834);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'ChargingDataNormal')
-data.setCell(9, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(9, 3, 439);
+data.setCell(9, 1, 'TaskAddData')
+data.setCell(9, 2, 'com.bitnei.apitest.testcases.datasend.TaskAdd')
+data.setCell(9, 3, 829);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'ChargingDataUpOneDay')
-data.setCell(10, 2, 'com.bitnei.apitest.testcases.openapi.ChargingData')
-data.setCell(10, 3, 433);
+data.setCell(10, 1, 'VehicleRemoveData')
+data.setCell(10, 2, 'com.bitnei.apitest.testcases.datasend.VehicleRemove')
+data.setCell(10, 3, 718);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'ChargingDataNormal')
 data.setCell(11, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(11, 3, 256);
+data.setCell(11, 3, 481);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'ChargingDataNoFrom')
+data.setCell(12, 1, 'ChargingDataNo')
 data.setCell(12, 2, 'com.bitnei.apitest.testcases.openapi.ChargingData')
-data.setCell(12, 3, 197);
+data.setCell(12, 3, 400);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'ChargingDataNormal')
-data.setCell(13, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(13, 3, 190);
+data.setCell(13, 1, 'ChargingDataNoFrom')
+data.setCell(13, 2, 'com.bitnei.apitest.testcases.openapi.ChargingData')
+data.setCell(13, 3, 361);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'ChargingDataWrongTime')
+data.setCell(14, 1, 'ChargingDataUpOneDay')
 data.setCell(14, 2, 'com.bitnei.apitest.testcases.openapi.ChargingData')
-data.setCell(14, 3, 188);
+data.setCell(14, 3, 355);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'PlatFormAdd')
-data.setCell(15, 2, 'com.bitnei.apitest.testcases.datasend.PlatForm')
-data.setCell(15, 3, 182);
+data.setCell(15, 1, 'ChargingDataWrongTime')
+data.setCell(15, 2, 'com.bitnei.apitest.testcases.openapi.ChargingData')
+data.setCell(15, 3, 353);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'EnergyConservationUpScope')
-data.setCell(16, 2, 'com.bitnei.apitest.testcases.openapi.RunningData')
-data.setCell(16, 3, 74);
+data.setCell(16, 1, 'UserInfoQueryData')
+data.setCell(16, 2, 'com.bitnei.apitest.testcases.saas.PostBackSaas')
+data.setCell(16, 3, 296);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'ProtocolAddData')
-data.setCell(17, 2, 'com.bitnei.apitest.testcases.datasend.ProtocolAdd')
-data.setCell(17, 3, 64);
+data.setCell(17, 1, 'EnergyConservationUpScope')
+data.setCell(17, 2, 'com.bitnei.apitest.testcases.openapi.EnergyConservation')
+data.setCell(17, 3, 241);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'ChargingDataNormal')
-data.setCell(18, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(18, 3, 48);
+data.setCell(18, 1, 'EnergyConservationWrongDateFormat')
+data.setCell(18, 2, 'com.bitnei.apitest.testcases.openapi.EnergyConservation')
+data.setCell(18, 3, 213);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'ChargingDataNormal')
-data.setCell(19, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
-data.setCell(19, 3, 44);
+data.setCell(19, 1, 'UserInfoQueryData')
+data.setCell(19, 2, 'com.bitnei.apitest.testcases.saas.UserInfoQuery')
+data.setCell(19, 3, 188);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'EnergyConservationUpScope')
-data.setCell(20, 2, 'com.bitnei.apitest.testcases.openapi.EnergyConservation')
-data.setCell(20, 3, 42);
+data.setCell(20, 1, 'ChargingDataNormal')
+data.setCell(20, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
+data.setCell(20, 3, 174);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'ChargingDataNoTo')
-data.setCell(21, 2, 'com.bitnei.apitest.testcases.openapi.ChargingData')
-data.setCell(21, 3, 42);
+data.setCell(21, 1, 'UserInfoQueryData')
+data.setCell(21, 2, 'com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel')
+data.setCell(21, 3, 157);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'EnergyConservationNolicensePlate')
-data.setCell(22, 2, 'com.bitnei.apitest.testcases.openapi.RunningData')
-data.setCell(22, 3, 39);
+data.setCell(22, 1, 'UserInfoQueryData')
+data.setCell(22, 2, 'com.bitnei.apitest.testcases.saas.PostBackSaas')
+data.setCell(22, 3, 141);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'EnergyConservationNormal')
-data.setCell(23, 2, 'com.bitnei.apitest.testcases.openapi.EnergyConservation')
-data.setCell(23, 3, 38);
+data.setCell(23, 1, 'UserInfoRgisterData')
+data.setCell(23, 2, 'com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel')
+data.setCell(23, 3, 139);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'EnergyConservationWrongTime')
-data.setCell(24, 2, 'com.bitnei.apitest.testcases.openapi.EnergyConservation')
-data.setCell(24, 3, 35);
+data.setCell(24, 1, 'ChargingDataNormal')
+data.setCell(24, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
+data.setCell(24, 3, 104);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'EnergyConservationWrongDateFormat')
+data.setCell(25, 1, 'EnergyConservationWrongTime')
 data.setCell(25, 2, 'com.bitnei.apitest.testcases.openapi.EnergyConservation')
-data.setCell(25, 3, 34);
+data.setCell(25, 3, 92);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'EnergyConservationInvalidtoken')
-data.setCell(26, 2, 'com.bitnei.apitest.testcases.openapi.RunningData')
-data.setCell(26, 3, 26);
+data.setCell(26, 1, 'UserInfoQueryData')
+data.setCell(26, 2, 'com.bitnei.apitest.testcases.saas.PostBackSaas')
+data.setCell(26, 3, 92);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'PlatFormAdd')
+data.setCell(27, 2, 'com.bitnei.apitest.testcases.datasend.PlatForm')
+data.setCell(27, 3, 92);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'ProtocolAddData')
+data.setCell(28, 2, 'com.bitnei.apitest.testcases.datasend.ProtocolAdd')
+data.setCell(28, 3, 90);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'UserInfoQueryData')
+data.setCell(29, 2, 'com.bitnei.apitest.testcases.saas.PostBackSaas')
+data.setCell(29, 3, 84);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'UserInfoQueryData')
+data.setCell(30, 2, 'com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel')
+data.setCell(30, 3, 79);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'UserInfoQueryData')
+data.setCell(31, 2, 'com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel')
+data.setCell(31, 3, 78);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'ChargingDataNoTo')
+data.setCell(32, 2, 'com.bitnei.apitest.testcases.openapi.ChargingData')
+data.setCell(32, 3, 77);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'EnergyConservationNolicensePlate')
+data.setCell(33, 2, 'com.bitnei.apitest.testcases.openapi.RunningData')
+data.setCell(33, 3, 77);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'UserInfoQueryData')
+data.setCell(34, 2, 'com.bitnei.apitest.testcases.saas.PostBackSaas')
+data.setCell(34, 3, 76);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'UserInfoQueryData')
+data.setCell(35, 2, 'com.bitnei.apitest.testcases.saas.PostBackSaas')
+data.setCell(35, 3, 76);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'UserInfoQueryData')
+data.setCell(36, 2, 'com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel')
+data.setCell(36, 3, 69);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'ChargingDataNormal')
+data.setCell(37, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
+data.setCell(37, 3, 60);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'EnergyConservationInvalidtoken')
+data.setCell(38, 2, 'com.bitnei.apitest.testcases.openapi.RunningData')
+data.setCell(38, 3, 58);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'EnergyConservationUpScope')
+data.setCell(39, 2, 'com.bitnei.apitest.testcases.openapi.RunningData')
+data.setCell(39, 3, 57);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'UserInfoQueryData')
+data.setCell(40, 2, 'com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel')
+data.setCell(40, 3, 54);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'UserInfoQueryData')
+data.setCell(41, 2, 'com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel')
+data.setCell(41, 3, 53);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'UserInfoQueryData')
+data.setCell(42, 2, 'com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel')
+data.setCell(42, 3, 51);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'ChargingDataNormal')
+data.setCell(43, 2, 'com.bitnei.apitest.testcases.openapi.ChargingDataTest')
+data.setCell(43, 3, 46);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'LoginFaild')
+data.setCell(44, 2, 'com.bitnei.selenium.testcase.SaasLoginTest')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'LoginFaild')
+data.setCell(45, 2, 'com.bitnei.selenium.testcase.SaasLoginTest')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'LoginFaild')
+data.setCell(46, 2, 'com.bitnei.selenium.testcase.SaasLoginTest')
+data.setCell(46, 3, 0);
 window.suiteTableData['apitest']= { tableData: data, tableDiv: 'times-div-apitest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-apitest">
               </div> <!-- times-div-apitest -->
             </div> <!-- times-div -->
@@ -811,181 +1478,321 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.bitnei.apitest.testcases.openapi.ChargingData</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.bitnei.selenium.testcase.SaasLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginFaild</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginFaild</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginFaild</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(http://61.149.8.78:83)</span>
+                <span class="method-name">setUp(http://test-saas.bitnei.cn, src/main/resources/DATA.xlsx)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginFaild(登录失败,用户名密码错误, /passport/login, yaomeng@bitnei.cn>>123, /html/body/app-root/layout-passport/div/div/p...)</span>
+                <span class="method-start">783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterTest</span>
+                <span class="method-start">8570 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bitnei.selenium.testcase.UserRole</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(http://test-saas.bitnei.cn, src/main/resources/DATA.xlsx)</span>
+                <span class="method-start">8573 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">User(登录成功, /passport/login, zhanghailong@bitnei.cn>>abc123, /html/body/app/changan-layout/div/header/nav/...)</span>
+                <span class="method-start">8608 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterTest</span>
+                <span class="method-start">199411 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bitnei.apitest.testcases.openapi.ChargingData</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(http://61.149.8.78:83)</span>
+                <span class="method-start">199483 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
                 <span class="method-name">ChargingDataNo({"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","e...)</span>
-                <span class="method-start">1582 ms</span>
+                <span class="method-start">200028 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataNoFrom({"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true})</span>
-                <span class="method-start">2049 ms</span>
+                <span class="method-start">200430 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataNoTo({"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true})</span>
-                <span class="method-start">2247 ms</span>
+                <span class="method-start">200793 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataNormal({"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":...)</span>
-                <span class="method-start">2289 ms</span>
+                <span class="method-start">200871 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataUpOneDay({"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true})</span>
-                <span class="method-start">22560 ms</span>
+                <span class="method-start">220018 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataWrongTime({"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","e...)</span>
-                <span class="method-start">22994 ms</span>
+                <span class="method-start">220373 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.openapi.EnergyConservation</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://61.149.8.78:83)</span>
-                <span class="method-start">23183 ms</span>
+                <span class="method-start">220727 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">EnergyConservationNormal({"status":200,"errorMsg":null,"data":0.5072,"error":false})</span>
-                <span class="method-start">23247 ms</span>
+                <span class="method-start">220819 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EnergyConservationUpScope({"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过3个月","error":true})</span>
-                <span class="method-start">23286 ms</span>
+                <span class="method-start">236176 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EnergyConservationWrongDateFormat({"status":400,"errorMsg":"VALID","data":"参数 from 2019.05.10 不符合规则：yyyy-MM-dd","error":true})</span>
-                <span class="method-start">23328 ms</span>
+                <span class="method-start">236419 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EnergyConservationWrongTime({"status":400,"errorMsg":"VALID","data":"参数 from 2019-05-10 不能大于 to 2019-04-13","error":true})</span>
-                <span class="method-start">23362 ms</span>
+                <span class="method-start">236634 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.openapi.RunningData</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://61.149.8.78:83)</span>
-                <span class="method-start">23397 ms</span>
+                <span class="method-start">236727 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">EnergyConservationInvalidtoken({"status":401,"errorMsg":"invalid_token: f829155c-9374-4673-a005-10ce548af1=>/external/1/zhuhai/api/...)</span>
-                <span class="method-start">23450 ms</span>
+                <span class="method-start">236815 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EnergyConservationNolicensePlate({"status":400,"errorMsg":"VALID","data":"参数 licensePlate  不能为空","error":true})</span>
-                <span class="method-start">23477 ms</span>
+                <span class="method-start">236874 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EnergyConservationNormal({"status":200,"errorMsg":null,"data":[{"startSoc":87.0,"endSoc":81.0,"startLocation":"广东省珠海市金湾区红旗镇S3...)</span>
-                <span class="method-start">23516 ms</span>
+                <span class="method-start">236951 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EnergyConservationUpScope({"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true})</span>
-                <span class="method-start">26497 ms</span>
+                <span class="method-start">239994 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.openapi.ChargingDataTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(http://61.149.8.78:83, D:\\TEST.xlsx)</span>
-                <span class="method-start">26572 ms</span>
+                <span class="method-name">setUp(http://61.149.8.78:83, src/main/resources/TEST.xlsx)</span>
+                <span class="method-start">240051 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ChargingDataNormal(查询结果正常, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019...)</span>
-                <span class="method-start">27332 ms</span>
+                <span class="method-start">240184 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataNormal(参数from不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:2...)</span>
-                <span class="method-start">45598 ms</span>
+                <span class="method-start">260945 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataNormal(参数to不符合规则, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=,...)</span>
-                <span class="method-start">46038 ms</span>
+                <span class="method-start">261427 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataNormal(选择时间范围不得超过一个自然日, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-01+10:49:2...)</span>
-                <span class="method-start">46228 ms</span>
+                <span class="method-start">261602 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataNormal(选择时间范围开始时间不能大于结束时间, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859D&from=2019-03-03+10:4...)</span>
-                <span class="method-start">46485 ms</span>
+                <span class="method-start">261662 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataNormal(数据缺少车牌号参数, /external/1/zhuhai/api/chargingData, ?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21, {"...)</span>
-                <span class="method-start">46535 ms</span>
+                <span class="method-start">261709 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ChargingDataNormal(参数车牌号无效, /external/1/zhuhai/api/chargingData, ?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019...)</span>
-                <span class="method-start">46579 ms</span>
+                <span class="method-start">261814 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bitnei.apitest.testcases.saas.UserInfoQuery</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(http://test-saas.bitnei.cn)</span>
+                <span class="method-start">283513 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserInfoQueryData({"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@b...)</span>
+                <span class="method-start">284016 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(http://test-saas.bitnei.cn, src/main/resources/TEST.xlsx)</span>
+                <span class="method-start">284206 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按用户名称查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","m...)</span>
+                <span class="method-start">284491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按手机号码查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","m...)</span>
+                <span class="method-start">284571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按创建时间查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"2019-07-11 04:46:00","to...)</span>
+                <span class="method-start">284640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按用户类型查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","m...)</span>
+                <span class="method-start">284719 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按邮箱查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"zhangh...)</span>
+                <span class="method-start">284770 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"...)</span>
+                <span class="method-start">284823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(邀请用户hangang@bitnei.cn已经存在, /user-center/user/invite, {"admin":false,"email":"hangang@bitnei.cn","mob...)</span>
+                <span class="method-start">284878 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(http://test-saas.bitnei.cn, src/main/resources/TEST.xlsx)</span>
+                <span class="method-start">285036 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">UserInfoRgisterData(用户已经存在, /user-center/user/register, ?email=hangang@bitnei.cn&force=false, {"status":400,"errorMsg":"...)</span>
+                <span class="method-start">285284 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bitnei.apitest.testcases.saas.PostBackSaas</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(http://test-back-saas.bitnei.cn, src/main/resources/TEST.xlsx)</span>
+                <span class="method-start">285424 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按企业名称查询租户, /user-center/tenant/list, {"email":"","endTime":"","mobile":"","origin":"","startTime":""...)</span>
+                <span class="method-start">285708 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18110024813",...)</span>
+                <span class="method-start">285784 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:...)</span>
+                <span class="method-start">285862 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按租户名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":""...)</span>
+                <span class="method-start">285947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile"...)</span>
+                <span class="method-start">286040 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserInfoQueryData(重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","t...)</span>
+                <span class="method-start">286181 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.PlatForm</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://10.10.26.3:81)</span>
-                <span class="method-start">66572 ms</span>
+                <span class="method-start">286539 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">PlatFormAdd({"status":200,"errorMsg":null,"data":null,"error":false})</span>
-                <span class="method-start">67933 ms</span>
+                <span class="method-start">287780 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.ProtocolAdd</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://10.10.26.3:81)</span>
-                <span class="method-start">68116 ms</span>
+                <span class="method-start">287872 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ProtocolAddData({"status":200,"errorMsg":null,"data":null,"error":false})</span>
-                <span class="method-start">69171 ms</span>
+                <span class="method-start">288922 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.ProtocolUpdate</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://10.10.26.3:81)</span>
-                <span class="method-start">69235 ms</span>
+                <span class="method-start">289013 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ProtocolUpdateData({"status":200,"errorMsg":null,"data":null,"error":false})</span>
-                <span class="method-start">70285 ms</span>
+                <span class="method-start">290063 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.TaskAdd</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://10.10.26.3:81)</span>
-                <span class="method-start">73095 ms</span>
+                <span class="method-start">292856 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TaskAddData({"status":200,"errorMsg":null,"data":null,"error":false})</span>
-                <span class="method-start">74157 ms</span>
+                <span class="method-start">293973 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.VehicleAdd</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://10.10.26.3:81)</span>
-                <span class="method-start">74795 ms</span>
+                <span class="method-start">294802 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">VehicleAddData({"status":200,"errorMsg":null,"data":{"existVehicle":[],"insertCount":"1"},"error":false})</span>
-                <span class="method-start">75837 ms</span>
+                <span class="method-start">295848 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitnei.apitest.testcases.datasend.VehicleRemove</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(http://10.10.26.3:81)</span>
-                <span class="method-start">76500 ms</span>
+                <span class="method-start">296682 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">VehicleRemoveData({"status":200,"errorMsg":null,"data":null,"error":false})</span>
-                <span class="method-start">77570 ms</span>
+                <span class="method-start">297748 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

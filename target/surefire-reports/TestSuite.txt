@@ -1,4 +1,38 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 79.737 s - in TestSuite
+Tests run: 52, Failures: 5, Errors: 0, Skipped: 6, Time elapsed: 300.043 s <<< FAILURE! - in TestSuite
+LoginFaild(com.bitnei.selenium.testcase.SaasLoginTest)  Time elapsed: 7.789 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Chrome failed to start: unknown
+  (unknown error: unable to discover open pages)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+  (Driver info: chromedriver=70.0.3538.97 (d035916fe243477005bc95fe2a5778b8f20b6ae1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.70 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-Q37MKND', ip: '192.168.21.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: ChromeDriver
+	at com.bitnei.selenium.testcase.SaasLoginTest.LoginFaild(SaasLoginTest.java:51)
+
+afterTest(com.bitnei.selenium.testcase.SaasLoginTest)  Time elapsed: 7.791 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.bitnei.selenium.testcase.SaasLoginTest.afterTest(SaasLoginTest.java:45)
+
+User(com.bitnei.selenium.testcase.UserRole)  Time elapsed: 190.804 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: unable to discover open pages
+  (Driver info: chromedriver=70.0.3538.97 (d035916fe243477005bc95fe2a5778b8f20b6ae1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 190.26 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-Q37MKND', ip: '192.168.21.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: ChromeDriver
+	at com.bitnei.selenium.testcase.UserRole.User(UserRole.java:43)
+
+afterTest(com.bitnei.selenium.testcase.UserRole)  Time elapsed: 190.804 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.bitnei.selenium.testcase.UserRole.afterTest(UserRole.java:37)
+
+UserInfoQueryData(com.bitnei.apitest.testcases.saas.UserInfoQuery)  Time elapsed: 0.189 s  <<< FAILURE!
+net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of invalid_token: 1d190917-36f6-42cc-9b57-a5dc2920c28f=>/user-center/userInfo/userWithRoles
+	at com.bitnei.apitest.testcases.saas.UserInfoQuery.UserInfoQueryData(UserInfoQuery.java:85)
+
