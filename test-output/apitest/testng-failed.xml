@@ -9,22 +9,14 @@
   <parameter name="hostsaas" value="http://test-saas.bitnei.cn"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
-  <test thread-count="5" name="SAASTEST(failed)" parallel="classes">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.selenium.testcase.SaasLoginTest">
+      <class name="com.bitnei.apitest.testcases.saas.YiQiDataSet">
         <methods>
-          <include name="LoginFaild" invocation-numbers="1"/>
-          <include name="afterTest"/>
+          <include name="UserInfoQueryData"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.bitnei.selenium.testcase.SaasLoginTest -->
-      <class name="com.bitnei.selenium.testcase.UserRole">
-        <methods>
-          <include name="afterTest"/>
-          <include name="User" invocation-numbers="1"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.bitnei.selenium.testcase.UserRole -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.YiQiDataSet -->
     </classes>
-  </test> <!-- SAASTEST(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

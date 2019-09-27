@@ -3,7 +3,6 @@ package com.bitnei.apitest.testcases.saas;
 import java.io.IOException;
 import java.util.HashMap;
 
-import org.apache.commons.httpclient.StatusLine;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -20,12 +19,14 @@ import com.bitnei.apitest.utils.ExcleUtil;
 import com.bitnei.apitest.utils.RestClient;
 
 import net.sf.json.JSONObject;
+
 /** 
-* @author 作者 eric_hg 
-* @version 创建时间：
-* 类说明 :适用于所有saas系统所有带参数的post接口
-*/ 
-public class UserInfoQueryByExcel {
+* @author 作者 eric_hg
+* @version 创建时间：2019年9月27日 下午4:26:47 
+* 类说明 
+*/
+public class YiQiDataSet {
+
 	String host;
 	String url;
 	RestClient restClient;
@@ -34,13 +35,14 @@ public class UserInfoQueryByExcel {
 	String authorization = "";
 	ExcelReader ex ;
     ExcleUtil excleUtil;
+    int status;
 		
 	@Parameters({"hostsaas","pathroad"})
 	@BeforeClass
 	public void setUp(String hostsaas,String pathroad) {
 		host = hostsaas;	
 		String ExcelFilePath= pathroad ;
-        String sheetName="saas";
+        String sheetName="yiqidata";
         ex = new ExcelReader(ExcelFilePath, sheetName);
 		//设置cookie		
 		try {
@@ -53,7 +55,7 @@ public class UserInfoQueryByExcel {
 		       
 	}
 	
-	@Test(description="saas平台用户查询",priority =0,dataProvider="dp")
+	@Test(description="yiqi数据集增加",priority =0,dataProvider="dp")
 	public void UserInfoQueryData(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
@@ -70,13 +72,15 @@ public class UserInfoQueryByExcel {
 		closeableHttpResponse = restClient.post(url, paras, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
-		System.out.println("source-----"+str);
+		//System.out.println("source-----"+str);
 		//System.out.println("except-----"+result);
 		//System.out.println("getStatusLine"+closeableHttpResponse.getStatusLine().getStatusCode());
-		JSONObject lastobject = new JSONObject();
-		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(result));
-		System.out.println(lastobject.toString());
-		Assert.assertEquals(lastobject.toString(), "{}");
+		status = closeableHttpResponse.getStatusLine().getStatusCode();
+		Assert.assertEquals(status, 200);
+//		JSONObject lastobject = new JSONObject();
+//		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(result));
+//		System.out.println(lastobject.toString());
+//		Assert.assertEquals(lastobject.toString(), "{}");
 	}
 	
 	@DataProvider
@@ -84,5 +88,4 @@ public class UserInfoQueryByExcel {
      Object[][] sheetData = ex.getSheetDataByPD();
         return  sheetData ;
     }
-
 }

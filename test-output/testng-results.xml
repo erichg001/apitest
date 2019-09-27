@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="27084" started-at="2019-09-23T03:00:47Z" finished-at="2019-09-23T03:01:14Z">
+  <suite name="apitest" duration-ms="9616" started-at="2019-09-27T09:00:40Z" finished-at="2019-09-27T09:00:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27084" started-at="2019-09-23T03:00:47Z" finished-at="2019-09-23T03:01:14Z">
-      <class name="com.bitnei.selenium.testcase.UserRole">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.UserRole@4b9e255]" name="setUp" is-config="true" duration-ms="789" started-at="2019-09-23T03:00:47Z" finished-at="2019-09-23T03:00:47Z">
+    <test name="Default test" duration-ms="9616" started-at="2019-09-27T09:00:40Z" finished-at="2019-09-27T09:00:50Z">
+      <class name="com.bitnei.apitest.testcases.saas.YiQiDataSet">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="setUp" is-config="true" duration-ms="1073" started-at="2019-09-27T09:00:40Z" finished-at="2019-09-27T09:00:41Z">
           <params>
             <param index="0">
               <value>
@@ -16,49 +16,300 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[src/main/resources/DATA.xlsx]]>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="User(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.selenium.testcase.UserRole@4b9e255]" name="User" duration-ms="25078" started-at="2019-09-23T03:00:47Z" description="用户登录点击用户管理" data-provider="dp" finished-at="2019-09-23T03:01:13Z">
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="2978" started-at="2019-09-27T09:00:41Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[登录成功]]>
+                <![CDATA[stat_alarm_1_01]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/passport/login]]>
+                <![CDATA[/ras/dataset/create]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[zhanghailong@bitnei.cn>>abc123]]>
+                <![CDATA[{"dataSetName":"stat_alarm_1_01","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_01"],"starSchemas":[]}]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[/html/body/app/changan-layout/div/header/nav/div[1]/a[2]]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[智能网联汽车大数据云平台]]>
+                <![CDATA[200]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.bitnei.selenium.testcase.UserRole@4b9e255]" name="afterTest" is-config="true" duration-ms="1167" started-at="2019-09-23T03:01:13Z" finished-at="2019-09-23T03:01:14Z">
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="566" started-at="2019-09-27T09:00:44Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_1_02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/dataset/create]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"dataSetName":"stat_alarm_1_02","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_02"],"starSchemas":[]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.bitnei.selenium.testcase.UserRole -->
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="2012" started-at="2019-09-27T09:00:45Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_1_03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/dataset/create]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"dataSetName":"stat_alarm_1_03","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_03"],"starSchemas":[]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="471" started-at="2019-09-27T09:00:47Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_1_04]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/dataset/create]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"dataSetName":"stat_alarm_1_04","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_04"],"starSchemas":[]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="414" started-at="2019-09-27T09:00:47Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_1_05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/dataset/create]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"dataSetName":"stat_alarm_1_05","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_05"],"starSchemas":[]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="367" started-at="2019-09-27T09:00:48Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_1_06]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/dataset/create]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"dataSetName":"stat_alarm_1_06","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_06"],"starSchemas":[]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="383" started-at="2019-09-27T09:00:48Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_1_07]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/dataset/create]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"dataSetName":"stat_alarm_1_07","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_07"],"starSchemas":[]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="347" started-at="2019-09-27T09:00:48Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_1_08]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/dataset/create]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"dataSetName":"stat_alarm_1_08","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_08"],"starSchemas":[]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="312" started-at="2019-09-27T09:00:49Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_1_09]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/dataset/create]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"dataSetName":"stat_alarm_1_09","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_09"],"starSchemas":[]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="280" started-at="2019-09-27T09:00:49Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_1_10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/dataset/create]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"dataSetName":"stat_alarm_1_10","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_10"],"starSchemas":[]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="314" started-at="2019-09-27T09:00:49Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_1_11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/dataset/create]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"dataSetName":"stat_alarm_1_11","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_11"],"starSchemas":[]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.YiQiDataSet -->
     </test> <!-- Default test -->
   </suite> <!-- apitest -->
 </testng-results>
