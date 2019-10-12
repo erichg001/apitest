@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" ignored="0" total="28" passed="28">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="9616" started-at="2019-09-27T09:00:40Z" finished-at="2019-09-27T09:00:50Z">
+  <suite name="apitest" duration-ms="8986" started-at="2019-10-12T08:38:00Z" finished-at="2019-10-12T08:38:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9616" started-at="2019-09-27T09:00:40Z" finished-at="2019-09-27T09:00:50Z">
-      <class name="com.bitnei.apitest.testcases.saas.YiQiDataSet">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="setUp" is-config="true" duration-ms="1073" started-at="2019-09-27T09:00:40Z" finished-at="2019-09-27T09:00:41Z">
+    <test name="Default test" duration-ms="8986" started-at="2019-10-12T08:38:00Z" finished-at="2019-10-12T08:38:09Z">
+      <class name="com.bitnei.apitest.testcases.saas.YiQiCardAdd">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="setUp" is-config="true" duration-ms="1357" started-at="2019-10-12T08:38:00Z" finished-at="2019-10-12T08:38:02Z">
           <params>
             <param index="0">
               <value>
@@ -23,21 +23,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="2978" started-at="2019-09-27T09:00:41Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:44Z">
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="1450" started-at="2019-10-12T08:38:02Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_01]]>
+                <![CDATA[stat_alarm_18_11_01]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_01","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_01"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-soc分段","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"soc","fieldAlias":"soc","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"soc"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -48,22 +48,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="566" started-at="2019-09-27T09:00:44Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:45Z">
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="581" started-at="2019-10-12T08:38:03Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_02]]>
+                <![CDATA[stat_alarm_18_11_02]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_02","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_02"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-工作日or周末","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"day_type","fieldAlias":"day_type","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"day_type"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -74,22 +74,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="2012" started-at="2019-09-27T09:00:45Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:47Z">
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="292" started-at="2019-10-12T08:38:04Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_03]]>
+                <![CDATA[stat_alarm_18_11_03]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_03","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_03"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-季节","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"season","fieldAlias":"season","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"season"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -100,22 +100,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="471" started-at="2019-09-27T09:00:47Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:47Z">
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="229" started-at="2019-10-12T08:38:04Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_04]]>
+                <![CDATA[stat_alarm_18_11_04]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_04","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_04"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-省份","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"province","fieldAlias":"province","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"province"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -126,22 +126,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="414" started-at="2019-09-27T09:00:47Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:48Z">
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="198" started-at="2019-10-12T08:38:04Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_05]]>
+                <![CDATA[stat_alarm_18_11_05]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_05","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_05"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-城市","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"city","fieldAlias":"city","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"city"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -152,22 +152,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="367" started-at="2019-09-27T09:00:48Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:48Z">
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="285" started-at="2019-10-12T08:38:04Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_06]]>
+                <![CDATA[stat_alarm_18_11_06]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_06","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_06"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-车辆状态","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"category","fieldAlias":"category","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"category"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -178,22 +178,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="383" started-at="2019-09-27T09:00:48Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:48Z">
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="123" started-at="2019-10-12T08:38:05Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_07]]>
+                <![CDATA[stat_alarm_18_11_07]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_07","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_07"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-充电类型","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"charge_type","fieldAlias":"charge_type","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"charge_type"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -204,22 +204,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="347" started-at="2019-09-27T09:00:48Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:49Z">
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="226" started-at="2019-10-12T08:38:05Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_08]]>
+                <![CDATA[stat_alarm_18_11_08]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_08","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_08"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-报警时的里程","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"mileage","fieldAlias":"mileage","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"mileage"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -230,22 +230,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="312" started-at="2019-09-27T09:00:49Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:49Z">
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="318" started-at="2019-10-12T08:38:05Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_09]]>
+                <![CDATA[stat_alarm_18_11_09]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_09","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_09"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-速度","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"speed","fieldAlias":"speed","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"speed"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -256,22 +256,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="280" started-at="2019-09-27T09:00:49Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:49Z">
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="245" started-at="2019-10-12T08:38:05Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_10]]>
+                <![CDATA[stat_alarm_18_11_10]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_10","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_10"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-功率","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"power","fieldAlias":"power","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"power"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -282,22 +282,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiDataSet@50de0926]" name="UserInfoQueryData" duration-ms="314" started-at="2019-09-27T09:00:49Z" description="yiqi数据集增加" data-provider="dp" finished-at="2019-09-27T09:00:50Z">
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="150" started-at="2019-10-12T08:38:06Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stat_alarm_1_11]]>
+                <![CDATA[stat_alarm_18_11_11]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/ras/dataset/create]]>
+                <![CDATA[/ras/card]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{"dataSetName":"stat_alarm_1_11","dataSourceList":[{"dataSourceType":"mysql","dataSourceID":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","dataSourceName":"yiqi"}],"selectedTables":["DATASOURCE205cd94207fd4afab42393a08bb3a05b.stat_alarm_1_11"],"starSchemas":[]}]]>
+                <![CDATA[{"cardName":"电池过充-单体总数-车型","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"model_name","fieldAlias":"model_name","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"model_name"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
               </value>
             </param>
             <param index="3">
@@ -308,8 +308,450 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserInfoQueryData -->
-      </class> <!-- com.bitnei.apitest.testcases.saas.YiQiDataSet -->
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="171" started-at="2019-10-12T08:38:06Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-用途","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"dict_name","fieldAlias":"dict_name","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"dict_name"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="189" started-at="2019-10-12T08:38:06Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_13]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-车辆级别","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"veh_level","fieldAlias":"veh_level","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"veh_level"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="189" started-at="2019-10-12T08:38:06Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_14]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-车辆类型","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"veh_type","fieldAlias":"veh_type","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"veh_type"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="137" started-at="2019-10-12T08:38:06Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_15]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-储能装置总能量","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"power_amount","fieldAlias":"power_amount","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"power_amount"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="188" started-at="2019-10-12T08:38:06Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_16]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-额定电压","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"rating_volt","fieldAlias":"rating_volt","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"rating_volt"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="137" started-at="2019-10-12T08:38:07Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_17]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-标称容量","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"rating_volumn","fieldAlias":"rating_volumn","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"rating_volumn"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="187" started-at="2019-10-12T08:38:07Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_18]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-储能装置类型","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"battery_type","fieldAlias":"battery_type","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"battery_type"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="166" started-at="2019-10-12T08:38:07Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_19]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-电池生产企业","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"cell_enterprise","fieldAlias":"cell_enterprise","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"cell_enterprise"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="202" started-at="2019-10-12T08:38:07Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-电池包厂商","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"package_enterprise","fieldAlias":"package_enterprise","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"package_enterprise"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="211" started-at="2019-10-12T08:38:07Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_21]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-是否运营","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"is_biz","fieldAlias":"is_biz","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"is_biz"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="188" started-at="2019-10-12T08:38:08Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_22]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-运行时长","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"run_time_hour","fieldAlias":"run_time_hour","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"run_time_hour"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="253" started-at="2019-10-12T08:38:08Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_23]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-登录时长","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"active_time_month","fieldAlias":"active_time_month","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"active_time_month"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="257" started-at="2019-10-12T08:38:08Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_24]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-30分钟最高车速","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"speed_30_minute","fieldAlias":"speed_30_minute","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"speed_30_minute"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="231" started-at="2019-10-12T08:38:08Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_25]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-整备质量","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"curb_weight","fieldAlias":"curb_weight","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"curb_weight"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="309" started-at="2019-10-12T08:38:09Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_26]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-标称百公里耗电量","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"power_40km","fieldAlias":"power_40km","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"power_40km"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="166" started-at="2019-10-12T08:38:09Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_27]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-续驶里程","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"drive_range","fieldAlias":"drive_range","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"drive_range"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+        <test-method status="PASS" signature="CardAddData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.YiQiCardAdd@50de0926]" name="CardAddData" duration-ms="221" started-at="2019-10-12T08:38:09Z" description="yiqi报表新增" data-provider="dp" finished-at="2019-10-12T08:38:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[stat_alarm_18_11_28]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/card]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"cardName":"电池过充-单体总数-月份","description":"","dataSetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","renderMode":"bar","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","measureAlias":"total","aggs":"SUM","props":{"guidArr":[]}}],"dimensions":[{"fieldName":"month","fieldAlias":"month","fieldType":"Str","fieldNativeType":"VARCHAR","dimensionAlias":"month"}],"filters":[],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"datasetId":"DATASETacbdd26807e340c8bbadfdb36f170a42","datasourceId":"DATASOURCE1446f9208382447486ab2e7b0dd2b089","catalog":"yiqi","schema":"stat_alarm_18_11","limit":1000,"distinct":false},"dataBrief":[],"queryType":"FH","type":"FH"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CardAddData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.YiQiCardAdd -->
     </test> <!-- Default test -->
   </suite> <!-- apitest -->
 </testng-results>
