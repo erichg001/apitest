@@ -61,7 +61,7 @@ public class VehicleRemove {
 		}		
 	}
 	
-	@Test(description="任务添加车辆",priority =0,dataProvider="dataprovider1",
+	@Test(description="任务删除车辆",priority =0,dataProvider="dataprovider1",
 			dataProviderClass=PlatFormProvider.class)
 	public void VehicleRemoveData(String st) throws ClientProtocolException, IOException {
 		restClient = new RestClient();

@@ -33,7 +33,8 @@
     <class name = "com.bitnei.apitest.testcases.saas.UserInfoQuery" />
     <class name = "com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" />
     <class name = "com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel" />
-    <class name = "com.bitnei.apitest.testcases.saas.PostBackSaas" />    
+    <class name = "com.bitnei.apitest.testcases.saas.PostBackSaas" />  
+    <class name = "com.bitnei.apitest.testcases.saas.ApiTest" />  
     </classes> 
   </test> 
 

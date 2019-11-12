@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SAAS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 23 10:56:14 CST 2019</td>
+<td>Started on:</td><td>Thu Oct 24 13:38:26 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2033 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5860 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,446 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQuery.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQuery<br>Test method: saas平台用户查询<br>Parameters: {"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:&quot;INACTIVE&quot;,&quot;expectedValue is &quot;:&quot;ACTIVE&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.UserInfoQuery.UserInfoQueryData(UserInfoQuery.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2010199365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2010199365'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:&quot;INACTIVE&quot;,&quot;expectedValue is &quot;:&quot;ACTIVE&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.UserInfoQuery.UserInfoQueryData(UserInfoQuery.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQuery@32a068d1</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户名称查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"hangang","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:&quot;INACTIVE&quot;,&quot;expectedValue is &quot;:&quot;ACTIVE&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData(UserInfoQueryByExcel.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1637713193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1637713193'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:&quot;INACTIVE&quot;,&quot;expectedValue is &quot;:&quot;ACTIVE&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData(UserInfoQueryByExcel.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@33cb5951</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 邀请用户hangang@bitnei.cn已经存在, /user-center/user/invite, {"admin":false,"email":"hangang@bitnei.cn","mobile":"13312223333","nickName":"hangang","title":""}, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;str:用户hangang@bitnei.cn已经存在&quot;,&quot;expectedValue is &quot;:&quot;NORMAL&quot;},&quot;data&quot;:{&quot;currentValue is &quot;:null,&quot;expectedValue is &quot;:&quot;用户hangang@bitnei.cn已经存在&quot;,&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;用户hangang@bitnei.cn已经存在&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData(UserInfoQueryByExcel.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace933317237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace933317237'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;str:用户hangang@bitnei.cn已经存在&quot;,&quot;expectedValue is &quot;:&quot;NORMAL&quot;},&quot;data&quot;:{&quot;currentValue is &quot;:null,&quot;expectedValue is &quot;:&quot;用户hangang@bitnei.cn已经存在&quot;,&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;用户hangang@bitnei.cn已经存在&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData(UserInfoQueryByExcel.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@33cb5951</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按企业名称查询租户, /user-center/tenant/list, {"email":"","endTime":"","mobile":"","origin":"","startTime":"","status":"","tenant":"新源科技"}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userNum&quot;:{&quot;currentValue is &quot;:6,&quot;expectedValue is&quot;:3}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace96777337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace96777337'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userNum&quot;:{&quot;currentValue is &quot;:6,&quot;expectedValue is&quot;:3}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@701fc37a</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18110024813","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userNum&quot;:{&quot;currentValue is &quot;:6,&quot;expectedValue is&quot;:3}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1562833258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1562833258'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userNum&quot;:{&quot;currentValue is &quot;:6,&quot;expectedValue is&quot;:3}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@701fc37a</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":null,"superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn"}],"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userNum&quot;:{&quot;currentValue is &quot;:2,&quot;expectedValue is&quot;:1}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace951609454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace951609454'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userNum&quot;:{&quot;currentValue is &quot;:2,&quot;expectedValue is&quot;:1}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@701fc37a</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userNum&quot;:{&quot;currentValue is &quot;:6,&quot;expectedValue is&quot;:3}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1125549554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1125549554'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userNum&quot;:{&quot;currentValue is &quot;:6,&quot;expectedValue is&quot;:3}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@701fc37a</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;str:用户hangang@bitnei.cn已经存在&quot;,&quot;expectedValue is &quot;:&quot;NORMAL&quot;},&quot;data&quot;:{&quot;currentValue is &quot;:null,&quot;expectedValue is &quot;:&quot;用户hangang@bitnei.cn已经存在&quot;,&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;用户hangang@bitnei.cn已经存在&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1199899294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1199899294'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;str:用户hangang@bitnei.cn已经存在&quot;,&quot;expectedValue is &quot;:&quot;NORMAL&quot;},&quot;data&quot;:{&quot;currentValue is &quot;:null,&quot;expectedValue is &quot;:&quot;用户hangang@bitnei.cn已经存在&quot;,&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;用户hangang@bitnei.cn已经存在&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@701fc37a</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台用户注册<br>Parameters: 用户已经存在, /user-center/user/register, ?email=hangang@bitnei.cn&force=false, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;str:用户hangang@bitnei.cn已经存在&quot;,&quot;expectedValue is &quot;:&quot;NORMAL&quot;},&quot;data&quot;:{&quot;currentValue is &quot;:null,&quot;expectedValue is &quot;:&quot;用户hangang@bitnei.cn已经存在&quot;,&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;用户hangang@bitnei.cn已经存在&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData(UserInforRgisterByExcel.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1558593062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1558593062'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;str:用户hangang@bitnei.cn已经存在&quot;,&quot;expectedValue is &quot;:&quot;NORMAL&quot;},&quot;data&quot;:{&quot;currentValue is &quot;:null,&quot;expectedValue is &quot;:&quot;用户hangang@bitnei.cn已经存在&quot;,&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;用户hangang@bitnei.cn已经存在&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData(UserInforRgisterByExcel.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@365c30cc</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,80 +515,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.UserInfoQuery.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQuery<br>Test method: saas平台用户查询<br>Parameters: {"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 10000 SUCCESS, /external-api/common/api/raw/api_test?, city=%E7%9F%B3%E5%AE%B6%E5%BA%84%E5%B8%82&province=%E6%B2%B3%E5%8C%97%E7%9C%81, 10000</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.UserInfoQuery@62fdb4a6</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户名称查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"hangang","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"133****2222","password":"N/A","title":"test","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@11e21d0e</td></tr>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@4148db48</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按手机号码查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"18110024813","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@11e21d0e</td></tr>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@33cb5951</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按创建时间查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"2019-07-11 04:46:00","to":"2019-07-19 04:46:00"},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@11e21d0e</td></tr>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@33cb5951</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户类型查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@11e21d0e</td></tr>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@33cb5951</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按邮箱查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"zhanghailong@bitnei.cn","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@11e21d0e</td></tr>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@33cb5951</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":"USER_SUPER_ADMIN"}, {"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"zhanghailong@bitnei.cn","nickName":"张海龙","email":"zhanghailong@bitnei.cn","mobile":"181****4813","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@11e21d0e</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 邀请用户hangang@bitnei.cn已经存在, /user-center/user/invite, {"admin":false,"email":"hangang@bitnei.cn","mobile":"13312223333","nickName":"hangang","title":""}, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@11e21d0e</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按企业名称查询租户, /user-center/tenant/list, {"email":"","endTime":"","mobile":"","origin":"","startTime":"","status":"","tenant":"新源科技"}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18110024813","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":null,"superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn"}],"error":false}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@33cb5951</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按租户名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":"","status":"","tenant":"yuanian-com"}, {"status":200,"errorMsg":null,"data":[{"id":"e08b632b67134e5e93ae5d0c9908966d","organization":"元年科技","tenant":"yuanian-com","contactName":"xdf","contactEmail":"zhanghr@yuanian.com","connectMobile":"13234454556","origin":"REGISTER_FREE","userNum":1,"createTime":"2019-08-05 16:10:42","status":"ACTIVE","title":null,"superId":"9a5703ed2e9e46a7b31c82b0105b7c41","createBy":"zhanghr@yuanian.com"}],"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","userNum":3,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3","createBy":"zhanghailong@bitnei.cn"}],"error":false}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@31206beb</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台用户注册<br>Parameters: 用户已经存在, /user-center/user/register, ?email=hangang@bitnei.cn&force=false, {"status":400,"errorMsg":"NORMAL","data":"用户hangang@bitnei.cn已经存在","error":true}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@1dd02175</td></tr>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@701fc37a</td></tr>
 </table><p>
 </body>
 </html>

@@ -79,7 +79,7 @@ public class VehicleAdd {
 		//System.out.println("listplat.get(0).getId()------------"+listplat.get(0).getId());
 		//入参设置
 		ForwardVehiclePro forwardvehiclepro  = new ForwardVehiclePro();
-		forwardvehiclepro.setVehicleIds("1483915");
+		forwardvehiclepro.setVehicleIds("6242728");
 		forwardvehiclepro.setPlatformId(listplat.get(0).getId());
 		forwardvehiclepro.setTaskId(list.get(0).getId());
 		

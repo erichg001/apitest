@@ -31,7 +31,7 @@ public class GetCookie {
         PostMethod postMethod = new PostMethod(urls);
         
         // 设置登陆时要求的信息，用户名和密码
-        NameValuePair[] data = { new NameValuePair("username", "zhanghr@yuanian.com"), new NameValuePair("password", "abc123") };
+        NameValuePair[] data = { new NameValuePair("username", "zhanghailong@bitnei.cn"), new NameValuePair("password", "abc123") };
         postMethod.setRequestBody(data);
 
         try {
@@ -55,7 +55,7 @@ public class GetCookie {
         HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
 		headermap.put("Cookie", cookie);
-		//System.out.println(headermap);
+		System.out.println(headermap);
         
 		return cookie;
 		
