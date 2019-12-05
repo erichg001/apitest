@@ -57,7 +57,7 @@
     </classes> 
   </test>
 -->
-
+<!--
   <test parallel="classes" thread-count="1" name="DATASEND" verbose="2" preserve-order="true">
     <classes>
     <class name = "com.bitnei.apitest.testcases.datasend.PlatForm" />
@@ -68,5 +68,6 @@
     <class name = "com.bitnei.apitest.testcases.datasend.VehicleRemove" />
     </classes> 
   </test>
+  -->
 
 </suite> 

@@ -68,6 +68,7 @@ public class UserInforRgisterByExcel {
 		closeableHttpResponse = restClient.get(url, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
+		System.out.println("str"+str);
 		JSONObject lastobject = new JSONObject();
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(result));
 		Assert.assertEquals(lastobject.toString(), "{}");

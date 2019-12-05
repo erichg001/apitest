@@ -9,32 +9,44 @@
   <parameter name="hostsaas" value="http://test-saas.bitnei.cn"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
-  <test thread-count="5" verbose="0" name="SAASTEST(failed)" parallel="classes">
+  <test thread-count="5" verbose="0" name="DATASEND(failed)" parallel="classes">
     <classes>
-      <class name="com.bitnei.selenium.testcase.UserRole">
+      <class name="com.bitnei.apitest.testcases.datasend.ProtocolUpdate">
         <methods>
-          <include name="afterTest"/>
-          <include name="User" invocation-numbers="1"/>
+          <include name="setUp"/>
+          <include name="ProtocolUpdateData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolUpdate -->
+      <class name="com.bitnei.apitest.testcases.datasend.ProtocolAdd">
+        <methods>
+          <include name="ProtocolAddData" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.bitnei.selenium.testcase.UserRole -->
-      <class name="com.bitnei.selenium.testcase.SaasLoginTest">
+      </class> <!-- com.bitnei.apitest.testcases.datasend.ProtocolAdd -->
+      <class name="com.bitnei.apitest.testcases.datasend.TaskAdd">
         <methods>
-          <include name="LoginFaild" invocation-numbers="1"/>
-          <include name="afterTest"/>
+          <include name="setUp"/>
+          <include name="TaskAddData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.TaskAdd -->
+      <class name="com.bitnei.apitest.testcases.datasend.VehicleRemove">
+        <methods>
+          <include name="VehicleRemoveData" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.bitnei.selenium.testcase.SaasLoginTest -->
+      </class> <!-- com.bitnei.apitest.testcases.datasend.VehicleRemove -->
+      <class name="com.bitnei.apitest.testcases.datasend.PlatForm">
+        <methods>
+          <include name="setUp"/>
+          <include name="PlatFormAdd" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.PlatForm -->
+      <class name="com.bitnei.apitest.testcases.datasend.VehicleAdd">
+        <methods>
+          <include name="VehicleAddData" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bitnei.apitest.testcases.datasend.VehicleAdd -->
     </classes>
-  </test> <!-- SAASTEST(failed) -->
-  <test thread-count="5" verbose="0" name="SAAS(failed)" parallel="classes">
-    <classes>
-      <class name="com.bitnei.apitest.testcases.saas.UserInfoQuery">
-        <methods>
-          <include name="setUp"/>
-          <include name="UserInfoQueryData" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.UserInfoQuery -->
-    </classes>
-  </test> <!-- SAAS(failed) -->
+  </test> <!-- DATASEND(failed) -->
 </suite> <!-- Failed suite [apitest] -->
