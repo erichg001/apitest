@@ -19,60 +19,63 @@ import com.bitnei.apitest.utils.ExcleUtil;
 import com.bitnei.apitest.utils.RestClient;
 
 import net.sf.json.JSONObject;
+
 /** 
-* @author 作者 eric_hg 
-* @version 创建时间：
-* 类说明 :适用于所有saas系统所有带参数的get接口
-*/ 
-public class UserInforRgisterByExcel {
+* @author 作者 eric_hg
+* @version 创建时间：2019年12月11日 下午4:39:39 
+* 类说明 
+*/
+public class ApiTestPost {
 	String host;
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookie getCookisaas = new GetCookie();
-	String authorization = "";
+	GetApiToken getToken = new GetApiToken ();
+	String token = "";
 	ExcelReader ex ;
     ExcleUtil excleUtil;
+    int status;
 		
 	@Parameters({"hostsaas","pathroad"})
 	@BeforeClass
 	public void setUp(String hostsaas,String pathroad) {
 		host = hostsaas;	
 		String ExcelFilePath= pathroad ;
-        String sheetName="Sheet3";
+        String sheetName="apipost";
         ex = new ExcelReader(ExcelFilePath, sheetName);
-		//设置cookie		
+		//设置cookie	
 		try {
-			 authorization = getCookisaas.login();
+			 token = getToken.ApiToken();
 		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.printStackTrace(); 
 		}	
 		       
 	}
 	
-	@Test(description="saas平台",priority =0,dataProvider="dp")
-	public void UserInfoRgisterData(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
+	@Test(description="api返回验证",priority =0,dataProvider="dp")
+	public void ApiTest(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Cookie",authorization);
+		headermap.put("Authorization","bearer "+token);
 		//入参设置
-		url= host +url+paras;
-		System.out.println("URL------"+url);
+		url= host+url+paras;
 		//调用接口	
-		closeableHttpResponse = restClient.get(url, headermap);	
-		
+		System.out.println("url----"+url);
+		System.out.println("paras----"+paras);
+		closeableHttpResponse = restClient.post(url, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
-		System.out.println("str"+str);
+		System.out.println("source-----"+str);
+		System.out.println("except-----"+result);
+		System.out.println("getStatusLine"+closeableHttpResponse.getStatusLine().getStatusCode());
 		JSONObject lastobject = new JSONObject();
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(result));
+		System.out.println(lastobject.toString());
 		Assert.assertEquals(lastobject.toString(), "{}");
 	}
 	

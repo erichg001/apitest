@@ -57,7 +57,7 @@ public class UserInfoQueryByExcel {
 	public void UserInfoQueryData(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
-		//DiffMethodByExcept diffMethod = new DiffMethodByExcept();
+		
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到

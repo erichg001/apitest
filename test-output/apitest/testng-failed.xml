@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [apitest]">
-  <parameter name="suite" value="suiteParameter"/>
   <parameter name="hostopenapi" value="http://61.149.8.78:83"/>
   <parameter name="pathroad" value="src/main/resources/TEST.xlsx"/>
   <parameter name="host" value="http://10.10.26.3:81"/>
@@ -11,13 +10,12 @@
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.webtestcases.saas.SaasLogin">
+      <class name="com.bitnei.apitest.testcases.saas.ApiTestPost">
         <methods>
-          <include name="LoginNoName"/>
+          <include name="ApiTest" invocation-numbers="2"/>
           <include name="setUp"/>
-          <include name="afterTest"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.webtestcases.saas.SaasLogin -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTestPost -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

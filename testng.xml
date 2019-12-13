@@ -8,7 +8,7 @@
   <parameter name="hostopenapi" value="http://61.149.8.78:83" />
   <parameter name="pathroad" value="src/main/resources/TEST.xlsx" />
   <parameter name="pathsaasuser" value="src/main/resources/DATA.xlsx" />
-  <parameter name="suite" value="suiteParameter" />
+
 	<!--thread-count 并发线程数  preserve-order classes按顺序执行   verbose 输出日志等级 -->
 <!-- 
   <test parallel="classes" thread-count="1" name="SAASTEST" verbose="2" preserve-order="true"> 
@@ -18,8 +18,8 @@
   </classes> 
   </test> 
  -->
-  <test parallel="classes" thread-count="1" name="OPENAPI" verbose="1" >
-    <classes>
+  <test parallel="classes" thread-count="1" name="openapi" verbose="1" >
+    <classes>         
     	<class name = "com.bitnei.apitest.testcases.openapi.ChargingData" />
     	<class name = "com.bitnei.apitest.testcases.openapi.EnergyConservation" />
     	<class name = "com.bitnei.apitest.testcases.openapi.RunningData" />
@@ -35,6 +35,7 @@
     <class name = "com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel" />
     <class name = "com.bitnei.apitest.testcases.saas.PostBackSaas" />  
     <class name = "com.bitnei.apitest.testcases.saas.ApiTest" />  
+    <class name = "com.bitnei.apitest.testcases.saas.ApiTestPost" />    
     </classes> 
   </test> 
 
