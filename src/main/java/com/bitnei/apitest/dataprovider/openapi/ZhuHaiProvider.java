@@ -69,7 +69,7 @@ public class ZhuHaiProvider {
 	@DataProvider(name="dataprovider10")  
     public static Object[][] dataProvider10(){  
         return new Object[][]{  
-        	{"{\"status\":200,\"errorMsg\":null,\"data\":[{\"startSoc\":87.0,\"endSoc\":81.0,\"startLocation\":\"广东省珠海市金湾区红旗镇S3211珠海机场高速\",\"endLocation\":\"广东省珠海市金湾区红旗镇永泰路\",\"runTime\":2730,\"rumMileage\":23.0,\"startTime\":\"2019-03-01 13:08:19\",\"endTime\":\"2019-03-01 13:53:49\"},{\"startSoc\":93.0,\"endSoc\":87.0,\"startLocation\":\"广东省珠海市金湾区红旗镇永泰路\",\"endLocation\":\"广东省珠海市金湾区红旗镇589县道\",\"runTime\":2638,\"rumMileage\":20.0,\"startTime\":\"2019-03-01 12:05:28\",\"endTime\":\"2019-03-01 12:49:26\"}],\"error\":false}"}
+        	{"{\"status\":200,\"errorMsg\":null,\"error\":false}"}
         };
     }
 	

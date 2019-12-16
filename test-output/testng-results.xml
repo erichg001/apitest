@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
+<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="10889" started-at="2019-12-13T08:34:31Z" finished-at="2019-12-13T08:34:42Z">
+  <suite name="apitest" duration-ms="12849" started-at="2019-12-16T09:09:13Z" finished-at="2019-12-16T09:09:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10889" started-at="2019-12-13T08:34:31Z" finished-at="2019-12-13T08:34:42Z">
+    <test name="Default test" duration-ms="12849" started-at="2019-12-16T09:09:13Z" finished-at="2019-12-16T09:09:26Z">
       <class name="com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="setUp" is-config="true" duration-ms="1204" started-at="2019-12-13T08:34:31Z" finished-at="2019-12-13T08:34:32Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="setUp" is-config="true" duration-ms="1615" started-at="2019-12-16T09:09:13Z" finished-at="2019-12-16T09:09:15Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="1722" started-at="2019-12-13T08:34:32Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:34Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="1702" started-at="2019-12-16T09:09:15Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:16Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="192" started-at="2019-12-13T08:34:34Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:34Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="210" started-at="2019-12-16T09:09:16Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:17Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="294" started-at="2019-12-13T08:34:34Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:35Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="451" started-at="2019-12-16T09:09:17Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:17Z">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="3257" started-at="2019-12-13T08:34:35Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:38Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="3049" started-at="2019-12-16T09:09:17Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:20Z">
           <params>
             <param index="0">
               <value>
@@ -127,7 +127,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="1869" started-at="2019-12-13T08:34:38Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:40Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="2108" started-at="2019-12-16T09:09:20Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:22Z">
           <params>
             <param index="0">
               <value>
@@ -153,7 +153,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="169" started-at="2019-12-13T08:34:40Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:40Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="326" started-at="2019-12-16T09:09:22Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:23Z">
           <params>
             <param index="0">
               <value>
@@ -179,7 +179,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="138" started-at="2019-12-13T08:34:40Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:40Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="248" started-at="2019-12-16T09:09:23Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:23Z">
           <params>
             <param index="0">
               <value>
@@ -205,7 +205,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="109" started-at="2019-12-13T08:34:40Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:40Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="111" started-at="2019-12-16T09:09:23Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:23Z">
           <params>
             <param index="0">
               <value>
@@ -231,7 +231,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="609" started-at="2019-12-13T08:34:40Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:41Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="561" started-at="2019-12-16T09:09:23Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:23Z">
           <params>
             <param index="0">
               <value>
@@ -257,7 +257,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="201" started-at="2019-12-13T08:34:41Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:41Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="290" started-at="2019-12-16T09:09:23Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:24Z">
           <params>
             <param index="0">
               <value>
@@ -283,7 +283,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="169" started-at="2019-12-13T08:34:41Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:41Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="250" started-at="2019-12-16T09:09:24Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:24Z">
           <params>
             <param index="0">
               <value>
@@ -309,7 +309,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="305" started-at="2019-12-13T08:34:41Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:41Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="635" started-at="2019-12-16T09:09:24Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:25Z">
           <params>
             <param index="0">
               <value>
@@ -335,7 +335,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="225" started-at="2019-12-13T08:34:41Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:42Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="240" started-at="2019-12-16T09:09:25Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:25Z">
           <params>
             <param index="0">
               <value>
@@ -354,14 +354,14 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":10,"list":[{"id":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","name":"yiqi","dataSourceType":"mysql","databaseName":"yiqi","createBy":"hangang@bitnei.cn","databasePort":"3306","hostname":"10.10.21.67","username":"analysis","password":"analysis","dataSets":[{"dataSetId":"DATASETf619a97a4c6844ef8554cda6aae2fe11","dataSetName":"1114"},{"dataSetId":"DATASETbfc2a1ded81a4f0c89b3442a07490ed3","dataSetName":"afdsaf"},{"dataSetId":"DATASET10e4ab9872fb42b6bfcfc0cd4ae49fb0","dataSetName":"111"},{"dataSetId":"DATASETf67b2d2ecb8e446ba53ae19b7dc1f2b5","dataSetName":"stat_alarm_1_08"},{"dataSetId":"DATASET139fd1584be44e0ebf679585069645a2","dataSetName":"stat_alarm_3_01"},{"dataSetId":"DATASETd9c69ed37ddb434bb63fd6bb9a21cb35","dataSetName":"stat_alarm_18_01"},{"dataSetId":"DATASET4894994cc6fe4b68a2ae4094115a6890","dataSetName":"hg004"},{"dataSetId":"DATASETb35bdce7238f4fddb338302ff7c50285","dataSetName":"stat_alarm_1_01"},{"dataSetId":"DATASETbf221f10b1d646e3bc6337dbf2edbde1","dataSetName":"1012t"},{"dataSetId":"DATASETe1067bf6b212495ab1edb14f27d99887","dataSetName":"stat_alarm_1_03"},{"dataSetId":"DATASET723fae6f8d454691837542032c963f36","dataSetName":"tat_alarm_4_02"},{"dataSetId":"DATASET48490ca482bc4051a5772d5df3679758","dataSetName":"stat_alarm_1_07"},{"dataSetId":"DATASETb5e4948c95164daaa065374068adb90f","dataSetName":"一汽数据集"},{"dataSetId":"DATASET287779cdc48d4282ae6aa3e59fd06fda","dataSetName":"test_123_dataset"},{"dataSetId":"DATASET371f868dcd0547a0b9544b9c35d61110","dataSetName":"stat_alarm_0_08"},{"dataSetId":"DATASETadcc11335bb84a71a5706ad6064e6ebf","dataSetName":"hgstat_alarm_0_01"},{"dataSetId":"DATASET122e60954740482aa1dc50df794156b1","dataSetName":"tat_alarm_4_05"},{"dataSetId":"DATASETcdf7338c185244b3a840afa285c5fa53","dataSetName":"11088"},{"dataSetId":"DATASET066a73a5d6f746d19a3d1e5b066f0250","dataSetName":"stat_alarm_0_05"},{"dataSetId":"DATASET047711c77a3340d085bba9b429fd1b4e","dataSetName":"总体报警级别分布"},{"dataSetId":"DATASET8e1602e2de7547268751e3e352a30239","dataSetName":"stat_alarm_0_11"},{"dataSetId":"DATASET9dd5ecb5da124f8ea5258464ce3ff897","dataSetName":"stat_alarm_0_04"},{"dataSetId":"DATASET07a36fcf18c048e1ab20b1408f0e2b69","dataSetName":"tat_alarm_4_10"},{"dataSetId":"DATASET6747d574ad8c4dd7a467b4070f5c5960","dataSetName":"stat_alarm_0_09"},{"dataSetId":"DATASET1853456a18524b4fbe99cd3899307074","dataSetName":"stat_alarm_0_01"},{"dataSetId":"DATASET47c8414ecb7c4b3b8158d3bbd7d133fe","dataSetName":"test1108"},{"dataSetId":"DATASETb04c055b3ff64fb2849511c2db9a17a2","dataSetName":"数据集ypp"},{"dataSetId":"DATASET53997b548e1a4a009251819ded9ac124","dataSetName":"test23"},{"dataSetId":"DATASET2e7eba32c07a47449478f104fadf71ed","dataSetName":"stat_alarm_1_10"},{"dataSetId":"DATASET2cdb1755ee5c41efb870499d3e61011d","dataSetName":"0929"},{"dataSetId":"DATASETcafe2d309c9643f4a0a5dc963483b9e5","dataSetName":"stat_alarm_1_05"},{"dataSetId":"DATASET0823adc34c164272a884fe57d67d22e7","dataSetName":"stat_alarm_battery_power"},{"dataSetId":"DATASETcb5ba7069db14224810e92675a099c0a","dataSetName":"11111111347"},{"dataSetId":"DATASET926b64610d2f4ade9aebc83051818b7d","dataSetName":"3千万"},{"dataSetId":"DATASET14bf5b7b30604f5d98e5c1e5715b08bb","dataSetName":"1210test"},{"dataSetId":"DATASETdd9d363975324d50b816244ecc1c00b3","dataSetName":"stat_alarm_2_01"},{"dataSetId":"DATASET68f1a108f04f42859b06c9a64163542f","dataSetName":"stat_alarm_0_061"},{"dataSetId":"DATASET0077e2efd2684bad8f8692ccdd3ebc5c","dataSetName":"10_03"},{"dataSetId":"DATASET0a04215dd05d4fcba41944141dcf90be","dataSetName":"stat_alarm_1_09"},{"dataSetId":"DATASET00ec5c34bb3048edb4fb06d575166b62","dataSetName":"测试_性能"},{"dataSetId":"DATASETf2f288d68aba4c37bec9ac62ef73f44a","dataSetName":"1011测试"},{"dataSetId":"DATASETb054c04f07e34842ad240ec553c2f64e","dataSetName":"stat_alarm_1_02"},{"dataSetId":"DATASET5e4d84b814f548aea83d943715b42468","dataSetName":"37911"},{"dataSetId":"DATASET29e66b9191bb4a1da94f7be790a163f5","dataSetName":"tat_alarm_4_09"},{"dataSetId":"DATASET29dab496c4214393969b32f146c731a5","dataSetName":"hg401"},{"dataSetId":"DATASET7a75eba21dc447a38932363209a50f84","dataSetName":"108数据集"},{"dataSetId":"DATASETe32d1c3b3dd84d668f4809c45f7147ab","dataSetName":"tat_alarm_4_11"},{"dataSetId":"DATASET3a2c50ed8fcd465daba35967cb850742","dataSetName":"stat_alarm_1_04"},{"dataSetId":"DATASET986cc59fbec946d2a16c17dc9a09807d","dataSetName":"tat_alarm_4_08"},{"dataSetId":"DATASETc1aa8dea87a74542bac93b86be0b22ad","dataSetName":"stat_alarm_1_11"},{"dataSetId":"DATASET667c5d05fbc84f13ad34c5ccfb30f08b","dataSetName":"大量数据性能"},{"dataSetId":"DATASET022e8b005315466aadc6c19e6d134187","dataSetName":"tat_alarm_4_01"},{"dataSetId":"DATASETb7236c943d9b45ffbfe558361e5e8696","dataSetName":"t-1106-t"},{"dataSetId":"DATASET5aedbca678ac49e891462e5abf11d05d","dataSetName":"tat_alarm_4_06"},{"dataSetId":"DATASETf4e88430837b47d3abad8fe5222ae8bb","dataSetName":"test1206003"},{"dataSetId":"DATASET56e00884da3e447e858f10c82dfea30a","dataSetName":"数据集模型单位"},{"dataSetId":"DATASETfd5bc11ec9e442ae894135376c0a7536","dataSetName":"tat_alarm_4_07"},{"dataSetId":"DATASET3990cde974ed4b8caaadf31b89a374b8","dataSetName":"tat_alarm_4_04"},{"dataSetId":"DATASETbe09dbfc62b84820bd40e4bc7c3ddc2c","dataSetName":"stat_alarm_0_10"},{"dataSetId":"DATASETa8beb0bc8cfb45c5a10a54241dbbd5f7","dataSetName":"yiqi_test_0925"},{"dataSetId":"DATASET03a52a045c674530867164a4ecb06f1d","dataSetName":"stat_alarm_0_02"}],"updateTime":"2019-10-31 16:35:09","createTime":"2019-09-23 17:48:53","action":"write"},{"id":"DATASOURCE48933d543e4943bbbf7fec0f922ebfa9","name":"yiqi_self_test","dataSourceType":"mysql","databaseName":"bit_test_liu","createBy":"liutianao@bitnei.cn","databasePort":"3306","hostname":"10.10.26.29","username":"liutianao","password":"liutianao","dataSets":[{"dataSetId":"DATASET21c22bfd99c04bcdba89075e583d34d4","dataSetName":"yiqi_self_test"}],"updateTime":"2019-09-25 10:12:17","createTime":"2019-09-25 10:12:18","action":"write"},{"id":"DATASOURCE4ecf322f6fbb4d07bcc56e8768dbca7f","name":"test1","dataSourceType":"mysql","databaseName":"bi","createBy":"zhanghailong@bitnei.cn","databasePort":"3306","hostname":"10.10.21.8","username":"remote","password":"ABCabc123...","dataSets":[{"dataSetId":"DATASET0e812c0c5fcf4b8a9a119f099808220d","dataSetName":"1234"},{"dataSetId":"DATASETec13c5c19ac34363b8d911f161417321","dataSetName":"少时诵诗书1"},{"dataSetId":"DATASET2b6e4bda219c49bfa09e0c2101cdb0ed","dataSetName":"dataset_1112"}],"updateTime":"2019-09-23 10:50:05","createTime":"2019-09-23 10:50:06","action":"write"},{"id":"DATASOURCE5094f85a4d6e433387acab4182e1466a","name":"test_postgre","dataSourceType":"postgreSQL","databaseName":"test","createBy":"zhanghailong@bitnei.cn","databasePort":"5432","hostname":"10.10.21.8","username":"postgres","password":"bianqi123456","dataSets":[{"dataSetId":"DATASETe0eaa0dcc91744b7a9ba3b779a26061b","dataSetName":"test_postgresql"}],"updateTime":"2019-12-13 10:38:46","createTime":"2019-12-13 09:36:21","action":"write"},{"id":"DATASOURCE5fb834f13bd748d092d54d160e8b98a1","name":"1万条数据","dataSourceType":"mysql","databaseName":"bit_test_liu","createBy":"liutianao@bitnei.cn","databasePort":"3306","hostname":"10.10.26.29","username":"liutianao","password":"liutianao","dataSets":[{"dataSetId":"DATASET037982d9ef7a43e697a520b898d46330","dataSetName":"yiqibigbigbig_copy36"},{"dataSetId":"DATASETfaf2ca207c174aeb91480a3aac3b09b7","dataSetName":"yiqibigbigbig_copy39"},{"dataSetId":"DATASETefd3d6f6639e466f81aedcad7f2eceb7","dataSetName":"yiqibigbigbig_copy40"},{"dataSetId":"DATASETfdf00aa7698848948c98dec59ad5dfe9","dataSetName":"yiqibigbigbig_copy35"},{"dataSetId":"DATASET7306a6afbee944f3bb64582afd159d49","dataSetName":"yiqibigbigbig_copy03"},{"dataSetId":"DATASET61261637423048b0a3b10fa1b58f0548","dataSetName":"yiqibigbigbig_copy06"},{"dataSetId":"DATASET338eba2e400049feaafd013154e6fce2","dataSetName":"40万1"},{"dataSetId":"DATASET127f354eedf84dd6979efce58bfe32ee","dataSetName":"yiqibigbigbig_copy25"},{"dataSetId":"DATASETac6b06d0d83b453d88954f3c104daf53","dataSetName":"yiqibigbigbig_copy32"},{"dataSetId":"DATASETbe8fcfdb7c6841cb96a8521eb80813ff","dataSetName":"yiqibigbigbig_copy27"},{"dataSetId":"DATASET987bfe08eded42cc98a8a5680bdbd0f4","dataSetName":"yiqibigbigbig_copy18"},{"dataSetId":"DATASETc2524433f2b04920a4d9d3aa244d196c","dataSetName":"yiqibigbigbig_copy37"},{"dataSetId":"DATASET9b074a58d79e4720a86a2c3ef19639f0","dataSetName":"yiqibigbigbig_copy07"},{"dataSetId":"DATASETc6e4cada283f4856bae0f8a13857cd04","dataSetName":"yiqibigbigbig_copy10"},{"dataSetId":"DATASET680e1c719a974228ad2ec1e22d846015","dataSetName":"yiqibigbigbig_copy04"},{"dataSetId":"DATASETa6fbdd081d6c40a894a41398965665b5","dataSetName":"yiqibigbigbig_copy33"},{"dataSetId":"DATASETfbd6e750857c4230a27ac3cf4faa7abe","dataSetName":"yiqibigbigbig_copy26"},{"dataSetId":"DATASET22d3bc91c86f4d30ac021d6c322007a0","dataSetName":"yiqibigbigbig_copy31"},{"dataSetId":"DATASET957703dde5c0439ba7c82fd608f70d93","dataSetName":"yiqibigbigbig_copy23"},{"dataSetId":"DATASETa9ac065871d94322b0d6fa4f40f4f4d3","dataSetName":"yiqibigbigbig_copy08"},{"dataSetId":"DATASETe1d563a3916a4694a515af792957c9f2","dataSetName":"yiqibigbigbig_copy05"},{"dataSetId":"DATASET3c9cdbe056934910aee32c68481fddb6","dataSetName":"yiqibigbigbig_copy21"},{"dataSetId":"DATASET05fb0fd2849f40f8a1edece97acca459","dataSetName":"40w2"},{"dataSetId":"DATASET185d4549698d4cf0aca6ec581fee68f7","dataSetName":"yiqibigbigbig_copy54"},{"dataSetId":"DATASET7e496a58812f4c899c04b074b3be6be2","dataSetName":"yiqibigbigbig_copy53"},{"dataSetId":"DATASETc4bb820ed5cb4f40a6f2c808f598c8a1","dataSetName":"yiqibigbigbig_copy41"},{"dataSetId":"DATASET92ca0e35278742fc9a82926f0c5f0752","dataSetName":"yiqibigbigbig_copy02"},{"dataSetId":"DATASETf64a3209847347538a78bd4978d0b5ea","dataSetName":"100万数据集"},{"dataSetId":"DATASET8885e0f755d545d9ac18ff914c1fd48d","dataSetName":"yiqibigbigbig_copy30"},{"dataSetId":"DATASET67b9353ddac04d708e36655173e932ee","dataSetName":"yiqibigbigbig_copy38"},{"dataSetId":"DATASET351ace10e2f74b16aa2603875a0ec6c2","dataSetName":"yiqibigbigbig_copy45"},{"dataSetId":"DATASET54bc8199be1b4179822bdb84a27b813f","dataSetName":"yiqibigbigbig_copy15"},{"dataSetId":"DATASET95833bfab804455fafd634b5c4d9afa6","dataSetName":"yiqibigbigbig_copy17"},{"dataSetId":"DATASETfd8873c56a8f455795b810819a0d5b2a","dataSetName":"yiqibigbigbig_copy50"},{"dataSetId":"DATASETddc47467fcad45d9bda1394ceaab0557","dataSetName":"yiqibigbigbig_copy14"},{"dataSetId":"DATASETee248d39eb0d46cdaa2684ad0932bdf6","dataSetName":"yiqibigbigbig_copy20"},{"dataSetId":"DATASETf51baf0272304e159db1dd0260ccbd6e","dataSetName":"yiqibigbigbig_copy13"},{"dataSetId":"DATASET8a121a9e5d7742c8bf3f283d60e79f51","dataSetName":"yiqibigbigbig_copy12"},{"dataSetId":"DATASET697290961a364dbb91a6f8f34969d530","dataSetName":"yiqibigbigbig_copy34"},{"dataSetId":"DATASETc899cab7f4124d1ba18f74833a57b6b5","dataSetName":"yiqibigbigbig_copy52"},{"dataSetId":"DATASET274e2674b4ee4a91b970c5c761d21fc6","dataSetName":"yiqibigbigbig_copy29"},{"dataSetId":"DATASETf20354cc08a341e3815809265ac70890","dataSetName":"yiqibigbigbig_copy42"},{"dataSetId":"DATASETb52700f9d75f479dafe480b138650634","dataSetName":"yiqibigbigbig_copy43"},{"dataSetId":"DATASET9fc71a51d6ba4f5cabc245916b5f647e","dataSetName":"yiqibigbigbig_copy24"},{"dataSetId":"DATASETde02e192f48a4bff94c7ea38d814b265","dataSetName":"yiqibigbigbig_copy51"},{"dataSetId":"DATASETd2b443f070474e13ab085e328fbf8312","dataSetName":"yiqibigbigbig_copy28"},{"dataSetId":"DATASETc4695fa2ff164c8a9afdaeb2861aa9e1","dataSetName":"yiqibigbigbig_copy11"},{"dataSetId":"DATASET35bdddc292264152a8849fd1b59351ef","dataSetName":"yiqibigbigbig_copy16"},{"dataSetId":"DATASET0e8edd8a867e4f9d8a2d2e357f4266a2","dataSetName":"yiqibigbigbig_copy44"},{"dataSetId":"DATASET5e0ee03579a644d9810a4973446c2cf8","dataSetName":"yiqibigbigbig_copy19"},{"dataSetId":"DATASETa713eb64b30c47d2bc9db8667d116ee7","dataSetName":"yiqibigbigbig_copy09"},{"dataSetId":"DATASET21520ad4f39d4114ae64475e9aa3a067","dataSetName":"yiqibigbigbig_copy22"},{"dataSetId":"DATASET8e97cad2e45a4f8fb923f6e904755201","dataSetName":"yiqibigbigbig_copy01"},{"dataSetId":"DATASET3e5b1a59d3d843dc9c8093b72d181ef1","dataSetName":"这张表里目前有40万条数据"}],"updateTime":"2019-10-12 11:23:59","createTime":"2019-10-12 11:24:00","action":"write"},{"id":"DATASOURCEcac770f3d20546baa64370069139ab82","name":"heatmap","dataSourceType":"mysql","databaseName":"analysis","createBy":"zhanghailong@bitnei.cn","databasePort":"3306","hostname":"10.10.21.67","username":"analysis","password":"analysis","dataSets":[{"dataSetId":"DATASET620212e4b63441a2b9887bee2b585a9c","dataSetName":"热力图"}],"updateTime":"2019-09-18 13:50:46","createTime":"2019-09-18 13:50:46","action":"write"},{"id":"DATASOURCEe2670211678541f5ace007fe088e9c8b","name":"impala_test","dataSourceType":"impala","databaseName":"nei_dws","createBy":"zhanghailong@bitnei.cn","databasePort":"21050","hostname":"10.10.21.18","username":"remote","password":"ABCabc123...","dataSets":[{"dataSetId":"DATASETd6f9afa52dba41489a86e1b1b0b75b7a","dataSetName":"split_fact_table"}],"updateTime":"2019-09-10 09:14:38","createTime":"2019-09-10 09:14:38","action":"write"},{"id":"DATASOURCEf3dfedf07fd5462e99f455c41bb98607","name":"test","dataSourceType":"mysql","databaseName":"changan","createBy":"zhanghailong@bitnei.cn","databasePort":"3306","hostname":"10.10.21.8","username":"remote","password":"ABCabc123...","dataSets":[{"dataSetId":"DATASETc83dd1c55b034643ada6afe1a365b802","dataSetName":"test1"},{"dataSetId":"DATASET60410d882e1c4a18b12cf8e218427982","dataSetName":"数据集测试"},{"dataSetId":"DATASETcbfc4f2202cc440db79ad1439d9142bc","dataSetName":"123456"}],"updateTime":"2019-09-11 09:27:57","createTime":"2019-09-11 09:27:58","action":"write"},{"id":"DATASOURCEf55124074107475aa365bb378eb697a8","name":"123","dataSourceType":"mysql","databaseName":"bi_test","createBy":"zhanghailong@bitnei.cn","databasePort":"3306","hostname":"10.10.21.8","username":"remote","password":"ABCabc123...","dataSets":[{"dataSetId":"DATASET1f798639cc3842f394df6605e471218f","dataSetName":"test12"},{"dataSetId":"DATASET55cd868c8a3242019586ddccb8bd19d1","dataSetName":"test123"},{"dataSetId":"DATASET808fea24acb845c9a406553f30404216","dataSetName":"123"}],"updateTime":"2019-09-06 14:15:39","createTime":"2019-09-06 14:15:40","action":"write"},{"id":"DATASOURCEf7286c2422e9413890e7cf41fe130def","name":"yiqi报表","dataSourceType":"mysql","databaseName":"yiqi","createBy":"yaomeng@bitnei.cn","databasePort":"3306","hostname":"10.10.21.67","username":"analysis","password":"analysis","dataSets":[{"dataSetId":"DATASETe2062694afdc4e9d88dcc0758e0a0c7c","dataSetName":"stat_alarm_4_04"},{"dataSetId":"DATASET89dfea946f8b495cbd6269bcfacc5596","dataSetName":"stat_alarm_4_11"},{"dataSetId":"DATASET5b98f2c5723845389fa976199bbf5c80","dataSetName":"stat_alarm_4_06"},{"dataSetId":"DATASET3b5ff25b6f24439a84db276bacfdadca","dataSetName":"stat_alarm_4_09"},{"dataSetId":"DATASET1e0f9452db064f15a4bfee525b998c66","dataSetName":"yiqistat_alarm_18_04"},{"dataSetId":"DATASET13be67c2705f4df9b251e9c2588dcf6b","dataSetName":"yiqistat_alarm_18_02"},{"dataSetId":"DATASET1e17a68e0c294ad196ccfecfac6e4613","dataSetName":"yiqistat_alarm_0_02"},{"dataSetId":"DATASET80ac6aaa43fd40f8ade7827dd7e41192","dataSetName":"yiqistat_alarm_0_01"},{"dataSetId":"DATASET2f5ed5c245cf455e941988fdcfb822ba","dataSetName":"yiqistat_alarm_0_09"},{"dataSetId":"DATASET29855c2063684157935dcc4c0e7db236","dataSetName":"yiqistat_alarm_0_05"},{"dataSetId":"DATASET1b0015d59f5d4428bb32debdab8185d0","dataSetName":"yiqistat_alarm_18_03"},{"dataSetId":"DATASET318a9e06ca6e4cb5aab1b51a02c13f81","dataSetName":"yiqistat_alarm_18_11"},{"dataSetId":"DATASETa073e247ac6340ae9c195d1d9875a397","dataSetName":"yiqistat_alarm_0_11"},{"dataSetId":"DATASET9e6b9c45e0ba488d854846461def889b","dataSetName":"stat_alarm_4_03"},{"dataSetId":"DATASET0cc60773b226497389a014add4bfe405","dataSetName":"yiqistat_alarm_0_07"},{"dataSetId":"DATASET3952559d758d4ef29420568b0e46af69","dataSetName":"yiqistat_alarm_18_05"},{"dataSetId":"DATASET909226085d064645870dbbc0f15bb76c","dataSetName":"yiqistat_alarm_0_08"},{"dataSetId":"DATASET8ec6fca34a1a4e58b4cc3a3a0792e767","dataSetName":"yiqistat_alarm_0_06"},{"dataSetId":"DATASET599214dc7a9e4253aeaf3aa93e0813b4","dataSetName":"yiqistat_alarm_18_10"},{"dataSetId":"DATASETaef6cb52f2d940689baf9573427d4abb","dataSetName":"stat_alarm_code_charge"},{"dataSetId":"DATASET7517b7cd256e460b8ee5a686747e26e3","dataSetName":"yiqistat_alarm_18_07"},{"dataSetId":"DATASETdd968e8cc46748ba9a221705e408d1f2","dataSetName":"stat_alarm_4_05"},{"dataSetId":"DATASETd96fa16744fd4c76880282b68f7e41dd","dataSetName":"stat_alarm_4_08"},{"dataSetId":"DATASET5f584a8c06ee4d10a595b1a125121e87","dataSetName":"stat_alarm_4_10"},{"dataSetId":"DATASET69cb1f1acb6d40ffae59ae82e4c8eec4","dataSetName":"yiqistat_alarm_0_03"},{"dataSetId":"DATASETae15cb05d9694bd48b519093fc2b7faf","dataSetName":"yiqistat_alarm_18_08"},{"dataSetId":"DATASETbb04be831df648719506fb510ad833dc","dataSetName":"yiqistat_alarm_0_04"},{"dataSetId":"DATASET55a03710ee6b469f9c0cfc38c0ef5af3","dataSetName":"stat_alarm_4_07"},{"dataSetId":"DATASET8aa19d1cdc1c4b78955e61ddeccd1a48","dataSetName":"yiqistat_alarm_18_06"},{"dataSetId":"DATASETa5cc1a4f749348bd9b4f78b5f0b12d64","dataSetName":"stat_alarm_4_02"}],"updateTime":"2019-10-12 11:57:49","createTime":"2019-10-12 11:57:49","action":"write"}],"pageNum":1,"pageSize":10,"size":10,"startRow":0,"endRow":9,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1},"error":false}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="154" started-at="2019-12-13T08:34:42Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:42Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="176" started-at="2019-12-16T09:09:25Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:25Z">
           <params>
             <param index="0">
               <value>
@@ -387,7 +387,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="178" started-at="2019-12-13T08:34:42Z" description="saas平台" data-provider="dp" finished-at="2019-12-13T08:34:42Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="147" started-at="2019-12-16T09:09:25Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:25Z">
           <params>
             <param index="0">
               <value>
@@ -407,6 +407,110 @@
             <param index="3">
               <value>
                 <![CDATA[{"status":200,"errorMsg":null,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="147" started-at="2019-12-16T09:09:25Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[导出任务列表查询]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/ras/job/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?pageSize=10&pageNum=1&fileName=%E5%82%A8%E8%83%BD%E8%A3%85%E7%BD%AE%E4%BF%A1%E6%81%AF%E9%A1%BA%E5%BA%8F]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":2,"list":[{"jobId":1266,"jobName":"储能装置信息顺序_20191204143228827.csv","jobStatus":3,"functionCode":1,"fileGroup":"group1","filePath":"M00/00/03/CgoVRF3nUv-ANX5kAAAAW2mO0Ls656.csv","fileSize":"91.0B","finishTime":"2019-12-04 14:32:32","createBy":"zhanghailong@bitnei.cn","createTime":"2019-12-04 14:32:29","lastUpdateTime":"2019-12-04 14:32:31","tenant":"bitnei-cn","jobCondition":"{\"availableDimensions\":[],\"availableMeasures\":[],\"calAggregate\":false,\"calRate\":false,\"cardName\":\"储能装置信息顺序\",\"converse\":false,\"converseModel\":{\"columns\":[],\"measures\":[],\"rows\":[]},\"datasetId\":\"DATASET03a52a045c674530867164a4ecb06f1d\",\"dimensions\":[{\"dimensionAlias\":\"battery_type\",\"fieldAlias\":\"battery_type\",\"fieldName\":\"battery_type\",\"fieldNativeType\":\"VARCHAR\",\"fieldType\":\"Str\",\"sorted\":{\"fieldAlias\":\"battery_type_index\",\"fieldName\":\"battery_type_index\",\"fieldNativeType\":\"INT\",\"fieldType\":\"Num\",\"policy\":\"ASC\"}}],\"distinct\":false,\"export\":true,\"filters\":[],\"measures\":[{\"aggs\":\"SUM\",\"fieldAlias\":\"total\",\"fieldName\":\"total\",\"fieldNativeType\":\"BIGINT\",\"fieldType\":\"Num\",\"measureAlias\":\"total\"}],\"props\":{\"saiku.ui.render.mode\":\"bar\",\"saiku.ui.chart.options\":{\"xRotate\":0,\"yRotate\":0,\"unitX\":\"\",\"unitY\":\"hours\",\"titleY\":\"运行时长/天\",\"nameGapX\":0,\"nameGapY\":60,\"labelRotate\":0,\"align\":\"\",\"verticalAlign\":\"\",\"position\":\"\",\"distance\":0,\"maxZoom\":0,\"yAxisInfo\":true}},\"switchAvailable\":false}"},{"jobId":1263,"jobName":"储能装置信息顺序_20191204142413861.csv","jobStatus":4,"functionCode":1,"fileGroup":null,"filePath":null,"fileSize":null,"finishTime":null,"createBy":"zhanghailong@bitnei.cn","createTime":"2019-12-04 14:24:14","lastUpdateTime":"2019-12-04 14:24:16","tenant":"bitnei-cn","jobCondition":"{\"availableDimensions\":[],\"availableMeasures\":[],\"calAggregate\":false,\"calRate\":false,\"cardName\":\"储能装置信息顺序\",\"converse\":false,\"converseModel\":{\"columns\":[],\"measures\":[],\"rows\":[]},\"datasetId\":\"DATASET03a52a045c674530867164a4ecb06f1d\",\"dimensions\":[{\"dimensionAlias\":\"battery_type\",\"fieldAlias\":\"battery_type\",\"fieldName\":\"battery_type\",\"fieldNativeType\":\"VARCHAR\",\"fieldType\":\"Str\",\"sorted\":{\"fieldAlias\":\"battery_type_index\",\"fieldName\":\"battery_type_index\",\"fieldNativeType\":\"INT\",\"fieldType\":\"Num\",\"policy\":\"ASC\"}}],\"distinct\":false,\"export\":true,\"filters\":[],\"measures\":[{\"aggs\":\"SUM\",\"fieldAlias\":\"total\",\"fieldName\":\"total\",\"fieldNativeType\":\"BIGINT\",\"fieldType\":\"Num\",\"measureAlias\":\"total\"}],\"props\":{\"saiku.ui.render.mode\":\"bar\",\"saiku.ui.chart.options\":{\"xRotate\":0,\"yRotate\":0,\"unitX\":\"\",\"unitY\":\"hours\",\"titleY\":\"运行时长/天\",\"nameGapX\":0,\"nameGapY\":60,\"labelRotate\":0,\"align\":\"\",\"verticalAlign\":\"\",\"position\":\"\",\"distance\":0,\"maxZoom\":0,\"yAxisInfo\":true}},\"switchAvailable\":false}"}],"pageNum":1,"pageSize":10,"size":2,"startRow":1,"endRow":2,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1},"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="169" started-at="2019-12-16T09:09:25Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[接口文档列表]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/api-center/api/getCommonApiList]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="166" started-at="2019-12-16T09:09:26Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[用户获取TOKEN接口获取列表]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/api-center/api/1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"apiId":"1","moduleName":"用户鉴权","moduleId":"e600b13d62d542be9edd4e6742615e29","projectName":"saas平台公共组件","projectId":"bf073f1b47594c47af8a34376b454d39","name":"用户获取TOKEN接口","url":"http://test-oauth.bitnei.cn/acquire/token","uri":"/acquire/token","method":"POST","scheme":"HTTP","description":"获取token","consume":"application/json","produce":"application/json","type":"2","logo":"iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ\nbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp\nbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6\neD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1\nMTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo\ndHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw\ndGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv\nIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS\nZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD\ncmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJ\nRD0ieG1wLmlpZDo3RTA4RjZGREVDM0UxMUU2QjlDQUIyNUIzMDIwN0MwRiIgeG1wTU06RG9jdW1l\nbnRJRD0ieG1wLmRpZDo3RTA4RjZGRUVDM0UxMUU2QjlDQUIyNUIzMDIwN0MwRiI+IDx4bXBNTTpE\nZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdFMDhGNkZCRUMzRTExRTZCOUNB\nQjI1QjMwMjA3QzBGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjdFMDhGNkZDRUMzRTExRTZC\nOUNBQjI1QjMwMjA3QzBGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBt\nZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+YQLNsQAAAq1JREFUeNrsmT1oFEEYhnflarXQQghaaCT+\nYNQEBBtFgz+kMNqKnhxBiYWlGFBzwSb+dWoUVFSwEcSAJkbRiIVgRBEsTVALO9NELRSE9Rn4hGW9\n3Bl3j927ez94GEKWudtnXmY+bvwgCDzV3zVHCiRGYiRGYiRGYiRGYiRGYiRGJTESIzESIzESIzES\nIzES06CVq/TApWND0fsVH4JNOza48SOsgxEowCm4ALvhFSyBHzAFrTAKB+Ek3IRt8BaWwgS0wzDk\n4TSch/3wCFbDNHyHlTZXD/TCLdgOb6AZ3kMbPINdcMU+8zDch7WrNi8qlntvv9K9UlTM3neD/u01\nPYEbs7ran4/eqPgMYuIlxhIy0xcolZiLocQshp/wxRLzEA7Z6l2HnSUSM2IpOQvnYB88tpR8hW/u\nvUJzHS+RGDfXehiDPTBon+kS9sC+S3+sxETS4xLjWWKyGhg/icTMevPNbZ3O9KaJFJfwSZgLry21\nw7bnXIUu6Iu9+ZYRlNoe8+vpvBn/13TmgJOzzP5st7HTxm4bh6omxp1MaUj51HavwNpnb48Z65jy\ntjxZEOQXDqS2hyAn9iRJnEolK9/a7ffnOtPoYwpJ9DFQrEpi3DjblUZkZjbpxE+l/y2kuJ6kA+5A\nC4yD20U/WK/kTpL58ALc5nkXNsJlS+AJOGKJ+TOXe2Y5vLS5Jm2uCTuVXIKaQqfSNTuVihVXMUYf\n0/Cdr6fOV52vOt/Mdr7lutc4VdOdLw3aCtavvvaYhDrfRLrXeux8W9L+BS/tzjdT3W6iiXEyYnS7\nvV5Gf/ONnZiomFBi/H+UU5+JiZ4+SPFDL9y4nW+F65OarardEjwfHQ9qW0yXn9ip1EilK1qJkRiJ\nkRiJkRiJkRiJkRiJUUmMxEiMxEiMxEiMxEhM3ddvAQYATJSOLBcyLw8AAAAASUVORK5CYII="},"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="165" started-at="2019-12-16T09:09:26Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[用户获取TOKEN接口获取参数]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/api-center/requestParam/list/1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"00c4da82117647dfbff016f096186e8a","createDate":"2019-09-20 08:18:37","lastUpdateDate":null,"apiId":"1","name":"password","type":"sys_string","position":"query","required":true,"defaultValue":null,"createBy":"zhanghailong@bitnei.cn","tenant":"bitnei-cn","label":null,"description":"密码"},{"id":"960d6353f739496e874870937b731529","createDate":"2019-09-20 08:18:17","lastUpdateDate":null,"apiId":"1","name":"username","type":"sys_string","position":"query","required":true,"defaultValue":null,"createBy":"zhanghailong@bitnei.cn","tenant":"bitnei-cn","label":null,"description":"用户名"}],"error":false}]]>
               </value>
             </param>
           </params>
