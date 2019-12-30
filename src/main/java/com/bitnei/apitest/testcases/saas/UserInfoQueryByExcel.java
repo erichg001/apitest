@@ -40,7 +40,7 @@ public class UserInfoQueryByExcel {
 	public void setUp(String hostsaas,String pathroad) {
 		host = hostsaas;	
 		String ExcelFilePath= pathroad ;
-        String sheetName="saas";
+        String sheetName="saaspost";
         ex = new ExcelReader(ExcelFilePath, sheetName);
 		//设置cookie		
 		try {

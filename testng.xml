@@ -35,7 +35,8 @@
     <class name = "com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel" />
     <class name = "com.bitnei.apitest.testcases.saas.PostBackSaas" />  
     <class name = "com.bitnei.apitest.testcases.saas.ApiTest" />  
-    <class name = "com.bitnei.apitest.testcases.saas.ApiTestPost" />    
+    <class name = "com.bitnei.apitest.testcases.saas.ApiTestPost" /> 
+    <class name = "com.bitnei.apitest.testcases.saas.PostApiTestParas" />    
     </classes> 
   </test> 
 

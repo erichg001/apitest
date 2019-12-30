@@ -1,13 +1,408 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
+<testng-results skipped="0" failed="0" ignored="0" total="57" passed="57">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="12849" started-at="2019-12-16T09:09:13Z" finished-at="2019-12-16T09:09:26Z">
+  <suite name="apitest" duration-ms="86446" started-at="2019-12-30T01:13:51Z" finished-at="2019-12-30T01:15:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12849" started-at="2019-12-16T09:09:13Z" finished-at="2019-12-16T09:09:26Z">
+    <test name="openapi" duration-ms="67635" started-at="2019-12-30T01:13:51Z" finished-at="2019-12-30T01:14:59Z">
+      <class name="com.bitnei.apitest.testcases.openapi.RunningData">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@60438a68]" name="setUp" is-config="true" duration-ms="71" started-at="2019-12-30T01:14:14Z" finished-at="2019-12-30T01:14:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="EnergyConservationInvalidtoken(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@60438a68]" name="EnergyConservationInvalidtoken" duration-ms="33" started-at="2019-12-30T01:14:14Z" description="车辆行驶数数据查询token无效" data-provider="dataprovider13" finished-at="2019-12-30T01:14:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":401,"errorMsg":"invalid_token: f829155c-9374-4673-a005-10ce548af1=>/external/1/zhuhai/api/runningData","data":null,"error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationInvalidtoken -->
+        <test-method status="PASS" signature="EnergyConservationNolicensePlate(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@60438a68]" name="EnergyConservationNolicensePlate" duration-ms="54" started-at="2019-12-30T01:14:14Z" description="车辆行驶数数据查询车牌号为空" data-provider="dataprovider12" finished-at="2019-12-30T01:14:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 licensePlate  不能为空","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNolicensePlate -->
+        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@60438a68]" name="EnergyConservationNormal" duration-ms="4302" started-at="2019-12-30T01:14:14Z" description="车辆行驶数据查询正常" data-provider="dataprovider10" finished-at="2019-12-30T01:14:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNormal -->
+        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@60438a68]" name="EnergyConservationUpScope" duration-ms="77" started-at="2019-12-30T01:14:18Z" description="车辆行驶数选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-12-30T01:14:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationUpScope -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.RunningData -->
+      <class name="com.bitnei.apitest.testcases.openapi.ChargingData">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="setUp" is-config="true" duration-ms="1359" started-at="2019-12-30T01:13:51Z" finished-at="2019-12-30T01:13:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ChargingDataNo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataNo" duration-ms="238" started-at="2019-12-30T01:13:53Z" description="查询珠海车辆充电数据缺少车牌号参数" data-provider="dataprovider14" finished-at="2019-12-30T01:13:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNo -->
+        <test-method status="PASS" signature="ChargingDataNoFrom(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataNoFrom" duration-ms="83" started-at="2019-12-30T01:13:53Z" description="查询珠海车辆充电数据缺少from参数" data-provider="dataprovider2" finished-at="2019-12-30T01:13:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNoFrom -->
+        <test-method status="PASS" signature="ChargingDataNoTo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataNoTo" duration-ms="63" started-at="2019-12-30T01:13:53Z" description="查询珠海车辆充电数据缺少to参数" data-provider="dataprovider3" finished-at="2019-12-30T01:13:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNoTo -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataNormal" duration-ms="19355" started-at="2019-12-30T01:13:53Z" description="查询珠海车辆充电数据正常" data-provider="dataprovider1" finished-at="2019-12-30T01:14:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataUpOneDay(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataUpOneDay" duration-ms="458" started-at="2019-12-30T01:14:13Z" description="查询珠海车辆充电数据选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2019-12-30T01:14:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataUpOneDay -->
+        <test-method status="PASS" signature="ChargingDataWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@50de0926]" name="ChargingDataWrongTime" duration-ms="183" started-at="2019-12-30T01:14:13Z" description="查询珠海车辆充电数据选择时间范围开始时间不能大于结束时间" data-provider="dataprovider5" finished-at="2019-12-30T01:14:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataWrongTime -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingData -->
+      <class name="com.bitnei.apitest.testcases.openapi.ChargingDataTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="setUp" is-config="true" duration-ms="999" started-at="2019-12-30T01:14:18Z" finished-at="2019-12-30T01:14:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="19489" started-at="2019-12-30T01:14:19Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-12-30T01:14:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[查询结果正常]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34","startCurrent":"-230.3","endCurrent":"-0.8","startVolt":"594.7","endVolt":"586.4"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="362" started-at="2019-12-30T01:14:39Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-12-30T01:14:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[参数from不符合规则]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="240" started-at="2019-12-30T01:14:39Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-12-30T01:14:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[参数to不符合规则]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="341" started-at="2019-12-30T01:14:39Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-12-30T01:14:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[选择时间范围不得超过一个自然日]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="78" started-at="2019-12-30T01:14:40Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-12-30T01:14:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[选择时间范围开始时间不能大于结束时间]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="51" started-at="2019-12-30T01:14:40Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-12-30T01:14:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[数据缺少车牌号参数]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@140e5a13]" name="ChargingDataNormal" duration-ms="19257" started-at="2019-12-30T01:14:40Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2019-12-30T01:14:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[参数车牌号无效]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"车牌粤C00859号无效或没有车辆充电数据","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingDataTest -->
+      <class name="com.bitnei.apitest.testcases.openapi.EnergyConservation">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@2473b9ce]" name="setUp" is-config="true" duration-ms="80" started-at="2019-12-30T01:14:13Z" finished-at="2019-12-30T01:14:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@2473b9ce]" name="EnergyConservationNormal" duration-ms="212" started-at="2019-12-30T01:14:13Z" description="碳排放接口查询正常" data-provider="dataprovider6" finished-at="2019-12-30T01:14:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":0.5072,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNormal -->
+        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@2473b9ce]" name="EnergyConservationUpScope" duration-ms="50" started-at="2019-12-30T01:14:14Z" description="碳排放接口时间超3个月" data-provider="dataprovider7" finished-at="2019-12-30T01:14:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过3个月","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationUpScope -->
+        <test-method status="PASS" signature="EnergyConservationWrongDateFormat(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@2473b9ce]" name="EnergyConservationWrongDateFormat" duration-ms="53" started-at="2019-12-30T01:14:14Z" description="碳排放接口开始时间不符合规则" data-provider="dataprovider9" finished-at="2019-12-30T01:14:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019.05.10 不符合规则：yyyy-MM-dd","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationWrongDateFormat -->
+        <test-method status="PASS" signature="EnergyConservationWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@2473b9ce]" name="EnergyConservationWrongTime" duration-ms="47" started-at="2019-12-30T01:14:14Z" description="碳排放接口开始间大于结束时间" data-provider="dataprovider8" finished-at="2019-12-30T01:14:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019-05-10 不能大于 to 2019-04-13","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationWrongTime -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.EnergyConservation -->
+    </test> <!-- openapi -->
+    <test name="SAAS" duration-ms="18733" started-at="2019-12-30T01:14:59Z" finished-at="2019-12-30T01:15:18Z">
       <class name="com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="setUp" is-config="true" duration-ms="1615" started-at="2019-12-16T09:09:13Z" finished-at="2019-12-16T09:09:15Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="setUp" is-config="true" duration-ms="446" started-at="2019-12-30T01:15:03Z" finished-at="2019-12-30T01:15:03Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +418,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="1702" started-at="2019-12-16T09:09:15Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:16Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="361" started-at="2019-12-30T01:15:04Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:04Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +444,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="210" started-at="2019-12-16T09:09:16Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:17Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="374" started-at="2019-12-30T01:15:04Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:04Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +470,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="451" started-at="2019-12-16T09:09:17Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:17Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="558" started-at="2019-12-30T01:15:04Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:05Z">
           <params>
             <param index="0">
               <value>
@@ -94,14 +489,14 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":{"pageNumber":1,"pageSize":12,"totalCount":7,"start":0,"list":[{"id":"1","name":"用户获取TOKEN接口","description":"获取token","strategy":"{\"typeName\":\"ApiThrottleStrategy\",\"apiId\":\"1\",\"tenantId\":\"9c178ab462874ed28e92d245310e719f\",\"frequency\":0,\"maturityDate\":\"2019-12-21\",\"restrictIps\":[],\"expire\":false}","apiThrottleStrategy":{"typeName":"ApiThrottleStrategy","apiId":"1","tenantId":"9c178ab462874ed28e92d245310e719f","frequency":0,"maturityDate":"2019-12-21","restrictIps":[],"expire":false},"type":"2","logo":"iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ\nbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp\nbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6\neD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1\nMTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo\ndHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw\ndGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv\nIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS\nZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD\ncmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJ\nRD0ieG1wLmlpZDo3RTA4RjZGREVDM0UxMUU2QjlDQUIyNUIzMDIwN0MwRiIgeG1wTU06RG9jdW1l\nbnRJRD0ieG1wLmRpZDo3RTA4RjZGRUVDM0UxMUU2QjlDQUIyNUIzMDIwN0MwRiI+IDx4bXBNTTpE\nZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdFMDhGNkZCRUMzRTExRTZCOUNB\nQjI1QjMwMjA3QzBGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjdFMDhGNkZDRUMzRTExRTZC\nOUNBQjI1QjMwMjA3QzBGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBt\nZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+YQLNsQAAAq1JREFUeNrsmT1oFEEYhnflarXQQghaaCT+\nYNQEBBtFgz+kMNqKnhxBiYWlGFBzwSb+dWoUVFSwEcSAJkbRiIVgRBEsTVALO9NELRSE9Rn4hGW9\n3Bl3j927ez94GEKWudtnXmY+bvwgCDzV3zVHCiRGYiRGYiRGYiRGYiRGYiRGJTESIzESIzESIzES\nIzES06CVq/TApWND0fsVH4JNOza48SOsgxEowCm4ALvhFSyBHzAFrTAKB+Ek3IRt8BaWwgS0wzDk\n4TSch/3wCFbDNHyHlTZXD/TCLdgOb6AZ3kMbPINdcMU+8zDch7WrNi8qlntvv9K9UlTM3neD/u01\nPYEbs7ran4/eqPgMYuIlxhIy0xcolZiLocQshp/wxRLzEA7Z6l2HnSUSM2IpOQvnYB88tpR8hW/u\nvUJzHS+RGDfXehiDPTBon+kS9sC+S3+sxETS4xLjWWKyGhg/icTMevPNbZ3O9KaJFJfwSZgLry21\nw7bnXIUu6Iu9+ZYRlNoe8+vpvBn/13TmgJOzzP5st7HTxm4bh6omxp1MaUj51HavwNpnb48Z65jy\ntjxZEOQXDqS2hyAn9iRJnEolK9/a7ffnOtPoYwpJ9DFQrEpi3DjblUZkZjbpxE+l/y2kuJ6kA+5A\nC4yD20U/WK/kTpL58ALc5nkXNsJlS+AJOGKJ+TOXe2Y5vLS5Jm2uCTuVXIKaQqfSNTuVihVXMUYf\n0/Cdr6fOV52vOt/Mdr7lutc4VdOdLw3aCtavvvaYhDrfRLrXeux8W9L+BS/tzjdT3W6iiXEyYnS7\nvV5Gf/ONnZiomFBi/H+UU5+JiZ4+SPFDL9y4nW+F65OarardEjwfHQ9qW0yXn9ip1EilK1qJkRiJ\nkRiJkRiJkRiJkRiJUUmMxEiMxEiMxEiMxEhM3ddvAQYATJSOLBcyLw8AAAAASUVORK5CYII="}]},"error":false}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"pageNumber":1,"pageSize":12,"start":0,"list":[{"id":"1","name":"用户获取TOKEN接口","description":"用户获取token","strategy":null,"apiThrottleStrategy":null,"type":"2"}]},"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="3049" started-at="2019-12-16T09:09:17Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:20Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="3501" started-at="2019-12-30T01:15:05Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:08Z">
           <params>
             <param index="0">
               <value>
@@ -127,7 +522,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="2108" started-at="2019-12-16T09:09:20Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:22Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="2099" started-at="2019-12-30T01:15:08Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:10Z">
           <params>
             <param index="0">
               <value>
@@ -153,7 +548,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="326" started-at="2019-12-16T09:09:22Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:23Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="282" started-at="2019-12-30T01:15:10Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:11Z">
           <params>
             <param index="0">
               <value>
@@ -179,7 +574,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="248" started-at="2019-12-16T09:09:23Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:23Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="101" started-at="2019-12-30T01:15:11Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:11Z">
           <params>
             <param index="0">
               <value>
@@ -205,7 +600,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="111" started-at="2019-12-16T09:09:23Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:23Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="189" started-at="2019-12-30T01:15:11Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:11Z">
           <params>
             <param index="0">
               <value>
@@ -231,7 +626,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="561" started-at="2019-12-16T09:09:23Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:23Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="862" started-at="2019-12-30T01:15:11Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:12Z">
           <params>
             <param index="0">
               <value>
@@ -257,7 +652,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="290" started-at="2019-12-16T09:09:23Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:24Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="448" started-at="2019-12-30T01:15:12Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:12Z">
           <params>
             <param index="0">
               <value>
@@ -283,7 +678,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="250" started-at="2019-12-16T09:09:24Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:24Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="214" started-at="2019-12-30T01:15:12Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:13Z">
           <params>
             <param index="0">
               <value>
@@ -302,14 +697,14 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":1,"list":[{"dashboardID":"DASHBOARDbb3bb62d36af45119e881d1622829e4d","dashboardName":"1128仪表盘筛选","updateTime":"2019-12-13 10:18:38","createTime":"2019-11-22 11:02:55","createBy":"zhanghailong@bitnei.cn","action":"WRITE","type":"FH","pages":1}],"pageNum":1,"pageSize":10,"size":1,"startRow":0,"endRow":0,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1},"error":false}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":1,"list":[{"dashboardID":"DASHBOARDbb3bb62d36af45119e881d1622829e4d","dashboardName":"1128仪表盘筛选","updateTime":"2019-12-19 09:02:21","createTime":"2019-11-22 11:02:55","createBy":"zhanghailong@bitnei.cn","action":"WRITE","type":"FH"}],"pageNum":1,"pageSize":10,"size":1,"startRow":0,"endRow":0,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1},"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="635" started-at="2019-12-16T09:09:24Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:25Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="263" started-at="2019-12-30T01:15:13Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:13Z">
           <params>
             <param index="0">
               <value>
@@ -323,19 +718,19 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[?dataSetId=&pageNum=1&pageSize=10&querytype=&cardName=test1210%E7%94%B5%E6%B1%A0%E7%B1%BB%E5%9E%8B]]>
+                <![CDATA[?dataSetId=&pageNum=1&pageSize=10&querytype=&cardName=stat_alarm_0_10_3]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":1,"list":[{"cardId":"CARDead55b5a8c3a4348939e11203aba8f00","dataSetId":"DATASET03a52a045c674530867164a4ecb06f1d","cardName":"test1210电池类型","displayName":null,"avatarUrl":null,"action":"write","description":"","renderMode":"bar","dataBrief":[],"queryType":"FH","updateTime":"2019-12-10 13:28:18","createTime":"2019-12-10 11:56:45","createBy":"zhanghailong@bitnei.cn","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","props":{"unit":"all"},"sorted":{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","props":null,"sorted":null,"policy":"ASC"},"measureAlias":"total","aggs":"SUM"}],"dimensions":[{"fieldName":"battery_type","fieldAlias":"电池类型","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"电池"},"sorted":{"fieldName":"battery_type_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"dimensionAlias":"电池类型"}],"filters":[{"fieldName":"active_time_month","fieldAlias":"active_time_month","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"月"},"sorted":{"fieldName":"active_time_month_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"active_time_month","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"battery_type","fieldAlias":"电池类型","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"电池"},"sorted":{"fieldName":"battery_type_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"电池类型","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"category","fieldAlias":"category","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"ca"},"sorted":null,"filterAlias":"category","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"cell_enterprise","fieldAlias":"cell_enterprise","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"CELL"},"sorted":null,"filterAlias":"cell_enterprise","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"charge_type","fieldAlias":"charge_type","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"电池类型"},"sorted":null,"filterAlias":"charge_type","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"city","fieldAlias":"city","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"城市"},"sorted":null,"filterAlias":"city","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"curb_weight","fieldAlias":"curb_weight","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"kg"},"sorted":{"fieldName":"curb_weight_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"curb_weight","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"day_type","fieldAlias":"day_type","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"日期类型"},"sorted":null,"filterAlias":"day_type","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"dict_name","fieldAlias":"dict_name","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"dict"},"sorted":null,"filterAlias":"dict_name","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"drive_range","fieldAlias":"drive_range","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"dr"},"sorted":{"fieldName":"drive_range_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"drive_range","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"is_biz","fieldAlias":"is_biz","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"filterAlias":"is_biz","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"mileage","fieldAlias":"mileage","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"km"},"sorted":{"fieldName":"mileage_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"mileage","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"model_name","fieldAlias":"model_name","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"m"},"sorted":null,"filterAlias":"model_name","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"month","fieldAlias":"month","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"月份"},"sorted":null,"filterAlias":"month","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"package_enterprise","fieldAlias":"package_enterprise","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"filterAlias":"package_enterprise","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"power","fieldAlias":"power","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"KW"},"sorted":{"fieldName":"power_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"power","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"power_100km","fieldAlias":"power_100km","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"KwH"},"sorted":{"fieldName":"power_100km_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"power_100km","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"power_amount","fieldAlias":"power_amount","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"KwH"},"sorted":{"fieldName":"power_amount_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"power_amount","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"province","fieldAlias":"province","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"省份"},"sorted":null,"filterAlias":"province","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"rating_volt","fieldAlias":"rating_volt","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"V"},"sorted":{"fieldName":"rating_volt_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"rating_volt","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"rating_volumn","fieldAlias":"rating_volumn","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"Ah"},"sorted":{"fieldName":"rating_volumn_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"rating_volumn","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"run_time_hour","fieldAlias":"run_time_hour","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"小时"},"sorted":{"fieldName":"run_time_hour_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"run_time_hour","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"season","fieldAlias":"season","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"季节"},"sorted":{"fieldName":"category","fieldAlias":"category","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"policy":"DESC"},"filterAlias":"season","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"speed","fieldAlias":"speed","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"Km/h"},"sorted":{"fieldName":"speed_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"speed","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"speed_30_minute","fieldAlias":"speed_30_minute","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"km/h"},"sorted":{"fieldName":"speed_30_minute_index","fieldAlias":"Num","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"speed_30_minute","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"veh_level","fieldAlias":"veh_level","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"ve"},"sorted":null,"filterAlias":"veh_level","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"veh_type","fieldAlias":"veh_type","fieldType":"Str","fieldNativeType":"VARCHAR","props":{"unit":"v类型"},"sorted":null,"filterAlias":"veh_type","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"speed_index","fieldAlias":"speed_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"speed_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"speed_30_minute_index","fieldAlias":"speed_30_minute_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"speed_30_minute_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"run_time_hour_index","fieldAlias":"run_time_hour_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"run_time_hour_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"rating_volumn_index","fieldAlias":"rating_volumn_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"rating_volumn_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"rating_volt_index","fieldAlias":"rating_volt_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"rating_volt_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"power_index","fieldAlias":"power_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"power_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"power_amount_index","fieldAlias":"power_amount_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"power_amount_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"power_100km_index","fieldAlias":"power_100km_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"power_100km_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"mileage_index","fieldAlias":"mileage_index","fieldType":"Num","fieldNativeType":"INT","props":{"unit":"m_d"},"sorted":null,"filterAlias":"mileage_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"drive_range_index","fieldAlias":"drive_range_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"drive_range_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"curb_weight_index","fieldAlias":"curb_weight_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"curb_weight_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"battery_type_index","fieldAlias":"battery_type_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"battery_type_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"active_time_month_index","fieldAlias":"active_time_month_index","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"active_time_month_index","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","props":{"unit":"all"},"sorted":{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"BIGINT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"total","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"env_temp","fieldAlias":"env_temp","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":{"fieldName":"env_temp","fieldAlias":"env_temp","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"policy":"ASC"},"filterAlias":"env_temp","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"alarm_level","fieldAlias":"报警等级","fieldType":"Num","fieldNativeType":"INT","props":{"unit":"级别"},"sorted":null,"filterAlias":"报警等级","defValue":null,"operator":null,"policy":null,"cascadeFilter":null}],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":0,"yRotate":0,"unitX":"","unitY":"","titleY":"","labelRotate":0,"align":"","verticalAlign":"","position":"","distance":0,"maxZoom":0},"default":{"unitX":"电池","unitY":"all"}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"converse":false,"converseModel":{"measures":[],"rows":[],"columns":[]},"cardName":null,"limit":1000,"export":false,"calRate":false,"datasetId":"DATASET03a52a045c674530867164a4ecb06f1d","datasourceId":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","catalog":"yiqi","schema":"stat_alarm_0_02","distinct":false,"calAggregate":false}}],"pageNum":1,"pageSize":1,"size":1,"startRow":0,"endRow":0,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1},"error":false}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"total":1,"list":[{"cardId":"CARD78cf7593b6384dfa861730513f1570c7","dataSetId":"DATASETbe09dbfc62b84820bd40e4bc7c3ddc2c","cardName":"stat_alarm_0_10_3","displayName":null,"avatarUrl":null,"action":"write","description":"","renderMode":"bar","dataBrief":[],"queryType":"FH","updateTime":"2019-09-29 16:03:38","createTime":"2019-09-29 16:03:39","createBy":"hangang@bitnei.cn","content":{"measures":[{"fieldName":"total","fieldAlias":"total","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"measureAlias":"total","aggs":"SUM"}],"dimensions":[{"fieldName":"cell_enterprise","fieldAlias":"cell_enterprise","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"dimensionAlias":"cell_enterprise"}],"filters":[{"fieldName":"model_name","fieldAlias":"model_name","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"filterAlias":"model_name","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"battery_type","fieldAlias":"battery_type","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"filterAlias":"battery_type","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"alarm_date","fieldAlias":"alarm_date","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"filterAlias":"alarm_date","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"category","fieldAlias":"category","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"filterAlias":"category","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"province","fieldAlias":"province","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"filterAlias":"province","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"city","fieldAlias":"city","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"filterAlias":"city","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"cell_enterprise","fieldAlias":"cell_enterprise","fieldType":"Str","fieldNativeType":"VARCHAR","props":null,"sorted":null,"filterAlias":"cell_enterprise","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"alarm_level","fieldAlias":"alarm_level","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"alarm_level","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"env_temp_section","fieldAlias":"env_temp_section","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"env_temp_section","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"mileage_section","fieldAlias":"mileage_section","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"mileage_section","defValue":null,"operator":null,"policy":null,"cascadeFilter":null},{"fieldName":"diff_temp_section","fieldAlias":"diff_temp_section","fieldType":"Num","fieldNativeType":"INT","props":null,"sorted":null,"filterAlias":"diff_temp_section","defValue":null,"operator":null,"policy":null,"cascadeFilter":null}],"props":{"saiku.ui.render.mode":"bar","saiku.ui.chart.options":{"xRotate":"","yRotate":""}},"switchAvailable":false,"availableMeasures":[],"availableDimensions":[],"converse":false,"converseModel":null,"cardName":null,"limit":1000,"export":false,"calRate":false,"datasetId":"DATASETbe09dbfc62b84820bd40e4bc7c3ddc2c","datasourceId":"DATASOURCE205cd94207fd4afab42393a08bb3a05b","catalog":"yiqi","schema":"stat_alarm_0_10","distinct":false,"calAggregate":false}}],"pageNum":1,"pageSize":1,"size":1,"startRow":0,"endRow":0,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1},"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="240" started-at="2019-12-16T09:09:25Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:25Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="326" started-at="2019-12-30T01:15:13Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:13Z">
           <params>
             <param index="0">
               <value>
@@ -361,7 +756,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="176" started-at="2019-12-16T09:09:25Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:25Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="225" started-at="2019-12-30T01:15:13Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:13Z">
           <params>
             <param index="0">
               <value>
@@ -387,7 +782,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="147" started-at="2019-12-16T09:09:25Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:25Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="205" started-at="2019-12-30T01:15:13Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:14Z">
           <params>
             <param index="0">
               <value>
@@ -413,7 +808,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="147" started-at="2019-12-16T09:09:25Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:25Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="218" started-at="2019-12-30T01:15:14Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:14Z">
           <params>
             <param index="0">
               <value>
@@ -439,7 +834,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="169" started-at="2019-12-16T09:09:25Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:26Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="451" started-at="2019-12-30T01:15:14Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:14Z">
           <params>
             <param index="0">
               <value>
@@ -465,7 +860,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="166" started-at="2019-12-16T09:09:26Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:26Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="253" started-at="2019-12-30T01:15:14Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:14Z">
           <params>
             <param index="0">
               <value>
@@ -484,14 +879,14 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":{"apiId":"1","moduleName":"用户鉴权","moduleId":"e600b13d62d542be9edd4e6742615e29","projectName":"saas平台公共组件","projectId":"bf073f1b47594c47af8a34376b454d39","name":"用户获取TOKEN接口","url":"http://test-oauth.bitnei.cn/acquire/token","uri":"/acquire/token","method":"POST","scheme":"HTTP","description":"获取token","consume":"application/json","produce":"application/json","type":"2","logo":"iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ\nbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp\nbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6\neD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1\nMTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo\ndHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw\ndGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv\nIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS\nZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD\ncmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJ\nRD0ieG1wLmlpZDo3RTA4RjZGREVDM0UxMUU2QjlDQUIyNUIzMDIwN0MwRiIgeG1wTU06RG9jdW1l\nbnRJRD0ieG1wLmRpZDo3RTA4RjZGRUVDM0UxMUU2QjlDQUIyNUIzMDIwN0MwRiI+IDx4bXBNTTpE\nZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdFMDhGNkZCRUMzRTExRTZCOUNB\nQjI1QjMwMjA3QzBGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjdFMDhGNkZDRUMzRTExRTZC\nOUNBQjI1QjMwMjA3QzBGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBt\nZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+YQLNsQAAAq1JREFUeNrsmT1oFEEYhnflarXQQghaaCT+\nYNQEBBtFgz+kMNqKnhxBiYWlGFBzwSb+dWoUVFSwEcSAJkbRiIVgRBEsTVALO9NELRSE9Rn4hGW9\n3Bl3j927ez94GEKWudtnXmY+bvwgCDzV3zVHCiRGYiRGYiRGYiRGYiRGYiRGJTESIzESIzESIzES\nIzES06CVq/TApWND0fsVH4JNOza48SOsgxEowCm4ALvhFSyBHzAFrTAKB+Ek3IRt8BaWwgS0wzDk\n4TSch/3wCFbDNHyHlTZXD/TCLdgOb6AZ3kMbPINdcMU+8zDch7WrNi8qlntvv9K9UlTM3neD/u01\nPYEbs7ran4/eqPgMYuIlxhIy0xcolZiLocQshp/wxRLzEA7Z6l2HnSUSM2IpOQvnYB88tpR8hW/u\nvUJzHS+RGDfXehiDPTBon+kS9sC+S3+sxETS4xLjWWKyGhg/icTMevPNbZ3O9KaJFJfwSZgLry21\nw7bnXIUu6Iu9+ZYRlNoe8+vpvBn/13TmgJOzzP5st7HTxm4bh6omxp1MaUj51HavwNpnb48Z65jy\ntjxZEOQXDqS2hyAn9iRJnEolK9/a7ffnOtPoYwpJ9DFQrEpi3DjblUZkZjbpxE+l/y2kuJ6kA+5A\nC4yD20U/WK/kTpL58ALc5nkXNsJlS+AJOGKJ+TOXe2Y5vLS5Jm2uCTuVXIKaQqfSNTuVihVXMUYf\n0/Cdr6fOV52vOt/Mdr7lutc4VdOdLw3aCtavvvaYhDrfRLrXeux8W9L+BS/tzjdT3W6iiXEyYnS7\nvV5Gf/ONnZiomFBi/H+UU5+JiZ4+SPFDL9y4nW+F65OarardEjwfHQ9qW0yXn9ip1EilK1qJkRiJ\nkRiJkRiJkRiJkRiJUUmMxEiMxEiMxEiMxEhM3ddvAQYATJSOLBcyLw8AAAAASUVORK5CYII="},"error":false}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"apiId":"1","moduleName":"用户鉴权","moduleId":"e600b13d62d542be9edd4e6742615e29","projectName":"saas平台公共组件","projectId":"bf073f1b47594c47af8a34376b454d39","name":"用户获取TOKEN接口","url":"http://test-oauth.bitnei.cn/acquire/token","uri":"/acquire/token","method":"POST","scheme":"HTTP","description":"用户获取token","consume":"application/json","produce":"application/json","type":"2"},"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
-        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@50de0926]" name="UserInfoRgisterData" duration-ms="165" started-at="2019-12-16T09:09:26Z" description="saas平台" data-provider="dp" finished-at="2019-12-16T09:09:26Z">
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@4148db48]" name="UserInfoRgisterData" duration-ms="171" started-at="2019-12-30T01:15:14Z" description="saas平台" data-provider="dp" finished-at="2019-12-30T01:15:15Z">
           <params>
             <param index="0">
               <value>
@@ -510,7 +905,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"00c4da82117647dfbff016f096186e8a","createDate":"2019-09-20 08:18:37","lastUpdateDate":null,"apiId":"1","name":"password","type":"sys_string","position":"query","required":true,"defaultValue":null,"createBy":"zhanghailong@bitnei.cn","tenant":"bitnei-cn","label":null,"description":"密码"},{"id":"960d6353f739496e874870937b731529","createDate":"2019-09-20 08:18:17","lastUpdateDate":null,"apiId":"1","name":"username","type":"sys_string","position":"query","required":true,"defaultValue":null,"createBy":"zhanghailong@bitnei.cn","tenant":"bitnei-cn","label":null,"description":"用户名"}],"error":false}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"960d6353f739496e874870937b731529","createDate":"2019-09-20 08:18:17","lastUpdateDate":null,"apiId":"1","name":"username","type":"sys_string","position":"query","required":true,"defaultValue":null,"createBy":"zhanghailong@bitnei.cn","tenant":"bitnei-cn","label":null,"description":"用户名"},{"id":"00c4da82117647dfbff016f096186e8a","createDate":"2019-09-20 08:18:37","lastUpdateDate":null,"apiId":"1","name":"password","type":"sys_string","position":"query","required":true,"defaultValue":null,"createBy":"zhanghailong@bitnei.cn","tenant":"bitnei-cn","label":null,"description":"密码"}],"error":false}]]>
               </value>
             </param>
           </params>
@@ -518,6 +913,536 @@
           </reporter-output>
         </test-method> <!-- UserInfoRgisterData -->
       </class> <!-- com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel -->
-    </test> <!-- Default test -->
+      <class name="com.bitnei.apitest.testcases.saas.PostBackSaas">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@282003e1]" name="setUp" is-config="true" duration-ms="402" started-at="2019-12-30T01:15:15Z" finished-at="2019-12-30T01:15:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-back-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@282003e1]" name="UserInfoQueryData" duration-ms="257" started-at="2019-12-30T01:15:15Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按企业名称查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"email":"","endTime":"","mobile":"","origin":"","startTime":"","status":"","tenant":"新源科技"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@282003e1]" name="UserInfoQueryData" duration-ms="164" started-at="2019-12-30T01:15:15Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按手机号码查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"","endTime":"","email":"","mobile":"18110024813","origin":"","status":"","tenant":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@282003e1]" name="UserInfoQueryData" duration-ms="138" started-at="2019-12-30T01:15:15Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按创建时间查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":null,"superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@282003e1]" name="UserInfoQueryData" duration-ms="172" started-at="2019-12-30T01:15:16Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按用户类型和邮箱查询租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":null,"superId":"782783112a42461298fbea5e0b5942c3"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@282003e1]" name="UserInfoQueryData" duration-ms="173" started-at="2019-12-30T01:15:16Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[重复添加租户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/tenant]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"str:用户hangang@bitnei.cn已经存在","data":null,"error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@282003e1]" name="UserInfoQueryData" duration-ms="199" started-at="2019-12-30T01:15:16Z" description="saas后台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[用户列表查询]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/yuanian-com/list]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"9a5703ed2e9e46a7b31c82b0105b7c41","username":"zhanghr@yuanian.com","nickName":"xdf","email":"zhanghr@yuanian.com","mobile":"13234454556","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghr@yuanian.com","createTime":"2019-08-05 16:10:42","lastUpdateTime":"2019-08-05 16:10:42","tenant":"yuanian-com","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.PostBackSaas -->
+      <class name="com.bitnei.apitest.testcases.saas.ApiTestPost">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTestPost@71a794e5]" name="setUp" is-config="true" duration-ms="395" started-at="2019-12-30T01:15:17Z" finished-at="2019-12-30T01:15:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTestPost -->
+      <class name="com.bitnei.apitest.testcases.saas.ApiTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@7fad8c79]" name="setUp" is-config="true" duration-ms="391" started-at="2019-12-30T01:15:16Z" finished-at="2019-12-30T01:15:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@7fad8c79]" name="ApiTestCode" duration-ms="315" started-at="2019-12-30T01:15:17Z" description="api返回码验证为10000" data-provider="dp" finished-at="2019-12-30T01:15:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[好车伯乐接口返回这空]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/autobole/vehicle/static?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@7fad8c79]" name="ApiTestCode" duration-ms="70" started-at="2019-12-30T01:15:17Z" description="api返回码验证为10000" data-provider="dp" finished-at="2019-12-30T01:15:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[好车伯乐正常调用]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/autobole/vehicle/static?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=LGXCD4D48J0211179]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"brand":"比亚迪","bsie":18.0,"bulletinNO":"BYD6460STHEV10","joinTime":"2019-07-27 06:31:16","platform":"私人","series":"未知","seurityMonitor":true,"type":"BYD6460STHEV10","use":"02","vin":"14b8e610b61d2e7e6102144c1fa9df24"},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
+      <class name="com.bitnei.apitest.testcases.saas.PostApiTestParas">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@76329302]" name="setUp" is-config="true" duration-ms="371" started-at="2019-12-30T01:15:17Z" finished-at="2019-12-30T01:15:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@76329302]" name="ApiTest" duration-ms="194" started-at="2019-12-30T01:15:18Z" description="api接口" data-provider="dp" finished-at="2019-12-30T01:15:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API接口EC动力接收充电数据]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-charge/charge/herui/vehicle/receive]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"carNO":"京ADK2768","startSoc":"41","endSoc":"100","lat":"40.1297269989","lng":"116.5992975284","station":"EC动力顺丰充电站","startTime":"2019-10-12 21:38:25","endTime":"2019-10-13 01:24:25","id":"38145","electricAmount":"29.97","current":"1.9","voltage":"402","type":"1"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTest -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.PostApiTestParas -->
+      <class name="com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@701fc37a]" name="setUp" is-config="true" duration-ms="437" started-at="2019-12-30T01:15:01Z" finished-at="2019-12-30T01:15:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@701fc37a]" name="UserInfoQueryData" duration-ms="159" started-at="2019-12-30T01:15:01Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按用户名称查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"hangang","origin":"","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","password":"N/A","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@701fc37a]" name="UserInfoQueryData" duration-ms="242" started-at="2019-12-30T01:15:01Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按手机号码查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"18110024813","nickName":"","origin":"","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"系统管理员","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@701fc37a]" name="UserInfoQueryData" duration-ms="169" started-at="2019-12-30T01:15:02Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按创建时间查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"2019-07-11 04:46:00","to":"2019-07-19 04:46:00"},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"系统管理员","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@701fc37a]" name="UserInfoQueryData" duration-ms="284" started-at="2019-12-30T01:15:02Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按用户类型查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"系统管理员","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","lastUpdateTime":"2019-12-23 10:27:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@701fc37a]" name="UserInfoQueryData" duration-ms="199" started-at="2019-12-30T01:15:02Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按邮箱查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"SaaS@bitnei.cn","mobile":"","nickName":"","origin":"","status":"","userRole":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"系统管理员","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@701fc37a]" name="UserInfoQueryData" duration-ms="145" started-at="2019-12-30T01:15:02Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[按用户角色（超管）查询用户]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/userInfo/userWithRoles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":"USER_SUPER_ADMIN"}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"系统管理员","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@701fc37a]" name="UserInfoQueryData" duration-ms="601" started-at="2019-12-30T01:15:02Z" description="saas平台用户查询" data-provider="dp" finished-at="2019-12-30T01:15:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[邀请用户hangang@bitnei.cn已经存在]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/user-center/user/invite]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"admin":false,"email":"hangang@bitnei.cn","mobile":"13312223333","nickName":"hangang","title":""}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"str:用户hangang@bitnei.cn已经存在","data":null,"error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel -->
+      <class name="com.bitnei.apitest.testcases.saas.UserInfoQuery">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQuery@365c30cc]" name="setUp" is-config="true" duration-ms="781" started-at="2019-12-30T01:14:59Z" finished-at="2019-12-30T01:15:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.UserInfoQuery@365c30cc]" name="UserInfoQueryData" duration-ms="816" started-at="2019-12-30T01:15:00Z" description="saas平台用户查询" data-provider="dataprovider1" finished-at="2019-12-30T01:15:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","password":"N/A","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoQueryData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.UserInfoQuery -->
+    </test> <!-- SAAS -->
   </suite> <!-- apitest -->
 </testng-results>

@@ -65,8 +65,8 @@ public class ApiTestPost {
 		//入参设置
 		url= host+url+paras;
 		//调用接口	
-		System.out.println("url----"+url);
-		System.out.println("paras----"+paras);
+		//System.out.println("url----"+url);
+		//System.out.println("paras----"+paras);
 		closeableHttpResponse = restClient.post(url, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");

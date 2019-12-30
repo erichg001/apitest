@@ -39,7 +39,7 @@ public class UserInforRgisterByExcel {
 	public void setUp(String hostsaas,String pathroad) {
 		host = hostsaas;	
 		String ExcelFilePath= pathroad ;
-        String sheetName="Sheet3";
+        String sheetName="saasget";
         ex = new ExcelReader(ExcelFilePath, sheetName);
 		//设置cookie		
 		try {
