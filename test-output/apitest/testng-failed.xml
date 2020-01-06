@@ -10,15 +10,9 @@
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
   <test thread-count="5" name="SAAS(failed)" parallel="classes">
     <classes>
-      <class name="com.bitnei.apitest.testcases.saas.ApiTestPost">
-        <methods>
-          <include name="ApiTest" invocation-numbers="1 2"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTestPost -->
       <class name="com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel">
         <methods>
-          <include name="UserInfoRgisterData" invocation-numbers="12 18"/>
+          <include name="UserInfoRgisterData" invocation-numbers="5 9"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 26 18:54:30 CST 2019</td>
+<td>Started on:</td><td>Mon Jan 06 11:30:32 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2640 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3888 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,57 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 好车伯乐接口返回这空, /external-api/vehicle-battery/autobole/vehicle/static?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 好车伯乐接口返回为空, /external-api/vehicle-battery/autobole/vehicle/static?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 好车伯乐正常调用, /external-api/vehicle-battery/autobole/vehicle/static?, vin=LGXCD4D48J0211179, {"status":200,"errorMsg":null,"data":{"brand":"比亚迪","bsie":18.0,"bulletinNO":"BYD6460STHEV10","joinTime":"2019-07-27 06:31:16","platform":"私人","series":"未知","seurityMonitor":true,"type":"BYD6460STHEV10","use":"02","vin":"14b8e610b61d2e7e6102144c1fa9df24"},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 获取车辆实时位置及里程接口参数vin, /external-api/lbs/test/vehicle/realTimeData?, vin=LHWCJ95D0H1170711, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 获取车辆实时位置及里程为空, /external-api/lbs/test/vehicle/realTimeData?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 获取车辆实时位置及里程接口参数carNO, /external-api/lbs/test/vehicle/realTimeData?, carNO=湘N0J881, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 获取车辆轨迹接口参数vin, /external-api/lbs/test/vehicle/locations?, vin=L1HBBDA52JS000282&fromDate=2019-10-20%2007:16:20&toDate=2019-10-20%2007:16:30, {"status":200,"errorMsg":null,"data":[{"id":"700_730}","locations":[["113.317816","22.698654"]]}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 获取车辆轨迹接口参数carNO, /external-api/lbs/test/vehicle/locations?, carNO=%E7%B2%A4T09400D&fromDate=2019-10-20%2007:16:20&toDate=2019-10-20%2007:16:30, {"status":200,"errorMsg":null,"data":[{"id":"700_730}","locations":[["113.317816","22.698654"]]}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 获取车辆轨迹接口返回为空, /external-api/lbs/test/vehicle/locations?, vin=123&fromDate=2019-10-20%2007:16:20&toDate=2019-10-20%2007:16:30, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 获取车辆风险评分和三年内行驶里程参数vin, /external-api/vrm/insurance/lable?, vin=L6T78Y4W1HN038079, {"status":200,"errorMsg":null,"data":{"risk_score":25.8533,"mileage_12":5881.0,"mileage_24":6272.0,"mileage_36":4300.0},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 获取车辆风险评分和三年内行驶里程参数carNO, /external-api/vrm/insurance/lable?, carNO=%E4%BA%ACN05EV5, {"status":200,"errorMsg":null,"data":{"risk_score":25.8533,"mileage_12":5881.0,"mileage_24":6272.0,"mileage_36":4300.0},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: api返回码验证为10000<br>Parameters: 获取车辆风险评分和三年内行驶里程参数返回为空, /external-api/vrm/insurance/lable?, vin=123, {"status":200,"errorMsg":null,"data":{"risk_score":null,"mileage_12":null,"mileage_24":null,"mileage_36":null},"error":false,"code":"10000"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@50de0926</td></tr>
