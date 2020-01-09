@@ -6,6 +6,7 @@
   <parameter name="hostsaas" value="http://test-saas.bitnei.cn" />
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn" />
   <parameter name="hostopenapi" value="http://61.149.8.78:83" />
+  <parameter name="hostgeode" value="http://10.10.21.70:7070" />  
   <parameter name="pathroad" value="src/main/resources/TEST.xlsx" />
   <parameter name="pathsaasuser" value="src/main/resources/DATA.xlsx" />
 
@@ -36,7 +37,8 @@
     <class name = "com.bitnei.apitest.testcases.saas.PostBackSaas" />  
     <class name = "com.bitnei.apitest.testcases.saas.ApiTest" />  
     <class name = "com.bitnei.apitest.testcases.saas.ApiTestPost" /> 
-    <class name = "com.bitnei.apitest.testcases.saas.PostApiTestParas" />    
+    <class name = "com.bitnei.apitest.testcases.saas.PostApiTestParas" /> 
+    <class name = "com.bitnei.apitest.testcases.saas.TestGeodeData" />    
     </classes> 
   </test> 
 
