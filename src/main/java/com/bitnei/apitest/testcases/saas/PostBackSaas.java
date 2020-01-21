@@ -32,25 +32,19 @@ public class PostBackSaas {
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
 	GetCookie getCookisaas = new GetCookie();
-	String authorization = "";
+	String[] authorization = null;
 	ExcelReader ex ;
     ExcleUtil excleUtil;
+    SaasGetSec saasGetSec = new SaasGetSec();
 		
 	@Parameters({"backsaas","pathroad"})
 	@BeforeClass
-	public void setUp(String backsaas,String pathroad) {
+	public void setUp(String backsaas,String pathroad) throws InterruptedException {
 		host = backsaas;	
 		String ExcelFilePath= pathroad ;
         String sheetName="backsaas";
         ex = new ExcelReader(ExcelFilePath, sheetName);
-		//设置cookie		
-		try {
-			 authorization = getCookisaas.login();
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}	
+		authorization = saasGetSec.GetSec();	
 		       
 	}
 	
@@ -62,7 +56,9 @@ public class PostBackSaas {
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Cookie",authorization);
+		headermap.put("pub-sec",authorization[1]);
+		headermap.put("sg-sec",authorization[2]);
+		headermap.put("to-sec",authorization[0]);
 		//入参设置
 		url= host+url;
 		//调用接口	

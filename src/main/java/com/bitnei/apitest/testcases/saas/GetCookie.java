@@ -31,14 +31,14 @@ public class GetCookie {
         PostMethod postMethod = new PostMethod(urls);
         
         // 设置登陆时要求的信息，用户名和密码
-        NameValuePair[] data = { new NameValuePair("username", "SaaS@bitnei.cn"), new NameValuePair("password", "abc123") };
+        NameValuePair[] data = { new NameValuePair("username", "SaaS@bitnei.cn"), new NameValuePair("password", "123") };
         postMethod.setRequestBody(data);
 
         try {
             // 设置 HttpClient 接收 Cookie,用与浏览器一样的策略
             httpClient.getParams().setCookiePolicy(CookiePolicy.BROWSER_COMPATIBILITY);
             int statusCode=httpClient.executeMethod(postMethod);
-            //System.out.println("statusCode = "+statusCode);              
+            System.out.println("statusCode = "+statusCode);              
             // 获得登陆后的 Cookie
             Cookie[] cookies = httpClient.getState().getCookies();
             StringBuffer tmpcookies = new StringBuffer();

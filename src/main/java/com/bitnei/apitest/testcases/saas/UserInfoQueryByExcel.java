@@ -3,7 +3,6 @@ package com.bitnei.apitest.testcases.saas;
 import java.io.IOException;
 import java.util.HashMap;
 
-import org.apache.commons.httpclient.StatusLine;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -31,25 +30,19 @@ public class UserInfoQueryByExcel {
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
 	GetCookie getCookisaas = new GetCookie();
-	String authorization = "";
+	String[] authorization = null;
+	SaasGetSec saasGetSec = new SaasGetSec();
 	ExcelReader ex ;
     ExcleUtil excleUtil;
 		
 	@Parameters({"hostsaas","pathroad"})
 	@BeforeClass
-	public void setUp(String hostsaas,String pathroad) {
+	public void setUp(String hostsaas,String pathroad) throws InterruptedException {
 		host = hostsaas;	
 		String ExcelFilePath= pathroad ;
         String sheetName="saaspost";
         ex = new ExcelReader(ExcelFilePath, sheetName);
-		//设置cookie		
-		try {
-			 authorization = getCookisaas.login();
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}	
+		authorization = saasGetSec.GetSec();	
 		       
 	}
 	
@@ -61,7 +54,9 @@ public class UserInfoQueryByExcel {
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Cookie",authorization);
+		headermap.put("pub-sec",authorization[1]);
+		headermap.put("sg-sec",authorization[2]);
+		headermap.put("to-sec",authorization[0]);
 		//入参设置
 		url= host+url;
 		//调用接口	

@@ -30,7 +30,8 @@ public class GetApiToken {
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
 	GetCookie getCookie = new GetCookie();
-	String authorization = "";
+	String[] authorization = null;
+	SaasGetSec saasGetSec = new SaasGetSec();
 	
 	@Resource(name="platformdao") 
     private PlatFormDao platformdao;
@@ -48,20 +49,16 @@ public class GetApiToken {
 //	}
 	
 	@Test(description="api接口token获取")
-	public String ApiToken() throws ClientProtocolException, IOException {
+	public String ApiToken() throws ClientProtocolException, IOException, InterruptedException {
 		restClient = new RestClient();
 		//设置cookie		
-		try {
-			 authorization = getCookie.login();
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}	
+		authorization = saasGetSec.GetSec();
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Cookie",authorization);
+		headermap.put("pub-sec",authorization[1]);
+		headermap.put("sg-sec",authorization[2]);
+		headermap.put("to-sec",authorization[0]);
 		//入参设置
 		url = "http://test-oauth.bitnei.cn/acquire/token";
 		//调用接口

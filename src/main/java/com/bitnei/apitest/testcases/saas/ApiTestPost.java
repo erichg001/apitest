@@ -38,7 +38,7 @@ public class ApiTestPost {
 		
 	@Parameters({"hostsaas","pathroad"})
 	@BeforeClass
-	public void setUp(String hostsaas,String pathroad) {
+	public void setUp(String hostsaas,String pathroad) throws InterruptedException {
 		host = hostsaas;	
 		String ExcelFilePath= pathroad ;
         String sheetName="apipost";

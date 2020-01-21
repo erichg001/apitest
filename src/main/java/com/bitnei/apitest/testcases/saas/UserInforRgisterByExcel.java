@@ -30,27 +30,19 @@ public class UserInforRgisterByExcel {
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
 	GetCookie getCookisaas = new GetCookie();
-	String authorization = "";
+	String[] authorization = null;
 	ExcelReader ex ;
     ExcleUtil excleUtil;
+	SaasGetSec saasGetSec = new SaasGetSec();
 		
 	@Parameters({"hostsaas","pathroad"})
 	@BeforeClass
-	public void setUp(String hostsaas,String pathroad) {
+	public void setUp(String hostsaas,String pathroad) throws IOException, InterruptedException {
 		host = hostsaas;	
 		String ExcelFilePath= pathroad ;
         String sheetName="saasget";
         ex = new ExcelReader(ExcelFilePath, sheetName);
-		//设置cookie		
-		try {
-			 authorization = getCookisaas.login();
-		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
+		authorization = saasGetSec.GetSec();	
 		       
 	}
 	
@@ -61,7 +53,9 @@ public class UserInforRgisterByExcel {
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Cookie",authorization);
+		headermap.put("pub-sec",authorization[1]);
+		headermap.put("sg-sec",authorization[2]);
+		headermap.put("to-sec",authorization[0]);
 		//入参设置
 		url= host +url+paras;
 		System.out.println("URL------"+url);

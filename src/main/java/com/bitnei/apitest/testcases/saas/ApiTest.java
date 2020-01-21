@@ -57,7 +57,7 @@ public class ApiTest {
 		
 	@Parameters({"hostsaas","pathroad"})
 	@BeforeClass
-	public void setUp(String hostsaas,String pathroad) {
+	public void setUp(String hostsaas,String pathroad) throws InterruptedException {
 		host = hostsaas;	
 		String ExcelFilePath= pathroad ;
         String sheetName="apicode";
@@ -73,7 +73,7 @@ public class ApiTest {
 		       
 	}
 	
-	@Test(description="api返回码验证为10000",priority =0,dataProvider="dp")
+	@Test(description="openapi接口",priority =0,dataProvider="dp")
 	public void ApiTestCode(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
