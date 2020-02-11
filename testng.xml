@@ -37,7 +37,8 @@
     <class name = "com.bitnei.apitest.testcases.saas.ApiTest" />  
     <class name = "com.bitnei.apitest.testcases.saas.ApiTestPost" /> 
     <class name = "com.bitnei.apitest.testcases.saas.PostApiTestParas" /> 
-    <class name = "com.bitnei.apitest.testcases.saas.TestGeodeData" />    
+    <class name = "com.bitnei.apitest.testcases.saas.TestGeodeData" />   
+    <class name = "com.bitnei.apitest.testcases.saas.GetInsurance" />  
     </classes> 
   </test> 
 

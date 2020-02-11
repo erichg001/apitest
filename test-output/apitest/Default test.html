@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 21 10:49:54 CST 2020</td>
+<td>Started on:</td><td>Tue Feb 11 16:06:59 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18148 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23006 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,86 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签查询vin内容不存在, /external-api/vrm/insurance/lable, ?vin=HbkvkJ4hp/dyFkgYd73SkY4rUgVkldvzMKLOSH9M4UZgJATl7mo97PeqhVip/WP6iwioAiSMIN4KGUGF5zG8xHZibsr2vl1oIypNDAqbUf0s5xHW2moPsezG/edhntbeDRpAqV+PIlvq0kblkVewus3A++vX32GHm70rs7xbJ6Y=, cw1EWG0f1cHwAvEfyifsToWHBy2CJkmeKu6cDwPMy9mW2K8ZgfJFZyteVatJAMpmWGAk2d17//F25cwP9phjoAlRT7IKBA1OQUMyN2IsDQJOukh12d7e9zt3Yd/cZaUp1mBTt8AZgtq1l45i0+p5cbGC7yJUn+hYZ8uXf2BOtr4=, 1581408151875, {"status":200,"errorMsg":null,"data":{"risk_score":null,"mileage_12":null,"mileage_24":null,"mileage_36":null,"avg_run_time_length_monthly":null,"avg_run_speed":null,"brake_acc_count_per_100km":null,"acc_count_per_100km":null,"speed_range00_rate":null,"speed_range20_rate":null,"speed_range40_rate":null,"speed_range60_rate":null,"speed_range80_rate":null,"speed_range100_rate":null,"speed_range120_rate":null,"speed_range140_rate":null,"fatigue_driving_rate":null,"avg_run_days_monthly":null,"avg_run_count_monthly":null,"avg_fast_charge_count_monthly":null,"avg_slow_charge_count_monthly":null},"error":false,"code":"10000"}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;avg_run_time_length_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_time_length_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_time_length_monthly&quot;},&quot;avg_run_speed&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_speed&quot;,&quot;expectedKey&quot;:&quot;avg_run_speed&quot;},&quot;brake_acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此brake_acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;brake_acc_count_per_100km&quot;},&quot;acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;acc_count_per_100km&quot;},&quot;speed_range00_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range00_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range00_rate&quot;},&quot;speed_range20_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range20_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range20_rate&quot;},&quot;speed_range40_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range40_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range40_rate&quot;},&quot;speed_range60_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range60_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range60_rate&quot;},&quot;speed_range80_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range80_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range80_rate&quot;},&quot;speed_range100_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range100_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range100_rate&quot;},&quot;speed_range120_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range120_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range120_rate&quot;},&quot;speed_range140_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range140_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range140_rate&quot;},&quot;fatigue_driving_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此fatigue_driving_rate&quot;,&quot;expectedKey&quot;:&quot;fatigue_driving_rate&quot;},&quot;avg_run_days_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_days_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_days_monthly&quot;},&quot;avg_run_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_count_monthly&quot;},&quot;avg_fast_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_fast_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_fast_charge_count_monthly&quot;},&quot;avg_slow_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_slow_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_slow_charge_count_monthly&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null},&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.GetInsurance.ApiTestCode(GetInsurance.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace938405008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace938405008'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;avg_run_time_length_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_time_length_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_time_length_monthly&quot;},&quot;avg_run_speed&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_speed&quot;,&quot;expectedKey&quot;:&quot;avg_run_speed&quot;},&quot;brake_acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此brake_acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;brake_acc_count_per_100km&quot;},&quot;acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;acc_count_per_100km&quot;},&quot;speed_range00_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range00_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range00_rate&quot;},&quot;speed_range20_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range20_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range20_rate&quot;},&quot;speed_range40_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range40_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range40_rate&quot;},&quot;speed_range60_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range60_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range60_rate&quot;},&quot;speed_range80_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range80_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range80_rate&quot;},&quot;speed_range100_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range100_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range100_rate&quot;},&quot;speed_range120_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range120_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range120_rate&quot;},&quot;speed_range140_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range140_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range140_rate&quot;},&quot;fatigue_driving_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此fatigue_driving_rate&quot;,&quot;expectedKey&quot;:&quot;fatigue_driving_rate&quot;},&quot;avg_run_days_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_days_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_days_monthly&quot;},&quot;avg_run_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_count_monthly&quot;},&quot;avg_fast_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_fast_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_fast_charge_count_monthly&quot;},&quot;avg_slow_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_slow_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_slow_charge_count_monthly&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null},&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.GetInsurance.ApiTestCode(GetInsurance.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@530612ba</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +155,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.PostApiTestParas.ApiTest()'><b>ApiTest</b><br>Test class: com.bitnei.apitest.testcases.saas.PostApiTestParas<br>Test method: api接口<br>Parameters: API接口EC动力接收充电数据, /external-api/vehicle-charge/charge/herui/vehicle/receive, {"carNO":"京ADK2768","startSoc":"41","endSoc":"100","lat":"40.1297269989","lng":"116.5992975284","station":"EC动力顺丰充电站","startTime":"2019-10-12 21:38:25","endTime":"2019-10-13 01:24:25","id":"38145","electricAmount":"29.97","current":"1.9","voltage":"402","type":"1"}, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"10000"}</td>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签调用正常, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":200,"errorMsg":null,"data":{"risk_score":22.0257,"mileage_12":6303.0,"mileage_24":3623.0,"mileage_36":0.0,"avg_run_time_length_monthly":1.6908846153846152E7,"avg_run_speed":319.0673120668706,"brake_acc_count_per_100km":0.0,"acc_count_per_100km":0.0,"speed_range00_rate":0.2437958755679832,"speed_range20_rate":0.18437609227542817,"speed_range40_rate":0.19608528486543167,"speed_range60_rate":0.06675987416987067,"speed_range80_rate":0.00611674239776302,"speed_range100_rate":8.738203425375742E-4,"speed_range120_rate":0.0,"speed_range140_rate":0.0,"fatigue_driving_rate":0.0,"avg_run_days_monthly":7.769230769230769,"avg_run_count_monthly":12.076923076923077,"avg_fast_charge_count_monthly":0.0,"avg_slow_charge_count_monthly":1.9090909090909092},"error":false,"code":"10000"}</td>
+<td></td>
+<td>1</td>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@530612ba</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签vin未加密码, /external-api/vrm/insurance/lable, ?vin=LGXC76C36G0156932, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":406,"errorMsg":"确保VIN是否已加密！","data":null,"error":true,"code":"40000"}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostApiTestParas@530612ba</td></tr>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@530612ba</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签时间戳错误认证失败, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620140, {"status":406,"errorMsg":"验签失败！","data":null,"error":true,"code":"40000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@530612ba</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签签名长度不正确, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, yiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":200,"errorMsg":"Signature length not correct: got 127 but was expecting 128","data":null,"error":true,"code":"40000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@530612ba</td></tr>
 </table><p>
 </body>
 </html>
