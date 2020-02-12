@@ -75,7 +75,7 @@ public class GetInsurance {
 		closeableHttpResponse = restClient.get(url, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
-		//System.out.println("source-----"+str);
+		System.out.println("source-----"+str);
 		//System.out.println("except-----"+result);
 		//System.out.println("getStatusLine"+closeableHttpResponse.getStatusLine().getStatusCode());
 //		status = closeableHttpResponse.getStatusLine().getStatusCode();

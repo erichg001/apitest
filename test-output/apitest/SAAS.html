@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SAAS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>46/9/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>50/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 11 16:22:32 CST 2020</td>
+<td>Started on:</td><td>Wed Feb 12 17:16:18 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>199 seconds (199320 ms)</td>
+<tr><td>Total time:</td><td>218 seconds (218663 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -74,342 +74,6 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 获取车辆轨迹接口参数vin, /external-api/lbs/test/vehicle/locations?, vin=L1HBBDA52JS000282&fromDate=2019-10-20%2007:16:20&toDate=2019-10-20%2007:16:30, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1864516634", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1864516634'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@120d6fe6</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 获取车辆轨迹接口参数carNO, /external-api/lbs/test/vehicle/locations?, carNO=%E7%B2%A4T09400D&fromDate=2019-10-20%2007:16:20&toDate=2019-10-20%2007:16:30, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace885535217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace885535217'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@120d6fe6</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 获取车辆轨迹接口返回为空, /external-api/lbs/test/vehicle/locations?, vin=123&fromDate=2019-10-20%2007:16:20&toDate=2019-10-20%2007:16:30, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;35000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace232595079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace232595079'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;35000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@120d6fe6</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 获取车辆风险评分和三年内行驶里程参数vin, /external-api/vrm/insurance/lable?, vin=L6T78Y4W1HN038079, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1503139627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1503139627'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@120d6fe6</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 获取车辆风险评分和三年内行驶里程参数carNO, /external-api/vrm/insurance/lable?, carNO=%E4%BA%ACN05EV5, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace330182792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace330182792'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@120d6fe6</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 获取车辆风险评分和三年内行驶里程参数返回为空, /external-api/vrm/insurance/lable?, vin=123, {"status":200,"errorMsg":null,"data":{"risk_score":null,"mileage_12":null,"mileage_24":null,"mileage_36":null},"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null},&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace610526665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace610526665'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null},&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@120d6fe6</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签查询vin内容不存在, /external-api/vrm/insurance/lable, ?vin=HbkvkJ4hp/dyFkgYd73SkY4rUgVkldvzMKLOSH9M4UZgJATl7mo97PeqhVip/WP6iwioAiSMIN4KGUGF5zG8xHZibsr2vl1oIypNDAqbUf0s5xHW2moPsezG/edhntbeDRpAqV+PIlvq0kblkVewus3A++vX32GHm70rs7xbJ6Y=, cw1EWG0f1cHwAvEfyifsToWHBy2CJkmeKu6cDwPMy9mW2K8ZgfJFZyteVatJAMpmWGAk2d17//F25cwP9phjoAlRT7IKBA1OQUMyN2IsDQJOukh12d7e9zt3Yd/cZaUp1mBTt8AZgtq1l45i0+p5cbGC7yJUn+hYZ8uXf2BOtr4=, 1581408151875, {"status":200,"errorMsg":null,"data":{"risk_score":null,"mileage_12":null,"mileage_24":null,"mileage_36":null,"avg_run_time_length_monthly":null,"avg_run_speed":null,"brake_acc_count_per_100km":null,"acc_count_per_100km":null,"speed_range00_rate":null,"speed_range20_rate":null,"speed_range40_rate":null,"speed_range60_rate":null,"speed_range80_rate":null,"speed_range100_rate":null,"speed_range120_rate":null,"speed_range140_rate":null,"fatigue_driving_rate":null,"avg_run_days_monthly":null,"avg_run_count_monthly":null,"avg_fast_charge_count_monthly":null,"avg_slow_charge_count_monthly":null},"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;avg_run_time_length_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_time_length_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_time_length_monthly&quot;},&quot;avg_run_speed&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_speed&quot;,&quot;expectedKey&quot;:&quot;avg_run_speed&quot;},&quot;brake_acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此brake_acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;brake_acc_count_per_100km&quot;},&quot;acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;acc_count_per_100km&quot;},&quot;speed_range00_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range00_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range00_rate&quot;},&quot;speed_range20_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range20_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range20_rate&quot;},&quot;speed_range40_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range40_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range40_rate&quot;},&quot;speed_range60_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range60_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range60_rate&quot;},&quot;speed_range80_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range80_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range80_rate&quot;},&quot;speed_range100_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range100_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range100_rate&quot;},&quot;speed_range120_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range120_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range120_rate&quot;},&quot;speed_range140_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range140_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range140_rate&quot;},&quot;fatigue_driving_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此fatigue_driving_rate&quot;,&quot;expectedKey&quot;:&quot;fatigue_driving_rate&quot;},&quot;avg_run_days_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_days_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_days_monthly&quot;},&quot;avg_run_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_count_monthly&quot;},&quot;avg_fast_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_fast_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_fast_charge_count_monthly&quot;},&quot;avg_slow_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_slow_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_slow_charge_count_monthly&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null},&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace262416738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace262416738'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;avg_run_time_length_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_time_length_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_time_length_monthly&quot;},&quot;avg_run_speed&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_speed&quot;,&quot;expectedKey&quot;:&quot;avg_run_speed&quot;},&quot;brake_acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此brake_acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;brake_acc_count_per_100km&quot;},&quot;acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;acc_count_per_100km&quot;},&quot;speed_range00_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range00_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range00_rate&quot;},&quot;speed_range20_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range20_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range20_rate&quot;},&quot;speed_range40_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range40_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range40_rate&quot;},&quot;speed_range60_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range60_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range60_rate&quot;},&quot;speed_range80_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range80_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range80_rate&quot;},&quot;speed_range100_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range100_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range100_rate&quot;},&quot;speed_range120_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range120_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range120_rate&quot;},&quot;speed_range140_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range140_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range140_rate&quot;},&quot;fatigue_driving_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此fatigue_driving_rate&quot;,&quot;expectedKey&quot;:&quot;fatigue_driving_rate&quot;},&quot;avg_run_days_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_days_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_days_monthly&quot;},&quot;avg_run_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_count_monthly&quot;},&quot;avg_fast_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_fast_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_fast_charge_count_monthly&quot;},&quot;avg_slow_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_slow_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_slow_charge_count_monthly&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:null,&quot;mileage_12&quot;:null,&quot;mileage_24&quot;:null,&quot;mileage_36&quot;:null,&quot;avg_run_time_length_monthly&quot;:null,&quot;avg_run_speed&quot;:null,&quot;brake_acc_count_per_100km&quot;:null,&quot;acc_count_per_100km&quot;:null,&quot;speed_range00_rate&quot;:null,&quot;speed_range20_rate&quot;:null,&quot;speed_range40_rate&quot;:null,&quot;speed_range60_rate&quot;:null,&quot;speed_range80_rate&quot;:null,&quot;speed_range100_rate&quot;:null,&quot;speed_range120_rate&quot;:null,&quot;speed_range140_rate&quot;:null,&quot;fatigue_driving_rate&quot;:null,&quot;avg_run_days_monthly&quot;:null,&quot;avg_run_count_monthly&quot;:null,&quot;avg_fast_charge_count_monthly&quot;:null,&quot;avg_slow_charge_count_monthly&quot;:null},&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.GetInsurance@6a79c292</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台<br>Parameters: API管理用户获取TOKEN接口查询, /api-center/api/getAuthorizedApi, ?apiName=%E7%94%A8%E6%88%B7%E8%8E%B7%E5%8F%96TOKEN%E6%8E%A5%E5%8F%A3&pageNumber=1&pageSize=12, {"status":200,"errorMsg":null,"data":{"pageNumber":1,"pageSize":12,"start":0,"list":[{"id":"1","name":"用户获取TOKEN接口","description":"用户获取token","strategy":null,"apiThrottleStrategy":null,"type":"2"}]},"error":false}</td>
 <td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;Length&quot;:{&quot;actualLenth&quot;:0,&quot;expectLenth&quot;:1}}]
@@ -433,8 +97,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1138289360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1138289360'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;Length&quot;:{&quot;actualLenth&quot;:0,&quot;expectLenth&quot;:1}}]
+</pre></div><a href='#' onClick='toggleBox("stack-trace709781439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace709781439'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;Length&quot;:{&quot;actualLenth&quot;:0,&quot;expectLenth&quot;:1}}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -459,8 +123,8 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@23bb8443</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台<br>Parameters: 车型画像查询, /vehicle-info/portrait/getModelPortrait, ?modelName=BJ7000C5E7-BEV, {"status":200,"errorMsg":null,"data":{"modelPortrait":{"model_name":"BJ7000C5E7-BEV","avg_charge_times_month":22.0,"quick_percent_month":71,"avg_start_soc":34,"avg_end_soc":77,"avg_charge_time_length":"0h54min","half_price_times":79,"city_percent":"昆明市:31_北京市:27_其他:42","cars_nu":3517,"dict_percent":"公务乘用车:72_出租乘用车:26_其他:2","active_percent":100,"avg_run_mileage_month":4812.5,"start_soc_20_less_percent":1,"holiday_percent":32,"avg_run_days_month":21.0,"avg_run_times_month":132.0,"run_100km_more_percent":8,"run_20km_less_percent":47,"workday_percent":68,"material":"三元","produce_date":"2017","cell_enterprise":"CATL","power_amount":"","veh_level":"紧凑型车","power_type":"BEV","drive_range_ev":"300","brand":"北京","power_100km":"16.4","reduce_percent":"2.33","actual_drive_range":"230","prediction_life_time":"46.21","avg_alarm_level1_2_3_nu_month":"三级:1_二级:1_一级:1","avg_bat_fault_nu_month":null,"avg_bat_fault_nu_month_num":"3","alarm_name_percent":"制动系统报警:22_SOC低报警:67","avg_alarm_nu_month":null},"modelCapacityCurveList":[{"boxKey":"BJ7000C5E7-BEV","mil":0.0,"vol":"127.8"},{"boxKey":"BJ7000C5E7-BEV","mil":5000.0,"vol":"127.5"},{"boxKey":"BJ7000C5E7-BEV","mil":10000.0,"vol":"127.2"},{"boxKey":"BJ7000C5E7-BEV","mil":15000.0,"vol":"126.9"},{"boxKey":"BJ7000C5E7-BEV","mil":20000.0,"vol":"126.6"},{"boxKey":"BJ7000C5E7-BEV","mil":25000.0,"vol":"126.3"},{"boxKey":"BJ7000C5E7-BEV","mil":30000.0,"vol":"126.0"},{"boxKey":"BJ7000C5E7-BEV","mil":35000.0,"vol":"125.7"},{"boxKey":"BJ7000C5E7-BEV","mil":40000.0,"vol":"125.4"},{"boxKey":"BJ7000C5E7-BEV","mil":45000.0,"vol":"125.0"},{"boxKey":"BJ7000C5E7-BEV","mil":50000.0,"vol":"124.7"},{"boxKey":"BJ7000C5E7-BEV","mil":55000.0,"vol":"124.4"},{"boxKey":"BJ7000C5E7-BEV","mil":60000.0,"vol":"124.1"},{"boxKey":"BJ7000C5E7-BEV","mil":65000.0,"vol":"123.8"},{"boxKey":"BJ7000C5E7-BEV","mil":70000.0,"vol":"123.5"},{"boxKey":"BJ7000C5E7-BEV","mil":75000.0,"vol":"123.2"},{"boxKey":"BJ7000C5E7-BEV","mil":80000.0,"vol":"122.9"},{"boxKey":"BJ7000C5E7-BEV","mil":85000.0,"vol":"122.6"},{"boxKey":"BJ7000C5E7-BEV","mil":90000.0,"vol":"122.3"},{"boxKey":"BJ7000C5E7-BEV","mil":95000.0,"vol":"122.0"},{"boxKey":"BJ7000C5E7-BEV","mil":100000.0,"vol":"121.7"},{"boxKey":"BJ7000C5E7-BEV","mil":105000.0,"vol":"121.4"},{"boxKey":"BJ7000C5E7-BEV","mil":110000.0,"vol":"121.1"},{"boxKey":"BJ7000C5E7-BEV","mil":115000.0,"vol":"120.7"},{"boxKey":"BJ7000C5E7-BEV","mil":120000.0,"vol":"120.4"},{"boxKey":"BJ7000C5E7-BEV","mil":125000.0,"vol":"120.1"},{"boxKey":"BJ7000C5E7-BEV","mil":130000.0,"vol":"119.8"},{"boxKey":"BJ7000C5E7-BEV","mil":135000.0,"vol":"119.5"},{"boxKey":"BJ7000C5E7-BEV","mil":140000.0,"vol":"119.2"},{"boxKey":"BJ7000C5E7-BEV","mil":145000.0,"vol":"118.9"},{"boxKey":"BJ7000C5E7-BEV","mil":150000.0,"vol":"118.6"},{"boxKey":"BJ7000C5E7-BEV","mil":155000.0,"vol":"118.3"},{"boxKey":"BJ7000C5E7-BEV","mil":160000.0,"vol":"118.0"},{"boxKey":"BJ7000C5E7-BEV","mil":165000.0,"vol":"117.7"},{"boxKey":"BJ7000C5E7-BEV","mil":170000.0,"vol":"117.4"},{"boxKey":"BJ7000C5E7-BEV","mil":175000.0,"vol":"117.1"},{"boxKey":"BJ7000C5E7-BEV","mil":180000.0,"vol":"116.8"},{"boxKey":"BJ7000C5E7-BEV","mil":185000.0,"vol":"116.4"},{"boxKey":"BJ7000C5E7-BEV","mil":190000.0,"vol":"116.1"},{"boxKey":"BJ7000C5E7-BEV","mil":195000.0,"vol":"115.8"},{"boxKey":"BJ7000C5E7-BEV","mil":200000.0,"vol":"115.5"},{"boxKey":"BJ7000C5E7-BEV","mil":205000.0,"vol":"115.2"},{"boxKey":"BJ7000C5E7-BEV","mil":210000.0,"vol":"114.9"},{"boxKey":"BJ7000C5E7-BEV","mil":215000.0,"vol":"114.6"},{"boxKey":"BJ7000C5E7-BEV","mil":220000.0,"vol":"114.3"},{"boxKey":"BJ7000C5E7-BEV","mil":225000.0,"vol":"114.0"},{"boxKey":"BJ7000C5E7-BEV","mil":230000.0,"vol":"113.7"},{"boxKey":"BJ7000C5E7-BEV","mil":235000.0,"vol":"113.4"},{"boxKey":"BJ7000C5E7-BEV","mil":240000.0,"vol":"113.1"},{"boxKey":"BJ7000C5E7-BEV","mil":245000.0,"vol":"112.8"},{"boxKey":"BJ7000C5E7-BEV","mil":250000.0,"vol":"112.5"},{"boxKey":"BJ7000C5E7-BEV","mil":255000.0,"vol":"112.1"},{"boxKey":"BJ7000C5E7-BEV","mil":260000.0,"vol":"111.8"},{"boxKey":"BJ7000C5E7-BEV","mil":265000.0,"vol":"111.5"},{"boxKey":"BJ7000C5E7-BEV","mil":270000.0,"vol":"111.2"},{"boxKey":"BJ7000C5E7-BEV","mil":275000.0,"vol":"110.9"},{"boxKey":"BJ7000C5E7-BEV","mil":280000.0,"vol":"110.6"},{"boxKey":"BJ7000C5E7-BEV","mil":285000.0,"vol":"110.3"},{"boxKey":"BJ7000C5E7-BEV","mil":290000.0,"vol":"110.0"},{"boxKey":"BJ7000C5E7-BEV","mil":295000.0,"vol":"109.7"},{"boxKey":"BJ7000C5E7-BEV","mil":300000.0,"vol":"109.4"},{"boxKey":"BJ7000C5E7-BEV","mil":305000.0,"vol":"109.1"},{"boxKey":"BJ7000C5E7-BEV","mil":310000.0,"vol":"108.8"},{"boxKey":"BJ7000C5E7-BEV","mil":315000.0,"vol":"108.5"},{"boxKey":"BJ7000C5E7-BEV","mil":320000.0,"vol":"108.2"},{"boxKey":"BJ7000C5E7-BEV","mil":325000.0,"vol":"107.8"},{"boxKey":"BJ7000C5E7-BEV","mil":330000.0,"vol":"107.5"},{"boxKey":"BJ7000C5E7-BEV","mil":335000.0,"vol":"107.2"},{"boxKey":"BJ7000C5E7-BEV","mil":340000.0,"vol":"106.9"},{"boxKey":"BJ7000C5E7-BEV","mil":345000.0,"vol":"106.6"},{"boxKey":"BJ7000C5E7-BEV","mil":350000.0,"vol":"106.3"},{"boxKey":"BJ7000C5E7-BEV","mil":355000.0,"vol":"106.0"},{"boxKey":"BJ7000C5E7-BEV","mil":360000.0,"vol":"105.7"},{"boxKey":"BJ7000C5E7-BEV","mil":365000.0,"vol":"105.4"},{"boxKey":"BJ7000C5E7-BEV","mil":370000.0,"vol":"105.1"},{"boxKey":"BJ7000C5E7-BEV","mil":375000.0,"vol":"104.8"},{"boxKey":"BJ7000C5E7-BEV","mil":380000.0,"vol":"104.5"},{"boxKey":"BJ7000C5E7-BEV","mil":385000.0,"vol":"104.2"},{"boxKey":"BJ7000C5E7-BEV","mil":390000.0,"vol":"103.9"},{"boxKey":"BJ7000C5E7-BEV","mil":395000.0,"vol":"103.5"},{"boxKey":"BJ7000C5E7-BEV","mil":400000.0,"vol":"103.2"},{"boxKey":"BJ7000C5E7-BEV","mil":405000.0,"vol":"102.9"},{"boxKey":"BJ7000C5E7-BEV","mil":410000.0,"vol":"102.6"},{"boxKey":"BJ7000C5E7-BEV","mil":415000.0,"vol":"102.3"}]},"error":false}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;avg_end_soc&quot;:{&quot;currentValue is &quot;:78,&quot;expectedValue is&quot;:77},&quot;avg_charge_time_length&quot;:{&quot;currentValue is &quot;:&quot;1h0min&quot;,&quot;expectedValue is&quot;:77,&quot;expectedValue is &quot;:&quot;0h54min&quot;},&quot;half_price_times&quot;:{&quot;currentValue is &quot;:78,&quot;expectedValue is&quot;:79,&quot;expectedValue is &quot;:&quot;0h54min&quot;},&quot;city_percent&quot;:{&quot;currentValue is &quot;:&quot;昆明市:31_北京市:28_其他:41&quot;,&quot;expectedValue is&quot;:79,&quot;expectedValue is &quot;:&quot;昆明市:31_北京市:27_其他:42&quot;},&quot;cars_nu&quot;:{&quot;currentValue is &quot;:3541,&quot;expectedValue is&quot;:3517,&quot;expectedValue is &quot;:&quot;昆明市:31_北京市:27_其他:42&quot;},&quot;dict_percent&quot;:{&quot;currentValue is &quot;:&quot;公务乘用车:71_出租乘用车:26_其他:3&quot;,&quot;expectedValue is&quot;:3517,&quot;expectedValue is &quot;:&quot;公务乘用车:72_出租乘用车:26_其他:2&quot;}}]
+<td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台<br>Parameters: 车型画像查询, /vehicle-info/portrait/getModelPortrait, ?modelName=BJ7000C5E7-BEV, {"status":200,"errorMsg":null,"data":{"modelPortrait":{"model_name":"BJ7000C5E7-BEV","avg_charge_times_month":22.0,"quick_percent_month":71,"avg_start_soc":34,"avg_charge_time_length":"0h54min","half_price_times":79,"city_percent":"昆明市:31_北京市:27_其他:42","cars_nu":3517,"dict_percent":"公务乘用车:72_出租乘用车:26_其他:2","active_percent":100,"avg_run_mileage_month":4812.5,"start_soc_20_less_percent":1,"holiday_percent":32,"avg_run_days_month":21.0,"avg_run_times_month":132.0,"run_100km_more_percent":8,"run_20km_less_percent":47,"workday_percent":68,"material":"三元","produce_date":"2017","cell_enterprise":"CATL","power_amount":"","veh_level":"紧凑型车","power_type":"BEV","drive_range_ev":"300","brand":"北京","power_100km":"16.4","reduce_percent":"2.33","actual_drive_range":"230","prediction_life_time":"46.21","avg_alarm_level1_2_3_nu_month":"三级:1_二级:1_一级:1","avg_bat_fault_nu_month":null,"avg_bat_fault_nu_month_num":"3","alarm_name_percent":"制动系统报警:22_SOC低报警:67","avg_alarm_nu_month":null},"modelCapacityCurveList":[{"boxKey":"BJ7000C5E7-BEV","mil":0.0,"vol":"127.8"},{"boxKey":"BJ7000C5E7-BEV","mil":5000.0,"vol":"127.5"},{"boxKey":"BJ7000C5E7-BEV","mil":10000.0,"vol":"127.2"},{"boxKey":"BJ7000C5E7-BEV","mil":15000.0,"vol":"126.9"},{"boxKey":"BJ7000C5E7-BEV","mil":20000.0,"vol":"126.6"},{"boxKey":"BJ7000C5E7-BEV","mil":25000.0,"vol":"126.3"},{"boxKey":"BJ7000C5E7-BEV","mil":30000.0,"vol":"126.0"},{"boxKey":"BJ7000C5E7-BEV","mil":35000.0,"vol":"125.7"},{"boxKey":"BJ7000C5E7-BEV","mil":40000.0,"vol":"125.4"},{"boxKey":"BJ7000C5E7-BEV","mil":45000.0,"vol":"125.0"},{"boxKey":"BJ7000C5E7-BEV","mil":50000.0,"vol":"124.7"},{"boxKey":"BJ7000C5E7-BEV","mil":55000.0,"vol":"124.4"},{"boxKey":"BJ7000C5E7-BEV","mil":60000.0,"vol":"124.1"},{"boxKey":"BJ7000C5E7-BEV","mil":65000.0,"vol":"123.8"},{"boxKey":"BJ7000C5E7-BEV","mil":70000.0,"vol":"123.5"},{"boxKey":"BJ7000C5E7-BEV","mil":75000.0,"vol":"123.2"},{"boxKey":"BJ7000C5E7-BEV","mil":80000.0,"vol":"122.9"},{"boxKey":"BJ7000C5E7-BEV","mil":85000.0,"vol":"122.6"},{"boxKey":"BJ7000C5E7-BEV","mil":90000.0,"vol":"122.3"},{"boxKey":"BJ7000C5E7-BEV","mil":95000.0,"vol":"122.0"},{"boxKey":"BJ7000C5E7-BEV","mil":100000.0,"vol":"121.7"},{"boxKey":"BJ7000C5E7-BEV","mil":105000.0,"vol":"121.4"},{"boxKey":"BJ7000C5E7-BEV","mil":110000.0,"vol":"121.1"},{"boxKey":"BJ7000C5E7-BEV","mil":115000.0,"vol":"120.7"},{"boxKey":"BJ7000C5E7-BEV","mil":120000.0,"vol":"120.4"},{"boxKey":"BJ7000C5E7-BEV","mil":125000.0,"vol":"120.1"},{"boxKey":"BJ7000C5E7-BEV","mil":130000.0,"vol":"119.8"},{"boxKey":"BJ7000C5E7-BEV","mil":135000.0,"vol":"119.5"},{"boxKey":"BJ7000C5E7-BEV","mil":140000.0,"vol":"119.2"},{"boxKey":"BJ7000C5E7-BEV","mil":145000.0,"vol":"118.9"},{"boxKey":"BJ7000C5E7-BEV","mil":150000.0,"vol":"118.6"},{"boxKey":"BJ7000C5E7-BEV","mil":155000.0,"vol":"118.3"},{"boxKey":"BJ7000C5E7-BEV","mil":160000.0,"vol":"118.0"},{"boxKey":"BJ7000C5E7-BEV","mil":165000.0,"vol":"117.7"},{"boxKey":"BJ7000C5E7-BEV","mil":170000.0,"vol":"117.4"},{"boxKey":"BJ7000C5E7-BEV","mil":175000.0,"vol":"117.1"},{"boxKey":"BJ7000C5E7-BEV","mil":180000.0,"vol":"116.8"},{"boxKey":"BJ7000C5E7-BEV","mil":185000.0,"vol":"116.4"},{"boxKey":"BJ7000C5E7-BEV","mil":190000.0,"vol":"116.1"},{"boxKey":"BJ7000C5E7-BEV","mil":195000.0,"vol":"115.8"},{"boxKey":"BJ7000C5E7-BEV","mil":200000.0,"vol":"115.5"},{"boxKey":"BJ7000C5E7-BEV","mil":205000.0,"vol":"115.2"},{"boxKey":"BJ7000C5E7-BEV","mil":210000.0,"vol":"114.9"},{"boxKey":"BJ7000C5E7-BEV","mil":215000.0,"vol":"114.6"},{"boxKey":"BJ7000C5E7-BEV","mil":220000.0,"vol":"114.3"},{"boxKey":"BJ7000C5E7-BEV","mil":225000.0,"vol":"114.0"},{"boxKey":"BJ7000C5E7-BEV","mil":230000.0,"vol":"113.7"},{"boxKey":"BJ7000C5E7-BEV","mil":235000.0,"vol":"113.4"},{"boxKey":"BJ7000C5E7-BEV","mil":240000.0,"vol":"113.1"},{"boxKey":"BJ7000C5E7-BEV","mil":245000.0,"vol":"112.8"},{"boxKey":"BJ7000C5E7-BEV","mil":250000.0,"vol":"112.5"},{"boxKey":"BJ7000C5E7-BEV","mil":255000.0,"vol":"112.1"},{"boxKey":"BJ7000C5E7-BEV","mil":260000.0,"vol":"111.8"},{"boxKey":"BJ7000C5E7-BEV","mil":265000.0,"vol":"111.5"},{"boxKey":"BJ7000C5E7-BEV","mil":270000.0,"vol":"111.2"},{"boxKey":"BJ7000C5E7-BEV","mil":275000.0,"vol":"110.9"},{"boxKey":"BJ7000C5E7-BEV","mil":280000.0,"vol":"110.6"},{"boxKey":"BJ7000C5E7-BEV","mil":285000.0,"vol":"110.3"},{"boxKey":"BJ7000C5E7-BEV","mil":290000.0,"vol":"110.0"},{"boxKey":"BJ7000C5E7-BEV","mil":295000.0,"vol":"109.7"},{"boxKey":"BJ7000C5E7-BEV","mil":300000.0,"vol":"109.4"},{"boxKey":"BJ7000C5E7-BEV","mil":305000.0,"vol":"109.1"},{"boxKey":"BJ7000C5E7-BEV","mil":310000.0,"vol":"108.8"},{"boxKey":"BJ7000C5E7-BEV","mil":315000.0,"vol":"108.5"},{"boxKey":"BJ7000C5E7-BEV","mil":320000.0,"vol":"108.2"},{"boxKey":"BJ7000C5E7-BEV","mil":325000.0,"vol":"107.8"},{"boxKey":"BJ7000C5E7-BEV","mil":330000.0,"vol":"107.5"},{"boxKey":"BJ7000C5E7-BEV","mil":335000.0,"vol":"107.2"},{"boxKey":"BJ7000C5E7-BEV","mil":340000.0,"vol":"106.9"},{"boxKey":"BJ7000C5E7-BEV","mil":345000.0,"vol":"106.6"},{"boxKey":"BJ7000C5E7-BEV","mil":350000.0,"vol":"106.3"},{"boxKey":"BJ7000C5E7-BEV","mil":355000.0,"vol":"106.0"},{"boxKey":"BJ7000C5E7-BEV","mil":360000.0,"vol":"105.7"},{"boxKey":"BJ7000C5E7-BEV","mil":365000.0,"vol":"105.4"},{"boxKey":"BJ7000C5E7-BEV","mil":370000.0,"vol":"105.1"},{"boxKey":"BJ7000C5E7-BEV","mil":375000.0,"vol":"104.8"},{"boxKey":"BJ7000C5E7-BEV","mil":380000.0,"vol":"104.5"},{"boxKey":"BJ7000C5E7-BEV","mil":385000.0,"vol":"104.2"},{"boxKey":"BJ7000C5E7-BEV","mil":390000.0,"vol":"103.9"},{"boxKey":"BJ7000C5E7-BEV","mil":395000.0,"vol":"103.5"},{"boxKey":"BJ7000C5E7-BEV","mil":400000.0,"vol":"103.2"},{"boxKey":"BJ7000C5E7-BEV","mil":405000.0,"vol":"102.9"},{"boxKey":"BJ7000C5E7-BEV","mil":410000.0,"vol":"102.6"},{"boxKey":"BJ7000C5E7-BEV","mil":415000.0,"vol":"102.3"}]},"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;avg_charge_time_length&quot;:{&quot;currentValue is &quot;:&quot;1h0min&quot;,&quot;expectedValue is &quot;:&quot;0h54min&quot;},&quot;half_price_times&quot;:{&quot;currentValue is &quot;:78,&quot;expectedValue is &quot;:&quot;0h54min&quot;,&quot;expectedValue is&quot;:79},&quot;city_percent&quot;:{&quot;currentValue is &quot;:&quot;昆明市:31_北京市:28_其他:41&quot;,&quot;expectedValue is &quot;:&quot;昆明市:31_北京市:27_其他:42&quot;,&quot;expectedValue is&quot;:79},&quot;cars_nu&quot;:{&quot;currentValue is &quot;:3541,&quot;expectedValue is &quot;:&quot;昆明市:31_北京市:27_其他:42&quot;,&quot;expectedValue is&quot;:3517},&quot;dict_percent&quot;:{&quot;currentValue is &quot;:&quot;公务乘用车:71_出租乘用车:26_其他:3&quot;,&quot;expectedValue is &quot;:&quot;公务乘用车:72_出租乘用车:26_其他:2&quot;,&quot;expectedValue is&quot;:3517}}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -481,8 +145,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1848500436", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1848500436'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;avg_end_soc&quot;:{&quot;currentValue is &quot;:78,&quot;expectedValue is&quot;:77},&quot;avg_charge_time_length&quot;:{&quot;currentValue is &quot;:&quot;1h0min&quot;,&quot;expectedValue is&quot;:77,&quot;expectedValue is &quot;:&quot;0h54min&quot;},&quot;half_price_times&quot;:{&quot;currentValue is &quot;:78,&quot;expectedValue is&quot;:79,&quot;expectedValue is &quot;:&quot;0h54min&quot;},&quot;city_percent&quot;:{&quot;currentValue is &quot;:&quot;昆明市:31_北京市:28_其他:41&quot;,&quot;expectedValue is&quot;:79,&quot;expectedValue is &quot;:&quot;昆明市:31_北京市:27_其他:42&quot;},&quot;cars_nu&quot;:{&quot;currentValue is &quot;:3541,&quot;expectedValue is&quot;:3517,&quot;expectedValue is &quot;:&quot;昆明市:31_北京市:27_其他:42&quot;},&quot;dict_percent&quot;:{&quot;currentValue is &quot;:&quot;公务乘用车:71_出租乘用车:26_其他:3&quot;,&quot;expectedValue is&quot;:3517,&quot;expectedValue is &quot;:&quot;公务乘用车:72_出租乘用车:26_其他:2&quot;}}]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1294440562", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1294440562'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;avg_charge_time_length&quot;:{&quot;currentValue is &quot;:&quot;1h0min&quot;,&quot;expectedValue is &quot;:&quot;0h54min&quot;},&quot;half_price_times&quot;:{&quot;currentValue is &quot;:78,&quot;expectedValue is &quot;:&quot;0h54min&quot;,&quot;expectedValue is&quot;:79},&quot;city_percent&quot;:{&quot;currentValue is &quot;:&quot;昆明市:31_北京市:28_其他:41&quot;,&quot;expectedValue is &quot;:&quot;昆明市:31_北京市:27_其他:42&quot;,&quot;expectedValue is&quot;:79},&quot;cars_nu&quot;:{&quot;currentValue is &quot;:3541,&quot;expectedValue is &quot;:&quot;昆明市:31_北京市:27_其他:42&quot;,&quot;expectedValue is&quot;:3517},&quot;dict_percent&quot;:{&quot;currentValue is &quot;:&quot;公务乘用车:71_出租乘用车:26_其他:3&quot;,&quot;expectedValue is &quot;:&quot;公务乘用车:72_出租乘用车:26_其他:2&quot;,&quot;expectedValue is&quot;:3517}}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -545,6 +209,21 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@120d6fe6</td></tr>
 <tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 获取车辆轨迹接口参数vin, /external-api/lbs/test/vehicle/locations?, vin=L1HBBDA52JS000282&dateFrom=2019-10-20%2007%3A16%3A20&dateTo=2019-10-21%2007%3A16%3A20, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
+<td></td>
+<td>1</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@120d6fe6</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 获取车辆轨迹接口参数carNO, /external-api/lbs/test/vehicle/locations?, carNO=%E7%B2%A4T09400D&dateFrom=2019-10-20%2007%3A16%3A20&dateTo=2019-10-21%2007%3A16%3A20, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@120d6fe6</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 获取车辆轨迹接口返回为空, /external-api/lbs/test/vehicle/locations?, vin=123&dateFrom=2019-10-20%2007%3A16%3A20&dateTo=2019-10-21%2007%3A16%3A20, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@120d6fe6</td></tr>
+<tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签调用正常, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":200,"errorMsg":null,"data":{"risk_score":22.0257,"mileage_12":6303.0,"mileage_24":3623.0,"mileage_36":0.0,"avg_run_time_length_monthly":1.6908846153846152E7,"avg_run_speed":319.0673120668706,"brake_acc_count_per_100km":0.0,"acc_count_per_100km":0.0,"speed_range00_rate":0.2437958755679832,"speed_range20_rate":0.18437609227542817,"speed_range40_rate":0.19608528486543167,"speed_range60_rate":0.06675987416987067,"speed_range80_rate":0.00611674239776302,"speed_range100_rate":8.738203425375742E-4,"speed_range120_rate":0.0,"speed_range140_rate":0.0,"fatigue_driving_rate":0.0,"avg_run_days_monthly":7.769230769230769,"avg_run_count_monthly":12.076923076923077,"avg_fast_charge_count_monthly":0.0,"avg_slow_charge_count_monthly":1.9090909090909092},"error":false,"code":"10000"}</td>
 <td></td>
 <td>1</td>
@@ -561,6 +240,11 @@ function toggleAllBoxes() {
 <td>com.bitnei.apitest.testcases.saas.GetInsurance@6a79c292</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签签名长度不正确, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, yiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":200,"errorMsg":"Signature length not correct: got 127 but was expecting 128","data":null,"error":true,"code":"40000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@6a79c292</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签查询vin内容不存在, /external-api/vrm/insurance/lable, ?vin=HbkvkJ4hp%2FdyFkgYd73SkY4rUgVkldvzMKLOSH9M4UZgJATl7mo97PeqhVip%2FWP6iwioAiSMIN4KGUGF5zG8xHZibsr2vl1oIypNDAqbUf0s5xHW2moPsezG%2FedhntbeDRpAqV%2BPIlvq0kblkVewus3A%2B%2BvX32GHm70rs7xbJ6Y%3D, cw1EWG0f1cHwAvEfyifsToWHBy2CJkmeKu6cDwPMy9mW2K8ZgfJFZyteVatJAMpmWGAk2d17//F25cwP9phjoAlRT7IKBA1OQUMyN2IsDQJOukh12d7e9zt3Yd/cZaUp1mBTt8AZgtq1l45i0+p5cbGC7yJUn+hYZ8uXf2BOtr4=, 1581408151875, {"status":200,"errorMsg":null,"data":{"risk_score":null,"mileage_12":null,"mileage_24":null,"mileage_36":null,"avg_run_time_length_monthly":null,"avg_run_speed":null,"brake_acc_count_per_100km":null,"acc_count_per_100km":null,"speed_range00_rate":null,"speed_range20_rate":null,"speed_range40_rate":null,"speed_range60_rate":null,"speed_range80_rate":null,"speed_range100_rate":null,"speed_range120_rate":null,"speed_range140_rate":null,"fatigue_driving_rate":null,"avg_run_days_monthly":null,"avg_run_count_monthly":null,"avg_fast_charge_count_monthly":null,"avg_slow_charge_count_monthly":null},"error":false,"code":"10000"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.GetInsurance@6a79c292</td></tr>
@@ -637,7 +321,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台<br>Parameters: 分组列表搜索, /user-center/group/list, ?name=hg%E6%96%B0%E5%A2%9E%E5%88%86%E7%BB%84, {"status":200,"errorMsg":null,"data":[{"id":"a946dfe8a5504db2bdfd5f26be1a4071","name":"hg新增分组","description":"","createBy":"zhanghailong@bitnei.cn","tenant":"bitnei-cn"}],"error":false}</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@23bb8443</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台<br>Parameters: 单车画像查询, /vehicle-info/portrait/getVehiclePortrait/LNBSCC3H4HF327175, ?modelName=BJ7000C5E7-BEV, {"status":200,"errorMsg":null,"data":{"portraitChargeMonth":{"vin":"LNBSCC3H4HF327175","modelName":"BJ7000C5E7-BEV","chargeTimes":68,"chargeQuick":17,"chargeSlow":51,"halfPriceTimes":46,"avgStartSoc":36.46,"avgEndSoc":71.53,"avgChargeTime":"1小时36分钟"},"portraitReduceMonth":{"vin":"LNBSCC3H4HF327175","modelName":"BJ7000C5E7-BEV","reducePercent":7.3,"reduceScore":78.1,"leftMonth":61.1,"actualDriveRange":253.3,"power100km":16.8,"createDate":"2019-06-25"},"portraitStaticMonth":{"vin":"LNBSCC3H4HF327175","modelName":"BJ7000C5E7-BEV","brand":"北汽新能源","level":"A","powerType":"BEV","driveRange":"300.0","cityDept":"北京市","dictName":"出租乘用车","dashboardMileage":"115884.0","createDate":"2019-06-27","detailModel":"EU260"},"portraitRunMonth":{"vin":"LNBSCC3H4HF327175","modelName":"BJ7000C5E7-BEV","runDays":27,"runTimes":145,"soc20Times":23,"runMileage":6512.0,"peakTimes":40,"maxSpeed":105.2,"createDate":"2019-06-26"},"modelCapacityCurveList":[{"boxKey":"BJ7000C5E7-BEV","mil":0.0,"vol":"127.8"},{"boxKey":"BJ7000C5E7-BEV","mil":5000.0,"vol":"127.5"},{"boxKey":"BJ7000C5E7-BEV","mil":10000.0,"vol":"127.2"},{"boxKey":"BJ7000C5E7-BEV","mil":15000.0,"vol":"126.9"},{"boxKey":"BJ7000C5E7-BEV","mil":20000.0,"vol":"126.6"},{"boxKey":"BJ7000C5E7-BEV","mil":25000.0,"vol":"126.3"},{"boxKey":"BJ7000C5E7-BEV","mil":30000.0,"vol":"126.0"},{"boxKey":"BJ7000C5E7-BEV","mil":35000.0,"vol":"125.7"},{"boxKey":"BJ7000C5E7-BEV","mil":40000.0,"vol":"125.4"},{"boxKey":"BJ7000C5E7-BEV","mil":45000.0,"vol":"125.0"},{"boxKey":"BJ7000C5E7-BEV","mil":50000.0,"vol":"124.7"},{"boxKey":"BJ7000C5E7-BEV","mil":55000.0,"vol":"124.4"},{"boxKey":"BJ7000C5E7-BEV","mil":60000.0,"vol":"124.1"},{"boxKey":"BJ7000C5E7-BEV","mil":65000.0,"vol":"123.8"},{"boxKey":"BJ7000C5E7-BEV","mil":70000.0,"vol":"123.5"},{"boxKey":"BJ7000C5E7-BEV","mil":75000.0,"vol":"123.2"},{"boxKey":"BJ7000C5E7-BEV","mil":80000.0,"vol":"122.9"},{"boxKey":"BJ7000C5E7-BEV","mil":85000.0,"vol":"122.6"},{"boxKey":"BJ7000C5E7-BEV","mil":90000.0,"vol":"122.3"},{"boxKey":"BJ7000C5E7-BEV","mil":95000.0,"vol":"122.0"},{"boxKey":"BJ7000C5E7-BEV","mil":100000.0,"vol":"121.7"},{"boxKey":"BJ7000C5E7-BEV","mil":105000.0,"vol":"121.4"},{"boxKey":"BJ7000C5E7-BEV","mil":110000.0,"vol":"121.1"},{"boxKey":"BJ7000C5E7-BEV","mil":115000.0,"vol":"120.7"},{"boxKey":"BJ7000C5E7-BEV","mil":120000.0,"vol":"120.4"},{"boxKey":"BJ7000C5E7-BEV","mil":125000.0,"vol":"120.1"},{"boxKey":"BJ7000C5E7-BEV","mil":130000.0,"vol":"119.8"},{"boxKey":"BJ7000C5E7-BEV","mil":135000.0,"vol":"119.5"},{"boxKey":"BJ7000C5E7-BEV","mil":140000.0,"vol":"119.2"},{"boxKey":"BJ7000C5E7-BEV","mil":145000.0,"vol":"118.9"},{"boxKey":"BJ7000C5E7-BEV","mil":150000.0,"vol":"118.6"},{"boxKey":"BJ7000C5E7-BEV","mil":155000.0,"vol":"118.3"},{"boxKey":"BJ7000C5E7-BEV","mil":160000.0,"vol":"118.0"},{"boxKey":"BJ7000C5E7-BEV","mil":165000.0,"vol":"117.7"},{"boxKey":"BJ7000C5E7-BEV","mil":170000.0,"vol":"117.4"},{"boxKey":"BJ7000C5E7-BEV","mil":175000.0,"vol":"117.1"},{"boxKey":"BJ7000C5E7-BEV","mil":180000.0,"vol":"116.8"},{"boxKey":"BJ7000C5E7-BEV","mil":185000.0,"vol":"116.4"},{"boxKey":"BJ7000C5E7-BEV","mil":190000.0,"vol":"116.1"},{"boxKey":"BJ7000C5E7-BEV","mil":195000.0,"vol":"115.8"},{"boxKey":"BJ7000C5E7-BEV","mil":200000.0,"vol":"115.5"},{"boxKey":"BJ7000C5E7-BEV","mil":205000.0,"vol":"115.2"},{"boxKey":"BJ7000C5E7-BEV","mil":210000.0,"vol":"114.9"},{"boxKey":"BJ7000C5E7-BEV","mil":215000.0,"vol":"114.6"},{"boxKey":"BJ7000C5E7-BEV","mil":220000.0,"vol":"114.3"},{"boxKey":"BJ7000C5E7-BEV","mil":225000.0,"vol":"114.0"},{"boxKey":"BJ7000C5E7-BEV","mil":230000.0,"vol":"113.7"},{"boxKey":"BJ7000C5E7-BEV","mil":235000.0,"vol":"113.4"},{"boxKey":"BJ7000C5E7-BEV","mil":240000.0,"vol":"113.1"},{"boxKey":"BJ7000C5E7-BEV","mil":245000.0,"vol":"112.8"},{"boxKey":"BJ7000C5E7-BEV","mil":250000.0,"vol":"112.5"},{"boxKey":"BJ7000C5E7-BEV","mil":255000.0,"vol":"112.1"},{"boxKey":"BJ7000C5E7-BEV","mil":260000.0,"vol":"111.8"},{"boxKey":"BJ7000C5E7-BEV","mil":265000.0,"vol":"111.5"},{"boxKey":"BJ7000C5E7-BEV","mil":270000.0,"vol":"111.2"},{"boxKey":"BJ7000C5E7-BEV","mil":275000.0,"vol":"110.9"},{"boxKey":"BJ7000C5E7-BEV","mil":280000.0,"vol":"110.6"},{"boxKey":"BJ7000C5E7-BEV","mil":285000.0,"vol":"110.3"},{"boxKey":"BJ7000C5E7-BEV","mil":290000.0,"vol":"110.0"},{"boxKey":"BJ7000C5E7-BEV","mil":295000.0,"vol":"109.7"},{"boxKey":"BJ7000C5E7-BEV","mil":300000.0,"vol":"109.4"},{"boxKey":"BJ7000C5E7-BEV","mil":305000.0,"vol":"109.1"},{"boxKey":"BJ7000C5E7-BEV","mil":310000.0,"vol":"108.8"},{"boxKey":"BJ7000C5E7-BEV","mil":315000.0,"vol":"108.5"},{"boxKey":"BJ7000C5E7-BEV","mil":320000.0,"vol":"108.2"},{"boxKey":"BJ7000C5E7-BEV","mil":325000.0,"vol":"107.8"},{"boxKey":"BJ7000C5E7-BEV","mil":330000.0,"vol":"107.5"},{"boxKey":"BJ7000C5E7-BEV","mil":335000.0,"vol":"107.2"},{"boxKey":"BJ7000C5E7-BEV","mil":340000.0,"vol":"106.9"},{"boxKey":"BJ7000C5E7-BEV","mil":345000.0,"vol":"106.6"},{"boxKey":"BJ7000C5E7-BEV","mil":350000.0,"vol":"106.3"},{"boxKey":"BJ7000C5E7-BEV","mil":355000.0,"vol":"106.0"},{"boxKey":"BJ7000C5E7-BEV","mil":360000.0,"vol":"105.7"},{"boxKey":"BJ7000C5E7-BEV","mil":365000.0,"vol":"105.4"},{"boxKey":"BJ7000C5E7-BEV","mil":370000.0,"vol":"105.1"},{"boxKey":"BJ7000C5E7-BEV","mil":375000.0,"vol":"104.8"},{"boxKey":"BJ7000C5E7-BEV","mil":380000.0,"vol":"104.5"},{"boxKey":"BJ7000C5E7-BEV","mil":385000.0,"vol":"104.2"},{"boxKey":"BJ7000C5E7-BEV","mil":390000.0,"vol":"103.9"},{"boxKey":"BJ7000C5E7-BEV","mil":395000.0,"vol":"103.5"},{"boxKey":"BJ7000C5E7-BEV","mil":400000.0,"vol":"103.2"},{"boxKey":"BJ7000C5E7-BEV","mil":405000.0,"vol":"102.9"},{"boxKey":"BJ7000C5E7-BEV","mil":410000.0,"vol":"102.6"},{"boxKey":"BJ7000C5E7-BEV","mil":415000.0,"vol":"102.3"}],"vehicleCapacityCurveList":[{"boxKey":"LNBSCC3H4HF327175","mil":0.0,"vol":"124.3"},{"boxKey":"LNBSCC3H4HF327175","mil":5000.0,"vol":"123.9"},{"boxKey":"LNBSCC3H4HF327175","mil":10000.0,"vol":"123.6"},{"boxKey":"LNBSCC3H4HF327175","mil":15000.0,"vol":"123.3"},{"boxKey":"LNBSCC3H4HF327175","mil":20000.0,"vol":"122.9"},{"boxKey":"LNBSCC3H4HF327175","mil":25000.0,"vol":"122.6"},{"boxKey":"LNBSCC3H4HF327175","mil":30000.0,"vol":"122.2"},{"boxKey":"LNBSCC3H4HF327175","mil":35000.0,"vol":"121.9"},{"boxKey":"LNBSCC3H4HF327175","mil":40000.0,"vol":"121.6"},{"boxKey":"LNBSCC3H4HF327175","mil":45000.0,"vol":"121.2"},{"boxKey":"LNBSCC3H4HF327175","mil":50000.0,"vol":"120.9"},{"boxKey":"LNBSCC3H4HF327175","mil":55000.0,"vol":"120.5"},{"boxKey":"LNBSCC3H4HF327175","mil":60000.0,"vol":"120.2"},{"boxKey":"LNBSCC3H4HF327175","mil":65000.0,"vol":"119.9"},{"boxKey":"LNBSCC3H4HF327175","mil":70000.0,"vol":"119.5"},{"boxKey":"LNBSCC3H4HF327175","mil":75000.0,"vol":"119.2"},{"boxKey":"LNBSCC3H4HF327175","mil":80000.0,"vol":"118.8"},{"boxKey":"LNBSCC3H4HF327175","mil":85000.0,"vol":"118.5"},{"boxKey":"LNBSCC3H4HF327175","mil":90000.0,"vol":"118.2"},{"boxKey":"LNBSCC3H4HF327175","mil":95000.0,"vol":"117.8"},{"boxKey":"LNBSCC3H4HF327175","mil":100000.0,"vol":"117.5"},{"boxKey":"LNBSCC3H4HF327175","mil":105000.0,"vol":"117.1"},{"boxKey":"LNBSCC3H4HF327175","mil":110000.0,"vol":"116.8"},{"boxKey":"LNBSCC3H4HF327175","mil":115000.0,"vol":"116.5"},{"boxKey":"LNBSCC3H4HF327175","mil":120000.0,"vol":"116.1"},{"boxKey":"LNBSCC3H4HF327175","mil":125000.0,"vol":"115.8"},{"boxKey":"LNBSCC3H4HF327175","mil":130000.0,"vol":"115.4"},{"boxKey":"LNBSCC3H4HF327175","mil":135000.0,"vol":"115.1"},{"boxKey":"LNBSCC3H4HF327175","mil":140000.0,"vol":"114.8"},{"boxKey":"LNBSCC3H4HF327175","mil":145000.0,"vol":"114.4"},{"boxKey":"LNBSCC3H4HF327175","mil":150000.0,"vol":"114.1"},{"boxKey":"LNBSCC3H4HF327175","mil":155000.0,"vol":"113.7"},{"boxKey":"LNBSCC3H4HF327175","mil":160000.0,"vol":"113.4"},{"boxKey":"LNBSCC3H4HF327175","mil":165000.0,"vol":"113.1"},{"boxKey":"LNBSCC3H4HF327175","mil":170000.0,"vol":"112.7"},{"boxKey":"LNBSCC3H4HF327175","mil":175000.0,"vol":"112.4"},{"boxKey":"LNBSCC3H4HF327175","mil":180000.0,"vol":"112.0"},{"boxKey":"LNBSCC3H4HF327175","mil":185000.0,"vol":"111.7"},{"boxKey":"LNBSCC3H4HF327175","mil":190000.0,"vol":"111.4"},{"boxKey":"LNBSCC3H4HF327175","mil":195000.0,"vol":"111.0"},{"boxKey":"LNBSCC3H4HF327175","mil":200000.0,"vol":"110.7"},{"boxKey":"LNBSCC3H4HF327175","mil":205000.0,"vol":"110.3"},{"boxKey":"LNBSCC3H4HF327175","mil":210000.0,"vol":"110.0"},{"boxKey":"LNBSCC3H4HF327175","mil":215000.0,"vol":"109.6"},{"boxKey":"LNBSCC3H4HF327175","mil":220000.0,"vol":"109.3"},{"boxKey":"LNBSCC3H4HF327175","mil":225000.0,"vol":"109.0"},{"boxKey":"LNBSCC3H4HF327175","mil":230000.0,"vol":"108.6"},{"boxKey":"LNBSCC3H4HF327175","mil":235000.0,"vol":"108.3"},{"boxKey":"LNBSCC3H4HF327175","mil":240000.0,"vol":"107.9"},{"boxKey":"LNBSCC3H4HF327175","mil":245000.0,"vol":"107.6"},{"boxKey":"LNBSCC3H4HF327175","mil":250000.0,"vol":"107.3"},{"boxKey":"LNBSCC3H4HF327175","mil":255000.0,"vol":"106.9"},{"boxKey":"LNBSCC3H4HF327175","mil":260000.0,"vol":"106.6"},{"boxKey":"LNBSCC3H4HF327175","mil":265000.0,"vol":"106.2"},{"boxKey":"LNBSCC3H4HF327175","mil":270000.0,"vol":"105.9"},{"boxKey":"LNBSCC3H4HF327175","mil":275000.0,"vol":"105.6"},{"boxKey":"LNBSCC3H4HF327175","mil":280000.0,"vol":"105.2"},{"boxKey":"LNBSCC3H4HF327175","mil":285000.0,"vol":"104.9"},{"boxKey":"LNBSCC3H4HF327175","mil":290000.0,"vol":"104.5"},{"boxKey":"LNBSCC3H4HF327175","mil":295000.0,"vol":"104.2"},{"boxKey":"LNBSCC3H4HF327175","mil":300000.0,"vol":"103.9"},{"boxKey":"LNBSCC3H4HF327175","mil":305000.0,"vol":"103.5"},{"boxKey":"LNBSCC3H4HF327175","mil":310000.0,"vol":"103.2"},{"boxKey":"LNBSCC3H4HF327175","mil":315000.0,"vol":"102.8"},{"boxKey":"LNBSCC3H4HF327175","mil":320000.0,"vol":"102.5"},{"boxKey":"LNBSCC3H4HF327175","mil":325000.0,"vol":"102.2"},{"boxKey":"LNBSCC3H4HF327175","mil":330000.0,"vol":"101.8"},{"boxKey":"LNBSCC3H4HF327175","mil":335000.0,"vol":"101.5"},{"boxKey":"LNBSCC3H4HF327175","mil":340000.0,"vol":"101.1"},{"boxKey":"LNBSCC3H4HF327175","mil":345000.0,"vol":"100.8"},{"boxKey":"LNBSCC3H4HF327175","mil":350000.0,"vol":"100.5"},{"boxKey":"LNBSCC3H4HF327175","mil":355000.0,"vol":"100.1"},{"boxKey":"LNBSCC3H4HF327175","mil":360000.0,"vol":"99.8"},{"boxKey":"LNBSCC3H4HF327175","mil":365000.0,"vol":"99.4"}]},"error":false}</td>
@@ -682,7 +366,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台<br>Parameters: 新增数据集页面跳转, /ras/datasource, , {"status":200,"errorMsg":null,"error":false}</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@23bb8443</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台<br>Parameters: 新增报表获取仪表盘名称, /ras/dashboard/names, , {"status":200,"errorMsg":null,"error":false}</td>
@@ -717,7 +401,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车辆总数, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+limit++1%3B&members=&limit=0&_=1578559299715, {"result":[["java.lang.Integer",2255219]]}</td>
 <td></td>
-<td>4</td>
+<td>6</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1372ed45</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车速度大于220, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+speed+%3E+220+limit+1&members=&limit=0&_=1578563123416, {"result":[["java.lang.Integer",86]]}</td>
@@ -727,17 +411,17 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 里程表大于200000, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+mileage%3E200000+limit+1&members=&limit=0&_=1578563187896, {"result":[["java.lang.Integer",15507]]}</td>
 <td></td>
-<td>8</td>
+<td>7</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1372ed45</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标异常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3C73.66+or+lng+%3E135.05+or+lat+%3C+3.86+or+lat+%3E53.55+limit+1&members=&limit=0&_=1578563382007, {"result":[["java.lang.Integer",374583]]}</td>
 <td></td>
-<td>15</td>
+<td>16</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1372ed45</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标为0,0, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng%3D0+and+lat%3D0+limit+1&members=&limit=0&_=1578563056235, {"result":[["java.lang.Integer",369622]]}</td>
 <td></td>
-<td>7</td>
+<td>8</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1372ed45</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标正常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3E73.66+and+lng+%3C135.05+and+lat+%3E+3.86+and+lat+%3C53.55++limit+1&members=&limit=0&_=1578621101331, {"result":[["java.lang.Integer",1876945]]}</td>

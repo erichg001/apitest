@@ -9,26 +9,14 @@
   <parameter name="hostsaas" value="http://test-saas.bitnei.cn"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
-  <test thread-count="5" name="SAAS(failed)" parallel="classes">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.saas.GetInsurance">
-        <methods>
-          <include name="setUp"/>
-          <include name="Insurance" invocation-numbers="5"/>
-        </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.GetInsurance -->
       <class name="com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel">
         <methods>
           <include name="UserInfoRgisterData" invocation-numbers="2 4"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel -->
-      <class name="com.bitnei.apitest.testcases.saas.ApiTest">
-        <methods>
-          <include name="ApiTestCode" invocation-numbers="6 7 8 9 10 11"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
     </classes>
-  </test> <!-- SAAS(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->
