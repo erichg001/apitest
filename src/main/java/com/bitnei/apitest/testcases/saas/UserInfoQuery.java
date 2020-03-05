@@ -19,6 +19,7 @@ import com.bitnei.apitest.dao.impl.PlatFormDao;
 import com.bitnei.apitest.dataprovider.saas.UserProvider;
 import com.bitnei.apitest.pro.saas.UserPro;
 import com.bitnei.apitest.tool.DiffMethod;
+import com.bitnei.apitest.utils.ExcelReader;
 import com.bitnei.apitest.utils.RestClient;
 
 import net.sf.json.JSONObject;
@@ -28,8 +29,9 @@ public class UserInfoQuery {
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
 	GetCookie getCookisaas = new GetCookie();
-	String authorization = "";
+	String[] authorization = null;
 	HashMap<String,String> createTimeRange = new HashMap<String,String>();
+	SaasGetSec saasGetSec = new SaasGetSec();
 	
 	@Resource(name="platformdao") 
     private PlatFormDao platformdao;
@@ -37,18 +39,10 @@ public class UserInfoQuery {
 	
 	@Parameters({"hostsaas"})
 	@BeforeClass
-	public void setUp(String hostsaas) {
+	public void setUp(String hostsaas) throws InterruptedException {
 		url = hostsaas + "/user-center/userInfo/userWithRoles";
 		//设置cookie		
-		try {
-			 authorization = getCookisaas.login();
-		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}		
+		authorization = saasGetSec.GetSec();		
 	}
 	
 	@Test(description="saas平台用户查询",priority =0,dataProvider="dataprovider1",
@@ -59,7 +53,9 @@ public class UserInfoQuery {
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("Cookie",authorization);
+		headermap.put("pub-sec",authorization[1]);
+		headermap.put("sg-sec",authorization[2]);
+		headermap.put("to-sec",authorization[0]);
 		//入参设置
 		createTimeRange.put("from", "");
 		createTimeRange.put("to","");

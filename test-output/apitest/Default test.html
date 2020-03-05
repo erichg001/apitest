@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 05 14:35:15 CST 2020</td>
+<td>Started on:</td><td>Thu Mar 05 17:37:01 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22959 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20033 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,10 +75,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.PostApiTestParas.ApiTest()'><b>ApiTest</b><br>Test class: com.bitnei.apitest.testcases.saas.PostApiTestParas<br>Test method: api接口<br>Parameters: API接口EC动力接收充电数据, /external-api/vehicle-charge/charge/herui/vehicle/receive, {"carNO":"京ADK2768","startSoc":"41","endSoc":"100","lat":"40.1297269989","lng":"116.5992975284","station":"EC动力顺丰充电站","startTime":"2019-10-12 21:38:25","endTime":"2019-10-13 01:24:25","id":"38145","electricAmount":"29.97","current":"1.9","voltage":"402","type":"1"}, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"10000"}</td>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户名称查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"hangang","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"189****6589","password":"N/A","title":"","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","super":false,"admin":false}]},"error":false}</td>
 <td></td>
-<td>4</td>
-<td>com.bitnei.apitest.testcases.saas.PostApiTestParas@6cc7b4de</td></tr>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@530612ba</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按手机号码查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"18110024813","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"张海龙","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","super":true,"admin":true}]},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@530612ba</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按创建时间查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"2019-07-11 04:46:00","to":"2019-07-19 04:46:00"},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"张海龙","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","super":true,"admin":true}]},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@530612ba</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户类型查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"张海龙","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","super":true,"admin":true}]},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@530612ba</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按邮箱查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"SaaS@bitnei.cn","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"张海龙","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","super":true,"admin":true}]},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@530612ba</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":"USER_SUPER_ADMIN"}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"张海龙","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"zhanghailong@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","super":true,"admin":true}]},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@530612ba</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 邀请用户hangang@bitnei.cn已经存在, /user-center/user/invite, {"admin":false,"email":"hangang@bitnei.cn","mobile":"13312223333","nickName":"hangang","title":""}, {"status":400,"errorMsg":"str:用户hangang@bitnei.cn已经存在","data":null,"error":true}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@530612ba</td></tr>
 </table><p>
 </body>
 </html>

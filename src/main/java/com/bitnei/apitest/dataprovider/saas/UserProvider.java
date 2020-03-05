@@ -6,7 +6,7 @@ public class UserProvider {
 	@DataProvider(name="dataprovider1")  
     public static Object[][] dataProvider1(){  
         return new Object[][]{  
-        	{"{\"status\":200,\"errorMsg\":null,\"data\":[{\"id\":\"c2da7bb67b354e32b140fa4676310de1\",\"username\":\"hangang@bitnei.cn\",\"nickName\":\"hangang\",\"email\":\"hangang@bitnei.cn\",\"password\":\"N/A\",\"status\":\"ACTIVE\",\"createBy\":\"hangang@bitnei.cn\",\"createTime\":\"2019-09-16 13:50:38\",\"tenant\":\"bitnei-cn\",\"origin\":\"APPLY\",\"admin\":false,\"super\":false}],\"error\":false}"}
+        	{"{\"status\":200,\"errorMsg\":null,\"data\":{\"pageNum\":1,\"pageSize\":10,\"size\":1,\"pages\":1,\"total\":1,\"list\":[{\"typeName\":\"UserAdmin\",\"id\":\"c2da7bb67b354e32b140fa4676310de1\",\"username\":\"hangang@bitnei.cn\",\"nickName\":\"hangang\",\"email\":\"hangang@bitnei.cn\",\"mobile\":\"189****6589\",\"password\":\"N/A\",\"title\":\"\",\"status\":\"ACTIVE\",\"createBy\":\"hangang@bitnei.cn\",\"createTime\":\"2019-09-16 13:50:38\",\"tenant\":\"bitnei-cn\",\"origin\":\"APPLY\",\"super\":false,\"admin\":false}]},\"error\":false}"}
         };
     }
 	

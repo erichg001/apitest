@@ -42,7 +42,8 @@ public class UserInfoQueryByExcel {
 		String ExcelFilePath= pathroad ;
         String sheetName="saaspost";
         ex = new ExcelReader(ExcelFilePath, sheetName);
-		authorization = saasGetSec.GetSec();	
+		authorization = saasGetSec.GetSec();
+		Thread.sleep(5000);
 		       
 	}
 	
