@@ -11,12 +11,12 @@
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.saas.UserInfoQuery">
+      <class name="com.bitnei.apitest.testcases.saas.GetInsurance">
         <methods>
           <include name="setUp"/>
-          <include name="UserInfoQueryData" invocation-numbers="0"/>
+          <include name="Insurance" invocation-numbers="5"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.UserInfoQuery -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.GetInsurance -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->
