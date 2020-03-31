@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SAAS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>52/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>53/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 16 13:30:23 CST 2020</td>
+<td>Started on:</td><td>Tue Mar 31 11:15:51 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>219 seconds (219365 ms)</td>
+<tr><td>Total time:</td><td>226 seconds (226199 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,206 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按企业名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":"REGISTER_FREE","status":"","tenant":"新源科技"}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"test","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","logo":null}]},"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;contactName&quot;:{&quot;currentValue is &quot;:&quot;新源科技&quot;,&quot;expectedValue is &quot;:&quot;张海龙&quot;},&quot;connectMobile&quot;:{&quot;currentValue is &quot;:&quot;18918901890&quot;,&quot;expectedValue is &quot;:&quot;18110024813&quot;},&quot;title&quot;:{&quot;currentValue is &quot;:&quot;Boss&quot;,&quot;expectedValue is &quot;:&quot;test&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace671357082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace671357082'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;contactName&quot;:{&quot;currentValue is &quot;:&quot;新源科技&quot;,&quot;expectedValue is &quot;:&quot;张海龙&quot;},&quot;connectMobile&quot;:{&quot;currentValue is &quot;:&quot;18918901890&quot;,&quot;expectedValue is &quot;:&quot;18110024813&quot;},&quot;title&quot;:{&quot;currentValue is &quot;:&quot;Boss&quot;,&quot;expectedValue is &quot;:&quot;test&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18110024813","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"test","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","logo":null}]},"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;size&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;pages&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;total&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;Length&quot;:{&quot;actualLenth&quot;:0,&quot;expectLenth&quot;:1}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace424360250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace424360250'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;size&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;pages&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;total&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;Length&quot;:{&quot;actualLenth&quot;:0,&quot;expectLenth&quot;:1}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":"","superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn","projectName":"新能源汽车大数据平台","userQuantity":0,"logo":null}]},"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userQuantity&quot;:{&quot;currentValue is &quot;:10,&quot;expectedValue is&quot;:0}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1490090637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1490090637'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userQuantity&quot;:{&quot;currentValue is &quot;:10,&quot;expectedValue is&quot;:0}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"test","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","logo":null}]},"error":false}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;contactName&quot;:{&quot;currentValue is &quot;:&quot;新源科技&quot;,&quot;expectedValue is &quot;:&quot;张海龙&quot;},&quot;connectMobile&quot;:{&quot;currentValue is &quot;:&quot;18918901890&quot;,&quot;expectedValue is &quot;:&quot;18110024813&quot;},&quot;title&quot;:{&quot;currentValue is &quot;:&quot;Boss&quot;,&quot;expectedValue is &quot;:&quot;test&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace392947177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace392947177'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;contactName&quot;:{&quot;currentValue is &quot;:&quot;新源科技&quot;,&quot;expectedValue is &quot;:&quot;张海龙&quot;},&quot;connectMobile&quot;:{&quot;currentValue is &quot;:&quot;18918901890&quot;,&quot;expectedValue is &quot;:&quot;18110024813&quot;},&quot;title&quot;:{&quot;currentValue is &quot;:&quot;Boss&quot;,&quot;expectedValue is &quot;:&quot;test&quot;}}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,7 +277,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.PostApiTestParas.ApiTest()'><b>ApiTest</b><br>Test class: com.bitnei.apitest.testcases.saas.PostApiTestParas<br>Test method: api接口<br>Parameters: API接口EC动力接收充电数据, /external-api/vehicle-charge/charge/herui/vehicle/receive, {"carNO":"京ADK2768","startSoc":"41","endSoc":"100","lat":"40.1297269989","lng":"116.5992975284","station":"EC动力顺丰充电站","startTime":"2019-10-12 21:38:25","endTime":"2019-10-13 01:24:25","id":"38145","electricAmount":"29.97","current":"1.9","voltage":"402","type":"1"}, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"10000"}</td>
 <td></td>
-<td>7</td>
+<td>6</td>
 <td>com.bitnei.apitest.testcases.saas.PostApiTestParas@27c6e487</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 好车伯乐接口返回为空, /external-api/vehicle-battery/autobole/vehicle/static?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
@@ -122,7 +322,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签调用正常, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":200,"errorMsg":null,"data":{"risk_score":22.0257,"mileage_12":6303.0,"mileage_24":3623.0,"mileage_36":0.0,"avg_run_time_length_monthly":1.6908846153846152E7,"avg_run_speed":319.0673120668706,"brake_acc_count_per_100km":0.0,"acc_count_per_100km":0.0,"speed_range00_rate":0.2437958755679832,"speed_range20_rate":0.18437609227542817,"speed_range40_rate":0.19608528486543167,"speed_range60_rate":0.06675987416987067,"speed_range80_rate":0.00611674239776302,"speed_range100_rate":8.738203425375742E-4,"speed_range120_rate":0.0,"speed_range140_rate":0.0,"fatigue_driving_rate":0.0,"avg_run_days_monthly":7.769230769230769,"avg_run_count_monthly":12.076923076923077,"avg_fast_charge_count_monthly":0.0,"avg_slow_charge_count_monthly":1.9090909090909092},"error":false,"code":"10000"}</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签vin未加密码, /external-api/vrm/insurance/lable, ?vin=LGXC76C36G0156932, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":406,"errorMsg":"确保VIN是否已加密！","data":null,"error":true,"code":"40000"}</td>
@@ -145,32 +345,52 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
 <tr>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险调用正常--LGXC76C3XJ0108468, /external-api/vrm/genilex/insurance/lable, ?vin=CEICmUK8TYpnFfkToJCvfC%2FGI%2FHxHhgNewUaf%2B2xJmtH4LpUD3HEvCfs8Vh9yEnjWViYEcRQUtnoUhdo3Cm95%2BrSd%2BBh5dhyqrXywGx7NHJfGuUWer4xkCF78e7qwwNoqzkv1DidMPpA45quVI0L8PMw%2BSMbYNiu70hVS5adN84%3D&customerId=123, djKx876kY0HGWS4UKNCwasskI3j5vh92Y40L6eEmY7TzysROyIcPccFnFlE76BUUXfWz1YGDjUTa5rLx4HJzty3XQhQKZK23O76P6HfJJsg0slkBufD6J6aVgdIIfLo7Evny7PyJPDpHqRK3PvnTFxoge3AO+PHJe2HlGO29q1s=, 1584338303978, {"status":200,"errorMsg":null,"data":{"risk_score":24.41971292259522,"mileage_12":3.0,"mileage_24":1.0,"mileage_36":0.0},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险调用正常--津AF05690, /external-api/vrm/genilex/insurance/lable, ?licensePlate=FkgzYFyc2oOym3KJnuxGEABKA2p0p1c3PY4EVlCM9P13DvBK%2BO9loMrTduQA3wruxKdqKV9aqonahmuoocjdCa91amdP36DMya4zrePl9DQeW6XjT61GXmY5QqPIEXR1A7qKt8NSt5ck0dEUeqQT%2F%2FEOXXdvEnoWpnOeZ%2F6LG8A%3D&customerId=123, UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=, 1584339230681, {"status":200,"errorMsg":null,"data":{"risk_score":24.41971292259522,"mileage_12":3.0,"mileage_24":1.0,"mileage_36":0.0},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险车架号与车牌号至少传一个, /external-api/vrm/genilex/insurance/lable, ?customerId=123, UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=, 1584339230681, {"status":200,"errorMsg":"车架号与车牌号至少传一个","data":null,"error":true,"code":"40000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险查询vin无数据, /external-api/vrm/genilex/insurance/lable, ?vin=KaXkK8k5Y3zhSSW1acBVm%2B%2BWOr5Kp8s1t5EWLAcftir1564%2BhsEdTemSjtk18KasjykZDWNshvLFIiQH1jazsVUVlojvthvy6fXe34g1Gsdx6a3hFB6XYxLFjAL%2Fq2wG5LU0yvZrToV8mXOnUOKRTFJTfV1WoQF0B%2F4E6Or4tXk%3D&customerId=123, oa1rG573rgsTa5xbgSfniR5kCjHxZZeuzAXJjZP5AdXwg5Kd4sjzMXipeLojJpa6vwY8d0Xpui2JdwBBeawWogi6XSCCyMJBiWr+fkrcac7r7ctU+cu357bpam4ARq16POBxApw3H/WaKTeWOfF+siVsIcFbMxIn6EkVahCtw5w=, 1584343514140, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
+<tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户名称查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"hangang","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"189****6589","password":"N/A","title":"","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","super":false,"admin":false}]},"error":false}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@6b0c2d26</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按手机号码查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"18110024813","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"张海龙","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","super":true,"admin":true}]},"error":false}</td>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按手机号码查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"18945696589","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"c2da7bb67b354e32b140fa4676310de1","username":"hangang@bitnei.cn","nickName":"hangang","email":"hangang@bitnei.cn","mobile":"189****6589","password":"N/A","title":"","status":"ACTIVE","createBy":"hangang@bitnei.cn","createTime":"2019-09-16 13:50:38","tenant":"bitnei-cn","origin":"APPLY","admin":false,"super":false}]},"error":false}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@6b0c2d26</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按创建时间查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"2019-07-11 04:46:00","to":"2019-07-19 04:46:00"},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"张海龙","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","super":true,"admin":true}]},"error":false}</td>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按创建时间查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"2019-07-11 04:46:00","to":"2019-07-19 04:46:00"},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"新源科技","email":"SaaS@bitnei.cn","password":"N/A","title":"Boss","status":"ACTIVE","createBy":"SaaS@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}]},"error":false}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@6b0c2d26</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户类型查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"张海龙","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"SaaS@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","super":true,"admin":true}]},"error":false}</td>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户类型查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"新源科技","email":"SaaS@bitnei.cn","password":"N/A","title":"Boss","status":"ACTIVE","createBy":"SaaS@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}]},"error":false}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@6b0c2d26</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按邮箱查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"SaaS@bitnei.cn","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"张海龙","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","super":true,"admin":true}]},"error":false}</td>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按邮箱查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"SaaS@bitnei.cn","mobile":"","nickName":"","origin":"","status":"","userRole":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"新源科技","email":"SaaS@bitnei.cn","password":"N/A","title":"Boss","status":"ACTIVE","createBy":"SaaS@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}]},"error":false}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@6b0c2d26</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":"USER_SUPER_ADMIN"}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"张海龙","email":"SaaS@bitnei.cn","mobile":"181****4813","password":"N/A","title":"test","status":"ACTIVE","createBy":"SaaS@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","super":true,"admin":true}]},"error":false}</td>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 按用户角色（超管）查询用户, /user-center/userInfo/userWithRoles, {"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"REGISTER","status":"","userRole":"USER_SUPER_ADMIN"}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"782783112a42461298fbea5e0b5942c3","username":"SaaS@bitnei.cn","nickName":"新源科技","email":"SaaS@bitnei.cn","password":"N/A","title":"Boss","status":"ACTIVE","createBy":"SaaS@bitnei.cn","createTime":"2019-07-12 15:18:48","tenant":"bitnei-cn","origin":"REGISTER","admin":true,"super":true}]},"error":false}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@6b0c2d26</td></tr>
@@ -180,25 +400,10 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@6b0c2d26</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按企业名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":"REGISTER_FREE","status":"","tenant":"新源科技"}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"test","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","logo":null}]},"error":false}</td>
+<td title='com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel<br>Test method: saas平台用户查询<br>Parameters: 操作日志按操作行为和时间查询, /web/log-info/log/userAction?page=1&size=10, {"startTime":"2020-03-25 10:52:03","endTime":"2020-03-26 10:52:03","username":"","action":"DASHBOARD_EDIT"}, {"status":200,"errorMsg":null,"data":{"total":1,"list":[{"username":"guoxin@bitnei.cn","tenant":"bitnei-cn","tenantId":"9c178ab462874ed28e92d245310e719f","action":"编辑仪表盘","success":"<font style='color:#0b7500'>成功</font>","record":"用户<font style='color:#1890ff'>guoxin@bitnei.cn</font>编辑仪表盘<font style='color:#1890ff'>cjybp编辑</font>","remoteAddr":"100.99.122.116","startTime":"2020-03-25 15:15:44","endTime":"2020-03-25 15:15:44","type":"前台","target":null,"targetId":null,"remark":null,"targetUser":null}],"pageNum":1,"pageSize":10,"size":1,"startRow":1,"endRow":1,"pages":1,"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1},"error":false}</td>
 <td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18110024813","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"test","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","logo":null}]},"error":false}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":"","superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn","projectName":"新能源汽车大数据平台","userQuantity":0,"logo":null}]},"error":false}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"test","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","logo":null}]},"error":false}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
+<td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@6b0c2d26</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}, {"status":400,"errorMsg":"str:用户hangang@bitnei.cn已经存在","data":null,"error":true}</td>
 <td></td>
@@ -307,32 +512,32 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车辆总数, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+limit++1%3B&members=&limit=0&_=1578559299715, {"result":[["java.lang.Integer",2255219]]}</td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@49070868</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车速度大于220, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+speed+%3E+220+limit+1&members=&limit=0&_=1578563123416, {"result":[["java.lang.Integer",86]]}</td>
 <td></td>
-<td>8</td>
+<td>9</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@49070868</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 里程表大于200000, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+mileage%3E200000+limit+1&members=&limit=0&_=1578563187896, {"result":[["java.lang.Integer",15507]]}</td>
 <td></td>
-<td>7</td>
+<td>9</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@49070868</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标异常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3C73.66+or+lng+%3E135.05+or+lat+%3C+3.86+or+lat+%3E53.55+limit+1&members=&limit=0&_=1578563382007, {"result":[["java.lang.Integer",374583]]}</td>
 <td></td>
-<td>16</td>
+<td>18</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@49070868</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标为0,0, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng%3D0+and+lat%3D0+limit+1&members=&limit=0&_=1578563056235, {"result":[["java.lang.Integer",369622]]}</td>
 <td></td>
-<td>8</td>
+<td>10</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@49070868</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标正常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3E73.66+and+lng+%3C135.05+and+lat+%3E+3.86+and+lat+%3C53.55++limit+1&members=&limit=0&_=1578621101331, {"result":[["java.lang.Integer",1876945]]}</td>
 <td></td>
-<td>17</td>
+<td>19</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@49070868</td></tr>
 </table><p>
 </body>

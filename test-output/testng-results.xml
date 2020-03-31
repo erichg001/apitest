@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="27722" started-at="2020-03-16T07:28:28Z" finished-at="2020-03-16T07:28:55Z">
+  <suite name="apitest" duration-ms="23324" started-at="2020-03-31T03:35:04Z" finished-at="2020-03-31T03:35:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27722" started-at="2020-03-16T07:28:28Z" finished-at="2020-03-16T07:28:55Z">
-      <class name="com.bitnei.apitest.testcases.saas.GetInsurance">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@530612ba]" name="setUp" is-config="true" duration-ms="20520" started-at="2020-03-16T07:28:28Z" finished-at="2020-03-16T07:28:48Z">
+    <test name="Default test" duration-ms="23324" started-at="2020-03-31T03:35:04Z" finished-at="2020-03-31T03:35:27Z">
+      <class name="com.bitnei.apitest.testcases.saas.PostBackSaas">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@530612ba]" name="setUp" is-config="true" duration-ms="21481" started-at="2020-03-31T03:35:04Z" finished-at="2020-03-31T03:35:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://test-saas.bitnei.cn]]>
+                <![CDATA[http://test-back-saas.bitnei.cn]]>
               </value>
             </param>
             <param index="1">
@@ -23,331 +23,189 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@530612ba]" name="Insurance" duration-ms="1521" started-at="2020-03-16T07:28:48Z" description="openapi接口" data-provider="dp" finished-at="2020-03-16T07:28:50Z">
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@530612ba]" name="UserInfoQueryData" duration-ms="459" started-at="2020-03-31T03:35:25Z" description="saas后台用户查询" data-provider="dp" finished-at="2020-03-31T03:35:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[平安标签调用正常]]>
+                <![CDATA[按企业名称查询租户]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external-api/vrm/insurance/lable]]>
+                <![CDATA[/user-center/tenant/list]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=]]>
+                <![CDATA[{"startTime":"","endTime":"","email":"","mobile":"","origin":"REGISTER_FREE","status":"","tenant":"新源科技"}]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1581407620143]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":{"risk_score":22.0257,"mileage_12":6303.0,"mileage_24":3623.0,"mileage_36":0.0,"avg_run_time_length_monthly":1.6908846153846152E7,"avg_run_speed":319.0673120668706,"brake_acc_count_per_100km":0.0,"acc_count_per_100km":0.0,"speed_range00_rate":0.2437958755679832,"speed_range20_rate":0.18437609227542817,"speed_range40_rate":0.19608528486543167,"speed_range60_rate":0.06675987416987067,"speed_range80_rate":0.00611674239776302,"speed_range100_rate":8.738203425375742E-4,"speed_range120_rate":0.0,"speed_range140_rate":0.0,"fatigue_driving_rate":0.0,"avg_run_days_monthly":7.769230769230769,"avg_run_count_monthly":12.076923076923077,"avg_fast_charge_count_monthly":0.0,"avg_slow_charge_count_monthly":1.9090909090909092},"error":false,"code":"10000"}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"新源科技","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18918901890","origin":"REGISTER_FREE","userNum":15,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"Boss","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","userQuantity":30,"logo":null}]},"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Insurance -->
-        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@530612ba]" name="Insurance" duration-ms="37" started-at="2020-03-16T07:28:50Z" description="openapi接口" data-provider="dp" finished-at="2020-03-16T07:28:50Z">
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@530612ba]" name="UserInfoQueryData" duration-ms="170" started-at="2020-03-31T03:35:26Z" description="saas后台用户查询" data-provider="dp" finished-at="2020-03-31T03:35:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[平安标签vin未加密码]]>
+                <![CDATA[按手机号码查询租户]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external-api/vrm/insurance/lable]]>
+                <![CDATA[/user-center/tenant/list]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?vin=LGXC76C36G0156932]]>
+                <![CDATA[{"startTime":"","endTime":"","email":"","mobile":"18918901890","origin":"REGISTER_FREE","status":"","tenant":""}]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1581407620143]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{"status":406,"errorMsg":"确保VIN是否已加密！","data":null,"error":true,"code":"40000"}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"新源科技","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18918901890","origin":"REGISTER_FREE","userNum":15,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"Boss","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","userQuantity":30,"logo":null}]},"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Insurance -->
-        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@530612ba]" name="Insurance" duration-ms="88" started-at="2020-03-16T07:28:50Z" description="openapi接口" data-provider="dp" finished-at="2020-03-16T07:28:50Z">
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@530612ba]" name="UserInfoQueryData" duration-ms="202" started-at="2020-03-31T03:35:26Z" description="saas后台用户查询" data-provider="dp" finished-at="2020-03-31T03:35:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[平安标签时间戳错误认证失败]]>
+                <![CDATA[按创建时间查询租户]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external-api/vrm/insurance/lable]]>
+                <![CDATA[/user-center/tenant/list]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=]]>
+                <![CDATA[{"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1581407620140]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{"status":406,"errorMsg":"验签失败！","data":null,"error":true,"code":"40000"}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","userNum":5,"createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":"","superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn","projectName":"新能源汽车大数据平台","userQuantity":10,"logo":null}]},"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Insurance -->
-        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@530612ba]" name="Insurance" duration-ms="79" started-at="2020-03-16T07:28:50Z" description="openapi接口" data-provider="dp" finished-at="2020-03-16T07:28:50Z">
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@530612ba]" name="UserInfoQueryData" duration-ms="169" started-at="2020-03-31T03:35:26Z" description="saas后台用户查询" data-provider="dp" finished-at="2020-03-31T03:35:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[平安标签签名长度不正确]]>
+                <![CDATA[按用户类型和邮箱查询租户]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external-api/vrm/insurance/lable]]>
+                <![CDATA[/user-center/tenant/list]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=]]>
+                <![CDATA[{"startTime":"","endTime":"","email":"SaaS@bitnei.cn","mobile":"","origin":"","status":"","tenant":""}]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[yiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1581407620143]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":"Signature length not correct: got 127 but was expecting 128","data":null,"error":true,"code":"40000"}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"aa2a8a54936542b48e78346cb4f0df33","organization":"新源科技","tenant":"bitnei-cn110222","contactName":"SaaS","contactEmail":"SaaS@bitnei.cn","connectMobile":"18110024813","origin":"BACKEND_ADD","userNum":1,"createTime":"2020-01-16 09:12:12","status":"ACTIVE","title":"test","superId":"47aa131dd5af48b59f51a588fb0d3a15","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台2","userQuantity":5,"logo":null}]},"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Insurance -->
-        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@530612ba]" name="Insurance" duration-ms="1104" started-at="2020-03-16T07:28:50Z" description="openapi接口" data-provider="dp" finished-at="2020-03-16T07:28:51Z">
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@530612ba]" name="UserInfoQueryData" duration-ms="141" started-at="2020-03-31T03:35:26Z" description="saas后台用户查询" data-provider="dp" finished-at="2020-03-31T03:35:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[平安标签查询vin内容不存在]]>
+                <![CDATA[重复添加租户]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external-api/vrm/insurance/lable]]>
+                <![CDATA[/user-center/tenant]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?vin=HbkvkJ4hp%2FdyFkgYd73SkY4rUgVkldvzMKLOSH9M4UZgJATl7mo97PeqhVip%2FWP6iwioAiSMIN4KGUGF5zG8xHZibsr2vl1oIypNDAqbUf0s5xHW2moPsezG%2FedhntbeDRpAqV%2BPIlvq0kblkVewus3A%2B%2BvX32GHm70rs7xbJ6Y%3D]]>
+                <![CDATA[{"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[cw1EWG0f1cHwAvEfyifsToWHBy2CJkmeKu6cDwPMy9mW2K8ZgfJFZyteVatJAMpmWGAk2d17//F25cwP9phjoAlRT7IKBA1OQUMyN2IsDQJOukh12d7e9zt3Yd/cZaUp1mBTt8AZgtq1l45i0+p5cbGC7yJUn+hYZ8uXf2BOtr4=]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1581408151875]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+                <![CDATA[{"status":400,"errorMsg":"str:用户hangang@bitnei.cn已经存在","data":null,"error":true}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Insurance -->
-        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@530612ba]" name="Insurance" duration-ms="1434" started-at="2020-03-16T07:28:51Z" description="openapi接口" data-provider="dp" finished-at="2020-03-16T07:28:52Z">
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@530612ba]" name="UserInfoQueryData" duration-ms="109" started-at="2020-03-31T03:35:27Z" description="saas后台用户查询" data-provider="dp" finished-at="2020-03-31T03:35:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[精励联讯保险调用正常--LGXC76C3XJ0108468]]>
+                <![CDATA[用户列表查询]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external-api/vrm/genilex/insurance/lable]]>
+                <![CDATA[/user-center/userInfo/yuanian-com/list]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?vin=CEICmUK8TYpnFfkToJCvfC%2FGI%2FHxHhgNewUaf%2B2xJmtH4LpUD3HEvCfs8Vh9yEnjWViYEcRQUtnoUhdo3Cm95%2BrSd%2BBh5dhyqrXywGx7NHJfGuUWer4xkCF78e7qwwNoqzkv1DidMPpA45quVI0L8PMw%2BSMbYNiu70hVS5adN84%3D&customerId=123]]>
+                <![CDATA[{"createTimeRange":{"from":"","to":""},"email":"","mobile":"","nickName":"","origin":"","status":"","userRole":""}]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[djKx876kY0HGWS4UKNCwasskI3j5vh92Y40L6eEmY7TzysROyIcPccFnFlE76BUUXfWz1YGDjUTa5rLx4HJzty3XQhQKZK23O76P6HfJJsg0slkBufD6J6aVgdIIfLo7Evny7PyJPDpHqRK3PvnTFxoge3AO+PHJe2HlGO29q1s=]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1584338303978]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":{"risk_score":24.41971292259522,"mileage_12":3.0,"mileage_24":1.0,"mileage_36":0.0},"error":false,"code":"10000"}]]>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"typeName":"UserAdmin","id":"9a5703ed2e9e46a7b31c82b0105b7c41","username":"zhanghr@yuanian.com","nickName":"xdf","email":"zhanghr@yuanian.com","mobile":"13234454556","password":"N/A","title":null,"status":"ACTIVE","createBy":"zhanghr@yuanian.com","createTime":"2019-08-05 16:10:42","tenant":"yuanian-com","origin":"REGISTER","super":true,"admin":true}]},"error":false}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Insurance -->
-        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@530612ba]" name="Insurance" duration-ms="1346" started-at="2020-03-16T07:28:52Z" description="openapi接口" data-provider="dp" finished-at="2020-03-16T07:28:54Z">
+        </test-method> <!-- UserInfoQueryData -->
+        <test-method status="PASS" signature="UserInfoQueryData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostBackSaas@530612ba]" name="UserInfoQueryData" duration-ms="517" started-at="2020-03-31T03:35:27Z" description="saas后台用户查询" data-provider="dp" finished-at="2020-03-31T03:35:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[精励联讯保险调用正常--津AF05690]]>
+                <![CDATA[后台租户邀请用户已存在]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[/external-api/vrm/genilex/insurance/lable]]>
+                <![CDATA[/user-center/user/bitnei-cn/invite]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[?licensePlate=FkgzYFyc2oOym3KJnuxGEABKA2p0p1c3PY4EVlCM9P13DvBK%2BO9loMrTduQA3wruxKdqKV9aqonahmuoocjdCa91amdP36DMya4zrePl9DQeW6XjT61GXmY5QqPIEXR1A7qKt8NSt5ck0dEUeqQT%2F%2FEOXXdvEnoWpnOeZ%2F6LG8A%3D&customerId=123]]>
+                <![CDATA[{"admin":false,"email":"hangang@bitnei.cn","mobile":"13411112222","nickName":"hangang","title":""}]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1584339230681]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":{"risk_score":24.41971292259522,"mileage_12":3.0,"mileage_24":1.0,"mileage_36":0.0},"error":false,"code":"10000"}]]>
+                <![CDATA[{"status":400,"errorMsg":"str:用户hangang@bitnei.cn已经存在","data":null,"error":true}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Insurance -->
-        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@530612ba]" name="Insurance" duration-ms="106" started-at="2020-03-16T07:28:54Z" description="openapi接口" data-provider="dp" finished-at="2020-03-16T07:28:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[精励联讯保险车架号与车牌号至少传一个]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/external-api/vrm/genilex/insurance/lable]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[?customerId=123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1584339230681]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":"车架号与车牌号至少传一个","data":null,"error":true,"code":"40000"}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Insurance -->
-        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@530612ba]" name="Insurance" duration-ms="1412" started-at="2020-03-16T07:28:54Z" description="openapi接口" data-provider="dp" finished-at="2020-03-16T07:28:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[精励联讯保险查询vin无数据]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/external-api/vrm/genilex/insurance/lable]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[?vin=KaXkK8k5Y3zhSSW1acBVm%2B%2BWOr5Kp8s1t5EWLAcftir1564%2BhsEdTemSjtk18KasjykZDWNshvLFIiQH1jazsVUVlojvthvy6fXe34g1Gsdx6a3hFB6XYxLFjAL%2Fq2wG5LU0yvZrToV8mXOnUOKRTFJTfV1WoQF0B%2F4E6Or4tXk%3D&customerId=123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[oa1rG573rgsTa5xbgSfniR5kCjHxZZeuzAXJjZP5AdXwg5Kd4sjzMXipeLojJpa6vwY8d0Xpui2JdwBBeawWogi6XSCCyMJBiWr+fkrcac7r7ctU+cu357bpam4ARq16POBxApw3H/WaKTeWOfF+siVsIcFbMxIn6EkVahCtw5w=]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1584343514140]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Insurance -->
-      </class> <!-- com.bitnei.apitest.testcases.saas.GetInsurance -->
+        </test-method> <!-- UserInfoQueryData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.PostBackSaas -->
     </test> <!-- Default test -->
   </suite> <!-- apitest -->
 </testng-results>
