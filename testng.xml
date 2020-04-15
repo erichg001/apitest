@@ -9,6 +9,8 @@
   <parameter name="hostgeode" value="http://10.10.21.70:7070" />  
   <parameter name="pathroad" value="src/main/resources/TEST.xlsx" />
   <parameter name="pathsaasuser" value="src/main/resources/DATA.xlsx" />
+  <!-- 线上环境配置 -->
+  <parameter name="saas" value="https://saas.bitnei.cn" />
 
 	<!--thread-count 并发线程数  preserve-order classes按顺序执行   verbose 输出日志等级 -->
 <!-- 

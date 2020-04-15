@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SAAS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>53/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>78/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 31 11:15:51 CST 2020</td>
+<td>Started on:</td><td>Wed Apr 15 14:39:59 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>226 seconds (226199 ms)</td>
+<tr><td>Total time:</td><td>234 seconds (234675 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,206 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按企业名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":"REGISTER_FREE","status":"","tenant":"新源科技"}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"test","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","logo":null}]},"error":false}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;contactName&quot;:{&quot;currentValue is &quot;:&quot;新源科技&quot;,&quot;expectedValue is &quot;:&quot;张海龙&quot;},&quot;connectMobile&quot;:{&quot;currentValue is &quot;:&quot;18918901890&quot;,&quot;expectedValue is &quot;:&quot;18110024813&quot;},&quot;title&quot;:{&quot;currentValue is &quot;:&quot;Boss&quot;,&quot;expectedValue is &quot;:&quot;test&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace671357082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace671357082'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;contactName&quot;:{&quot;currentValue is &quot;:&quot;新源科技&quot;,&quot;expectedValue is &quot;:&quot;张海龙&quot;},&quot;connectMobile&quot;:{&quot;currentValue is &quot;:&quot;18918901890&quot;,&quot;expectedValue is &quot;:&quot;18110024813&quot;},&quot;title&quot;:{&quot;currentValue is &quot;:&quot;Boss&quot;,&quot;expectedValue is &quot;:&quot;test&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18110024813","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"test","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","logo":null}]},"error":false}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;size&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;pages&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;total&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;Length&quot;:{&quot;actualLenth&quot;:0,&quot;expectLenth&quot;:1}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace424360250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace424360250'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;size&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;pages&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;total&quot;:{&quot;currentValue is &quot;:0,&quot;expectedValue is&quot;:1},&quot;Length&quot;:{&quot;actualLenth&quot;:0,&quot;expectLenth&quot;:1}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":"","superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn","projectName":"新能源汽车大数据平台","userQuantity":0,"logo":null}]},"error":false}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userQuantity&quot;:{&quot;currentValue is &quot;:10,&quot;expectedValue is&quot;:0}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1490090637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1490090637'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;userQuantity&quot;:{&quot;currentValue is &quot;:10,&quot;expectedValue is&quot;:0}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"zhanghailong","mobile":"","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"张海龙","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18110024813","origin":"REGISTER_FREE","createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"test","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","logo":null}]},"error":false}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;contactName&quot;:{&quot;currentValue is &quot;:&quot;新源科技&quot;,&quot;expectedValue is &quot;:&quot;张海龙&quot;},&quot;connectMobile&quot;:{&quot;currentValue is &quot;:&quot;18918901890&quot;,&quot;expectedValue is &quot;:&quot;18110024813&quot;},&quot;title&quot;:{&quot;currentValue is &quot;:&quot;Boss&quot;,&quot;expectedValue is &quot;:&quot;test&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace392947177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace392947177'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;contactName&quot;:{&quot;currentValue is &quot;:&quot;新源科技&quot;,&quot;expectedValue is &quot;:&quot;张海龙&quot;},&quot;connectMobile&quot;:{&quot;currentValue is &quot;:&quot;18918901890&quot;,&quot;expectedValue is &quot;:&quot;18110024813&quot;},&quot;title&quot;:{&quot;currentValue is &quot;:&quot;Boss&quot;,&quot;expectedValue is &quot;:&quot;test&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData(PostBackSaas.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -277,7 +77,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.PostApiTestParas.ApiTest()'><b>ApiTest</b><br>Test class: com.bitnei.apitest.testcases.saas.PostApiTestParas<br>Test method: api接口<br>Parameters: API接口EC动力接收充电数据, /external-api/vehicle-charge/charge/herui/vehicle/receive, {"carNO":"京ADK2768","startSoc":"41","endSoc":"100","lat":"40.1297269989","lng":"116.5992975284","station":"EC动力顺丰充电站","startTime":"2019-10-12 21:38:25","endTime":"2019-10-13 01:24:25","id":"38145","electricAmount":"29.97","current":"1.9","voltage":"402","type":"1"}, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"10000"}</td>
 <td></td>
-<td>6</td>
+<td>7</td>
 <td>com.bitnei.apitest.testcases.saas.PostApiTestParas@27c6e487</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 好车伯乐接口返回为空, /external-api/vehicle-battery/autobole/vehicle/static?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
@@ -320,9 +120,119 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签调用正常, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":200,"errorMsg":null,"data":{"risk_score":22.0257,"mileage_12":6303.0,"mileage_24":3623.0,"mileage_36":0.0,"avg_run_time_length_monthly":1.6908846153846152E7,"avg_run_speed":319.0673120668706,"brake_acc_count_per_100km":0.0,"acc_count_per_100km":0.0,"speed_range00_rate":0.2437958755679832,"speed_range20_rate":0.18437609227542817,"speed_range40_rate":0.19608528486543167,"speed_range60_rate":0.06675987416987067,"speed_range80_rate":0.00611674239776302,"speed_range100_rate":8.738203425375742E-4,"speed_range120_rate":0.0,"speed_range140_rate":0.0,"fatigue_driving_rate":0.0,"avg_run_days_monthly":7.769230769230769,"avg_run_count_monthly":12.076923076923077,"avg_fast_charge_count_monthly":0.0,"avg_slow_charge_count_monthly":1.9090909090909092},"error":false,"code":"10000"}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车辆厂家及车型, /external-api/laboratory/models/reliable/factory/information?, type=01, {"status":200,"errorMsg":null,"data":[{"vehFac":"合众汽车","vehModelInfos":[{"vehCommonName":"哪吒N01","vehModel":"THZ7000BEVS004","standardDriverMileage":301.00,"standardPower":14.00}]},{"vehFac":"比亚迪","vehModelInfos":[{"vehCommonName":"E5","vehModel":"BYD7005BEV1","standardDriverMileage":400.00,"standardPower":14.80},{"vehCommonName":"比亚迪唐","vehModel":"BYD6490SBEV1","standardDriverMileage":520.00,"standardPower":17.30}]},{"vehFac":"北汽新能源","vehModelInfos":[{"vehCommonName":"EU5","vehModel":"BJ7000C5D3-BEV","standardDriverMileage":416.00,"standardPower":13.90}]},{"vehFac":"吉利汽车","vehModelInfos":[{"vehCommonName":"帝豪GSE400","vehModel":"HQ7002BEV15","standardDriverMileage":353.00,"standardPower":14.53}]},{"vehFac":"威马汽车","vehModelInfos":[{"vehCommonName":"EX5","vehModel":"SZS6460A06BEV","standardDriverMileage":303.00,"standardPower":16.20}]},{"vehFac":"上汽集团","vehModelInfos":[{"vehCommonName":"荣威ERX5","vehModel":"CSA6456BEV2","standardDriverMileage":320.00,"standardPower":15.49},{"vehCommonName":"Marvel X","vehModel":"CSA6461FBEV1","standardDriverMileage":403.00,"standardPower":14.20}]},{"vehFac":"长安汽车","vehModelInfos":[{"vehCommonName":"EADO","vehModel":"SC7003ACBEV","standardDriverMileage":305.00,"standardPower":13.40},{"vehCommonName":"EADO","vehModel":"SC7003AEBEV","standardDriverMileage":405.00,"standardPower":13.80}]},{"vehFac":"广汽新能源","vehModelInfos":[{"vehCommonName":"传祺AION.S","vehModel":"GAM7000BEVA0C","standardDriverMileage":510.00,"standardPower":13.10}]},{"vehFac":"蔚来汽车","vehModelInfos":[{"vehCommonName":"ES6","vehModel":"HFC6483ECEV-W","standardDriverMileage":430.00,"standardPower":18.10},{"vehCommonName":"ES8","vehModel":"HFC6502ECEV2-W","standardDriverMileage":355.00,"standardPower":21.00}]}],"error":false,"code":"10000"}</td>
 <td></td>
 <td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/exponent?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"driverRange":289.59,"middleChargeStartSoc":37.53,"standardDriverMileage":353.00,"standardPower":null,"power100km":null,"fastChargeDuration":54.47,"middleAnxiety":"中","satisfactionDegree":"低","onlineHailedCarRatio":null,"onlineHailedCarNumber":null},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数北京市, /external-api/laboratory/models/reliable/exponent?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"driverRange":291.55,"middleChargeStartSoc":35.42,"standardDriverMileage":353.00,"standardPower":null,"power100km":null,"fastChargeDuration":59.06,"middleAnxiety":"中","satisfactionDegree":"低","onlineHailedCarRatio":null,"onlineHailedCarNumber":null},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数车型必填, /external-api/laboratory/models/reliable/exponent?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数厂家必填, /external-api/laboratory/models/reliable/exponent?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数为空, /external-api/laboratory/models/reliable/exponent?, vehModel=123&vehFac=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询全国, /external-api/laboratory/models/reliable/rank?, type=01, {"status":200,"errorMsg":null,"data":[{"vehModel":"THZ7000BEVS004","vehCommonName":"哪吒N01","unit":"km","standardDriverRange":301.0,"standardPower":14.0,"vehFac":"合众汽车"},{"vehModel":"BYD7005BEV1","vehCommonName":"E5","unit":"km","standardDriverRange":400.0,"standardPower":14.8,"vehFac":"比亚迪"},{"vehModel":"BJ7000C5D3-BEV","vehCommonName":"EU5","unit":"km","standardDriverRange":416.0,"standardPower":13.9,"vehFac":"北汽新能源"}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询北京市, /external-api/laboratory/models/reliable/rank?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&type=01, {"status":200,"errorMsg":null,"data":[{"vehModel":"THZ7000BEVS004","vehCommonName":"哪吒N01","unit":"km","standardDriverRange":301.00,"standardPower":14.00,"vehFac":"合众汽车"},{"vehModel":"BYD7005BEV1","vehCommonName":"E5","unit":"km","standardDriverRange":400.00,"standardPower":14.80,"vehFac":"比亚迪"},{"vehModel":"HQ7002BEV15","vehCommonName":"帝豪GSE400","unit":"km","standardDriverRange":353.00,"standardPower":14.53,"vehFac":"吉利汽车"}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询类型必填, /external-api/laboratory/models/reliable/rank?, , {"status":400,"errorMsg":"请求参数type不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询全国返回1条, /external-api/laboratory/models/reliable/rank?, size=1&type=02, {"status":200,"errorMsg":null,"data":[{"vehModel":"BJ7000U3D7G-BEV","vehCommonName":"EX360","unit":"km","standardDriverRange":318.0,"standardPower":16.7,"vehFac":"北汽新能源"}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/mileage/detail?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","driverRange":289.59,"standardDriverMileage":353.0,"vehFac":"吉利汽车","unit":"km","monthType":[{"driverMileage":206.0,"month":"01"},{"driverMileage":234.76,"month":"02"},{"driverMileage":285.52,"month":"03"},{"driverMileage":298.19,"month":"04"},{"driverMileage":323.13,"month":"05"},{"driverMileage":321.67,"month":"06"},{"driverMileage":316.4,"month":"07"},{"driverMileage":320.0,"month":"08"},{"driverMileage":324.62,"month":"09"},{"driverMileage":315.65,"month":"10"},{"driverMileage":283.3,"month":"11"},{"driverMileage":245.88,"month":"12"}],"seasonType":[{"driverMileage":307.86,"season":"autumn"},{"driverMileage":302.28,"season":"spring"},{"driverMileage":319.36,"season":"summer"},{"driverMileage":228.88,"season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情北京市, /external-api/laboratory/models/reliable/mileage/detail?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","driverRange":291.55,"standardDriverMileage":353.00,"vehFac":"吉利汽车","unit":"km","monthType":[{"driverMileage":209.00,"month":"01"},{"driverMileage":233.67,"month":"02"},{"driverMileage":289.40,"month":"03"},{"driverMileage":292.50,"month":"04"},{"driverMileage":332.49,"month":"05"},{"driverMileage":329.00,"month":"06"},{"driverMileage":321.29,"month":"07"},{"driverMileage":331.23,"month":"08"},{"driverMileage":338.00,"month":"09"},{"driverMileage":324.67,"month":"10"},{"driverMileage":274.93,"month":"11"},{"driverMileage":222.44,"month":"12"}],"seasonType":[{"driverMileage":312.53,"season":"autumn"},{"driverMileage":304.80,"season":"spring"},{"driverMileage":327.17,"season":"summer"},{"driverMileage":221.70,"season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情厂家必填, /external-api/laboratory/models/reliable/mileage/detail?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情车型必填, /external-api/laboratory/models/reliable/mileage/detail?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/anxiety/detail?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","middleChargeStartSoc":37.53,"middleAnxiety":"中","vehFac":"吉利汽车","unit":"%","monthType":[{"chargeStartSoc":42.50,"anxiety":"中","month":"01"},{"chargeStartSoc":31.50,"anxiety":"中","month":"02"},{"chargeStartSoc":37.00,"anxiety":"中","month":"03"},{"chargeStartSoc":39.50,"anxiety":"中","month":"04"},{"chargeStartSoc":39.00,"anxiety":"中","month":"05"},{"chargeStartSoc":37.98,"anxiety":"中","month":"06"},{"chargeStartSoc":37.00,"anxiety":"中","month":"07"},{"chargeStartSoc":37.00,"anxiety":"中","month":"08"},{"chargeStartSoc":38.00,"anxiety":"中","month":"09"},{"chargeStartSoc":38.00,"anxiety":"中","month":"10"},{"chargeStartSoc":36.92,"anxiety":"中","month":"11"},{"chargeStartSoc":36.00,"anxiety":"中","month":"12"}],"seasonType":[{"chargeStartSoc":37.64,"anxiety":"中","season":"autumn"},{"chargeStartSoc":38.50,"anxiety":"中","season":"spring"},{"chargeStartSoc":37.33,"anxiety":"中","season":"summer"},{"chargeStartSoc":36.67,"anxiety":"中","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情北京市, /external-api/laboratory/models/reliable/anxiety/detail?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","middleChargeStartSoc":35.42,"middleAnxiety":"中","vehFac":"吉利汽车","unit":"%","monthType":[{"chargeStartSoc":42.00,"anxiety":"中","month":"01"},{"chargeStartSoc":31.00,"anxiety":"中","month":"02"},{"chargeStartSoc":37.00,"anxiety":"中","month":"03"},{"chargeStartSoc":39.00,"anxiety":"中","month":"04"},{"chargeStartSoc":36.00,"anxiety":"中","month":"05"},{"chargeStartSoc":35.00,"anxiety":"中","month":"06"},{"chargeStartSoc":34.00,"anxiety":"中","month":"07"},{"chargeStartSoc":35.00,"anxiety":"中","month":"08"},{"chargeStartSoc":35.08,"anxiety":"中","month":"09"},{"chargeStartSoc":35.00,"anxiety":"中","month":"10"},{"chargeStartSoc":33.00,"anxiety":"中","month":"11"},{"chargeStartSoc":33.00,"anxiety":"中","month":"12"}],"seasonType":[{"chargeStartSoc":34.36,"anxiety":"中","season":"autumn"},{"chargeStartSoc":37.33,"anxiety":"中","season":"spring"},{"chargeStartSoc":34.67,"anxiety":"中","season":"summer"},{"chargeStartSoc":35.33,"anxiety":"中","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情厂家必填, /external-api/laboratory/models/reliable/anxiety/detail?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情车型必填, /external-api/laboratory/models/reliable/anxiety/detail?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/charge/detail?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","fastChargeDuration":54.47,"satisfactionDegree":"低","vehFac":"吉利汽车","unit":"min","monthType":[{"fastChargeTime":97.50,"satisfactionDegree":"低","month":"01"},{"fastChargeTime":41.00,"satisfactionDegree":"中","month":"02"},{"fastChargeTime":92.67,"satisfactionDegree":"低","month":"03"},{"fastChargeTime":0,"satisfactionDegree":"低","month":"04"},{"fastChargeTime":45.67,"satisfactionDegree":"低","month":"05"},{"fastChargeTime":44.50,"satisfactionDegree":"中","month":"06"},{"fastChargeTime":45.14,"satisfactionDegree":"低","month":"07"},{"fastChargeTime":44.34,"satisfactionDegree":"中","month":"08"},{"fastChargeTime":44.73,"satisfactionDegree":"中","month":"09"},{"fastChargeTime":45.18,"satisfactionDegree":"低","month":"10"},{"fastChargeTime":47.66,"satisfactionDegree":"低","month":"11"},{"fastChargeTime":50.83,"satisfactionDegree":"低","month":"12"}],"seasonType":[{"fastChargeTime":45.86,"satisfactionDegree":"低","season":"autumn"},{"fastChargeTime":69.17,"satisfactionDegree":"低","season":"spring"},{"fastChargeTime":44.66,"satisfactionDegree":"中","season":"summer"},{"fastChargeTime":63.11,"satisfactionDegree":"低","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情北京市, /external-api/laboratory/models/reliable/charge/detail?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","fastChargeDuration":59.06,"satisfactionDegree":"低","vehFac":"吉利汽车","unit":"min","monthType":[{"fastChargeTime":97.50,"satisfactionDegree":"低","month":"01"},{"fastChargeTime":41.00,"satisfactionDegree":"中","month":"02"},{"fastChargeTime":92.67,"satisfactionDegree":"低","month":"03"},{"fastChargeTime":0,"satisfactionDegree":"低","month":"04"},{"fastChargeTime":50.28,"satisfactionDegree":"低","month":"05"},{"fastChargeTime":49.00,"satisfactionDegree":"低","month":"06"},{"fastChargeTime":50.63,"satisfactionDegree":"低","month":"07"},{"fastChargeTime":48.96,"satisfactionDegree":"低","month":"08"},{"fastChargeTime":48.58,"satisfactionDegree":"低","month":"09"},{"fastChargeTime":50.00,"satisfactionDegree":"低","month":"10"},{"fastChargeTime":56.83,"satisfactionDegree":"低","month":"11"},{"fastChargeTime":64.19,"satisfactionDegree":"低","month":"12"}],"seasonType":[{"fastChargeTime":51.80,"satisfactionDegree":"低","season":"autumn"},{"fastChargeTime":71.48,"satisfactionDegree":"低","season":"spring"},{"fastChargeTime":49.53,"satisfactionDegree":"低","season":"summer"},{"fastChargeTime":67.56,"satisfactionDegree":"低","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情厂家必填, /external-api/laboratory/models/reliable/charge/detail?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情车型必填, /external-api/laboratory/models/reliable/charge/detail?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6e38921c</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签调用正常, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":200,"errorMsg":null,"data":{"risk_score":22.0257,"mileage_12":6303.0,"mileage_24":3623.0,"mileage_36":0.0,"avg_run_time_length_monthly":1.6908846153846152E7,"avg_run_speed":319.0673120668706,"brake_acc_count_per_100km":0.0,"acc_count_per_100km":0.0,"speed_range00_rate":0.2437958755679832,"speed_range20_rate":0.18437609227542817,"speed_range40_rate":0.19608528486543167,"speed_range60_rate":0.06675987416987067,"speed_range80_rate":0.00611674239776302,"speed_range100_rate":8.738203425375742E-4,"speed_range120_rate":0.0,"speed_range140_rate":0.0,"fatigue_driving_rate":0.0,"avg_run_days_monthly":7.769230769230769,"avg_run_count_monthly":12.076923076923077,"avg_fast_charge_count_monthly":0.0,"avg_slow_charge_count_monthly":1.9090909090909092},"error":false,"code":"10000"}</td>
+<td></td>
+<td>6</td>
 <td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签vin未加密码, /external-api/vrm/insurance/lable, ?vin=LGXC76C36G0156932, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":406,"errorMsg":"确保VIN是否已加密！","data":null,"error":true,"code":"40000"}</td>
@@ -331,11 +241,6 @@ function toggleAllBoxes() {
 <td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签时间戳错误认证失败, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620140, {"status":406,"errorMsg":"验签失败！","data":null,"error":true,"code":"40000"}</td>
-<td></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签签名长度不正确, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, yiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":200,"errorMsg":"Signature length not correct: got 127 but was expecting 128","data":null,"error":true,"code":"40000"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
@@ -352,7 +257,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险调用正常--津AF05690, /external-api/vrm/genilex/insurance/lable, ?licensePlate=FkgzYFyc2oOym3KJnuxGEABKA2p0p1c3PY4EVlCM9P13DvBK%2BO9loMrTduQA3wruxKdqKV9aqonahmuoocjdCa91amdP36DMya4zrePl9DQeW6XjT61GXmY5QqPIEXR1A7qKt8NSt5ck0dEUeqQT%2F%2FEOXXdvEnoWpnOeZ%2F6LG8A%3D&customerId=123, UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=, 1584339230681, {"status":200,"errorMsg":null,"data":{"risk_score":24.41971292259522,"mileage_12":3.0,"mileage_24":1.0,"mileage_36":0.0},"error":false,"code":"10000"}</td>
 <td></td>
-<td>0</td>
+<td>2</td>
 <td>com.bitnei.apitest.testcases.saas.GetInsurance@6385cb26</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险车架号与车牌号至少传一个, /external-api/vrm/genilex/insurance/lable, ?customerId=123, UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=, 1584339230681, {"status":200,"errorMsg":"车架号与车牌号至少传一个","data":null,"error":true,"code":"40000"}</td>
@@ -405,6 +310,26 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel@6b0c2d26</td></tr>
 <tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按企业名称查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"","origin":"REGISTER_FREE","status":"","tenant":"新源科技"}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"新源科技","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18918901890","origin":"REGISTER_FREE","userNum":15,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"Boss","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","userQuantity":30,"logo":null}]},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按手机号码查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"","mobile":"18918901890","origin":"REGISTER_FREE","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"9c178ab462874ed28e92d245310e719f","organization":"新源科技","tenant":"bitnei-cn","contactName":"新源科技","contactEmail":"zhanghailong@bitnei.cn","connectMobile":"18918901890","origin":"REGISTER_FREE","userNum":15,"createTime":"2019-07-12 15:18:48","status":"ACTIVE","title":"Boss","superId":"782783112a42461298fbea5e0b5942c3","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台","userQuantity":30,"logo":null}]},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按创建时间查询租户, /user-center/tenant/list, {"startTime":"2019-07-13 04:55:07","endTime":"2019-07-14 04:55:07","email":"","mobile":"","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"39246a3068db4b9f898e09930f1c1b1e","organization":"lgxy","tenant":"bitnei-cn241053","contactName":"tzy","contactEmail":"tangzhiyuan@bitnei.cn","connectMobile":"13333333333","origin":"REGISTER_FREE","userNum":5,"createTime":"2019-07-13 09:42:08","status":"ACTIVE","title":"","superId":"161722287b0647e9bc3660f03431cc57","createBy":"tangzhiyuan@bitnei.cn","projectName":"新能源汽车大数据平台","userQuantity":10,"logo":null}]},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 按用户类型和邮箱查询租户, /user-center/tenant/list, {"startTime":"","endTime":"","email":"SaaS@bitnei.cn","mobile":"","origin":"","status":"","tenant":""}, {"status":200,"errorMsg":null,"data":{"pageNum":1,"pageSize":10,"size":1,"pages":1,"total":1,"list":[{"id":"aa2a8a54936542b48e78346cb4f0df33","organization":"新源科技","tenant":"bitnei-cn110222","contactName":"SaaS","contactEmail":"SaaS@bitnei.cn","connectMobile":"18110024813","origin":"BACKEND_ADD","userNum":1,"createTime":"2020-01-16 09:12:12","status":"ACTIVE","title":"test","superId":"47aa131dd5af48b59f51a588fb0d3a15","createBy":"SaaS@bitnei.cn","projectName":"新能源汽车大数据平台2","userQuantity":5,"logo":null}]},"error":false}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.PostBackSaas@641147d0</td></tr>
+<tr>
 <td title='com.bitnei.apitest.testcases.saas.PostBackSaas.UserInfoQueryData()'><b>UserInfoQueryData</b><br>Test class: com.bitnei.apitest.testcases.saas.PostBackSaas<br>Test method: saas后台用户查询<br>Parameters: 重复添加租户, /user-center/tenant, {"email":"hangang@bitnei.cn","mobile":"13311123333","name":"hangang","title":"","organization":"test","password":"abc123","conformPassword":""}, {"status":400,"errorMsg":"str:用户hangang@bitnei.cn已经存在","data":null,"error":true}</td>
 <td></td>
 <td>0</td>
@@ -432,7 +357,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台<br>Parameters: 单车画像查询, /vehicle-info/portrait/getVehiclePortrait/LNBSCC3H4HF327175, ?modelName=BJ7000C5E7-BEV, {"status":200,"errorMsg":null,"data":{"portraitChargeMonth":{"vin":"LNBSCC3H4HF327175","modelName":"BJ7000C5E7-BEV","chargeTimes":68,"chargeQuick":17,"chargeSlow":51,"halfPriceTimes":46,"avgStartSoc":36.46,"avgEndSoc":71.53,"avgChargeTime":"1小时36分钟"},"portraitReduceMonth":{"vin":"LNBSCC3H4HF327175","modelName":"BJ7000C5E7-BEV","reducePercent":7.3,"reduceScore":78.1,"leftMonth":61.1,"actualDriveRange":253.3,"power100km":16.8,"createDate":"2019-06-25"},"portraitStaticMonth":{"vin":"LNBSCC3H4HF327175","modelName":"BJ7000C5E7-BEV","brand":"北汽新能源","level":"A","powerType":"BEV","driveRange":"300.0","cityDept":"北京市","dictName":"出租乘用车","dashboardMileage":"115884.0","createDate":"2019-06-27","detailModel":"EU260"},"portraitRunMonth":{"vin":"LNBSCC3H4HF327175","modelName":"BJ7000C5E7-BEV","runDays":27,"runTimes":145,"soc20Times":23,"runMileage":6512.0,"peakTimes":40,"maxSpeed":105.2,"createDate":"2019-06-26"},"modelCapacityCurveList":[{"boxKey":"BJ7000C5E7-BEV","mil":0.0,"vol":"127.8"},{"boxKey":"BJ7000C5E7-BEV","mil":5000.0,"vol":"127.5"},{"boxKey":"BJ7000C5E7-BEV","mil":10000.0,"vol":"127.2"},{"boxKey":"BJ7000C5E7-BEV","mil":15000.0,"vol":"126.9"},{"boxKey":"BJ7000C5E7-BEV","mil":20000.0,"vol":"126.6"},{"boxKey":"BJ7000C5E7-BEV","mil":25000.0,"vol":"126.3"},{"boxKey":"BJ7000C5E7-BEV","mil":30000.0,"vol":"126.0"},{"boxKey":"BJ7000C5E7-BEV","mil":35000.0,"vol":"125.7"},{"boxKey":"BJ7000C5E7-BEV","mil":40000.0,"vol":"125.4"},{"boxKey":"BJ7000C5E7-BEV","mil":45000.0,"vol":"125.0"},{"boxKey":"BJ7000C5E7-BEV","mil":50000.0,"vol":"124.7"},{"boxKey":"BJ7000C5E7-BEV","mil":55000.0,"vol":"124.4"},{"boxKey":"BJ7000C5E7-BEV","mil":60000.0,"vol":"124.1"},{"boxKey":"BJ7000C5E7-BEV","mil":65000.0,"vol":"123.8"},{"boxKey":"BJ7000C5E7-BEV","mil":70000.0,"vol":"123.5"},{"boxKey":"BJ7000C5E7-BEV","mil":75000.0,"vol":"123.2"},{"boxKey":"BJ7000C5E7-BEV","mil":80000.0,"vol":"122.9"},{"boxKey":"BJ7000C5E7-BEV","mil":85000.0,"vol":"122.6"},{"boxKey":"BJ7000C5E7-BEV","mil":90000.0,"vol":"122.3"},{"boxKey":"BJ7000C5E7-BEV","mil":95000.0,"vol":"122.0"},{"boxKey":"BJ7000C5E7-BEV","mil":100000.0,"vol":"121.7"},{"boxKey":"BJ7000C5E7-BEV","mil":105000.0,"vol":"121.4"},{"boxKey":"BJ7000C5E7-BEV","mil":110000.0,"vol":"121.1"},{"boxKey":"BJ7000C5E7-BEV","mil":115000.0,"vol":"120.7"},{"boxKey":"BJ7000C5E7-BEV","mil":120000.0,"vol":"120.4"},{"boxKey":"BJ7000C5E7-BEV","mil":125000.0,"vol":"120.1"},{"boxKey":"BJ7000C5E7-BEV","mil":130000.0,"vol":"119.8"},{"boxKey":"BJ7000C5E7-BEV","mil":135000.0,"vol":"119.5"},{"boxKey":"BJ7000C5E7-BEV","mil":140000.0,"vol":"119.2"},{"boxKey":"BJ7000C5E7-BEV","mil":145000.0,"vol":"118.9"},{"boxKey":"BJ7000C5E7-BEV","mil":150000.0,"vol":"118.6"},{"boxKey":"BJ7000C5E7-BEV","mil":155000.0,"vol":"118.3"},{"boxKey":"BJ7000C5E7-BEV","mil":160000.0,"vol":"118.0"},{"boxKey":"BJ7000C5E7-BEV","mil":165000.0,"vol":"117.7"},{"boxKey":"BJ7000C5E7-BEV","mil":170000.0,"vol":"117.4"},{"boxKey":"BJ7000C5E7-BEV","mil":175000.0,"vol":"117.1"},{"boxKey":"BJ7000C5E7-BEV","mil":180000.0,"vol":"116.8"},{"boxKey":"BJ7000C5E7-BEV","mil":185000.0,"vol":"116.4"},{"boxKey":"BJ7000C5E7-BEV","mil":190000.0,"vol":"116.1"},{"boxKey":"BJ7000C5E7-BEV","mil":195000.0,"vol":"115.8"},{"boxKey":"BJ7000C5E7-BEV","mil":200000.0,"vol":"115.5"},{"boxKey":"BJ7000C5E7-BEV","mil":205000.0,"vol":"115.2"},{"boxKey":"BJ7000C5E7-BEV","mil":210000.0,"vol":"114.9"},{"boxKey":"BJ7000C5E7-BEV","mil":215000.0,"vol":"114.6"},{"boxKey":"BJ7000C5E7-BEV","mil":220000.0,"vol":"114.3"},{"boxKey":"BJ7000C5E7-BEV","mil":225000.0,"vol":"114.0"},{"boxKey":"BJ7000C5E7-BEV","mil":230000.0,"vol":"113.7"},{"boxKey":"BJ7000C5E7-BEV","mil":235000.0,"vol":"113.4"},{"boxKey":"BJ7000C5E7-BEV","mil":240000.0,"vol":"113.1"},{"boxKey":"BJ7000C5E7-BEV","mil":245000.0,"vol":"112.8"},{"boxKey":"BJ7000C5E7-BEV","mil":250000.0,"vol":"112.5"},{"boxKey":"BJ7000C5E7-BEV","mil":255000.0,"vol":"112.1"},{"boxKey":"BJ7000C5E7-BEV","mil":260000.0,"vol":"111.8"},{"boxKey":"BJ7000C5E7-BEV","mil":265000.0,"vol":"111.5"},{"boxKey":"BJ7000C5E7-BEV","mil":270000.0,"vol":"111.2"},{"boxKey":"BJ7000C5E7-BEV","mil":275000.0,"vol":"110.9"},{"boxKey":"BJ7000C5E7-BEV","mil":280000.0,"vol":"110.6"},{"boxKey":"BJ7000C5E7-BEV","mil":285000.0,"vol":"110.3"},{"boxKey":"BJ7000C5E7-BEV","mil":290000.0,"vol":"110.0"},{"boxKey":"BJ7000C5E7-BEV","mil":295000.0,"vol":"109.7"},{"boxKey":"BJ7000C5E7-BEV","mil":300000.0,"vol":"109.4"},{"boxKey":"BJ7000C5E7-BEV","mil":305000.0,"vol":"109.1"},{"boxKey":"BJ7000C5E7-BEV","mil":310000.0,"vol":"108.8"},{"boxKey":"BJ7000C5E7-BEV","mil":315000.0,"vol":"108.5"},{"boxKey":"BJ7000C5E7-BEV","mil":320000.0,"vol":"108.2"},{"boxKey":"BJ7000C5E7-BEV","mil":325000.0,"vol":"107.8"},{"boxKey":"BJ7000C5E7-BEV","mil":330000.0,"vol":"107.5"},{"boxKey":"BJ7000C5E7-BEV","mil":335000.0,"vol":"107.2"},{"boxKey":"BJ7000C5E7-BEV","mil":340000.0,"vol":"106.9"},{"boxKey":"BJ7000C5E7-BEV","mil":345000.0,"vol":"106.6"},{"boxKey":"BJ7000C5E7-BEV","mil":350000.0,"vol":"106.3"},{"boxKey":"BJ7000C5E7-BEV","mil":355000.0,"vol":"106.0"},{"boxKey":"BJ7000C5E7-BEV","mil":360000.0,"vol":"105.7"},{"boxKey":"BJ7000C5E7-BEV","mil":365000.0,"vol":"105.4"},{"boxKey":"BJ7000C5E7-BEV","mil":370000.0,"vol":"105.1"},{"boxKey":"BJ7000C5E7-BEV","mil":375000.0,"vol":"104.8"},{"boxKey":"BJ7000C5E7-BEV","mil":380000.0,"vol":"104.5"},{"boxKey":"BJ7000C5E7-BEV","mil":385000.0,"vol":"104.2"},{"boxKey":"BJ7000C5E7-BEV","mil":390000.0,"vol":"103.9"},{"boxKey":"BJ7000C5E7-BEV","mil":395000.0,"vol":"103.5"},{"boxKey":"BJ7000C5E7-BEV","mil":400000.0,"vol":"103.2"},{"boxKey":"BJ7000C5E7-BEV","mil":405000.0,"vol":"102.9"},{"boxKey":"BJ7000C5E7-BEV","mil":410000.0,"vol":"102.6"},{"boxKey":"BJ7000C5E7-BEV","mil":415000.0,"vol":"102.3"}],"vehicleCapacityCurveList":[{"boxKey":"LNBSCC3H4HF327175","mil":0.0,"vol":"124.3"},{"boxKey":"LNBSCC3H4HF327175","mil":5000.0,"vol":"123.9"},{"boxKey":"LNBSCC3H4HF327175","mil":10000.0,"vol":"123.6"},{"boxKey":"LNBSCC3H4HF327175","mil":15000.0,"vol":"123.3"},{"boxKey":"LNBSCC3H4HF327175","mil":20000.0,"vol":"122.9"},{"boxKey":"LNBSCC3H4HF327175","mil":25000.0,"vol":"122.6"},{"boxKey":"LNBSCC3H4HF327175","mil":30000.0,"vol":"122.2"},{"boxKey":"LNBSCC3H4HF327175","mil":35000.0,"vol":"121.9"},{"boxKey":"LNBSCC3H4HF327175","mil":40000.0,"vol":"121.6"},{"boxKey":"LNBSCC3H4HF327175","mil":45000.0,"vol":"121.2"},{"boxKey":"LNBSCC3H4HF327175","mil":50000.0,"vol":"120.9"},{"boxKey":"LNBSCC3H4HF327175","mil":55000.0,"vol":"120.5"},{"boxKey":"LNBSCC3H4HF327175","mil":60000.0,"vol":"120.2"},{"boxKey":"LNBSCC3H4HF327175","mil":65000.0,"vol":"119.9"},{"boxKey":"LNBSCC3H4HF327175","mil":70000.0,"vol":"119.5"},{"boxKey":"LNBSCC3H4HF327175","mil":75000.0,"vol":"119.2"},{"boxKey":"LNBSCC3H4HF327175","mil":80000.0,"vol":"118.8"},{"boxKey":"LNBSCC3H4HF327175","mil":85000.0,"vol":"118.5"},{"boxKey":"LNBSCC3H4HF327175","mil":90000.0,"vol":"118.2"},{"boxKey":"LNBSCC3H4HF327175","mil":95000.0,"vol":"117.8"},{"boxKey":"LNBSCC3H4HF327175","mil":100000.0,"vol":"117.5"},{"boxKey":"LNBSCC3H4HF327175","mil":105000.0,"vol":"117.1"},{"boxKey":"LNBSCC3H4HF327175","mil":110000.0,"vol":"116.8"},{"boxKey":"LNBSCC3H4HF327175","mil":115000.0,"vol":"116.5"},{"boxKey":"LNBSCC3H4HF327175","mil":120000.0,"vol":"116.1"},{"boxKey":"LNBSCC3H4HF327175","mil":125000.0,"vol":"115.8"},{"boxKey":"LNBSCC3H4HF327175","mil":130000.0,"vol":"115.4"},{"boxKey":"LNBSCC3H4HF327175","mil":135000.0,"vol":"115.1"},{"boxKey":"LNBSCC3H4HF327175","mil":140000.0,"vol":"114.8"},{"boxKey":"LNBSCC3H4HF327175","mil":145000.0,"vol":"114.4"},{"boxKey":"LNBSCC3H4HF327175","mil":150000.0,"vol":"114.1"},{"boxKey":"LNBSCC3H4HF327175","mil":155000.0,"vol":"113.7"},{"boxKey":"LNBSCC3H4HF327175","mil":160000.0,"vol":"113.4"},{"boxKey":"LNBSCC3H4HF327175","mil":165000.0,"vol":"113.1"},{"boxKey":"LNBSCC3H4HF327175","mil":170000.0,"vol":"112.7"},{"boxKey":"LNBSCC3H4HF327175","mil":175000.0,"vol":"112.4"},{"boxKey":"LNBSCC3H4HF327175","mil":180000.0,"vol":"112.0"},{"boxKey":"LNBSCC3H4HF327175","mil":185000.0,"vol":"111.7"},{"boxKey":"LNBSCC3H4HF327175","mil":190000.0,"vol":"111.4"},{"boxKey":"LNBSCC3H4HF327175","mil":195000.0,"vol":"111.0"},{"boxKey":"LNBSCC3H4HF327175","mil":200000.0,"vol":"110.7"},{"boxKey":"LNBSCC3H4HF327175","mil":205000.0,"vol":"110.3"},{"boxKey":"LNBSCC3H4HF327175","mil":210000.0,"vol":"110.0"},{"boxKey":"LNBSCC3H4HF327175","mil":215000.0,"vol":"109.6"},{"boxKey":"LNBSCC3H4HF327175","mil":220000.0,"vol":"109.3"},{"boxKey":"LNBSCC3H4HF327175","mil":225000.0,"vol":"109.0"},{"boxKey":"LNBSCC3H4HF327175","mil":230000.0,"vol":"108.6"},{"boxKey":"LNBSCC3H4HF327175","mil":235000.0,"vol":"108.3"},{"boxKey":"LNBSCC3H4HF327175","mil":240000.0,"vol":"107.9"},{"boxKey":"LNBSCC3H4HF327175","mil":245000.0,"vol":"107.6"},{"boxKey":"LNBSCC3H4HF327175","mil":250000.0,"vol":"107.3"},{"boxKey":"LNBSCC3H4HF327175","mil":255000.0,"vol":"106.9"},{"boxKey":"LNBSCC3H4HF327175","mil":260000.0,"vol":"106.6"},{"boxKey":"LNBSCC3H4HF327175","mil":265000.0,"vol":"106.2"},{"boxKey":"LNBSCC3H4HF327175","mil":270000.0,"vol":"105.9"},{"boxKey":"LNBSCC3H4HF327175","mil":275000.0,"vol":"105.6"},{"boxKey":"LNBSCC3H4HF327175","mil":280000.0,"vol":"105.2"},{"boxKey":"LNBSCC3H4HF327175","mil":285000.0,"vol":"104.9"},{"boxKey":"LNBSCC3H4HF327175","mil":290000.0,"vol":"104.5"},{"boxKey":"LNBSCC3H4HF327175","mil":295000.0,"vol":"104.2"},{"boxKey":"LNBSCC3H4HF327175","mil":300000.0,"vol":"103.9"},{"boxKey":"LNBSCC3H4HF327175","mil":305000.0,"vol":"103.5"},{"boxKey":"LNBSCC3H4HF327175","mil":310000.0,"vol":"103.2"},{"boxKey":"LNBSCC3H4HF327175","mil":315000.0,"vol":"102.8"},{"boxKey":"LNBSCC3H4HF327175","mil":320000.0,"vol":"102.5"},{"boxKey":"LNBSCC3H4HF327175","mil":325000.0,"vol":"102.2"},{"boxKey":"LNBSCC3H4HF327175","mil":330000.0,"vol":"101.8"},{"boxKey":"LNBSCC3H4HF327175","mil":335000.0,"vol":"101.5"},{"boxKey":"LNBSCC3H4HF327175","mil":340000.0,"vol":"101.1"},{"boxKey":"LNBSCC3H4HF327175","mil":345000.0,"vol":"100.8"},{"boxKey":"LNBSCC3H4HF327175","mil":350000.0,"vol":"100.5"},{"boxKey":"LNBSCC3H4HF327175","mil":355000.0,"vol":"100.1"},{"boxKey":"LNBSCC3H4HF327175","mil":360000.0,"vol":"99.8"},{"boxKey":"LNBSCC3H4HF327175","mil":365000.0,"vol":"99.4"}]},"error":false}</td>
 <td></td>
-<td>3</td>
+<td>7</td>
 <td>com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel@3d3fcdb0</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel<br>Test method: saas平台<br>Parameters: 车型画像查询, /vehicle-info/portrait/getModelPortrait, ?modelName=BJ7000C5E7-BEV, {"status":200,"errorMsg":null,"error":false}</td>
@@ -527,7 +452,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标异常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3C73.66+or+lng+%3E135.05+or+lat+%3C+3.86+or+lat+%3E53.55+limit+1&members=&limit=0&_=1578563382007, {"result":[["java.lang.Integer",374583]]}</td>
 <td></td>
-<td>18</td>
+<td>19</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@49070868</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标为0,0, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng%3D0+and+lat%3D0+limit+1&members=&limit=0&_=1578563056235, {"result":[["java.lang.Integer",369622]]}</td>

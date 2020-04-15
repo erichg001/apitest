@@ -1,4 +1,4 @@
-package com.bitnei.apitest.testcases.saas;
+package com.bitnei.apitest.testcases.saasonline;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -21,54 +21,56 @@ import com.bitnei.apitest.utils.RestClient;
 import net.sf.json.JSONObject;
 
 /** 
-* @author 作者 eric_hg
-* @version 创建时间：2019年9月20日 下午3:32:45 
+* @author 作者 hangang
+* @version 创建时间：2020年4月13日 上午10:02:41 
 * 类说明 
 */
-public class PostBackSaas {
-	
+public class OpenApiGet {
 	String host;
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse closeableHttpResponse;
-	GetCookie getCookisaas = new GetCookie();
-	String[] authorization = null;
+	GetApiTokenOnline getToken = new GetApiTokenOnline ();
+	String token = "";
 	ExcelReader ex ;
     ExcleUtil excleUtil;
-    SaasGetSec saasGetSec = new SaasGetSec();
+    int status;
 		
-	@Parameters({"backsaas","pathroad"})
+	@Parameters({"saas","pathroad"})
 	@BeforeClass
-	public void setUp(String backsaas,String pathroad) throws InterruptedException {
-		host = backsaas;
+	public void setUp(String saas,String pathroad) throws InterruptedException {
+		host = saas;	
 		String ExcelFilePath= pathroad ;
-        String sheetName="backsaas";
+        String sheetName="线上api接口get类型";
         ex = new ExcelReader(ExcelFilePath, sheetName);
-		authorization = saasGetSec.GetSec();	
+		//设置cookie	
+		try {
+			 token = getToken.ApiToken();
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace(); 
+		}	
 		       
 	}
 	
-	@Test(description="saas后台用户查询",priority =0,dataProvider="dp")
-	public void UserInfoQueryData(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
+	@Test(description="openapi接口",priority =0,dataProvider="dp")
+	public void ApiTestCode(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
-		//DiffMethodByExcept diffMethod = new DiffMethodByExcept();
 		//准备请求头信息
 		HashMap<String,String> headermap = new HashMap<String,String>();
 		headermap.put("Content-Type", "application/json"); //这个在postman中可以查询到
-		headermap.put("pub-sec",authorization[1]);
-		headermap.put("sg-sec",authorization[2]);
-		headermap.put("to-sec",authorization[0]);
+		headermap.put("Authorization","bearer "+token);
 		//入参设置
-		url= host+url;
+		url= host+url+paras;
 		//调用接口	
 		System.out.println("url----"+url);
 		System.out.println("paras----"+paras);
-		closeableHttpResponse = restClient.post(url, paras, headermap);		
+		closeableHttpResponse = restClient.get(url, headermap);		
 		HttpEntity entity = closeableHttpResponse.getEntity();
 		String str = EntityUtils.toString(entity, "utf-8");
-		//System.out.println("source-----"+str);
-		//System.out.println("except-----"+result);
+		System.out.println("str----"+str);
 		JSONObject lastobject = new JSONObject();
 		lastobject = diffMethod.diffFormatJson(JSONObject.fromObject(str),JSONObject.fromObject(result));
 		System.out.println(lastobject.toString());
