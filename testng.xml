@@ -9,6 +9,7 @@
   <parameter name="hostgeode" value="http://10.10.21.70:7070" />  
   <parameter name="pathroad" value="src/main/resources/TEST.xlsx" />
   <parameter name="pathsaasuser" value="src/main/resources/DATA.xlsx" />
+  <parameter name="saasv2" value="http://test-saas-v2.bitnei.cn" />
   <!-- 线上环境配置 -->
   <parameter name="saas" value="https://saas.bitnei.cn" />
 
@@ -21,6 +22,7 @@
   </classes> 
   </test> 
  -->
+ <!-- 
   <test parallel="classes" thread-count="1" name="openapi" verbose="1" >
     <classes>         
     	<class name = "com.bitnei.apitest.testcases.openapi.ChargingData" />
@@ -29,18 +31,25 @@
     	<class name = "com.bitnei.apitest.testcases.openapi.ChargingDataTest" />
     </classes> 
   </test> 
-
+ -->
 
   <test parallel="classes" thread-count="1" name="SAAS" verbose="2" >
     <classes>
-    <class name = "com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" />
+    <!-- 
+    <class name = "com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" />    
     <class name = "com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel" />
     <class name = "com.bitnei.apitest.testcases.saas.PostBackSaas" />  
+
+
     <class name = "com.bitnei.apitest.testcases.saas.ApiTest" />  
-    <class name = "com.bitnei.apitest.testcases.saas.ApiTestPost" /> 
+
+
     <class name = "com.bitnei.apitest.testcases.saas.PostApiTestParas" /> 
+ 
     <class name = "com.bitnei.apitest.testcases.saas.TestGeodeData" />   
+     -->  
     <class name = "com.bitnei.apitest.testcases.saas.GetInsurance" />  
+
     </classes> 
   </test> 
 

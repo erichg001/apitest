@@ -9,15 +9,16 @@
   <parameter name="pathsaasuser" value="src/main/resources/DATA.xlsx"/>
   <parameter name="hostsaas" value="http://test-saas.bitnei.cn"/>
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
+  <parameter name="saasv2" value="http://test-saas-v2.bitnei.cn"/>
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.saas.ApiTest">
+      <class name="com.bitnei.apitest.testcases.saas.PostApiTestParas">
         <methods>
-          <include name="ApiTestCode" invocation-numbers="13"/>
+          <include name="ApiTest" invocation-numbers="1"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.PostApiTestParas -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

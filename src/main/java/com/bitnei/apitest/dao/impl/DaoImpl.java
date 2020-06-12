@@ -568,7 +568,7 @@ public class DaoImpl<T extends Po, PK extends Serializable> implements Dao<T, PK
 		// TODO Auto-generated method stub
 		
 		String sql = "delete from " + tableName + where.getWherePrams();
-		
+		System.out.println(sql);		
 		return sqlSessionTemplateASS.delete("deleteByparm", sql);
 	}
 
@@ -593,9 +593,11 @@ public class DaoImpl<T extends Po, PK extends Serializable> implements Dao<T, PK
 		String sql = "select count(*) from ";
 		
 		sql += tableName + where.getWherePrams();
+		System.out.println(sql);
 		
-		long count = sqlSessionTemplateASS.selectOne("selectCountByParm", sql);
+		long count = sqlSessionTemplateASS.selectOne("selectCountByParm",sql);
 		
+		System.out.println(count);
 		return count;
 	}
 

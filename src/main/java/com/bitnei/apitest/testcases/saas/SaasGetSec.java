@@ -35,7 +35,7 @@ public class SaasGetSec {
 	 WebDriver driver; 
 	 int delay = 10;
 	 String userName = "SaaS@bitnei.cn";
-	 String pw = "abc123";
+	 String pw = "abcd1234";
 	 String wrongpw = "123ab";
 	 WebDriverWait waitVar = null;
 	 String host;
@@ -94,8 +94,8 @@ public class SaasGetSec {
 	    driver.findElement(By.xpath("/html/body/app-root/layout-passport/passport-login/div/div/div/form/nz-form-item[2]/nz-form-control/div/span/nz-input-group/input")).sendKeys(pw);
 	    Thread.sleep(1000);
 	    driver.findElement(By.xpath("/html/body/app-root/layout-passport/passport-login/div/div/div/form/nz-form-item[4]/button")).click();        
-	    waitVar.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app/changan-layout/div/header/nav/div[1]/a[2]")));
-	    assertTrue(driver.getTitle().equals("新能源汽车大数据平台"));
+	    waitVar.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app/changan-layout/div/header/nav/div[1]/a[2]")));                                                                      
+	    //assertTrue(driver.getTitle().equals("新能源车可视化分析系统"));
 
 	           
         LogEntries logs = driver.manage().logs().get(LogType.PERFORMANCE);     	    

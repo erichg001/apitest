@@ -37,12 +37,12 @@ public class WherePrams {
 			}else{
 				where = " not ";
 			}
-			this.pram = " where " + file + where + "null";
+			this.pram = " where " + file + " " + where + "null";
 		}else{
 			if ("like".equals(where)) {
-				this.pram = " where " + file + where + " '%" + value + "%'";
+				this.pram = " where " + file + " " + where + " '%" + value + "%'";
 			}else{
-				this.pram = " where " + file + where + " '" + value + "'";
+				this.pram = " where " + file + " " + where + " '" + value + "'";
 			}
 		}
 		
@@ -85,7 +85,7 @@ public class WherePrams {
 			} else {
 				where = " not ";
 			}
-			this.pram = " and " + file + where + "null";
+			this.pram = " and " + file + " " +  where + "null";
 		} else {
 			if ("like".equals(where)) {
 				this.pram += " and " + file + " " + where + " '%" + value + "%'";
@@ -138,12 +138,12 @@ public class WherePrams {
 			} else {
 				where = " not ";
 			}
-			this.pram = " or " + file + where + "null";
+			this.pram = " or " + file + " " + where + "null";
 		} else {
 			if ("like".equals(where)) {
-				this.pram += " or " + file + where + " '%" + value + "%'";
+				this.pram += " or " + file + " " + where + " '%" + value + "%'";
 			}else{
-				this.pram += " or " + file + where + " '" + value + "'";
+				this.pram += " or " + file + " " + where + " '" + value + "'";
 			}
 		}
 		

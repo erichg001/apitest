@@ -90,10 +90,10 @@ public class PostApiTestParas {
 		System.out.println(lastobject.toString());
 		Assert.assertEquals(lastobject.toString(), "{}");
 		//验证数据库，保存数据成功并删除数据
-		Thread.sleep(3000);
-		boolean b1 = vehiclechargemetadao.isExist(Method.where("car_no", C.EQ, "京ADK2768"));
+		Thread.sleep(2000);
+		boolean b1 = vehiclechargemetadao.isExist(Method.where("car_no", C.LIKE, "ADK2768"));
 		Assert.assertEquals(b1, true);
-		vehiclechargemetadao.del(Method.where("car_no", C.EQ, "京ADK2768"));
+		vehiclechargemetadao.del(Method.where("car_no", C.LIKE, "ADK2768"));
 	}
 	
 	@DataProvider
