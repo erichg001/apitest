@@ -22,7 +22,7 @@
   </classes> 
   </test> 
  -->
- <!-- 
+ <!-- -->
   <test parallel="classes" thread-count="1" name="openapi" verbose="1" >
     <classes>         
     	<class name = "com.bitnei.apitest.testcases.openapi.ChargingData" />
@@ -31,23 +31,26 @@
     	<class name = "com.bitnei.apitest.testcases.openapi.ChargingDataTest" />
     </classes> 
   </test> 
- -->
+ 
 
   <test parallel="classes" thread-count="1" name="SAAS" verbose="2" >
     <classes>
-    <!-- 
-    <class name = "com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" />    
+   <!--  
+    <class name = "com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" /> 
+             
     <class name = "com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel" />
+
+
     <class name = "com.bitnei.apitest.testcases.saas.PostBackSaas" />  
 
-
+  -->
     <class name = "com.bitnei.apitest.testcases.saas.ApiTest" />  
 
 
     <class name = "com.bitnei.apitest.testcases.saas.PostApiTestParas" /> 
  
     <class name = "com.bitnei.apitest.testcases.saas.TestGeodeData" />   
-     -->  
+     
     <class name = "com.bitnei.apitest.testcases.saas.GetInsurance" />  
 
     </classes> 

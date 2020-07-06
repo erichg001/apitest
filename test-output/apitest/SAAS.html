@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SAAS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/8/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>47/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 02 16:41:19 CST 2020</td>
+<td>Started on:</td><td>Mon Jul 06 10:57:58 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22325 ms)</td>
+<tr><td>Total time:</td><td>136 seconds (136534 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,397 +67,248 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签调用正常, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":200,"errorMsg":null,"data":{"risk_score":22.0257,"mileage_12":6303.0,"mileage_24":3623.0,"mileage_36":0.0,"avg_run_time_length_monthly":1.6908846153846152E7,"avg_run_speed":319.0673120668706,"brake_acc_count_per_100km":0.0,"acc_count_per_100km":0.0,"speed_range00_rate":0.2437958755679832,"speed_range20_rate":0.18437609227542817,"speed_range40_rate":0.19608528486543167,"speed_range60_rate":0.06675987416987067,"speed_range80_rate":0.00611674239776302,"speed_range100_rate":8.738203425375742E-4,"speed_range120_rate":0.0,"speed_range140_rate":0.0,"fatigue_driving_rate":0.0,"avg_run_days_monthly":7.769230769230769,"avg_run_count_monthly":12.076923076923077,"avg_fast_charge_count_monthly":0.0,"avg_slow_charge_count_monthly":1.9090909090909092},"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:22.0257,&quot;mileage_12&quot;:6303,&quot;mileage_24&quot;:3623,&quot;mileage_36&quot;:0,&quot;avg_run_time_length_monthly&quot;:1.6908846E7,&quot;avg_run_speed&quot;:319.06732,&quot;brake_acc_count_per_100km&quot;:0,&quot;acc_count_per_100km&quot;:0,&quot;speed_range00_rate&quot;:0.24379587,&quot;speed_range20_rate&quot;:0.18437609,&quot;speed_range40_rate&quot;:0.19608529,&quot;speed_range60_rate&quot;:0.06675988,&quot;speed_range80_rate&quot;:0.0061167423,&quot;speed_range100_rate&quot;:8.7382033E-4,&quot;speed_range120_rate&quot;:0,&quot;speed_range140_rate&quot;:0,&quot;fatigue_driving_rate&quot;:0,&quot;avg_run_days_monthly&quot;:7.769231,&quot;avg_run_count_monthly&quot;:12.076923,&quot;avg_fast_charge_count_monthly&quot;:0,&quot;avg_slow_charge_count_monthly&quot;:1.9090909}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;avg_run_time_length_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_time_length_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_time_length_monthly&quot;},&quot;avg_run_speed&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_speed&quot;,&quot;expectedKey&quot;:&quot;avg_run_speed&quot;},&quot;brake_acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此brake_acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;brake_acc_count_per_100km&quot;},&quot;acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;acc_count_per_100km&quot;},&quot;speed_range00_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range00_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range00_rate&quot;},&quot;speed_range20_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range20_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range20_rate&quot;},&quot;speed_range40_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range40_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range40_rate&quot;},&quot;speed_range60_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range60_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range60_rate&quot;},&quot;speed_range80_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range80_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range80_rate&quot;},&quot;speed_range100_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range100_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range100_rate&quot;},&quot;speed_range120_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range120_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range120_rate&quot;},&quot;speed_range140_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range140_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range140_rate&quot;},&quot;fatigue_driving_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此fatigue_driving_rate&quot;,&quot;expectedKey&quot;:&quot;fatigue_driving_rate&quot;},&quot;avg_run_days_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_days_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_days_monthly&quot;},&quot;avg_run_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_count_monthly&quot;},&quot;avg_fast_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_fast_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_fast_charge_count_monthly&quot;},&quot;avg_slow_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_slow_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_slow_charge_count_monthly&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:22.0257,&quot;mileage_12&quot;:6303,&quot;mileage_24&quot;:3623,&quot;mileage_36&quot;:0,&quot;avg_run_time_length_monthly&quot;:1.6908846E7,&quot;avg_run_speed&quot;:319.06732,&quot;brake_acc_count_per_100km&quot;:0,&quot;acc_count_per_100km&quot;:0,&quot;speed_range00_rate&quot;:0.24379587,&quot;speed_range20_rate&quot;:0.18437609,&quot;speed_range40_rate&quot;:0.19608529,&quot;speed_range60_rate&quot;:0.06675988,&quot;speed_range80_rate&quot;:0.0061167423,&quot;speed_range100_rate&quot;:8.7382033E-4,&quot;speed_range120_rate&quot;:0,&quot;speed_range140_rate&quot;:0,&quot;fatigue_driving_rate&quot;:0,&quot;avg_run_days_monthly&quot;:7.769231,&quot;avg_run_count_monthly&quot;:12.076923,&quot;avg_fast_charge_count_monthly&quot;:0,&quot;avg_slow_charge_count_monthly&quot;:1.9090909},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:22.0257,&quot;mileage_12&quot;:6303,&quot;mileage_24&quot;:3623,&quot;mileage_36&quot;:0,&quot;avg_run_time_length_monthly&quot;:1.6908846E7,&quot;avg_run_speed&quot;:319.06732,&quot;brake_acc_count_per_100km&quot;:0,&quot;acc_count_per_100km&quot;:0,&quot;speed_range00_rate&quot;:0.24379587,&quot;speed_range20_rate&quot;:0.18437609,&quot;speed_range40_rate&quot;:0.19608529,&quot;speed_range60_rate&quot;:0.06675988,&quot;speed_range80_rate&quot;:0.0061167423,&quot;speed_range100_rate&quot;:8.7382033E-4,&quot;speed_range120_rate&quot;:0,&quot;speed_range140_rate&quot;:0,&quot;fatigue_driving_rate&quot;:0,&quot;avg_run_days_monthly&quot;:7.769231,&quot;avg_run_count_monthly&quot;:12.076923,&quot;avg_fast_charge_count_monthly&quot;:0,&quot;avg_slow_charge_count_monthly&quot;:1.9090909},&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1363720493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1363720493'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:22.0257,&quot;mileage_12&quot;:6303,&quot;mileage_24&quot;:3623,&quot;mileage_36&quot;:0,&quot;avg_run_time_length_monthly&quot;:1.6908846E7,&quot;avg_run_speed&quot;:319.06732,&quot;brake_acc_count_per_100km&quot;:0,&quot;acc_count_per_100km&quot;:0,&quot;speed_range00_rate&quot;:0.24379587,&quot;speed_range20_rate&quot;:0.18437609,&quot;speed_range40_rate&quot;:0.19608529,&quot;speed_range60_rate&quot;:0.06675988,&quot;speed_range80_rate&quot;:0.0061167423,&quot;speed_range100_rate&quot;:8.7382033E-4,&quot;speed_range120_rate&quot;:0,&quot;speed_range140_rate&quot;:0,&quot;fatigue_driving_rate&quot;:0,&quot;avg_run_days_monthly&quot;:7.769231,&quot;avg_run_count_monthly&quot;:12.076923,&quot;avg_fast_charge_count_monthly&quot;:0,&quot;avg_slow_charge_count_monthly&quot;:1.9090909}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;avg_run_time_length_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_time_length_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_time_length_monthly&quot;},&quot;avg_run_speed&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_speed&quot;,&quot;expectedKey&quot;:&quot;avg_run_speed&quot;},&quot;brake_acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此brake_acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;brake_acc_count_per_100km&quot;},&quot;acc_count_per_100km&quot;:{&quot;actualKey&quot;:&quot;不存在此acc_count_per_100km&quot;,&quot;expectedKey&quot;:&quot;acc_count_per_100km&quot;},&quot;speed_range00_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range00_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range00_rate&quot;},&quot;speed_range20_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range20_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range20_rate&quot;},&quot;speed_range40_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range40_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range40_rate&quot;},&quot;speed_range60_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range60_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range60_rate&quot;},&quot;speed_range80_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range80_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range80_rate&quot;},&quot;speed_range100_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range100_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range100_rate&quot;},&quot;speed_range120_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range120_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range120_rate&quot;},&quot;speed_range140_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此speed_range140_rate&quot;,&quot;expectedKey&quot;:&quot;speed_range140_rate&quot;},&quot;fatigue_driving_rate&quot;:{&quot;actualKey&quot;:&quot;不存在此fatigue_driving_rate&quot;,&quot;expectedKey&quot;:&quot;fatigue_driving_rate&quot;},&quot;avg_run_days_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_days_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_days_monthly&quot;},&quot;avg_run_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_run_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_run_count_monthly&quot;},&quot;avg_fast_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_fast_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_fast_charge_count_monthly&quot;},&quot;avg_slow_charge_count_monthly&quot;:{&quot;actualKey&quot;:&quot;不存在此avg_slow_charge_count_monthly&quot;,&quot;expectedKey&quot;:&quot;avg_slow_charge_count_monthly&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:22.0257,&quot;mileage_12&quot;:6303,&quot;mileage_24&quot;:3623,&quot;mileage_36&quot;:0,&quot;avg_run_time_length_monthly&quot;:1.6908846E7,&quot;avg_run_speed&quot;:319.06732,&quot;brake_acc_count_per_100km&quot;:0,&quot;acc_count_per_100km&quot;:0,&quot;speed_range00_rate&quot;:0.24379587,&quot;speed_range20_rate&quot;:0.18437609,&quot;speed_range40_rate&quot;:0.19608529,&quot;speed_range60_rate&quot;:0.06675988,&quot;speed_range80_rate&quot;:0.0061167423,&quot;speed_range100_rate&quot;:8.7382033E-4,&quot;speed_range120_rate&quot;:0,&quot;speed_range140_rate&quot;:0,&quot;fatigue_driving_rate&quot;:0,&quot;avg_run_days_monthly&quot;:7.769231,&quot;avg_run_count_monthly&quot;:12.076923,&quot;avg_fast_charge_count_monthly&quot;:0,&quot;avg_slow_charge_count_monthly&quot;:1.9090909},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:22.0257,&quot;mileage_12&quot;:6303,&quot;mileage_24&quot;:3623,&quot;mileage_36&quot;:0,&quot;avg_run_time_length_monthly&quot;:1.6908846E7,&quot;avg_run_speed&quot;:319.06732,&quot;brake_acc_count_per_100km&quot;:0,&quot;acc_count_per_100km&quot;:0,&quot;speed_range00_rate&quot;:0.24379587,&quot;speed_range20_rate&quot;:0.18437609,&quot;speed_range40_rate&quot;:0.19608529,&quot;speed_range60_rate&quot;:0.06675988,&quot;speed_range80_rate&quot;:0.0061167423,&quot;speed_range100_rate&quot;:8.7382033E-4,&quot;speed_range120_rate&quot;:0,&quot;speed_range140_rate&quot;:0,&quot;fatigue_driving_rate&quot;:0,&quot;avg_run_days_monthly&quot;:7.769231,&quot;avg_run_count_monthly&quot;:12.076923,&quot;avg_fast_charge_count_monthly&quot;:0,&quot;avg_slow_charge_count_monthly&quot;:1.9090909},&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.GetInsurance@f4168b8</td></tr>
+<td title='com.bitnei.apitest.testcases.saas.PostApiTestParas.ApiTest()'><b>ApiTest</b><br>Test class: com.bitnei.apitest.testcases.saas.PostApiTestParas<br>Test method: api接口<br>Parameters: API接口EC动力接收充电数据, /external-api/vehicle-charge/charge/herui/vehicle/receive, {"carNO":"京ADK2768","startSoc":"41","endSoc":"100","lat":"40.1297269989","lng":"116.5992975284","station":"EC动力顺丰充电站","startTime":"2019-10-12 21:38:25","endTime":"2019-10-13 01:24:25","id":"38145","electricAmount":"29.97","current":"1.9","voltage":"402","type":"1"}, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"10000"}</td>
+<td></td>
+<td>4</td>
+<td>com.bitnei.apitest.testcases.saas.PostApiTestParas@49e202ad</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签vin未加密码, /external-api/vrm/insurance/lable, ?vin=LGXC76C36G0156932, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620143, {"status":406,"errorMsg":"确保VIN是否已加密！","data":null,"error":true,"code":"40000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:200,&quot;expectedValue is&quot;:406},&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;接口 /external-api/vrm/insurance/lable 不存在&quot;,&quot;expectedValue is&quot;:406,&quot;expectedValue is &quot;:&quot;确保VIN是否已加密！&quot;},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:406,&quot;expectedValue is &quot;:&quot;40000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace919557875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace919557875'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:200,&quot;expectedValue is&quot;:406},&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;接口 /external-api/vrm/insurance/lable 不存在&quot;,&quot;expectedValue is&quot;:406,&quot;expectedValue is &quot;:&quot;确保VIN是否已加密！&quot;},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:406,&quot;expectedValue is &quot;:&quot;40000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 好车伯乐接口返回为空, /external-api/vehicle-battery/autobole/vehicle/static?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.GetInsurance@f4168b8</td></tr>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签时间戳错误认证失败, /external-api/vrm/insurance/lable, ?vin=AFljhq9A/QehWzuUTaWTAcCRvWkBaukB42u0UZV6MKhfebcXZmO/DvmOI6y8SQgCSPbcQ7SbWtaT6SCIwtgPP48SLkTvWMnFeZOtAgmewiTNUeswSZK8v3xoyloYqAz0UxhtJTfDnCdNfEdxEgYP9R9Su0ns8wpwYqMJG7EVzHo=, XyiZs5p41ACCwp8OM0J1GaAUH/RGRn1loRxbId6Vpo1iNiDntAL7X6JqskamA2CFG0avqCoLUcbJEpwHsJqoOAHg9YBIcHxXi5QaQmK5HiO6PhK5b2enayWxe+OnOO2zu2NxQ63mCE/YVVhBtKSGLXDRCXIHIrTPZQi7Gj0zdZ0=, 1581407620140, {"status":406,"errorMsg":"验签失败！","data":null,"error":true,"code":"40000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:200,&quot;expectedValue is&quot;:406},&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;接口 /external-api/vrm/insurance/lable 不存在&quot;,&quot;expectedValue is&quot;:406,&quot;expectedValue is &quot;:&quot;验签失败！&quot;},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:406,&quot;expectedValue is &quot;:&quot;40000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace203060171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace203060171'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:200,&quot;expectedValue is&quot;:406},&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;接口 /external-api/vrm/insurance/lable 不存在&quot;,&quot;expectedValue is&quot;:406,&quot;expectedValue is &quot;:&quot;验签失败！&quot;},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:406,&quot;expectedValue is &quot;:&quot;40000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 车辆轨迹获取车辆轨迹接口返回为空, /external-api/lbs/test/vehicle/locations?, vin=123&dateFrom=2019-10-20%2007%3A16%3A20&dateTo=2019-10-21%2007%3A16%3A20, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.GetInsurance@f4168b8</td></tr>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 平安标签查询vin内容不存在, /external-api/vrm/insurance/lable, ?vin=HbkvkJ4hp%2FdyFkgYd73SkY4rUgVkldvzMKLOSH9M4UZgJATl7mo97PeqhVip%2FWP6iwioAiSMIN4KGUGF5zG8xHZibsr2vl1oIypNDAqbUf0s5xHW2moPsezG%2FedhntbeDRpAqV%2BPIlvq0kblkVewus3A%2B%2BvX32GHm70rs7xbJ6Y%3D, cw1EWG0f1cHwAvEfyifsToWHBy2CJkmeKu6cDwPMy9mW2K8ZgfJFZyteVatJAMpmWGAk2d17//F25cwP9phjoAlRT7IKBA1OQUMyN2IsDQJOukh12d7e9zt3Yd/cZaUp1mBTt8AZgtq1l45i0+p5cbGC7yJUn+hYZ8uXf2BOtr4=, 1581408151875, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;35000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace994250871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace994250871'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;35000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车辆厂家及车型, /external-api/laboratory/models/reliable/factory/information?, type=01, {"status":200,"errorMsg":null,"data":[{"vehFac":"合众汽车","vehModelInfos":[{"vehCommonName":"哪吒N01","vehModel":"THZ7000BEVS004","standardDriverMileage":301.00,"standardPower":14.00}]},{"vehFac":"比亚迪","vehModelInfos":[{"vehCommonName":"E5","vehModel":"BYD7005BEV1","standardDriverMileage":400.00,"standardPower":14.80},{"vehCommonName":"比亚迪唐","vehModel":"BYD6490SBEV1","standardDriverMileage":520.00,"standardPower":17.30}]},{"vehFac":"北汽新能源","vehModelInfos":[{"vehCommonName":"EU5","vehModel":"BJ7000C5D3-BEV","standardDriverMileage":416.00,"standardPower":13.90}]},{"vehFac":"吉利汽车","vehModelInfos":[{"vehCommonName":"帝豪GSE400","vehModel":"HQ7002BEV15","standardDriverMileage":353.00,"standardPower":14.53}]},{"vehFac":"威马汽车","vehModelInfos":[{"vehCommonName":"EX5","vehModel":"SZS6460A06BEV","standardDriverMileage":303.00,"standardPower":16.20}]},{"vehFac":"上汽集团","vehModelInfos":[{"vehCommonName":"荣威ERX5","vehModel":"CSA6456BEV2","standardDriverMileage":320.00,"standardPower":15.49},{"vehCommonName":"Marvel X","vehModel":"CSA6461FBEV1","standardDriverMileage":403.00,"standardPower":14.20}]},{"vehFac":"长安汽车","vehModelInfos":[{"vehCommonName":"EADO","vehModel":"SC7003ACBEV","standardDriverMileage":305.00,"standardPower":13.40},{"vehCommonName":"EADO","vehModel":"SC7003AEBEV","standardDriverMileage":405.00,"standardPower":13.80}]},{"vehFac":"广汽新能源","vehModelInfos":[{"vehCommonName":"传祺AION.S","vehModel":"GAM7000BEVA0C","standardDriverMileage":510.00,"standardPower":13.10}]},{"vehFac":"蔚来汽车","vehModelInfos":[{"vehCommonName":"ES6","vehModel":"HFC6483ECEV-W","standardDriverMileage":430.00,"standardPower":18.10},{"vehCommonName":"ES8","vehModel":"HFC6502ECEV2-W","standardDriverMileage":355.00,"standardPower":21.00}]}],"error":false,"code":"10000"}</td>
+<td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.GetInsurance@f4168b8</td></tr>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/exponent?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"driverRange":289.59,"middleChargeStartSoc":37.53,"standardDriverMileage":353.00,"standardPower":null,"power100km":null,"fastChargeDuration":54.47,"middleAnxiety":"中","satisfactionDegree":"低","onlineHailedCarRatio":null,"onlineHailedCarNumber":null},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数北京市, /external-api/laboratory/models/reliable/exponent?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"driverRange":291.55,"middleChargeStartSoc":35.42,"standardDriverMileage":353.00,"standardPower":null,"power100km":null,"fastChargeDuration":59.06,"middleAnxiety":"中","satisfactionDegree":"低","onlineHailedCarRatio":null,"onlineHailedCarNumber":null},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数车型必填, /external-api/laboratory/models/reliable/exponent?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数厂家必填, /external-api/laboratory/models/reliable/exponent?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数为空, /external-api/laboratory/models/reliable/exponent?, vehModel=123&vehFac=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询全国, /external-api/laboratory/models/reliable/rank?, type=01, {"status":200,"errorMsg":null,"data":[{"vehModel":"THZ7000BEVS004","vehCommonName":"哪吒N01","unit":"km","standardDriverRange":301.0,"standardPower":14.0,"vehFac":"合众汽车"},{"vehModel":"BYD7005BEV1","vehCommonName":"E5","unit":"km","standardDriverRange":400.0,"standardPower":14.8,"vehFac":"比亚迪"},{"vehModel":"BJ7000C5D3-BEV","vehCommonName":"EU5","unit":"km","standardDriverRange":416.0,"standardPower":13.9,"vehFac":"北汽新能源"}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询北京市, /external-api/laboratory/models/reliable/rank?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&type=01, {"status":200,"errorMsg":null,"data":[{"vehModel":"THZ7000BEVS004","vehCommonName":"哪吒N01","unit":"km","standardDriverRange":301.00,"standardPower":14.00,"vehFac":"合众汽车"},{"vehModel":"BYD7005BEV1","vehCommonName":"E5","unit":"km","standardDriverRange":400.00,"standardPower":14.80,"vehFac":"比亚迪"},{"vehModel":"HQ7002BEV15","vehCommonName":"帝豪GSE400","unit":"km","standardDriverRange":353.00,"standardPower":14.53,"vehFac":"吉利汽车"}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询类型必填, /external-api/laboratory/models/reliable/rank?, , {"status":400,"errorMsg":"请求参数type不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询全国返回1条, /external-api/laboratory/models/reliable/rank?, size=1&type=02, {"status":200,"errorMsg":null,"data":[{"vehModel":"BJ7000U3D7G-BEV","vehCommonName":"EX360","unit":"km","standardDriverRange":318.0,"standardPower":16.7,"vehFac":"北汽新能源"}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/mileage/detail?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","driverRange":289.59,"standardDriverMileage":353.0,"vehFac":"吉利汽车","unit":"km","monthType":[{"driverMileage":206.0,"month":"01"},{"driverMileage":234.76,"month":"02"},{"driverMileage":285.52,"month":"03"},{"driverMileage":298.19,"month":"04"},{"driverMileage":323.13,"month":"05"},{"driverMileage":321.67,"month":"06"},{"driverMileage":316.4,"month":"07"},{"driverMileage":320.0,"month":"08"},{"driverMileage":324.62,"month":"09"},{"driverMileage":315.65,"month":"10"},{"driverMileage":283.3,"month":"11"},{"driverMileage":245.88,"month":"12"}],"seasonType":[{"driverMileage":307.86,"season":"autumn"},{"driverMileage":302.28,"season":"spring"},{"driverMileage":319.36,"season":"summer"},{"driverMileage":228.88,"season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情北京市, /external-api/laboratory/models/reliable/mileage/detail?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","driverRange":291.55,"standardDriverMileage":353.00,"vehFac":"吉利汽车","unit":"km","monthType":[{"driverMileage":209.00,"month":"01"},{"driverMileage":233.67,"month":"02"},{"driverMileage":289.40,"month":"03"},{"driverMileage":292.50,"month":"04"},{"driverMileage":332.49,"month":"05"},{"driverMileage":329.00,"month":"06"},{"driverMileage":321.29,"month":"07"},{"driverMileage":331.23,"month":"08"},{"driverMileage":338.00,"month":"09"},{"driverMileage":324.67,"month":"10"},{"driverMileage":274.93,"month":"11"},{"driverMileage":222.44,"month":"12"}],"seasonType":[{"driverMileage":312.53,"season":"autumn"},{"driverMileage":304.80,"season":"spring"},{"driverMileage":327.17,"season":"summer"},{"driverMileage":221.70,"season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情厂家必填, /external-api/laboratory/models/reliable/mileage/detail?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情车型必填, /external-api/laboratory/models/reliable/mileage/detail?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/anxiety/detail?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","middleChargeStartSoc":37.53,"middleAnxiety":"中","vehFac":"吉利汽车","unit":"%","monthType":[{"chargeStartSoc":42.50,"anxiety":"中","month":"01"},{"chargeStartSoc":31.50,"anxiety":"中","month":"02"},{"chargeStartSoc":37.00,"anxiety":"中","month":"03"},{"chargeStartSoc":39.50,"anxiety":"中","month":"04"},{"chargeStartSoc":39.00,"anxiety":"中","month":"05"},{"chargeStartSoc":37.98,"anxiety":"中","month":"06"},{"chargeStartSoc":37.00,"anxiety":"中","month":"07"},{"chargeStartSoc":37.00,"anxiety":"中","month":"08"},{"chargeStartSoc":38.00,"anxiety":"中","month":"09"},{"chargeStartSoc":38.00,"anxiety":"中","month":"10"},{"chargeStartSoc":36.92,"anxiety":"中","month":"11"},{"chargeStartSoc":36.00,"anxiety":"中","month":"12"}],"seasonType":[{"chargeStartSoc":37.64,"anxiety":"中","season":"autumn"},{"chargeStartSoc":38.50,"anxiety":"中","season":"spring"},{"chargeStartSoc":37.33,"anxiety":"中","season":"summer"},{"chargeStartSoc":36.67,"anxiety":"中","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情北京市, /external-api/laboratory/models/reliable/anxiety/detail?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","middleChargeStartSoc":35.42,"middleAnxiety":"中","vehFac":"吉利汽车","unit":"%","monthType":[{"chargeStartSoc":42.00,"anxiety":"中","month":"01"},{"chargeStartSoc":31.00,"anxiety":"中","month":"02"},{"chargeStartSoc":37.00,"anxiety":"中","month":"03"},{"chargeStartSoc":39.00,"anxiety":"中","month":"04"},{"chargeStartSoc":36.00,"anxiety":"中","month":"05"},{"chargeStartSoc":35.00,"anxiety":"中","month":"06"},{"chargeStartSoc":34.00,"anxiety":"中","month":"07"},{"chargeStartSoc":35.00,"anxiety":"中","month":"08"},{"chargeStartSoc":35.08,"anxiety":"中","month":"09"},{"chargeStartSoc":35.00,"anxiety":"中","month":"10"},{"chargeStartSoc":33.00,"anxiety":"中","month":"11"},{"chargeStartSoc":33.00,"anxiety":"中","month":"12"}],"seasonType":[{"chargeStartSoc":34.36,"anxiety":"中","season":"autumn"},{"chargeStartSoc":37.33,"anxiety":"中","season":"spring"},{"chargeStartSoc":34.67,"anxiety":"中","season":"summer"},{"chargeStartSoc":35.33,"anxiety":"中","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情厂家必填, /external-api/laboratory/models/reliable/anxiety/detail?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情车型必填, /external-api/laboratory/models/reliable/anxiety/detail?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/charge/detail?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","fastChargeDuration":54.47,"satisfactionDegree":"低","vehFac":"吉利汽车","unit":"min","monthType":[{"fastChargeTime":97.50,"satisfactionDegree":"低","month":"01"},{"fastChargeTime":41.00,"satisfactionDegree":"中","month":"02"},{"fastChargeTime":92.67,"satisfactionDegree":"低","month":"03"},{"fastChargeTime":0,"satisfactionDegree":"低","month":"04"},{"fastChargeTime":45.67,"satisfactionDegree":"低","month":"05"},{"fastChargeTime":44.50,"satisfactionDegree":"中","month":"06"},{"fastChargeTime":45.14,"satisfactionDegree":"低","month":"07"},{"fastChargeTime":44.34,"satisfactionDegree":"中","month":"08"},{"fastChargeTime":44.73,"satisfactionDegree":"中","month":"09"},{"fastChargeTime":45.18,"satisfactionDegree":"低","month":"10"},{"fastChargeTime":47.66,"satisfactionDegree":"低","month":"11"},{"fastChargeTime":50.83,"satisfactionDegree":"低","month":"12"}],"seasonType":[{"fastChargeTime":45.86,"satisfactionDegree":"低","season":"autumn"},{"fastChargeTime":69.17,"satisfactionDegree":"低","season":"spring"},{"fastChargeTime":44.66,"satisfactionDegree":"中","season":"summer"},{"fastChargeTime":63.11,"satisfactionDegree":"低","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情北京市, /external-api/laboratory/models/reliable/charge/detail?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","fastChargeDuration":59.06,"satisfactionDegree":"低","vehFac":"吉利汽车","unit":"min","monthType":[{"fastChargeTime":97.50,"satisfactionDegree":"低","month":"01"},{"fastChargeTime":41.00,"satisfactionDegree":"中","month":"02"},{"fastChargeTime":92.67,"satisfactionDegree":"低","month":"03"},{"fastChargeTime":0,"satisfactionDegree":"低","month":"04"},{"fastChargeTime":50.28,"satisfactionDegree":"低","month":"05"},{"fastChargeTime":49.00,"satisfactionDegree":"低","month":"06"},{"fastChargeTime":50.63,"satisfactionDegree":"低","month":"07"},{"fastChargeTime":48.96,"satisfactionDegree":"低","month":"08"},{"fastChargeTime":48.58,"satisfactionDegree":"低","month":"09"},{"fastChargeTime":50.00,"satisfactionDegree":"低","month":"10"},{"fastChargeTime":56.83,"satisfactionDegree":"低","month":"11"},{"fastChargeTime":64.19,"satisfactionDegree":"低","month":"12"}],"seasonType":[{"fastChargeTime":51.80,"satisfactionDegree":"低","season":"autumn"},{"fastChargeTime":71.48,"satisfactionDegree":"低","season":"spring"},{"fastChargeTime":49.53,"satisfactionDegree":"低","season":"summer"},{"fastChargeTime":67.56,"satisfactionDegree":"低","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情厂家必填, /external-api/laboratory/models/reliable/charge/detail?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情车型必填, /external-api/laboratory/models/reliable/charge/detail?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 鼎然科技行程汇总查询vin正确, /external-api/vrm/vehicle/summary/tags?, vin=LC06S64M0H1993466, {"status":200,"errorMsg":null,"data":{"vin":"LC06S64M0H1993466","summary_result":"1,69100,0,0,0,0,0,96800,134200,0,114100,89300,41300,117400,0,134900,57100,56700,45000,89300,94400,18900,0,0,44800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,2,13,45,6,0,6,13,46,0,0,1,0,6,0,0,0,0,0,0,32400,44700,38000,0,22300,22400,37800,0,44800,37800,0,44600,37900,0,0,0,0,35500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,1,3,16,2,0,2,4,15,0,1,0,0,2,1448800,0,0,0,0,0,3734700,3279800,786400,4568800,2145400,5333900,2747400,643200,2375300,4029000,836800,1741100,2420600,4135900,1100500,360000,843400,2368700,0,723700,2281200,1915100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43300,0,0,0,0,74,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2126,101,502,1119,370,34,302,499,986,11,8,320,0,250,815800,0,0,0,0,0,1780100,1384000,1489500,1588300,694100,1933200,1404400,288300,752600,1653000,735700,710700,1365200,1165400,369000,66400,320500,1158800,0,261800,619300,727300,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63600,0,0,0,0,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,941,58,237,453,189,4,138,236,404,2,4,157,0,115,440309,440304,440305,440306,440303,440307,810012,810014,440606,0,0,0,0,0,0,40825600,16559800,6216700,472900,230800,106500,23700,23200,20100,0,0,0,0,0,0,64574700,1039,606,315,258,241,157,33,16,15,13,3067,0#LC06S64M0H1993466#2020-05-18#64574700#15138908#3067#10.6#347#0#0#72.7#72.6#441#6000#2223008#2#0_0_1#0.144_0.924_0.022#64574700#3067#365#2020-05-18#167512700#69896400","charge_times":343,"fast_charge_times":1,"total_charge_time_length":1863103.0,"total_fast_charge_time_length":1219.0,"end_charge_avg_soc":92.62973760932945,"max_weight":"17950","displacement":"","max_speed":"100","length":"10690","drive_range":469.0,"motor_type":"永磁同步电机","kwh_100km":0.0,"cell_enterprise":"惠州比亚迪电池有限公司","battery_type":"磷酸铁锂","manufacturer":"比亚迪汽车工业有限公司","brand":"比亚迪牌","veh_category_2":"纯电动客车","veh_model_name":"BYD6110LLEV","veh_level":"","produce_date":"2017"},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 鼎然科技行程汇总查询vin无数据, /external-api/vrm/vehicle/summary/tags?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 平安租赁实时数据按vin查询, /external-api/vrm/vehicle/realTime?, vin=LC0CE4CB7J0101806, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 平安租赁实时数据按licensePlate查询, /external-api/vrm/vehicle/realTime?, licensePlate=%E4%BA%ACAD98062, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
+<td></td>
+<td>4</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 平安租赁实时数据按vin查询无数据, /external-api/vrm/vehicle/realTime?, vin=123, {"status":400,"errorMsg":"此车不在查询范围内！","data":null,"error":true,"code":"30004"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信车辆静态信息按vin查询正确, /external-api/vrm/vehicle/static/tag?, vin=LNBSCB3F8GW022110, {"status":200,"errorMsg":null,"data":{"vin":"LNBSCB3F8GW022110","power_type":"纯电动","license_plate":"鲁B3R20L","veh_model_name":"BJ7001BPH1-BEV","brand":"北京牌","manufacturer":"北京新能源汽车股份有限公司","veh_common_name":"EC180","curb_weight":1050.0,"max_speed":101.0,"drive_range":156.0,"positive_material":"层状三元材料","cell_manufacturer":"孚能科技（赣州）有限公司/","kwh_100km":null,"is_online":1,"first_live_date":"2018-05-04","run_city":"青岛市","run_province":"山东省","veh_category_2":"计时租赁","unit_name":"青岛新未来汽车租赁有限公司","veh_level":"A0","first_run_date":"1525422114000","first_charge_date":"1525434259000"},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信车辆静态信息按vin查询无数据, /external-api/vrm/vehicle/static/tag?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信车辆静态信息按licensePlate查询正确, /external-api/vrm/vehicle/static/tag?, licensePlate=%E9%B2%81B3R20L, {"status":200,"errorMsg":null,"data":{"vin":"LNBSCB3F8GW022110","power_type":"纯电动","license_plate":"鲁B3R20L","veh_model_name":"BJ7001BPH1-BEV","brand":"北京牌","manufacturer":"北京新能源汽车股份有限公司","veh_common_name":"EC180","curb_weight":1050.0,"max_speed":101.0,"drive_range":156.0,"positive_material":"层状三元材料","cell_manufacturer":"孚能科技（赣州）有限公司/","kwh_100km":null,"is_online":1,"first_live_date":"2018-05-04","run_city":"青岛市","run_province":"山东省","veh_category_2":"计时租赁","unit_name":"青岛新未来汽车租赁有限公司","veh_level":"A0","first_run_date":"1525422114000","first_charge_date":"1525434259000"},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信车辆静态信息按licensePlate查询无数据, /external-api/vrm/vehicle/static/tag?, licensePlate=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信车辆静态信息参数必传验证, /external-api/vrm/vehicle/static/tag, , {"status":400,"errorMsg":"参数vin和licensePlate至少传一个！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信整体标签查询按vin查询正确, /external-api/vrm/vehicle/whole/tag?, vin=LNBSCB3F8GW022110, {"status":200,"errorMsg":null,"data":{"vin":"LNBSCB3F8GW022110","power_type":"BEV","brand":"北京","veh_model_name":"BJ7001BPH1-BEV","drive_range":156.0,"positive_material":"层状三元材料","cell_manufacturer":"孚能科技（赣州）有限公司/","is_online":1,"run_location":"河南省鹤壁市浚县","province_dept":"山东省","city_dept":"青岛市","veh_category_2":"计时租赁","first_run_date":"2018-05-04","first_charge_date":"2018-05-04","total_run_mile":250610.0,"total_high_temp_run_mile":14150.0,"total_low_temp_run_mile":140.0,"total_low_soc_run_times":167,"avg_daily_run_mile":517.7892561983471,"avg_daily_run_time_length":6882.384297520661,"avg_charge_times_per_100km":0.1552212601252943,"avg_charge_start_soc":35.48586118251928,"avg_charge_end_soc":83.60411311053984,"last_charge_time":"2020-04-29","last_charge_location":"河南省安阳市","total_alarm_times":38,"max_alarm_name":"绝缘报警","risk_score":0.0,"total_night_run_mile":31450.0,"total_night_run_time_length":420446.0,"total_summer_run_mile":80320.0,"total_winter_run_mile":50990.0,"charge_times":389},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信整体标签查询按vin查询无数据, /external-api/vrm/vehicle/whole/tag?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险调用正常--LGXC76C3XJ0108468, /external-api/vrm/genilex/insurance/lable, ?vin=CEICmUK8TYpnFfkToJCvfC%2FGI%2FHxHhgNewUaf%2B2xJmtH4LpUD3HEvCfs8Vh9yEnjWViYEcRQUtnoUhdo3Cm95%2BrSd%2BBh5dhyqrXywGx7NHJfGuUWer4xkCF78e7qwwNoqzkv1DidMPpA45quVI0L8PMw%2BSMbYNiu70hVS5adN84%3D&customerId=123, djKx876kY0HGWS4UKNCwasskI3j5vh92Y40L6eEmY7TzysROyIcPccFnFlE76BUUXfWz1YGDjUTa5rLx4HJzty3XQhQKZK23O76P6HfJJsg0slkBufD6J6aVgdIIfLo7Evny7PyJPDpHqRK3PvnTFxoge3AO+PHJe2HlGO29q1s=, 1584338303978, {"status":200,"errorMsg":null,"data":{"risk_score":24.41971292259522,"mileage_12":3.0,"mileage_24":1.0,"mileage_36":0.0},"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0},&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1601164539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1601164539'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0},&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
+<td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.GetInsurance@f4168b8</td></tr>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险调用正常--津AF05690, /external-api/vrm/genilex/insurance/lable, ?licensePlate=FkgzYFyc2oOym3KJnuxGEABKA2p0p1c3PY4EVlCM9P13DvBK%2BO9loMrTduQA3wruxKdqKV9aqonahmuoocjdCa91amdP36DMya4zrePl9DQeW6XjT61GXmY5QqPIEXR1A7qKt8NSt5ck0dEUeqQT%2F%2FEOXXdvEnoWpnOeZ%2F6LG8A%3D&customerId=123, UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=, 1584339230681, {"status":200,"errorMsg":null,"data":{"risk_score":24.41971292259522,"mileage_12":3.0,"mileage_24":1.0,"mileage_36":0.0},"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0},&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2095335605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2095335605'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0}},&quot;risk_score&quot;:{&quot;actualKey&quot;:&quot;不存在此risk_score&quot;,&quot;expectedKey&quot;:&quot;risk_score&quot;},&quot;mileage_12&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_12&quot;,&quot;expectedKey&quot;:&quot;mileage_12&quot;},&quot;mileage_24&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_24&quot;,&quot;expectedKey&quot;:&quot;mileage_24&quot;},&quot;mileage_36&quot;:{&quot;actualKey&quot;:&quot;不存在此mileage_36&quot;,&quot;expectedKey&quot;:&quot;mileage_36&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;risk_score&quot;:24.419712,&quot;mileage_12&quot;:3,&quot;mileage_24&quot;:1,&quot;mileage_36&quot;:0},&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.GetInsurance@f4168b8</td></tr>
+<td></td>
+<td>1</td>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险车架号与车牌号至少传一个, /external-api/vrm/genilex/insurance/lable, ?customerId=123, UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=, 1584339230681, {"status":200,"errorMsg":"车架号与车牌号至少传一个","data":null,"error":true,"code":"40000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;接口 /external-api/vrm/genilex/insurance/lable 不存在&quot;,&quot;expectedValue is &quot;:&quot;车架号与车牌号至少传一个&quot;},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is &quot;:&quot;40000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1074462159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1074462159'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;接口 /external-api/vrm/genilex/insurance/lable 不存在&quot;,&quot;expectedValue is &quot;:&quot;车架号与车牌号至少传一个&quot;},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is &quot;:&quot;40000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
+<td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险车架号与车牌号至少传一个, /external-api/vrm/genilex/insurance/lable, ?customerId=123, UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=, 1584339230681, {"status":200,"errorMsg":"参数vin、licensePlate至少传一个！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.GetInsurance@f4168b8</td></tr>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险查询vin无数据, /external-api/vrm/genilex/insurance/lable, ?vin=KaXkK8k5Y3zhSSW1acBVm%2B%2BWOr5Kp8s1t5EWLAcftir1564%2BhsEdTemSjtk18KasjykZDWNshvLFIiQH1jazsVUVlojvthvy6fXe34g1Gsdx6a3hFB6XYxLFjAL%2Fq2wG5LU0yvZrToV8mXOnUOKRTFJTfV1WoQF0B%2F4E6Or4tXk%3D&customerId=123, oa1rG573rgsTa5xbgSfniR5kCjHxZZeuzAXJjZP5AdXwg5Kd4sjzMXipeLojJpa6vwY8d0Xpui2JdwBBeawWogi6XSCCyMJBiWr+fkrcac7r7ctU+cu357bpam4ARq16POBxApw3H/WaKTeWOfF+siVsIcFbMxIn6EkVahCtw5w=, 1584343514140, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;35000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace763971099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace763971099'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;30007&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;35000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.GetInsurance.Insurance(GetInsurance.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
+<td></td>
 <td>0</td>
-<td>com.bitnei.apitest.testcases.saas.GetInsurance@f4168b8</td></tr>
+<td>com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车辆总数, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+limit++1%3B&members=&limit=0&_=1578559299715, {"result":[["java.lang.Integer",2255219]]}</td>
+<td></td>
+<td>2</td>
+<td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车速度大于220, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+speed+%3E+220+limit+1&members=&limit=0&_=1578563123416, {"result":[["java.lang.Integer",86]]}</td>
+<td></td>
+<td>9</td>
+<td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 里程表大于200000, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+mileage%3E200000+limit+1&members=&limit=0&_=1578563187896, {"result":[["java.lang.Integer",15507]]}</td>
+<td></td>
+<td>8</td>
+<td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标异常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3C73.66+or+lng+%3E135.05+or+lat+%3C+3.86+or+lat+%3E53.55+limit+1&members=&limit=0&_=1578563382007, {"result":[["java.lang.Integer",374583]]}</td>
+<td></td>
+<td>18</td>
+<td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标为0,0, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng%3D0+and+lat%3D0+limit+1&members=&limit=0&_=1578563056235, {"result":[["java.lang.Integer",369622]]}</td>
+<td></td>
+<td>9</td>
+<td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标正常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3E73.66+and+lng+%3C135.05+and+lat+%3E+3.86+and+lat+%3C53.55++limit+1&members=&limit=0&_=1578621101331, {"result":[["java.lang.Integer",1876945]]}</td>
+<td></td>
+<td>19</td>
+<td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
 </table><p>
 </body>
 </html>

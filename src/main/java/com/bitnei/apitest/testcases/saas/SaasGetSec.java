@@ -97,7 +97,7 @@ public class SaasGetSec {
 	    waitVar.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app/changan-layout/div/header/nav/div[1]/a[2]")));                                                                      
 	    //assertTrue(driver.getTitle().equals("新能源车可视化分析系统"));
 
-	           
+	    
         LogEntries logs = driver.manage().logs().get(LogType.PERFORMANCE);     	    
 	    String tosec = "" ;
 	    String pubsec = "";

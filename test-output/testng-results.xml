@@ -1,13 +1,408 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="68" passed="68">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="27706" started-at="2020-06-10T08:49:21Z" finished-at="2020-06-10T08:49:49Z">
+  <suite name="apitest" duration-ms="216483" started-at="2020-07-06T02:56:38Z" finished-at="2020-07-06T03:00:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27706" started-at="2020-06-10T08:49:21Z" finished-at="2020-06-10T08:49:49Z">
-      <class name="com.bitnei.apitest.testcases.saas.PostApiTestParas">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="setUp" is-config="true" duration-ms="21780" started-at="2020-06-10T08:49:21Z" finished-at="2020-06-10T08:49:43Z">
+    <test name="openapi" duration-ms="79886" started-at="2020-07-06T02:56:38Z" finished-at="2020-07-06T02:57:58Z">
+      <class name="com.bitnei.apitest.testcases.openapi.ChargingData">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@60438a68]" name="setUp" is-config="true" duration-ms="1361" started-at="2020-07-06T02:56:38Z" finished-at="2020-07-06T02:56:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ChargingDataNo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@60438a68]" name="ChargingDataNo" duration-ms="345" started-at="2020-07-06T02:56:39Z" description="查询珠海车辆充电数据缺少车牌号参数" data-provider="dataprovider14" finished-at="2020-07-06T02:56:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNo -->
+        <test-method status="PASS" signature="ChargingDataNoFrom(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@60438a68]" name="ChargingDataNoFrom" duration-ms="401" started-at="2020-07-06T02:56:40Z" description="查询珠海车辆充电数据缺少from参数" data-provider="dataprovider2" finished-at="2020-07-06T02:56:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNoFrom -->
+        <test-method status="PASS" signature="ChargingDataNoTo(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@60438a68]" name="ChargingDataNoTo" duration-ms="77" started-at="2020-07-06T02:56:40Z" description="查询珠海车辆充电数据缺少to参数" data-provider="dataprovider3" finished-at="2020-07-06T02:56:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNoTo -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@60438a68]" name="ChargingDataNormal" duration-ms="21864" started-at="2020-07-06T02:56:40Z" description="查询珠海车辆充电数据正常" data-provider="dataprovider1" finished-at="2020-07-06T02:57:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataUpOneDay(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@60438a68]" name="ChargingDataUpOneDay" duration-ms="671" started-at="2020-07-06T02:57:02Z" description="查询珠海车辆充电数据选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2020-07-06T02:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataUpOneDay -->
+        <test-method status="PASS" signature="ChargingDataWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingData@60438a68]" name="ChargingDataWrongTime" duration-ms="75" started-at="2020-07-06T02:57:03Z" description="查询珠海车辆充电数据选择时间范围开始时间不能大于结束时间" data-provider="dataprovider5" finished-at="2020-07-06T02:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataWrongTime -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingData -->
+      <class name="com.bitnei.apitest.testcases.openapi.RunningData">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@3439f68d]" name="setUp" is-config="true" duration-ms="86" started-at="2020-07-06T02:57:03Z" finished-at="2020-07-06T02:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="EnergyConservationInvalidtoken(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@3439f68d]" name="EnergyConservationInvalidtoken" duration-ms="52" started-at="2020-07-06T02:57:03Z" description="车辆行驶数数据查询token无效" data-provider="dataprovider13" finished-at="2020-07-06T02:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":401,"errorMsg":"invalid_token: f829155c-9374-4673-a005-10ce548af1=>/external/1/zhuhai/api/runningData","data":null,"error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationInvalidtoken -->
+        <test-method status="PASS" signature="EnergyConservationNolicensePlate(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@3439f68d]" name="EnergyConservationNolicensePlate" duration-ms="69" started-at="2020-07-06T02:57:03Z" description="车辆行驶数数据查询车牌号为空" data-provider="dataprovider12" finished-at="2020-07-06T02:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 licensePlate  不能为空","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNolicensePlate -->
+        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@3439f68d]" name="EnergyConservationNormal" duration-ms="8021" started-at="2020-07-06T02:57:03Z" description="车辆行驶数据查询正常" data-provider="dataprovider10" finished-at="2020-07-06T02:57:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNormal -->
+        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.RunningData@3439f68d]" name="EnergyConservationUpScope" duration-ms="247" started-at="2020-07-06T02:57:12Z" description="车辆行驶数选择时间范围不得超过一个自然日" data-provider="dataprovider4" finished-at="2020-07-06T02:57:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationUpScope -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.RunningData -->
+      <class name="com.bitnei.apitest.testcases.openapi.ChargingDataTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@dbd940d]" name="setUp" is-config="true" duration-ms="803" started-at="2020-07-06T02:57:12Z" finished-at="2020-07-06T02:57:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@dbd940d]" name="ChargingDataNormal" duration-ms="22107" started-at="2020-07-06T02:57:13Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2020-07-06T02:57:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[查询结果正常]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"startElectricity":124.25,"endElectricity":150.5,"startTime":"2019-03-01 09:19:34","endTime":"2019-03-01 09:42:34","startCurrent":"-230.3","endCurrent":"-0.8","startVolt":"594.7","endVolt":"586.4"}],"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@dbd940d]" name="ChargingDataNormal" duration-ms="600" started-at="2020-07-06T02:57:35Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2020-07-06T02:57:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[参数from不符合规则]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=&to=2019-03-01+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@dbd940d]" name="ChargingDataNormal" duration-ms="65" started-at="2020-07-06T02:57:35Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2020-07-06T02:57:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[参数to不符合规则]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 to  不符合规则：yyyy-MM-dd HH:mm:ss","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@dbd940d]" name="ChargingDataNormal" duration-ms="192" started-at="2020-07-06T02:57:35Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2020-07-06T02:57:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[选择时间范围不得超过一个自然日]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-01+10:49:21&to=2019-03-03+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过一个自然日","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@dbd940d]" name="ChargingDataNormal" duration-ms="73" started-at="2020-07-06T02:57:36Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2020-07-06T02:57:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[选择时间范围开始时间不能大于结束时间]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859D&from=2019-03-03+10:49:21&to=2019-03-02+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019-03-03 10:49:21 不能大于 to 2019-03-02 10:49:21","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@dbd940d]" name="ChargingDataNormal" duration-ms="63" started-at="2020-07-06T02:57:36Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2020-07-06T02:57:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[数据缺少车牌号参数]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?from=2019-03-03+10:49:21&to=2019-03-02+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"Required String parameter 'licensePlate' is not present","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+        <test-method status="PASS" signature="ChargingDataNormal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.ChargingDataTest@dbd940d]" name="ChargingDataNormal" duration-ms="22101" started-at="2020-07-06T02:57:36Z" description="查询珠海车辆充电数据" data-provider="dp" finished-at="2020-07-06T02:57:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[参数车牌号无效]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external/1/zhuhai/api/chargingData]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=粤C00859&from=2019-03-01+07:49:21&to=2019-03-01+10:49:21]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"车牌粤C00859号无效或没有车辆充电数据","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChargingDataNormal -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.ChargingDataTest -->
+      <class name="com.bitnei.apitest.testcases.openapi.EnergyConservation">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@140e5a13]" name="setUp" is-config="true" duration-ms="83" started-at="2020-07-06T02:57:03Z" finished-at="2020-07-06T02:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://61.149.8.78:83]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="EnergyConservationNormal(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@140e5a13]" name="EnergyConservationNormal" duration-ms="208" started-at="2020-07-06T02:57:03Z" description="碳排放接口查询正常" data-provider="dataprovider6" finished-at="2020-07-06T02:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":0.5072,"error":false}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationNormal -->
+        <test-method status="PASS" signature="EnergyConservationUpScope(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@140e5a13]" name="EnergyConservationUpScope" duration-ms="64" started-at="2020-07-06T02:57:03Z" description="碳排放接口时间超3个月" data-provider="dataprovider7" finished-at="2020-07-06T02:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"选择时间范围不得超过3个月","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationUpScope -->
+        <test-method status="PASS" signature="EnergyConservationWrongDateFormat(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@140e5a13]" name="EnergyConservationWrongDateFormat" duration-ms="87" started-at="2020-07-06T02:57:03Z" description="碳排放接口开始时间不符合规则" data-provider="dataprovider9" finished-at="2020-07-06T02:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019.05.10 不符合规则：yyyy-MM-dd","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationWrongDateFormat -->
+        <test-method status="PASS" signature="EnergyConservationWrongTime(java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.openapi.EnergyConservation@140e5a13]" name="EnergyConservationWrongTime" duration-ms="68" started-at="2020-07-06T02:57:03Z" description="碳排放接口开始间大于结束时间" data-provider="dataprovider8" finished-at="2020-07-06T02:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"VALID","data":"参数 from 2019-05-10 不能大于 to 2019-04-13","error":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnergyConservationWrongTime -->
+      </class> <!-- com.bitnei.apitest.testcases.openapi.EnergyConservation -->
+    </test> <!-- openapi -->
+    <test name="SAAS" duration-ms="136534" started-at="2020-07-06T02:57:58Z" finished-at="2020-07-06T03:00:14Z">
+      <class name="com.bitnei.apitest.testcases.saas.ApiTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="setUp" is-config="true" duration-ms="18498" started-at="2020-07-06T02:57:58Z" finished-at="2020-07-06T02:58:16Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +418,1297 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="5884" started-at="2020-06-10T08:49:43Z" description="api接口" data-provider="dp" finished-at="2020-06-10T08:49:49Z">
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="52" started-at="2020-07-06T02:58:16Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[好车伯乐接口返回为空]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/autobole/vehicle/static?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="36" started-at="2020-07-06T02:58:16Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[车辆轨迹获取车辆轨迹接口返回为空]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/lbs/test/vehicle/locations?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=123&dateFrom=2019-10-20%2007%3A16%3A20&dateTo=2019-10-21%2007%3A16%3A20]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="57" started-at="2020-07-06T02:58:16Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序获取车辆厂家及车型]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/factory/information?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[type=01]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"vehFac":"合众汽车","vehModelInfos":[{"vehCommonName":"哪吒N01","vehModel":"THZ7000BEVS004","standardDriverMileage":301.00,"standardPower":14.00}]},{"vehFac":"比亚迪","vehModelInfos":[{"vehCommonName":"E5","vehModel":"BYD7005BEV1","standardDriverMileage":400.00,"standardPower":14.80},{"vehCommonName":"比亚迪唐","vehModel":"BYD6490SBEV1","standardDriverMileage":520.00,"standardPower":17.30}]},{"vehFac":"北汽新能源","vehModelInfos":[{"vehCommonName":"EU5","vehModel":"BJ7000C5D3-BEV","standardDriverMileage":416.00,"standardPower":13.90}]},{"vehFac":"吉利汽车","vehModelInfos":[{"vehCommonName":"帝豪GSE400","vehModel":"HQ7002BEV15","standardDriverMileage":353.00,"standardPower":14.53}]},{"vehFac":"威马汽车","vehModelInfos":[{"vehCommonName":"EX5","vehModel":"SZS6460A06BEV","standardDriverMileage":303.00,"standardPower":16.20}]},{"vehFac":"上汽集团","vehModelInfos":[{"vehCommonName":"荣威ERX5","vehModel":"CSA6456BEV2","standardDriverMileage":320.00,"standardPower":15.49},{"vehCommonName":"Marvel X","vehModel":"CSA6461FBEV1","standardDriverMileage":403.00,"standardPower":14.20}]},{"vehFac":"长安汽车","vehModelInfos":[{"vehCommonName":"EADO","vehModel":"SC7003ACBEV","standardDriverMileage":305.00,"standardPower":13.40},{"vehCommonName":"EADO","vehModel":"SC7003AEBEV","standardDriverMileage":405.00,"standardPower":13.80}]},{"vehFac":"广汽新能源","vehModelInfos":[{"vehCommonName":"传祺AION.S","vehModel":"GAM7000BEVA0C","standardDriverMileage":510.00,"standardPower":13.10}]},{"vehFac":"蔚来汽车","vehModelInfos":[{"vehCommonName":"ES6","vehModel":"HFC6483ECEV-W","standardDriverMileage":430.00,"standardPower":18.10},{"vehCommonName":"ES8","vehModel":"HFC6502ECEV2-W","standardDriverMileage":355.00,"standardPower":21.00}]}],"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="75" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序获取车型的所有靠谱指数全国HQ7002BEV15吉利汽车]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/exponent?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"driverRange":289.59,"middleChargeStartSoc":37.53,"standardDriverMileage":353.00,"standardPower":null,"power100km":null,"fastChargeDuration":54.47,"middleAnxiety":"中","satisfactionDegree":"低","onlineHailedCarRatio":null,"onlineHailedCarNumber":null},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="110" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序获取车型的所有靠谱指数北京市]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/exponent?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"driverRange":291.55,"middleChargeStartSoc":35.42,"standardDriverMileage":353.00,"standardPower":null,"power100km":null,"fastChargeDuration":59.06,"middleAnxiety":"中","satisfactionDegree":"低","onlineHailedCarRatio":null,"onlineHailedCarNumber":null},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="84" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序获取车型的所有靠谱指数车型必填]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/exponent?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="32" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序获取车型的所有靠谱指数厂家必填]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/exponent?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehModel=HQ7002BEV15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="82" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序获取车型的所有靠谱指数为空]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/exponent?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehModel=123&vehFac=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="60" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序靠谱指数查询全国]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/rank?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[type=01]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"vehModel":"THZ7000BEVS004","vehCommonName":"哪吒N01","unit":"km","standardDriverRange":301.0,"standardPower":14.0,"vehFac":"合众汽车"},{"vehModel":"BYD7005BEV1","vehCommonName":"E5","unit":"km","standardDriverRange":400.0,"standardPower":14.8,"vehFac":"比亚迪"},{"vehModel":"BJ7000C5D3-BEV","vehCommonName":"EU5","unit":"km","standardDriverRange":416.0,"standardPower":13.9,"vehFac":"北汽新能源"}],"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="59" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序靠谱指数查询北京市]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/rank?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[city=%E5%8C%97%E4%BA%AC%E5%B8%82&type=01]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"vehModel":"THZ7000BEVS004","vehCommonName":"哪吒N01","unit":"km","standardDriverRange":301.00,"standardPower":14.00,"vehFac":"合众汽车"},{"vehModel":"BYD7005BEV1","vehCommonName":"E5","unit":"km","standardDriverRange":400.00,"standardPower":14.80,"vehFac":"比亚迪"},{"vehModel":"HQ7002BEV15","vehCommonName":"帝豪GSE400","unit":"km","standardDriverRange":353.00,"standardPower":14.53,"vehFac":"吉利汽车"}],"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="41" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序靠谱指数查询类型必填]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/rank?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"请求参数type不能为空！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="114" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序靠谱指数查询全国返回1条]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/rank?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[size=1&type=02]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":[{"vehModel":"BJ7000U3D7G-BEV","vehCommonName":"EX360","unit":"km","standardDriverRange":318.0,"standardPower":16.7,"vehFac":"北汽新能源"}],"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="72" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序实际行驶总里程详情全国HQ7002BEV15吉利汽车]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/mileage/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","driverRange":289.59,"standardDriverMileage":353.0,"vehFac":"吉利汽车","unit":"km","monthType":[{"driverMileage":206.0,"month":"01"},{"driverMileage":234.76,"month":"02"},{"driverMileage":285.52,"month":"03"},{"driverMileage":298.19,"month":"04"},{"driverMileage":323.13,"month":"05"},{"driverMileage":321.67,"month":"06"},{"driverMileage":316.4,"month":"07"},{"driverMileage":320.0,"month":"08"},{"driverMileage":324.62,"month":"09"},{"driverMileage":315.65,"month":"10"},{"driverMileage":283.3,"month":"11"},{"driverMileage":245.88,"month":"12"}],"seasonType":[{"driverMileage":307.86,"season":"autumn"},{"driverMileage":302.28,"season":"spring"},{"driverMileage":319.36,"season":"summer"},{"driverMileage":228.88,"season":"winter"}]},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="58" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序实际行驶总里程详情北京市]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/mileage/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","driverRange":291.55,"standardDriverMileage":353.00,"vehFac":"吉利汽车","unit":"km","monthType":[{"driverMileage":209.00,"month":"01"},{"driverMileage":233.67,"month":"02"},{"driverMileage":289.40,"month":"03"},{"driverMileage":292.50,"month":"04"},{"driverMileage":332.49,"month":"05"},{"driverMileage":329.00,"month":"06"},{"driverMileage":321.29,"month":"07"},{"driverMileage":331.23,"month":"08"},{"driverMileage":338.00,"month":"09"},{"driverMileage":324.67,"month":"10"},{"driverMileage":274.93,"month":"11"},{"driverMileage":222.44,"month":"12"}],"seasonType":[{"driverMileage":312.53,"season":"autumn"},{"driverMileage":304.80,"season":"spring"},{"driverMileage":327.17,"season":"summer"},{"driverMileage":221.70,"season":"winter"}]},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="42" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序实际行驶总里程详情厂家必填]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/mileage/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehModel=HQ7002BEV15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="36" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序实际行驶总里程详情车型必填]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/mileage/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="121" started-at="2020-07-06T02:58:17Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序使用焦虑度详情全国HQ7002BEV15吉利汽车]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/anxiety/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","middleChargeStartSoc":37.53,"middleAnxiety":"中","vehFac":"吉利汽车","unit":"%","monthType":[{"chargeStartSoc":42.50,"anxiety":"中","month":"01"},{"chargeStartSoc":31.50,"anxiety":"中","month":"02"},{"chargeStartSoc":37.00,"anxiety":"中","month":"03"},{"chargeStartSoc":39.50,"anxiety":"中","month":"04"},{"chargeStartSoc":39.00,"anxiety":"中","month":"05"},{"chargeStartSoc":37.98,"anxiety":"中","month":"06"},{"chargeStartSoc":37.00,"anxiety":"中","month":"07"},{"chargeStartSoc":37.00,"anxiety":"中","month":"08"},{"chargeStartSoc":38.00,"anxiety":"中","month":"09"},{"chargeStartSoc":38.00,"anxiety":"中","month":"10"},{"chargeStartSoc":36.92,"anxiety":"中","month":"11"},{"chargeStartSoc":36.00,"anxiety":"中","month":"12"}],"seasonType":[{"chargeStartSoc":37.64,"anxiety":"中","season":"autumn"},{"chargeStartSoc":38.50,"anxiety":"中","season":"spring"},{"chargeStartSoc":37.33,"anxiety":"中","season":"summer"},{"chargeStartSoc":36.67,"anxiety":"中","season":"winter"}]},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="74" started-at="2020-07-06T02:58:18Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序使用焦虑度详情北京市]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/anxiety/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","middleChargeStartSoc":35.42,"middleAnxiety":"中","vehFac":"吉利汽车","unit":"%","monthType":[{"chargeStartSoc":42.00,"anxiety":"中","month":"01"},{"chargeStartSoc":31.00,"anxiety":"中","month":"02"},{"chargeStartSoc":37.00,"anxiety":"中","month":"03"},{"chargeStartSoc":39.00,"anxiety":"中","month":"04"},{"chargeStartSoc":36.00,"anxiety":"中","month":"05"},{"chargeStartSoc":35.00,"anxiety":"中","month":"06"},{"chargeStartSoc":34.00,"anxiety":"中","month":"07"},{"chargeStartSoc":35.00,"anxiety":"中","month":"08"},{"chargeStartSoc":35.08,"anxiety":"中","month":"09"},{"chargeStartSoc":35.00,"anxiety":"中","month":"10"},{"chargeStartSoc":33.00,"anxiety":"中","month":"11"},{"chargeStartSoc":33.00,"anxiety":"中","month":"12"}],"seasonType":[{"chargeStartSoc":34.36,"anxiety":"中","season":"autumn"},{"chargeStartSoc":37.33,"anxiety":"中","season":"spring"},{"chargeStartSoc":34.67,"anxiety":"中","season":"summer"},{"chargeStartSoc":35.33,"anxiety":"中","season":"winter"}]},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="48" started-at="2020-07-06T02:58:18Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序使用焦虑度详情厂家必填]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/anxiety/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehModel=HQ7002BEV15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="36" started-at="2020-07-06T02:58:18Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序使用焦虑度详情车型必填]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/anxiety/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="67" started-at="2020-07-06T02:58:18Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序快充满意度详情全国HQ7002BEV15吉利汽车]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/charge/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","fastChargeDuration":54.47,"satisfactionDegree":"低","vehFac":"吉利汽车","unit":"min","monthType":[{"fastChargeTime":97.50,"satisfactionDegree":"低","month":"01"},{"fastChargeTime":41.00,"satisfactionDegree":"中","month":"02"},{"fastChargeTime":92.67,"satisfactionDegree":"低","month":"03"},{"fastChargeTime":0,"satisfactionDegree":"低","month":"04"},{"fastChargeTime":45.67,"satisfactionDegree":"低","month":"05"},{"fastChargeTime":44.50,"satisfactionDegree":"中","month":"06"},{"fastChargeTime":45.14,"satisfactionDegree":"低","month":"07"},{"fastChargeTime":44.34,"satisfactionDegree":"中","month":"08"},{"fastChargeTime":44.73,"satisfactionDegree":"中","month":"09"},{"fastChargeTime":45.18,"satisfactionDegree":"低","month":"10"},{"fastChargeTime":47.66,"satisfactionDegree":"低","month":"11"},{"fastChargeTime":50.83,"satisfactionDegree":"低","month":"12"}],"seasonType":[{"fastChargeTime":45.86,"satisfactionDegree":"低","season":"autumn"},{"fastChargeTime":69.17,"satisfactionDegree":"低","season":"spring"},{"fastChargeTime":44.66,"satisfactionDegree":"中","season":"summer"},{"fastChargeTime":63.11,"satisfactionDegree":"低","season":"winter"}]},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="77" started-at="2020-07-06T02:58:18Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序快充满意度详情北京市]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/charge/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","fastChargeDuration":59.06,"satisfactionDegree":"低","vehFac":"吉利汽车","unit":"min","monthType":[{"fastChargeTime":97.50,"satisfactionDegree":"低","month":"01"},{"fastChargeTime":41.00,"satisfactionDegree":"中","month":"02"},{"fastChargeTime":92.67,"satisfactionDegree":"低","month":"03"},{"fastChargeTime":0,"satisfactionDegree":"低","month":"04"},{"fastChargeTime":50.28,"satisfactionDegree":"低","month":"05"},{"fastChargeTime":49.00,"satisfactionDegree":"低","month":"06"},{"fastChargeTime":50.63,"satisfactionDegree":"低","month":"07"},{"fastChargeTime":48.96,"satisfactionDegree":"低","month":"08"},{"fastChargeTime":48.58,"satisfactionDegree":"低","month":"09"},{"fastChargeTime":50.00,"satisfactionDegree":"低","month":"10"},{"fastChargeTime":56.83,"satisfactionDegree":"低","month":"11"},{"fastChargeTime":64.19,"satisfactionDegree":"低","month":"12"}],"seasonType":[{"fastChargeTime":51.80,"satisfactionDegree":"低","season":"autumn"},{"fastChargeTime":71.48,"satisfactionDegree":"低","season":"spring"},{"fastChargeTime":49.53,"satisfactionDegree":"低","season":"summer"},{"fastChargeTime":67.56,"satisfactionDegree":"低","season":"winter"}]},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="48" started-at="2020-07-06T02:58:18Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序快充满意度详情厂家必填]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/charge/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehModel=HQ7002BEV15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="50" started-at="2020-07-06T02:58:18Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[微信小程序快充满意度详情车型必填]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/laboratory/models/reliable/charge/detail?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="292" started-at="2020-07-06T02:58:18Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[鼎然科技行程汇总查询vin正确]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/summary/tags?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=LC06S64M0H1993466]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vin":"LC06S64M0H1993466","summary_result":"1,69100,0,0,0,0,0,96800,134200,0,114100,89300,41300,117400,0,134900,57100,56700,45000,89300,94400,18900,0,0,44800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,2,13,45,6,0,6,13,46,0,0,1,0,6,0,0,0,0,0,0,32400,44700,38000,0,22300,22400,37800,0,44800,37800,0,44600,37900,0,0,0,0,35500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,1,3,16,2,0,2,4,15,0,1,0,0,2,1448800,0,0,0,0,0,3734700,3279800,786400,4568800,2145400,5333900,2747400,643200,2375300,4029000,836800,1741100,2420600,4135900,1100500,360000,843400,2368700,0,723700,2281200,1915100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43300,0,0,0,0,74,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2126,101,502,1119,370,34,302,499,986,11,8,320,0,250,815800,0,0,0,0,0,1780100,1384000,1489500,1588300,694100,1933200,1404400,288300,752600,1653000,735700,710700,1365200,1165400,369000,66400,320500,1158800,0,261800,619300,727300,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63600,0,0,0,0,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,941,58,237,453,189,4,138,236,404,2,4,157,0,115,440309,440304,440305,440306,440303,440307,810012,810014,440606,0,0,0,0,0,0,40825600,16559800,6216700,472900,230800,106500,23700,23200,20100,0,0,0,0,0,0,64574700,1039,606,315,258,241,157,33,16,15,13,3067,0#LC06S64M0H1993466#2020-05-18#64574700#15138908#3067#10.6#347#0#0#72.7#72.6#441#6000#2223008#2#0_0_1#0.144_0.924_0.022#64574700#3067#365#2020-05-18#167512700#69896400","charge_times":343,"fast_charge_times":1,"total_charge_time_length":1863103.0,"total_fast_charge_time_length":1219.0,"end_charge_avg_soc":92.62973760932945,"max_weight":"17950","displacement":"","max_speed":"100","length":"10690","drive_range":469.0,"motor_type":"永磁同步电机","kwh_100km":0.0,"cell_enterprise":"惠州比亚迪电池有限公司","battery_type":"磷酸铁锂","manufacturer":"比亚迪汽车工业有限公司","brand":"比亚迪牌","veh_category_2":"纯电动客车","veh_model_name":"BYD6110LLEV","veh_level":"","produce_date":"2017"},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="302" started-at="2020-07-06T02:58:18Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[鼎然科技行程汇总查询vin无数据]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/summary/tags?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="196" started-at="2020-07-06T02:58:19Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[平安租赁实时数据按vin查询]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/realTime?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=LC0CE4CB7J0101806]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="4729" started-at="2020-07-06T02:58:19Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[平安租赁实时数据按licensePlate查询]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/realTime?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[licensePlate=%E4%BA%ACAD98062]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="46" started-at="2020-07-06T02:58:23Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[平安租赁实时数据按vin查询无数据]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/realTime?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"此车不在查询范围内！","data":null,"error":true,"code":"30004"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="53" started-at="2020-07-06T02:58:24Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[中保信车辆静态信息按vin查询正确]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/static/tag?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=LNBSCB3F8GW022110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vin":"LNBSCB3F8GW022110","power_type":"纯电动","license_plate":"鲁B3R20L","veh_model_name":"BJ7001BPH1-BEV","brand":"北京牌","manufacturer":"北京新能源汽车股份有限公司","veh_common_name":"EC180","curb_weight":1050.0,"max_speed":101.0,"drive_range":156.0,"positive_material":"层状三元材料","cell_manufacturer":"孚能科技（赣州）有限公司/","kwh_100km":null,"is_online":1,"first_live_date":"2018-05-04","run_city":"青岛市","run_province":"山东省","veh_category_2":"计时租赁","unit_name":"青岛新未来汽车租赁有限公司","veh_level":"A0","first_run_date":"1525422114000","first_charge_date":"1525434259000"},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="70" started-at="2020-07-06T02:58:24Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[中保信车辆静态信息按vin查询无数据]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/static/tag?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="715" started-at="2020-07-06T02:58:24Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[中保信车辆静态信息按licensePlate查询正确]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/static/tag?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[licensePlate=%E9%B2%81B3R20L]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vin":"LNBSCB3F8GW022110","power_type":"纯电动","license_plate":"鲁B3R20L","veh_model_name":"BJ7001BPH1-BEV","brand":"北京牌","manufacturer":"北京新能源汽车股份有限公司","veh_common_name":"EC180","curb_weight":1050.0,"max_speed":101.0,"drive_range":156.0,"positive_material":"层状三元材料","cell_manufacturer":"孚能科技（赣州）有限公司/","kwh_100km":null,"is_online":1,"first_live_date":"2018-05-04","run_city":"青岛市","run_province":"山东省","veh_category_2":"计时租赁","unit_name":"青岛新未来汽车租赁有限公司","veh_level":"A0","first_run_date":"1525422114000","first_charge_date":"1525434259000"},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="684" started-at="2020-07-06T02:58:24Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[中保信车辆静态信息按licensePlate查询无数据]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/static/tag?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[licensePlate=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="46" started-at="2020-07-06T02:58:25Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[中保信车辆静态信息参数必传验证]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/static/tag]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"参数vin和licensePlate至少传一个！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="59" started-at="2020-07-06T02:58:25Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[中保信整体标签查询按vin查询正确]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/whole/tag?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=LNBSCB3F8GW022110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vin":"LNBSCB3F8GW022110","power_type":"BEV","brand":"北京","veh_model_name":"BJ7001BPH1-BEV","drive_range":156.0,"positive_material":"层状三元材料","cell_manufacturer":"孚能科技（赣州）有限公司/","is_online":1,"run_location":"河南省鹤壁市浚县","province_dept":"山东省","city_dept":"青岛市","veh_category_2":"计时租赁","first_run_date":"2018-05-04","first_charge_date":"2018-05-04","total_run_mile":250610.0,"total_high_temp_run_mile":14150.0,"total_low_temp_run_mile":140.0,"total_low_soc_run_times":167,"avg_daily_run_mile":517.7892561983471,"avg_daily_run_time_length":6882.384297520661,"avg_charge_times_per_100km":0.1552212601252943,"avg_charge_start_soc":35.48586118251928,"avg_charge_end_soc":83.60411311053984,"last_charge_time":"2020-04-29","last_charge_location":"河南省安阳市","total_alarm_times":38,"max_alarm_name":"绝缘报警","risk_score":0.0,"total_night_run_mile":31450.0,"total_night_run_time_length":420446.0,"total_summer_run_mile":80320.0,"total_winter_run_mile":50990.0,"charge_times":389},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="47" started-at="2020-07-06T02:58:25Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T02:58:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[中保信整体标签查询按vin查询无数据]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/vehicle/whole/tag?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
+      <class name="com.bitnei.apitest.testcases.saas.TestGeodeData">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="setUp" is-config="true" duration-ms="209" started-at="2020-07-06T02:58:47Z" finished-at="2020-07-06T02:58:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://10.10.21.70:7070]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="2970" started-at="2020-07-06T02:58:48Z" description="geode数据验证" data-provider="dp" finished-at="2020-07-06T02:58:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[车辆总数]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/pulse/dataBrowserQuery]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?query=select+count(1)+from+%2Fveh_realinfo+limit++1%3B&members=&limit=0&_=1578559299715]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"result":[["java.lang.Integer",2255219]]}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="9168" started-at="2020-07-06T02:58:51Z" description="geode数据验证" data-provider="dp" finished-at="2020-07-06T02:59:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[车速度大于220]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/pulse/dataBrowserQuery]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?query=select+count(1)+from+%2Fveh_realinfo+where+speed+%3E+220+limit+1&members=&limit=0&_=1578563123416]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"result":[["java.lang.Integer",86]]}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="8275" started-at="2020-07-06T02:59:00Z" description="geode数据验证" data-provider="dp" finished-at="2020-07-06T02:59:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[里程表大于200000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/pulse/dataBrowserQuery]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?query=select+count(1)+from+%2Fveh_realinfo+where+mileage%3E200000+limit+1&members=&limit=0&_=1578563187896]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"result":[["java.lang.Integer",15507]]}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="18815" started-at="2020-07-06T02:59:08Z" description="geode数据验证" data-provider="dp" finished-at="2020-07-06T02:59:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[位置坐标异常]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/pulse/dataBrowserQuery]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3C73.66+or+lng+%3E135.05+or+lat+%3C+3.86+or+lat+%3E53.55+limit+1&members=&limit=0&_=1578563382007]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"result":[["java.lang.Integer",374583]]}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="9560" started-at="2020-07-06T02:59:27Z" description="geode数据验证" data-provider="dp" finished-at="2020-07-06T02:59:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[位置坐标为0,0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/pulse/dataBrowserQuery]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?query=select+count(1)+from+%2Fveh_realinfo+where+lng%3D0+and+lat%3D0+limit+1&members=&limit=0&_=1578563056235]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"result":[["java.lang.Integer",369622]]}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+        <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="19280" started-at="2020-07-06T02:59:36Z" description="geode数据验证" data-provider="dp" finished-at="2020-07-06T02:59:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[位置坐标正常]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/pulse/dataBrowserQuery]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3E73.66+and+lng+%3C135.05+and+lat+%3E+3.86+and+lat+%3C53.55++limit+1&members=&limit=0&_=1578621101331]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"result":[["java.lang.Integer",1876945]]}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserInfoRgisterData -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.TestGeodeData -->
+      <class name="com.bitnei.apitest.testcases.saas.GetInsurance">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="setUp" is-config="true" duration-ms="17399" started-at="2020-07-06T02:59:56Z" finished-at="2020-07-06T03:00:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="60" started-at="2020-07-06T03:00:13Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T03:00:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[精励联讯保险调用正常--LGXC76C3XJ0108468]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/genilex/insurance/lable]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?vin=CEICmUK8TYpnFfkToJCvfC%2FGI%2FHxHhgNewUaf%2B2xJmtH4LpUD3HEvCfs8Vh9yEnjWViYEcRQUtnoUhdo3Cm95%2BrSd%2BBh5dhyqrXywGx7NHJfGuUWer4xkCF78e7qwwNoqzkv1DidMPpA45quVI0L8PMw%2BSMbYNiu70hVS5adN84%3D&customerId=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[djKx876kY0HGWS4UKNCwasskI3j5vh92Y40L6eEmY7TzysROyIcPccFnFlE76BUUXfWz1YGDjUTa5rLx4HJzty3XQhQKZK23O76P6HfJJsg0slkBufD6J6aVgdIIfLo7Evny7PyJPDpHqRK3PvnTFxoge3AO+PHJe2HlGO29q1s=]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1584338303978]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"risk_score":24.41971292259522,"mileage_12":3.0,"mileage_24":1.0,"mileage_36":0.0},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Insurance -->
+        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="1113" started-at="2020-07-06T03:00:13Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T03:00:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[精励联讯保险调用正常--津AF05690]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/genilex/insurance/lable]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?licensePlate=FkgzYFyc2oOym3KJnuxGEABKA2p0p1c3PY4EVlCM9P13DvBK%2BO9loMrTduQA3wruxKdqKV9aqonahmuoocjdCa91amdP36DMya4zrePl9DQeW6XjT61GXmY5QqPIEXR1A7qKt8NSt5ck0dEUeqQT%2F%2FEOXXdvEnoWpnOeZ%2F6LG8A%3D&customerId=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1584339230681]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"risk_score":24.41971292259522,"mileage_12":3.0,"mileage_24":1.0,"mileage_36":0.0},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Insurance -->
+        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="37" started-at="2020-07-06T03:00:14Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T03:00:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[精励联讯保险车架号与车牌号至少传一个]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/genilex/insurance/lable]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?customerId=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[UvgSk2dsQjj4A5nsVlvEUuJSMveTKY2Zx67HuWCDkGAmInoi2pjnVMHZm3cLA7OHlpQSMy2/X+OiFyN0RkMKPP1LlHaJvNAQV24zf102/eAj4I3QbL39yFbtEVs0mhS30zgduraATJ0uYrPzim0mzc8PhbX+RV4cm/1V49w7ycc=]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1584339230681]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":"参数vin、licensePlate至少传一个！","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Insurance -->
+        <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="46" started-at="2020-07-06T03:00:14Z" description="openapi接口" data-provider="dp" finished-at="2020-07-06T03:00:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[精励联讯保险查询vin无数据]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vrm/genilex/insurance/lable]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[?vin=KaXkK8k5Y3zhSSW1acBVm%2B%2BWOr5Kp8s1t5EWLAcftir1564%2BhsEdTemSjtk18KasjykZDWNshvLFIiQH1jazsVUVlojvthvy6fXe34g1Gsdx6a3hFB6XYxLFjAL%2Fq2wG5LU0yvZrToV8mXOnUOKRTFJTfV1WoQF0B%2F4E6Or4tXk%3D&customerId=123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[oa1rG573rgsTa5xbgSfniR5kCjHxZZeuzAXJjZP5AdXwg5Kd4sjzMXipeLojJpa6vwY8d0Xpui2JdwBBeawWogi6XSCCyMJBiWr+fkrcac7r7ctU+cu357bpam4ARq16POBxApw3H/WaKTeWOfF+siVsIcFbMxIn6EkVahCtw5w=]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1584343514140]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Insurance -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.GetInsurance -->
+      <class name="com.bitnei.apitest.testcases.saas.PostApiTestParas">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@49e202ad]" name="setUp" is-config="true" duration-ms="17392" started-at="2020-07-06T02:58:25Z" finished-at="2020-07-06T02:58:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://test-saas.bitnei.cn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/main/resources/TEST.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@49e202ad]" name="ApiTest" duration-ms="4826" started-at="2020-07-06T02:58:43Z" description="api接口" data-provider="dp" finished-at="2020-07-06T02:58:47Z">
           <params>
             <param index="0">
               <value>
@@ -50,6 +1735,6 @@
           </reporter-output>
         </test-method> <!-- ApiTest -->
       </class> <!-- com.bitnei.apitest.testcases.saas.PostApiTestParas -->
-    </test> <!-- Default test -->
+    </test> <!-- SAAS -->
   </suite> <!-- apitest -->
 </testng-results>
