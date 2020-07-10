@@ -11,22 +11,20 @@
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <parameter name="saasv2" value="http://test-saas-v2.bitnei.cn"/>
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
-  <test thread-count="5" name="SAASTEST(failed)" parallel="classes">
+  <test thread-count="5" name="SAAS(failed)" parallel="classes">
     <classes>
-      <class name="com.bitnei.selenium.testcase.SaasLoginTest">
+      <class name="com.bitnei.apitest.testcases.saas.ApiTest">
         <methods>
-          <include name="LoginFaild" invocation-numbers="1 2 3 4"/>
-          <include name="afterTest"/>
+          <include name="ApiTestCode" invocation-numbers="29 34"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.bitnei.selenium.testcase.SaasLoginTest -->
-      <class name="com.bitnei.selenium.testcase.UserRole">
+      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
+      <class name="com.bitnei.apitest.testcases.saas.GetInsurance">
         <methods>
-          <include name="afterTest"/>
-          <include name="User" invocation-numbers="1"/>
           <include name="setUp"/>
+          <include name="Insurance" invocation-numbers="3"/>
         </methods>
-      </class> <!-- com.bitnei.selenium.testcase.UserRole -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.GetInsurance -->
     </classes>
-  </test> <!-- SAASTEST(failed) -->
+  </test> <!-- SAAS(failed) -->
 </suite> <!-- Failed suite [apitest] -->
