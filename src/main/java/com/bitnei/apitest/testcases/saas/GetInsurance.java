@@ -43,7 +43,7 @@ public class GetInsurance {
 	public void setUp(String hostsaas,String pathroad) throws InterruptedException {
 		host = hostsaas;	
 		String ExcelFilePath= pathroad ;
-        String sheetName="平安保险";
+        String sheetName="加密加签接口";
         ex = new ExcelReader(ExcelFilePath, sheetName);
 		//设置cookie	
 		try {

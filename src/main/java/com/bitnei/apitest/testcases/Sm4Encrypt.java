@@ -137,7 +137,7 @@ public class Sm4Encrypt {
     }
     
     public static void main(String[] args) {
-    	System.out.println(Sm4Encrypt.decryptCbc(SM4_HEXKEY, "8b7608d32efa42fbab350adb125acacf1ef8dca2b511e837432a30ab182b58366cb9ca700dd85625651fde8f3752f7b53e5cdf158cf7874815a18194fd9c5abeecf4a536e71fcb11e6e3b5707b4baf51f0d5f65c61893d8265532eb6fcb5385cec614040be88e8983445a17dc9c2713b398c04794f52209441d32c3f3dc2df22"));
+    	System.out.println(Sm4Encrypt.decryptCbc(SM4_HEXKEY, "df905de61852a533ad21654680c37b90b1f0182858311071436d809d4d0156867dea18f3f467772f9c83888a83af3c3709fe10cae04186a968b9c73afdfd7a3f60459a9dc20242c8e48ceae15cbce3216017e409906fe48a58c7bdb30dcd7cdbee13f84f1b07e6ffa62db9088f5e2f0f1f81bc44b8e1ab1df3fb5845a1f129b3edd506f50cefabb42461305ce1978b41"));
     }
 
 

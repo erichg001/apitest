@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>38/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 08 16:25:04 CST 2020</td>
+<td>Started on:</td><td>Thu Jul 16 18:03:17 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>82 seconds (82089 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22744 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,35 +75,195 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车辆总数, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+limit++1%3B&members=&limit=0&_=1578559299715, {"result":[["java.lang.Integer",2255219]]}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 好车伯乐接口返回为空, /external-api/vehicle-battery/autobole/vehicle/static?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
 <td></td>
-<td>6</td>
-<td>com.bitnei.apitest.testcases.saas.TestGeodeData@60438a68</td></tr>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车速度大于220, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+speed+%3E+220+limit+1&members=&limit=0&_=1578563123416, {"result":[["java.lang.Integer",86]]}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 车辆轨迹获取车辆轨迹接口返回为空, /external-api/lbs/test/vehicle/locations?, vin=123&dateFrom=2019-10-20%2007%3A16%3A20&dateTo=2019-10-21%2007%3A16%3A20, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
 <td></td>
-<td>10</td>
-<td>com.bitnei.apitest.testcases.saas.TestGeodeData@60438a68</td></tr>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 里程表大于200000, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+mileage%3E200000+limit+1&members=&limit=0&_=1578563187896, {"result":[["java.lang.Integer",15507]]}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车辆厂家及车型, /external-api/laboratory/models/reliable/factory/information?, type=01, {"status":200,"errorMsg":null,"data":[{"vehFac":"合众汽车","vehModelInfos":[{"vehCommonName":"哪吒N01","vehModel":"THZ7000BEVS004","standardDriverMileage":301.00,"standardPower":14.00}]},{"vehFac":"比亚迪","vehModelInfos":[{"vehCommonName":"E5","vehModel":"BYD7005BEV1","standardDriverMileage":400.00,"standardPower":14.80},{"vehCommonName":"比亚迪唐","vehModel":"BYD6490SBEV1","standardDriverMileage":520.00,"standardPower":17.30}]},{"vehFac":"北汽新能源","vehModelInfos":[{"vehCommonName":"EU5","vehModel":"BJ7000C5D3-BEV","standardDriverMileage":416.00,"standardPower":13.90}]},{"vehFac":"吉利汽车","vehModelInfos":[{"vehCommonName":"帝豪GSE400","vehModel":"HQ7002BEV15","standardDriverMileage":353.00,"standardPower":14.53}]},{"vehFac":"威马汽车","vehModelInfos":[{"vehCommonName":"EX5","vehModel":"SZS6460A06BEV","standardDriverMileage":303.00,"standardPower":16.20}]},{"vehFac":"上汽集团","vehModelInfos":[{"vehCommonName":"荣威ERX5","vehModel":"CSA6456BEV2","standardDriverMileage":320.00,"standardPower":15.49},{"vehCommonName":"Marvel X","vehModel":"CSA6461FBEV1","standardDriverMileage":403.00,"standardPower":14.20}]},{"vehFac":"长安汽车","vehModelInfos":[{"vehCommonName":"EADO","vehModel":"SC7003ACBEV","standardDriverMileage":305.00,"standardPower":13.40},{"vehCommonName":"EADO","vehModel":"SC7003AEBEV","standardDriverMileage":405.00,"standardPower":13.80}]},{"vehFac":"广汽新能源","vehModelInfos":[{"vehCommonName":"传祺AION.S","vehModel":"GAM7000BEVA0C","standardDriverMileage":510.00,"standardPower":13.10}]},{"vehFac":"蔚来汽车","vehModelInfos":[{"vehCommonName":"ES6","vehModel":"HFC6483ECEV-W","standardDriverMileage":430.00,"standardPower":18.10},{"vehCommonName":"ES8","vehModel":"HFC6502ECEV2-W","standardDriverMileage":355.00,"standardPower":21.00}]}],"error":false,"code":"10000"}</td>
 <td></td>
-<td>11</td>
-<td>com.bitnei.apitest.testcases.saas.TestGeodeData@60438a68</td></tr>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标异常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3C73.66+or+lng+%3E135.05+or+lat+%3C+3.86+or+lat+%3E53.55+limit+1&members=&limit=0&_=1578563382007, {"result":[["java.lang.Integer",374583]]}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/exponent?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"driverRange":289.59,"middleChargeStartSoc":37.53,"standardDriverMileage":353.00,"standardPower":null,"power100km":null,"fastChargeDuration":54.47,"middleAnxiety":"中","satisfactionDegree":"低","onlineHailedCarRatio":null,"onlineHailedCarNumber":null},"error":false,"code":"10000"}</td>
 <td></td>
-<td>18</td>
-<td>com.bitnei.apitest.testcases.saas.TestGeodeData@60438a68</td></tr>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标为0,0, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng%3D0+and+lat%3D0+limit+1&members=&limit=0&_=1578563056235, {"result":[["java.lang.Integer",369622]]}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数北京市, /external-api/laboratory/models/reliable/exponent?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"driverRange":291.55,"middleChargeStartSoc":35.42,"standardDriverMileage":353.00,"standardPower":null,"power100km":null,"fastChargeDuration":59.06,"middleAnxiety":"中","satisfactionDegree":"低","onlineHailedCarRatio":null,"onlineHailedCarNumber":null},"error":false,"code":"10000"}</td>
 <td></td>
-<td>11</td>
-<td>com.bitnei.apitest.testcases.saas.TestGeodeData@60438a68</td></tr>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标正常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3E73.66+and+lng+%3C135.05+and+lat+%3E+3.86+and+lat+%3C53.55++limit+1&members=&limit=0&_=1578621101331, {"result":[["java.lang.Integer",1876945]]}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数车型必填, /external-api/laboratory/models/reliable/exponent?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
 <td></td>
-<td>22</td>
-<td>com.bitnei.apitest.testcases.saas.TestGeodeData@60438a68</td></tr>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数厂家必填, /external-api/laboratory/models/reliable/exponent?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序获取车型的所有靠谱指数为空, /external-api/laboratory/models/reliable/exponent?, vehModel=123&vehFac=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询全国, /external-api/laboratory/models/reliable/rank?, type=01, {"status":200,"errorMsg":null,"data":[{"vehModel":"THZ7000BEVS004","vehCommonName":"哪吒N01","unit":"km","standardDriverRange":301.0,"standardPower":14.0,"vehFac":"合众汽车"},{"vehModel":"BYD7005BEV1","vehCommonName":"E5","unit":"km","standardDriverRange":400.0,"standardPower":14.8,"vehFac":"比亚迪"},{"vehModel":"BJ7000C5D3-BEV","vehCommonName":"EU5","unit":"km","standardDriverRange":416.0,"standardPower":13.9,"vehFac":"北汽新能源"}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询北京市, /external-api/laboratory/models/reliable/rank?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&type=01, {"status":200,"errorMsg":null,"data":[{"vehModel":"THZ7000BEVS004","vehCommonName":"哪吒N01","unit":"km","standardDriverRange":301.00,"standardPower":14.00,"vehFac":"合众汽车"},{"vehModel":"BYD7005BEV1","vehCommonName":"E5","unit":"km","standardDriverRange":400.00,"standardPower":14.80,"vehFac":"比亚迪"},{"vehModel":"HQ7002BEV15","vehCommonName":"帝豪GSE400","unit":"km","standardDriverRange":353.00,"standardPower":14.53,"vehFac":"吉利汽车"}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询类型必填, /external-api/laboratory/models/reliable/rank?, , {"status":400,"errorMsg":"请求参数type不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序靠谱指数查询全国返回1条, /external-api/laboratory/models/reliable/rank?, size=1&type=02, {"status":200,"errorMsg":null,"data":[{"vehModel":"BJ7000U3D7G-BEV","vehCommonName":"EX360","unit":"km","standardDriverRange":318.0,"standardPower":16.7,"vehFac":"北汽新能源"}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/mileage/detail?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","driverRange":289.59,"standardDriverMileage":353.0,"vehFac":"吉利汽车","unit":"km","monthType":[{"driverMileage":206.0,"month":"01"},{"driverMileage":234.76,"month":"02"},{"driverMileage":285.52,"month":"03"},{"driverMileage":298.19,"month":"04"},{"driverMileage":323.13,"month":"05"},{"driverMileage":321.67,"month":"06"},{"driverMileage":316.4,"month":"07"},{"driverMileage":320.0,"month":"08"},{"driverMileage":324.62,"month":"09"},{"driverMileage":315.65,"month":"10"},{"driverMileage":283.3,"month":"11"},{"driverMileage":245.88,"month":"12"}],"seasonType":[{"driverMileage":307.86,"season":"autumn"},{"driverMileage":302.28,"season":"spring"},{"driverMileage":319.36,"season":"summer"},{"driverMileage":228.88,"season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情北京市, /external-api/laboratory/models/reliable/mileage/detail?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","driverRange":291.55,"standardDriverMileage":353.00,"vehFac":"吉利汽车","unit":"km","monthType":[{"driverMileage":209.00,"month":"01"},{"driverMileage":233.67,"month":"02"},{"driverMileage":289.40,"month":"03"},{"driverMileage":292.50,"month":"04"},{"driverMileage":332.49,"month":"05"},{"driverMileage":329.00,"month":"06"},{"driverMileage":321.29,"month":"07"},{"driverMileage":331.23,"month":"08"},{"driverMileage":338.00,"month":"09"},{"driverMileage":324.67,"month":"10"},{"driverMileage":274.93,"month":"11"},{"driverMileage":222.44,"month":"12"}],"seasonType":[{"driverMileage":312.53,"season":"autumn"},{"driverMileage":304.80,"season":"spring"},{"driverMileage":327.17,"season":"summer"},{"driverMileage":221.70,"season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情厂家必填, /external-api/laboratory/models/reliable/mileage/detail?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序实际行驶总里程详情车型必填, /external-api/laboratory/models/reliable/mileage/detail?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/anxiety/detail?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","middleChargeStartSoc":37.53,"middleAnxiety":"中","vehFac":"吉利汽车","unit":"%","monthType":[{"chargeStartSoc":42.50,"anxiety":"中","month":"01"},{"chargeStartSoc":31.50,"anxiety":"中","month":"02"},{"chargeStartSoc":37.00,"anxiety":"中","month":"03"},{"chargeStartSoc":39.50,"anxiety":"中","month":"04"},{"chargeStartSoc":39.00,"anxiety":"中","month":"05"},{"chargeStartSoc":37.98,"anxiety":"中","month":"06"},{"chargeStartSoc":37.00,"anxiety":"中","month":"07"},{"chargeStartSoc":37.00,"anxiety":"中","month":"08"},{"chargeStartSoc":38.00,"anxiety":"中","month":"09"},{"chargeStartSoc":38.00,"anxiety":"中","month":"10"},{"chargeStartSoc":36.92,"anxiety":"中","month":"11"},{"chargeStartSoc":36.00,"anxiety":"中","month":"12"}],"seasonType":[{"chargeStartSoc":37.64,"anxiety":"中","season":"autumn"},{"chargeStartSoc":38.50,"anxiety":"中","season":"spring"},{"chargeStartSoc":37.33,"anxiety":"中","season":"summer"},{"chargeStartSoc":36.67,"anxiety":"中","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情北京市, /external-api/laboratory/models/reliable/anxiety/detail?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","middleChargeStartSoc":35.42,"middleAnxiety":"中","vehFac":"吉利汽车","unit":"%","monthType":[{"chargeStartSoc":42.00,"anxiety":"中","month":"01"},{"chargeStartSoc":31.00,"anxiety":"中","month":"02"},{"chargeStartSoc":37.00,"anxiety":"中","month":"03"},{"chargeStartSoc":39.00,"anxiety":"中","month":"04"},{"chargeStartSoc":36.00,"anxiety":"中","month":"05"},{"chargeStartSoc":35.00,"anxiety":"中","month":"06"},{"chargeStartSoc":34.00,"anxiety":"中","month":"07"},{"chargeStartSoc":35.00,"anxiety":"中","month":"08"},{"chargeStartSoc":35.08,"anxiety":"中","month":"09"},{"chargeStartSoc":35.00,"anxiety":"中","month":"10"},{"chargeStartSoc":33.00,"anxiety":"中","month":"11"},{"chargeStartSoc":33.00,"anxiety":"中","month":"12"}],"seasonType":[{"chargeStartSoc":34.36,"anxiety":"中","season":"autumn"},{"chargeStartSoc":37.33,"anxiety":"中","season":"spring"},{"chargeStartSoc":34.67,"anxiety":"中","season":"summer"},{"chargeStartSoc":35.33,"anxiety":"中","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情厂家必填, /external-api/laboratory/models/reliable/anxiety/detail?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序使用焦虑度详情车型必填, /external-api/laboratory/models/reliable/anxiety/detail?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情全国HQ7002BEV15吉利汽车, /external-api/laboratory/models/reliable/charge/detail?, vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","fastChargeDuration":54.47,"satisfactionDegree":"低","vehFac":"吉利汽车","unit":"min","monthType":[{"fastChargeTime":97.50,"satisfactionDegree":"低","month":"01"},{"fastChargeTime":41.00,"satisfactionDegree":"中","month":"02"},{"fastChargeTime":92.67,"satisfactionDegree":"低","month":"03"},{"fastChargeTime":0,"satisfactionDegree":"低","month":"04"},{"fastChargeTime":45.67,"satisfactionDegree":"低","month":"05"},{"fastChargeTime":44.50,"satisfactionDegree":"中","month":"06"},{"fastChargeTime":45.14,"satisfactionDegree":"低","month":"07"},{"fastChargeTime":44.34,"satisfactionDegree":"中","month":"08"},{"fastChargeTime":44.73,"satisfactionDegree":"中","month":"09"},{"fastChargeTime":45.18,"satisfactionDegree":"低","month":"10"},{"fastChargeTime":47.66,"satisfactionDegree":"低","month":"11"},{"fastChargeTime":50.83,"satisfactionDegree":"低","month":"12"}],"seasonType":[{"fastChargeTime":45.86,"satisfactionDegree":"低","season":"autumn"},{"fastChargeTime":69.17,"satisfactionDegree":"低","season":"spring"},{"fastChargeTime":44.66,"satisfactionDegree":"中","season":"summer"},{"fastChargeTime":63.11,"satisfactionDegree":"低","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情北京市, /external-api/laboratory/models/reliable/charge/detail?, city=%E5%8C%97%E4%BA%AC%E5%B8%82&vehModel=HQ7002BEV15&vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":200,"errorMsg":null,"data":{"vehModel":"帝豪GSE400","fastChargeDuration":59.06,"satisfactionDegree":"低","vehFac":"吉利汽车","unit":"min","monthType":[{"fastChargeTime":97.50,"satisfactionDegree":"低","month":"01"},{"fastChargeTime":41.00,"satisfactionDegree":"中","month":"02"},{"fastChargeTime":92.67,"satisfactionDegree":"低","month":"03"},{"fastChargeTime":0,"satisfactionDegree":"低","month":"04"},{"fastChargeTime":50.28,"satisfactionDegree":"低","month":"05"},{"fastChargeTime":49.00,"satisfactionDegree":"低","month":"06"},{"fastChargeTime":50.63,"satisfactionDegree":"低","month":"07"},{"fastChargeTime":48.96,"satisfactionDegree":"低","month":"08"},{"fastChargeTime":48.58,"satisfactionDegree":"低","month":"09"},{"fastChargeTime":50.00,"satisfactionDegree":"低","month":"10"},{"fastChargeTime":56.83,"satisfactionDegree":"低","month":"11"},{"fastChargeTime":64.19,"satisfactionDegree":"低","month":"12"}],"seasonType":[{"fastChargeTime":51.80,"satisfactionDegree":"低","season":"autumn"},{"fastChargeTime":71.48,"satisfactionDegree":"低","season":"spring"},{"fastChargeTime":49.53,"satisfactionDegree":"低","season":"summer"},{"fastChargeTime":67.56,"satisfactionDegree":"低","season":"winter"}]},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情厂家必填, /external-api/laboratory/models/reliable/charge/detail?, vehModel=HQ7002BEV15, {"status":400,"errorMsg":"请求参数vehFac不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 微信小程序快充满意度详情车型必填, /external-api/laboratory/models/reliable/charge/detail?, vehFac=%E5%90%89%E5%88%A9%E6%B1%BD%E8%BD%A6, {"status":400,"errorMsg":"请求参数vehModel不能为空！","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 鼎然科技行程汇总查询vin正确, /external-api/vrm/vehicle/summary/tags?, vin=LC06S64M0H1993466, {"status":200,"errorMsg":null,"data":{"vin":"LC06S64M0H1993466","charge_times":343,"fast_charge_times":1,"total_charge_time_length":1863103.0,"total_fast_charge_time_length":1219.0,"end_charge_avg_soc":92.62973760932945,"max_weight":"17950","displacement":"","max_speed":"100","length":"10690","drive_range":469.0,"motor_type":"永磁同步电机","kwh_100km":0.0,"cell_enterprise":"惠州比亚迪电池有限公司","battery_type":"磷酸铁锂","manufacturer":"比亚迪汽车工业有限公司","brand":"比亚迪牌","veh_category_2":"纯电动客车","veh_model_name":"BYD6110LLEV","veh_level":"","produce_date":"2017"},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 鼎然科技行程汇总查询vin无数据, /external-api/vrm/vehicle/summary/tags?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 鼎然科技行程信息查询vin正确HDL421BGXK1000403, /external-api/vrm/vehicle/trips?, vin=HDL421BGXK1000403&statisticDate=2020-06-15, {"status":200,"errorMsg":null,"data":{"vin":"HDL421BGXK1000403","statisticDate":"2020-06-15","start_mileage":11560.0,"end_mileage":11570.0,"odo_mileage":10.0,"total_run_mile":10.0,"total_run_time_length":290,"total_run_times":1,"total_acc_count":0,"total_brake_acc_count":0},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 鼎然科技行程信息查询vin无数据, /external-api/vrm/vehicle/trips?, vin=HDL421BGXK100040&statisticDate=2020-06-15, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 鼎然科技行程信息查询日期格式不正确, /external-api/vrm/vehicle/trips?, vin=HDL421BGXK100040&statisticDate=2020-06-15%2000, {"status":400,"errorMsg":"statisticDate 日期格式不正确(yyyy-MM-dd)","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 平安租赁实时数据按vin查询, /external-api/vrm/vehicle/realTime?, vin=LNAA2AA14K5005789, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 平安租赁实时数据按vin查询无数据, /external-api/vrm/vehicle/realTime?, vin=123, {"status":400,"errorMsg":"此车不在查询范围内","data":null,"error":true,"code":"30004"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信车辆静态信息按vin查询正确, /external-api/vrm/vehicle/static/tag?, vin=LNBSCB3F8GW022110, {"status":200,"errorMsg":null,"data":{"vin":"LNBSCB3F8GW022110","power_type":"纯电动","license_plate":"鲁B3R20L","veh_model_name":"BJ7001BPH1-BEV","brand":"北京牌","manufacturer":"北京新能源汽车股份有限公司","veh_common_name":"EC180","curb_weight":1050.0,"max_speed":101.0,"drive_range":156.0,"positive_material":"层状三元材料","cell_manufacturer":"孚能科技（赣州）有限公司/","kwh_100km":null,"is_online":1,"first_live_date":"2018-05-04","run_city":"青岛市","run_province":"山东省","veh_category_2":"计时租赁","unit_name":"青岛新未来汽车租赁有限公司","veh_level":"A0","first_run_date":"1525422114000","first_charge_date":"1525434259000"},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信车辆静态信息按vin查询无数据, /external-api/vrm/vehicle/static/tag?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信车辆静态信息按licensePlate查询正确, /external-api/vrm/vehicle/static/tag?, licensePlate=%E9%B2%81B3R20L, {"status":200,"errorMsg":null,"data":{"vin":"LNBSCB3F8GW022110","power_type":"纯电动","license_plate":"鲁B3R20L","veh_model_name":"BJ7001BPH1-BEV","brand":"北京牌","manufacturer":"北京新能源汽车股份有限公司","veh_common_name":"EC180","curb_weight":1050.0,"max_speed":101.0,"drive_range":156.0,"positive_material":"层状三元材料","cell_manufacturer":"孚能科技（赣州）有限公司/","kwh_100km":null,"is_online":1,"first_live_date":"2018-05-04","run_city":"青岛市","run_province":"山东省","veh_category_2":"计时租赁","unit_name":"青岛新未来汽车租赁有限公司","veh_level":"A0","first_run_date":"1525422114000","first_charge_date":"1525434259000"},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信车辆静态信息按licensePlate查询无数据, /external-api/vrm/vehicle/static/tag?, licensePlate=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信车辆静态信息参数必传验证, /external-api/vrm/vehicle/static/tag, , {"status":400,"errorMsg":"参数vin和licensePlate至少传一个","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信整体标签查询按vin查询正确, /external-api/vrm/vehicle/whole/tag?, vin=LNBSCB3F8GW022110, {"status":200,"errorMsg":null,"data":{"vin":"LNBSCB3F8GW022110","power_type":"BEV","brand":"北京","veh_model_name":"BJ7001BPH1-BEV","drive_range":156.0,"positive_material":"层状三元材料","cell_manufacturer":"孚能科技（赣州）有限公司/","is_online":1,"run_location":"河南省鹤壁市浚县","province_dept":"山东省","city_dept":"青岛市","veh_category_2":"计时租赁","first_run_date":"2018-05-04","first_charge_date":"2018-05-04","total_run_mile":250610.0,"total_high_temp_run_mile":14150.0,"total_low_temp_run_mile":140.0,"total_low_soc_run_times":167,"avg_daily_run_mile":517.7892561983471,"avg_daily_run_time_length":6882.384297520661,"avg_charge_times_per_100km":0.1552212601252943,"avg_charge_start_soc":35.48586118251928,"avg_charge_end_soc":83.60411311053984,"last_charge_time":"2020-04-29","last_charge_location":"河南省安阳市","total_alarm_times":38,"max_alarm_name":"绝缘报警","risk_score":0.0,"total_night_run_mile":31450.0,"total_night_run_time_length":420446.0,"total_summer_run_mile":80320.0,"total_winter_run_mile":50990.0,"charge_times":389},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 中保信整体标签查询按vin查询无数据, /external-api/vrm/vehicle/whole/tag?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 </table><p>
 </body>
 </html>
