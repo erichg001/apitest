@@ -13,12 +13,12 @@
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.saas.GetInsurance">
+      <class name="com.bitnei.apitest.testcases.saas.ApiTest">
         <methods>
+          <include name="ApiTestCode" invocation-numbers="49 50 51"/>
           <include name="setUp"/>
-          <include name="Insurance" invocation-numbers="7"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.GetInsurance -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->
