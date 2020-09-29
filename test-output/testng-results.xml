@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="106" passed="106">
   <reporter-output>
   </reporter-output>
@@ -1277,6 +1278,17 @@
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="38" started-at="2020-09-29T07:15:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:56Z">
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="64" passed="64">
+  <reporter-output>
+  </reporter-output>
+  <suite name="apitest" duration-ms="27124" started-at="2020-09-09T05:35:29Z" finished-at="2020-09-09T05:35:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="27124" started-at="2020-09-09T05:35:29Z" finished-at="2020-09-09T05:35:56Z">
+      <class name="com.bitnei.apitest.testcases.saas.ApiTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="setUp" is-config="true" duration-ms="18949" started-at="2020-09-09T05:35:29Z" finished-at="2020-09-09T05:35:48Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1301,8 +1313,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ApiTestCode -->
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="61" started-at="2020-09-29T07:15:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:56Z">
+=======
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="63" started-at="2020-09-09T05:35:48Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:48Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1432,7 +1449,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="353" started-at="2020-09-29T07:15:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:57Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="634" started-at="2020-09-09T05:35:48Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1458,7 +1479,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="235" started-at="2020-09-29T07:15:57Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:57Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="53" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1484,7 +1509,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="1271" started-at="2020-09-29T07:15:57Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:58Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="100" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1510,7 +1539,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="445" started-at="2020-09-29T07:15:58Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:58Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="35" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1536,7 +1569,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="59" started-at="2020-09-29T07:15:58Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="38" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1562,7 +1599,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="39" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="38" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1588,7 +1629,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="39" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="35" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1614,7 +1659,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="36" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="50" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1640,7 +1689,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="39" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="46" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1666,7 +1719,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="54" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="41" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1692,7 +1749,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="46" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="30" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1718,7 +1779,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="85" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="41" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1744,7 +1809,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="84" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="38" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1770,7 +1839,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="42" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="40" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1796,7 +1869,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="33" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="31" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1822,7 +1899,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="38" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="28" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1874,7 +1955,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="42" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="40" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1900,7 +1985,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="40" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="34" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1926,7 +2015,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="28" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="29" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1952,7 +2045,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="30" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="30" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:49Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -1978,7 +2075,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="30" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="43" started-at="2020-09-09T05:35:49Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:50Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2004,7 +2105,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="28" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="40" started-at="2020-09-09T05:35:50Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:50Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2030,7 +2135,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="42" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="32" started-at="2020-09-09T05:35:50Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:50Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2056,7 +2165,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@6166e06f]" name="ApiTestCode" duration-ms="36" started-at="2020-09-29T07:15:59Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:15:59Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="30" started-at="2020-09-09T05:35:50Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:50Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2082,9 +2195,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTestCode -->
+<<<<<<< HEAD
       </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
       <class name="com.bitnei.apitest.testcases.saas.TestGeodeData">
         <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="setUp" is-config="true" duration-ms="137" started-at="2020-09-29T07:16:18Z" finished-at="2020-09-29T07:16:18Z">
+=======
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="405" started-at="2020-09-09T05:35:50Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:50Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2099,8 +2216,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- setUp -->
         <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="6045" started-at="2020-09-29T07:16:18Z" description="geode数据验证" data-provider="dp" finished-at="2020-09-29T07:16:24Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="264" started-at="2020-09-09T05:35:50Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:50Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2125,8 +2247,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- UserInfoRgisterData -->
         <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="11378" started-at="2020-09-29T07:16:24Z" description="geode数据验证" data-provider="dp" finished-at="2020-09-29T07:16:36Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="351" started-at="2020-09-09T05:35:50Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:51Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2151,8 +2278,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- UserInfoRgisterData -->
         <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="9681" started-at="2020-09-29T07:16:36Z" description="geode数据验证" data-provider="dp" finished-at="2020-09-29T07:16:45Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="219" started-at="2020-09-09T05:35:51Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:51Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2177,8 +2309,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- UserInfoRgisterData -->
         <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="21148" started-at="2020-09-29T07:16:45Z" description="geode数据验证" data-provider="dp" finished-at="2020-09-29T07:17:06Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="44" started-at="2020-09-09T05:35:51Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:51Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2203,8 +2340,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- UserInfoRgisterData -->
         <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="10551" started-at="2020-09-29T07:17:06Z" description="geode数据验证" data-provider="dp" finished-at="2020-09-29T07:17:17Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="427" started-at="2020-09-09T05:35:51Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:51Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2229,8 +2371,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- UserInfoRgisterData -->
         <test-method status="PASS" signature="UserInfoRgisterData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34]" name="UserInfoRgisterData" duration-ms="22752" started-at="2020-09-29T07:17:17Z" description="geode数据验证" data-provider="dp" finished-at="2020-09-29T07:17:40Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="100" started-at="2020-09-09T05:35:51Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:51Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2255,10 +2402,15 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- UserInfoRgisterData -->
       </class> <!-- com.bitnei.apitest.testcases.saas.TestGeodeData -->
       <class name="com.bitnei.apitest.testcases.saas.GetInsurance">
         <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="setUp" is-config="true" duration-ms="15544" started-at="2020-09-29T07:17:40Z" finished-at="2020-09-29T07:17:55Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="104" started-at="2020-09-09T05:35:51Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:52Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2273,8 +2425,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- setUp -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="51" started-at="2020-09-29T07:17:55Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:55Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="40" started-at="2020-09-09T05:35:52Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:52Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2309,8 +2466,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Insurance -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="39" started-at="2020-09-29T07:17:55Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:55Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="50" started-at="2020-09-09T05:35:52Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:52Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2345,8 +2507,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Insurance -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="35" started-at="2020-09-29T07:17:55Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:55Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="41" started-at="2020-09-09T05:35:52Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:52Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2381,8 +2548,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Insurance -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="48" started-at="2020-09-29T07:17:55Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:55Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="39" started-at="2020-09-09T05:35:52Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:52Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2417,8 +2589,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Insurance -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="83" started-at="2020-09-29T07:17:55Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:56Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="45" started-at="2020-09-09T05:35:52Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:52Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2453,8 +2630,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Insurance -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="58" started-at="2020-09-29T07:17:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:56Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="71" started-at="2020-09-09T05:35:52Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:52Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2489,8 +2671,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Insurance -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="102" started-at="2020-09-29T07:17:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:56Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="360" started-at="2020-09-09T05:35:52Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:52Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2525,8 +2712,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Insurance -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="55" started-at="2020-09-29T07:17:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:56Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="273" started-at="2020-09-09T05:35:52Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:52Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2561,8 +2753,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Insurance -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="42" started-at="2020-09-29T07:17:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:56Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="1168" started-at="2020-09-09T05:35:52Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2597,8 +2794,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Insurance -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="31" started-at="2020-09-29T07:17:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:56Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="346" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2633,8 +2835,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Insurance -->
         <test-method status="PASS" signature="Insurance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.GetInsurance@6b0c2d26]" name="Insurance" duration-ms="40" started-at="2020-09-29T07:17:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-29T07:17:56Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="56" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2653,12 +2860,27 @@
             </param>
             <param index="3">
               <value>
+<<<<<<< HEAD
                 <![CDATA[qp6bnSzOnQd+avywx31lcCsn8TeA7Up/NcxmCv41oJkSZ/1BdnovXKoOo2TPBE8lnMwMKt5v56UF94UFDTrSeSfDD1U3nVbyHCp4mDJrwMZEzoMY41WeBcA0pwdHH6u+4bjDFajJrWQh5H39VkrmSvndHvcUiJS9tqTzaC5bgbQ=]]>
               </value>
             </param>
             <param index="4">
               <value>
                 <![CDATA[1594893074745]]>
+=======
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"change":false,"lastPackCode":"010B200WQJ815AB520","latestPackCode":"010B200WQJ815AB520"},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="56" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[车辆电池换电查询根据vin查询无换电输入电池包无换电]]>
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
               </value>
             </param>
             <param index="5">
@@ -2681,14 +2903,49 @@
             </param>
             <param index="1">
               <value>
+<<<<<<< HEAD
                 <![CDATA[src/main/resources/TEST.xlsx]]>
+=======
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"change":false,"lastPackCode":"010B200WQJ815AB520","latestPackCode":"010B200WQJ815AB520"},"error":false,"code":"10000"}]]>
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- setUp -->
         <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@49e202ad]" name="ApiTest" duration-ms="2514" started-at="2020-09-29T07:16:14Z" description="api接口" data-provider="dp" finished-at="2020-09-29T07:16:17Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="50" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[车辆电池换电查询根据vin查询有换电输入电池包有换电]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/customer/change/battery/vin?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=LNBSCB3F3JW236994&packCode=00NPE02C336D0N8CR1327009]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"change":true,"lastPackCode":"00NPE02C336D0N8CR1327001","latestPackCode":"00NPE02C336D0N8CR1327009","replaceDate":"2020-08-10 13:56:18"},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="48" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2713,8 +2970,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ApiTest -->
         <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@49e202ad]" name="ApiTest" duration-ms="480" started-at="2020-09-29T07:16:17Z" description="api接口" data-provider="dp" finished-at="2020-09-29T07:16:17Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="56" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2739,8 +3001,13 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ApiTest -->
         <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@49e202ad]" name="ApiTest" duration-ms="408" started-at="2020-09-29T07:16:17Z" description="api接口" data-provider="dp" finished-at="2020-09-29T07:16:18Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="44" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2759,14 +3026,49 @@
             </param>
             <param index="3">
               <value>
+<<<<<<< HEAD
                 <![CDATA[{"status":200,"errorMsg":null,"data":1,"error":false,"code":"10000"}]]>
+=======
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"change":false,"lastPackCode":"010B200WQJ815AB520","latestPackCode":"010B200WQJ815AB520"},"error":false,"code":"10000"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="45" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[车辆电池换电查询根据车牌号查询有换电输入电池包123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/customer/change/battery/licensePlate?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[licensePlate=%E9%B2%81BD85190&packCode=00NPE02C336D0N8CR1327009]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"change":true,"lastPackCode":"00NPE02C336D0N8CR1327001","latestPackCode":"00NPE02C336D0N8CR1327009","replaceDate":"2020-08-10 13:56:18"},"error":false,"code":"10000"}]]>
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ApiTest -->
         <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@49e202ad]" name="ApiTest" duration-ms="485" started-at="2020-09-29T07:16:18Z" description="api接口" data-provider="dp" finished-at="2020-09-29T07:16:18Z">
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="56" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
           <params>
             <param index="0">
               <value>
@@ -2791,8 +3093,352 @@
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ApiTest -->
       </class> <!-- com.bitnei.apitest.testcases.saas.PostApiTestParas -->
     </test> <!-- SAAS -->
+=======
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="55" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[退役电池预测查询返回数据正确]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/retire/battery/forecast?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[month=2020-08]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="40" started-at="2020-09-09T05:35:54Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[退役电池预测查询无数据]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/retire/battery/forecast?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[month=2022-08]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="31" started-at="2020-09-09T05:35:55Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[退役电池预测查询日期格式不正确]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/retire/battery/forecast?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[month=2020]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"month 日期格式不正确(yyyy-MM)","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="1036" started-at="2020-09-09T05:35:55Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[电池溯源认证查询按电池包查询正确]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/battery/traceability/certification?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[batteryCode=018PE0P080185D8AX0279369]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"produceType":"电池包","batteryType":"三元材料","cellEnterprise":"上海德朗能动力电池有限公司","cellModel":"NCA18650-320","cellShape":"圆柱形","ratingVolume":186.0,"ratingVolt":326.0,"packEnergyDensity":144.0,"producedDate":"2018-12-07","retireDate":null},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="75" started-at="2020-09-09T05:35:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[电池溯源认证查询按电池模块查询正确]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/battery/traceability/certification?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[batteryCode=018ME1K58P01SD8AV2127380]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"produceType":"电池模块","batteryType":"三元材料","cellEnterprise":"上海德朗能动力电池有限公司","cellModel":"NCA18650-320","cellShape":"圆柱形","ratingVolume":186.0,"ratingVolt":326.0,"packEnergyDensity":144.0,"producedDate":"2018-12-07","retireDate":null},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="84" started-at="2020-09-09T05:35:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[电池溯源认证查询按电池单体查询正确]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/battery/traceability/certification?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[batteryCode=01VCEAJ48112D18HT0001529]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"produceType":"电池单体","batteryType":"三元材料","cellEnterprise":"上海德朗能动力电池有限公司","cellModel":"NCA18650-320","cellShape":"圆柱形","ratingVolume":186.0,"ratingVolt":326.0,"packEnergyDensity":144.0,"producedDate":"2018-12-07","retireDate":null},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="53" started-at="2020-09-09T05:35:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[电池溯源认证查询无数据]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/battery/traceability/certification?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[batteryCode=05HPEP32A1QHAT93H0000750111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="35" started-at="2020-09-09T05:35:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[电池编码查询车架号电池编码为空]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/battery/code?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[batteryCode=]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"未传参数batteryCode","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="38" started-at="2020-09-09T05:35:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[电池编码查询车架号电池编码查询正常]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/battery/code?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[batteryCode=01VCEAJ48118A18HT0001953]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":"LDP51B961JE018611","error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="44" started-at="2020-09-09T05:35:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[电池编码查询车架号电池编码查询为空]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/battery/code?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[batteryCode=01VCEAJ48118A18HT00019531]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="43" started-at="2020-09-09T05:35:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[电池健康度查询vin输入为空]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/battery/health?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":400,"errorMsg":"参数vin未传","data":null,"error":true,"code":"30001"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="56" started-at="2020-09-09T05:35:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[电池健康度查询vin输入查询正常]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/battery/health?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=LMVHFEFZ3KA662904]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":{"vin":"LMVHFEFZ3KA662904","assessmentTime":2.020063E13,"internalResistanceScore":100.0,"volumeScore":98.84,"selfDischargeRateScore":100.0,"voltConsistenceScore":97.55,"temperatureConsistenceScore":100.0,"synthesizeScore":98.92},"error":false,"code":"10000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+        <test-method status="PASS" signature="ApiTestCode(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.ApiTest@f4168b8]" name="ApiTestCode" duration-ms="48" started-at="2020-09-09T05:35:56Z" description="openapi接口" data-provider="dp" finished-at="2020-09-09T05:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[电池健康度查询vin输入查询为空]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/external-api/vehicle-battery/bitnei/battery/health?]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vin=LMVHFEFZ3KA66290]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiTestCode -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
+    </test> <!-- Default test -->
+>>>>>>> 7b1a77b20123ec8ebfc93783a5a537c60d0d3649
   </suite> <!-- apitest -->
 </testng-results>
