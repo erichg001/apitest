@@ -40,7 +40,6 @@
              
     <class name = "com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel" />
 
-
     <class name = "com.bitnei.apitest.testcases.saas.PostBackSaas" />  
 
   -->
