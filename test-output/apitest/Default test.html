@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>64/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>69/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 09 13:35:29 CST 2020</td>
+<td>Started on:</td><td>Wed Oct 14 17:19:29 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27124 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26112 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -282,7 +282,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 平安租赁查询单个行程查询正确LNAA2AA14K5005789, /external-api/vrm/rent/vehicle/trip?, vin=LNAA2AA14K5005789&statisticDate=1580599875000, {"status":200,"errorMsg":null,"error":false,"code":"10000"}</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 平安租赁查询单个行程查询为空LNAA2AA14K500578, /external-api/vrm/rent/vehicle/trip?, vin=LNAA2AA14K500578&statisticDate=1580599875000, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
@@ -347,7 +347,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源认证查询按电池包查询正确, /external-api/vehicle-battery/bitnei/battery/traceability/certification?, batteryCode=018PE0P080185D8AX0279369, {"status":200,"errorMsg":null,"data":{"produceType":"电池包","batteryType":"三元材料","cellEnterprise":"上海德朗能动力电池有限公司","cellModel":"NCA18650-320","cellShape":"圆柱形","ratingVolume":186.0,"ratingVolt":326.0,"packEnergyDensity":144.0,"producedDate":"2018-12-07","retireDate":null},"error":false,"code":"10000"}</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源认证查询按电池模块查询正确, /external-api/vehicle-battery/bitnei/battery/traceability/certification?, batteryCode=018ME1K58P01SD8AV2127380, {"status":200,"errorMsg":null,"data":{"produceType":"电池模块","batteryType":"三元材料","cellEnterprise":"上海德朗能动力电池有限公司","cellModel":"NCA18650-320","cellShape":"圆柱形","ratingVolume":186.0,"ratingVolt":326.0,"packEnergyDensity":144.0,"producedDate":"2018-12-07","retireDate":null},"error":false,"code":"10000"}</td>
@@ -370,7 +370,17 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池编码查询车架号电池编码查询正常, /external-api/vehicle-battery/bitnei/battery/code?, batteryCode=01VCEAJ48118A18HT0001953, {"status":200,"errorMsg":null,"data":"LDP51B961JE018611","error":false,"code":"10000"}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池编码查询车架号电池单体查询正常, /external-api/vehicle-battery/bitnei/battery/code?, batteryCode=01VCEAJ48118A18HT0001953, {"status":200,"errorMsg":null,"data":{"vin":"LDP51B961JE018611","produceType":"C","packCode":"018PE0P080185D8AX0279369","moduleCode":"018ME1K58P01SD8AV2124711"},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池编码查询车架号电池模块查询正常, /external-api/vehicle-battery/bitnei/battery/code?, batteryCode=018ME1K58P01SD8AV2124711, {"status":200,"errorMsg":null,"data":{"vin":"LDP51B961JE018611","produceType":"M","packCode":"018PE0P080185D8AX0279369","moduleCode":null},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池编码查询车架号电池包查询正常, /external-api/vehicle-battery/bitnei/battery/code?, batteryCode=018PE0P080185D8AX0279369, {"status":200,"errorMsg":null,"data":{"vin":"LDP51B961JE018611","produceType":"P","packCode":null,"moduleCode":null},"error":false,"code":"10000"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
@@ -385,12 +395,27 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池健康度查询vin输入查询正常, /external-api/vehicle-battery/bitnei/battery/health?, vin=LMVHFEFZ3KA662904, {"status":200,"errorMsg":null,"data":{"vin":"LMVHFEFZ3KA662904","assessmentTime":2.020063E13,"internalResistanceScore":100.0,"volumeScore":98.84,"selfDischargeRateScore":100.0,"voltConsistenceScore":97.55,"temperatureConsistenceScore":100.0,"synthesizeScore":98.92},"error":false,"code":"10000"}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池健康度查询vin输入查询正常, /external-api/vehicle-battery/bitnei/battery/health?, vin=HDL421BG5K1000437, {"status":200,"errorMsg":null,"data":{"vin":"HDL421BG5K1000437","assessmentTime":"20200609","internalResistanceScore":100.0,"volumeScore":100.0,"selfDischargeRateScore":100.0,"voltConsistenceScore":100.0,"temperatureConsistenceScore":100.0,"synthesizeScore":100.0},"error":false,"code":"10000"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池健康度查询vin输入查询为空, /external-api/vehicle-battery/bitnei/battery/health?, vin=LMVHFEFZ3KA66290, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池容量查询vin输入为空, /external-api/vehicle-battery/bitnei/battery/capacity/fading?, vin=, {"status":400,"errorMsg":"参数vin未传","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池容量查询vin输入查询正常, /external-api/vehicle-battery/bitnei/battery/capacity/fading?, vin=LC0CE4DC7J0148471, {"status":200,"errorMsg":null,"data":[{"mileageRange":0,"volFading":2.0},{"mileageRange":1,"volFading":2.21},{"mileageRange":2,"volFading":2.32},{"mileageRange":3,"volFading":2.27},{"mileageRange":4,"volFading":2.14},{"mileageRange":5,"volFading":2.04},{"mileageRange":6,"volFading":1.97},{"mileageRange":7,"volFading":1.99},{"mileageRange":8,"volFading":2.11}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池健康度查询vin输入查询为空, /external-api/vehicle-battery/bitnei/battery/capacity/fading?, vin=LMVHFEFZ3KA66290, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@f4168b8</td></tr>
