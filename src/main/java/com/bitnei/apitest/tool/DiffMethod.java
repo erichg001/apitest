@@ -207,7 +207,7 @@ public class DiffMethod {
 
 	            while (iterator.hasNext()) {
 	                String key = (String) iterator.next();
-	                Object expectedValue = expectedJSON.get(key);
+	                Object expectedValue = null;
 
 	                //System.out.println("----------key ---------------"+key);
 	                //System.out.println("----------expectedValue ---------------"+expectedValue);
@@ -222,7 +222,11 @@ public class DiffMethod {
 
 	                    Object currentValue = currentJSON.get(key);
 	                    //System.out.println("----------currentValue ---------------"+currentValue);
-
+						try {
+							expectedValue = expectedJSON.get(key);
+						}catch(Exception e){
+							 e.printStackTrace();
+						}
 	                    if (expectedValue != null && currentValue == null || !expectedValue.toString().equals("null") && currentValue.toString().equals("null")) {
 	                        tempJSON.put("actualValue", "null");
 	                        tempJSON.put("expectedValue", expectedValue);

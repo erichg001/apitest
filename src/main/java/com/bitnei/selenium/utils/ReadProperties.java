@@ -43,7 +43,14 @@ public class ReadProperties {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			in.close();
+			try {
+				if (in != null){
+					in.close();
+				}
+			}catch(IOException e) {
+				e.printStackTrace();
+			}
+			
 		}
  
 		//返回pro对象

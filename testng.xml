@@ -33,7 +33,7 @@
   </test> 
  
 
-  <test parallel="classes" thread-count="1" name="SAAS" verbose="2" >
+  <test parallel="classes" thread-count="1" name="SAAS" verbose="1" >
     <classes>
    <!--  
     <class name = "com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" /> 
@@ -44,7 +44,6 @@
 
   -->
     <class name = "com.bitnei.apitest.testcases.saas.ApiTest" />  
-
 
     <class name = "com.bitnei.apitest.testcases.saas.PostApiTestParas" /> 
  
