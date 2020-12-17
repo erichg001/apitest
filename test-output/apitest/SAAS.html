@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SAAS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>97/7/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>111/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 27 14:15:11 CST 2020</td>
+<td>Started on:</td><td>Thu Dec 17 09:20:30 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>136 seconds (136678 ms)</td>
+<tr><td>Total time:</td><td>147 seconds (147673 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池健康度查询vin输入为空, /external-api/vehicle-battery/bitnei/battery/health?, vin=, {"status":400,"errorMsg":"参数vin未传","data":null,"error":true,"code":"30001"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:200,&quot;expectedValue is&quot;:400},&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;Required String parameter &apos;queryCode&apos; is not present&quot;,&quot;expectedValue is&quot;:400,&quot;expectedValue is &quot;:&quot;参数vin未传&quot;},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:400,&quot;expectedValue is &quot;:&quot;30001&quot;}}]
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池健康度查询queryCode输入查询正常, /external-api/vehicle-battery/bitnei/battery/health?, queryCode=018PE0P080185D8AX0279369, {"status":200,"errorMsg":null,"data":{"productType":"P","assessmentTime":"20200621","internalResistanceScore":100.0,"volumeScore":100.0,"selfDischargeRateScore":99.96,"voltConsistenceScore":95.55,"temperatureConsistenceScore":98.37,"synthesizeScore":98.5,"lastReportTime":null},"error":false,"code":"10000"}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;productType&quot;:&quot;P&quot;,&quot;assessmentTime&quot;:&quot;20200621&quot;,&quot;internalResistanceScore&quot;:100,&quot;volumeScore&quot;:100,&quot;selfDischargeRateScore&quot;:99.96,&quot;voltConsistenceScore&quot;:95.55,&quot;temperatureConsistenceScore&quot;:98.37,&quot;synthesizeScore&quot;:98.5,&quot;lastReportTime&quot;:null}},&quot;productType&quot;:{&quot;actualKey&quot;:&quot;不存在此productType&quot;,&quot;expectedKey&quot;:&quot;productType&quot;},&quot;assessmentTime&quot;:{&quot;actualKey&quot;:&quot;不存在此assessmentTime&quot;,&quot;expectedKey&quot;:&quot;assessmentTime&quot;},&quot;internalResistanceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此internalResistanceScore&quot;,&quot;expectedKey&quot;:&quot;internalResistanceScore&quot;},&quot;volumeScore&quot;:{&quot;actualKey&quot;:&quot;不存在此volumeScore&quot;,&quot;expectedKey&quot;:&quot;volumeScore&quot;},&quot;selfDischargeRateScore&quot;:{&quot;actualKey&quot;:&quot;不存在此selfDischargeRateScore&quot;,&quot;expectedKey&quot;:&quot;selfDischargeRateScore&quot;},&quot;voltConsistenceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此voltConsistenceScore&quot;,&quot;expectedKey&quot;:&quot;voltConsistenceScore&quot;},&quot;temperatureConsistenceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此temperatureConsistenceScore&quot;,&quot;expectedKey&quot;:&quot;temperatureConsistenceScore&quot;},&quot;synthesizeScore&quot;:{&quot;actualKey&quot;:&quot;不存在此synthesizeScore&quot;,&quot;expectedKey&quot;:&quot;synthesizeScore&quot;},&quot;lastReportTime&quot;:{&quot;actualKey&quot;:&quot;不存在此lastReportTime&quot;,&quot;expectedKey&quot;:&quot;lastReportTime&quot;},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;productType&quot;:&quot;P&quot;,&quot;assessmentTime&quot;:&quot;20200621&quot;,&quot;internalResistanceScore&quot;:100,&quot;volumeScore&quot;:100,&quot;selfDischargeRateScore&quot;:99.96,&quot;voltConsistenceScore&quot;:95.55,&quot;temperatureConsistenceScore&quot;:98.37,&quot;synthesizeScore&quot;:98.5,&quot;lastReportTime&quot;:null},&quot;currentValue is &quot;:&quot;35000&quot;,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
 	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace581806475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace581806475'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:200,&quot;expectedValue is&quot;:400},&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;Required String parameter &apos;queryCode&apos; is not present&quot;,&quot;expectedValue is&quot;:400,&quot;expectedValue is &quot;:&quot;参数vin未传&quot;},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:400,&quot;expectedValue is &quot;:&quot;30001&quot;}}]
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1354318462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1354318462'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;productType&quot;:&quot;P&quot;,&quot;assessmentTime&quot;:&quot;20200621&quot;,&quot;internalResistanceScore&quot;:100,&quot;volumeScore&quot;:100,&quot;selfDischargeRateScore&quot;:99.96,&quot;voltConsistenceScore&quot;:95.55,&quot;temperatureConsistenceScore&quot;:98.37,&quot;synthesizeScore&quot;:98.5,&quot;lastReportTime&quot;:null}},&quot;productType&quot;:{&quot;actualKey&quot;:&quot;不存在此productType&quot;,&quot;expectedKey&quot;:&quot;productType&quot;},&quot;assessmentTime&quot;:{&quot;actualKey&quot;:&quot;不存在此assessmentTime&quot;,&quot;expectedKey&quot;:&quot;assessmentTime&quot;},&quot;internalResistanceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此internalResistanceScore&quot;,&quot;expectedKey&quot;:&quot;internalResistanceScore&quot;},&quot;volumeScore&quot;:{&quot;actualKey&quot;:&quot;不存在此volumeScore&quot;,&quot;expectedKey&quot;:&quot;volumeScore&quot;},&quot;selfDischargeRateScore&quot;:{&quot;actualKey&quot;:&quot;不存在此selfDischargeRateScore&quot;,&quot;expectedKey&quot;:&quot;selfDischargeRateScore&quot;},&quot;voltConsistenceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此voltConsistenceScore&quot;,&quot;expectedKey&quot;:&quot;voltConsistenceScore&quot;},&quot;temperatureConsistenceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此temperatureConsistenceScore&quot;,&quot;expectedKey&quot;:&quot;temperatureConsistenceScore&quot;},&quot;synthesizeScore&quot;:{&quot;actualKey&quot;:&quot;不存在此synthesizeScore&quot;,&quot;expectedKey&quot;:&quot;synthesizeScore&quot;},&quot;lastReportTime&quot;:{&quot;actualKey&quot;:&quot;不存在此lastReportTime&quot;,&quot;expectedKey&quot;:&quot;lastReportTime&quot;},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;productType&quot;:&quot;P&quot;,&quot;assessmentTime&quot;:&quot;20200621&quot;,&quot;internalResistanceScore&quot;:100,&quot;volumeScore&quot;:100,&quot;selfDischargeRateScore&quot;:99.96,&quot;voltConsistenceScore&quot;:95.55,&quot;temperatureConsistenceScore&quot;:98.37,&quot;synthesizeScore&quot;:98.5,&quot;lastReportTime&quot;:null},&quot;currentValue is &quot;:&quot;35000&quot;,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -106,169 +106,14 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池健康度查询vin输入查询正常, /external-api/vehicle-battery/bitnei/battery/health?, vin=HDL421BG5K1000437, {"status":200,"errorMsg":null,"data":{"vin":"HDL421BG5K1000437","assessmentTime":"20200609","internalResistanceScore":100.0,"volumeScore":100.0,"selfDischargeRateScore":100.0,"voltConsistenceScore":100.0,"temperatureConsistenceScore":100.0,"synthesizeScore":100.0},"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;vin&quot;:&quot;HDL421BG5K1000437&quot;,&quot;assessmentTime&quot;:&quot;20200609&quot;,&quot;internalResistanceScore&quot;:100,&quot;volumeScore&quot;:100,&quot;selfDischargeRateScore&quot;:100,&quot;voltConsistenceScore&quot;:100,&quot;temperatureConsistenceScore&quot;:100,&quot;synthesizeScore&quot;:100}},&quot;vin&quot;:{&quot;actualKey&quot;:&quot;不存在此vin&quot;,&quot;expectedKey&quot;:&quot;vin&quot;},&quot;assessmentTime&quot;:{&quot;actualKey&quot;:&quot;不存在此assessmentTime&quot;,&quot;expectedKey&quot;:&quot;assessmentTime&quot;},&quot;internalResistanceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此internalResistanceScore&quot;,&quot;expectedKey&quot;:&quot;internalResistanceScore&quot;},&quot;volumeScore&quot;:{&quot;actualKey&quot;:&quot;不存在此volumeScore&quot;,&quot;expectedKey&quot;:&quot;volumeScore&quot;},&quot;selfDischargeRateScore&quot;:{&quot;actualKey&quot;:&quot;不存在此selfDischargeRateScore&quot;,&quot;expectedKey&quot;:&quot;selfDischargeRateScore&quot;},&quot;voltConsistenceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此voltConsistenceScore&quot;,&quot;expectedKey&quot;:&quot;voltConsistenceScore&quot;},&quot;temperatureConsistenceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此temperatureConsistenceScore&quot;,&quot;expectedKey&quot;:&quot;temperatureConsistenceScore&quot;},&quot;synthesizeScore&quot;:{&quot;actualKey&quot;:&quot;不存在此synthesizeScore&quot;,&quot;expectedKey&quot;:&quot;synthesizeScore&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;vin&quot;:&quot;HDL421BG5K1000437&quot;,&quot;assessmentTime&quot;:&quot;20200609&quot;,&quot;internalResistanceScore&quot;:100,&quot;volumeScore&quot;:100,&quot;selfDischargeRateScore&quot;:100,&quot;voltConsistenceScore&quot;:100,&quot;temperatureConsistenceScore&quot;:100,&quot;synthesizeScore&quot;:100},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;vin&quot;:&quot;HDL421BG5K1000437&quot;,&quot;assessmentTime&quot;:&quot;20200609&quot;,&quot;internalResistanceScore&quot;:100,&quot;volumeScore&quot;:100,&quot;selfDischargeRateScore&quot;:100,&quot;voltConsistenceScore&quot;:100,&quot;temperatureConsistenceScore&quot;:100,&quot;synthesizeScore&quot;:100},&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池容量查询queryCode输入查询正常, /external-api/vehicle-battery/bitnei/battery/capacity/fading?, queryCode=018PE0P080185D8AX0279369, {"status":200,"errorMsg":null,"data":[{"mileageRange":0,"volFading":2.0,"lastReportTime":null},{"mileageRange":1,"volFading":2.21,"lastReportTime":null},{"mileageRange":2,"volFading":2.32,"lastReportTime":null},{"mileageRange":3,"volFading":2.27,"lastReportTime":null}],"error":false,"code":"10000"}</td>
+<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;mileageRange&quot;:0,&quot;volFading&quot;:2,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:1,&quot;volFading&quot;:2.21,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:2,&quot;volFading&quot;:2.32,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:3,&quot;volFading&quot;:2.27,&quot;lastReportTime&quot;:null}]},&quot;Length&quot;:{&quot;actualLenth&quot;:1,&quot;expectLenth&quot;:4},&quot;mileageRange&quot;:{&quot;actualKey&quot;:&quot;不存在此mileageRange&quot;,&quot;expectedKey&quot;:&quot;mileageRange&quot;},&quot;volFading&quot;:{&quot;actualKey&quot;:&quot;不存在此volFading&quot;,&quot;expectedKey&quot;:&quot;volFading&quot;},&quot;lastReportTime&quot;:{&quot;actualKey&quot;:&quot;不存在此lastReportTime&quot;,&quot;expectedKey&quot;:&quot;lastReportTime&quot;},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;mileageRange&quot;:0,&quot;volFading&quot;:2,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:1,&quot;volFading&quot;:2.21,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:2,&quot;volFading&quot;:2.32,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:3,&quot;volFading&quot;:2.27,&quot;lastReportTime&quot;:null}],&quot;currentValue is &quot;:&quot;35000&quot;,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
 	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1197444250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1197444250'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;vin&quot;:&quot;HDL421BG5K1000437&quot;,&quot;assessmentTime&quot;:&quot;20200609&quot;,&quot;internalResistanceScore&quot;:100,&quot;volumeScore&quot;:100,&quot;selfDischargeRateScore&quot;:100,&quot;voltConsistenceScore&quot;:100,&quot;temperatureConsistenceScore&quot;:100,&quot;synthesizeScore&quot;:100}},&quot;vin&quot;:{&quot;actualKey&quot;:&quot;不存在此vin&quot;,&quot;expectedKey&quot;:&quot;vin&quot;},&quot;assessmentTime&quot;:{&quot;actualKey&quot;:&quot;不存在此assessmentTime&quot;,&quot;expectedKey&quot;:&quot;assessmentTime&quot;},&quot;internalResistanceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此internalResistanceScore&quot;,&quot;expectedKey&quot;:&quot;internalResistanceScore&quot;},&quot;volumeScore&quot;:{&quot;actualKey&quot;:&quot;不存在此volumeScore&quot;,&quot;expectedKey&quot;:&quot;volumeScore&quot;},&quot;selfDischargeRateScore&quot;:{&quot;actualKey&quot;:&quot;不存在此selfDischargeRateScore&quot;,&quot;expectedKey&quot;:&quot;selfDischargeRateScore&quot;},&quot;voltConsistenceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此voltConsistenceScore&quot;,&quot;expectedKey&quot;:&quot;voltConsistenceScore&quot;},&quot;temperatureConsistenceScore&quot;:{&quot;actualKey&quot;:&quot;不存在此temperatureConsistenceScore&quot;,&quot;expectedKey&quot;:&quot;temperatureConsistenceScore&quot;},&quot;synthesizeScore&quot;:{&quot;actualKey&quot;:&quot;不存在此synthesizeScore&quot;,&quot;expectedKey&quot;:&quot;synthesizeScore&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;vin&quot;:&quot;HDL421BG5K1000437&quot;,&quot;assessmentTime&quot;:&quot;20200609&quot;,&quot;internalResistanceScore&quot;:100,&quot;volumeScore&quot;:100,&quot;selfDischargeRateScore&quot;:100,&quot;voltConsistenceScore&quot;:100,&quot;temperatureConsistenceScore&quot;:100,&quot;synthesizeScore&quot;:100},&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:{&quot;vin&quot;:&quot;HDL421BG5K1000437&quot;,&quot;assessmentTime&quot;:&quot;20200609&quot;,&quot;internalResistanceScore&quot;:100,&quot;volumeScore&quot;:100,&quot;selfDischargeRateScore&quot;:100,&quot;voltConsistenceScore&quot;:100,&quot;temperatureConsistenceScore&quot;:100,&quot;synthesizeScore&quot;:100},&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池健康度查询vin输入查询为空, /external-api/vehicle-battery/bitnei/battery/health?, vin=LMVHFEFZ3KA66290, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;35000&quot;}}]
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2022084241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2022084241'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;35000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池容量查询vin输入为空, /external-api/vehicle-battery/bitnei/battery/capacity/fading?, vin=, {"status":400,"errorMsg":"参数vin未传","data":null,"error":true,"code":"30001"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:200,&quot;expectedValue is&quot;:400},&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;Required String parameter &apos;queryCode&apos; is not present&quot;,&quot;expectedValue is&quot;:400,&quot;expectedValue is &quot;:&quot;参数vin未传&quot;},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:400,&quot;expectedValue is &quot;:&quot;30001&quot;}}]
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1457876188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1457876188'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;status&quot;:{&quot;currentValue is &quot;:200,&quot;expectedValue is&quot;:400},&quot;errorMsg&quot;:{&quot;currentValue is &quot;:&quot;Required String parameter &apos;queryCode&apos; is not present&quot;,&quot;expectedValue is&quot;:400,&quot;expectedValue is &quot;:&quot;参数vin未传&quot;},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:400,&quot;expectedValue is &quot;:&quot;30001&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池容量查询vin输入查询正常, /external-api/vehicle-battery/bitnei/battery/capacity/fading?, vin=LC0CE4DC7J0148471, {"status":200,"errorMsg":null,"data":[{"mileageRange":0,"volFading":2.0},{"mileageRange":1,"volFading":2.21},{"mileageRange":2,"volFading":2.32},{"mileageRange":3,"volFading":2.27},{"mileageRange":4,"volFading":2.14},{"mileageRange":5,"volFading":2.04},{"mileageRange":6,"volFading":1.97},{"mileageRange":7,"volFading":1.99},{"mileageRange":8,"volFading":2.11}],"error":false,"code":"10000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;mileageRange&quot;:0,&quot;volFading&quot;:2},{&quot;mileageRange&quot;:1,&quot;volFading&quot;:2.21},{&quot;mileageRange&quot;:2,&quot;volFading&quot;:2.32},{&quot;mileageRange&quot;:3,&quot;volFading&quot;:2.27},{&quot;mileageRange&quot;:4,&quot;volFading&quot;:2.14},{&quot;mileageRange&quot;:5,&quot;volFading&quot;:2.04},{&quot;mileageRange&quot;:6,&quot;volFading&quot;:1.97},{&quot;mileageRange&quot;:7,&quot;volFading&quot;:1.99},{&quot;mileageRange&quot;:8,&quot;volFading&quot;:2.11}]},&quot;Length&quot;:{&quot;actualLenth&quot;:1,&quot;expectLenth&quot;:9},&quot;mileageRange&quot;:{&quot;actualKey&quot;:&quot;不存在此mileageRange&quot;,&quot;expectedKey&quot;:&quot;mileageRange&quot;},&quot;volFading&quot;:{&quot;actualKey&quot;:&quot;不存在此volFading&quot;,&quot;expectedKey&quot;:&quot;volFading&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;mileageRange&quot;:0,&quot;volFading&quot;:2},{&quot;mileageRange&quot;:1,&quot;volFading&quot;:2.21},{&quot;mileageRange&quot;:2,&quot;volFading&quot;:2.32},{&quot;mileageRange&quot;:3,&quot;volFading&quot;:2.27},{&quot;mileageRange&quot;:4,&quot;volFading&quot;:2.14},{&quot;mileageRange&quot;:5,&quot;volFading&quot;:2.04},{&quot;mileageRange&quot;:6,&quot;volFading&quot;:1.97},{&quot;mileageRange&quot;:7,&quot;volFading&quot;:1.99},{&quot;mileageRange&quot;:8,&quot;volFading&quot;:2.11}],&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;mileageRange&quot;:0,&quot;volFading&quot;:2},{&quot;mileageRange&quot;:1,&quot;volFading&quot;:2.21},{&quot;mileageRange&quot;:2,&quot;volFading&quot;:2.32},{&quot;mileageRange&quot;:3,&quot;volFading&quot;:2.27},{&quot;mileageRange&quot;:4,&quot;volFading&quot;:2.14},{&quot;mileageRange&quot;:5,&quot;volFading&quot;:2.04},{&quot;mileageRange&quot;:6,&quot;volFading&quot;:1.97},{&quot;mileageRange&quot;:7,&quot;volFading&quot;:1.99},{&quot;mileageRange&quot;:8,&quot;volFading&quot;:2.11}],&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1241549058", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1241549058'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;mileageRange&quot;:0,&quot;volFading&quot;:2},{&quot;mileageRange&quot;:1,&quot;volFading&quot;:2.21},{&quot;mileageRange&quot;:2,&quot;volFading&quot;:2.32},{&quot;mileageRange&quot;:3,&quot;volFading&quot;:2.27},{&quot;mileageRange&quot;:4,&quot;volFading&quot;:2.14},{&quot;mileageRange&quot;:5,&quot;volFading&quot;:2.04},{&quot;mileageRange&quot;:6,&quot;volFading&quot;:1.97},{&quot;mileageRange&quot;:7,&quot;volFading&quot;:1.99},{&quot;mileageRange&quot;:8,&quot;volFading&quot;:2.11}]},&quot;Length&quot;:{&quot;actualLenth&quot;:1,&quot;expectLenth&quot;:9},&quot;mileageRange&quot;:{&quot;actualKey&quot;:&quot;不存在此mileageRange&quot;,&quot;expectedKey&quot;:&quot;mileageRange&quot;},&quot;volFading&quot;:{&quot;actualKey&quot;:&quot;不存在此volFading&quot;,&quot;expectedKey&quot;:&quot;volFading&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;mileageRange&quot;:0,&quot;volFading&quot;:2},{&quot;mileageRange&quot;:1,&quot;volFading&quot;:2.21},{&quot;mileageRange&quot;:2,&quot;volFading&quot;:2.32},{&quot;mileageRange&quot;:3,&quot;volFading&quot;:2.27},{&quot;mileageRange&quot;:4,&quot;volFading&quot;:2.14},{&quot;mileageRange&quot;:5,&quot;volFading&quot;:2.04},{&quot;mileageRange&quot;:6,&quot;volFading&quot;:1.97},{&quot;mileageRange&quot;:7,&quot;volFading&quot;:1.99},{&quot;mileageRange&quot;:8,&quot;volFading&quot;:2.11}],&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;mileageRange&quot;:0,&quot;volFading&quot;:2},{&quot;mileageRange&quot;:1,&quot;volFading&quot;:2.21},{&quot;mileageRange&quot;:2,&quot;volFading&quot;:2.32},{&quot;mileageRange&quot;:3,&quot;volFading&quot;:2.27},{&quot;mileageRange&quot;:4,&quot;volFading&quot;:2.14},{&quot;mileageRange&quot;:5,&quot;volFading&quot;:2.04},{&quot;mileageRange&quot;:6,&quot;volFading&quot;:1.97},{&quot;mileageRange&quot;:7,&quot;volFading&quot;:1.99},{&quot;mileageRange&quot;:8,&quot;volFading&quot;:2.11}],&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池容量查询vin输入查询为空, /external-api/vehicle-battery/bitnei/battery/capacity/fading?, vin=LMVHFEFZ3KA66290, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;35000&quot;}}]
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1410662299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1410662299'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;error&quot;:{&quot;currentValue is &quot;:true,&quot;expectedValue is&quot;:false},&quot;code&quot;:{&quot;currentValue is &quot;:&quot;40000&quot;,&quot;expectedValue is&quot;:false,&quot;expectedValue is &quot;:&quot;35000&quot;}}]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></div></td>
-<td>0</td>
-<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
-<tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API即插即充经纬度为空, /external-api/gw/charge/realtime/data?, vin=HGXB13A00L1000154&timestamp=1605581490000&lat=0&lng=0, {"status":200,"errorMsg":"维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空","data":null,"error":true,"code":"30001"}</td>
-<td><div><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空&quot;,&quot;currentValue is &quot;:null,&quot;expectedValue is &quot;:&quot;维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空&quot;,&quot;currentValue is &quot;:false,&quot;expectedValue is &quot;:&quot;维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空&quot;,&quot;expectedValue is&quot;:true},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空&quot;,&quot;currentValue is &quot;:&quot;10000&quot;,&quot;expectedValue is &quot;:&quot;30001&quot;,&quot;expectedValue is&quot;:true}}]
-	at com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode(ApiTest.java:101)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1501068461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1501068461'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;errorMsg&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空&quot;,&quot;currentValue is &quot;:null,&quot;expectedValue is &quot;:&quot;维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空&quot;},&quot;error&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空&quot;,&quot;currentValue is &quot;:false,&quot;expectedValue is &quot;:&quot;维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空&quot;,&quot;expectedValue is&quot;:true},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:&quot;维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空&quot;,&quot;currentValue is &quot;:&quot;10000&quot;,&quot;expectedValue is &quot;:&quot;30001&quot;,&quot;expectedValue is&quot;:true}}]
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace427681073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace427681073'><pre>java.lang.AssertionError: expected [{}] but found [{&quot;data&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;mileageRange&quot;:0,&quot;volFading&quot;:2,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:1,&quot;volFading&quot;:2.21,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:2,&quot;volFading&quot;:2.32,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:3,&quot;volFading&quot;:2.27,&quot;lastReportTime&quot;:null}]},&quot;Length&quot;:{&quot;actualLenth&quot;:1,&quot;expectLenth&quot;:4},&quot;mileageRange&quot;:{&quot;actualKey&quot;:&quot;不存在此mileageRange&quot;,&quot;expectedKey&quot;:&quot;mileageRange&quot;},&quot;volFading&quot;:{&quot;actualKey&quot;:&quot;不存在此volFading&quot;,&quot;expectedKey&quot;:&quot;volFading&quot;},&quot;lastReportTime&quot;:{&quot;actualKey&quot;:&quot;不存在此lastReportTime&quot;,&quot;expectedKey&quot;:&quot;lastReportTime&quot;},&quot;code&quot;:{&quot;actualValue&quot;:null,&quot;expectedValue&quot;:[{&quot;mileageRange&quot;:0,&quot;volFading&quot;:2,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:1,&quot;volFading&quot;:2.21,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:2,&quot;volFading&quot;:2.32,&quot;lastReportTime&quot;:null},{&quot;mileageRange&quot;:3,&quot;volFading&quot;:2.27,&quot;lastReportTime&quot;:null}],&quot;currentValue is &quot;:&quot;35000&quot;,&quot;expectedValue is &quot;:&quot;10000&quot;}}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -302,7 +147,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.PostApiTestParas.ApiTest()'><b>ApiTest</b><br>Test class: com.bitnei.apitest.testcases.saas.PostApiTestParas<br>Test method: api接口<br>Parameters: API接口EC动力接收充电数据, /external-api/vehicle-charge/charge/herui/vehicle/receive, {"carNO":"京ADK2768","startSoc":"41","endSoc":"100","lat":"40.1297269989","lng":"116.5992975284","station":"EC动力顺丰充电站","startTime":"2019-10-12 21:38:25","endTime":"2019-10-13 01:24:25","id":"38145","electricAmount":"29.97","current":"1.9","voltage":"402","type":"1"}, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"10000"}</td>
 <td></td>
-<td>2</td>
+<td>4</td>
 <td>com.bitnei.apitest.testcases.saas.PostApiTestParas@49e202ad</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.PostApiTestParas.ApiTest()'><b>ApiTest</b><br>Test class: com.bitnei.apitest.testcases.saas.PostApiTestParas<br>Test method: api接口<br>Parameters: 鼎然科技白名单添加, /external-api/vrm/special/dingran/white/roster/receive?vin=LC0DE6CB9H1000142&actionType=1, , {"status":200,"errorMsg":null,"data":1,"error":false,"code":"10000"}</td>
@@ -660,12 +505,32 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API有序充电车架号为空, /external-api/gw/charge/orderly/realtime/data?, vin=&timestamp=1606445490000, {"status":200,"errorMsg":"车架号(vin)为必填字段,不能为空或空字符","data":null,"error":true,"code":"30001"}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池健康度查询queryCode输入为空, /external-api/vehicle-battery/bitnei/battery/health?, queryCode=, {"status":400,"errorMsg":"参数queryCode未传","data":null,"error":true,"code":"30001"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API有序充电时间戳为空, /external-api/gw/charge/orderly/realtime/data?, vin=HGXB13A00L1000154&timestamp=, {"status":200,"errorMsg":"时间戳(timestamp)为必填字段,不能为空","data":null,"error":true,"code":"30001"}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池健康度查询queryCode输入查询为空, /external-api/vehicle-battery/bitnei/battery/health?, queryCode=018PE0P080185D8AX027936, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池容量查询queryCode输入为空, /external-api/vehicle-battery/bitnei/battery/capacity/fading?, queryCode=, {"status":400,"errorMsg":"参数queryCode未传","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池容量查询queryCode输入查询为空, /external-api/vehicle-battery/bitnei/battery/capacity/fading?, queryCode=018PE0P080185D8AX027936, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API有序充电车架号必填为空, /external-api/gw/charge/orderly/realtime/data?, vin=&timestamp=1605581490000, {"status":200,"errorMsg":"车架号(vin)为必填字段,不能为空或空字符","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API有序充电时间戳必填为空, /external-api/gw/charge/orderly/realtime/data?, vin=HGXB13A00L1000154&timestamp=, {"status":200,"errorMsg":"时间戳(timestamp)为必填字段,不能为空","data":null,"error":true,"code":"30001"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
@@ -680,12 +545,12 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API即插即充车架号为空, /external-api/gw/charge/realtime/data?, vin=&timestamp=1606445490000&lat=0&lng=0, {"status":200,"errorMsg":"车架号(vin)为必填字段,不能为空或空字符","data":null,"error":true,"code":"30001"}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API即插即充车架号必填为空, /external-api/gw/charge/realtime/data?, vin=&timestamp=1606445490000&lat=0&lng=0, {"status":200,"errorMsg":"车架号(vin)为必填字段,不能为空或空字符","data":null,"error":true,"code":"30001"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
 <tr>
-<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API即插即充时间戳为空, /external-api/gw/charge/realtime/data?, vin=HGXB13A00L1000154&timestamp=&lat=0&lng=0, {"status":200,"errorMsg":"时间戳(timestamp)为必填字段,不能为空","data":null,"error":true,"code":"30001"}</td>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API即插即充时间戳必填为空, /external-api/gw/charge/realtime/data?, vin=HGXB13A00L1000154&timestamp=&lat=0&lng=0, {"status":200,"errorMsg":"时间戳(timestamp)为必填字段,不能为空","data":null,"error":true,"code":"30001"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
@@ -695,7 +560,57 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
 <tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API即插即充经纬度必填为空, /external-api/gw/charge/realtime/data?, vin=HGXB13A00L1000154&timestamp=1605581490000&lat=&lng=, {"status":200,"errorMsg":"维度(lat)为必填字段,不能为空,经度(lng)为必填字段,不能为空","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
 <td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 国家电网实时API即插即充查询结果为空, /external-api/gw/charge/realtime/data?, vin=HGXB13A00L100015&timestamp=1605583534000&lat=0&lng=0, {"status":200,"errorMsg":null,"data":{"vin":null,"terminalTime":null,"soc":null,"lat":null,"lng":null,"vehicleState":null,"chargeState":null,"dataState":3},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源根据vin查询电池健康度评分正常, /external-api/vehicle-battery/suyuan/battery/health/vin?, vin=LJ1EEKPN1J7436459, {"status":200,"errorMsg":null,"data":{"assessmentTime":"2020-12-03","internalResistanceScore":100.0,"volumeScore":95.09,"selfDischargeRateScore":100.0,"voltConsistenceScore":79.5,"temperatureConsistenceScore":100.0,"synthesizeScore":93.65,"lastReportTime":"2020-07-09 11:20:11"},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源根据vin查询电池健康度评分为空, /external-api/vehicle-battery/suyuan/battery/health/vin?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源根据vin查询电池健康度评分vin必填为空, /external-api/vehicle-battery/suyuan/battery/health/vin?, vin=, {"status":400,"errorMsg":"参数vin未传","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源根据vin查询电池容量衰退正常, /external-api/vehicle-battery/suyuan/vehicle/life/forecast/fading?, vin=L68GCS4B0JA000004, {"status":200,"errorMsg":null,"data":[{"mileageRange":0,"volFading":0.11},{"mileageRange":1,"volFading":0.15},{"mileageRange":11,"volFading":3.5},{"mileageRange":12,"volFading":4.27},{"mileageRange":14,"volFading":4.44},{"mileageRange":15,"volFading":4.4},{"mileageRange":16,"volFading":4.55},{"mileageRange":17,"volFading":4.74}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源根据vin查询电池容量衰退为空, /external-api/vehicle-battery/suyuan/vehicle/life/forecast/fading?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源根据vin查询电池容量衰退vin必填为空, /external-api/vehicle-battery/suyuan/vehicle/life/forecast/fading?, vin=, {"status":400,"errorMsg":"参数vin未传","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源根据vin查询里程和充放电次数正常, /external-api/vehicle-battery/suyuan/vehicle/life/forecast/mileage?, vin=L68GCS4B0JA000004, {"status":200,"errorMsg":null,"data":{"chargeTimes":452,"dischargeTimes":521,"driveRange":16333.5,"driveRangeFactory":450.0},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源根据vin查询里程和充放电次数为空, /external-api/vehicle-battery/suyuan/vehicle/life/forecast/mileage?, vin=123, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 电池溯源根据vin查询里程和充放电次数vin必填为空, /external-api/vehicle-battery/suyuan/vehicle/life/forecast/mileage?, vin=, {"status":400,"errorMsg":"参数vin未传","data":null,"error":true,"code":"30001"}</td>
 <td></td>
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
@@ -757,12 +672,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车辆总数, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+limit++1%3B&members=&limit=0&_=1578559299715, {"result":[["java.lang.Integer",2255219]]}</td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车速度大于220, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+speed+%3E+220+limit+1&members=&limit=0&_=1578563123416, {"result":[["java.lang.Integer",86]]}</td>
 <td></td>
-<td>9</td>
+<td>10</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 里程表大于200000, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+mileage%3E200000+limit+1&members=&limit=0&_=1578563187896, {"result":[["java.lang.Integer",15507]]}</td>
@@ -777,12 +692,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标为0,0, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng%3D0+and+lat%3D0+limit+1&members=&limit=0&_=1578563056235, {"result":[["java.lang.Integer",369622]]}</td>
 <td></td>
-<td>10</td>
+<td>9</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标正常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3E73.66+and+lng+%3C135.05+and+lat+%3E+3.86+and+lat+%3C53.55++limit+1&members=&limit=0&_=1578621101331, {"result":[["java.lang.Integer",1876945]]}</td>
 <td></td>
-<td>22</td>
+<td>20</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
 </table><p>
 </body>
