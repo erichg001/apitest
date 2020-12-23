@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="apitest" duration-ms="22703" started-at="2020-12-23T06:09:25Z" finished-at="2020-12-23T06:09:47Z">
+  <suite name="apitest" duration-ms="22602" started-at="2020-12-23T08:03:19Z" finished-at="2020-12-23T08:03:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22703" started-at="2020-12-23T06:09:25Z" finished-at="2020-12-23T06:09:47Z">
+    <test name="Default test" duration-ms="22602" started-at="2020-12-23T08:03:19Z" finished-at="2020-12-23T08:03:41Z">
       <class name="com.bitnei.apitest.testcases.saas.PostApiTestParas">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="setUp" is-config="true" duration-ms="16882" started-at="2020-12-23T06:09:25Z" finished-at="2020-12-23T06:09:42Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="setUp" is-config="true" duration-ms="16644" started-at="2020-12-23T08:03:19Z" finished-at="2020-12-23T08:03:35Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="2497" started-at="2020-12-23T06:09:42Z" description="api接口" data-provider="dp" finished-at="2020-12-23T06:09:44Z">
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="2443" started-at="2020-12-23T08:03:35Z" description="api接口" data-provider="dp" finished-at="2020-12-23T08:03:38Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTest -->
-        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="489" started-at="2020-12-23T06:09:44Z" description="api接口" data-provider="dp" finished-at="2020-12-23T06:09:45Z">
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="442" started-at="2020-12-23T08:03:38Z" description="api接口" data-provider="dp" finished-at="2020-12-23T08:03:38Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTest -->
-        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="398" started-at="2020-12-23T06:09:45Z" description="api接口" data-provider="dp" finished-at="2020-12-23T06:09:45Z">
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="422" started-at="2020-12-23T08:03:38Z" description="api接口" data-provider="dp" finished-at="2020-12-23T08:03:39Z">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTest -->
-        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="465" started-at="2020-12-23T06:09:45Z" description="api接口" data-provider="dp" finished-at="2020-12-23T06:09:46Z">
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="462" started-at="2020-12-23T08:03:39Z" description="api接口" data-provider="dp" finished-at="2020-12-23T08:03:39Z">
           <params>
             <param index="0">
               <value>
@@ -127,7 +127,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTest -->
-        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="388" started-at="2020-12-23T06:09:46Z" description="api接口" data-provider="dp" finished-at="2020-12-23T06:09:46Z">
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="397" started-at="2020-12-23T08:03:39Z" description="api接口" data-provider="dp" finished-at="2020-12-23T08:03:39Z">
           <params>
             <param index="0">
               <value>
@@ -153,7 +153,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTest -->
-        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="376" started-at="2020-12-23T06:09:46Z" description="api接口" data-provider="dp" finished-at="2020-12-23T06:09:46Z">
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="583" started-at="2020-12-23T08:03:39Z" description="api接口" data-provider="dp" finished-at="2020-12-23T08:03:40Z">
           <params>
             <param index="0">
               <value>
@@ -179,7 +179,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTest -->
-        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="408" started-at="2020-12-23T06:09:46Z" description="api接口" data-provider="dp" finished-at="2020-12-23T06:09:47Z">
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="393" started-at="2020-12-23T08:03:40Z" description="api接口" data-provider="dp" finished-at="2020-12-23T08:03:40Z">
           <params>
             <param index="0">
               <value>
@@ -205,7 +205,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTest -->
-        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="387" started-at="2020-12-23T06:09:47Z" description="api接口" data-provider="dp" finished-at="2020-12-23T06:09:47Z">
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="389" started-at="2020-12-23T08:03:40Z" description="api接口" data-provider="dp" finished-at="2020-12-23T08:03:41Z">
           <params>
             <param index="0">
               <value>
@@ -231,7 +231,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApiTest -->
-        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="359" started-at="2020-12-23T06:09:47Z" description="api接口" data-provider="dp" finished-at="2020-12-23T06:09:47Z">
+        <test-method status="PASS" signature="ApiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bitnei.apitest.testcases.saas.PostApiTestParas@679b62af]" name="ApiTest" duration-ms="378" started-at="2020-12-23T08:03:41Z" description="api接口" data-provider="dp" finished-at="2020-12-23T08:03:41Z">
           <params>
             <param index="0">
               <value>

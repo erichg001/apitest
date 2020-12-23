@@ -6,3 +6,5 @@
 [0114/165648.005:ERROR:process_info.cc(359)] UncheckedAllocate
 [0114/165648.049:ERROR:process_info.cc(359)] UncheckedAllocate
 [0114/165707.420:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: 操作成功完成。 (0x0)
+[1223/151745.464:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[1223/151919.569:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
