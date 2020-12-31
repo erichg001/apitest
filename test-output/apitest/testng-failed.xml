@@ -11,20 +11,14 @@
   <parameter name="host7789" value="http://bdp-app.bitnei.cn:7789"/>
   <parameter name="saasv2" value="http://test-saas-v2.bitnei.cn"/>
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
-  <test thread-count="5" name="SAAS(failed)" parallel="classes">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.saas.GetInsurance">
+      <class name="com.bitnei.apitest.testcases.saas.ApiTest">
         <methods>
-          <include name="setUp"/>
-          <include name="Insurance"/>
-        </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.GetInsurance -->
-      <class name="com.bitnei.apitest.testcases.saas.PostApiTestParas">
-        <methods>
-          <include name="ApiTest"/>
+          <include name="ApiTestCode" invocation-numbers="116"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.PostApiTestParas -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
     </classes>
-  </test> <!-- SAAS(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->

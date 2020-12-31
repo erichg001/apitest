@@ -78,6 +78,7 @@ public class SaasGetSec {
 		ChromeOptions options = new ChromeOptions();
 	    DesiredCapabilities cap = DesiredCapabilities.chrome();
         cap.setCapability(ChromeOptions.CAPABILITY, options);
+        //浏览器不提供可视化页面
         options.addArguments("---headless");
         
         LoggingPreferences logPrefs = new LoggingPreferences();

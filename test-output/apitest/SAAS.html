@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SAAS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>113/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>121/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 23 15:28:17 CST 2020</td>
+<td>Started on:</td><td>Thu Dec 31 09:14:04 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>143 seconds (143259 ms)</td>
+<tr><td>Total time:</td><td>134 seconds (134177 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -555,6 +555,46 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
 <tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 佛山电池容量衰退评估按vin查询正确, /external-api/vehicle-battery/foshan/vehicle/life/forecast/fading?, vin=L68GCS4B0JA000004&retireDate=2020-10-20, {"status":200,"errorMsg":null,"data":[{"mileageRange":0,"volFading":0.11,"lastReportTime":"2020-07-01 06:49:48"},{"mileageRange":1,"volFading":0.15,"lastReportTime":"2020-07-01 06:49:48"},{"mileageRange":11,"volFading":3.5,"lastReportTime":"2020-07-01 06:49:48"},{"mileageRange":12,"volFading":4.27,"lastReportTime":"2020-07-01 06:49:48"},{"mileageRange":14,"volFading":4.44,"lastReportTime":"2020-07-01 06:49:48"},{"mileageRange":15,"volFading":4.4,"lastReportTime":"2020-07-01 06:49:48"},{"mileageRange":16,"volFading":4.55,"lastReportTime":"2020-07-01 06:49:48"},{"mileageRange":17,"volFading":4.74,"lastReportTime":"2020-07-01 06:49:48"}],"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 佛山电池容量衰退评估按vin查询无数据, /external-api/vehicle-battery/foshan/vehicle/life/forecast/fading?, vin=2, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 佛山电池容量衰退评估按vin查询vin必传, /external-api/vehicle-battery/foshan/vehicle/life/forecast/fading?, vin=, {"status":400,"errorMsg":"参数vin未传","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 佛山电池容量衰退评估按vin查询退役时间无数据, /external-api/vehicle-battery/foshan/vehicle/life/forecast/fading?, vin=L68GCS4B0JA000004&retireDate=2020-10-21, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 佛山电池健康度按vin查询正确, /external-api/vehicle-battery/foshan/battery/health/vin?, vin=LE48P9AB1LL000993&retireDate=2020-10-16, {"status":200,"errorMsg":null,"data":{"assessmentTime":"2020-12-03","internalResistanceScore":98.0,"volumeScore":89.69,"selfDischargeRateScore":100.0,"voltConsistenceScore":99.53,"temperatureConsistenceScore":100.0,"synthesizeScore":96.9,"lastReportTime":"2020-11-11 16:32:09"},"error":false,"code":"10000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 佛山电池健康度按vin查询无数据, /external-api/vehicle-battery/foshan/battery/health/vin?, vin=2, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 佛山电池健康度按vin查询vin必传, /external-api/vehicle-battery/foshan/battery/health/vin?, vin=, {"status":400,"errorMsg":"参数vin未传","data":null,"error":true,"code":"30001"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
+<td title='com.bitnei.apitest.testcases.saas.ApiTest.ApiTestCode()'><b>ApiTestCode</b><br>Test class: com.bitnei.apitest.testcases.saas.ApiTest<br>Test method: openapi接口<br>Parameters: 佛山电池健康度按vin查询退役时间无数据, /external-api/vehicle-battery/foshan/battery/health/vin?, vin=LE48P9AB1LL000993&retireDate=2020-10-18, {"status":200,"errorMsg":null,"data":null,"error":false,"code":"35000"}</td>
+<td></td>
+<td>0</td>
+<td>com.bitnei.apitest.testcases.saas.ApiTest@6166e06f</td></tr>
+<tr>
 <td title='com.bitnei.apitest.testcases.saas.GetInsurance.Insurance()'><b>Insurance</b><br>Test class: com.bitnei.apitest.testcases.saas.GetInsurance<br>Test method: openapi接口<br>Parameters: 精励联讯保险调用正常--LGXCE6CB5J0172639, /external-api/vrm/genilex/insurance/lable?, vin=XWUvbK5%2B1o33MmFTkmtbkNZXbF69N3LkTuEh3wY37Be2gWLpBDmVaQThtG2bL7KuVNK%2FroIKMYPuctqSTYG5rh4nqIcZ9Cf7A49gCDVI51xqMWofmRno1WbAQp5oHzk6pKE5eHujcxlu5WSVns37J%2FK7UyJXB4030pJPhVvkB00%3D&customerId=123, wVOxnIgnXu1wZzDG+JGwr9q32wUgCNRFM32FzAa1bLHN3fxg5IH8DJiuMPZkel4fh8f5aXEpoIENwHV3vuIzn/GCAP82hXiTmb1gFM4KZ9jTcE4HeU2pW6z6mfwagUv1RpWrQ236YNtI1wdyyFQSaQgDesatiQD/eTa5f/+bj3g=, 1596527919336, {"status":200,"errorMsg":null,"data":{"risk_score":30.61,"mileage_12":4.0,"mileage_24":1.0,"mileage_36":0.0},"error":false,"code":"10000"}</td>
 <td></td>
 <td>0</td>
@@ -612,7 +652,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车辆总数, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+limit++1%3B&members=&limit=0&_=1578559299715, {"result":[["java.lang.Integer",2255219]]}</td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 车速度大于220, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+speed+%3E+220+limit+1&members=&limit=0&_=1578563123416, {"result":[["java.lang.Integer",86]]}</td>
@@ -622,22 +662,22 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 里程表大于200000, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+mileage%3E200000+limit+1&members=&limit=0&_=1578563187896, {"result":[["java.lang.Integer",15507]]}</td>
 <td></td>
-<td>10</td>
+<td>9</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标异常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3C73.66+or+lng+%3E135.05+or+lat+%3C+3.86+or+lat+%3E53.55+limit+1&members=&limit=0&_=1578563382007, {"result":[["java.lang.Integer",374583]]}</td>
 <td></td>
-<td>22</td>
+<td>21</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标为0,0, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng%3D0+and+lat%3D0+limit+1&members=&limit=0&_=1578563056235, {"result":[["java.lang.Integer",369622]]}</td>
 <td></td>
-<td>10</td>
+<td>9</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
 <tr>
 <td title='com.bitnei.apitest.testcases.saas.TestGeodeData.UserInfoRgisterData()'><b>UserInfoRgisterData</b><br>Test class: com.bitnei.apitest.testcases.saas.TestGeodeData<br>Test method: geode数据验证<br>Parameters: 位置坐标正常, /pulse/dataBrowserQuery, ?query=select+count(1)+from+%2Fveh_realinfo+where+lng+%3E73.66+and+lng+%3C135.05+and+lat+%3E+3.86+and+lat+%3C53.55++limit+1&members=&limit=0&_=1578621101331, {"result":[["java.lang.Integer",1876945]]}</td>
 <td></td>
-<td>22</td>
+<td>21</td>
 <td>com.bitnei.apitest.testcases.saas.TestGeodeData@1c72da34</td></tr>
 </table><p>
 </body>
