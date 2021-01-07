@@ -8,3 +8,5 @@
 [0114/165707.420:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: 操作成功完成。 (0x0)
 [1223/151745.464:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
 [1223/151919.569:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0107/133745.957:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0107/134729.934:ERROR:crashpad_client_win.cc(520)] CreateProcess: 页面文件太小，无法完成操作。 (0x5AF)
