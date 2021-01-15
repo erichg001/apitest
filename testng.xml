@@ -17,8 +17,10 @@
 
   <test parallel="classes" thread-count="1" name="SAASTEST" verbose="2" preserve-order="true"> 
   <classes>
+  <!-- 
     <class name = "com.bitnei.selenium.testcase.SaasLoginTest" />
     <class name = "com.bitnei.selenium.testcase.UserRole" />
+     -->
   </classes> 
   </test> 
 
