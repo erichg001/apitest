@@ -42,13 +42,13 @@ public class UserRole extends CaseBase{
 		webdriverutil = new WebDriverUtil();
 		webdriverutil.openBrowser(host+url, "chrome");
 		webdriverutil.maxBrowser();
-		webdriverutil.findElementByXpathAndClearSendkeys("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[1]/nz-form-control/div/span/nz-input-group/input", paras.split(">>")[0]);
-		webdriverutil.findElementByXpathAndClearSendkeys("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[2]/nz-form-control/div/span/nz-input-group/input", paras.split(">>")[1]);
+		webdriverutil.findElementByXpathAndClearSendkeys("/html/body/app-root/layout-passport/passport-login/div/div/div/form/nz-form-item[1]/nz-form-control/div/span/nz-input-group/input", paras.split(">>")[0]);
+		webdriverutil.findElementByXpathAndClearSendkeys("/html/body/app-root/layout-passport/passport-login/div/div/div/form/nz-form-item[2]/nz-form-control/div/span/nz-input-group/input", paras.split(">>")[1]);
 	    Thread.sleep(1000);
-	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[4]/button");
-	    webdriverutil.findElementByXpathAndClick("/html/body/app/changan-layout/div/header/nav/div[2]/div[2]");
-	    webdriverutil.findElementByXpathAndClick("/html/body/app/changan-layout/div/header/nav/div[2]/div[2]/div/ul/li[2]/a/div[1]");
-	    res = webdriverutil.findElementByXpath("/html/body/app-root/app-sass/div/div/app-left-sass-menu/div/div/div[1]/ul/li[1]/a/span").getText().equals("用户管理");
+	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/layout-passport/passport-login/div/div/div/form/nz-form-item[4]/button");
+	    webdriverutil.findElementByXpathAndClick("/html/body/app/changan-layout/div/header/nav/div[2]/div[3]");
+	    webdriverutil.findElementByXpathAndClick("/html/body/app/changan-layout/div/header/nav/div[2]/div[3]/div/ul/li[3]/a/div[1]");
+	    res = webdriverutil.findElementByXpath("/html/body/app-root/app-sass/div/div/app-left-sass-menu/nz-layout/nz-sider/div/ul/li[1]/span/span").getText().equals("用户管理");
 	    try {
 	    	if (res == false ) {
 	    	webdriverutil.takeScreenshotByNow();

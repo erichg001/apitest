@@ -50,10 +50,10 @@ public class SaasLoginTest extends CaseBase{
 		webdriverutil = new WebDriverUtil();
 		webdriverutil.openBrowser(host+url, "chrome");
 		webdriverutil.maxBrowser();
-		webdriverutil.findElementByXpathAndClearSendkeys("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[1]/nz-form-control/div/span/nz-input-group/input", paras.split(">>")[0]);
-		webdriverutil.findElementByXpathAndClearSendkeys("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[2]/nz-form-control/div/span/nz-input-group/input", paras.split(">>")[1]);
+		webdriverutil.findElementByXpathAndClearSendkeys("/html/body/app-root/layout-passport/passport-login/div/div/div/form/nz-form-item[1]/nz-form-control/div/span/nz-input-group/input", paras.split(">>")[0]);
+		webdriverutil.findElementByXpathAndClearSendkeys("/html/body/app-root/layout-passport/passport-login/div/div/div/form/nz-form-item[2]/nz-form-control/div/span/nz-input-group/input", paras.split(">>")[1]);
 	    Thread.sleep(1000);
-	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[4]/button");
+	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/layout-passport/passport-login/div/div/div/form/nz-form-item[4]/button");
 	    res = webdriverutil.findElementByXpath(xpath).getText().equals(result);
 	    try {
 	    	if (res == false ) {

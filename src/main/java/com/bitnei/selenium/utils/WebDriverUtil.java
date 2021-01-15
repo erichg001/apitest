@@ -29,6 +29,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -122,13 +123,18 @@ public class WebDriverUtil {
 	             *         System.setProperty("webdriver.gecko.driver", ".\\Tools\\geckodriver.exe");
 	             */
 	            // FireFox安装方式为自定义安装
-	            System.setProperty("webdriver.firefox.bin", "D:\\ProgramFiles\\Mozilla Firefox\\firefox.exe");
+	            System.setProperty("webdriver.gecko.driver", "C:\\Program Files (x86)\\Mozilla Firefox\\geckodriver.exe");
 	            driver = new FirefoxDriver();
 	            break;
 	        case "chrome":
 	        case "Chrome":
 	            System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
 	            driver = new ChromeDriver();
+	    		ChromeOptions options = new ChromeOptions();
+	    	    DesiredCapabilities cap = DesiredCapabilities.chrome();
+	            cap.setCapability(ChromeOptions.CAPABILITY, options);
+	            //浏览器不提供可视化页面
+	            options.addArguments("---headless");
 	            break;
 	        default:
 	            try {

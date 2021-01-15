@@ -14,14 +14,14 @@
   <parameter name="saas" value="https://saas.bitnei.cn" />
 
 	<!--thread-count 并发线程数  preserve-order classes按顺序执行   verbose 输出日志等级 -->
-<!-- 
+
   <test parallel="classes" thread-count="1" name="SAASTEST" verbose="2" preserve-order="true"> 
   <classes>
     <class name = "com.bitnei.selenium.testcase.SaasLoginTest" />
     <class name = "com.bitnei.selenium.testcase.UserRole" />
   </classes> 
   </test> 
- -->
+
  <!-- -->
   <test parallel="classes" thread-count="1" name="openapi" verbose="1" >
     <classes>         
@@ -35,14 +35,14 @@
 
   <test parallel="classes" thread-count="1" name="SAAS" verbose="1" >
     <classes>
-   <!--  
+    
     <class name = "com.bitnei.apitest.testcases.saas.UserInfoQueryByExcel" /> 
              
     <class name = "com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel" />
 
     <class name = "com.bitnei.apitest.testcases.saas.PostBackSaas" />  
 
-  -->
+  
     <class name = "com.bitnei.apitest.testcases.saas.ApiTest" />  
 
     <class name = "com.bitnei.apitest.testcases.saas.PostApiTestParas" /> 

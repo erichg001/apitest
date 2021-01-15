@@ -13,12 +13,12 @@
   <parameter name="backsaas" value="http://test-back-saas.bitnei.cn"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitnei.apitest.testcases.saas.ApiTest">
+      <class name="com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel">
         <methods>
-          <include name="ApiTestCode" invocation-numbers="111"/>
+          <include name="UserInfoRgisterData" invocation-numbers="5 8 9 10 11 13 14"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
+      </class> <!-- com.bitnei.apitest.testcases.saas.UserInforRgisterByExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [apitest] -->
