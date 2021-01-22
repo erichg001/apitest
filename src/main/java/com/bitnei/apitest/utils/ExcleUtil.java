@@ -21,7 +21,7 @@ public class ExcleUtil {
     private static XSSFWorkbook ExcelWBook;
     private static XSSFCell Cell;
     private static XSSFRow Row;
-    private static String ExcelFilePath="C:\\TEST.xlsx";
+    private static String ExcelFilePath="src/main/resources/DATA.xlsx";
 
     // 设定要设置的Excel的文件路径和Excel 中Sheet名；
     // 在读/写Excel 的时候先要调用此方法

@@ -2,6 +2,11 @@ package com.bitnei.selenium.testcase;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -10,6 +15,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.bitnei.apitest.utils.ExcelReader;
+import com.bitnei.apitest.utils.ExcleUtil;
 import com.bitnei.selenium.utils.WebDriverUtil;
 
 public class SaasLoginTest extends CaseBase{
@@ -45,6 +51,12 @@ public class SaasLoginTest extends CaseBase{
 	     webdriverutil.closeAllBrowser();
 	}	
 	
+	@DataProvider(name="dp")
+    public Object[][] dp(){
+     Object[][] sheetData = ex.getSheetDataByPD();
+        return  sheetData ;
+    }
+	
 	@Test(description="用户登录",dataProvider="dp")
 	public void LoginFaild(String desc,String url,String paras,String xpath,String result) throws InterruptedException {
 		webdriverutil = new WebDriverUtil();
@@ -58,9 +70,12 @@ public class SaasLoginTest extends CaseBase{
 	    try {
 	    	if (res == false ) {
 	    	webdriverutil.takeScreenshotByNow();
-	    	Assert.fail("");
-	    	}else {
-	    	assertTrue(res);
+	    	Assert.fail("失败");
+	    	//System.out.println("dp().toString().length()"+dp());
+	    	//ExcleUtil.getCell(dp().length,2);
+	    	//ExcleUtil.setCellData(1, 2, "失败");
+	    	}else { 
+	    	Assert.assertTrue(res, "成功");
 	    	}	    	
 	    }catch(Exception e){
 	    	e.printStackTrace();
@@ -75,10 +90,6 @@ public class SaasLoginTest extends CaseBase{
 	    //assertTrue(res);
 	}
 	
-	@DataProvider
-    public Object[][] dp(){
-     Object[][] sheetData = ex.getSheetDataByPD();
-        return  sheetData ;
-    }
+
 
 }
