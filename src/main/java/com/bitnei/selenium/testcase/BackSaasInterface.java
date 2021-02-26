@@ -56,7 +56,7 @@ public class BackSaasInterface extends CaseBase{
 	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[3]/button");
 	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/app-sass/div/div/div[1]/ul/li[2]/a");
 	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/app-sass/div/div/div[2]/ng-component/div/div/div[2]/ng-component/nz-card/div/div[1]/div[2]/button[1]");
-	    res = webdriverutil.findElementByXpath(xpath).getText().equals(result);
+	    res = webdriverutil.findElementByXpath(xpath).getText().trim().equals(result);
 	    try {
 	    	if (res == false ) {
 	    	webdriverutil.takeScreenshotByNow();

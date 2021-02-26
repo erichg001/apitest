@@ -53,7 +53,7 @@ public class BackSaasLogin extends CaseBase{
 		webdriverutil.findElementByXpathAndClearSendkeys("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[2]/nz-form-control/div/span/nz-input-group/input", paras.split(">>")[1]);
 	    Thread.sleep(1000);
 	    webdriverutil.findElementByXpathAndClick("/html/body/app-root/layout-passport/div/div/passport-login/div/form/nz-form-item[3]/button");
-	    res = webdriverutil.findElementByXpath(xpath).getText().equals(result);
+	    res = webdriverutil.findElementByXpath(xpath).getText().trim().equals(result);
 	    try {
 	    	if (res == false ) {
 	    	webdriverutil.takeScreenshotByNow();
