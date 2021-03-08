@@ -15,7 +15,7 @@
     <classes>
       <class name="com.bitnei.apitest.testcases.saas.ApiTest">
         <methods>
-          <include name="ApiTestCode" invocation-numbers="40 41 42 43"/>
+          <include name="ApiTestCode" invocation-numbers="129"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.bitnei.apitest.testcases.saas.ApiTest -->
