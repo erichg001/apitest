@@ -75,7 +75,8 @@ public class ApiTest {
 	
 	@Test(description="openapi接口",priority =0,dataProvider="dp")
 	public void ApiTestCode(String desc,String url,String paras,String result) throws ClientProtocolException, IOException {
-		restClient = new RestClient();
+		restClient 
+		= new RestClient();
 		DiffMethod diffMethod = new DiffMethod();
 		//DiffMethodByExcept diffMethod = new DiffMethodByExcept();
 		//准备请求头信息
