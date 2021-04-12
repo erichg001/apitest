@@ -69,8 +69,7 @@ public class ApiTest {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace(); 
-		}	
-		       
+		}			       
 	}
 	
 	@Test(description="openapi接口",priority =0,dataProvider="dp")
