@@ -177,7 +177,7 @@ public class RsaUtil {
             String signPublicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJXY9YhWsU5b8NL/AFSUjf0ZVthLiWxdiSJe2997V+SfF+p0wPHFMHTMtX4E4zih849IGHVN8NUtVv4kXuSPuID4TMf0+BJWvpSFMdbRK0J89rXSQJoeIKuGzG+q2FjHBqKg7KUkq2fmuQL1shao5DCCEYY5MLmCqdXFm+RWFgBQIDAQAB";
 
             // RSA加密
-            String data = "LMVAFLEXXJA000323";
+            String data = "LGXCE6DB1J0061021";
             String encryptData = encrypt(data, getPublicKey(rsaPublicKey));
             System.out.println("加密后内容:" + encryptData);
             // RSA解密
