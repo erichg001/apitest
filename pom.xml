@@ -13,7 +13,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <xmlFileName>testng.xml</xmlFileName>
 
     	<file.encoding>UTF-8</file.encoding>
-    	<spring.version>3.2.11.RELEASE</spring.version>
+    	<spring.version>5.3.18</spring.version>
     </properties>
 
     <dependencies>
